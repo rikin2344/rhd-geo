@@ -1,0 +1,454 @@
+{
+  "clearance_lookup_table": {
+    "description": "Radial clearance reference table for deep groove ball bearings",
+    "note": "Lookup by bore diameter ranges. Find appropriate range, then extract clearance data.",
+    "unit": "microns",
+    "ranges": [
+      {
+        "range": "2.5-6",
+        "over_mm": 2.5,
+        "to_mm": 6,
+        "bore_diameters": [3, 4, 5, 6],
+        "clearances": {
+          "C2": { "min": 0, "max": 7 },
+          "C0": { "min": 2, "max": 13 },
+          "C3": { "min": 8, "max": 23 },
+          "C4": null,
+          "C5": null
+        }
+      },
+      {
+        "range": "6-10", 
+        "over_mm": 6,
+        "to_mm": 10,
+        "bore_diameters": [7, 8, 9, 10],
+        "clearances": {
+          "C2": { "min": 0, "max": 7 },
+          "C0": { "min": 2, "max": 13 },
+          "C3": { "min": 8, "max": 23 },
+          "C4": { "min": 14, "max": 29 },
+          "C5": { "min": 20, "max": 37 }
+        }
+      },
+      {
+        "range": "10-18",
+        "over_mm": 10,
+        "to_mm": 18,
+        "bore_diameters": [12, 15, 17, 18],
+        "clearances": {
+          "C2": { "min": 0, "max": 9 },
+          "C0": { "min": 3, "max": 18 },
+          "C3": { "min": 11, "max": 25 },
+          "C4": { "min": 18, "max": 33 },
+          "C5": { "min": 25, "max": 45 }
+        }
+      },
+      {
+        "range": "18-24",
+        "over_mm": 18,
+        "to_mm": 24,
+        "bore_diameters": [20, 22, 24],
+        "clearances": {
+          "C2": { "min": 0, "max": 10 },
+          "C0": { "min": 5, "max": 20 },
+          "C3": { "min": 13, "max": 28 },
+          "C4": { "min": 20, "max": 36 },
+          "C5": { "min": 28, "max": 48 }
+        }
+      },
+      {
+        "range": "24-30",
+        "over_mm": 24,
+        "to_mm": 30,
+        "bore_diameters": [25, 28, 30],
+        "clearances": {
+          "C2": { "min": 1, "max": 11 },
+          "C0": { "min": 5, "max": 20 },
+          "C3": { "min": 13, "max": 28 },
+          "C4": { "min": 23, "max": 41 },
+          "C5": { "min": 30, "max": 53 }
+        }
+      },
+      {
+        "range": "30-40",
+        "over_mm": 30,
+        "to_mm": 40,
+        "bore_diameters": [32, 35, 40],
+        "clearances": {
+          "C2": { "min": 1, "max": 11 },
+          "C0": { "min": 6, "max": 20 },
+          "C3": { "min": 15, "max": 33 },
+          "C4": { "min": 28, "max": 46 },
+          "C5": { "min": 40, "max": 64 }
+        }
+      },
+      {
+        "range": "40-50",
+        "over_mm": 40,
+        "to_mm": 50,
+        "bore_diameters": [45, 50],
+        "clearances": {
+          "C2": { "min": 1, "max": 11 },
+          "C0": { "min": 6, "max": 23 },
+          "C3": { "min": 18, "max": 36 },
+          "C4": { "min": 30, "max": 51 },
+          "C5": { "min": 45, "max": 73 }
+        }
+      },
+      {
+        "range": "50-65",
+        "over_mm": 50,
+        "to_mm": 65,
+        "bore_diameters": [55, 60, 65],
+        "clearances": {
+          "C2": { "min": 1, "max": 15 },
+          "C0": { "min": 8, "max": 28 },
+          "C3": { "min": 23, "max": 43 },
+          "C4": { "min": 38, "max": 61 },
+          "C5": { "min": 55, "max": 90 }
+        }
+      },
+      {
+        "range": "65-80",
+        "over_mm": 65,
+        "to_mm": 80,
+        "bore_diameters": [70, 75, 80],
+        "clearances": {
+          "C2": { "min": 1, "max": 15 },
+          "C0": { "min": 10, "max": 30 },
+          "C3": { "min": 25, "max": 51 },
+          "C4": { "min": 46, "max": 71 },
+          "C5": { "min": 65, "max": 105 }
+        }
+      },
+      {
+        "range": "80-100",
+        "over_mm": 80,
+        "to_mm": 100,
+        "bore_diameters": [85, 90, 95, 100],
+        "clearances": {
+          "C2": { "min": 1, "max": 18 },
+          "C0": { "min": 12, "max": 36 },
+          "C3": { "min": 30, "max": 58 },
+          "C4": { "min": 53, "max": 84 },
+          "C5": { "min": 75, "max": 120 }
+        }
+      }
+    ]
+  },
+  "direct_lookup": {
+    "description": "Direct bore diameter to clearance mapping for easier programmatic access",
+    "note": "Pre-computed lookup table where each bore diameter maps directly to clearance data",
+    "data": {
+      "3": {
+        "range": "2.5-6",
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": null,
+        "C5": null
+      },
+      "4": {
+        "range": "2.5-6",
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": null,
+        "C5": null
+      },
+      "5": {
+        "range": "2.5-6",
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": null,
+        "C5": null
+      },
+      "6": {
+        "range": "2.5-6",
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": null,
+        "C5": null
+      },
+      "7": {
+        "range": "6-10",
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": { "min": 14, "max": 29 },
+        "C5": { "min": 20, "max": 37 }
+      },
+      "8": {
+        "range": "6-10",
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": { "min": 14, "max": 29 },
+        "C5": { "min": 20, "max": 37 }
+      },
+      "9": {
+        "range": "6-10",
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": { "min": 14, "max": 29 },
+        "C5": { "min": 20, "max": 37 }
+      },
+      "10": {
+        "range": "6-10",
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": { "min": 14, "max": 29 },
+        "C5": { "min": 20, "max": 37 }
+      },
+      "12": {
+        "range": "10-18",
+        "C2": { "min": 0, "max": 9 },
+        "C0": { "min": 3, "max": 18 },
+        "C3": { "min": 11, "max": 25 },
+        "C4": { "min": 18, "max": 33 },
+        "C5": { "min": 25, "max": 45 }
+      },
+      "15": {
+        "range": "10-18",
+        "C2": { "min": 0, "max": 9 },
+        "C0": { "min": 3, "max": 18 },
+        "C3": { "min": 11, "max": 25 },
+        "C4": { "min": 18, "max": 33 },
+        "C5": { "min": 25, "max": 45 }
+      },
+      "17": {
+        "range": "10-18",
+        "C2": { "min": 0, "max": 9 },
+        "C0": { "min": 3, "max": 18 },
+        "C3": { "min": 11, "max": 25 },
+        "C4": { "min": 18, "max": 33 },
+        "C5": { "min": 25, "max": 45 }
+      },
+      "18": {
+        "range": "10-18",
+        "C2": { "min": 0, "max": 9 },
+        "C0": { "min": 3, "max": 18 },
+        "C3": { "min": 11, "max": 25 },
+        "C4": { "min": 18, "max": 33 },
+        "C5": { "min": 25, "max": 45 }
+      },
+      "20": {
+        "range": "18-24",
+        "C2": { "min": 0, "max": 10 },
+        "C0": { "min": 5, "max": 20 },
+        "C3": { "min": 13, "max": 28 },
+        "C4": { "min": 20, "max": 36 },
+        "C5": { "min": 28, "max": 48 }
+      },
+      "22": {
+        "range": "18-24",
+        "C2": { "min": 0, "max": 10 },
+        "C0": { "min": 5, "max": 20 },
+        "C3": { "min": 13, "max": 28 },
+        "C4": { "min": 20, "max": 36 },
+        "C5": { "min": 28, "max": 48 }
+      },
+      "24": {
+        "range": "18-24",
+        "C2": { "min": 0, "max": 10 },
+        "C0": { "min": 5, "max": 20 },
+        "C3": { "min": 13, "max": 28 },
+        "C4": { "min": 20, "max": 36 },
+        "C5": { "min": 28, "max": 48 }
+      },
+      "25": {
+        "range": "24-30",
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 5, "max": 20 },
+        "C3": { "min": 13, "max": 28 },
+        "C4": { "min": 23, "max": 41 },
+        "C5": { "min": 30, "max": 53 }
+      },
+      "28": {
+        "range": "24-30",
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 5, "max": 20 },
+        "C3": { "min": 13, "max": 28 },
+        "C4": { "min": 23, "max": 41 },
+        "C5": { "min": 30, "max": 53 }
+      },
+      "30": {
+        "range": "24-30",
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 5, "max": 20 },
+        "C3": { "min": 13, "max": 28 },
+        "C4": { "min": 23, "max": 41 },
+        "C5": { "min": 30, "max": 53 }
+      },
+      "32": {
+        "range": "30-40",
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 6, "max": 20 },
+        "C3": { "min": 15, "max": 33 },
+        "C4": { "min": 28, "max": 46 },
+        "C5": { "min": 40, "max": 64 }
+      },
+      "35": {
+        "range": "30-40",
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 6, "max": 20 },
+        "C3": { "min": 15, "max": 33 },
+        "C4": { "min": 28, "max": 46 },
+        "C5": { "min": 40, "max": 64 }
+      },
+      "40": {
+        "range": "30-40",
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 6, "max": 20 },
+        "C3": { "min": 15, "max": 33 },
+        "C4": { "min": 28, "max": 46 },
+        "C5": { "min": 40, "max": 64 }
+      },
+      "45": {
+        "range": "40-50",
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 6, "max": 23 },
+        "C3": { "min": 18, "max": 36 },
+        "C4": { "min": 30, "max": 51 },
+        "C5": { "min": 45, "max": 73 }
+      },
+      "50": {
+        "range": "40-50",
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 6, "max": 23 },
+        "C3": { "min": 18, "max": 36 },
+        "C4": { "min": 30, "max": 51 },
+        "C5": { "min": 45, "max": 73 }
+      },
+      "55": {
+        "range": "50-65",
+        "C2": { "min": 1, "max": 15 },
+        "C0": { "min": 8, "max": 28 },
+        "C3": { "min": 23, "max": 43 },
+        "C4": { "min": 38, "max": 61 },
+        "C5": { "min": 55, "max": 90 }
+      },
+      "60": {
+        "range": "50-65",
+        "C2": { "min": 1, "max": 15 },
+        "C0": { "min": 8, "max": 28 },
+        "C3": { "min": 23, "max": 43 },
+        "C4": { "min": 38, "max": 61 },
+        "C5": { "min": 55, "max": 90 }
+      },
+      "65": {
+        "range": "50-65",
+        "C2": { "min": 1, "max": 15 },
+        "C0": { "min": 8, "max": 28 },
+        "C3": { "min": 23, "max": 43 },
+        "C4": { "min": 38, "max": 61 },
+        "C5": { "min": 55, "max": 90 }
+      },
+      "70": {
+        "range": "65-80",
+        "C2": { "min": 1, "max": 15 },
+        "C0": { "min": 10, "max": 30 },
+        "C3": { "min": 25, "max": 51 },
+        "C4": { "min": 46, "max": 71 },
+        "C5": { "min": 65, "max": 105 }
+      },
+      "75": {
+        "range": "65-80",
+        "C2": { "min": 1, "max": 15 },
+        "C0": { "min": 10, "max": 30 },
+        "C3": { "min": 25, "max": 51 },
+        "C4": { "min": 46, "max": 71 },
+        "C5": { "min": 65, "max": 105 }
+      },
+      "80": {
+        "range": "65-80",
+        "C2": { "min": 1, "max": 15 },
+        "C0": { "min": 10, "max": 30 },
+        "C3": { "min": 25, "max": 51 },
+        "C4": { "min": 46, "max": 71 },
+        "C5": { "min": 65, "max": 105 }
+      },
+      "85": {
+        "range": "80-100",
+        "C2": { "min": 1, "max": 18 },
+        "C0": { "min": 12, "max": 36 },
+        "C3": { "min": 30, "max": 58 },
+        "C4": { "min": 53, "max": 84 },
+        "C5": { "min": 75, "max": 120 }
+      },
+      "90": {
+        "range": "80-100",
+        "C2": { "min": 1, "max": 18 },
+        "C0": { "min": 12, "max": 36 },
+        "C3": { "min": 30, "max": 58 },
+        "C4": { "min": 53, "max": 84 },
+        "C5": { "min": 75, "max": 120 }
+      },
+      "95": {
+        "range": "80-100",
+        "C2": { "min": 1, "max": 18 },
+        "C0": { "min": 12, "max": 36 },
+        "C3": { "min": 30, "max": 58 },
+        "C4": { "min": 53, "max": 84 },
+        "C5": { "min": 75, "max": 120 }
+      },
+      "100": {
+        "range": "80-100",
+        "C2": { "min": 1, "max": 18 },
+        "C0": { "min": 12, "max": 36 },
+        "C3": { "min": 30, "max": 58 },
+        "C4": { "min": 53, "max": 84 },
+        "C5": { "min": 75, "max": 120 }
+      }
+    }
+  },
+  "usage_instructions": {
+    "simple_lookup": "Use direct_lookup.data for easy access",
+    "range_lookup": "Use ranges array for understanding original table structure",
+    "missing_data_handling": "Bearings with bore < 2.5mm have no clearance data (return null)",
+    "example_6201": {
+      "bearing": "6201",
+      "bore_diameter": 12,
+      "lookup_key": "12",
+      "range": "10-18",
+      "result": {
+        "C2": { "min": 0, "max": 9 },
+        "C0": { "min": 3, "max": 18 },
+        "C3": { "min": 11, "max": 25 },
+        "C4": { "min": 18, "max": 33 },
+        "C5": { "min": 25, "max": 45 }
+      }
+    },
+    "example_683": {
+      "bearing": "683",
+      "bore_diameter": 3,
+      "lookup_key": "3",
+      "range": "2.5-6",
+      "result": {
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": null,
+        "C5": null
+      }
+    },
+    "example_692": {
+      "bearing": "692",
+      "bore_diameter": 2,
+      "note": "Below minimum range (< 2.5mm)",
+      "result": null
+    },
+    "implementation_code": "const clearanceData = clearance_lookup_table.direct_lookup.data[bearing.bore_diameter.toString()];"
+  },
+  "data_notes": {
+    "unit": "All clearance values are in microns",
+    "null_handling": "Use null for C4/C5 in smaller bearings and for bearings < 2.5mm bore",
+    "range_logic": "Over is exclusive, To is inclusive (e.g., 6-10 means >6 and ≤10)",
+    "clearance_order": "Generally C2 < C0 < C3 < C4 < C5 (ascending clearance)",
+    "c0_standard": "C0 is the standard clearance class for most applications"
+  }
+}

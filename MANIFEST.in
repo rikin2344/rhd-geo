@@ -1,0 +1,21 @@
+# Include important project files
+include README.md
+include LICENSE
+include requirements*.txt
+include pyproject.toml
+
+# Include data files
+recursive-include rhd_bearings/data *.json *.md
+
+# Include documentation
+recursive-include docs *.md *.rst *.txt
+
+# Exclude development and cache files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude *.so
+global-exclude .git*
+global-exclude .pytest_cache

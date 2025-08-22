@@ -1,0 +1,202 @@
+{
+  "vibration_lookup_table": {
+    "description": "Deep groove ball bearing vibration (speed) limit reference table JB/T10187-2000",
+    "note": "Lookup by bore diameter only. All bearings with same bore diameter share same vibration data.",
+    "data": {
+      "3": {
+        "V2": { "low": 48, "medium": 26, "high": 22 },
+        "V3": { "low": 31, "medium": 16, "high": 15 },
+        "V4": { "low": 28, "medium": 10, "high": 10 }
+      },
+      "4": {
+        "V2": { "low": 48, "medium": 26, "high": 22 },
+        "V3": { "low": 31, "medium": 16, "high": 15 },
+        "V4": { "low": 28, "medium": 10, "high": 10 }
+      },
+      "5": {
+        "V2": { "low": 58, "medium": 36, "high": 30 },
+        "V3": { "low": 35, "medium": 21, "high": 18 },
+        "V4": { "low": 32, "medium": 11, "high": 11 }
+      },
+      "6": {
+        "V2": { "low": 58, "medium": 36, "high": 30 },
+        "V3": { "low": 35, "medium": 21, "high": 18 },
+        "V4": { "low": 32, "medium": 11, "high": 11 }
+      },
+      "7": {
+        "V2": { "low": 72, "medium": 48, "high": 40 },
+        "V3": { "low": 44, "medium": 28, "high": 24 },
+        "V4": { "low": 38, "medium": 12, "high": 12 }
+      },
+      "8": {
+        "V2": { "low": 72, "medium": 48, "high": 40 },
+        "V3": { "low": 44, "medium": 28, "high": 24 },
+        "V4": { "low": 38, "medium": 12, "high": 12 }
+      },
+      "9": {
+        "V2": { "low": 72, "medium": 48, "high": 40 },
+        "V3": { "low": 44, "medium": 28, "high": 24 },
+        "V4": { "low": 38, "medium": 12, "high": 12 }
+      },
+      "10": {
+        "V2": { "low": 90, "medium": 60, "high": 50 },
+        "V3": { "low": 55, "medium": 35, "high": 30 },
+        "V4": { "low": 45, "medium": 14, "high": 15 }
+      },
+      "12": {
+        "V2": { "low": 90, "medium": 60, "high": 50 },
+        "V3": { "low": 55, "medium": 35, "high": 30 },
+        "V4": { "low": 45, "medium": 14, "high": 15 }
+      },
+      "15": {
+        "V2": { "low": 110, "medium": 78, "high": 60 },
+        "V3": { "low": 65, "medium": 46, "high": 35 },
+        "V4": { "low": 52, "medium": 18, "high": 18 }
+      },
+      "17": {
+        "V2": { "low": 110, "medium": 78, "high": 60 },
+        "V3": { "low": 65, "medium": 46, "high": 35 },
+        "V4": { "low": 52, "medium": 25, "high": 25 }
+      },
+      "20": {
+        "V2": { "low": 130, "medium": 100, "high": 75 },
+        "V3": { "low": 80, "medium": 60, "high": 45 },
+        "V4": { "low": 60, "medium": 25, "high": 25 }
+      },
+      "22": {
+        "V2": { "low": 130, "medium": 100, "high": 75 },
+        "V3": { "low": 80, "medium": 60, "high": 45 },
+        "V4": { "low": 60, "medium": 30, "high": 32 }
+      },
+      "25": {
+        "V2": { "low": 130, "medium": 100, "high": 75 },
+        "V3": { "low": 80, "medium": 60, "high": 45 },
+        "V4": { "low": 60, "medium": 30, "high": 32 }
+      },
+      "28": {
+        "V2": { "low": 130, "medium": 100, "high": 75 },
+        "V3": { "low": 80, "medium": 60, "high": 45 },
+        "V4": { "low": 60, "medium": 35, "high": 40 }
+      },
+      "30": {
+        "V2": { "low": 150, "medium": 120, "high": 100 },
+        "V3": { "low": 90, "medium": 75, "high": 60 },
+        "V4": { "low": 70, "medium": 35, "high": 40 }
+      },
+      "32": {
+        "V2": { "low": 150, "medium": 120, "high": 100 },
+        "V3": { "low": 90, "medium": 75, "high": 60 },
+        "V4": { "low": 70, "medium": 35, "high": 40 }
+      },
+      "35": {
+        "V2": { "low": 150, "medium": 120, "high": 100 },
+        "V3": { "low": 90, "medium": 75, "high": 60 },
+        "V4": { "low": 70, "medium": 42, "high": 45 }
+      },
+      "40": {
+        "V2": { "low": 180, "medium": 150, "high": 130 },
+        "V3": { "low": 110, "medium": 90, "high": 80 },
+        "V4": { "low": 82, "medium": 50, "high": 50 }
+      },
+      "45": {
+        "V2": { "low": 180, "medium": 150, "high": 130 },
+        "V3": { "low": 110, "medium": 90, "high": 80 },
+        "V4": { "low": 82, "medium": 60, "high": 60 }
+      },
+      "50": {
+        "V2": { "low": 210, "medium": 160, "high": 160 },
+        "V3": { "low": 125, "medium": 100, "high": 100 },
+        "V4": { "low": 95, "medium": 70, "high": 70 }
+      },
+      "55": {
+        "V2": { "low": 210, "medium": 180, "high": 180 },
+        "V3": { "low": 125, "medium": 110, "high": 110 },
+        "V4": { "low": 95, "medium": 70, "high": 70 }
+      },
+      "60": {
+        "V2": { "low": 240, "medium": 180, "high": 200 },
+        "V3": { "low": 145, "medium": 110, "high": 130 },
+        "V4": { "low": 100, "medium": 80, "high": 80 }
+      },
+      "65": {
+        "V2": { "low": 130, "medium": 100, "high": 150 },
+        "V3": { "low": 105, "medium": 80, "high": 105 },
+        "V4": { "low": 50, "medium": 50, "high": 75 }
+      },
+      "70": {
+        "V2": { "low": 150, "medium": 120, "high": 200 },
+        "V3": { "low": 110, "medium": 90, "high": 135 },
+        "V4": { "low": 58, "medium": 58, "high": 88 }
+      },
+      "75": {
+        "V2": { "low": 150, "medium": 120, "high": 200 },
+        "V3": { "low": 110, "medium": 90, "high": 135 },
+        "V4": { "low": 58, "medium": 58, "high": 88 }
+      },
+      "80": {
+        "V2": { "low": 180, "medium": 120, "high": 240 },
+        "V3": { "low": 130, "medium": 110, "high": 160 },
+        "V4": { "low": 65, "medium": 65, "high": 100 }
+      },
+      "85": {
+        "V2": { "low": 180, "medium": 150, "high": 240 },
+        "V3": { "low": 130, "medium": 110, "high": 160 },
+        "V4": { "low": 65, "medium": 65, "high": 100 }
+      },
+      "90": {
+        "V2": { "low": 210, "medium": 180, "high": 270 },
+        "V3": { "low": 145, "medium": 125, "high": 180 },
+        "V4": { "low": 75, "medium": 75, "high": 115 }
+      },
+      "95": {
+        "V2": { "low": 210, "medium": 180, "high": 270 },
+        "V3": { "low": 145, "medium": 125, "high": 180 },
+        "V4": { "low": 75, "medium": 75, "high": 115 }
+      },
+      "100": {
+        "V2": { "low": 250, "medium": 215, "high": 310 },
+        "V3": { "low": 170, "medium": 145, "high": 200 },
+        "V4": { "low": 88, "medium": 88, "high": 135 }
+      },
+      "105": {
+        "V2": { "low": 250, "medium": 215, "high": 310 },
+        "V3": { "low": 170, "medium": 145, "high": 200 },
+        "V4": { "low": 88, "medium": 88, "high": 135 }
+      },
+      "110": {
+        "V2": { "low": 290, "medium": 260, "high": 350 },
+        "V3": { "low": 190, "medium": 175, "high": 225 },
+        "V4": { "low": 100, "medium": 100, "high": 160 }
+      },
+      "120": {
+        "V2": { "low": 290, "medium": 260, "high": 350 },
+        "V3": { "low": 190, "medium": 175, "high": 225 },
+        "V4": { "low": 100, "medium": 100, "high": 160 }
+      }
+    }
+  },
+  "usage_instructions": {
+    "lookup_method": "Use bore diameter as key to find vibration data",
+    "example_6201": {
+      "bearing": "6201",
+      "bore_diameter": 12,
+      "lookup_key": "12",
+      "result": {
+        "V2": { "low": 90, "medium": 60, "high": 50 },
+        "V3": { "low": 55, "medium": 35, "high": 30 },
+        "V4": { "low": 45, "medium": 14, "high": 15 }
+      }
+    },
+    "example_6309": {
+      "bearing": "6309",
+      "bore_diameter": 45,
+      "lookup_key": "45",
+      "result": {
+        "V2": { "low": 180, "medium": 150, "high": 130 },
+        "V3": { "low": 110, "medium": 90, "high": 80 },
+        "V4": { "low": 82, "medium": 60, "high": 60 }
+      }
+    },
+    "implementation_code": "const vibrationData = vibration_lookup_table.data[bearing.bore_diameter.toString()];"
+  }
+}

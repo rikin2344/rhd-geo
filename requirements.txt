@@ -1,0 +1,5 @@
+# RHD Bearings Catalog Generator
+# No external dependencies required - uses Python standard library only
+
+# Development dependencies (optional)
+# Install with: pip install -r requirements-dev.txt
