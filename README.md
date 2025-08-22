@@ -1,10 +1,10 @@
-# RHD Bearings Catalog Generator
+# RHD GEO - Bearings Catalog & Demo Website
 
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Professional](https://img.shields.io/badge/Quality-Professional-green.svg)](https://rhdbearings.com)
 
-A comprehensive Python package for generating structured JSON data for RHD Bearings' complete product catalog, optimized for web implementation, SEO, and LLM recommendations.
+A comprehensive Python package for generating structured JSON data for RHD Bearings' complete product catalog, optimized for web implementation, SEO, and LLM recommendations. Includes demo website with modern UI/UX design.
 
 ## 🚀 Quick Start
 
@@ -71,7 +71,30 @@ rhd_bearings/
     ├── vibration_lookup_table.json
     ├── witty_bearing_descriptions.json
     └── bearing_extraction_guide.md
+
+MiniatureBearingsWebPage/          # Demo Website
+├── index.html                     # Miniature bearings demo page
+├── styles.css                     # Modern CSS styling
+└── miniature-bearings-page.html   # Combined HTML/CSS version
 ```
+
+## 🌐 Demo Website
+
+### Features
+- **Modern UI/UX**: Jony Ive-inspired minimalist design
+- **Responsive Layout**: Mobile-first design approach
+- **Typography**: Bai Jamjuree font family
+- **Color Scheme**: Neon green accents (#D2FF37) with black text
+- **Interactive Elements**: Hover effects, animations, tabbed content
+- **SEO Optimized**: Proper meta tags and semantic HTML
+
+### Sections
+- **Hero Section**: Product image with key specifications
+- **Key Features**: Inline icons with neon green backgrounds
+- **Technical Specifications**: Tabbed interface
+- **Product Models**: Filterable grid with search
+- **Applications**: Industry-specific use cases
+- **FAQ**: Expandable categories with detailed answers
 
 ## 📊 Generated Output
 
@@ -139,14 +162,21 @@ Individual Bearing Pages:
 - ✅ Industry-specific applications
 - ✅ Witty brand personality descriptions
 
+### UI/UX Features
+- ✅ Modern minimalist design
+- ✅ Responsive mobile-first layout
+- ✅ Interactive components
+- ✅ Professional typography
+- ✅ Consistent brand colors
+
 ## 🛠️ Development
 
 ### Setup Development Environment
 
 ```bash
 # Clone and install
-git clone <repository>
-cd rhd-bearings-catalog
+git clone https://github.com/rikin2344/rhd-geo.git
+cd rhd-geo
 pip install -e ".[dev]"
 
 # Run tests
@@ -208,6 +238,7 @@ python -m rhd_bearings.cli generate --output custom/
 - **Complete specifications** for all models
 - **Technical drawings** included
 - **SEO ready** for immediate deployment
+- **Demo website** with modern UI/UX
 
 ## 📄 License
 
