@@ -22,14 +22,35 @@ def create_working_page(page_type='miniature'):
             output_file = f'{output_dir}/index.html'
             backup_file = f'{output_dir}/backup.html'
             page_title = 'Miniature Ball Bearings | RHD Bearings'
-            clean_url = 'https://rhdbearings.com/miniature-series/'
+            clean_url = 'https://rhdbearings.com/specs/miniature-series/'
         elif page_type == '6000':
             page_dir = '../webpages/6000SeriesWebPage'
             output_dir = '6000-series'
             output_file = f'{output_dir}/index.html'
             backup_file = f'{output_dir}/backup.html'
             page_title = '6000 Series Ball Bearings | RHD Bearings'
-            clean_url = 'https://rhdbearings.com/6000-series/'
+            clean_url = 'https://rhdbearings.com/specs/6000-series/'
+        elif page_type == '6200':
+            page_dir = '../webpages/6200SeriesWebPage'
+            output_dir = '6200-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = '6200 Series Heavy Duty Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/specs/6200-series/'
+        elif page_type == '6300':
+            page_dir = '../webpages/6300SeriesWebPage'
+            output_dir = '6300-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = '6300 Series Maximum Load Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/specs/6300-series/'
+        elif page_type == 'specs':
+            page_dir = '../webpages/SpecsHubPage'
+            output_dir = 'specs'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = 'Bearing Specifications & Technical Data | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/specs/'
         else:
             raise ValueError(f"Unknown page type: {page_type}")
 
@@ -182,8 +203,8 @@ def print_final_instructions(files, clean_url, page_type='miniature'):
 def main():
     """Main execution"""
     parser = argparse.ArgumentParser(description='Create a standalone HTML page')
-    parser.add_argument('--page', choices=['miniature', '6000'], default='miniature',
-                      help='Which page to generate (miniature or 6000)')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', 'specs'], default='miniature',
+                      help='Which page to generate (miniature, 6000, 6200, 6300, or specs)')
     args = parser.parse_args()
     
     files, clean_url = create_working_page(args.page)

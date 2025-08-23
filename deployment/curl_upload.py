@@ -17,21 +17,43 @@ def curl_upload(page_type='miniature'):
     password = os.getenv('FTP_PASSWORD')
     host = os.getenv('FTP_HOST', 'ftp.rhdbearings.com')
     
+    # Check if password is available
+    if not password:
+        print("❌ FTP_PASSWORD environment variable not found!")
+        print("💡 Make sure you have a .env file with FTP_PASSWORD=your_password")
+        return False
+    
+
     if page_type == 'miniature':
         local_file = './miniature-series/index.html'
-        remote_file = 'miniature-series.html'
-        clean_url = 'https://rhdbearings.com/miniature-series.html'
+        remote_file = 'specs/miniature-series.html'
+        clean_url = 'https://rhdbearings.com/specs/miniature-series.html'
     elif page_type == '6000':
         local_file = './6000-series/index.html'
-        remote_file = '6000-series.html'
-        clean_url = 'https://rhdbearings.com/6000-series.html'
+        remote_file = 'specs/6000-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6000-series.html'
+    elif page_type == '6200':
+        local_file = './6200-series/index.html'
+        remote_file = 'specs/6200-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6200-series.html'
+    elif page_type == '6300':
+        local_file = './6300-series/index.html'
+        remote_file = 'specs/6300-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6300-series.html'
+    elif page_type == 'specs':
+        local_file = './specs/index.html'
+        remote_file = 'specs.html'
+        clean_url = 'https://rhdbearings.com/specs.html'
+    else:
+        raise ValueError(f"Unknown page type: {page_type}")
     
     print(f"🚀 Uploading {page_type.upper()} series via curl...")
     
     try:
-        # Build curl command
+        # Build curl command with directory creation
         cmd = [
             'curl',
+            '--ftp-create-dirs',
             '-T', local_file,
             '-u', f"{username}:{password}",
             f"ftp://{host}/public_html/{remote_file}"
@@ -57,13 +79,50 @@ def curl_upload(page_type='miniature'):
 
 def main():
     parser = argparse.ArgumentParser(description='Upload bearing page via curl')
-    parser.add_argument('--page', choices=['miniature', '6000'], default='miniature',
-                       help='Which page to upload (miniature or 6000)')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', 'specs'], 
+                       help='Which page to upload (miniature, 6000, 6200, 6300, or specs). If not specified, uploads all pages.')
     args = parser.parse_args()
     
-    success = curl_upload(args.page)
-    if not success:
-        exit(1)
+    if args.page:
+        # Upload single page
+        success = curl_upload(args.page)
+        if not success:
+            exit(1)
+    else:
+        # Upload all pages
+        all_pages = ['miniature', '6000', '6200', '6300', 'specs']
+        print("🚀 No specific page specified. Uploading ALL pages...")
+        print("=" * 60)
+        
+        failed_uploads = []
+        successful_uploads = []
+        
+        for page in all_pages:
+            print(f"\n📦 Processing {page.upper()}...")
+            success = curl_upload(page)
+            if success:
+                successful_uploads.append(page)
+            else:
+                failed_uploads.append(page)
+        
+        print("\n" + "=" * 60)
+        print("📊 UPLOAD SUMMARY")
+        print("=" * 60)
+        
+        if successful_uploads:
+            print(f"✅ Successful uploads ({len(successful_uploads)}):")
+            for page in successful_uploads:
+                print(f"   • {page.upper()}")
+        
+        if failed_uploads:
+            print(f"\n❌ Failed uploads ({len(failed_uploads)}):")
+            for page in failed_uploads:
+                print(f"   • {page.upper()}")
+            print(f"\n⚠️  {len(failed_uploads)} page(s) failed to upload!")
+            exit(1)
+        else:
+            print(f"\n🎉 All {len(successful_uploads)} pages uploaded successfully!")
+            print("✅ Your website is fully updated!")
 
 if __name__ == "__main__":
     main()
