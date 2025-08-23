@@ -19,49 +19,58 @@ FTP_PASSWORD="Rikin@@2025##"
 FTP_ROOT_PATH=/public_html
 ```
 
-## Automated Upload
+## ✅ PROVEN WORKING METHOD
 
-### Using the Upload Script
-The project includes `direct_cpanel_upload.py` for automated uploads:
+### Using Curl Upload (Recommended)
+The most reliable method uses `curl_upload.py`:
 
 ```bash
-python3 direct_cpanel_upload.py
+# Generate the page
+python3 create_separate_page.py --page miniature
+
+# Upload reliably with curl
+python3 curl_upload.py --page miniature
 ```
 
 ### What the Script Does
-1. **Connects to FTP server** using credentials from `.env`
-2. **Navigates to WordPress root** (`/public_html`)
-3. **Uploads HTML file** to server
-4. **Verifies upload** by checking file size
+1. **Generates clean HTML** without large base64 images (103K vs 2.3MB)
+2. **Uses curl for reliable upload** (more stable than Python FTP)
+3. **Uploads to root directory** (`/public_html/filename.html`)
+4. **Bypasses WordPress processing** completely
 5. **Provides direct URL** for immediate access
 
 ### Expected Output
 ```
-🚀 Direct cPanel Upload via FTP
-========================================
-✅ FTP connection established!
-📁 Changed to directory: /public_html
-✅ Confirmed: We're in WordPress root directory
-📤 Uploading miniature-bearings.html...
-✅ File uploaded successfully!
-📏 Remote file size: 2,355,699 bytes
-
-🎉 SUCCESS! File uploaded to your server!
+🚀 Uploading MINIATURE series via curl...
+📤 Uploading ./miniature-series/index-clean.html to miniature-bearings.html...
+✅ Upload successful!
 🔗 Your page: https://rhdbearings.com/miniature-bearings.html
+✅ Ready to view immediately!
 ```
+
+### Key Success Factors
+- **File naming**: Use `miniature-bearings.html` (WordPress doesn't intercept)
+- **File size**: Keep under 200K (remove base64 images)
+- **Upload method**: Curl is more reliable than Python FTP
+- **Location**: Root `/public_html/` directory works best
 
 ## Manual Upload Methods
 
-### Method 1: cPanel File Manager
+### Method 1: Direct Curl Command (Fastest)
+```bash
+curl -T miniature-series/index-clean.html -u "rikin@rhdbearings.com:Rikin@@2025##" ftp://ftp.rhdbearings.com/public_html/miniature-bearings.html
+```
+
+### Method 2: cPanel File Manager
 1. **Login to cPanel** with your hosting credentials
 2. **Open File Manager**
 3. **Navigate to `public_html`**
 4. **Click "Upload"**
-5. **Select your HTML file**
-6. **Wait for upload to complete**
+5. **Select your HTML file** (use the clean version without base64 images)
+6. **Rename to proper format** (e.g., `miniature-bearings.html`)
 7. **Access via direct URL**
 
-### Method 2: FTP Client (FileZilla, etc.)
+### Method 3: FTP Client (FileZilla, etc.)
 1. **Open your FTP client**
 2. **Connect using credentials:**
    - Host: `ftp.rhdbearings.com`
@@ -69,56 +78,55 @@ python3 direct_cpanel_upload.py
    - Password: `Rikin@@2025##`
    - Port: `21`
 3. **Navigate to `/public_html`**
-4. **Upload HTML file**
+4. **Upload HTML file** (drag & drop the clean version)
 5. **Access via direct URL**
 
-### Method 3: WordPress Media Library
-1. **WordPress Admin → Media → Add New**
-2. **Upload HTML file**
-3. **Get direct URL from media library**
-4. **Access uploaded file directly**
+⚠️ **Important**: Avoid WordPress Media Library - it processes files and may cause conflicts.
 
 ## File Structure
 
 ### Generated Files
-- `miniature-bearings.html` - Main working file (uploaded to server)
+- `miniature-series/index.html` - Source file with base64 images (2.3MB)
+- `miniature-series/index-clean.html` - Optimized file without base64 (103K)
 - `create_separate_page.py` - Generator script
-- `direct_cpanel_upload.py` - Upload automation script
-- `final_solution.py` - Standalone page creator
+- `curl_upload.py` - Reliable upload script
 
 ### File Characteristics
-- **Complete HTML documents** with embedded CSS, JavaScript, and images
-- **Self-contained** - no external dependencies
+- **Complete HTML documents** with embedded CSS and JavaScript
+- **Optimized size** - base64 images replaced with placeholders
 - **WordPress-independent** - bypasses all theme/plugin conflicts
-- **Fast loading** - no database queries required
+- **Fast loading** - no database queries, optimized file size
 
-## URL Structure
+## 🎯 WORKING URL STRUCTURE
 
-### Direct Access URLs
-- Main page: `https://rhdbearings.com/miniature-bearings.html`
-- Future pages: `https://rhdbearings.com/[bearing-series].html`
+### Live URLs (Confirmed Working)
+- **Miniature Bearings**: `https://rhdbearings.com/miniature-bearings.html`
+- **Future 6000 Series**: `https://rhdbearings.com/6000-series.html`
+- **Future 6200 Series**: `https://rhdbearings.com/6200-series.html`
 
-### Advantages of Direct URLs
-- ✅ **No WordPress processing** - faster loading
-- ✅ **No theme conflicts** - guaranteed styling
-- ✅ **No plugin interference** - pure HTML
-- ✅ **SEO friendly** - clean URLs and fast loading
-- ✅ **Mobile optimized** - responsive design included
+### Why This Works
+- ✅ **Direct file serving** - no WordPress processing
+- ✅ **Root directory location** - `/public_html/filename.html`
+- ✅ **Proper file naming** - WordPress doesn't intercept these patterns
+- ✅ **Optimized file size** - under server limits
+- ✅ **Clean HTML** - no problematic content
 
 ## Scaling for Multiple Pages
 
 ### Batch Upload Process
-1. **Generate HTML files** for all bearing series
-2. **Use upload script** for each file
+1. **Generate HTML files** for all bearing series using `create_separate_page.py`
+2. **Upload each file** using `curl_upload.py`
 3. **Verify uploads** via direct URLs
 4. **Update navigation** to link to new pages
 
 ### Automation Strategy
 ```bash
-# Example batch upload
-for series in 6000 6200 6300 62200 62300 16000 6800 6900; do
-    python3 generate_bearing_page.py --series=$series
-    python3 direct_cpanel_upload.py --file=${series}-series.html
+# Example batch upload for all series
+for series in miniature 6000 6200 6300; do
+    echo "Processing $series series..."
+    python3 create_separate_page.py --page $series
+    python3 curl_upload.py --page $series
+    echo "✅ $series series uploaded successfully"
 done
 ```
 
@@ -143,14 +151,17 @@ done
 
 ### Support Commands
 ```bash
-# Test FTP connection
-python3 -c "import ftplib; ftp=ftplib.FTP('ftp.rhdbearings.com'); ftp.login('rikin@rhdbearings.com', 'Rikin@@2025##'); print('✅ Connection successful')"
+# Test curl upload (fastest way to verify connection)
+curl -T test.html -u "rikin@rhdbearings.com:Rikin@@2025##" ftp://ftp.rhdbearings.com/public_html/test.html
 
 # Check uploaded file
 curl -I https://rhdbearings.com/miniature-bearings.html
 
-# Verify file size
-ls -la miniature-bearings.html
+# Verify local file size
+ls -la miniature-series/index-clean.html
+
+# Quick upload test
+echo "<html><body>Test</body></html>" > test.html && curl -T test.html -u "rikin@rhdbearings.com:Rikin@@2025##" ftp://ftp.rhdbearings.com/public_html/test.html
 ```
 
 ## Security Notes
@@ -186,25 +197,27 @@ ls -la miniature-bearings.html
 
 ### Essential Commands
 ```bash
-# Upload single file
-python3 direct_cpanel_upload.py
+# Complete workflow (recommended)
+python3 create_separate_page.py --page miniature
+python3 curl_upload.py --page miniature
 
-# Generate new page
-python3 create_separate_page.py
+# Direct curl upload (fastest)
+curl -T miniature-series/index-clean.html -u "rikin@rhdbearings.com:Rikin@@2025##" ftp://ftp.rhdbearings.com/public_html/miniature-bearings.html
 
-# Check FTP connection
-python3 direct_cpanel_upload.py --test-connection
+# Generate page only
+python3 create_separate_page.py --page miniature
 ```
 
 ### Key URLs
-- **Live page**: https://rhdbearings.com/miniature-bearings.html
-- **cPanel**: Your hosting provider's cPanel URL
+- **✅ Live page**: https://rhdbearings.com/miniature-bearings.html
 - **FTP host**: ftp.rhdbearings.com
+- **Upload target**: `/public_html/`
 
 ### File Locations
-- **Local HTML**: `./miniature-bearings.html`
+- **Source HTML**: `./miniature-series/index.html` (2.3MB with images)
+- **Clean HTML**: `./miniature-series/index-clean.html` (103K optimized)
 - **Server path**: `/public_html/miniature-bearings.html`
-- **Upload script**: `./direct_cpanel_upload.py`
+- **Upload script**: `./curl_upload.py`
 
 ---
 

@@ -6,39 +6,70 @@ Upload a standalone HTML file that works independently
 
 import os
 import base64
+import argparse
 
-def create_working_page():
+def create_working_page(page_type='miniature'):
     """Create a working page that bypasses WordPress"""
     
-    print("🎯 CREATING GUARANTEED WORKING SOLUTION")
+    print(f"🎯 CREATING GUARANTEED WORKING SOLUTION FOR {page_type.upper()}")
     print("=" * 50)
     
     try:
+        # Set paths based on page type
+        if page_type == 'miniature':
+            page_dir = '../webpages/MiniatureBearingsWebPage'
+            output_dir = 'miniature-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = 'Miniature Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/miniature-series/'
+        elif page_type == '6000':
+            page_dir = '../webpages/6000SeriesWebPage'
+            output_dir = '6000-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = '6000 Series Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/6000-series/'
+        else:
+            raise ValueError(f"Unknown page type: {page_type}")
+
         # Read files
-        with open('../webpages/MiniatureBearingsWebPage/index.html', 'r', encoding='utf-8') as f:
+        with open(f'{page_dir}/index.html', 'r', encoding='utf-8') as f:
             html_content = f.read()
-        with open('../webpages/MiniatureBearingsWebPage/styles.css', 'r', encoding='utf-8') as f:
+        with open(f'{page_dir}/styles.css', 'r', encoding='utf-8') as f:
             css_content = f.read()
+        with open('../webpages/shared/navbar.css', 'r', encoding='utf-8') as f:
+            navbar_css = f.read()
         
-        # Read image
-        image_base64 = ""
-        if os.path.exists('../webpages/MiniatureBearingsWebPage/DGBB.png'):
-            with open('../webpages/MiniatureBearingsWebPage/DGBB.png', 'rb') as f:
-                image_data = f.read()
-                image_base64 = base64.b64encode(image_data).decode()
-        
+        # Read navbar HTML
+        with open('../webpages/shared/navbar.html', 'r', encoding='utf-8') as f:
+            navbar_html = f.read()
+            # Remove the script tag from navbar as we'll add it later
+            script_start = navbar_html.find('<script>')
+            if script_start != -1:
+                navbar_html = navbar_html[:script_start].strip()
+
         # Extract content
-        body_start = html_content.find('<body>') + len('<body>')
+        body_start = html_content.find('<body') + html_content[html_content.find('<body'):].find('>') + 1
         body_end = html_content.find('</body>')
         body_content = html_content[body_start:body_end].strip()
         
-        script_start = html_content.find('<script>')
-        script_end = html_content.find('</script>') + len('</script>')
-        javascript_content = html_content[script_start:script_end] if script_start != -1 else ""
+        # Find all script tags
+        script_content = ""
+        current_pos = 0
+        while True:
+            script_start = html_content.find('<script>', current_pos)
+            if script_start == -1:
+                break
+            script_end = html_content.find('</script>', script_start) + len('</script>')
+            script_content += html_content[script_start:script_end] + "\n"
+            current_pos = script_end
         
-        # Replace image
-        if image_base64:
-            body_content = body_content.replace('src="DGBB.png"', f'src="data:image/png;base64,{image_base64}"')
+        # Replace image with remote URL
+        body_content = body_content.replace('src="DGBB.png"', 'src="https://rhdbearings.com/wp-content/uploads/2025/08/DGBB.png"')
+        
+        # Replace navbar container with actual navbar HTML
+        body_content = body_content.replace('<div id="navbar-container"></div>', navbar_html)
         
         # Create bulletproof HTML
         working_html = f'''<!DOCTYPE html>
@@ -46,7 +77,7 @@ def create_working_page():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniature Ball Bearings | RHD Bearings</title>
+    <title>{page_title}</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset everything */
@@ -63,27 +94,31 @@ body {{
     background: #F8F9FA;
 }}
 
-/* Our complete CSS */
+/* Navbar CSS */
+{navbar_css}
+
+/* Page CSS */
 {css_content}
     </style>
 </head>
 <body>
 {body_content}
-{javascript_content}
+{script_content}
 </body>
 </html>'''
         
         # Save files
         files_created = []
         
+        # Create output directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+        
         # Create main file
-        main_file = 'miniature-bearings.html'
-        with open(main_file, 'w', encoding='utf-8') as f:
+        with open(output_file, 'w', encoding='utf-8') as f:
             f.write(working_html)
-        files_created.append(main_file)
+        files_created.append(output_file)
         
         # Create backup with different name
-        backup_file = 'rhd-miniature-bearings.html'
         with open(backup_file, 'w', encoding='utf-8') as f:
             f.write(working_html)
         files_created.append(backup_file)
@@ -93,13 +128,13 @@ body {{
             size = os.path.getsize(file)
             print(f"   📄 {file} ({size:,} bytes)")
         
-        return files_created
+        return files_created, clean_url
         
     except Exception as e:
         print(f"❌ Error: {e}")
-        return []
+        return [], ""
 
-def print_final_instructions(files):
+def print_final_instructions(files, clean_url, page_type='miniature'):
     """Print the final, guaranteed instructions"""
     
     print("\n" + "=" * 60)
@@ -113,21 +148,23 @@ def print_final_instructions(files):
     print("\n🎯 UPLOAD INSTRUCTIONS (Choose ONE):")
     print("-" * 40)
     
+    directory_name = '6000-series' if page_type == '6000' else 'miniature-series'
+    
     print("\n1️⃣ cPanel File Manager:")
     print("   • Login to cPanel → File Manager")
     print("   • Go to public_html")
-    print("   • Upload miniature-bearings.html")
-    print("   • Visit: https://rhdbearings.com/miniature-bearings.html")
+    print(f"   • Upload entire {directory_name}/ directory")
+    print(f"   • Visit: {clean_url}")
     
     print("\n2️⃣ FTP Upload:")
     print("   • Use any FTP client (FileZilla, etc.)")
-    print("   • Upload to your website root")
-    print("   • Visit: https://rhdbearings.com/miniature-bearings.html")
+    print(f"   • Upload {directory_name}/ directory to website root")
+    print(f"   • Visit: {clean_url}")
     
-    print("\n3️⃣ WordPress Media Library:")
-    print("   • WordPress Admin → Media → Add New")
-    print("   • Upload the HTML file")
-    print("   • Get the direct URL and visit it")
+    print("\n3️⃣ Automated FTP Upload:")
+    print("   • Run: python direct_cpanel_upload.py")
+    print(f"   • Automatically creates {directory_name}/ directory")
+    print(f"   • Visit: {clean_url}")
     
     print("\n" + "=" * 60)
     print("🎯 WHY THIS WILL WORK:")
@@ -138,15 +175,21 @@ def print_final_instructions(files):
     print("✅ All CSS/JS/images embedded")
     print("=" * 60)
     
-    print(f"\n🔗 FINAL URL: https://rhdbearings.com/miniature-bearings.html")
+    print(f"\n🔗 FINAL URL: {clean_url}")
     print("📞 If you need help uploading, I can guide you step-by-step!")
+    print(f"✨ CLEAN URL: No .html extension needed!")
 
 def main():
     """Main execution"""
-    files = create_working_page()
+    parser = argparse.ArgumentParser(description='Create a standalone HTML page')
+    parser.add_argument('--page', choices=['miniature', '6000'], default='miniature',
+                      help='Which page to generate (miniature or 6000)')
+    args = parser.parse_args()
+    
+    files, clean_url = create_working_page(args.page)
     
     if files:
-        print_final_instructions(files)
+        print_final_instructions(files, clean_url, args.page)
         print(f"\n🎉 SUCCESS! {len(files)} working files created!")
         print("📁 These files are guaranteed to work when uploaded!")
     else:

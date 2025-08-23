@@ -1,0 +1,2487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6000 Series Ball Bearings | RHD Bearings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+/* Reset everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background: #F8F9FA;
+}
+
+/* Navbar CSS */
+/* ================================
+   RHD BEARINGS NAVIGATION HEADER
+   ================================ */
+
+:root {
+    --nav-height: 85px;
+    --nav-padding: 24px;
+    --menu-gap: 50px;
+    --menu-font: "Bai Jamjuree", sans-serif;
+    --menu-color: #212121;
+    --menu-hover-color: #000000;
+    --ui-radius: 16px;
+    --ui-radius-sm: 8px;
+}
+
+/* Wrapper */
+#wrapper-navbar {
+    margin: 10px auto;
+    max-width: calc(1200px + 20px);
+    padding: 0 10px;
+}
+
+/* Header Wrapper */
+.uicore-header-wrapper {
+    margin-top: 35px;
+    background: #EBEBEB;
+    box-shadow: 0 0 0 1px #D1D1D1;
+    position: relative;
+    border-radius: 22px;
+    height: var(--nav-height, 100%);
+    overflow: visible;
+}
+
+/* Container */
+.uicore.uicore-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--nav-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Logo */
+.uicore-branding {
+    height: 100%;
+    padding: 10px 0;
+}
+
+.uicore-branding a {
+    height: 100%;
+    display: block;
+}
+
+.uicore-logo {
+    height: 100%;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.uicore-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Menu */
+.uicore-nav-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--menu-gap);
+}
+
+.uicore-menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.uicore-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--menu-gap);
+}
+
+/* Menu Items */
+.menu-item {
+    color: var(--menu-color);
+    font-family: var(--menu-font);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Flip Animation */
+.ui-flip-anim-wrapp {
+    position: relative;
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.ui-flip-anim-wrapp span {
+    display: block;
+    position: relative;
+    padding: 0;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+}
+
+.ui-flip-anim-wrapp span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(-90deg);
+}
+
+.menu-item:hover .ui-flip-anim-wrapp span:first-child {
+    transform: rotateX(90deg);
+}
+
+.menu-item:hover .ui-flip-anim-wrapp span:nth-child(2) {
+    transform: rotateX(0deg);
+}
+
+/* Submenu */
+.has-submenu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: var(--ui-radius-sm);
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.has-submenu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.sub-menu a:hover {
+    color: var(--menu-hover-color);
+    background: rgba(0,0,0,0.05);
+}
+
+/* Contact Button */
+.uicore-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-family: var(--menu-font);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.uicore-btn.uicore-inverted {
+    color: var(--menu-color);
+    border: 1px solid var(--menu-color);
+}
+
+.uicore-btn.uicore-inverted:hover {
+    background: var(--menu-color);
+    color: #ffffff;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .uicore-nav-menu,
+    .uicore-extra {
+        display: none;
+    }
+
+    .uicore-mobile-menu {
+        display: block;
+    }
+}
+
+/* Page CSS */
+/* ================================
+   CSS VARIABLES & BASE STYLES
+   ================================ */
+
+:root {
+    /* Color System */
+    --bg-primary: #F8F9FA;
+    --surface-primary: #FFFFFF;
+    --text-primary: #000000;
+    --text-secondary: #4A5568;
+    --accent-neon: rgb(210, 255, 55);
+    --border-subtle: #E2E8F0;
+    --glass-overlay: rgba(255,255,255,0.1);
+    
+    /* Typography Scale */
+    --font-family: 'Bai Jamjuree', sans-serif;
+    --text-branding: clamp(48px, 8vw, 72px);
+    --text-hero: clamp(36px, 6vw, 56px);
+    --text-section: clamp(28px, 4vw, 42px);
+    --text-subsection: clamp(20px, 3vw, 28px);
+    --text-body-large: 18px;
+    --text-body: 16px;
+    --text-body-small: 14px;
+    --text-technical: 15px;
+    
+    /* Spacing System (8px base) */
+    --space-micro-1: 8px;
+    --space-micro-2: 16px;
+    --space-component-1: 24px;
+    --space-component-2: 32px;
+    --space-section-1: 48px;
+    --space-section-2: 64px;
+    --space-page-1: 80px;
+    --space-page-2: 120px;
+    
+    /* Elevation System */
+    --elevation-1: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.12);
+    --elevation-2: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.12);
+    --elevation-3: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.12);
+    --elevation-4: 0 20px 25px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+    
+    /* Animation */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    --transition-smooth: 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.hero {
+    padding: 60px 0 80px 0;
+    position: relative;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 32px;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 500px;
+}
+
+.hero-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 500px;
+}
+
+.hero-title {
+    font-size: clamp(42px, 6vw, 64px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.hero-subtitle {
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: var(--text-secondary);
+    font-weight: 400;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.hero-specs {
+    margin-bottom: 40px;
+}
+
+.specs-compact {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    background: var(--accent-neon);
+    padding: 20px 32px;
+    border-radius: 16px;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.spec-item {
+    text-align: center;
+    color: #000000;
+}
+
+.spec-value {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.spec-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.sidebar-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.features-vertical {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    flex: 1;
+    align-content: center;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: var(--surface-primary);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    transition: all var(--transition-fast);
+    box-shadow: var(--elevation-1);
+    max-height: 96px;
+}
+
+.feature-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--elevation-2);
+    border-color: var(--accent-neon);
+}
+
+.feature-icon {
+    width: 20px;
+    height: 20px;
+    background: var(--accent-neon);
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 0;
+}
+
+.feature-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: #000000;
+    fill: none;
+    stroke-width: 3;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-title {
+    font-size: 12px;
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.feature-description {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.btn {
+    padding: var(--space-micro-2) var(--space-component-2);
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: var(--text-body);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    display: inline-block;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: var(--text-primary);
+    color: var(--surface-primary);
+    box-shadow: var(--elevation-1);
+}
+
+.btn-primary:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: #000000;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: var(--elevation-1);
+}
+
+.btn-secondary:hover {
+    background: #333333;
+    border-color: #333333;
+    box-shadow: var(--elevation-2);
+}
+
+/* ================================
+   SECTION STYLING
+   ================================ */
+
+.section {
+    padding: var(--space-page-1) 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-section-2);
+}
+
+.section-title {
+    font-size: var(--text-section);
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: var(--space-micro-2);
+}
+
+.section-subtitle {
+    font-size: var(--text-body-large);
+    color: var(--text-secondary);
+}
+
+/* ================================
+   RHD PERFORMANCE GRADES
+   ================================ */
+
+.performance-grades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-component-2);
+    margin-bottom: var(--space-section-1);
+}
+
+.grade-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-2);
+    border-radius: 16px;
+    box-shadow: var(--elevation-1);
+    transition: all var(--transition-fast);
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.grade-card:hover {
+    box-shadow: var(--elevation-3);
+    transform: translateY(-4px);
+}
+
+.grade-card.grade-featured {
+    border-color: var(--accent-neon);
+    background: linear-gradient(135deg, rgba(210, 255, 55, 0.05) 0%, var(--surface-primary) 100%);
+}
+
+.grade-badge {
+    position: absolute;
+    top: -8px;
+    right: 16px;
+    background: var(--accent-neon);
+    color: #000000;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.grade-header {
+    text-align: center;
+    margin-bottom: var(--space-component-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grade-rpm {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 4px rgba(210,255,54);
+}
+
+.grade-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.grade-subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+.grade-description {
+    margin-bottom: var(--space-component-1);
+}
+
+.grade-description p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.grade-applications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.application-tag {
+    background: rgba(0,0,0,0.05);
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.application-tag.featured {
+    background: var(--accent-neon);
+    color: #000000;
+    border-color: var(--accent-neon);
+    font-weight: 600;
+}
+
+.power-tool-focus {
+    background: var(--surface-primary);
+    padding: var(--space-section-1);
+    border-radius: 16px;
+    box-shadow: var(--elevation-1);
+    border-left: 4px solid var(--accent-neon);
+    margin-top: var(--space-component-2);
+}
+
+.power-tool-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-micro-2);
+    text-align: center;
+}
+
+.power-tool-description {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+/* ================================
+   TECHNICAL SPECIFICATIONS
+   ================================ */
+
+.specs-container {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+    overflow: hidden;
+}
+
+.specs-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-subtle);
+    overflow-x: auto;
+}
+
+.specs-tab {
+    width: 25%;
+    padding: var(--space-micro-2) 20px;
+    background: none;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: var(--text-body);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+}
+
+.specs-tab.active {
+    border-bottom-color: var(--accent-neon);
+    background: rgba(0, 255, 136, 0.05);
+}
+
+.specs-content {
+    padding: 40px;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table th,
+.specs-table td {
+    text-align: left;
+    padding: var(--space-micro-2);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.specs-table th {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.specs-table td {
+    color: var(--text-secondary);
+}
+
+.specs-table tr:nth-child(even) {
+    background: rgba(248, 249, 250, 0.5);
+}
+
+/* ================================
+   PRODUCT MODELS
+   ================================ */
+
+.models-filters {
+    display: flex;
+    gap: var(--space-micro-2);
+    margin-bottom: var(--space-component-2);
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    padding: var(--space-micro-2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    background: var(--surface-primary);
+    font-family: var(--font-family);
+    min-width: 120px;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--accent-neon);
+    box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+}
+
+.search-input {
+    flex: 1;
+    padding: var(--space-micro-2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    font-family: var(--font-family);
+    min-width: 200px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--accent-neon);
+    box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-component-1);
+}
+
+.model-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-1);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+    transition: all var(--transition-fast);
+}
+
+.model-card:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-2px);
+}
+
+.model-badge {
+    background: var(--accent-neon);
+    color: #000000;
+    padding: 8px var(--space-micro-2);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: var(--text-body);
+    display: inline-block;
+    margin-bottom: var(--space-micro-2);
+}
+
+.model-specs {
+    margin: var(--space-micro-2) 0;
+}
+
+.model-spec {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    font-size: var(--text-body-small);
+}
+
+.model-spec-label {
+    color: var(--text-secondary);
+}
+
+.model-spec-value {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ================================
+   APPLICATIONS
+   ================================ */
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-1);
+}
+
+.application-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-2);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+}
+
+.application-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-micro-2);
+    margin-bottom: var(--space-component-1);
+}
+
+.application-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--accent-neon);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--surface-primary);
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.application-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.application-list {
+    list-style: none;
+    margin-bottom: var(--space-component-1);
+    font-size: 14px;
+}
+
+.application-list li {
+    padding: 2px 0;
+    padding-left: var(--space-micro-2);
+    position: relative;
+    line-height: 1.4;
+}
+
+.application-list li::before {
+    content: '•';
+    color: #000000;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.application-requirements {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* ================================
+   FAQ SECTION
+   ================================ */
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-category {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    margin-bottom: var(--space-component-1);
+    box-shadow: var(--elevation-1);
+    overflow: hidden;
+}
+
+.faq-category-header {
+    padding: var(--space-component-1) var(--space-component-1);
+    background: var(--surface-primary);
+    border-left: 2px solid var(--accent-neon);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all var(--transition-fast);
+}
+
+.faq-category-header:hover {
+    background: rgba(0, 255, 136, 0.02);
+}
+
+.faq-chevron {
+    transition: transform var(--transition-smooth);
+    font-size: 20px;
+    color: #000000;
+}
+
+.faq-category.active .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-questions {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-smooth);
+    counter-reset: faq-counter;
+}
+
+.faq-category.active .faq-questions {
+    max-height: 2000px;
+}
+
+.faq-question {
+    padding: var(--space-component-2);
+    border-top: 1px solid var(--border-subtle);
+    margin-bottom: var(--space-component-1);
+    background: rgba(248, 249, 250, 0.3);
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-neon);
+    position: relative;
+    counter-increment: faq-counter;
+}
+
+.faq-question::before {
+    content: "#" counter(faq-counter);
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.faq-question-title {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: var(--space-micro-2);
+    color: var(--text-primary);
+}
+
+.faq-direct-answer {
+    background: rgba(0, 255, 136, 0.1);
+    padding: var(--space-micro-2);
+    border-radius: 8px;
+    margin-bottom: var(--space-micro-2);
+    font-weight: 500;
+    border-left: 3px solid var(--accent-neon);
+}
+
+.faq-section {
+    margin-bottom: var(--space-component-1);
+    padding-top: var(--space-micro-2);
+}
+
+.faq-section-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    font-size: var(--text-body-small);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.faq-section-content {
+    color: var(--text-secondary);
+    font-size: var(--text-body-small);
+    line-height: 1.5;
+}
+
+.faq-pro-tip {
+    background: var(--surface-primary);
+    border: 1px solid var(--accent-neon);
+    padding: var(--space-micro-2);
+    border-radius: 8px;
+    margin-top: var(--space-component-1);
+    font-style: italic;
+    color: var(--text-primary);
+    box-shadow: var(--elevation-1);
+}
+
+.faq-pro-tip::before {
+    content: '💡 Pro Tip: ';
+    font-weight: 600;
+    color: #000000;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.footer {
+    background: var(--text-primary);
+    color: var(--surface-primary);
+    padding: var(--space-section-2) 0 var(--space-component-2) 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-component-2);
+    margin-bottom: var(--space-component-2);
+}
+
+.footer-section h3 {
+    font-weight: 600;
+    font-size: var(--text-body);
+    margin-bottom: var(--space-micro-2);
+}
+
+.footer-section a {
+    color: var(--surface-primary);
+    text-decoration: none;
+    font-size: var(--text-body-small);
+    display: block;
+    margin-bottom: 4px;
+    transition: color var(--transition-fast);
+}
+
+.footer-section a:hover {
+    color: var(--accent-neon);
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: var(--space-component-2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: var(--text-body-small);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        width: 95%;
+        min-height: auto;
+    }
+    
+    .hero-main {
+        justify-content: flex-start;
+    }
+    
+    .hero-sidebar {
+        order: -1;
+        height: auto;
+        padding: 24px;
+    }
+    
+    .features-vertical {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+    }
+    
+    .sidebar-title {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-micro-2);
+    }
+    
+    .hero {
+        padding: 40px 0 60px 0;
+    }
+    
+    .hero-container {
+        gap: 48px;
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .hero-title {
+        margin-bottom: 12px;
+        letter-spacing: -0.375px;
+    }
+    
+    .hero-subtitle {
+        margin-bottom: 24px;
+        font-size: 16px;
+    }
+    
+    .hero-description {
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    
+    .hero-specs {
+        margin-bottom: 24px;
+    }
+    
+    .specs-compact {
+        gap: 24px;
+        padding: 16px 24px;
+        flex-wrap: wrap;
+    }
+    
+    .spec-value {
+        font-size: 16px;
+    }
+    
+    .spec-label {
+        font-size: 11px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .hero-sidebar {
+        padding: 20px;
+        height: auto;
+    }
+    
+    .sidebar-title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .features-vertical {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .feature-item {
+        gap: 12px;
+    }
+    
+    .feature-title {
+        font-size: 14px;
+    }
+    
+    .feature-description {
+        font-size: 12px;
+    }
+    
+    .models-filters {
+        flex-direction: column;
+    }
+    
+    .filter-select,
+    .search-input {
+        width: 100%;
+    }
+    
+    .specs-tabs {
+        flex-direction: column;
+    }
+    
+    .specs-tab {
+        text-align: left;
+    }
+    
+    .specs-content {
+        padding: var(--space-component-1);
+    }
+    
+    .applications-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-micro-2);
+    }
+}
+
+@media (max-width: 480px) {
+    .specs-compact {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+    
+    .hero-subtitle {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .specs-compact {
+        gap: 16px;
+        padding: 12px 16px;
+    }
+}
+
+/* ================================
+   ACCESSIBILITY
+   ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus states for accessibility */
+button:focus,
+select:focus,
+input:focus,
+a:focus {
+    outline: 2px solid var(--accent-neon);
+    outline-offset: 2px;
+}
+
+    </style>
+</head>
+<body>
+<!-- Navigation Header -->
+    <!-- RHD Bearings Navigation Header -->
+<div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
+    <div class="uicore-header-wrapper">
+        <nav class="uicore uicore-container">
+            <!-- Logo -->
+            <div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
+                <a href="https://rhdbearings.com/">
+                    <img class="uicore-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="uicore-nav-menu">
+                <div class="uicore-menu-container">
+                    <div class="uicore-menu">
+                        <a href="https://rhdbearings.com/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Home</span>
+                                <span class="ui-menu-item-wrapper">Home</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/about-us/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">About Us</span>
+                                <span class="ui-menu-item-wrapper">About Us</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/products/" class="menu-item has-submenu ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Products</span>
+                                <span class="ui-menu-item-wrapper">Products</span>
+                            </div>
+                            <div class="sub-menu">
+                                <a href="https://rhdbearings.com/miniature-bearings.html" data-page="miniature">Miniature Bearings</a>
+                                <a href="https://rhdbearings.com/6000-series.html" data-page="6000">6000 Series</a>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/industries/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Industries</span>
+                                <span class="ui-menu-item-wrapper">Industries</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/bearing-size-chart/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/shop/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Shop</span>
+                                <span class="ui-menu-item-wrapper">Shop</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Button -->
+            <div class="uicore-extra">
+                <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <!-- Main Content (60%) -->
+                <div class="hero-main">
+                    <h1 class="hero-title">6000 Series Bearings</h1>
+                    <p class="hero-subtitle">
+                        The versatile backbone of modern industry
+                    </p>
+                    <p class="hero-description">
+                        The perfect balance of performance, economy, and reliability. These bearings are the backbone of modern industry, providing dependable service in countless applications from automotive systems to industrial machinery.
+                    </p>
+                    
+                    <div class="hero-specs">
+                        <div class="specs-compact">
+                            <div class="spec-item">
+                                <div class="spec-value">10-100mm</div>
+                                <div class="spec-label">Bore Range</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">30,000</div>
+                                <div class="spec-label">Max RPM</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">21</div>
+                                <div class="spec-label">Models</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">64.5kN</div>
+                                <div class="spec-label">Max Load</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#models" class="btn btn-primary">View All Models</a>
+                        <a href="#specifications" class="btn btn-secondary">Technical Specifications</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/08/DGBB.png" alt="Deep Groove Ball Bearing - RHD Bearings" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RHD Performance Grades -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">RHD PERFORMANCE GRADES</h2>
+                <p class="section-subtitle">Engineered for industrial excellence & multi-application solutions</p>
+            </div>
+            
+            <div class="performance-grades-grid">
+                <div class="grade-card">
+                    <div class="grade-header">
+                        <div class="grade-rpm">1,440 RPM</div>
+                        <h3 class="grade-title">RHD V2</h3>
+                        <div class="grade-subtitle">6000 Series Bearings</div>
+                    </div>
+                    <div class="grade-description">
+                        <p>Heavy-duty industrial workhorse for standard applications. Reliable performance across automotive, manufacturing, and general industrial equipment.</p>
+                    </div>
+                    <div class="grade-applications">
+                        <span class="application-tag">Industrial</span>
+                        <span class="application-tag">Automotive</span>
+                        <span class="application-tag">Manufacturing</span>
+                    </div>
+                </div>
+                
+                <div class="grade-card grade-featured">
+                    <div class="grade-badge">Most Popular</div>
+                    <div class="grade-header">
+                        <div class="grade-rpm">2,880 RPM</div>
+                        <h3 class="grade-title">RHD V3 Ultra</h3>
+                        <div class="grade-subtitle">6000 Series Bearings</div>
+                    </div>
+                    <div class="grade-description">
+                        <p>Premium industrial performance. Our bestselling grade engineered for medium-duty motors and high-performance industrial equipment.</p>
+                    </div>
+                    <div class="grade-applications">
+                        <span class="application-tag featured">Motors</span>
+                        <span class="application-tag">Industrial</span>
+                        <span class="application-tag">High-Performance</span>
+                    </div>
+                </div>
+                
+                <div class="grade-card grade-featured">
+                    <div class="grade-badge">Elite Performance</div>
+                    <div class="grade-header">
+                        <div class="grade-rpm">24,000 RPM</div>
+                        <h3 class="grade-title">RHD V4 Max</h3>
+                        <div class="grade-subtitle">6000 Series Bearings</div>
+                    </div>
+                    <div class="grade-description">
+                        <p>Maximum performance for demanding applications. Elite-grade bearings for high-speed motors and precision industrial equipment.</p>
+                    </div>
+                    <div class="grade-applications">
+                        <span class="application-tag featured">High-Speed Motors</span>
+                        <span class="application-tag">Elite</span>
+                        <span class="application-tag">Precision</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="power-tool-focus">
+                <h3 class="power-tool-title">Industrial Motor Excellence</h3>
+                <p class="power-tool-description">
+                    RHD's V3 Ultra and V4 Max 6000 series bearings are specifically engineered for the demanding industrial motor industry. 
+                    Our advanced manufacturing processes and precision-grade materials deliver exceptional performance in medium to high-speed, 
+                    moderate to heavy-load applications. From industrial pumps and compressors to precision machine tools, RHD bearings provide 
+                    the reliability and durability that equipment manufacturers trust. With our V3 and V4 grades representing 
+                    our primary offering in the industrial motor segment, we've invested heavily in optimizing these bearings 
+                    for maximum performance, extended service life, and consistent quality that meets the rigorous demands of 
+                    continuous industrial operations and critical manufacturing processes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Technical Specifications -->
+    <section class="section" id="specifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TECHNICAL SPECIFICATIONS</h2>
+                <p class="section-subtitle">Comprehensive engineering data for industrial applications</p>
+            </div>
+            
+            <div class="specs-container">
+                <div class="specs-tabs">
+                    <button class="specs-tab active" onclick="showSpecTab('quick')">Quick Specs</button>
+                    <button class="specs-tab" onclick="showSpecTab('precision')">Precision Grades</button>
+                    <button class="specs-tab" onclick="showSpecTab('materials')">Materials</button>
+                    <button class="specs-tab" onclick="showSpecTab('sealing')">Sealing Options</button>
+                </div>
+                
+                <div class="specs-content">
+                    <div id="quick-specs" class="specs-panel">
+                        <table class="specs-table">
+                            <thead>
+                                <tr>
+                                    <th>Specification</th>
+                                    <th>Range</th>
+                                    <th>Standard</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bore Diameter</td>
+                                    <td>10mm - 100mm</td>
+                                    <td>ISO 15:2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Outer Diameter</td>
+                                    <td>26mm - 150mm</td>
+                                    <td>ISO 15:2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Width</td>
+                                    <td>8mm - 24mm</td>
+                                    <td>ISO 15:2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Load Capacity</td>
+                                    <td>4.58kN - 64.5kN</td>
+                                    <td>ISO 281:2007</td>
+                                </tr>
+                                <tr>
+                                    <td>Speed Range</td>
+                                    <td>3,800 - 30,000 RPM</td>
+                                    <td>Oil lubrication</td>
+                                </tr>
+                                <tr>
+                                    <td>Temperature Range</td>
+                                    <td>-30°C to +120°C</td>
+                                    <td>Standard materials</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="precision-specs" class="specs-panel" style="display: none;">
+                        <table class="specs-table">
+                            <thead>
+                                <tr>
+                                    <th>Grade</th>
+                                    <th>Tolerance</th>
+                                    <th>Application</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>P0 (Standard)</td>
+                                    <td>±10μm</td>
+                                    <td>General industrial</td>
+                                </tr>
+                                <tr>
+                                    <td>P6 (Precision)</td>
+                                    <td>±5μm</td>
+                                    <td>Motor applications</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="materials-specs" class="specs-panel" style="display: none;">
+                        <table class="specs-table">
+                            <thead>
+                                <tr>
+                                    <th>Material</th>
+                                    <th>Properties</th>
+                                    <th>Applications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chrome Steel (Gcr15)</td>
+                                    <td>Standard durability</td>
+                                    <td>General industrial</td>
+                                </tr>
+                                <tr>
+                                    <td>Stainless Steel (optional)</td>
+                                    <td>Corrosion resistant</td>
+                                    <td>Harsh environments</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="sealing-specs" class="specs-panel" style="display: none;">
+                        <table class="specs-table">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Protection</th>
+                                    <th>Speed Impact</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Open</td>
+                                    <td>None</td>
+                                    <td>Maximum speed</td>
+                                </tr>
+                                <tr>
+                                    <td>Metal Shields (Z/ZZ)</td>
+                                    <td>Basic dust protection</td>
+                                    <td>95% of open speed</td>
+                                </tr>
+                                <tr>
+                                    <td>Rubber Seals (RS/2RS)</td>
+                                    <td>Dust and moisture</td>
+                                    <td>85% of open speed</td>
+                                </tr>
+                                <tr>
+                                    <td>Contact Seals</td>
+                                    <td>Maximum protection</td>
+                                    <td>80% of open speed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Models -->
+    <section class="section" id="models">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PRODUCT MODELS</h2>
+                <p class="section-subtitle">Complete range of 6000 series bearings for every application</p>
+            </div>
+            
+            <div class="models-filters">
+                <select class="filter-select" id="sizeFilter">
+                    <option value="">All Sizes</option>
+                    <option value="small">Small (10-30mm)</option>
+                    <option value="medium">Medium (35-60mm)</option>
+                    <option value="large">Large (65-100mm)</option>
+                </select>
+                
+                <select class="filter-select" id="loadFilter">
+                    <option value="">Load Capacity</option>
+                    <option value="light">Light (< 15kN)</option>
+                    <option value="medium">Medium (15-40kN)</option>
+                    <option value="heavy">Heavy (> 40kN)</option>
+                </select>
+                
+                <select class="filter-select" id="speedFilter">
+                    <option value="">Speed Range</option>
+                    <option value="low">Low (< 10k RPM)</option>
+                    <option value="medium">Medium (10-20k RPM)</option>
+                    <option value="high">High (> 20k RPM)</option>
+                </select>
+                
+                <input type="text" class="search-input" placeholder="Search model number..." id="searchInput">
+            </div>
+            
+            <div class="models-grid" id="modelsGrid">
+                <!-- Models will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">APPLICATIONS</h2>
+                <p class="section-subtitle">Versatile performance across industries</p>
+            </div>
+            
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Car body main -->
+                                <path d="M4 20h24c0-1 0-2-1-3l-3-5H8l-3 5c-1 1-1 2-1 3z" fill="#2563EB" stroke="#000" stroke-width="0.8"/>
+                                <!-- Hood and trunk -->
+                                <path d="M6 20h20v3H6v-3z" fill="#1D4ED8" stroke="#000" stroke-width="0.8"/>
+                                <!-- Windshield and windows -->
+                                <path d="M8 12h16l-2 8H10l-2-8z" fill="#374151" stroke="#000" stroke-width="0.5"/>
+                                <path d="M9 13h14l-1.5 6H10.5l-1.5-6z" fill="#1F2937"/>
+                                <!-- Grille -->
+                                <rect x="4" y="18" width="2" height="3" fill="#374151"/>
+                                <rect x="26" y="18" width="2" height="3" fill="#374151"/>
+                                <!-- Headlights -->
+                                <ellipse cx="5" cy="17" rx="1" ry="1.5" fill="#F9FAFB"/>
+                                <ellipse cx="27" cy="17" rx="1" ry="1.5" fill="#F9FAFB"/>
+                                <!-- Wheels -->
+                                <circle cx="9" cy="25" r="3.5" fill="#111827" stroke="#000" stroke-width="0.8"/>
+                                <circle cx="23" cy="25" r="3.5" fill="#111827" stroke="#000" stroke-width="0.8"/>
+                                <!-- Rims -->
+                                <circle cx="9" cy="25" r="2" fill="#6B7280"/>
+                                <circle cx="23" cy="25" r="2" fill="#6B7280"/>
+                                <circle cx="9" cy="25" r="1" fill="#9CA3AF"/>
+                                <circle cx="23" cy="25" r="1" fill="#9CA3AF"/>
+                                <!-- Side mirrors -->
+                                <rect x="7" y="15" width="1" height="1" fill="#374151"/>
+                                <rect x="24" y="15" width="1" height="1" fill="#374151"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">Automotive & Transportation</h3>
+                    </div>
+                    <ul class="application-list">
+                        <li>Alternator and generator bearings</li>
+                        <li>Water pump assemblies</li>
+                        <li>HVAC blower motors</li>
+                        <li>Power steering pumps</li>
+                        <li>Transmission components</li>
+                        <li>Engine cooling fan motors</li>
+                        <li>Windshield wiper motors</li>
+                        <li>Fuel pump motors</li>
+                        <li>ABS system components</li>
+                        <li>Electric vehicle motor bearings</li>
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> Reliability, temperature resistance, moderate loads
+                    </p>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Factory building main -->
+                                <rect x="4" y="16" width="24" height="12" fill="#6B7280" stroke="#000" stroke-width="0.8"/>
+                                <!-- Factory roof -->
+                                <path d="M2 16h28l-2-2H4l-2 2z" fill="#4B5563" stroke="#000" stroke-width="0.8"/>
+                                <!-- Smokestacks -->
+                                <rect x="8" y="6" width="3" height="12" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <rect x="14" y="4" width="3" height="14" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <rect x="20" y="8" width="3" height="10" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <!-- Smoke -->
+                                <ellipse cx="9.5" cy="4" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <ellipse cx="15.5" cy="2" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <ellipse cx="21.5" cy="6" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <!-- Windows -->
+                                <rect x="6" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="10" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="14" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="18" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="22" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="26" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <!-- Large entrance -->
+                                <rect x="12" y="22" width="8" height="6" fill="#1F2937" stroke="#000" stroke-width="0.5"/>
+                                <!-- Factory details -->
+                                <rect x="6" y="22" width="4" height="2" fill="#4B5563"/>
+                                <rect x="22" y="22" width="4" height="2" fill="#4B5563"/>
+                                <!-- Ground line -->
+                                <line x1="0" y1="28" x2="32" y2="28" stroke="#000" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">Industrial Manufacturing</h3>
+                    </div>
+                    <ul class="application-list">
+                        <li>Electric motor bearings (1-50 HP)</li>
+                        <li>Conveyor system rollers</li>
+                        <li>Industrial fans and blowers</li>
+                        <li>Pump assemblies</li>
+                        <li>Compressor applications</li>
+                        <li>Machine tool spindles</li>
+                        <li>Packaging machinery</li>
+                        <li>Textile spinning equipment</li>
+                        <li>Food processing equipment</li>
+                        <li>Chemical processing pumps</li>
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> Durability, multiple shift operation, easy maintenance
+                    </p>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Washing machine -->
+                                <rect x="2" y="8" width="12" height="16" rx="1" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
+                                <!-- Door -->
+                                <circle cx="8" cy="16" r="5" fill="#E2E8F0" stroke="#000" stroke-width="1"/>
+                                <circle cx="8" cy="16" r="3" fill="#CBD5E0"/>
+                                <!-- Control panel -->
+                                <rect x="3" y="9" width="10" height="2" fill="#E2E8F0"/>
+                                <circle cx="5" cy="10" r="0.5" fill="#4A5568"/>
+                                <circle cx="7" cy="10" r="0.5" fill="#4A5568"/>
+                                <rect x="9" y="9.5" width="3" height="1" fill="#4A5568"/>
+                                
+                                <!-- Refrigerator -->
+                                <rect x="16" y="4" width="14" height="24" rx="1" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
+                                <!-- Fridge door line -->
+                                <line x1="16" y1="16" x2="30" y2="16" stroke="#CBD5E0" stroke-width="1"/>
+                                <!-- Handles -->
+                                <rect x="28" y="10" width="1" height="4" fill="#4A5568"/>
+                                <rect x="28" y="18" width="1" height="4" fill="#4A5568"/>
+                                <!-- Details -->
+                                <rect x="18" y="6" width="2" height="1" fill="#E2E8F0"/>
+                                <circle cx="20" cy="8" r="0.5" fill="#48BB78"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">Home Appliances</h3>
+                    </div>
+                    <ul class="application-list">
+                        <li>Washing machine motors</li>
+                        <li>Dryer drum assemblies</li>
+                        <li>Dishwasher pumps</li>
+                        <li>Refrigerator compressors</li>
+                        <li>Air conditioner fans</li>
+                        <li>Vacuum cleaner motors</li>
+                        <li>Kitchen appliance motors</li>
+                        <li>Garage door openers</li>
+                        <li>Pool pump motors</li>
+                        <li>Lawn mower engines</li>
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> Quiet operation, long life, cost effectiveness
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+                <p class="section-subtitle">Expert guidance for 6000 series bearing applications</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>🔧 Bearing Selection & Replacement</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How do I know if a 6000 series bearing is right for my motor application?</h4>
+                            <div class="faq-direct-answer">Check bore size, load capacity, and speed requirements. 6000 series works for most general-purpose motors up to 50 HP with moderate loads and standard speeds.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Motor bearings see constant duty cycles, temperature variations, and potential electrical current damage. Using the wrong series can lead to premature failure, costly downtime, and motor damage. 6000 series offers the best balance of performance and cost for general industrial applications but has limits in heavy-duty situations.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Match bore to shaft diameter exactly. Calculate actual loads including belt tensions, misalignment factors. For motor applications: specify sealed bearings (2RS) for contaminated environments, check speed against catalog limits, consider C3 clearance for high temperatures. Upgrade to 6200 series if loads exceed 6000 series capacity by >25%.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Most motor bearing failures come from electrical damage - use insulated bearings or shaft grounding for VFD-driven motors.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">Can I replace a 6000 series bearing with a 6200 series for better performance?</h4>
+                            <div class="faq-direct-answer">Usually yes, if space allows. 6200 series has higher load capacity but requires more radial space (larger outer diameter and width).</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">6200 series bearings offer 25-40% higher load capacity than equivalent 6000 series, providing better reliability in demanding applications. However, they're physically larger and more expensive. The upgrade makes sense for applications experiencing premature bearing failures or operating near load limits.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Check housing dimensions: 6200 series has larger OD and width. Verify adequate clearance in all directions. Calculate cost-benefit: 6200 series costs 15-25% more but often doubles bearing life in heavy-duty applications. Consider the upgrade for: frequent bearing failures, heavy shock loads, continuous operation, or when downtime costs are high.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">6200 series upgrade often pays for itself in reduced maintenance costs and increased equipment reliability.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What's the difference between open, shielded, and sealed 6000 series bearings?</h4>
+                            <div class="faq-direct-answer">Open bearings run fastest and coolest but need clean environments. Shields (Z/ZZ) provide some protection with less friction than seals (RS/2RS) which offer maximum protection.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Sealing choice affects bearing life, speed capability, and maintenance requirements. Wrong choice leads to either contamination damage (inadequate sealing) or overheating (excessive sealing friction). Industrial environments often require sealed bearings despite the performance penalty.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Choose open for: high-speed applications, clean environments, frequent maintenance schedules. Choose shields (Z/ZZ) for: moderate contamination, balanced performance. Choose seals (RS/2RS) for: dirty environments, wash-down applications, maintenance-free operation. Consider contact vs non-contact seals based on speed requirements.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">For most industrial motors, sealed bearings (2RS) are worth the 10-15% speed reduction for contamination protection.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>🔨 Installation & Maintenance</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">Why do my 6000 series bearings fail early in motor applications?</h4>
+                            <div class="faq-direct-answer">Most failures come from electrical current damage (VFD motors), contamination, improper installation, or exceeding temperature limits. Focus on grounding and cleanliness.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Motor bearings operate continuously under varying loads, temperatures, and electrical conditions. VFD-driven motors create electrical currents that can damage bearings through electrical discharge machining (EDM). Contamination from industrial environments, improper installation techniques, and thermal stress from motor heat all contribute to premature failures that cost thousands in downtime.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">For VFD motors: Install shaft grounding brushes or insulated bearings. Installation: Use proper bearing pullers, press on correct ring, maintain cleanliness. Contamination: Specify sealed bearings (2RS) for dirty environments. Temperature: Monitor bearing temperature, use C3 clearance for hot applications. Check motor alignment and belt tension regularly.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Most motor bearing problems are electrical - if you see frosted or pitted raceways, that's EDM damage from electrical current.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What's the proper installation procedure for 6000 series bearings in motors?</h4>
+                            <div class="faq-direct-answer">Use bearing pullers or presses, never hammer directly. Press on inner ring when installing on shaft, outer ring when installing in housing. Keep everything clean.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Motor bearings must fit precisely to handle continuous operation and prevent electrical current passage. Improper installation creates play, misalignment, or damage that leads to rapid failure. Installation damage often doesn't appear until weeks later when the bearing fails catastrophically during operation.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Tools: Use proper bearing pullers sized for your bearing. Clean everything first. Technique: Press evenly and slowly, stop if resistance increases suddenly. Never strike bearings with hammers. Check shaft and housing dimensions before installation. Apply light oil film to prevent galling. Test fit manually before final pressing.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">If a bearing doesn't go in easily, stop and check - forcing damaged bearings causes expensive motor repairs.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How often should I re-lubricate 6000 series bearings in industrial equipment?</h4>
+                            <div class="faq-direct-answer">Depends on sealing: sealed bearings (2RS) are lubricated for life. Open bearings need re-lubrication every 6-12 months or 2,000-4,000 operating hours.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Industrial equipment often runs continuously in harsh conditions. Under-lubrication causes bearing seizure, over-lubrication causes overheating and seal damage. Different applications have very different lubrication needs - a fan motor needs different service than a conveyor drive.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Sealed bearings: Replace when they fail, no maintenance needed. Open bearings: Use high-quality grease compatible with existing lubricant. Apply small amounts through grease fittings while running to purge old grease. Monitor bearing temperature during re-lubrication. Increase frequency in dusty or high-temperature environments.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">More grease isn't better - over-lubrication causes more bearing failures than under-lubrication in most industrial applications.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>🔍 Troubleshooting & Problem Solving</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">My 6000 series bearing is making noise - how do I diagnose the problem?</h4>
+                            <div class="faq-direct-answer">Listen to the type of noise: grinding means bearing damage (replace immediately), squealing indicates lubrication issues, and clicking suggests contamination or wear.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Bearing noise in industrial equipment often signals impending failure that can damage expensive motors, pumps, or machinery. Different noise types indicate different problems requiring different solutions. Ignoring bearing noise typically leads to catastrophic failure and much higher repair costs.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Stop equipment for safety. Listen carefully: constant grinding = bearing damage (replace now), intermittent squealing = lubrication problem (re-lubricate), clicking/popping = contamination (clean and inspect), irregular noise = wear or damage (investigate further). Check for heat, vibration, and play. Document noise patterns to identify root causes.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Trust your ears - bearing noise usually appears weeks before visible damage, giving you time to plan replacement during scheduled downtime.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How do I identify what's causing repeated bearing failures in the same application?</h4>
+                            <div class="faq-direct-answer">Look for patterns: electrical damage (VFD motors), contamination (dirty environments), overloading (wrong bearing size), or installation problems (damaged during assembly).</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Repeated failures in the same location indicate systematic problems that won't be solved by just replacing bearings. Understanding root causes prevents future failures and can reveal design or operational issues that affect other equipment. Pattern recognition saves money and downtime.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Document failure history: how long each bearing lasted, operating conditions, failure appearance. Common patterns: EDM damage from electrical current, contamination marks from poor sealing, overload wear from undersized bearings, installation damage from poor procedures. Address root cause, not just symptoms.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Take photos of failed bearings - damage patterns tell the story of what went wrong and prevent repeat failures.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What causes 6000 series bearings to overheat in motor applications?</h4>
+                            <div class="faq-direct-answer">Common causes include over-lubrication, tight fits, electrical current damage, contamination, or exceeding speed limits. Check lubrication and electrical grounding first.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Overheating accelerates bearing wear, breaks down lubricants, damages seals, and can cause bearing seizure. In motors, hot bearings often indicate electrical problems that can damage windings and other components. Heat also causes thermal expansion that affects fits and clearances.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Immediate actions: Check bearing temperature (should be warm, not hot to touch). Investigate: over-lubrication (reduce grease), electrical current (install grounding), contamination (improve sealing), tight fits (check shaft/housing dimensions), high ambient temperature (improve cooling). Monitor temperature during operation.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">If a bearing is too hot to touch comfortably (>60°C), investigate immediately - it's likely to fail soon.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>💰 Cost & Performance Optimization</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">Is it worth upgrading to premium 6000 series bearings for standard industrial applications?</h4>
+                            <div class="faq-direct-answer">For critical applications with high downtime costs, yes. For standard applications where maintenance access is easy, standard bearings are usually adequate.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Premium bearings cost 2-3× more but typically last 2-5× longer in demanding applications. The decision depends on downtime costs, maintenance access, and criticality. In some applications, the premium pays for itself quickly; in others, it's wasteful spending.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Use premium bearings for: 24/7 operations, difficult maintenance access, critical equipment where failure is expensive. Calculate total cost: bearing price + installation cost + downtime cost. Standard bearings work fine for: easily accessible equipment, backup systems, non-critical applications with low downtime costs.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Premium bearings make sense when bearing cost is <10% of failure cost - focus spending on your most critical applications.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How can I extend 6000 series bearing life to reduce maintenance costs?</h4>
+                            <div class="faq-direct-answer">Focus on the big three: keep them clean (contamination control), keep them cool (proper lubrication), and protect from electrical damage (VFD grounding).</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Small improvements in bearing life have huge impacts on maintenance costs and equipment reliability. Most industrial bearing failures are preventable through better contamination control, lubrication practices, and electrical protection. Extending bearing life from 2 years to 4 years cuts maintenance costs in half.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Contamination: Use sealed bearings, improve filtration, maintain clean work areas. Lubrication: Use proper amounts of quality grease, monitor temperatures, establish re-lubrication schedules. Electrical: Install shaft grounding on VFD motors, use insulated bearings where needed. Alignment: Check and correct shaft alignment regularly.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Most bearing life improvements come from preventing contamination - invest in better sealing and cleaner maintenance practices.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">When does it make sense to upgrade from 6000 to 6200 series bearings?</h4>
+                            <div class="faq-direct-answer">When you're experiencing frequent failures, operating near load limits, or need better reliability in critical applications. The 25-40% load increase often justifies the cost.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">6200 series bearings offer significantly higher load capacity and better durability but cost more and require more space. The upgrade makes sense when bearing failures are limiting equipment reliability or when operating conditions exceed 6000 series capabilities.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Consider upgrade for: frequent bearing failures, shock loading, continuous operation, critical applications. Check space requirements: 6200 series has larger OD and width. Calculate payback: if 6200 series doubles bearing life and costs 25% more, it pays for itself quickly. Don't upgrade unnecessarily in light-duty applications.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">6200 series upgrade often eliminates bearing problems completely in marginal applications - it's usually worth the investment.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>RHD Bearings</h3>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px; margin-bottom: 16px;">
+                        203 Vihar Estate, Off. Saki Vihar Road<br>
+                        Next to Autohanger, Sakinaka, Andheri East<br>
+                        Mumbai 400072, India
+                    </p>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px;">
+                        Phone: +91-9702081858<br>
+                        Email: sales@rhdenterprise.in<br>
+                        OEM Sales: oemsales@rhdenterprise.in
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>PRODUCTS</h3>
+                    <a href="https://rhdbearings.com/miniature-bearings.html">Miniature Bearings</a>
+                    <a href="https://rhdbearings.com/6000-series.html">6000 Series</a>
+                    <a href="https://rhdbearings.com/6200-series.html">6200 Series</a>
+                    <a href="https://rhdbearings.com/6300-series.html">6300 Series</a>
+                    <a href="https://rhdbearings.com/62200-series.html">62200 Series</a>
+                    <a href="https://rhdbearings.com/62300-series.html">62300 Series</a>
+                    <a href="https://rhdbearings.com/16000-series.html">16000 Series</a>
+                    <a href="https://rhdbearings.com/6800-series.html">6800 Series</a>
+                    <a href="https://rhdbearings.com/6900-series.html">6900 Series</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>TECHNICAL SUPPORT</h3>
+                    <a href="#specifications">Technical Specifications</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="https://rhdbearings.com/technical-drawings.html">Technical Drawings</a>
+                    <a href="https://rhdbearings.com/installation-guides.html">Installation Guides</a>
+                    <a href="https://rhdbearings.com/maintenance.html">Maintenance Guidelines</a>
+                    <a href="https://rhdbearings.com/troubleshooting.html">Troubleshooting</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>CONTACT</h3>
+                    <a href="https://rhdbearings.com/contact.html">Contact Us</a>
+                    <a href="https://rhdbearings.com/quote.html">Request Quote</a>
+                    <a href="https://rhdbearings.com/bulk-orders.html">Bulk Orders</a>
+                    <a href="https://rhdbearings.com/distributor.html">Become a Distributor</a>
+                    <a href="https://rhdbearings.com/support.html">Technical Support</a>
+                    <a href="https://rhdbearings.com/warranty.html">Warranty Information</a>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                © 2024 RHD Bearings. All rights reserved. Made in India with precision engineering excellence.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 6000 series bearings data
+        const bearingsData = [
+            {"model": "6000", "url": "/6000-series/6000", "id": "10mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.58kN", "static_load": "1.98kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
+            {"model": "6001", "url": "/6000-series/6001", "id": "12mm", "od": "28mm", "width": "8mm", "dynamic_load": "5.10kN", "static_load": "2.38kN", "grease_speed": "20,000", "oil_speed": "26,000", "weight": "22g"},
+            {"model": "6002", "url": "/6000-series/6002", "id": "15mm", "od": "32mm", "width": "9mm", "dynamic_load": "5.58kN", "static_load": "2.85kN", "grease_speed": "19,000", "oil_speed": "24,000", "weight": "31g"},
+            {"model": "6003", "url": "/6000-series/6003", "id": "17mm", "od": "35mm", "width": "10mm", "dynamic_load": "6.00kN", "static_load": "3.25kN", "grease_speed": "17,000", "oil_speed": "21,000", "weight": "40g"},
+            {"model": "6004", "url": "/6000-series/6004", "id": "20mm", "od": "42mm", "width": "12mm", "dynamic_load": "9.38kN", "static_load": "5.02kN", "grease_speed": "16,000", "oil_speed": "19,000", "weight": "68g"},
+            {"model": "6005", "url": "/6000-series/6005", "id": "25mm", "od": "47mm", "width": "12mm", "dynamic_load": "10.00kN", "static_load": "5.85kN", "grease_speed": "13,000", "oil_speed": "17,000", "weight": "78g"},
+            {"model": "6006", "url": "/6000-series/6006", "id": "30mm", "od": "55mm", "width": "13mm", "dynamic_load": "13.20kN", "static_load": "8.30kN", "grease_speed": "11,000", "oil_speed": "14,000", "weight": "113g"},
+            {"model": "6007", "url": "/6000-series/6007", "id": "35mm", "od": "62mm", "width": "14mm", "dynamic_load": "16.20kN", "static_load": "10.50kN", "grease_speed": "9,500", "oil_speed": "12,000", "weight": "148g"},
+            {"model": "6008", "url": "/6000-series/6008", "id": "40mm", "od": "68mm", "width": "15mm", "dynamic_load": "17.00kN", "static_load": "11.80kN", "grease_speed": "9,000", "oil_speed": "11,000", "weight": "185g"},
+            {"model": "6009", "url": "/6000-series/6009", "id": "45mm", "od": "75mm", "width": "16mm", "dynamic_load": "21.00kN", "static_load": "14.80kN", "grease_speed": "8,000", "oil_speed": "10,000", "weight": "230g"},
+            {"model": "6010", "url": "/6000-series/6010", "id": "50mm", "od": "80mm", "width": "16mm", "dynamic_load": "22.00kN", "static_load": "16.20kN", "grease_speed": "7,000", "oil_speed": "9,000", "weight": "250g"},
+            {"model": "6011", "url": "/6000-series/6011", "id": "55mm", "od": "90mm", "width": "18mm", "dynamic_load": "30.20kN", "static_load": "21.80kN", "grease_speed": "7,000", "oil_speed": "8,500", "weight": "362g"},
+            {"model": "6012", "url": "/6000-series/6012", "id": "60mm", "od": "95mm", "width": "18mm", "dynamic_load": "31.50kN", "static_load": "24.20kN", "grease_speed": "6,300", "oil_speed": "7,500", "weight": "385g"},
+            {"model": "6013", "url": "/6000-series/6013", "id": "65mm", "od": "100mm", "width": "18mm", "dynamic_load": "32.00kN", "static_load": "24.80kN", "grease_speed": "6,000", "oil_speed": "7,000", "weight": "410g"},
+            {"model": "6014", "url": "/6000-series/6014", "id": "70mm", "od": "110mm", "width": "20mm", "dynamic_load": "38.50kN", "static_load": "30.50kN", "grease_speed": "5,600", "oil_speed": "6,700", "weight": "575g"},
+            {"model": "6015", "url": "/6000-series/6015", "id": "75mm", "od": "115mm", "width": "20mm", "dynamic_load": "40.20kN", "static_load": "33.20kN", "grease_speed": "5,300", "oil_speed": "6,300", "weight": "603g"},
+            {"model": "6016", "url": "/6000-series/6016", "id": "80mm", "od": "125mm", "width": "22mm", "dynamic_load": "47.50kN", "static_load": "39.80kN", "grease_speed": "5,000", "oil_speed": "6,000", "weight": "821g"},
+            {"model": "6017", "url": "/6000-series/6017", "id": "85mm", "od": "130mm", "width": "22mm", "dynamic_load": "50.80kN", "static_load": "42.80kN", "grease_speed": "4,500", "oil_speed": "5,600", "weight": "848g"},
+            {"model": "6018", "url": "/6000-series/6018", "id": "90mm", "od": "140mm", "width": "24mm", "dynamic_load": "58.00kN", "static_load": "49.80kN", "grease_speed": "4,300", "oil_speed": "5,300", "weight": "1.10kg"},
+            {"model": "6019", "url": "/6000-series/6019", "id": "95mm", "od": "145mm", "width": "24mm", "dynamic_load": "57.80kN", "static_load": "50.00kN", "grease_speed": "4,000", "oil_speed": "5,000", "weight": "1.15kg"},
+            {"model": "6020", "url": "/6000-series/6020", "id": "100mm", "od": "150mm", "width": "24mm", "dynamic_load": "64.50kN", "static_load": "56.20kN", "grease_speed": "3,800", "oil_speed": "4,800", "weight": "1.18kg"}
+        ];
+
+        // Render models
+        function renderModels(models) {
+            const grid = document.getElementById('modelsGrid');
+            grid.innerHTML = models.map(model => `
+                <div class="model-card">
+                    <div class="model-badge">${model.model}</div>
+                    <div class="model-specs">
+                        <div class="model-spec">
+                            <span class="model-spec-label">ID:</span>
+                            <span class="model-spec-value">${model.id}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">OD:</span>
+                            <span class="model-spec-value">${model.od}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Width:</span>
+                            <span class="model-spec-value">${model.width}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Dynamic Load:</span>
+                            <span class="model-spec-value">${model.dynamic_load}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Speed (Oil):</span>
+                            <span class="model-spec-value">${model.oil_speed} RPM</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Weight:</span>
+                            <span class="model-spec-value">${model.weight}</span>
+                        </div>
+                    </div>
+                    <a href="${model.url}" class="btn btn-secondary" style="width: 100%; margin-top: 16px;">VIEW DETAILS</a>
+                </div>
+            `).join('');
+        }
+
+        // Filter functionality
+        function filterModels() {
+            const sizeFilter = document.getElementById('sizeFilter').value;
+            const loadFilter = document.getElementById('loadFilter').value;
+            const speedFilter = document.getElementById('speedFilter').value;
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            let filtered = bearingsData.filter(model => {
+                // Size filter
+                if (sizeFilter) {
+                    const bore = parseInt(model.id);
+                    if (sizeFilter === 'small' && bore > 30) return false;
+                    if (sizeFilter === 'medium' && (bore < 35 || bore > 60)) return false;
+                    if (sizeFilter === 'large' && bore < 65) return false;
+                }
+                
+                // Load filter
+                if (loadFilter) {
+                    const load = parseFloat(model.dynamic_load);
+                    if (loadFilter === 'light' && load >= 15) return false;
+                    if (loadFilter === 'medium' && (load < 15 || load > 40)) return false;
+                    if (loadFilter === 'heavy' && load <= 40) return false;
+                }
+                
+                // Speed filter
+                if (speedFilter) {
+                    const speed = parseInt(model.oil_speed.replace(',', ''));
+                    if (speedFilter === 'low' && speed >= 10000) return false;
+                    if (speedFilter === 'medium' && (speed < 10000 || speed > 20000)) return false;
+                    if (speedFilter === 'high' && speed <= 20000) return false;
+                }
+                
+                // Search filter
+                if (searchTerm && !model.model.toLowerCase().includes(searchTerm)) return false;
+                
+                return true;
+            });
+
+            renderModels(filtered);
+        }
+
+        // Specs tab functionality
+        function showSpecTab(tabName) {
+            // Hide all panels
+            document.querySelectorAll('.specs-panel').forEach(panel => {
+                panel.style.display = 'none';
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.specs-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected panel
+            document.getElementById(tabName + '-specs').style.display = 'block';
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // FAQ functionality
+        function toggleFaqCategory(header) {
+            const category = header.parentElement;
+            const isActive = category.classList.contains('active');
+            
+            // Close all categories
+            document.querySelectorAll('.faq-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Open clicked category if it wasn't active
+            if (!isActive) {
+                category.classList.add('active');
+            }
+        }
+
+        // Event listeners
+        document.getElementById('sizeFilter').addEventListener('change', filterModels);
+        document.getElementById('loadFilter').addEventListener('change', filterModels);
+        document.getElementById('speedFilter').addEventListener('change', filterModels);
+        document.getElementById('searchInput').addEventListener('input', filterModels);
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderModels(bearingsData);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Load Navbar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('../shared/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+<script>
+        // 6000 series bearings data
+        const bearingsData = [
+            {"model": "6000", "url": "/6000-series/6000", "id": "10mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.58kN", "static_load": "1.98kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
+            {"model": "6001", "url": "/6000-series/6001", "id": "12mm", "od": "28mm", "width": "8mm", "dynamic_load": "5.10kN", "static_load": "2.38kN", "grease_speed": "20,000", "oil_speed": "26,000", "weight": "22g"},
+            {"model": "6002", "url": "/6000-series/6002", "id": "15mm", "od": "32mm", "width": "9mm", "dynamic_load": "5.58kN", "static_load": "2.85kN", "grease_speed": "19,000", "oil_speed": "24,000", "weight": "31g"},
+            {"model": "6003", "url": "/6000-series/6003", "id": "17mm", "od": "35mm", "width": "10mm", "dynamic_load": "6.00kN", "static_load": "3.25kN", "grease_speed": "17,000", "oil_speed": "21,000", "weight": "40g"},
+            {"model": "6004", "url": "/6000-series/6004", "id": "20mm", "od": "42mm", "width": "12mm", "dynamic_load": "9.38kN", "static_load": "5.02kN", "grease_speed": "16,000", "oil_speed": "19,000", "weight": "68g"},
+            {"model": "6005", "url": "/6000-series/6005", "id": "25mm", "od": "47mm", "width": "12mm", "dynamic_load": "10.00kN", "static_load": "5.85kN", "grease_speed": "13,000", "oil_speed": "17,000", "weight": "78g"},
+            {"model": "6006", "url": "/6000-series/6006", "id": "30mm", "od": "55mm", "width": "13mm", "dynamic_load": "13.20kN", "static_load": "8.30kN", "grease_speed": "11,000", "oil_speed": "14,000", "weight": "113g"},
+            {"model": "6007", "url": "/6000-series/6007", "id": "35mm", "od": "62mm", "width": "14mm", "dynamic_load": "16.20kN", "static_load": "10.50kN", "grease_speed": "9,500", "oil_speed": "12,000", "weight": "148g"},
+            {"model": "6008", "url": "/6000-series/6008", "id": "40mm", "od": "68mm", "width": "15mm", "dynamic_load": "17.00kN", "static_load": "11.80kN", "grease_speed": "9,000", "oil_speed": "11,000", "weight": "185g"},
+            {"model": "6009", "url": "/6000-series/6009", "id": "45mm", "od": "75mm", "width": "16mm", "dynamic_load": "21.00kN", "static_load": "14.80kN", "grease_speed": "8,000", "oil_speed": "10,000", "weight": "230g"},
+            {"model": "6010", "url": "/6000-series/6010", "id": "50mm", "od": "80mm", "width": "16mm", "dynamic_load": "22.00kN", "static_load": "16.20kN", "grease_speed": "7,000", "oil_speed": "9,000", "weight": "250g"},
+            {"model": "6011", "url": "/6000-series/6011", "id": "55mm", "od": "90mm", "width": "18mm", "dynamic_load": "30.20kN", "static_load": "21.80kN", "grease_speed": "7,000", "oil_speed": "8,500", "weight": "362g"},
+            {"model": "6012", "url": "/6000-series/6012", "id": "60mm", "od": "95mm", "width": "18mm", "dynamic_load": "31.50kN", "static_load": "24.20kN", "grease_speed": "6,300", "oil_speed": "7,500", "weight": "385g"},
+            {"model": "6013", "url": "/6000-series/6013", "id": "65mm", "od": "100mm", "width": "18mm", "dynamic_load": "32.00kN", "static_load": "24.80kN", "grease_speed": "6,000", "oil_speed": "7,000", "weight": "410g"},
+            {"model": "6014", "url": "/6000-series/6014", "id": "70mm", "od": "110mm", "width": "20mm", "dynamic_load": "38.50kN", "static_load": "30.50kN", "grease_speed": "5,600", "oil_speed": "6,700", "weight": "575g"},
+            {"model": "6015", "url": "/6000-series/6015", "id": "75mm", "od": "115mm", "width": "20mm", "dynamic_load": "40.20kN", "static_load": "33.20kN", "grease_speed": "5,300", "oil_speed": "6,300", "weight": "603g"},
+            {"model": "6016", "url": "/6000-series/6016", "id": "80mm", "od": "125mm", "width": "22mm", "dynamic_load": "47.50kN", "static_load": "39.80kN", "grease_speed": "5,000", "oil_speed": "6,000", "weight": "821g"},
+            {"model": "6017", "url": "/6000-series/6017", "id": "85mm", "od": "130mm", "width": "22mm", "dynamic_load": "50.80kN", "static_load": "42.80kN", "grease_speed": "4,500", "oil_speed": "5,600", "weight": "848g"},
+            {"model": "6018", "url": "/6000-series/6018", "id": "90mm", "od": "140mm", "width": "24mm", "dynamic_load": "58.00kN", "static_load": "49.80kN", "grease_speed": "4,300", "oil_speed": "5,300", "weight": "1.10kg"},
+            {"model": "6019", "url": "/6000-series/6019", "id": "95mm", "od": "145mm", "width": "24mm", "dynamic_load": "57.80kN", "static_load": "50.00kN", "grease_speed": "4,000", "oil_speed": "5,000", "weight": "1.15kg"},
+            {"model": "6020", "url": "/6000-series/6020", "id": "100mm", "od": "150mm", "width": "24mm", "dynamic_load": "64.50kN", "static_load": "56.20kN", "grease_speed": "3,800", "oil_speed": "4,800", "weight": "1.18kg"}
+        ];
+
+        // Render models
+        function renderModels(models) {
+            const grid = document.getElementById('modelsGrid');
+            grid.innerHTML = models.map(model => `
+                <div class="model-card">
+                    <div class="model-badge">${model.model}</div>
+                    <div class="model-specs">
+                        <div class="model-spec">
+                            <span class="model-spec-label">ID:</span>
+                            <span class="model-spec-value">${model.id}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">OD:</span>
+                            <span class="model-spec-value">${model.od}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Width:</span>
+                            <span class="model-spec-value">${model.width}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Dynamic Load:</span>
+                            <span class="model-spec-value">${model.dynamic_load}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Speed (Oil):</span>
+                            <span class="model-spec-value">${model.oil_speed} RPM</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Weight:</span>
+                            <span class="model-spec-value">${model.weight}</span>
+                        </div>
+                    </div>
+                    <a href="${model.url}" class="btn btn-secondary" style="width: 100%; margin-top: 16px;">VIEW DETAILS</a>
+                </div>
+            `).join('');
+        }
+
+        // Filter functionality
+        function filterModels() {
+            const sizeFilter = document.getElementById('sizeFilter').value;
+            const loadFilter = document.getElementById('loadFilter').value;
+            const speedFilter = document.getElementById('speedFilter').value;
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            let filtered = bearingsData.filter(model => {
+                // Size filter
+                if (sizeFilter) {
+                    const bore = parseInt(model.id);
+                    if (sizeFilter === 'small' && bore > 30) return false;
+                    if (sizeFilter === 'medium' && (bore < 35 || bore > 60)) return false;
+                    if (sizeFilter === 'large' && bore < 65) return false;
+                }
+                
+                // Load filter
+                if (loadFilter) {
+                    const load = parseFloat(model.dynamic_load);
+                    if (loadFilter === 'light' && load >= 15) return false;
+                    if (loadFilter === 'medium' && (load < 15 || load > 40)) return false;
+                    if (loadFilter === 'heavy' && load <= 40) return false;
+                }
+                
+                // Speed filter
+                if (speedFilter) {
+                    const speed = parseInt(model.oil_speed.replace(',', ''));
+                    if (speedFilter === 'low' && speed >= 10000) return false;
+                    if (speedFilter === 'medium' && (speed < 10000 || speed > 20000)) return false;
+                    if (speedFilter === 'high' && speed <= 20000) return false;
+                }
+                
+                // Search filter
+                if (searchTerm && !model.model.toLowerCase().includes(searchTerm)) return false;
+                
+                return true;
+            });
+
+            renderModels(filtered);
+        }
+
+        // Specs tab functionality
+        function showSpecTab(tabName) {
+            // Hide all panels
+            document.querySelectorAll('.specs-panel').forEach(panel => {
+                panel.style.display = 'none';
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.specs-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected panel
+            document.getElementById(tabName + '-specs').style.display = 'block';
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // FAQ functionality
+        function toggleFaqCategory(header) {
+            const category = header.parentElement;
+            const isActive = category.classList.contains('active');
+            
+            // Close all categories
+            document.querySelectorAll('.faq-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Open clicked category if it wasn't active
+            if (!isActive) {
+                category.classList.add('active');
+            }
+        }
+
+        // Event listeners
+        document.getElementById('sizeFilter').addEventListener('change', filterModels);
+        document.getElementById('loadFilter').addEventListener('change', filterModels);
+        document.getElementById('speedFilter').addEventListener('change', filterModels);
+        document.getElementById('searchInput').addEventListener('input', filterModels);
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderModels(bearingsData);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('../shared/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+
+</body>
+</html>

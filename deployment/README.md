@@ -18,12 +18,22 @@ This directory contains scripts and documentation for deploying RHD Bearings web
 # Navigate to deployment directory
 cd deployment
 
-# Generate the HTML file
-python create_separate_page.py
+# Generate the HTML files (creates clean URL structure)
+python3 create_separate_page.py --page miniature
 
-# Upload to server
-python direct_cpanel_upload.py
+# Upload to server (automated - may require manual upload if FTP issues)
+python3 direct_cpanel_upload.py --page miniature
 ```
+
+### Clean URLs Generated
+- **Miniature Series**: `https://rhdbearings.com/miniature-series/`
+- **6000 Series**: `https://rhdbearings.com/6000-series/`
+
+### Manual Upload (If Automated Fails)
+1. Login to cPanel → File Manager
+2. Go to `public_html`
+3. Upload the entire `miniature-series/` directory
+4. Visit: `https://rhdbearings.com/miniature-series/`
 
 ### Requirements
 - Python 3.7+

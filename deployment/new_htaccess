@@ -1,0 +1,27 @@
+# BEGIN WordPress
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+# END WordPress
+
+# Force direct serving of specific files, bypass WordPress
+<Files "miniature-series.html">
+    SetHandler default-handler
+</Files>
+
+<Files "miniature_bearings_page.html">
+    SetHandler default-handler
+</Files>
+
+<Files "6000-series.html">
+    SetHandler default-handler
+</Files>
+
+# Alternative: Use RewriteRule to serve files directly
+RewriteEngine On
+RewriteRule ^miniature-series/?$ /miniature-series.html [L]
+RewriteRule ^6000-series/?$ /6000-series.html [L]

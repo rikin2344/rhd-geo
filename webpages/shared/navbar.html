@@ -1,0 +1,79 @@
+<!-- RHD Bearings Navigation Header -->
+<div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
+    <div class="uicore-header-wrapper">
+        <nav class="uicore uicore-container">
+            <!-- Logo -->
+            <div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
+                <a href="https://rhdbearings.com/">
+                    <img class="uicore-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="uicore-nav-menu">
+                <div class="uicore-menu-container">
+                    <div class="uicore-menu">
+                        <a href="https://rhdbearings.com/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Home</span>
+                                <span class="ui-menu-item-wrapper">Home</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/about-us/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">About Us</span>
+                                <span class="ui-menu-item-wrapper">About Us</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/products/" class="menu-item has-submenu ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Products</span>
+                                <span class="ui-menu-item-wrapper">Products</span>
+                            </div>
+                            <div class="sub-menu">
+                                <a href="https://rhdbearings.com/miniature-bearings.html" data-page="miniature">Miniature Bearings</a>
+                                <a href="https://rhdbearings.com/6000-series.html" data-page="6000">6000 Series</a>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/industries/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Industries</span>
+                                <span class="ui-menu-item-wrapper">Industries</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/bearing-size-chart/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/shop/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Shop</span>
+                                <span class="ui-menu-item-wrapper">Shop</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Button -->
+            <div class="uicore-extra">
+                <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<script>
+// Auto-highlight current page in navigation
+document.addEventListener('DOMContentLoaded', function() {
+    const currentPage = document.body.getAttribute('data-page');
+    if (currentPage) {
+        const menuLink = document.querySelector(`[data-page="${currentPage}"]`);
+        if (menuLink) {
+            menuLink.classList.add('current-menu-item');
+        }
+    }
+});
+</script>

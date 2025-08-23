@@ -3,20 +3,1348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniature Ball Bearings 604-964 Series | Ultra-Precision Electronics | RHD Bearings</title>
-    <meta name="description" content="Premium miniature ball bearings (604-964 series) for electronics, medical devices, and precision instruments. 3-9mm bore, up to 68,000 RPM. Mumbai, India manufacturer.">
-    
-    <!-- External fonts first -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Miniature Ball Bearings | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+/* Reset everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background: #F8F9FA;
+}
+
+/* Navbar CSS */
+/* ================================
+   RHD BEARINGS NAVIGATION HEADER
+   ================================ */
+
+.uicore-header-wrapper {
+    background: var(--surface-primary);
+    border-bottom: 1px solid var(--border-subtle);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--elevation-1);
+}
+
+.uicore.uicore-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.uicore-branding {
+    display: flex;
+    align-items: center;
+}
+
+.uicore-branding a {
+    display: block;
+    text-decoration: none;
+}
+
+.uicore-logo {
+    height: 48px;
+    width: auto;
+    transition: transform var(--transition-fast);
+}
+
+.uicore-logo:hover {
+    transform: scale(1.05);
+}
+
+.uicore-logo.uicore-second,
+.uicore-logo.uicore-mobile-main,
+.uicore-logo.uicore-mobile-second {
+    display: none;
+}
+
+.uicore-nav-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.uicore-menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.uicore-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 0;
+    transition: color var(--transition-fast);
+    display: block;
+}
+
+.menu-item a:hover {
+    color: var(--text-secondary);
+}
+
+.menu-item-has-children > a::after {
+    content: "▼";
+    font-size: 10px;
+    margin-left: 6px;
+    transition: transform var(--transition-fast);
+}
+
+.menu-item-has-children:hover > a::after {
+    transform: rotate(180deg);
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--surface-primary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    box-shadow: var(--elevation-3);
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all var(--transition-fast);
+    z-index: 1001;
+    list-style: none;
+    margin: 0;
+}
+
+.menu-item-has-children:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub-menu li {
+    list-style: none;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 8px 16px !important;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: background var(--transition-fast);
+}
+
+.sub-menu a:hover,
+.sub-menu a.current-menu-item {
+    background: var(--accent-neon);
+    color: #000000;
+}
+
+.uicore-extra {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.uicore-cart-icon {
+    width: 24px;
+    height: 24px;
+    background: var(--text-primary);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.uicore-cart-icon:hover {
+    background: var(--accent-neon);
+}
+
+.uicore-mobile-head-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.uicore-btn {
+    background: var(--accent-neon);
+    color: #000000;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all var(--transition-fast);
+    border: none;
+    cursor: pointer;
+}
+
+.uicore-btn:hover {
+    background: var(--text-primary);
+    color: var(--surface-primary);
+    transform: translateY(-2px);
+}
+
+.uicore-btn.uicore-inverted {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+}
+
+.uicore-btn.uicore-inverted:hover {
+    background: var(--text-primary);
+    color: var(--surface-primary);
+}
+
+.uicore-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bar {
+    width: 24px;
+    height: 3px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all var(--transition-fast);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .uicore.uicore-container {
+        padding: 0 16px;
+        height: 70px;
+    }
     
-    <!-- CSS files -->
-    <link rel="stylesheet" href="../shared/navbar.css">
-    <link rel="stylesheet" href="styles.css">
+    .uicore-logo {
+        height: 40px;
+    }
+    
+    .uicore-nav-menu {
+        display: none;
+    }
+    
+    .uicore-toggle {
+        display: block;
+    }
+    
+    .uicore-extra .uicore-cart-icon,
+    .uicore-extra .uicore-cta-wrapper {
+        display: none;
+    }
+    
+    .uicore-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uicore.uicore-container {
+        padding: 0 12px;
+        height: 60px;
+    }
+    
+    .uicore-logo {
+        height: 36px;
+    }
+    
+    .uicore-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+}
+
+
+/* Page CSS */
+/* ================================
+   CSS VARIABLES & BASE STYLES
+   ================================ */
+
+:root {
+    /* Color System */
+    --bg-primary: #F8F9FA;
+    --surface-primary: #FFFFFF;
+    --text-primary: #000000;
+    --text-secondary: #4A5568;
+    --accent-neon: rgb(210, 255, 55);
+    --border-subtle: #E2E8F0;
+    --glass-overlay: rgba(255,255,255,0.1);
+    
+    /* Typography Scale */
+    --font-family: 'Bai Jamjuree', sans-serif;
+    --text-branding: clamp(48px, 8vw, 72px);
+    --text-hero: clamp(36px, 6vw, 56px);
+    --text-section: clamp(28px, 4vw, 42px);
+    --text-subsection: clamp(20px, 3vw, 28px);
+    --text-body-large: 18px;
+    --text-body: 16px;
+    --text-body-small: 14px;
+    --text-technical: 15px;
+    
+    /* Spacing System (8px base) */
+    --space-micro-1: 8px;
+    --space-micro-2: 16px;
+    --space-component-1: 24px;
+    --space-component-2: 32px;
+    --space-section-1: 48px;
+    --space-section-2: 64px;
+    --space-page-1: 80px;
+    --space-page-2: 120px;
+    
+    /* Elevation System */
+    --elevation-1: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.12);
+    --elevation-2: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.12);
+    --elevation-3: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.12);
+    --elevation-4: 0 20px 25px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+    
+    /* Animation */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    --transition-smooth: 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.hero {
+    padding: 60px 0 80px 0;
+    position: relative;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 32px;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 500px;
+}
+
+.hero-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 500px;
+}
+
+.hero-title {
+    font-size: clamp(42px, 6vw, 64px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.hero-subtitle {
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: var(--text-secondary);
+    font-weight: 400;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.hero-description {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.hero-specs {
+    margin-bottom: 40px;
+}
+
+.specs-compact {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+    background: var(--accent-neon);
+    padding: 20px 32px;
+    border-radius: 16px;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.spec-item {
+    text-align: center;
+    color: #000000;
+}
+
+.spec-value {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.spec-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 500px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.sidebar-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.features-vertical {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    flex: 1;
+    align-content: center;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: var(--surface-primary);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    transition: all var(--transition-fast);
+    box-shadow: var(--elevation-1);
+    max-height: 96px;
+}
+
+.feature-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--elevation-2);
+    border-color: var(--accent-neon);
+}
+
+.feature-icon {
+    width: 20px;
+    height: 20px;
+    background: var(--accent-neon);
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-top: 0;
+}
+
+.feature-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: #000000;
+    fill: none;
+    stroke-width: 3;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-title {
+    font-size: 12px;
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.feature-description {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.btn {
+    padding: var(--space-micro-2) var(--space-component-2);
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: var(--text-body);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    display: inline-block;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: var(--text-primary);
+    color: var(--surface-primary);
+    box-shadow: var(--elevation-1);
+}
+
+.btn-primary:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: #000000;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: var(--elevation-1);
+}
+
+.btn-secondary:hover {
+    background: #333333;
+    border-color: #333333;
+    box-shadow: var(--elevation-2);
+}
+
+/* ================================
+   SECTION STYLING
+   ================================ */
+
+.section {
+    padding: var(--space-page-1) 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-section-2);
+}
+
+.section-title {
+    font-size: var(--text-section);
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: var(--space-micro-2);
+}
+
+.section-subtitle {
+    font-size: var(--text-body-large);
+    color: var(--text-secondary);
+}
+
+/* ================================
+   RHD PERFORMANCE GRADES
+   ================================ */
+
+.performance-grades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-component-2);
+    margin-bottom: var(--space-section-1);
+}
+
+.grade-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-2);
+    border-radius: 16px;
+    box-shadow: var(--elevation-1);
+    transition: all var(--transition-fast);
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.grade-card:hover {
+    box-shadow: var(--elevation-3);
+    transform: translateY(-4px);
+}
+
+.grade-card.grade-featured {
+    border-color: var(--accent-neon);
+    background: linear-gradient(135deg, rgba(210, 255, 55, 0.05) 0%, var(--surface-primary) 100%);
+}
+
+.grade-badge {
+    position: absolute;
+    top: -8px;
+    right: 16px;
+    background: var(--accent-neon);
+    color: #000000;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.grade-header {
+    text-align: center;
+    margin-bottom: var(--space-component-1);
+}
+
+.grade-rpm {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 4px rgba(210,255,54);
+}
+
+.grade-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.grade-subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+.grade-description {
+    margin-bottom: var(--space-component-1);
+}
+
+.grade-description p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.grade-applications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.application-tag {
+    background: rgba(0,0,0,0.05);
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.application-tag.featured {
+    background: var(--accent-neon);
+    color: #000000;
+    border-color: var(--accent-neon);
+    font-weight: 600;
+}
+
+.power-tool-focus {
+    background: var(--surface-primary);
+    padding: var(--space-section-1);
+    border-radius: 16px;
+    box-shadow: var(--elevation-1);
+    border-left: 4px solid var(--accent-neon);
+    margin-top: var(--space-component-2);
+}
+
+.power-tool-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-micro-2);
+    text-align: center;
+}
+
+.power-tool-description {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
+/* ================================
+   TECHNICAL SPECIFICATIONS
+   ================================ */
+
+.specs-container {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+    overflow: hidden;
+}
+
+.specs-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-subtle);
+    overflow-x: auto;
+}
+
+.specs-tab {
+    width: 25%;
+    padding: var(--space-micro-2) 20px;
+    background: none;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: var(--text-body);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+}
+
+.specs-tab.active {
+    border-bottom-color: var(--accent-neon);
+    background: rgba(0, 255, 136, 0.05);
+}
+
+.specs-content {
+    padding: 40px;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table th,
+.specs-table td {
+    text-align: left;
+    padding: var(--space-micro-2);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.specs-table th {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.specs-table td {
+    color: var(--text-secondary);
+}
+
+.specs-table tr:nth-child(even) {
+    background: rgba(248, 249, 250, 0.5);
+}
+
+/* ================================
+   PRODUCT MODELS
+   ================================ */
+
+.models-filters {
+    display: flex;
+    gap: var(--space-micro-2);
+    margin-bottom: var(--space-component-2);
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    padding: var(--space-micro-2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    background: var(--surface-primary);
+    font-family: var(--font-family);
+    min-width: 120px;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--accent-neon);
+    box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+}
+
+.search-input {
+    flex: 1;
+    padding: var(--space-micro-2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    font-family: var(--font-family);
+    min-width: 200px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--accent-neon);
+    box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-component-1);
+}
+
+.model-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-1);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+    transition: all var(--transition-fast);
+}
+
+.model-card:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-2px);
+}
+
+.model-badge {
+    background: var(--accent-neon);
+    color: #000000;
+    padding: 8px var(--space-micro-2);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: var(--text-body);
+    display: inline-block;
+    margin-bottom: var(--space-micro-2);
+}
+
+.model-specs {
+    margin: var(--space-micro-2) 0;
+}
+
+.model-spec {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    font-size: var(--text-body-small);
+}
+
+.model-spec-label {
+    color: var(--text-secondary);
+}
+
+.model-spec-value {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ================================
+   APPLICATIONS
+   ================================ */
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-1);
+}
+
+.application-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-2);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+}
+
+.application-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-micro-2);
+    margin-bottom: var(--space-component-1);
+}
+
+.application-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--accent-neon);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--surface-primary);
+    font-size: 20px;
+}
+
+.application-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.application-list {
+    list-style: none;
+    margin-bottom: var(--space-component-1);
+    font-size: 14px;
+}
+
+.application-list li {
+    padding: 2px 0;
+    padding-left: var(--space-micro-2);
+    position: relative;
+    line-height: 1.4;
+}
+
+.application-list li::before {
+    content: '•';
+    color: #000000;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.application-requirements {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* ================================
+   FAQ SECTION
+   ================================ */
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-category {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    margin-bottom: var(--space-component-1);
+    box-shadow: var(--elevation-1);
+    overflow: hidden;
+}
+
+.faq-category-header {
+    padding: var(--space-component-1) var(--space-component-1);
+    background: var(--surface-primary);
+    border-left: 2px solid var(--accent-neon);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all var(--transition-fast);
+}
+
+.faq-category-header:hover {
+    background: rgba(0, 255, 136, 0.02);
+}
+
+.faq-chevron {
+    transition: transform var(--transition-smooth);
+    font-size: 20px;
+    color: #000000;
+}
+
+.faq-category.active .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-questions {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-smooth);
+    counter-reset: faq-counter;
+}
+
+.faq-category.active .faq-questions {
+    max-height: 2000px;
+}
+
+.faq-question {
+    padding: var(--space-component-2);
+    border-top: 1px solid var(--border-subtle);
+    margin-bottom: var(--space-component-1);
+    background: rgba(248, 249, 250, 0.3);
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-neon);
+    position: relative;
+    counter-increment: faq-counter;
+}
+
+.faq-question::before {
+    content: "#" counter(faq-counter);
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.faq-question-title {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: var(--space-micro-2);
+    color: var(--text-primary);
+}
+
+.faq-direct-answer {
+    background: rgba(0, 255, 136, 0.1);
+    padding: var(--space-micro-2);
+    border-radius: 8px;
+    margin-bottom: var(--space-micro-2);
+    font-weight: 500;
+    border-left: 3px solid var(--accent-neon);
+}
+
+.faq-section {
+    margin-bottom: var(--space-component-1);
+    padding-top: var(--space-micro-2);
+}
+
+.faq-section-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    font-size: var(--text-body-small);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.faq-section-content {
+    color: var(--text-secondary);
+    font-size: var(--text-body-small);
+    line-height: 1.5;
+}
+
+.faq-pro-tip {
+    background: var(--surface-primary);
+    border: 1px solid var(--accent-neon);
+    padding: var(--space-micro-2);
+    border-radius: 8px;
+    margin-top: var(--space-component-1);
+    font-style: italic;
+    color: var(--text-primary);
+    box-shadow: var(--elevation-1);
+}
+
+.faq-pro-tip::before {
+    content: '💡 Pro Tip: ';
+    font-weight: 600;
+    color: #000000;
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.footer {
+    background: var(--text-primary);
+    color: var(--surface-primary);
+    padding: var(--space-section-2) 0 var(--space-component-2) 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-component-2);
+    margin-bottom: var(--space-component-2);
+}
+
+.footer-section h3 {
+    font-weight: 600;
+    font-size: var(--text-body);
+    margin-bottom: var(--space-micro-2);
+}
+
+.footer-section a {
+    color: var(--surface-primary);
+    text-decoration: none;
+    font-size: var(--text-body-small);
+    display: block;
+    margin-bottom: 4px;
+    transition: color var(--transition-fast);
+}
+
+.footer-section a:hover {
+    color: var(--accent-neon);
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: var(--space-component-2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: var(--text-body-small);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        width: 95%;
+        min-height: auto;
+    }
+    
+    .hero-main {
+        justify-content: flex-start;
+    }
+    
+    .hero-sidebar {
+        order: -1;
+        height: auto;
+        padding: 24px;
+    }
+    
+    .features-vertical {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+    }
+    
+    .sidebar-title {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-micro-2);
+    }
+    
+    .hero {
+        padding: 40px 0 60px 0;
+    }
+    
+    .hero-container {
+        gap: 48px;
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .hero-title {
+        margin-bottom: 12px;
+        letter-spacing: -0.375px;
+    }
+    
+    .hero-subtitle {
+        margin-bottom: 24px;
+        font-size: 16px;
+    }
+    
+    .hero-description {
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    
+    .hero-specs {
+        margin-bottom: 24px;
+    }
+    
+    .specs-compact {
+        gap: 24px;
+        padding: 16px 24px;
+        flex-wrap: wrap;
+    }
+    
+    .spec-value {
+        font-size: 16px;
+    }
+    
+    .spec-label {
+        font-size: 11px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .hero-sidebar {
+        padding: 20px;
+        height: auto;
+    }
+    
+    .sidebar-title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .features-vertical {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .feature-item {
+        gap: 12px;
+    }
+    
+    .feature-title {
+        font-size: 14px;
+    }
+    
+    .feature-description {
+        font-size: 12px;
+    }
+    
+    .models-filters {
+        flex-direction: column;
+    }
+    
+    .filter-select,
+    .search-input {
+        width: 100%;
+    }
+    
+    .specs-tabs {
+        flex-direction: column;
+    }
+    
+    .specs-tab {
+        text-align: left;
+    }
+    
+    .specs-content {
+        padding: var(--space-component-1);
+    }
+    
+    .applications-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-micro-2);
+    }
+}
+
+@media (max-width: 480px) {
+    .specs-compact {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+    
+    .hero-subtitle {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .specs-compact {
+        gap: 16px;
+        padding: 12px 16px;
+    }
+}
+
+/* ================================
+   ACCESSIBILITY
+   ================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus states for accessibility */
+button:focus,
+select:focus,
+input:focus,
+a:focus {
+    outline: 2px solid var(--accent-neon);
+    outline-offset: 2px;
+}
+
+    </style>
 </head>
-<body data-page="miniature">
-    <!-- Navigation Header -->
+<body>
+<!-- Navigation Header -->
     <div id="navbar-container"></div>
 
     <!-- Hero Section -->
@@ -62,7 +1390,7 @@
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="DGBB.png" alt="Deep Groove Ball Bearing - RHD Bearings" />
+                    <img src="https://via.placeholder.com/400x300/cccccc/666666?text=Image" alt="Deep Groove Ball Bearing - RHD Bearings" />
                             </div>
                             </div>
                         </div>
@@ -972,5 +2300,173 @@
                 .catch(error => console.error('Error loading navbar:', error));
         });
     </script>
+<script>
+        // Miniature bearings data
+        const bearingsData = [
+            {"model": "604", "url": "/miniature-bearings/604", "id": "4mm", "od": "12mm", "width": "4mm", "dynamic_load": "0.75kN", "static_load": "0.34kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "2.5g"},
+            {"model": "605", "url": "/miniature-bearings/605", "id": "5mm", "od": "14mm", "width": "5mm", "dynamic_load": "1.05kN", "static_load": "0.50kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "4.5g"},
+            {"model": "606", "url": "/miniature-bearings/606", "id": "6mm", "od": "17mm", "width": "6mm", "dynamic_load": "1.95kN", "static_load": "0.72kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "6.0g"},
+            {"model": "607", "url": "/miniature-bearings/607", "id": "7mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.86kN", "static_load": "1.08kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "7.0g"},
+            {"model": "608", "url": "/miniature-bearings/608", "id": "8mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.32kN", "static_load": "1.38kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "15g"},
+            {"model": "609", "url": "/miniature-bearings/609", "id": "9mm", "od": "24mm", "width": "7mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "16g"},
+            {"model": "623", "url": "/miniature-bearings/623", "id": "3mm", "od": "10mm", "width": "4mm", "dynamic_load": "0.65kN", "static_load": "0.22kN", "grease_speed": "38,000", "oil_speed": "48,000", "weight": "2.0g"},
+            {"model": "624", "url": "/miniature-bearings/624", "id": "4mm", "od": "13mm", "width": "5mm", "dynamic_load": "1.15kN", "static_load": "0.40kN", "grease_speed": "36,000", "oil_speed": "45,000", "weight": "3.0g"},
+            {"model": "625", "url": "/miniature-bearings/625", "id": "5mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.88kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.0g"},
+            {"model": "626", "url": "/miniature-bearings/626", "id": "6mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.05kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
+            {"model": "627", "url": "/miniature-bearings/627", "id": "7mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.28kN", "static_load": "1.35kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "14g"},
+            {"model": "628", "url": "/miniature-bearings/628", "id": "8mm", "od": "24mm", "width": "8mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "24,000", "oil_speed": "32,000", "weight": "16g"},
+            {"model": "629", "url": "/miniature-bearings/629", "id": "9mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.45kN", "static_load": "1.95kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
+            {"model": "683", "url": "/miniature-bearings/683", "id": "3mm", "od": "7mm", "width": "2mm", "dynamic_load": "0.311kN", "static_load": "0.112kN", "grease_speed": "58,000", "oil_speed": "68,000", "weight": "0.75g"},
+            {"model": "684", "url": "/miniature-bearings/684", "id": "4mm", "od": "9mm", "width": "2.5mm", "dynamic_load": "0.35kN", "static_load": "0.40kN", "grease_speed": "49,000", "oil_speed": "57,000", "weight": "0.8g"},
+            {"model": "685", "url": "/miniature-bearings/685", "id": "5mm", "od": "11mm", "width": "3mm", "dynamic_load": "0.57kN", "static_load": "0.25kN", "grease_speed": "43,000", "oil_speed": "51,000", "weight": "2.0g"},
+            {"model": "686", "url": "/miniature-bearings/686", "id": "6mm", "od": "13mm", "width": "3.5mm", "dynamic_load": "0.72kN", "static_load": "0.40kN", "grease_speed": "39,000", "oil_speed": "46,000", "weight": "2.1g"},
+            {"model": "687", "url": "/miniature-bearings/687", "id": "7mm", "od": "14mm", "width": "3.5mm", "dynamic_load": "0.90kN", "static_load": "0.46kN", "grease_speed": "37,000", "oil_speed": "44,000", "weight": "2.5g"},
+            {"model": "688", "url": "/miniature-bearings/688", "id": "8mm", "od": "16mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.55kN", "grease_speed": "35,000", "oil_speed": "41,000", "weight": "3.0g"},
+            {"model": "689", "url": "/miniature-bearings/689", "id": "9mm", "od": "17mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.70kN", "grease_speed": "33,000", "oil_speed": "39,000", "weight": "4.2g"},
+            {"model": "693", "url": "/miniature-bearings/693", "id": "3mm", "od": "8mm", "width": "3mm", "dynamic_load": "0.45kN", "static_load": "0.15kN", "grease_speed": "44,000", "oil_speed": "52,000", "weight": "0.8g"},
+            {"model": "694", "url": "/miniature-bearings/694", "id": "4mm", "od": "11mm", "width": "4mm", "dynamic_load": "0.95kN", "static_load": "0.35kN", "grease_speed": "38,000", "oil_speed": "47,000", "weight": "2.0g"},
+            {"model": "695", "url": "/miniature-bearings/695", "id": "5mm", "od": "13mm", "width": "4mm", "dynamic_load": "1.08kN", "static_load": "0.42kN", "grease_speed": "34,000", "oil_speed": "43,000", "weight": "2.5g"},
+            {"model": "696", "url": "/miniature-bearings/696", "id": "6mm", "od": "15mm", "width": "5mm", "dynamic_load": "1.48kN", "static_load": "0.60kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.5g"},
+            {"model": "697", "url": "/miniature-bearings/697", "id": "7mm", "od": "17mm", "width": "5mm", "dynamic_load": "2.02kN", "static_load": "0.80kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "5.7g"},
+            {"model": "698", "url": "/miniature-bearings/698", "id": "8mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.25kN", "static_load": "0.92kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.5g"},
+            {"model": "699", "url": "/miniature-bearings/699", "id": "9mm", "od": "20mm", "width": "6mm", "dynamic_load": "2.48kN", "static_load": "1.08kN", "grease_speed": "27,000", "oil_speed": "34,000", "weight": "9.2g"}
+        ];
+
+        // Render models
+        function renderModels(models) {
+            const grid = document.getElementById('modelsGrid');
+            grid.innerHTML = models.map(model => `
+                <div class="model-card">
+                    <div class="model-badge">${model.model}</div>
+                    <div class="model-specs">
+                        <div class="model-spec">
+                            <span class="model-spec-label">ID × OD × Width:</span>
+                            <span class="model-spec-value">${model.id} × ${model.od} × ${model.width}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Dynamic Load:</span>
+                            <span class="model-spec-value">${model.dynamic_load}</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Speed (Oil):</span>
+                            <span class="model-spec-value">${model.oil_speed} RPM</span>
+                        </div>
+                        <div class="model-spec">
+                            <span class="model-spec-label">Weight:</span>
+                            <span class="model-spec-value">${model.weight}</span>
+                        </div>
+                    </div>
+                    <a href="${model.url}" class="btn btn-secondary" style="width: 100%; margin-top: 16px;">VIEW DETAILS</a>
+                </div>
+            `).join('');
+        }
+
+        // Filter functionality
+        function filterModels() {
+            const sizeFilter = document.getElementById('sizeFilter').value;
+            const loadFilter = document.getElementById('loadFilter').value;
+            const speedFilter = document.getElementById('speedFilter').value;
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            let filtered = bearingsData.filter(model => {
+                // Size filter
+                if (sizeFilter && !model.model.startsWith(sizeFilter)) return false;
+                
+                // Load filter
+                if (loadFilter) {
+                    const load = parseFloat(model.dynamic_load);
+                    if (loadFilter === 'light' && load >= 1) return false;
+                    if (loadFilter === 'medium' && (load < 1 || load > 3)) return false;
+                    if (loadFilter === 'heavy' && load <= 3) return false;
+                }
+                
+                // Speed filter
+                if (speedFilter) {
+                    const speed = parseInt(model.oil_speed.replace(',', ''));
+                    if (speedFilter === 'standard' && speed >= 40000) return false;
+                    if (speedFilter === 'high' && (speed < 40000 || speed > 60000)) return false;
+                    if (speedFilter === 'ultra' && speed <= 60000) return false;
+                }
+                
+                // Search filter
+                if (searchTerm && !model.model.toLowerCase().includes(searchTerm)) return false;
+                
+                return true;
+            });
+
+            renderModels(filtered);
+        }
+
+        // Specs tab functionality
+        function showSpecTab(tabName) {
+            // Hide all panels
+            document.querySelectorAll('.specs-panel').forEach(panel => {
+                panel.style.display = 'none';
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.specs-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected panel
+            document.getElementById(tabName + '-specs').style.display = 'block';
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // FAQ functionality
+        function toggleFaqCategory(header) {
+            const category = header.parentElement;
+            const isActive = category.classList.contains('active');
+            
+            // Close all categories
+            document.querySelectorAll('.faq-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Open clicked category if it wasn't active
+            if (!isActive) {
+                category.classList.add('active');
+            }
+        }
+
+        // Event listeners
+        document.getElementById('sizeFilter').addEventListener('change', filterModels);
+        document.getElementById('loadFilter').addEventListener('change', filterModels);
+        document.getElementById('speedFilter').addEventListener('change', filterModels);
+        document.getElementById('searchInput').addEventListener('input', filterModels);
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            renderModels(bearingsData);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('../shared/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        });
+    </script>
+
 </body>
 </html>
