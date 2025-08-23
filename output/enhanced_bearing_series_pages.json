@@ -1,0 +1,1044 @@
+{
+  "series_pages": {
+    "metadata": {
+      "company": "RHD Bearings",
+      "website": "https://rhdbearings.com",
+      "contact": {
+        "phone": "+91-9702081858",
+        "email": "sales@rhdenterprise.in",
+        "oem_email": "oemsales@rhdenterprise.in"
+      },
+      "address": {
+        "street": "203 Vihar Estate, Off. Saki Vihar Road",
+        "area": "Next to Autohanger, Sakinaka, Andheri East",
+        "city": "Mumbai",
+        "postal_code": "400072",
+        "country": "India"
+      },
+      "last_updated": "2024-12-21",
+      "total_series": 9,
+      "url_structure": {
+        "series_pattern": "/{series-name}",
+        "bearing_pattern": "/{series-name}/{model-number}",
+        "examples": {
+          "series": "/6000-series",
+          "bearing": "/6000-series/6004"
+        }
+      }
+    },
+    
+    "miniature_bearings": {
+      "series_name": "Miniature Ball Bearings",
+      "series_code": "600 Series (3-digit)",
+      "url": "/miniature-bearings",
+      "total_models": 29,
+      "bore_range": "3mm - 9mm",
+      "model_range": "604 to 699",
+      "description": "Ultra-precision miniature bearings engineered for the most demanding space-critical applications. These compact powerhouses deliver exceptional performance where every millimeter counts, combining Swiss-level precision with Japanese reliability standards.",
+      
+      "rhd_performance_grades": {
+        "v2": {
+          "name": "RHD V2 Miniature Bearings",
+          "rpm": "7,000 RPM",
+          "description": "Multi-industry workhorse for standard applications. Reliable performance across automotive, appliances, and general industrial equipment.",
+          "applications": ["Industrial", "Automotive", "Appliances"],
+          "target_market": "General purpose applications requiring reliable performance"
+        },
+        "v3_ultra": {
+          "name": "RHD V3 Ultra Miniature Bearings", 
+          "rpm": "15,000 RPM",
+          "description": "Premium power tool performance. Our bestselling grade engineered for professional power tools and high-performance equipment.",
+          "applications": ["Power Tools", "Professional", "High-Performance"],
+          "target_market": "Power tool industry - primary revenue driver",
+          "featured": true,
+          "badge": "Most Popular"
+        },
+        "v4_max": {
+          "name": "RHD V4 Max Miniature Bearings",
+          "rpm": "24,000 RPM", 
+          "description": "Maximum performance for demanding applications. Elite-grade bearings for high-end power tools and precision equipment.",
+          "applications": ["Power Tools", "Elite", "Precision"],
+          "target_market": "High-end power tools and precision equipment",
+          "featured": true,
+          "badge": "Elite Performance"
+        },
+        "power_tool_focus": {
+          "title": "Power Tool Excellence",
+          "description": "RHD's V3 Ultra and V4 Max miniature bearings are specifically engineered for the demanding power tool industry. Our advanced manufacturing processes and precision-grade materials deliver exceptional performance in high-speed, high-load applications. From professional drills and grinders to precision cutting tools, RHD bearings provide the reliability and durability that power tool manufacturers trust. With our V3 and V4 grades representing our primary revenue source in the power tool segment, we've invested heavily in optimizing these bearings for maximum performance, extended service life, and consistent quality that meets the rigorous demands of professional and industrial power tool applications."
+        }
+      },
+      
+      "detailed_applications": {
+        "automotive_transportation": {
+          "category": "Automotive Applications",
+          "applications": [
+            "Electric motor cooling fans",
+            "Automotive sensors and actuators",
+            "Small electric vehicle components",
+            "Dashboard instrument motors",
+            "Seat adjustment mechanisms",
+            "Mirror adjustment motors",
+            "Window regulator motors",
+            "Engine management sensors"
+          ],
+          "key_requirements": "Compact size, reliability, temperature resistance"
+        },
+        "industrial_manufacturing": {
+          "category": "Industrial Manufacturing",
+          "applications": [
+            "Precision spindle motors",
+            "Small conveyor rollers",
+            "Micro-pumps and actuators",
+            "Encoder and sensor assemblies",
+            "Small gear motors",
+            "Robotics joint mechanisms",
+            "Pneumatic valve actuators",
+            "Quality control equipment"
+          ],
+          "key_requirements": "High precision, continuous operation, minimal maintenance"
+        },
+        "home_appliances": {
+          "category": "Home Appliances",
+          "applications": [
+            "Small appliance motors",
+            "Coffee machine pumps",
+            "Blender motor assemblies",
+            "Food processor mechanisms",
+            "Electric toothbrush motors",
+            "Hair dryer fan motors",
+            "Kitchen scale mechanisms",
+            "Timer and control motors"
+          ],
+          "key_requirements": "Quiet operation, long life, cost effectiveness"
+        }
+      },
+      
+      "specifications": {
+        "bore_diameter_range": "3mm - 9mm",
+        "outer_diameter_range": "7mm - 24mm",
+        "width_range": "2mm - 7mm",
+        "load_capacity_range": "0.311kN - 4.45kN",
+        "speed_range": "22,000 - 68,000 RPM",
+        "precision_grades": ["P0 (Standard)", "P6 (High Precision)", "P5 (Ultra Precision)", "P4 (Maximum Precision)"],
+        "temperature_range": "-40°C to +150°C",
+        "materials": ["Chrome Steel (Gcr15)", "Stainless Steel (440C)", "Ceramic Hybrid"],
+        "sealing_options": ["Open", "Metal Shields (Z)", "Rubber Seals (RS)", "Clean Room Seals"]
+      },
+      
+      "models_with_links": [
+        {"model": "604", "url": "/miniature-bearings/604", "id": "4mm", "od": "12mm", "width": "4mm", "dynamic_load": "0.75kN", "static_load": "0.34kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "2.5g"},
+        {"model": "605", "url": "/miniature-bearings/605", "id": "5mm", "od": "14mm", "width": "5mm", "dynamic_load": "1.05kN", "static_load": "0.50kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "4.5g"},
+        {"model": "606", "url": "/miniature-bearings/606", "id": "6mm", "od": "17mm", "width": "6mm", "dynamic_load": "1.95kN", "static_load": "0.72kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "6.0g"},
+        {"model": "607", "url": "/miniature-bearings/607", "id": "7mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.86kN", "static_load": "1.08kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "7.0g"},
+        {"model": "608", "url": "/miniature-bearings/608", "id": "8mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.32kN", "static_load": "1.38kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "15g"},
+        {"model": "609", "url": "/miniature-bearings/609", "id": "9mm", "od": "24mm", "width": "7mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "16g"},
+        {"model": "623", "url": "/miniature-bearings/623", "id": "3mm", "od": "10mm", "width": "4mm", "dynamic_load": "0.65kN", "static_load": "0.22kN", "grease_speed": "38,000", "oil_speed": "48,000", "weight": "2.0g"},
+        {"model": "624", "url": "/miniature-bearings/624", "id": "4mm", "od": "13mm", "width": "5mm", "dynamic_load": "1.15kN", "static_load": "0.40kN", "grease_speed": "36,000", "oil_speed": "45,000", "weight": "3.0g"},
+        {"model": "625", "url": "/miniature-bearings/625", "id": "5mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.88kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.0g"},
+        {"model": "626", "url": "/miniature-bearings/626", "id": "6mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.05kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
+        {"model": "627", "url": "/miniature-bearings/627", "id": "7mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.28kN", "static_load": "1.35kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "14g"},
+        {"model": "628", "url": "/miniature-bearings/628", "id": "8mm", "od": "24mm", "width": "8mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "24,000", "oil_speed": "32,000", "weight": "16g"},
+        {"model": "629", "url": "/miniature-bearings/629", "id": "9mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.45kN", "static_load": "1.95kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
+        {"model": "634", "url": "/miniature-bearings/634", "id": "4mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.88kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "5.0g"},
+        {"model": "635", "url": "/miniature-bearings/635", "id": "5mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.02kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
+        {"model": "683", "url": "/miniature-bearings/683", "id": "3mm", "od": "7mm", "width": "2mm", "dynamic_load": "0.311kN", "static_load": "0.112kN", "grease_speed": "58,000", "oil_speed": "68,000", "weight": "0.75g"},
+        {"model": "684", "url": "/miniature-bearings/684", "id": "4mm", "od": "9mm", "width": "2.5mm", "dynamic_load": "0.35kN", "static_load": "0.40kN", "grease_speed": "49,000", "oil_speed": "57,000", "weight": "0.8g"},
+        {"model": "685", "url": "/miniature-bearings/685", "id": "5mm", "od": "11mm", "width": "3mm", "dynamic_load": "0.57kN", "static_load": "0.25kN", "grease_speed": "43,000", "oil_speed": "51,000", "weight": "2.0g"},
+        {"model": "686", "url": "/miniature-bearings/686", "id": "6mm", "od": "13mm", "width": "3.5mm", "dynamic_load": "0.72kN", "static_load": "0.40kN", "grease_speed": "39,000", "oil_speed": "46,000", "weight": "2.1g"},
+        {"model": "687", "url": "/miniature-bearings/687", "id": "7mm", "od": "14mm", "width": "3.5mm", "dynamic_load": "0.90kN", "static_load": "0.46kN", "grease_speed": "37,000", "oil_speed": "44,000", "weight": "2.5g"},
+        {"model": "688", "url": "/miniature-bearings/688", "id": "8mm", "od": "16mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.55kN", "grease_speed": "35,000", "oil_speed": "41,000", "weight": "3.0g"},
+        {"model": "689", "url": "/miniature-bearings/689", "id": "9mm", "od": "17mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.70kN", "grease_speed": "33,000", "oil_speed": "39,000", "weight": "4.2g"},
+        {"model": "693", "url": "/miniature-bearings/693", "id": "3mm", "od": "8mm", "width": "3mm", "dynamic_load": "0.45kN", "static_load": "0.15kN", "grease_speed": "44,000", "oil_speed": "52,000", "weight": "0.8g"},
+        {"model": "694", "url": "/miniature-bearings/694", "id": "4mm", "od": "11mm", "width": "4mm", "dynamic_load": "0.95kN", "static_load": "0.35kN", "grease_speed": "38,000", "oil_speed": "47,000", "weight": "2.0g"},        {"model": "695", "url": "/miniature-bearings/695", "id": "5mm", "od": "13mm", "width": "4mm", "dynamic_load": "1.08kN", "static_load": "0.42kN", "grease_speed": "34,000", "oil_speed": "43,000", "weight": "2.5g"},
+        {"model": "696", "url": "/miniature-bearings/696", "id": "6mm", "od": "15mm", "width": "5mm", "dynamic_load": "1.48kN", "static_load": "0.60kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.5g"},
+        {"model": "697", "url": "/miniature-bearings/697", "id": "7mm", "od": "17mm", "width": "5mm", "dynamic_load": "2.02kN", "static_load": "0.80kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "5.7g"},
+        {"model": "698", "url": "/miniature-bearings/698", "id": "8mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.25kN", "static_load": "0.92kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.5g"},
+        {"model": "699", "url": "/miniature-bearings/699", "id": "9mm", "od": "20mm", "width": "6mm", "dynamic_load": "2.48kN", "static_load": "1.08kN", "grease_speed": "27,000", "oil_speed": "34,000", "weight": "9.2g"}
+        
+      ],
+      
+      "comprehensive_faq": [
+        {
+          "category": "Bearing Selection & Replacement",
+          "questions": [
+            {
+              "question": "How do I know if I'm buying the right miniature bearing for my electronics application?",
+              "direct_answer": "Match the bore size, check load capacity vs. your actual loads, and consider speed requirements. For electronics, prioritize low noise and precision grades.",
+              "why_this_matters": "Electronics applications need bearings that won't interfere with sensitive components. Wrong size means poor fit, inadequate load capacity causes early failure, and poor precision creates noise that affects circuit performance. Many electronics failures trace back to bearing-induced vibration disrupting delicate connections or creating electromagnetic interference.",
+              "how_to_handle_it": "Start with exact bore diameter match - never force fit. Calculate your actual loads including shock factors (vibration, drops). For electronics: specify P5 precision minimum, sealed bearings (2RS) for dust protection, and stainless steel if near batteries or corrosive components. When in doubt, go one size larger on load capacity.",
+              "pro_tip": "Electronics gear often runs 24/7 - specify bearings for 3× your calculated load for reliable 5+ year service life."
+            },
+            {
+              "question": "Can I use a cheaper bearing as a replacement, or does it have to be exact specification?",
+              "direct_answer": "For electronics and precision instruments, stick with exact specs. For general applications, you can often upgrade load capacity but never downgrade.",
+              "why_this_matters": "Miniature bearings in electronics often have tight space constraints and precise mounting requirements. A cheaper bearing might have different dimensions, inferior sealing, or poor precision that creates noise and vibration. In precision instruments, small differences in runout or noise can affect measurement accuracy significantly.",
+              "how_to_handle_it": "Safe upgrades: higher precision grade (ABEC-5 to ABEC-7), better sealing (open to sealed), ceramic hybrid for longer life. Never compromise on: bore/OD dimensions, load capacity, or precision requirements. Check if mounting hardware accommodates different bearing width. For cost savings, buy in quantity or consider repairable designs.",
+              "pro_tip": "Upgrading to stainless steel adds 20% cost but eliminates corrosion issues in humid electronics environments."
+            },
+            {
+              "question": "What's the difference between sealed and open miniature bearings for my equipment?",
+              "direct_answer": "Sealed bearings (2RS) provide protection from dust/moisture but run slower and create more friction. Open bearings offer higher speeds but need clean environments.",
+              "why_this_matters": "Electronics equipment often operates in dusty environments where contamination kills bearings quickly. Sealed bearings prevent ingress but create higher friction and heat. Open bearings run cooler and faster but require pristine conditions. The wrong choice leads to either contamination failure or overheating issues.",
+              "how_to_handle_it": "Choose sealed (2RS) for: consumer electronics, medical devices, outdoor equipment, and anything exposed to dust. Choose open for: high-speed spindles, clean room applications, or where maximum speed is critical. Consider light contact seals (LU) as compromise - some protection with less friction than full contact seals.",
+              "pro_tip": "Most electronics applications benefit from sealed bearings - the small speed penalty is worth the contamination protection."
+            }
+          ]
+        },
+        {
+          "category": "Installation & Maintenance",
+          "questions": [
+            {
+              "question": "Why do my miniature bearings keep failing early, and how can I prevent it?",
+              "direct_answer": "Most miniature bearing failures come from contamination, improper installation, or exceeding speed limits. Focus on cleanliness and gentle installation techniques.",
+              "why_this_matters": "Miniature bearings are precision components where small mistakes have big consequences. Contamination particles that wouldn't harm larger bearings can destroy miniature ones. Force during installation creates microscopic damage that leads to rapid failure. Electronics environments often have hidden contaminants like flux residue or metal particles that are bearing killers.",
+              "how_to_handle_it": "Installation: Use bearing pullers, never hammer directly. Press on inner ring when installing on shaft, outer ring when installing in housing. Cleanliness: Work in clean environment, use lint-free wipes, avoid compressed air (pushes contamination deeper). Speed limits: Stay below 75% of catalog speed for long life. Check for electrical current passage in motor applications.",
+              "pro_tip": "A drop of light oil during installation protects against corrosion and makes assembly easier - just don't over-lubricate."
+            },
+            {
+              "question": "What's the proper way to install miniature bearings without damaging them?",
+              "direct_answer": "Use proper tools - bearing pullers for installation, presses for removal. Never hit bearings directly with hammers or use excessive force.",
+              "why_this_matters": "Miniature bearings are delicate precision components where installation damage often appears as premature failure weeks later. Improper installation creates microscopic cracks, disturbs precision tolerances, and can damage seals. The small size makes them especially vulnerable to installation abuse.",
+              "how_to_handle_it": "Tools needed: small bearing pullers, precision presses, or installation sleeves. Technique: Press evenly on the ring that's being fitted (inner ring to shaft, outer ring to housing). Keep hands clean, work in good lighting. If resistance increases suddenly, stop and check alignment. Never reuse damaged bearings even if they seem okay.",
+              "pro_tip": "For electronics work, invest in proper miniature bearing installation tools - they pay for themselves in reduced bearing damage."
+            },
+            {
+              "question": "How often should I re-lubricate miniature bearings in electronics equipment?",
+              "direct_answer": "Most miniature bearings in electronics are sealed and lubricated for life. For open bearings, light re-lubrication every 1-2 years or 8,000 hours operation.",
+              "why_this_matters": "Electronics equipment often runs continuously but at light loads, creating different lubrication needs than industrial machinery. Over-lubrication is as harmful as under-lubrication in miniature bearings - excess grease increases friction, attracts contamination, and can interfere with electrical components. Most failures come from contamination, not lubricant depletion.",
+              "how_to_handle_it": "Sealed bearings: No maintenance required - replace when they fail. Open bearings: Use precision oilers with synthetic light oil (viscosity 10-20 cSt). Apply 1-2 drops maximum, operate briefly to distribute, remove excess. Monitor temperature - properly lubricated bearings run cool. If bearing gets hot, you've over-lubricated.",
+              "pro_tip": "For electronics applications, cleanliness matters more than lubrication frequency - keep dust away and bearings last years longer."
+            }
+          ]
+        },
+        {
+          "category": "Troubleshooting & Problem Solving",
+          "questions": [
+            {
+              "question": "My miniature bearing is making noise - is it dangerous and what should I do?",
+              "direct_answer": "Grinding or clicking sounds indicate bearing damage - replace immediately. Slight humming is normal. Sudden noise changes suggest contamination or lubrication issues.",
+              "why_this_matters": "In electronics equipment, bearing noise often indicates problems that can damage expensive components. Failed miniature bearings can seize suddenly, damaging motors, circuit boards, or precision mechanisms. Noise also affects device performance - medical equipment, audio gear, and measuring instruments all suffer from bearing-induced vibration.",
+              "how_to_handle_it": "Immediate replacement needed for: grinding, clicking, irregular noise, or sudden noise increase. Investigate further for: humming (may be normal), slight squeaking (lubrication issue), or intermittent noise (contamination). Stop equipment until diagnosis complete. Check for contamination sources, electrical current damage, or overloading before installing replacement.",
+              "pro_tip": "In electronics, bearing noise often appears before visible damage - trust your ears and replace noisy bearings early to prevent collateral damage."
+            },
+            {
+              "question": "How do I identify what's causing premature miniature bearing failure in my equipment?",
+              "direct_answer": "Look for patterns: contamination shows as dark residue, electrical damage creates pitting, overloading causes ball/race wear, and installation damage shows as cracks or deformation.",
+              "why_this_matters": "Understanding failure modes prevents repeat failures and identifies design issues. Electronics environments have unique failure modes like electrical current damage from switching power supplies or contamination from manufacturing processes. Miniature bearings fail differently than larger ones - small particles cause disproportionate damage.",
+              "how_to_handle_it": "Examine failed bearings under magnification. Look for: contamination (dark particles, residue), electrical damage (small pits, frosted appearance), wear patterns (polished areas, material loss), or physical damage (cracks, deformation). Check operating conditions: temperature, speed, loads, electrical environment. Document patterns to identify systematic issues.",
+              "pro_tip": "Most electronics bearing failures are contamination-related - improve sealing or filtration rather than just replacing bearings."
+            },
+            {
+              "question": "What causes miniature bearings to overheat and how do I fix it?",
+              "direct_answer": "Common causes: over-lubrication, excessive preload, contamination, or exceeding speed limits. Most can be fixed by proper lubrication and installation techniques.",
+              "why_this_matters": "Overheating in miniature bearings quickly leads to lubricant breakdown, seal damage, and bearing seizure. Electronics equipment often has limited cooling, making thermal management critical. Hot bearings also create thermal expansion that affects precision mechanisms and can damage nearby electronic components.",
+              "how_to_handle_it": "Immediate fixes: Reduce lubrication if over-greased, check for proper clearances, verify speed limits not exceeded. Long-term solutions: Improve ventilation around bearing area, use synthetic lubricants for high-temperature operation, consider ceramic hybrid bearings for better heat resistance. Monitor temperatures during operation to establish baselines.",
+              "pro_tip": "Touch test: properly operating miniature bearings should feel barely warm to touch - if too hot to comfortably touch, investigate immediately."
+            }
+          ]
+        },
+        {
+          "category": "Cost & Performance Optimization",
+          "questions": [
+            {
+              "question": "Is it worth paying more for premium miniature bearings, or are standard ones fine for electronics?",
+              "direct_answer": "For consumer electronics, standard bearings are often adequate. For medical devices, instruments, or long-life applications, premium bearings pay for themselves through reliability.",
+              "why_this_matters": "Electronics equipment has widely varying requirements. Consumer goods need cost-effective solutions, while medical devices or measuring instruments require ultimate reliability. Premium bearings offer better materials, tighter tolerances, and longer life but cost 2-5× more. The wrong choice either wastes money or creates reliability problems.",
+              "how_to_handle_it": "Use premium bearings for: medical devices, measuring instruments, 24/7 operation, or where bearing failure damages expensive components. Standard bearings work for: consumer electronics, short-duty cycles, or easily serviceable equipment. Consider factors: replacement cost, downtime impact, warranty requirements, and user safety.",
+              "pro_tip": "In electronics, bearing failure often damages other components - paying 3× more for bearings can save 10× in system repair costs."
+            },
+            {
+              "question": "How can I extend miniature bearing life to reduce maintenance costs in electronics equipment?",
+              "direct_answer": "Focus on contamination control, proper installation, and operating within rated limits. Sealed bearings and good design practices typically double service life.",
+              "why_this_matters": "Electronics equipment often operates unattended for years, making bearing reliability critical. Maintenance access is usually difficult and expensive. Environmental factors like dust, humidity, and electrical interference create unique challenges for miniature bearings. Small improvements in bearing life have large impacts on overall equipment reliability.",
+              "how_to_handle_it": "Design improvements: Use sealed bearings, provide good ventilation, isolate from electrical interference, design for easy bearing replacement. Operating practices: Stay within speed/load limits, maintain clean environment, monitor for early failure signs. Consider upgrades: stainless steel for corrosion resistance, ceramic hybrid for longer life, precision grades for better performance.",
+              "pro_tip": "Design equipment so bearings can be replaced without major disassembly - it encourages proper maintenance and reduces lifecycle costs."
+            },
+            {
+              "question": "What's the real difference between cheap Chinese bearings and quality ones for electronics applications?",
+              "direct_answer": "Quality bearings offer better steel, precision manufacturing, and consistent performance. Cheap bearings may work initially but fail unpredictably, often damaging expensive electronics.",
+              "why_this_matters": "Electronics applications demand reliability because bearing failure often damages circuit boards, processors, or other expensive components. Cheap bearings may have poor steel quality, inconsistent dimensions, inadequate sealing, or contamination from manufacturing. The initial savings disappear quickly when they cause expensive system failures or frequent replacements.",
+              "how_to_handle_it": "For critical applications, specify bearings from established manufacturers with quality certifications. Check for: consistent dimensions, proper sealing, clean packaging, and technical support. Consider total cost including: replacement frequency, system downtime, and potential collateral damage. Buy samples for testing before large orders.",
+              "pro_tip": "In electronics, the bearing cost is usually <1% of total system cost - don't compromise reliability to save pennies on bearing costs."
+            }
+          ]
+        }
+      ],
+      
+      "seo_metadata": {
+        "title": "Miniature Ball Bearings 604-699 Series | Ultra-Precision Electronics | RHD Bearings",
+        "description": "Premium miniature ball bearings (604-699 series) for electronics, medical devices, and precision instruments. 3-9mm bore, up to 68,000 RPM. Mumbai, India manufacturer.",
+        "keywords": [
+          "miniature ball bearings", "precision bearings", "small bearings", "electronic bearings", 
+          "medical device bearings", "instrument bearings", "high speed bearings", "Mumbai bearings",
+          "608 bearing", "625 bearing", "683 bearing", "drone bearings", "camera bearings"
+        ],
+        "canonical_url": "https://rhdbearings.com/miniature-bearings"
+      },
+      
+      "llm_optimization": {
+        "natural_queries": [
+          "What bearings do I need for small electronics?",
+          "Best miniature bearings for precision instruments",
+          "High speed bearings for small motors",
+          "Smallest bearings available for medical devices",
+          "Precision bearings for optical equipment",
+          "Drone camera gimbal bearings",
+          "Clean room compatible miniature bearings",
+          "Ceramic hybrid miniature bearings"
+        ],
+        "selection_criteria": [
+          "Space constraints: Ultra-compact design required",
+          "Speed requirements: Up to 68,000 RPM capability",
+          "Precision needs: ABEC-5 or higher recommended",
+          "Environment: Clean room compatible options",
+          "Load capacity: Light to moderate loads (0.3-4.5kN)",
+          "Industry: Electronics, medical, aerospace, instruments"
+        ],
+        "comparison_points": [
+          "Smallest bearing series with highest precision",
+          "Best power-to-size ratio in the industry", 
+          "Superior speed capability vs. standard bearings",
+          "Ideal for applications where space is premium",
+          "Available in multiple precision grades",
+          "Stainless steel and ceramic options available"
+        ]
+      }
+    },
+
+    "6000_series": {
+      "series_name": "6000 Series Deep Groove Ball Bearings",
+      "series_code": "6000-6020",
+      "url": "/6000-series",
+      "total_models": 21,
+      "bore_range": "10mm - 100mm",
+      "model_range": "6000 to 6020",
+      "description": "The versatile 6000 series represents the perfect balance of performance, economy, and reliability. These bearings are the backbone of modern industry, providing dependable service in countless applications from automotive systems to industrial machinery.",
+      
+      "key_features": [
+        "Excellent load capacity for medium-duty applications",
+        "Wide speed range with proper lubrication",
+        "Cost-effective solution for general industrial use",
+        "Available in multiple seal configurations",
+        "Standard ISO dimensions for easy replacement",
+        "Proven reliability across diverse industries",
+        "Temperature range -30°C to +120°C"
+      ],
+      
+      "detailed_applications": {
+        "automotive_transportation": {
+          "category": "Automotive & Transportation",
+          "applications": [
+            "Alternator and generator bearings",
+            "Water pump assemblies",
+            "HVAC blower motors",
+            "Power steering pumps",
+            "Transmission components",
+            "Engine cooling fan motors",
+            "Windshield wiper motors",
+            "Fuel pump motors",
+            "ABS system components",
+            "Electric vehicle motor bearings"
+          ],
+          "key_requirements": "Reliability, temperature resistance, moderate loads"
+        },
+        "industrial_manufacturing": {
+          "category": "Industrial Manufacturing",
+          "applications": [
+            "Electric motor bearings (1-50 HP)",
+            "Conveyor system rollers",
+            "Industrial fans and blowers",
+            "Pump assemblies",
+            "Compressor applications",
+            "Machine tool spindles",
+            "Packaging machinery",
+            "Textile spinning equipment",
+            "Food processing equipment",
+            "Chemical processing pumps"
+          ],
+          "key_requirements": "Durability, multiple shift operation, easy maintenance"
+        },
+        "home_appliances": {
+          "category": "Home Appliances",
+          "applications": [
+            "Washing machine motors",
+            "Dryer drum assemblies",
+            "Dishwasher pumps",
+            "Refrigerator compressors",
+            "Air conditioner fans",
+            "Vacuum cleaner motors",
+            "Kitchen appliance motors",
+            "Garage door openers",
+            "Pool pump motors",
+            "Lawn mower engines"
+          ],
+          "key_requirements": "Quiet operation, long life, cost effectiveness"
+        }
+      },
+      
+      "specifications": {
+        "bore_diameter_range": "10mm - 100mm",
+        "outer_diameter_range": "26mm - 150mm",
+        "width_range": "8mm - 24mm",
+        "load_capacity_range": "4.58kN - 64.5kN",
+        "speed_range": "3,800 - 30,000 RPM",
+        "precision_grades": ["P0 (Standard)", "P6 (Precision)"],
+        "temperature_range": "-30°C to +120°C",
+        "materials": ["Chrome Steel (Gcr15)", "Stainless Steel (optional)"],
+        "sealing_options": ["Open", "Metal Shields (Z/ZZ)", "Rubber Seals (RS/2RS)", "Contact Seals"]
+      },
+      
+      "models_with_links": [
+        {"model": "6000", "url": "/6000-series/6000", "id": "10mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.58kN", "static_load": "1.98kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
+        {"model": "6001", "url": "/6000-series/6001", "id": "12mm", "od": "28mm", "width": "8mm", "dynamic_load": "5.10kN", "static_load": "2.38kN", "grease_speed": "20,000", "oil_speed": "26,000", "weight": "22g"},
+        {"model": "6002", "url": "/6000-series/6002", "id": "15mm", "od": "32mm", "width": "9mm", "dynamic_load": "5.58kN", "static_load": "2.85kN", "grease_speed": "19,000", "oil_speed": "24,000", "weight": "31g"},
+        {"model": "6003", "url": "/6000-series/6003", "id": "17mm", "od": "35mm", "width": "10mm", "dynamic_load": "6.00kN", "static_load": "3.25kN", "grease_speed": "17,000", "oil_speed": "21,000", "weight": "40g"},
+        {"model": "6004", "url": "/6000-series/6004", "id": "20mm", "od": "42mm", "width": "12mm", "dynamic_load": "9.38kN", "static_load": "5.02kN", "grease_speed": "16,000", "oil_speed": "19,000", "weight": "68g"},
+        {"model": "6005", "url": "/6000-series/6005", "id": "25mm", "od": "47mm", "width": "12mm", "dynamic_load": "10.00kN", "static_load": "5.85kN", "grease_speed": "13,000", "oil_speed": "17,000", "weight": "78g"},
+        {"model": "6006", "url": "/6000-series/6006", "id": "30mm", "od": "55mm", "width": "13mm", "dynamic_load": "13.20kN", "static_load": "8.30kN", "grease_speed": "11,000", "oil_speed": "14,000", "weight": "113g"},
+        {"model": "6007", "url": "/6000-series/6007", "id": "35mm", "od": "62mm", "width": "14mm", "dynamic_load": "16.20kN", "static_load": "10.50kN", "grease_speed": "9,500", "oil_speed": "12,000", "weight": "148g"},
+        {"model": "6008", "url": "/6000-series/6008", "id": "40mm", "od": "68mm", "width": "15mm", "dynamic_load": "17.00kN", "static_load": "11.80kN", "grease_speed": "9,000", "oil_speed": "11,000", "weight": "185g"},
+        {"model": "6009", "url": "/6000-series/6009", "id": "45mm", "od": "75mm", "width": "16mm", "dynamic_load": "21.00kN", "static_load": "14.80kN", "grease_speed": "8,000", "oil_speed": "10,000", "weight": "230g"},
+        {"model": "6010", "url": "/6000-series/6010", "id": "50mm", "od": "80mm", "width": "16mm", "dynamic_load": "22.00kN", "static_load": "16.20kN", "grease_speed": "7,000", "oil_speed": "9,000", "weight": "250g"},
+        {"model": "6011", "url": "/6000-series/6011", "id": "55mm", "od": "90mm", "width": "18mm", "dynamic_load": "30.20kN", "static_load": "21.80kN", "grease_speed": "7,000", "oil_speed": "8,500", "weight": "362g"},
+        {"model": "6012", "url": "/6000-series/6012", "id": "60mm", "od": "95mm", "width": "18mm", "dynamic_load": "31.50kN", "static_load": "24.20kN", "grease_speed": "6,300", "oil_speed": "7,500", "weight": "385g"},
+        {"model": "6013", "url": "/6000-series/6013", "id": "65mm", "od": "100mm", "width": "18mm", "dynamic_load": "32.00kN", "static_load": "24.80kN", "grease_speed": "6,000", "oil_speed": "7,000", "weight": "410g"},
+        {"model": "6014", "url": "/6000-series/6014", "id": "70mm", "od": "110mm", "width": "20mm", "dynamic_load": "38.50kN", "static_load": "30.50kN", "grease_speed": "5,600", "oil_speed": "6,700", "weight": "575g"},
+        {"model": "6015", "url": "/6000-series/6015", "id": "75mm", "od": "115mm", "width": "20mm", "dynamic_load": "40.20kN", "static_load": "33.20kN", "grease_speed": "5,300", "oil_speed": "6,300", "weight": "603g"},
+        {"model": "6016", "url": "/6000-series/6016", "id": "80mm", "od": "125mm", "width": "22mm", "dynamic_load": "47.50kN", "static_load": "39.80kN", "grease_speed": "5,000", "oil_speed": "6,000", "weight": "821g"},
+        {"model": "6017", "url": "/6000-series/6017", "id": "85mm", "od": "130mm", "width": "22mm", "dynamic_load": "50.80kN", "static_load": "42.80kN", "grease_speed": "4,500", "oil_speed": "5,600", "weight": "848g"},
+        {"model": "6018", "url": "/6000-series/6018", "id": "90mm", "od": "140mm", "width": "24mm", "dynamic_load": "58.00kN", "static_load": "49.80kN", "grease_speed": "4,300", "oil_speed": "5,300", "weight": "1.10kg"},
+        {"model": "6019", "url": "/6000-series/6019", "id": "95mm", "od": "145mm", "width": "24mm", "dynamic_load": "57.80kN", "static_load": "50.00kN", "grease_speed": "4,000", "oil_speed": "5,000", "weight": "1.15kg"},
+        {"model": "6020", "url": "/6000-series/6020", "id": "100mm", "od": "150mm", "width": "24mm", "dynamic_load": "64.50kN", "static_load": "56.20kN", "grease_speed": "3,800", "oil_speed": "4,800", "weight": "1.18kg"}
+      ],
+      
+      "comprehensive_faq": [
+        {
+          "category": "Bearing Selection & Replacement",
+          "questions": [
+            {
+              "question": "How do I know if a 6000 series bearing is right for my motor application?",
+              "direct_answer": "Check bore size, load capacity, and speed requirements. 6000 series works for most general-purpose motors up to 50 HP with moderate loads and standard speeds.",
+              "why_this_matters": "Motor bearings see constant duty cycles, temperature variations, and potential electrical current damage. Using the wrong series can lead to premature failure, costly downtime, and motor damage. 6000 series offers the best balance of performance and cost for general industrial applications but has limits in heavy-duty situations.",
+              "how_to_handle_it": "Match bore to shaft diameter exactly. Calculate actual loads including belt tensions, misalignment factors. For motor applications: specify sealed bearings (2RS) for contaminated environments, check speed against catalog limits, consider C3 clearance for high temperatures. Upgrade to 6200 series if loads exceed 6000 series capacity by >25%.",
+              "pro_tip": "Most motor bearing failures come from electrical damage - use insulated bearings or shaft grounding for VFD-driven motors."
+            },
+            {
+              "question": "Can I replace a 6000 series bearing with a 6200 series for better performance?",
+              "direct_answer": "Usually yes, if space allows. 6200 series has higher load capacity but requires more radial space (larger outer diameter and width).",
+              "why_this_matters": "6200 series bearings offer 25-40% higher load capacity than equivalent 6000 series, providing better reliability in demanding applications. However, they're physically larger and more expensive. The upgrade makes sense for applications experiencing premature bearing failures or operating near load limits.",
+              "how_to_handle_it": "Check housing dimensions: 6200 series has larger OD and width. Verify adequate clearance in all directions. Calculate cost-benefit: 6200 series costs 15-25% more but often doubles bearing life in heavy-duty applications. Consider the upgrade for: frequent bearing failures, heavy shock loads, continuous operation, or when downtime costs are high.",
+              "pro_tip": "6200 series upgrade often pays for itself in reduced maintenance costs and increased equipment reliability."
+            },
+            {
+              "question": "What's the difference between open, shielded, and sealed 6000 series bearings?",
+              "direct_answer": "Open bearings run fastest and coolest but need clean environments. Shields (Z/ZZ) provide some protection with less friction than seals (RS/2RS) which offer maximum protection.",
+              "why_this_matters": "Sealing choice affects bearing life, speed capability, and maintenance requirements. Wrong choice leads to either contamination damage (inadequate sealing) or overheating (excessive sealing friction). Industrial environments often require sealed bearings despite the performance penalty.",
+              "how_to_handle_it": "Choose open for: high-speed applications, clean environments, frequent maintenance schedules. Choose shields (Z/ZZ) for: moderate contamination, balanced performance. Choose seals (RS/2RS) for: dirty environments, wash-down applications, maintenance-free operation. Consider contact vs non-contact seals based on speed requirements.",
+              "pro_tip": "For most industrial motors, sealed bearings (2RS) are worth the 10-15% speed reduction for contamination protection."
+            }
+          ]
+        },
+        {
+          "category": "Installation & Maintenance",
+          "questions": [
+            {
+              "question": "Why do my 6000 series bearings fail early in motor applications?",
+              "direct_answer": "Most failures come from electrical current damage (VFD motors), contamination, improper installation, or exceeding temperature limits. Focus on grounding and cleanliness.",
+              "why_this_matters": "Motor bearings operate continuously under varying loads, temperatures, and electrical conditions. VFD-driven motors create electrical currents that can damage bearings through electrical discharge machining (EDM). Contamination from industrial environments, improper installation techniques, and thermal stress from motor heat all contribute to premature failures that cost thousands in downtime.",
+              "how_to_handle_it": "For VFD motors: Install shaft grounding brushes or insulated bearings. Installation: Use proper bearing pullers, press on correct ring, maintain cleanliness. Contamination: Specify sealed bearings (2RS) for dirty environments. Temperature: Monitor bearing temperature, use C3 clearance for hot applications. Check motor alignment and belt tension regularly.",
+              "pro_tip": "Most motor bearing problems are electrical - if you see frosted or pitted raceways, that's EDM damage from electrical current."
+            },
+            {
+              "question": "What's the proper installation procedure for 6000 series bearings in motors?",
+              "direct_answer": "Use bearing pullers or presses, never hammer directly. Press on inner ring when installing on shaft, outer ring when installing in housing. Keep everything clean.",
+              "why_this_matters": "Motor bearings must fit precisely to handle continuous operation and prevent electrical current passage. Improper installation creates play, misalignment, or damage that leads to rapid failure. Installation damage often doesn't appear until weeks later when the bearing fails catastrophically during operation.",
+              "how_to_handle_it": "Tools: Use proper bearing pullers sized for your bearing. Clean everything first. Technique: Press evenly and slowly, stop if resistance increases suddenly. Never strike bearings with hammers. Check shaft and housing dimensions before installation. Apply light oil film to prevent galling. Test fit manually before final pressing.",
+              "pro_tip": "If a bearing doesn't go in easily, stop and check - forcing damaged bearings causes expensive motor repairs."
+            },
+            {
+              "question": "How often should I re-lubricate 6000 series bearings in industrial equipment?",
+              "direct_answer": "Depends on sealing: sealed bearings (2RS) are lubricated for life. Open bearings need re-lubrication every 6-12 months or 2,000-4,000 operating hours.",
+              "why_this_matters": "Industrial equipment often runs continuously in harsh conditions. Under-lubrication causes bearing seizure, over-lubrication causes overheating and seal damage. Different applications have very different lubrication needs - a fan motor needs different service than a conveyor drive.",
+              "how_to_handle_it": "Sealed bearings: Replace when they fail, no maintenance needed. Open bearings: Use high-quality grease compatible with existing lubricant. Apply small amounts through grease fittings while running to purge old grease. Monitor bearing temperature during re-lubrication. Increase frequency in dusty or high-temperature environments.",
+              "pro_tip": "More grease isn't better - over-lubrication causes more bearing failures than under-lubrication in most industrial applications."
+            }
+          ]
+        },
+        {
+          "category": "Troubleshooting & Problem Solving",
+          "questions": [
+            {
+              "question": "My 6000 series bearing is making noise - how do I diagnose the problem?",
+              "direct_answer": "Listen to the type of noise: grinding means bearing damage (replace immediately), squealing indicates lubrication issues, and clicking suggests contamination or wear.",
+              "why_this_matters": "Bearing noise in industrial equipment often signals impending failure that can damage expensive motors, pumps, or machinery. Different noise types indicate different problems requiring different solutions. Ignoring bearing noise typically leads to catastrophic failure and much higher repair costs.",
+              "how_to_handle_it": "Stop equipment for safety. Listen carefully: constant grinding = bearing damage (replace now), intermittent squealing = lubrication problem (re-lubricate), clicking/popping = contamination (clean and inspect), irregular noise = wear or damage (investigate further). Check for heat, vibration, and play. Document noise patterns to identify root causes.",
+              "pro_tip": "Trust your ears - bearing noise usually appears weeks before visible damage, giving you time to plan replacement during scheduled downtime."
+            },
+            {
+              "question": "How do I identify what's causing repeated bearing failures in the same application?",
+              "direct_answer": "Look for patterns: electrical damage (VFD motors), contamination (dirty environments), overloading (wrong bearing size), or installation problems (damaged during assembly).",
+              "why_this_matters": "Repeated failures in the same location indicate systematic problems that won't be solved by just replacing bearings. Understanding root causes prevents future failures and can reveal design or operational issues that affect other equipment. Pattern recognition saves money and downtime.",
+              "how_to_handle_it": "Document failure history: how long each bearing lasted, operating conditions, failure appearance. Common patterns: EDM damage from electrical current, contamination marks from poor sealing, overload wear from undersized bearings, installation damage from poor procedures. Address root cause, not just symptoms.",
+              "pro_tip": "Take photos of failed bearings - damage patterns tell the story of what went wrong and prevent repeat failures."
+            },
+            {
+              "question": "What causes 6000 series bearings to overheat in motor applications?",
+              "direct_answer": "Common causes include over-lubrication, tight fits, electrical current damage, contamination, or exceeding speed limits. Check lubrication and electrical grounding first.",
+              "why_this_matters": "Overheating accelerates bearing wear, breaks down lubricants, damages seals, and can cause bearing seizure. In motors, hot bearings often indicate electrical problems that can damage windings and other components. Heat also causes thermal expansion that affects fits and clearances.",
+              "how_to_handle_it": "Immediate actions: Check bearing temperature (should be warm, not hot to touch). Investigate: over-lubrication (reduce grease), electrical current (install grounding), contamination (improve sealing), tight fits (check shaft/housing dimensions), high ambient temperature (improve cooling). Monitor temperature during operation.",
+              "pro_tip": "If a bearing is too hot to touch comfortably (>60°C), investigate immediately - it's likely to fail soon."
+            }
+          ]
+        },
+        {
+          "category": "Cost & Performance Optimization",
+          "questions": [
+            {
+              "question": "Is it worth upgrading to premium 6000 series bearings for standard industrial applications?",
+              "direct_answer": "For critical applications with high downtime costs, yes. For standard applications where maintenance access is easy, standard bearings are usually adequate.",
+              "why_this_matters": "Premium bearings cost 2-3× more but typically last 2-5× longer in demanding applications. The decision depends on downtime costs, maintenance access, and criticality. In some applications, the premium pays for itself quickly; in others, it's wasteful spending.",
+              "how_to_handle_it": "Use premium bearings for: 24/7 operations, difficult maintenance access, critical equipment where failure is expensive. Calculate total cost: bearing price + installation cost + downtime cost. Standard bearings work fine for: easily accessible equipment, backup systems, non-critical applications with low downtime costs.",
+              "pro_tip": "Premium bearings make sense when bearing cost is <10% of failure cost - focus spending on your most critical applications."
+            },
+            {
+              "question": "How can I extend 6000 series bearing life to reduce maintenance costs?",
+              "direct_answer": "Focus on the big three: keep them clean (contamination control), keep them cool (proper lubrication), and protect from electrical damage (VFD grounding).",
+              "why_this_matters": "Small improvements in bearing life have huge impacts on maintenance costs and equipment reliability. Most industrial bearing failures are preventable through better contamination control, lubrication practices, and electrical protection. Extending bearing life from 2 years to 4 years cuts maintenance costs in half.",
+              "how_to_handle_it": "Contamination: Use sealed bearings, improve filtration, maintain clean work areas. Lubrication: Use proper amounts of quality grease, monitor temperatures, establish re-lubrication schedules. Electrical: Install shaft grounding on VFD motors, use insulated bearings where needed. Alignment: Check and correct shaft alignment regularly.",
+              "pro_tip": "Most bearing life improvements come from preventing contamination - invest in better sealing and cleaner maintenance practices."
+            },
+            {
+              "question": "When does it make sense to upgrade from 6000 to 6200 series bearings?",
+              "direct_answer": "When you're experiencing frequent failures, operating near load limits, or need better reliability in critical applications. The 25-40% load increase often justifies the cost.",
+              "why_this_matters": "6200 series bearings offer significantly higher load capacity and better durability but cost more and require more space. The upgrade makes sense when bearing failures are limiting equipment reliability or when operating conditions exceed 6000 series capabilities.",
+              "how_to_handle_it": "Consider upgrade for: frequent bearing failures, shock loading, continuous operation, critical applications. Check space requirements: 6200 series has larger OD and width. Calculate payback: if 6200 series doubles bearing life and costs 25% more, it pays for itself quickly. Don't upgrade unnecessarily in light-duty applications.",
+              "pro_tip": "6200 series upgrade often eliminates bearing problems completely in marginal applications - it's usually worth the investment."
+            }
+          ]
+        }
+      ],
+      
+      "seo_metadata": {
+        "title": "6000 Series Ball Bearings | 10-100mm Bore | Industrial Grade | RHD Bearings Mumbai",
+        "description": "6000 series deep groove ball bearings (6000-6020) for automotive, industrial, and appliance applications. 10-100mm bore, 4.58-64.5kN capacity. Made in India.",
+        "keywords": [
+          "6000 series bearings", "industrial ball bearings", "automotive bearings", "motor bearings",
+          "appliance bearings", "deep groove bearings", "Mumbai industrial bearings", "6004 bearing",
+          "6005 bearing", "6006 bearing", "made in India bearings"
+        ],
+        "canonical_url": "https://rhdbearings.com/6000-series-bearings"
+      },
+      
+      "llm_optimization": {
+        "natural_queries": [
+          "What bearings for electric motors?",
+          "Best bearings for automotive applications", 
+          "Industrial grade bearings for machinery",
+          "6000 vs 6200 series comparison",
+          "Standard bearings for general purpose",
+          "Motor bearings 25mm shaft",
+          "Automotive alternator bearings",
+          "Cost effective industrial bearings"
+        ],
+        "selection_criteria": [
+          "General purpose: Excellent all-around performance",
+          "Medium loads: 4.58-64.5kN capacity range",
+          "Standard speeds: Up to 30,000 RPM",
+          "Cost effective: Best value for general applications",
+          "Easy replacement: Standard ISO dimensions",
+          "Proven reliability: Automotive and industrial approved"
+        ]
+      }
+    },
+
+    "6200_series": {
+      "series_name": "6200 Series Deep Groove Ball Bearings",
+      "series_code": "6200-6220",
+      "url": "/6200-series",
+      "total_models": 21,
+      "bore_range": "10mm - 100mm",
+      "model_range": "6200 to 6220",
+      "description": "Heavy-duty 6200 series bearings deliver superior load capacity and enhanced durability for demanding industrial applications. With wider raceways and robust construction, these bearings excel where standard series fall short.",
+      
+      "key_features": [
+        "Enhanced load capacity vs 6000 series",
+        "Wider raceway design for better load distribution",
+        "Robust construction for heavy-duty applications",
+        "Excellent performance in shock and vibration environments",
+        "Extended service life in demanding conditions",
+        "Available in precision grades for critical applications",
+        "Temperature range -30°C to +120°C"
+      ],
+      
+      "detailed_applications": {
+        "automotive_transportation": {
+          "category": "Automotive & Transportation",
+          "applications": [
+            "Heavy-duty alternators and generators",
+            "Truck water pump assemblies",
+            "Commercial vehicle HVAC systems",
+            "Heavy equipment transmission bearings",
+            "Bus and truck wheel bearings",
+            "Marine engine applications",
+            "Construction equipment drives",
+            "Agricultural machinery bearings",
+            "Commercial vehicle steering systems",
+            "Heavy-duty cooling fan motors"
+          ],
+          "key_requirements": "High load capacity, vibration resistance, durability"
+        },
+        "industrial_manufacturing": {
+          "category": "Industrial Manufacturing",
+          "applications": [
+            "Medium to heavy-duty electric motors (25-200 HP)",
+            "Heavy conveyor system drives",
+            "Large industrial fans and blowers",
+            "High-pressure pump assemblies",
+            "Industrial compressor systems",
+            "Machine tool main spindles",
+            "Heavy packaging machinery",
+            "Steel mill equipment",
+            "Mining equipment bearings",
+            "Paper mill machinery"
+          ],
+          "key_requirements": "Maximum load capacity, 24/7 operation, shock resistance"
+        },
+        "home_appliances": {
+          "category": "Home Appliances",
+          "applications": [
+            "Commercial washing machine motors",
+            "Heavy-duty dryer assemblies",
+            "Industrial dishwasher systems",
+            "Large refrigeration compressors",
+            "Commercial air conditioning units",
+            "Industrial vacuum systems",
+            "Commercial kitchen equipment",
+            "Large garage door operators",
+            "Commercial pool pump systems",
+            "Heavy-duty lawn equipment"
+          ],
+          "key_requirements": "Durability, heavy loads, extended service life"
+        }
+      },
+      
+      "specifications": {
+        "bore_diameter_range": "10mm - 100mm",
+        "outer_diameter_range": "30mm - 180mm",
+        "width_range": "9mm - 34mm",
+        "load_capacity_range": "6.95kN - 108kN",
+        "speed_range": "3,200 - 26,000 RPM",
+        "precision_grades": ["P0 (Standard)", "P6 (Precision)", "P5 (High Precision)"],
+        "temperature_range": "-30°C to +120°C",
+        "materials": ["Chrome Steel (Gcr15)", "Stainless Steel (optional)"],
+        "sealing_options": ["Open", "Metal Shields (Z/ZZ)", "Rubber Seals (RS/2RS)", "Contact Seals"]
+      },
+      
+      "models_with_links": [
+        {"model": "6200", "url": "/6200-series/6200", "id": "10mm", "od": "30mm", "width": "9mm", "dynamic_load": "5.10kN", "static_load": "2.38kN", "grease_speed": "20,000", "oil_speed": "26,000", "weight": "32g"},
+        {"model": "6201", "url": "/6200-series/6201", "id": "12mm", "od": "32mm", "width": "10mm", "dynamic_load": "6.82kN", "static_load": "3.05kN", "grease_speed": "19,000", "oil_speed": "24,000", "weight": "35g"},
+        {"model": "6202", "url": "/6200-series/6202", "id": "15mm", "od": "35mm", "width": "11mm", "dynamic_load": "7.65kN", "static_load": "3.72kN", "grease_speed": "18,000", "oil_speed": "22,000", "weight": "45g"},
+        {"model": "6203", "url": "/6200-series/6203", "id": "17mm", "od": "40mm", "width": "12mm", "dynamic_load": "9.58kN", "static_load": "4.78kN", "grease_speed": "16,000", "oil_speed": "20,000", "weight": "64g"},
+        {"model": "6204", "url": "/6200-series/6204", "id": "20mm", "od": "47mm", "width": "14mm", "dynamic_load": "12.80kN", "static_load": "6.65kN", "grease_speed": "14,000", "oil_speed": "18,000", "weight": "103g"},
+        {"model": "6205", "url": "/6200-series/6205", "id": "25mm", "od": "52mm", "width": "15mm", "dynamic_load": "14.00kN", "static_load": "7.88kN", "grease_speed": "12,000", "oil_speed": "15,000", "weight": "127g"},
+        {"model": "6206", "url": "/6200-series/6206", "id": "30mm", "od": "62mm", "width": "16mm", "dynamic_load": "19.50kN", "static_load": "11.50kN", "grease_speed": "9,500", "oil_speed": "13,000", "weight": "200g"},
+        {"model": "6207", "url": "/6200-series/6207", "id": "35mm", "od": "72mm", "width": "17mm", "dynamic_load": "25.50kN", "static_load": "15.20kN", "grease_speed": "8,500", "oil_speed": "11,000", "weight": "288g"},
+        {"model": "6208", "url": "/6200-series/6208", "id": "40mm", "od": "80mm", "width": "18mm", "dynamic_load": "29.50kN", "static_load": "18.00kN", "grease_speed": "8,000", "oil_speed": "10,000", "weight": "368g"},
+        {"model": "6209", "url": "/6200-series/6209", "id": "45mm", "od": "85mm", "width": "19mm", "dynamic_load": "31.50kN", "static_load": "20.50kN", "grease_speed": "7,000", "oil_speed": "9,000", "weight": "416g"},
+        {"model": "6210", "url": "/6200-series/6210", "id": "50mm", "od": "90mm", "width": "20mm", "dynamic_load": "35.00kN", "static_load": "23.20kN", "grease_speed": "6,700", "oil_speed": "8,500", "weight": "463g"},
+        {"model": "6211", "url": "/6200-series/6211", "id": "55mm", "od": "100mm", "width": "21mm", "dynamic_load": "43.20kN", "static_load": "29.20kN", "grease_speed": "6,000", "oil_speed": "7,500", "weight": "603g"},
+        {"model": "6212", "url": "/6200-series/6212", "id": "60mm", "od": "110mm", "width": "22mm", "dynamic_load": "47.80kN", "static_load": "32.80kN", "grease_speed": "5,600", "oil_speed": "7,000", "weight": "789g"},
+        {"model": "6213", "url": "/6200-series/6213", "id": "65mm", "od": "120mm", "width": "23mm", "dynamic_load": "57.80kN", "static_load": "40.00kN", "grease_speed": "5,000", "oil_speed": "6,300", "weight": "990g"},
+        {"model": "6214", "url": "/6200-series/6214", "id": "70mm", "od": "125mm", "width": "24mm", "dynamic_load": "60.80kN", "static_load": "45.00kN", "grease_speed": "4,800", "oil_speed": "6,000", "weight": "1.084kg"},
+        {"model": "6215", "url": "/6200-series/6215", "id": "75mm", "od": "130mm", "width": "25mm", "dynamic_load": "66.00kN", "static_load": "49.50kN", "grease_speed": "4,500", "oil_speed": "5,600", "weight": "1.171kg"},
+        {"model": "6216", "url": "/6200-series/6216", "id": "80mm", "od": "140mm", "width": "26mm", "dynamic_load": "71.50kN", "static_load": "54.20kN", "grease_speed": "4,300", "oil_speed": "5,300", "weight": "1.448kg"},
+        {"model": "6217", "url": "/6200-series/6217", "id": "85mm", "od": "150mm", "width": "28mm", "dynamic_load": "83.20kN", "static_load": "63.80kN", "grease_speed": "4,000", "oil_speed": "5,000", "weight": "1.803kg"},
+        {"model": "6218", "url": "/6200-series/6218", "id": "90mm", "od": "160mm", "width": "30mm", "dynamic_load": "95.80kN", "static_load": "71.50kN", "grease_speed": "3,800", "oil_speed": "4,800", "weight": "2.17kg"},
+        {"model": "6219", "url": "/6200-series/6219", "id": "95mm", "od": "170mm", "width": "32mm", "dynamic_load": "110kN", "static_load": "82.80kN", "grease_speed": "3,600", "oil_speed": "4,500", "weight": "2.62kg"},
+        {"model": "6220", "url": "/6200-series/6220", "id": "100mm", "od": "180mm", "width": "34mm", "dynamic_load": "122kN", "static_load": "92.80kN", "grease_speed": "3,400", "oil_speed": "4,300", "weight": "3.19kg"}
+      ],
+      
+      "comprehensive_faq": [
+        {
+          "category": "Bearing Selection & Replacement",
+          "questions": [
+            {
+              "question": "How do I know if I need 6200 series instead of 6000 series for my heavy-duty application?",
+              "direct_answer": "Choose 6200 series when you need 25-40% more load capacity, are experiencing frequent 6000 series failures, or have shock loading conditions.",
+              "why_this_matters": "6200 series bearings have wider raceways and larger balls, providing significantly higher load capacity and better shock resistance. However, they cost more and need more space. Using 6000 series in heavy-duty applications leads to frequent failures and expensive downtime. Using 6200 series unnecessarily wastes money.",
+              "how_to_handle_it": "Calculate your actual loads including shock factors. Compare to bearing catalogs: 6200 series typically handles 25-40% more load than equivalent 6000 series. Consider 6200 for: steel mills, mining equipment, heavy industrial motors >100 HP, shock loading applications. Check space requirements - 6200 has larger outer diameter and width.",
+              "pro_tip": "If you're replacing 6000 series bearings more than once per year in the same application, upgrading to 6200 series usually pays for itself."
+            },
+            {
+              "question": "Can I use 6200 series bearings as direct replacements for failed 6000 series bearings?",
+              "direct_answer": "Usually yes, but check housing space first. 6200 series has larger outer diameter and width - you need adequate clearance in all directions.",
+              "why_this_matters": "6200 series bearings offer significant performance improvements over 6000 series but require more space. Many housings designed for 6000 series don't have clearance for 6200 series. Forcing a larger bearing into inadequate space can cause installation damage, overheating, or housing cracking.",
+              "how_to_handle_it": "Measure housing bore and depth carefully. Compare with 6200 series dimensions from catalog. Check for adequate clearance around bearing (minimum 2-3mm in all directions). Consider: will covers/seals still fit, do bolt patterns work, is there clearance for installation tools? If space is tight, consider precision 6000 series or custom housing modifications.",
+              "pro_tip": "6200 series upgrade typically requires housing modifications, but the improved reliability often justifies the engineering cost."
+            },
+            {
+              "question": "What's special about 6200 series bearings that makes them better for heavy-duty applications?",
+              "direct_answer": "Wider raceways and larger balls distribute loads better, reducing stress and extending life under heavy loads and shock conditions.",
+              "why_this_matters": "Heavy-duty applications create high contact stresses that can exceed the fatigue limits of standard bearings. 6200 series bearings spread these loads over larger contact areas, reducing peak stresses and dramatically improving fatigue life. This design difference is why they last much longer in demanding applications.",
+              "how_to_handle_it": "Specify 6200 series for: heavy industrial equipment, mining applications, steel mills, large motors >50 HP, applications with shock/impact loading. The larger size handles load spikes better and distributes wear over more material. Consider sealed versions (2RS) for contaminated environments common in heavy industry.",
+              "pro_tip": "In shock loading applications, 6200 series often lasts 3-5× longer than 6000 series despite costing only 25% more."
+            }
+          ]
+        },
+        {
+          "category": "Installation & Maintenance",
+          "questions": [
+            {
+              "question": "Why do my 6200 series bearings keep failing in heavy industrial applications?",
+              "direct_answer": "Common causes include inadequate lubrication for heavy loads, contamination in harsh environments, or electrical damage in large motor applications. Focus on lubrication and sealing.",
+              "why_this_matters": "Heavy industrial applications stress bearings beyond normal limits through high loads, contamination, temperature extremes, and electrical interference. 6200 series bearings are built for these conditions but still need proper support through lubrication, sealing, and electrical protection. Failure patterns reveal the specific problem.",
+              "how_to_handle_it": "Examine failed bearings for clues: dark discoloration = overheating (improve cooling), pitting = contamination (better sealing), frosted appearance = electrical damage (install grounding), polished wear = overloading (check calculations). Improve: lubrication quantity and quality, contamination sealing, electrical grounding, alignment, and cooling.",
+              "pro_tip": "Most heavy industrial bearing failures are contamination-related - invest in better sealing systems and filtration rather than just replacing bearings."
+            },
+            {
+              "question": "What special installation procedures do 6200 series bearings require for heavy-duty applications?",
+              "direct_answer": "Use hydraulic installation tools for larger bearings, maintain strict cleanliness, and apply proper preload. Never hammer or force installation.",
+              "why_this_matters": "6200 series bearings are larger and heavier than 6000 series, requiring more force for installation. Heavy-duty applications can't tolerate installation damage that might be acceptable in lighter applications. Proper installation is critical for achieving rated life in demanding conditions.",
+              "how_to_handle_it": "Tools: Use hydraulic bearing pullers for bearings >50mm bore. Cleanliness: Work in clean area, use lint-free rags, avoid compressed air. Technique: Heat housings if interference fit is tight, press on correct ring, apply steady pressure. Check alignment and run-out after installation. Apply specified preload if required.",
+              "pro_tip": "For bearings >6210 size, hydraulic installation tools are essential - mechanical pullers can damage the bearing or housing."
+            },
+            {
+              "question": "How often should I re-lubricate 6200 series bearings in continuous heavy-duty operation?",
+              "direct_answer": "Depends on loads and environment: light loads every 3-6 months, heavy loads monthly, contaminated environments bi-weekly. Monitor bearing temperature as guide.",
+              "why_this_matters": "Heavy-duty applications consume lubrication faster through high loads, contamination, and temperature. Under-lubrication causes rapid failure, but over-lubrication wastes money and can cause overheating. The key is finding the right interval based on actual operating conditions.",
+              "how_to_handle_it": "Start with manufacturer recommendations, then adjust based on experience. Monitor bearing temperature - properly lubricated bearings run cooler. Increase frequency if: bearings run hot, operate in dusty environment, heavy shock loads, continuous operation. Use high-quality grease rated for your loads and temperatures.",
+              "pro_tip": "Bearing temperature is the best guide - if temperature increases between lubrication intervals, you're waiting too long."
+            }
+          ]
+        },
+        {
+          "category": "Troubleshooting & Problem Solving",
+          "questions": [
+            {
+              "question": "My 6200 series bearing is making noise in a steel mill application - how serious is this?",
+              "direct_answer": "Very serious in heavy industrial applications. Grinding or irregular noise means immediate replacement needed. Even slight noise changes indicate developing problems that require investigation.",
+              "why_this_matters": "Steel mill and heavy industrial equipment can't afford unexpected bearing failures due to safety risks and extremely high downtime costs. 6200 series bearings in these applications carry heavy loads where failure can damage expensive equipment or create safety hazards. Early noise detection prevents catastrophic failures.",
+              "how_to_handle_it": "Stop equipment immediately for grinding or clicking noises. Investigate slight noise changes during next maintenance window. Check for: vibration patterns, temperature increases, lubrication condition. Replace bearings showing any noise increase - don't risk catastrophic failure in heavy-duty applications. Plan replacement during scheduled downtime.",
+              "pro_tip": "In heavy industry, replace 6200 series bearings at first sign of noise - the cost of unexpected failure far exceeds bearing replacement cost."
+            },
+            {
+              "question": "How do I identify if shock loading is damaging my 6200 series bearings?",
+              "direct_answer": "Look for: indentations in raceways (brinelling), cracked rings, premature wear patterns, and shortened bearing life despite adequate load capacity.",
+              "why_this_matters": "Shock loading creates impact forces that can exceed even 6200 series capacity, causing immediate damage or accelerated wear. Mining, steel mill, and heavy equipment applications often have shock loads that aren't obvious but severely reduce bearing life. Identifying shock damage helps improve equipment design.",
+              "how_to_handle_it": "Examine failed bearings for: permanent indentations from impact (true brinelling), cracks in rings or cages, uneven wear patterns, premature spalling. Measure actual shock forces with accelerometers during operation. Solutions: improve vibration isolation, use larger bearings, add shock absorbers, redesign supports to handle impact loads.",
+              "pro_tip": "Shock damage often looks like overloading - measure actual forces during operation to identify hidden impact loads."
+            },
+            {
+              "question": "What causes 6200 series bearings to fail prematurely in mining equipment despite proper sizing?",
+              "direct_answer": "Usually contamination from dust/debris, inadequate lubrication in harsh conditions, or electrical damage from large motors. Mining environments are exceptionally harsh on bearings.",
+              "why_this_matters": "Mining environments combine multiple bearing killers: abrasive dust, water exposure, shock loads, electrical interference, and temperature extremes. Even properly sized 6200 series bearings can fail quickly without adequate protection from these environmental factors.",
+              "how_to_handle_it": "Address environmental factors: specify sealed bearings with multiple sealing stages, use dedicated lubrication systems with filtration, install electrical grounding for large motors, provide bearing housing protection from debris impact. Monitor bearing condition through vibration analysis and temperature monitoring.",
+              "pro_tip": "In mining applications, bearing protection systems often cost more than the bearings but extend life from months to years."
+            }
+          ]
+        },
+        {
+          "category": "Cost & Performance Optimization",
+          "questions": [
+            {
+              "question": "Are 6200 series bearings worth the extra cost for our heavy-duty applications?",
+              "direct_answer": "Usually yes, if you're experiencing frequent bearing failures or operating near capacity limits. Calculate total cost including downtime, not just bearing price.",
+              "why_this_matters": "6200 series bearings cost 15-25% more than 6000 series but often last 2-5× longer in heavy-duty applications. In industrial settings where downtime costs thousands per hour, the bearing cost is insignificant compared to failure costs. However, the upgrade must be justified by actual performance improvements.",
+              "how_to_handle_it": "Calculate total cost: bearing price + installation cost + downtime cost + consequential damage risk. 6200 series makes sense when: bearing failures are frequent, downtime is expensive, loads are near 6000 series limits, shock loading is present. Compare expected life improvement against cost increase.",
+              "pro_tip": "If bearing failures cost >$10,000 in downtime, 6200 series upgrade usually pays for itself in the first avoided failure."
+            },
+            {
+              "question": "How can I maximize 6200 series bearing life in continuous heavy-duty operation?",
+              "direct_answer": "Focus on the fundamentals: excellent lubrication, contamination exclusion, proper installation, and condition monitoring. Environmental protection is key.",
+              "why_this_matters": "Heavy-duty applications push bearings to their limits where small improvements in operating conditions create large life extensions. 6200 series bearings are designed for these conditions but still need proper support. Systematic approach to bearing care multiplies investment return.",
+              "how_to_handle_it": "Lubrication: Use high-quality grease, establish proper re-lubrication schedules, monitor temperatures. Contamination: Specify proper sealing, maintain clean work areas, use filtered lubrication systems. Installation: Use proper tools and procedures, check alignment. Monitoring: Implement vibration analysis and temperature monitoring for early problem detection.",
+              "pro_tip": "Systematic bearing care programs typically double bearing life in heavy-duty applications - the ROI is usually >300%."
+            },
+            {
+              "question": "When should I consider upgrading from 6200 to 6300 series bearings?",
+              "direct_answer": "When 6200 series bearings still fail frequently despite proper application, or when you need maximum possible load capacity in critical applications.",
+              "why_this_matters": "6300 series represents the maximum load capacity available in deep groove ball bearings. The upgrade makes sense only in the most demanding applications where 6200 series capacity is insufficient. The cost and size penalties are significant, so the upgrade must be truly necessary.",
+              "how_to_handle_it": "Consider 6300 series for: maximum load applications, critical equipment where failure is unacceptable, extremely heavy shock loading. Check space requirements - 6300 series is much larger. Calculate if the 40-60% load capacity increase justifies the 50-100% cost increase and larger size requirements.",
+              "pro_tip": "6300 series is usually overkill - most 6200 series problems are solved by better operating conditions, not bigger bearings."
+            }
+          ]
+        }
+      ],
+      
+      "seo_metadata": {
+        "title": "6200 Series Heavy Duty Ball Bearings | Enhanced Load Capacity | RHD Bearings Mumbai",
+        "description": "6200 series heavy-duty deep groove ball bearings (6200-6220) for industrial, automotive, and commercial applications. 10-100mm bore, enhanced load capacity. Made in India.",
+        "keywords": [
+          "6200 series bearings", "heavy duty ball bearings", "industrial bearings", "commercial bearings",
+          "enhanced load capacity", "6204 bearing", "6205 bearing", "6208 bearing", "Mumbai heavy duty bearings"
+        ],
+        "canonical_url": "https://rhdbearings.com/6200-series"
+      },
+      
+      "llm_optimization": {
+        "natural_queries": [
+          "Heavy duty bearings for industrial motors",
+          "6200 vs 6000 series comparison", 
+          "Enhanced load capacity bearings",
+          "Heavy duty automotive bearings",
+          "Industrial grade ball bearings",
+          "High load bearings for machinery",
+          "Commercial equipment bearings",
+          "Steel mill bearing applications"
+        ],
+        "selection_criteria": [
+          "Heavy duty: Enhanced load capacity up to 108kN",
+          "Industrial grade: Designed for demanding applications", 
+          "Shock resistant: Better vibration and impact handling",
+          "Extended life: Superior durability in harsh conditions",
+          "Proven reliability: Used in critical industrial applications",
+          "Cost effective: Better performance without premium pricing"
+        ]
+      }
+    },
+
+    "6300_series": {
+      "series_name": "6300 Series Deep Groove Ball Bearings",
+      "series_code": "6300-6320",
+      "url": "/6300-series",
+      "total_models": 21,
+      "bore_range": "10mm - 100mm",
+      "model_range": "6300 to 6320",
+      "description": "Maximum duty 6300 series bearings represent the pinnacle of deep groove ball bearing performance. With the largest cross-section and highest load ratings, these bearings tackle the most demanding applications where failure is not an option.",
+      
+      "key_features": [
+        "Maximum load capacity in deep groove design",
+        "Largest cross-section for ultimate strength",
+        "Superior performance in heavy shock and vibration",
+        "Extended service life in extreme conditions",
+        "Ideal for critical high-load applications",
+        "Enhanced fatigue resistance",
+        "Temperature range -30°C to +120°C"
+      ],
+      
+      "detailed_applications": {
+        "automotive_transportation": {
+          "category": "Automotive & Transportation",
+          "applications": [
+            "Heavy truck transmission bearings",
+            "Large marine engine assemblies",
+            "Heavy construction equipment",
+            "Mining vehicle drive systems",
+            "Large bus and coach applications",
+            "Heavy-duty generator systems",
+            "Industrial locomotive bearings",
+            "Large agricultural equipment",
+            "Heavy crane and lifting equipment",
+            "Off-highway vehicle systems"
+          ],
+          "key_requirements": "Maximum load capacity, extreme durability, shock resistance"
+        },
+        "industrial_manufacturing": {
+          "category": "Industrial Manufacturing",
+          "applications": [
+            "Large electric motors (100+ HP)",
+            "Heavy-duty conveyor drives",
+            "Large industrial fans and blowers",
+            "High-capacity pump systems",
+            "Heavy compressor applications",
+            "Large machine tool spindles",
+            "Steel rolling mill equipment",
+            "Mining and crushing equipment",
+            "Power generation equipment",
+            "Heavy press and forming machinery"
+          ],
+          "key_requirements": "Ultimate load capacity, continuous heavy duty, maximum reliability"
+        },
+        "home_appliances": {
+          "category": "Home Appliances",
+          "applications": [
+            "Industrial washing systems",
+            "Large commercial dryers",
+            "Heavy-duty food processing",
+            "Large refrigeration systems",
+            "Industrial air handling units",
+            "Commercial cleaning equipment",
+            "Large commercial kitchen equipment",
+            "Industrial garage door systems",
+            "Large pool and spa systems",
+            "Heavy commercial lawn equipment"
+          ],
+          "key_requirements": "Maximum durability, extended service intervals, heavy loads"
+        }
+      },
+      
+      "specifications": {
+        "bore_diameter_range": "10mm - 100mm",
+        "outer_diameter_range": "35mm - 215mm",
+        "width_range": "11mm - 40mm",
+        "load_capacity_range": "9.95kN - 162kN",
+        "speed_range": "2,800 - 22,000 RPM",
+        "precision_grades": ["P0 (Standard)", "P6 (Precision)", "P5 (High Precision)"],
+        "temperature_range": "-30°C to +120°C",
+        "materials": ["Chrome Steel (Gcr15)", "Stainless Steel (optional)"],
+        "sealing_options": ["Open", "Metal Shields (Z/ZZ)", "Rubber Seals (RS/2RS)", "Contact Seals"]
+      },
+      
+      "models_with_links": [
+        {"model": "6300", "url": "/6300-series/6300", "id": "10mm", "od": "35mm", "width": "11mm", "dynamic_load": "7.65kN", "static_load": "3.48kN", "grease_speed": "18,000", "oil_speed": "24,000", "weight": "53g"},
+        {"model": "6301", "url": "/6300-series/6301", "id": "12mm", "od": "37mm", "width": "12mm", "dynamic_load": "9.72kN", "static_load": "5.08kN", "grease_speed": "17,000", "oil_speed": "22,000", "weight": "51g"},
+        {"model": "6302", "url": "/6300-series/6302", "id": "15mm", "od": "42mm", "width": "13mm", "dynamic_load": "11.50kN", "static_load": "5.42kN", "grease_speed": "16,000", "oil_speed": "20,000", "weight": "80g"},
+        {"model": "6303", "url": "/6300-series/6303", "id": "17mm", "od": "47mm", "width": "14mm", "dynamic_load": "13.50kN", "static_load": "6.58kN", "grease_speed": "15,000", "oil_speed": "18,000", "weight": "109g"},
+        {"model": "6304", "url": "/6300-series/6304", "id": "20mm", "od": "52mm", "width": "15mm", "dynamic_load": "15.80kN", "static_load": "7.88kN", "grease_speed": "13,000", "oil_speed": "16,000", "weight": "142g"},
+        {"model": "6305", "url": "/6300-series/6305", "id": "25mm", "od": "62mm", "width": "17mm", "dynamic_load": "22.20kN", "static_load": "11.50kN", "grease_speed": "10,000", "oil_speed": "14,000", "weight": "219g"},
+        {"model": "6306", "url": "/6300-series/6306", "id": "30mm", "od": "72mm", "width": "19mm", "dynamic_load": "27.00kN", "static_load": "15.20kN", "grease_speed": "9,000", "oil_speed": "11,000", "weight": "349g"},
+        {"model": "6307", "url": "/6300-series/6307", "id": "35mm", "od": "80mm", "width": "21mm", "dynamic_load": "33.40kN", "static_load": "19.20kN", "grease_speed": "8,000", "oil_speed": "9,500", "weight": "455g"},
+        {"model": "6308", "url": "/6300-series/6308", "id": "40mm", "od": "90mm", "width": "23mm", "dynamic_load": "40.80kN", "static_load": "24.00kN", "grease_speed": "7,000", "oil_speed": "8,500", "weight": "639g"},
+        {"model": "6309", "url": "/6300-series/6309", "id": "45mm", "od": "100mm", "width": "25mm", "dynamic_load": "52.80kN", "static_load": "31.80kN", "grease_speed": "6,300", "oil_speed": "7,500", "weight": "837g"},
+        {"model": "6310", "url": "/6300-series/6310", "id": "50mm", "od": "110mm", "width": "27mm", "dynamic_load": "61.80kN", "static_load": "38.00kN", "grease_speed": "6,000", "oil_speed": "7,000", "weight": "1.082kg"},
+        {"model": "6311", "url": "/6300-series/6311", "id": "55mm", "od": "120mm", "width": "29mm", "dynamic_load": "71.50kN", "static_load": "44.80kN", "grease_speed": "5,600", "oil_speed": "6,700", "weight": "1.367kg"},
+        {"model": "6312", "url": "/6300-series/6312", "id": "60mm", "od": "130mm", "width": "31mm", "dynamic_load": "81.80kN", "static_load": "51.80kN", "grease_speed": "5,000", "oil_speed": "6,000", "weight": "1.710kg"},
+        {"model": "6313", "url": "/6300-series/6313", "id": "65mm", "od": "140mm", "width": "33mm", "dynamic_load": "93.80kN", "static_load": "60.50kN", "grease_speed": "4,500", "oil_speed": "5,300", "weight": "2.100kg"},
+        {"model": "6314", "url": "/6300-series/6314", "id": "70mm", "od": "150mm", "width": "35mm", "dynamic_load": "105kN", "static_load": "68.00kN", "grease_speed": "4,300", "oil_speed": "5,000", "weight": "2.550kg"},
+        {"model": "6315", "url": "/6300-series/6315", "id": "75mm", "od": "160mm", "width": "37mm", "dynamic_load": "113kN", "static_load": "76.80kN", "grease_speed": "4,000", "oil_speed": "4,800", "weight": "3.050kg"},
+        {"model": "6316", "url": "/6300-series/6316", "id": "80mm", "od": "170mm", "width": "39mm", "dynamic_load": "123kN", "static_load": "86.50kN", "grease_speed": "3,800", "oil_speed": "4,500", "weight": "3.610kg"},
+        {"model": "6317", "url": "/6300-series/6317", "id": "85mm", "od": "180mm", "width": "41mm", "dynamic_load": "132kN", "static_load": "96.50kN", "grease_speed": "3,600", "oil_speed": "4,300", "weight": "4.284kg"},
+        {"model": "6318", "url": "/6300-series/6318", "id": "90mm", "od": "190mm", "width": "43mm", "dynamic_load": "145kN", "static_load": "108kN", "grease_speed": "3,400", "oil_speed": "4,000", "weight": "4.870kg"},
+        {"model": "6319", "url": "/6300-series/6319", "id": "95mm", "od": "200mm", "width": "45mm", "dynamic_load": "157kN", "static_load": "122kN", "grease_speed": "3,200", "oil_speed": "3,800", "weight": "5.740kg"},
+        {"model": "6320", "url": "/6300-series/6320", "id": "100mm", "od": "215mm", "width": "47mm", "dynamic_load": "173kN", "static_load": "140kN", "grease_speed": "2,800", "oil_speed": "3,600", "weight": "7.09kg"}
+      ],
+      
+      "comprehensive_faq": [
+        {
+          "category": "Bearing Selection & Replacement",
+          "questions": [
+            {
+              "question": "When do I need 6300 series bearings instead of 6200 series for my critical applications?",
+              "direct_answer": "Choose 6300 series when you need maximum load capacity, are in critical applications where failure is unacceptable, or when 6200 series bearings still fail frequently despite proper application.",
+              "why_this_matters": "6300 series bearings represent the highest load capacity available in deep groove ball bearings, handling 40-60% more load than 6200 series. However, they're significantly larger and more expensive. They're typically used only in the most demanding applications where bearing failure could cause catastrophic damage or safety issues.",
+              "how_to_handle_it": "Consider 6300 series for: power generation equipment, large steel mill drives, mining crushers, critical process equipment, maximum load applications. Check space requirements - 6300 series requires much larger housings. Calculate total cost including failure consequences. Reserve for applications where 6200 series capacity is truly insufficient.",
+              "pro_tip": "6300 series is usually specified for mission-critical applications where bearing failure costs exceed $100,000 in downtime and repairs."
+            },
+            {
+              "question": "Are 6300 series bearings worth the significantly higher cost for our power generation equipment?",
+              "direct_answer": "Usually yes for critical power generation applications. The cost premium is insignificant compared to the catastrophic failure costs in power plants.",
+              "why_this_matters": "Power generation equipment failure can cost millions in lost revenue, emergency repairs, and regulatory penalties. 6300 series bearings provide maximum reliability in these critical applications. While they cost 2-3× more than smaller bearings, this is trivial compared to the cost of unplanned outages.",
+              "how_to_handle_it": "Calculate failure cost: lost revenue + emergency repair costs + regulatory penalties. For power plants, this often exceeds $1M per day. Compare bearing cost difference (typically $5,000-20,000) against potential failure costs. Specify 6300 series for: turbine generators, critical pumps, main cooling systems, emergency equipment.",
+              "pro_tip": "In power generation, bearing cost is <0.1% of failure cost - always specify maximum reliability bearings for critical equipment."
+            },
+            {
+              "question": "Can I retrofit 6300 series bearings into equipment designed for 6200 series?",
+              "direct_answer": "Rarely without major modifications. 6300 series bearings are much larger in all dimensions and typically require complete housing redesign.",
+              "why_this_matters": "6300 series bearings have significantly larger outer diameter and width than 6200 series, requiring substantial space increases. Most existing equipment lacks the clearance for 6300 series installation. Forced installation can cause housing cracking, interference with other components, or inadequate support.",
+              "how_to_handle_it": "Measure all dimensions carefully: outer diameter, width, mounting bolt patterns, clearances to adjacent components. 6300 series typically requires 20-40mm larger housing bore and 5-15mm more width. Consider: complete housing replacement, shaft modifications, foundation changes. Often easier to upgrade to premium 6200 series bearings instead.",
+              "pro_tip": "6300 series retrofits usually require major equipment modifications - consider if the application really needs this capacity increase."
+            }
+          ]
+        },
+        {
+          "category": "Installation & Maintenance",
+          "questions": [
+            {
+              "question": "What special procedures do 6300 series bearings require for installation in critical applications?",
+              "direct_answer": "Use hydraulic installation equipment, maintain absolute cleanliness, follow torque specifications precisely, and implement detailed documentation. These bearings are too valuable for installation mistakes.",
+              "why_this_matters": "6300 series bearings are expensive (often $10,000-50,000 each) and used in critical applications where installation damage could cause catastrophic failures. Their large size and heavy weight require specialized handling equipment. Installation errors that might be acceptable in smaller bearings can destroy these expensive components.",
+              "how_to_handle_it": "Equipment: Use hydraulic bearing pullers and presses designed for large bearings. Never use hammers or makeshift tools. Cleanliness: Work in controlled environment, use filtered air, wear gloves. Procedure: Follow manufacturer specifications exactly, document each step, take photos for records. Check alignment and run-out after installation. Store detailed installation records for warranty purposes.",
+              "pro_tip": "For 6300 series bearings, professional installation services are often cheaper than risking installation damage - these bearings are too expensive to learn on."
+            },
+            {
+              "question": "How do I maintain 6300 series bearings in continuous critical operation?",
+              "direct_answer": "Implement comprehensive monitoring systems, establish strict lubrication schedules, and plan maintenance during scheduled outages. These bearings require proactive, not reactive, maintenance.",
+              "why_this_matters": "Critical applications using 6300 series bearings can't afford unexpected failures. These bearings often operate in power plants, steel mills, or other facilities where unplanned downtime costs millions. Predictive maintenance is essential to maximize bearing life and plan replacements during scheduled outages.",
+              "how_to_handle_it": "Monitoring: Install permanent vibration and temperature monitoring systems. Lubrication: Use automatic lubrication systems with high-quality synthetic greases. Maintenance: Establish formal inspection schedules, trending analysis, and replacement criteria. Plan bearing replacements during scheduled outages based on condition monitoring data, not arbitrary time intervals.",
+              "pro_tip": "6300 series bearings in critical applications should have dedicated maintenance teams and monitoring systems - treat them like the critical assets they are."
+            },
+            {
+              "question": "What lubrication requirements are unique to 6300 series bearings in heavy-duty applications?",
+              "direct_answer": "Use premium synthetic greases designed for heavy loads, implement automatic lubrication systems, and monitor lubrication effectiveness through temperature trending.",
+              "why_this_matters": "6300 series bearings operate under extreme loads where lubrication is critical for survival. Standard greases may not provide adequate protection under these conditions. Poor lubrication in these expensive bearings costs much more than premium lubricants. Automatic systems ensure consistent lubrication despite harsh operating conditions.",
+              "how_to_handle_it": "Grease selection: Use synthetic polyurea or lithium complex greases rated for your loads and temperatures. Systems: Install automatic lubrication systems with filtration and monitoring. Quantity: Follow manufacturer specifications precisely - too much causes overheating, too little causes failure. Monitor bearing temperatures to verify lubrication effectiveness.",
+              "pro_tip": "Premium synthetic greases cost 5-10× more than standard greases but typically extend 6300 series bearing life by 2-3× - the ROI is excellent."
+            }
+          ]
+        },
+        {
+          "category": "Troubleshooting & Problem Solving",
+          "questions": [
+            {
+              "question": "My 6300 series bearing failed in a critical application - how do I prevent this from happening again?",
+              "direct_answer": "Conduct thorough failure analysis to identify root cause, then address systematic issues. Don't just replace the bearing - fix the underlying problem.",
+              "why_this_matters": "6300 series bearing failures in critical applications are extremely expensive, often costing millions in downtime and emergency repairs. These failures usually indicate systematic problems that will repeat unless addressed. Understanding the failure mode is essential to prevent recurrence and may reveal issues affecting other equipment.",
+              "how_to_handle_it": "Preserve failed bearing for analysis. Document: operating conditions, failure symptoms, maintenance history. Examine bearing for: contamination, electrical damage, overloading, installation damage, lubrication failure. Address root causes: improve sealing, fix electrical grounding, correct alignment, upgrade lubrication systems. Implement monitoring to detect similar problems early.",
+              "pro_tip": "6300 series bearing failures are expensive lessons - invest in professional failure analysis to prevent repeat failures that could cost 100× more than the analysis."
+            },
+            {
+              "question": "How do I know if my critical equipment needs condition monitoring for 6300 series bearings?",
+              "direct_answer": "If bearing failure costs >$500,000 in downtime and repairs, condition monitoring pays for itself. Critical applications should have permanent monitoring systems.",
+              "why_this_matters": "6300 series bearings are used in applications where failure creates catastrophic consequences. Condition monitoring provides early warning of developing problems, allowing planned maintenance instead of emergency repairs. The cost of monitoring is trivial compared to unplanned failure costs.",
+              "how_to_handle_it": "Calculate failure cost: downtime + emergency repair + consequential damage + safety risks. If total exceeds $500,000, install permanent monitoring. Systems needed: vibration analysis, temperature monitoring, oil analysis. Establish trending baselines and alarm levels. Train personnel on interpretation. Plan maintenance based on condition, not arbitrary schedules.",
+              "pro_tip": "For 6300 series bearings in critical applications, condition monitoring isn't optional - it's insurance against catastrophic failures."
+            },
+            {
+              "question": "What early warning signs indicate 6300 series bearing problems in power generation equipment?",
+              "direct_answer": "Subtle temperature increases, slight vibration changes, and oil analysis abnormalities often appear months before failure. Monitor trending, not just absolute values.",
+              "why_this_matters": "Power generation equipment operates continuously under heavy loads where bearing failure can cause catastrophic damage and regulatory violations. Early detection allows planned maintenance during scheduled outages rather than forced shutdowns. Small changes in critical equipment often precede major failures by months.",
+              "how_to_handle_it": "Monitor trends in: bearing temperature (>2°C increase from baseline), vibration levels (>25% increase in overall levels), oil analysis (particle count increases, wear metals). Establish baselines during commissioning. Set alarm levels based on rate of change, not just absolute values. Investigate any sustained changes from normal operating patterns.",
+              "pro_tip": "In power generation, plan bearing replacement when trends show 50% increase from baseline - waiting for obvious symptoms risks emergency outages."
+            }
+          ]
+        },
+        {
+          "category": "Cost & Performance Optimization",
+          "questions": [
+            {
+              "question": "How do I justify the extreme cost of 6300 series bearings to management?",
+              "direct_answer": "Calculate total failure cost including lost production, emergency repairs, and safety risks. For critical applications, bearing cost is typically <1% of total failure cost.",
+              "why_this_matters": "6300 series bearings are expensive but used in applications where failure costs are astronomical. Management may question the high bearing cost without understanding the consequences of failure in critical applications. Proper cost justification shows that premium bearings are actually cost-effective insurance.",
+              "how_to_handle_it": "Document total failure cost: lost production ($/hour × outage duration), emergency repair costs, equipment damage, safety risks, regulatory penalties. Compare to bearing cost difference. Present as risk management investment. Show examples from industry of similar failure costs. Emphasize that bearing cost is insignificant compared to failure consequences.",
+              "pro_tip": "Frame 6300 series bearings as reliability insurance, not just mechanical components - management understands insurance against million-dollar risks."
+            },
+            {
+              "question": "What's the realistic service life expectation for 6300 series bearings in critical applications?",
+              "direct_answer": "10-20 years in well-maintained critical applications, but plan replacement based on condition monitoring rather than arbitrary time limits.",
+              "why_this_matters": "Critical applications need realistic life planning for maintenance scheduling and budgeting. 6300 series bearings are designed for long life but actual service life depends heavily on operating conditions, maintenance quality, and application demands. Unrealistic expectations lead to poor maintenance planning.",
+              "how_to_handle_it": "Typical life expectations: power generation 15-20 years, steel mills 10-15 years, mining 5-10 years depending on conditions. Plan replacement based on condition monitoring trends rather than calendar time. Budget for potential early replacement if operating conditions are harsh. Implement condition-based maintenance rather than time-based schedules.",
+              "pro_tip": "6300 series bearings often exceed design life in well-maintained applications - condition monitoring prevents premature replacement and optimizes maintenance budgets."
+            },
+            {
+              "question": "When does it make economic sense to upgrade to even larger bearing types instead of 6300 series?",
+              "direct_answer": "When 6300 series bearings still fail frequently despite proper application, or when loads exceed 200kN consistently. At that point, consider tapered roller or spherical roller bearings.",
+              "why_this_matters": "6300 series represents the practical limit for deep groove ball bearings. Applications requiring more capacity need different bearing types that offer higher load capacity but with trade-offs in speed, complexity, and cost. Understanding when to transition to other bearing types prevents oversizing within the deep groove family.",
+              "how_to_handle_it": "Consider alternatives when: loads consistently exceed 6300 series capacity, applications require >200kN capacity, misalignment is significant, or axial loads are high. Options: tapered roller bearings (higher radial/axial capacity), spherical roller bearings (misalignment tolerance), custom bearing designs. Evaluate total system cost including housing modifications.",
+              "pro_tip": "6300 series is the largest practical deep groove ball bearing - beyond this, different bearing technologies usually provide better solutions."
+            }
+          ]
+        }
+      ],
+      
+      "seo_metadata": {
+        "title": "6300 Series Maximum Load Ball Bearings | Heavy Industrial Applications | RHD Bearings",
+        "description": "6300 series maximum load deep groove ball bearings (6300-6320) for heavy industrial, mining, and power generation applications. 10-100mm bore, up to 162kN capacity. Made in India.",
+        "keywords": [
+          "6300 series bearings", "maximum load bearings", "heavy industrial bearings", "steel mill bearings",
+          "mining equipment bearings", "power generation bearings", "6308 bearing", "6310 bearing", "Mumbai industrial"
+        ],
+        "canonical_url": "https://rhdbearings.com/6300-series"
+      },
+      
+      "llm_optimization": {
+        "natural_queries": [
+          "Maximum load bearings for heavy industry",
+          "6300 vs 6200 series comparison",
+          "Steel mill bearing applications", 
+          "Heavy duty mining equipment bearings",
+          "Large motor bearings 100+ HP",
+          "Maximum capacity ball bearings",
+          "Heavy industrial equipment bearings",
+          "Power generation bearing applications"
+        ],
+        "selection_criteria": [
+          "Maximum load: Up to 162kN capacity - highest in class",
+          "Heavy industry: Designed for most demanding applications",
+          "Ultimate durability: Maximum service life in extreme conditions", 
+          "Shock resistant: Superior performance in high-impact environments",
+          "Critical applications: Where bearing failure is not an option",
+          "Cost effective: Maximum performance without exotic bearing types"
+        ]
+      }
+    }
+  }
+}
