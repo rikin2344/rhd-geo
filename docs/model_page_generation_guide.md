@@ -41,6 +41,7 @@ This comprehensive guide documents the process for creating individual bearing m
 - ✅ **Speed Context**: Convert RPM to rotations per second and practical comparisons
 - ✅ **Application Context**: Model-specific application guidance
 - ✅ **Applications Section**: Generate model-specific applications based on bearing size, load capacity, and typical use cases
+- ✅ **Extended Dimensional Data**: Use SKF API to get d₁, D₂, r₁, r₂ values with fallback strategy
 - ✅ **Breadcrumb Navigation**: Model-specific breadcrumbs
 - ✅ **Related Model Lists**: Dynamically determine related models from JSON cross-references
 - ✅ **Section Headers**: All section titles must include model number (e.g., "608 BEARING SPECIFICATIONS")
@@ -88,6 +89,7 @@ This comprehensive guide documents the process for creating individual bearing m
                 <div class="spec-card dimensions-card">
                     <h3><span class="spec-icon">📏</span>Dimensions</h3>
                     <div class="dimensions-grid">
+                        <!-- Row 1: Basic dimensions -->
                         <div class="dimension-item">
                             <div class="dimension-label">d - ID (Bore Diameter)</div>
                             <div class="dimension-value">[bore_diameter]mm</div>
@@ -100,14 +102,24 @@ This comprehensive guide documents the process for creating individual bearing m
                             <div class="dimension-label">B - Width</div>
                             <div class="dimension-value">[width]mm</div>
                         </div>
+                        <!-- Row 2: Extended dimensions (if available from SKF API) -->
                         <div class="dimension-item">
-                            <div class="dimension-label">Weight</div>
-                            <div class="dimension-value">[weight]kg</div>
+                            <div class="dimension-label">d₁ - Shoulder Diameter</div>
+                            <div class="dimension-value">≈[d1]mm</div>
+                        </div>
+                        <div class="dimension-item">
+                            <div class="dimension-label">D₂ - Recess Diameter</div>
+                            <div class="dimension-value">≈[D2]mm</div>
+                        </div>
+                        <div class="dimension-item">
+                            <div class="dimension-label">r₁,₂ - Chamfer Radius</div>
+                            <div class="dimension-value">min. [r1]mm</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="specs-image">
+                <h3 class="specs-image-title">Ball Bearing Cross Section</h3>
                 <img src="[technical_drawing.image_url]" alt="[technical_drawing.image_alt]" />
             </div>
         </div>
@@ -164,6 +176,138 @@ This comprehensive guide documents the process for creating individual bearing m
 - **Footer**: Modern contained footer card
 - **CTA**: Dynamic model-specific call-to-action
 - **Watermark**: Bottom page branding element
+
+## SKF API Integration for Extended Dimensions
+
+### Overview
+To provide complete dimensional specifications, integrate with SKF's API to fetch additional dimensional parameters (d₁, D₂, r₁, r₂) that are not available in our internal JSON data.
+
+### API Endpoint
+```
+https://search.skf.com/prod/search-skfcom/rest/apps/commercial_catalogue_v1/searchers/details
+```
+
+### Required Parameters
+- `designation`: Model number (e.g., "607", "608")
+- `language`: "en"
+- `system`: "metric" (preferred) or "imperial"
+- `searcher`: "details"
+- `site`: "319" (SKF Australia)
+
+### Implementation Strategy
+
+#### 1. SKF API Tool
+Use the provided `scripts/skf_api_call.py` tool to extract dimensional data:
+
+```python
+# Example usage
+from scripts.skf_api_call import SKFAPIBearingScraper
+
+scraper = SKFAPIBearingScraper()
+result = scraper.get_complete_bearing_info("607")
+
+if result and 'dimensions' in result:
+    d1 = result['dimensions'].get('d1')      # Shoulder diameter
+    D2 = result['dimensions'].get('D2')      # Recess diameter  
+    r1 = result['dimensions'].get('r1')      # Chamfer radius
+    r2 = result['dimensions'].get('r2')      # Chamfer radius (usually = r1)
+```
+
+#### 2. Fallback Strategy
+**Always implement graceful fallback**:
+
+```html
+<!-- If SKF API successful -->
+<div class="dimension-item">
+    <div class="dimension-label">d₁ - Shoulder Diameter</div>
+    <div class="dimension-value">≈[d1]mm</div>
+</div>
+<div class="dimension-item">
+    <div class="dimension-label">D₂ - Recess Diameter</div>
+    <div class="dimension-value">≈[D2]mm</div>
+</div>
+<div class="dimension-item">
+    <div class="dimension-label">r₁,₂ - Chamfer Radius</div>
+    <div class="dimension-value">min. [r1]mm</div>
+</div>
+
+<!-- If SKF API fails, show only basic dimensions -->
+<!-- Standard d, D, B, Weight layout -->
+```
+
+#### 3. Data Validation
+- **Verify reasonable values**: d₁ should be > d, D₂ should be < D
+- **Check for null/missing data**: Handle gracefully
+- **Cache results**: Store successful API responses to avoid repeated calls
+
+#### 4. Error Handling
+```python
+try:
+    api_dimensions = scraper.get_complete_bearing_info(model_number)
+    if api_dimensions and 'dimensions' in api_dimensions:
+        # Use extended dimensions
+        use_extended_dimensions = True
+    else:
+        # Fall back to basic dimensions only
+        use_extended_dimensions = False
+except Exception as e:
+    print(f"SKF API failed for {model_number}: {e}")
+    use_extended_dimensions = False
+```
+
+### Expected Values by Model
+Based on successful API extractions:
+
+| Model | d₁ (mm) | D₂ (mm) | r₁,₂ (mm) |
+|-------|---------|---------|-----------|
+| 607   | 11.1    | 16.5    | 0.3       |
+| 608   | 12.15   | 19.2    | 0.3       |
+| 6205  | 34.35   | 46.21   | 1.0       |
+| 609   | 14.45   | 21.2    | 0.3       |
+
+### Display Format
+- **d₁, D₂**: Use "≈" prefix to indicate approximate values
+- **r₁,₂**: Use "min." prefix for minimum chamfer radius
+- **Layout**: 3×2 grid (3 columns, 2 rows) for 6 dimensional parameters
+- **Order**: Row 1: d, D, B | Row 2: d₁, D₂, r₁,₂
+- **Weight**: Excluded from dimensions card (already shown in hero section)
+
+### Required CSS for Dimensions Grid
+```css
+.dimensions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns for desktop */
+    gap: var(--space-micro-2);
+    margin-bottom: var(--space-micro-2);
+}
+
+/* Mobile responsive: 2 columns */
+@media (max-width: 768px) {
+    .dimensions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+```
+
+### Required CSS for Specs Image Title
+```css
+.specs-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-component-1);
+}
+
+.specs-image-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 25px 0;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+```
 
 ## JSON Data Integration
 
