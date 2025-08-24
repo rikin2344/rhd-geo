@@ -227,6 +227,15 @@ body {
     }
 }
 
+/* Footer CSS */
+
+
+/* CTA CSS */
+
+
+/* Watermark CSS */
+
+
 /* Page CSS */
 /* ================================
    CSS VARIABLES & BASE STYLES
@@ -258,8 +267,8 @@ body {
     --space-micro-2: 16px;
     --space-component-1: 24px;
     --space-component-2: 32px;
-    --space-section-1: 48px;
-    --space-section-2: 64px;
+    --space-section-1: 32px;
+    --space-section-2: 48px;
     --space-page-1: 80px;
     --space-page-2: 120px;
     
@@ -293,14 +302,12 @@ body {
     padding: 0 60px;
 }
 
-
-
 /* ================================
    HERO SECTION
    ================================ */
 
 .hero {
-    padding: 60px 0 80px 0;
+    padding: 40px 0 60px 0;
     position: relative;
 }
 
@@ -1050,46 +1057,6 @@ body {
 /* ================================
    FOOTER
    ================================ */
-
-.footer {
-    background: var(--text-primary);
-    color: var(--surface-primary);
-    padding: var(--space-section-2) 0 var(--space-component-2) 0;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-component-2);
-    margin-bottom: var(--space-component-2);
-}
-
-.footer-section h3 {
-    font-weight: 600;
-    font-size: var(--text-body);
-    margin-bottom: var(--space-micro-2);
-}
-
-.footer-section a {
-    color: var(--surface-primary);
-    text-decoration: none;
-    font-size: var(--text-body-small);
-    display: block;
-    margin-bottom: 4px;
-    transition: color var(--transition-fast);
-}
-
-.footer-section a:hover {
-    color: var(--accent-neon);
-}
-
-.footer-copyright {
-    text-align: center;
-    padding-top: var(--space-component-2);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: var(--text-body-small);
-    color: rgba(255, 255, 255, 0.7);
-}
 
 /* ================================
    RESPONSIVE DESIGN
@@ -2084,61 +2051,74 @@ a:focus {
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>RHD Bearings</h3>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px; margin-bottom: 16px;">
-                        203 Vihar Estate, Off. Saki Vihar Road<br>
-                        Next to Autohanger, Sakinaka, Andheri East<br>
-                        Mumbai 400072, India
-                    </p>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px;">
-                        Phone: +91-9702081858<br>
-                        Email: sales@rhdenterprise.in<br>
-                        OEM Sales: oemsales@rhdenterprise.in
-                    </p>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings" class="footer-logo-img">
+                        </div>
+                        <p class="footer-description">
+                            RHD Bearings specializes in high-quality ball bearings for industrial, automotive, and precision applications. With over 20 years of experience, we provide reliable bearing solutions worldwide.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-nav">
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Product</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/specs/miniature-series.html">Miniature Bearings</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6000-series.html">6000 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6200-series.html">6200 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6300-series.html">6300 Series</a></li>
+                                <li><a href="https://rhdbearings.com/bearing-size-chart/">Size Chart</a></li>
+                                <li><a href="https://rhdbearings.com/shop/">Shop Online</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Resources</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/bearing-installation-guide/">Installation Guide</a></li>
+                                <li><a href="https://rhdbearings.com/bearing-maintenance/">Maintenance Tips</a></li>
+                                <li><a href="https://rhdbearings.com/technical-specifications/">Technical Specs</a></li>
+                                <li><a href="https://rhdbearings.com/industries/">Industry Applications</a></li>
+                                <li><a href="https://rhdbearings.com/faqs/">FAQs</a></li>
+                                <li><a href="https://rhdbearings.com/support/">Support Center</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Company</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/about-us/">About Us</a></li>
+                                <li><a href="https://rhdbearings.com/quality-assurance/">Quality Assurance</a></li>
+                                <li><a href="https://rhdbearings.com/careers/">Careers</a></li>
+                                <li><a href="https://rhdbearings.com/contact-us/">Contact</a></li>
+                                <li><a href="https://rhdbearings.com/news/">News & Updates</a></li>
+                                <li><a href="https://rhdbearings.com/partnerships/">Partnerships</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="footer-section">
-                    <h3>PRODUCTS</h3>
-                    <a href="/miniature-bearings">Miniature Bearings</a>
-                    <a href="/6000-series">6000 Series</a>
-                    <a href="/6200-series">6200 Series</a>
-                    <a href="/6300-series">6300 Series</a>
-                    <a href="/62200-series">62200 Series</a>
-                    <a href="/62300-series">62300 Series</a>
-                    <a href="/16000-series">16000 Series</a>
-                    <a href="/6800-series">6800 Series</a>
-                    <a href="/6900-series">6900 Series</a>
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 RHD Bearings. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="https://rhdbearings.com/terms-of-service/">Terms of Service</a>
+                        <a href="https://rhdbearings.com/privacy-policy/">Privacy Policy</a>
+                    </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h3>TECHNICAL SUPPORT</h3>
-                    <a href="#specifications">Technical Specifications</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="/technical-drawings">Technical Drawings</a>
-                    <a href="/installation-guides">Installation Guides</a>
-                    <a href="/maintenance">Maintenance Guidelines</a>
-                    <a href="/troubleshooting">Troubleshooting</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>CONTACT</h3>
-                    <a href="/contact">Contact Us</a>
-                    <a href="/quote">Request Quote</a>
-                    <a href="/bulk-orders">Bulk Orders</a>
-                    <a href="/distributor">Become a Distributor</a>
-                    <a href="/support">Technical Support</a>
-                    <a href="/warranty">Warranty Information</a>
-                </div>
-            </div>
-            
-            <div class="footer-copyright">
-                © 2024 RHD Bearings. All rights reserved. Made in India with precision engineering excellence.
             </div>
         </div>
     </footer>
 
+    <!-- Watermark Section -->
+    <section class="watermark-section">
+        <div class="watermark-text">BEARINGS</div>
+    </section>
+
     <script>
         // Miniature bearings data
         const bearingsData = [
@@ -2297,15 +2277,18 @@ a:focus {
         });
     </script>
 
-    <!-- Load Navbar -->
+    <!-- Load Navbar and Watermark -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Load navbar
             fetch('../shared/navbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading navbar:', error));
+
+
         });
     </script>
 <script>
@@ -2467,12 +2450,15 @@ a:focus {
     </script>
 <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Load navbar
             fetch('../shared/navbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading navbar:', error));
+
+
         });
     </script>
 

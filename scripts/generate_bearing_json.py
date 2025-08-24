@@ -252,7 +252,7 @@ def generate_consolidated_applications(bearing_model: str, bore_diameter: int, o
     }
 
 def generate_enhanced_faq(bearing_model: str, bearing_data: Dict) -> Dict:
-    """Generate enhanced FAQ optimized for LLM queries and natural language patterns"""
+    """Generate enhanced FAQ following the practical FAQ generation guide for specific bearing models"""
     
     bore = bearing_data['dimensions']['bore_diameter_d_mm']
     outer = bearing_data['dimensions']['outer_diameter_D_mm'] 
@@ -263,78 +263,92 @@ def generate_enhanced_faq(bearing_model: str, bearing_data: Dict) -> Dict:
     oil_rpm = bearing_data['speed_limits']['oil_rpm']
     weight = bearing_data['weight_kg']
     
-    # Size-based application context
-    size_context = "precision applications" if bore <= 10 else "medium-duty applications" if bore <= 25 else "heavy-duty applications"
+    # Size-based application context for better targeting
+    if bore <= 10:
+        size_context = "precision and miniature applications"
+        typical_uses = "electronics, small motors, precision instruments"
+    elif bore <= 25:
+        size_context = "medium-duty applications" 
+        typical_uses = "automotive components, household appliances, industrial equipment"
+    else:
+        size_context = "heavy-duty applications"
+        typical_uses = "heavy machinery, construction equipment, large industrial systems"
+    
+    # Handle null RPM values gracefully
+    grease_rpm_text = f"{grease_rpm}" if grease_rpm else "contact us for speed limits"
+    oil_rpm_text = f"{oil_rpm}" if oil_rpm else "contact us for speed limits"
     
     return {
-        "technical_specifications": [
+        "bearing_selection_replacement": [
             {
-                "question": f"Is the {bearing_model} bearing the right size for my {bore}mm shaft application?",
-                "answer": f"Yes! The {bearing_model} bearing is specifically designed for {bore}mm shafts with an outer diameter of {outer}mm and {width}mm width. It's perfect for {size_context} where you need reliable performance with {dynamic_load}kN load capacity. The ISO 15:2011 standard dimensions ensure perfect fit and interchangeability."
+                "question": f"How do I know if the {bearing_model} bearing is the right choice for my {bore}mm shaft application?",
+                "answer": f"The {bearing_model} is perfect for {bore}mm shafts requiring {dynamic_load}kN load capacity. Check these key factors: 1) Your shaft is exactly {bore}mm diameter, 2) Your housing accommodates {outer}mm outer diameter, 3) You have {width}mm width clearance, 4) Your loads stay under {dynamic_load}kN dynamic/{static_load}kN static. This bearing excels in {typical_uses} where reliability matters."
             },
             {
-                "question": f"How much weight can a {bearing_model} bearing support in continuous operation?",
-                "answer": f"The {bearing_model} can continuously support {dynamic_load}kN ({int(dynamic_load * 102)} kg force) in dynamic applications and {static_load}kN ({int(static_load * 102)} kg force) when stationary. For safety, operate at 80% of these limits for extended life. This makes it ideal for {size_context} requiring reliable load handling."
+                "question": f"Can I use a cheaper bearing instead of the {bearing_model}, or does it need to be exact?",
+                "answer": f"While dimensions must match exactly ({bore}x{outer}x{width}mm), quality matters significantly. Cheaper bearings may fail 3-5x faster, costing more in downtime and replacement labor. The {bearing_model} uses premium Gcr15 steel and precision manufacturing - invest in quality for {size_context} to avoid expensive failures. Our 20+ years experience shows this pays off."
             },
             {
-                "question": f"What makes the {bearing_model} bearing different from similar sized bearings?",
-                "answer": f"The {bearing_model} stands out with its {dynamic_load}kN load rating, {weight}kg weight, and speed capability up to {grease_rpm}/{oil_rpm} RPM. Made from premium Gcr15 chrome steel (AISI 52100 equivalent) with 0.95-1.05% carbon for optimal hardness. It's the sweet spot of performance and reliability for {bore}mm applications."
+                "question": f"What's the difference between sealed and open {bearing_model} bearings for my equipment?",
+                "answer": f"Open {bearing_model}: Best for high speeds ({grease_rpm_text} RPM), requires external lubrication, lowest friction. Sealed {bearing_model}-2RS: Pre-greased, maintenance-free, protected from contamination, but 30% lower speed limit. Choose sealed for dirty environments and convenience, open for maximum performance and speed. Most {typical_uses} benefit from sealed versions."
+            },
+            {
+                "question": f"Do I need precision grade for my {bearing_model} bearing application?",
+                "answer": f"Standard {bearing_model} works for most {typical_uses}. Upgrade to precision grade only if: 1) Shaft runout must be under 5 microns, 2) Noise levels are critical, 3) Speeds exceed 80% of {grease_rpm_text} RPM, 4) Temperature variations are extreme. Precision costs 2-3x more but delivers superior performance when needed. Call +91-9702081858 for guidance."
             }
         ],
-        "application_suitability": [
+        "installation_maintenance": [
             {
-                "question": f"When should I choose the {bearing_model} over other bearing options?",
-                "answer": f"Choose the {bearing_model} when you need a {bore}mm bearing for {size_context} with {dynamic_load}kN capacity. It's perfect when your application requires speeds up to {grease_rpm} RPM with grease lubrication. Ideal for automotive, industrial motors, and precision equipment where reliability matters more than cost."
+                "question": f"Why do my {bearing_model} bearings keep failing early, and how can I prevent it?",
+                "answer": f"Top failure causes: 1) Hammer installation (use proper pullers!), 2) Wrong shaft tolerance (use h6), 3) Exceeding {dynamic_load}kN load limit, 4) Running over {grease_rpm_text} RPM, 5) Poor lubrication. Prevention: Proper installation tools, correct tolerances, stay within ratings, re-grease every 6-12 months. Follow these rules for 10,000-50,000 hour life in {size_context}."
             },
             {
-                "question": f"What happens if I use the {bearing_model} in high-speed applications?",
-                "answer": f"The {bearing_model} excels at high speeds! It can safely operate up to {grease_rpm} RPM with grease lubrication and {oil_rpm} RPM with oil lubrication. Beyond these speeds, you'll risk overheating and premature failure. For applications exceeding these limits, consider our high-speed bearing variants or contact our engineers at +91-9702081858."
+                "question": f"What's the proper way to install {bearing_model} bearings without damaging them?",
+                "answer": f"Never hammer directly! Use bearing pullers or hydraulic tools. For {bearing_model}: 1) Clean shaft and housing thoroughly, 2) Check shaft tolerance (h6 recommended), 3) Heat bearing to 80-100°C for easier installation, 4) Press evenly on inner race only, 5) Apply light grease before installation. Proper installation prevents 80% of premature failures in {typical_uses}."
             },
             {
-                "question": f"Which industries get the best results from {bearing_model} bearings?",
-                "answer": f"The {bearing_model} shines in automotive (alternators, pumps), industrial motors, household appliances, and precision equipment. Its {bore}mm size and {dynamic_load}kN capacity make it perfect for applications needing reliable, medium-duty performance. Popular in Mumbai's automotive and textile industries!"
+                "question": f"How often should I re-lubricate my {bearing_model} bearings, and with what type of grease?",
+                "answer": f"For {bearing_model} in {size_context}: Re-grease every 6-12 months or 2000-5000 operating hours. Use lithium complex grease (NLGI Grade 2) for temperatures -30°C to +120°C. High-speed applications ({grease_rpm_text} RPM) need synthetic grease. Apply until old grease purges out, then stop - over-greasing causes overheating. Quality grease extends life 2-3x."
+            },
+            {
+                "question": f"How can I tell when my {bearing_model} bearing is about to fail before it causes damage?",
+                "answer": f"Watch for these warning signs: 1) Temperature rise above 70°C, 2) Unusual noise or vibration, 3) Visible grease leakage, 4) Increased power consumption, 5) Shaft play or wobble. For {bearing_model} in {typical_uses}, monthly vibration monitoring catches 90% of problems early. Replace immediately if temperature exceeds 80°C or noise becomes constant."
             }
         ],
-        "selection_guidance": [
+        "troubleshooting_problem_solving": [
             {
-                "question": f"How do I know if the {bearing_model} is the right bearing for my application?",
-                "answer": f"Ask yourself: Do I have a {bore}mm shaft? Do I need {dynamic_load}kN load capacity? Will speeds stay under {grease_rpm} RPM? If yes, the {bearing_model} is perfect! If your loads exceed {dynamic_load}kN or speeds exceed {oil_rpm} RPM, contact us at sales@rhdenterprise.in for alternatives."
+                "question": f"My {bearing_model} bearing is making noise - is it dangerous and what should I do?",
+                "answer": f"Noise indicates problems but isn't always dangerous immediately. Diagnose quickly: 1) Light humming = normal operation, 2) Grinding = contamination or wear, 3) Squealing = lubrication failure, 4) Knocking = severe damage. For {bearing_model}, stop operation if noise is loud or irregular. Clean and re-lubricate first - if noise persists, replace bearing before catastrophic failure."
             },
             {
-                "question": f"What are the most common mistakes when using {bearing_model} bearings?",
-                "answer": f"Top mistakes: 1) Exceeding {dynamic_load}kN load limit, 2) Running faster than {grease_rpm} RPM without proper lubrication, 3) Wrong shaft tolerance (use h6), 4) Hammer installation (use proper pullers!), 5) Ignoring lubrication schedules. Avoid these and your {bearing_model} will last 10,000-50,000 hours!"
+                "question": f"How do I identify what's causing premature {bearing_model} bearing failure in my equipment?",
+                "answer": f"Examine the failed bearing: 1) Pitting/spalling = overloading (reduce load below {dynamic_load}kN), 2) Smearing = overheating (check lubrication/speed), 3) Cracking = impact damage (improve installation), 4) Corrosion = contamination (improve sealing). For {bearing_model} in {typical_uses}, 70% of failures are preventable with proper maintenance and operation within specifications."
             },
             {
-                "question": f"When should I NOT use the {bearing_model} bearing?",
-                "answer": f"Don't use the {bearing_model} if: Your shaft isn't {bore}mm, you need over {dynamic_load}kN capacity, speeds exceed {oil_rpm} RPM, or you're in extreme temperatures (below -30°C or above 120°C). For these cases, call +91-9702081858 - we'll recommend the right bearing for your specific needs."
+                "question": f"What causes {bearing_model} bearings to overheat and how do I fix it?",
+                "answer": f"Overheating causes: 1) Excessive speed (over {grease_rpm_text} RPM), 2) Overloading (above {dynamic_load}kN), 3) Poor lubrication, 4) Too-tight clearance, 5) Misalignment. Solutions: Check speeds and loads, re-lubricate properly, verify shaft/housing tolerances, ensure proper alignment. For {bearing_model}, operating temperature should stay under 70°C for maximum life."
+            },
+            {
+                "question": f"Can I repair a damaged {bearing_model} bearing or do I need to replace it?",
+                "answer": f"Never attempt to repair {bearing_model} bearings - it's unsafe and ineffective. Ball bearings are precision components requiring specialized manufacturing. Signs requiring immediate replacement: visible damage, excessive noise, temperature over 80°C, or vibration increase. For {size_context}, replacement cost is minimal compared to equipment damage from bearing failure. Keep spares on hand for critical applications."
             }
         ],
-        "troubleshooting": [
+        "cost_performance_optimization": [
             {
-                "question": f"Why is my {bearing_model} bearing making noise and how do I fix it?",
-                "answer": f"Noise usually means: 1) Contamination (clean and re-lubricate), 2) Wrong clearance (check if you need C2/C3 instead of C0), 3) Overloading (reduce load below {dynamic_load}kN), 4) Misalignment (check shaft/housing straightness). If noise persists, the bearing may be damaged and need replacement."
+                "question": f"Is it worth paying more for premium {bearing_model} bearings, or are standard ones fine?",
+                "answer": f"For {typical_uses}, premium {bearing_model} bearings deliver 2-5x longer life, justifying higher cost through reduced downtime and maintenance. Standard grade works for non-critical applications, but premium pays off when: 1) Downtime costs exceed ₹10,000/hour, 2) Replacement is difficult/expensive, 3) Reliability is critical. Our Gcr15 steel {bearing_model} offers the best value proposition."
             },
             {
-                "question": f"My {bearing_model} bearing is overheating - what should I check first?",
-                "answer": f"Check immediately: 1) Speed - are you over {grease_rpm}/{oil_rpm} RPM limits? 2) Load - exceeding {dynamic_load}kN? 3) Lubrication - when did you last re-grease? 4) Clearance - too tight? If all seem normal, stop operation and contact our technical team at oemsales@rhdenterprise.in before damage occurs."
+                "question": f"How can I extend {bearing_model} bearing life to reduce maintenance costs?",
+                "answer": f"Life extension strategies: 1) Operate at 80% of {dynamic_load}kN capacity, 2) Keep speeds under 90% of {grease_rpm_text} RPM, 3) Use C3 clearance for high temperatures, 4) Premium synthetic grease, 5) Monthly vibration monitoring, 6) Maintain 18-22°C operating temperature. These practices can extend {bearing_model} life from 10,000 to 50,000+ hours in {size_context}."
             },
             {
-                "question": f"How do I prevent premature failure of my {bearing_model} bearings?",
-                "answer": f"Prevention checklist: 1) Stay within {dynamic_load}kN load limit, 2) Don't exceed {grease_rpm} RPM, 3) Use proper h6 shaft tolerance, 4) Re-lubricate every 6-12 months, 5) Keep contamination out, 6) Proper installation with pullers. Follow these rules and expect 10,000-50,000 hours of reliable service!"
-            }
-        ],
-        "performance_optimization": [
-            {
-                "question": f"How do I get maximum life from my {bearing_model} bearings?",
-                "answer": f"Maximum life strategy: 1) Operate at 80% of {dynamic_load}kN capacity, 2) Keep speeds under 90% of {grease_rpm} RPM, 3) Use C3 clearance for high temps, 4) Premium grease every 6 months, 5) Monitor vibration monthly, 6) Maintain 18-22°C operating temperature. This can extend life to 50,000+ hours!"
+                "question": f"What's the real difference between cheap imported bearings and quality {bearing_model} bearings?",
+                "answer": f"Quality differences are significant: Our {bearing_model} uses Gcr15 steel (AISI 52100 equivalent) vs. unknown steel in cheap bearings. Precision manufacturing ensures consistent performance - cheap bearings vary widely. Real-world result: Quality {bearing_model} lasts 3-10x longer, with predictable performance. For {typical_uses}, the total cost of ownership strongly favors quality bearings despite higher initial cost."
             },
             {
-                "question": f"Should I use grease or oil lubrication with my {bearing_model} bearing?",
-                "answer": f"For the {bearing_model}: Use grease for speeds under {grease_rpm} RPM (easier maintenance, sealed protection). Use oil for speeds {grease_rpm}-{oil_rpm} RPM (better heat dissipation, longer intervals). Most applications use grease - it's simpler and very effective for this bearing size."
-            },
-            {
-                "question": f"What clearance class should I specify for my {bearing_model} bearing application?",
-                "answer": f"Choose clearance based on your needs: C2 for precision applications requiring minimal play, C0 (normal) for most standard applications, C3 for high temperatures (>70°C) or interference fits. For the {bearing_model} in typical {size_context}, C0 clearance works perfectly. Need guidance? Call +91-9702081858."
+                "question": f"When does it make sense to upgrade to better bearings vs. just replacing with the same {bearing_model}?",
+                "answer": f"Upgrade when: 1) Current {bearing_model} fails frequently (under 5,000 hours), 2) Downtime costs exceed bearing cost by 10x, 3) Operating conditions changed (higher loads/speeds), 4) Maintenance access is difficult. For {size_context}, upgrading to sealed versions or higher clearance classes often solves recurring problems. Consult our engineers at +91-9702081858 for application analysis."
             }
         ]
     }
@@ -746,11 +760,11 @@ def main():
     print("Loading data files...")
     
     # Load all data files
-    bearing_db = load_json_file('../reference/bearing_database.json')
-    clearance_table = load_json_file('../reference/clearance_lookup_table.json')
-    vibration_table = load_json_file('../reference/vibration_lookup_table.json')
-    noise_table = load_json_file('../reference/noise_lookup_table.json')
-    witty_descriptions = load_witty_descriptions('../reference/witty_bearing_descriptions.json')
+    bearing_db = load_json_file('../rhd_bearings/data/bearing_database.json')
+    clearance_table = load_json_file('../rhd_bearings/data/clearance_lookup_table.json')
+    vibration_table = load_json_file('../rhd_bearings/data/vibration_lookup_table.json')
+    noise_table = load_json_file('../rhd_bearings/data/noise_lookup_table.json')
+    witty_descriptions = load_witty_descriptions('../rhd_bearings/data/witty_bearing_descriptions.json')
     
     # Process all bearings in the database
     target_bearing_data = bearing_db['bearings']

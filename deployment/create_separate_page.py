@@ -8,6 +8,32 @@ import os
 import base64
 import argparse
 
+def is_model_page(page_type):
+    """Check if this is a model-specific page (vs series page)"""
+    # Model pages are numeric or contain specific model patterns
+    return page_type.isdigit() or page_type in ['608', '609', '6001', '6002']  # Add more as needed
+
+def get_model_info(page_type):
+    """Get model page information"""
+    model_configs = {
+        '608': {
+            'series': 'miniature-series',
+            'model': '608',
+            'title': '608 Miniature Ball Bearing | Specifications & Pricing | RHD Bearings'
+        }
+        # Add more models here as needed
+    }
+    
+    if page_type in model_configs:
+        return model_configs[page_type]
+    
+    # If not in configs, try to infer from page_type
+    return {
+        'series': 'miniature-series',  # Default series, could be made smarter
+        'model': page_type,
+        'title': f'{page_type} Ball Bearing | Specifications & Pricing | RHD Bearings'
+    }
+
 def create_working_page(page_type='miniature'):
     """Create a working page that bypasses WordPress"""
     
@@ -44,6 +70,41 @@ def create_working_page(page_type='miniature'):
             backup_file = f'{output_dir}/backup.html'
             page_title = '6300 Series Maximum Load Ball Bearings | RHD Bearings'
             clean_url = 'https://rhdbearings.com/specs/6300-series/'
+        elif page_type == '62200':
+            page_dir = '../webpages/62200SeriesWebPage'
+            output_dir = '62200-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = '62200 Series Wide Inner Ring Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/specs/62200-series/'
+        elif page_type == '62300':
+            page_dir = '../webpages/62300SeriesWebPage'
+            output_dir = '62300-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = '62300 Series Extra Wide Inner Ring Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/specs/62300-series/'
+        elif page_type == '16000':
+            page_dir = '../webpages/16000SeriesWebPage'
+            output_dir = '16000-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = '16000 Series Thin Section Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/specs/16000-series/'
+        elif page_type == '6800':
+            page_dir = '../webpages/6800SeriesWebPage'
+            output_dir = '6800-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = '6800 Series Thin Section Light Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/specs/6800-series/'
+        elif page_type == '6900':
+            page_dir = '../webpages/6900SeriesWebPage'
+            output_dir = '6900-series'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = '6900 Series Thin Section Medium Ball Bearings | RHD Bearings'
+            clean_url = 'https://rhdbearings.com/specs/6900-series/'
         elif page_type == 'specs':
             page_dir = '../webpages/SpecsHubPage'
             output_dir = 'specs'
@@ -51,6 +112,15 @@ def create_working_page(page_type='miniature'):
             backup_file = f'{output_dir}/backup.html'
             page_title = 'Bearing Specifications & Technical Data | RHD Bearings'
             clean_url = 'https://rhdbearings.com/specs/'
+        elif is_model_page(page_type):
+            # Handle any model page dynamically
+            model_info = get_model_info(page_type)
+            page_dir = f'../webpages/internalwebpages/specs/{model_info["series"]}/{model_info["model"]}'
+            output_dir = f'specs/{model_info["series"]}/{model_info["model"]}'
+            output_file = f'{output_dir}/index.html'
+            backup_file = f'{output_dir}/backup.html'
+            page_title = model_info["title"]
+            clean_url = f'https://rhdbearings.com/specs/{model_info["series"]}/{model_info["model"]}'
         else:
             raise ValueError(f"Unknown page type: {page_type}")
 
@@ -61,6 +131,18 @@ def create_working_page(page_type='miniature'):
             css_content = f.read()
         with open('../webpages/shared/navbar.css', 'r', encoding='utf-8') as f:
             navbar_css = f.read()
+        
+        # Read additional shared CSS for model pages
+        footer_css = ""
+        cta_css = ""
+        watermark_css = ""
+        if is_model_page(page_type):
+            with open('../webpages/shared/footer.css', 'r', encoding='utf-8') as f:
+                footer_css = f.read()
+            with open('../webpages/shared/cta-model.css', 'r', encoding='utf-8') as f:
+                cta_css = f.read()
+            with open('../webpages/shared/watermark.css', 'r', encoding='utf-8') as f:
+                watermark_css = f.read()
         
         # Read navbar HTML
         with open('../webpages/shared/navbar.html', 'r', encoding='utf-8') as f:
@@ -92,6 +174,32 @@ def create_working_page(page_type='miniature'):
         # Replace navbar container with actual navbar HTML
         body_content = body_content.replace('<div id="navbar-container"></div>', navbar_html)
         
+        # Handle shared components for model pages
+        if is_model_page(page_type):
+            # Read shared component files
+            with open('../webpages/shared/cta-model.html', 'r', encoding='utf-8') as f:
+                cta_html = f.read()
+            with open('../webpages/shared/footer.html', 'r', encoding='utf-8') as f:
+                footer_html = f.read()
+            with open('../webpages/shared/watermark.html', 'r', encoding='utf-8') as f:
+                watermark_html = f.read()
+            
+            # Get model info for dynamic replacement
+            model_info = get_model_info(page_type)
+            model_number = model_info['model']
+            
+            # Replace placeholders in CTA with actual model number
+            cta_html_final = cta_html.replace('[MODEL]', model_number)
+            
+            # Replace component containers with actual HTML
+            body_content = body_content.replace('<div id="cta-container"></div>', cta_html_final)
+            
+            # Handle footer and watermark if they exist as containers
+            if 'id="footer-container"' in body_content:
+                body_content = body_content.replace('<div id="footer-container"></div>', footer_html)
+            if 'id="watermark-container"' in body_content:
+                body_content = body_content.replace('<div id="watermark-container"></div>', watermark_html)
+        
         # Create bulletproof HTML
         working_html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -117,6 +225,15 @@ body {{
 
 /* Navbar CSS */
 {navbar_css}
+
+/* Footer CSS */
+{footer_css}
+
+/* CTA CSS */
+{cta_css}
+
+/* Watermark CSS */
+{watermark_css}
 
 /* Page CSS */
 {css_content}
@@ -203,8 +320,8 @@ def print_final_instructions(files, clean_url, page_type='miniature'):
 def main():
     """Main execution"""
     parser = argparse.ArgumentParser(description='Create a standalone HTML page')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', 'specs'], default='miniature',
-                      help='Which page to generate (miniature, 6000, 6200, 6300, or specs)')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '608'], default='miniature',
+                      help='Which page to generate (miniature, 6000, 6200, 6300, 62200, 62300, 16000, 6800, 6900, specs, or 608)')
     args = parser.parse_args()
     
     files, clean_url = create_working_page(args.page)

@@ -10,6 +10,27 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+def is_model_page(page_type):
+    """Check if this is a model-specific page (vs series page)"""
+    return page_type.isdigit() or page_type in ['608', '609', '6001', '6002']
+
+def get_model_upload_info(page_type):
+    """Get model page upload information"""
+    model_configs = {
+        '608': {
+            'series': 'miniature-series',
+            'model': '608'
+        }
+    }
+    
+    if page_type in model_configs:
+        return model_configs[page_type]
+    
+    return {
+        'series': 'miniature-series',
+        'model': page_type
+    }
+
 def curl_upload(page_type='miniature'):
     """Upload using curl - much more reliable than Python FTP"""
     
@@ -40,10 +61,36 @@ def curl_upload(page_type='miniature'):
         local_file = './6300-series/index.html'
         remote_file = 'specs/6300-series.html'
         clean_url = 'https://rhdbearings.com/specs/6300-series.html'
+    elif page_type == '62200':
+        local_file = './62200-series/index.html'
+        remote_file = 'specs/62200-series.html'
+        clean_url = 'https://rhdbearings.com/specs/62200-series.html'
+    elif page_type == '62300':
+        local_file = './62300-series/index.html'
+        remote_file = 'specs/62300-series.html'
+        clean_url = 'https://rhdbearings.com/specs/62300-series.html'
+    elif page_type == '16000':
+        local_file = './16000-series/index.html'
+        remote_file = 'specs/16000-series.html'
+        clean_url = 'https://rhdbearings.com/specs/16000-series.html'
+    elif page_type == '6800':
+        local_file = './6800-series/index.html'
+        remote_file = 'specs/6800-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6800-series.html'
+    elif page_type == '6900':
+        local_file = './6900-series/index.html'
+        remote_file = 'specs/6900-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6900-series.html'
     elif page_type == 'specs':
         local_file = './specs/index.html'
         remote_file = 'specs.html'
         clean_url = 'https://rhdbearings.com/specs.html'
+    elif is_model_page(page_type):
+        # Handle any model page dynamically
+        model_info = get_model_upload_info(page_type)
+        local_file = f'./specs/{model_info["series"]}/{model_info["model"]}/index.html'
+        remote_file = f'specs/{model_info["series"]}/{model_info["model"]}/index.html'
+        clean_url = f'https://rhdbearings.com/specs/{model_info["series"]}/{model_info["model"]}'
     else:
         raise ValueError(f"Unknown page type: {page_type}")
     
@@ -79,8 +126,8 @@ def curl_upload(page_type='miniature'):
 
 def main():
     parser = argparse.ArgumentParser(description='Upload bearing page via curl')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', 'specs'], 
-                       help='Which page to upload (miniature, 6000, 6200, 6300, or specs). If not specified, uploads all pages.')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '608'], 
+                       help='Which page to upload (miniature, 6000, 6200, 6300, 62200, 62300, 16000, 6800, 6900, specs, or 608). If not specified, uploads all pages.')
     args = parser.parse_args()
     
     if args.page:
@@ -90,7 +137,7 @@ def main():
             exit(1)
     else:
         # Upload all pages
-        all_pages = ['miniature', '6000', '6200', '6300', 'specs']
+        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '608']
         print("🚀 No specific page specified. Uploading ALL pages...")
         print("=" * 60)
         

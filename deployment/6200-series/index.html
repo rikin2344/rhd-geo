@@ -227,6 +227,542 @@ body {
     }
 }
 
+/* Footer CSS */
+/* ================================
+   FOOTER
+   ================================ */
+
+.footer {
+    background: transparent;
+    padding: var(--space-section-2) 0;
+}
+
+.footer-content {
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 0 32px;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-section-1);
+    margin-bottom: var(--space-section-1);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: var(--space-component-1);
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6B7280;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-2);
+}
+
+.footer-column-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-micro-2);
+}
+
+.footer-links a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #000000;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    color: #6B7280;
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: var(--space-component-1);
+}
+
+.footer-legal a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #000000;
+}
+
+/* ================================
+   FOOTER RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-micro-2);
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        margin: 0 var(--space-component-1);
+        padding: var(--space-section-1);
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* CTA CSS */
+/* ================================
+   MODEL CTA SECTION
+   ================================ */
+
+.cta-section {
+    background: linear-gradient(135deg, #000000 100%, #2d2d2d 0%);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(210, 255, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(210, 255, 55, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* CTA Header */
+.cta-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-badge {
+    display: inline-block;
+    background: var(--accent-neon, #D2FF37);
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.cta-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cta-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.model-number {
+    color: var(--accent-neon, #D2FF37);
+    font-weight: 700;
+}
+
+/* CTA Main */
+.cta-main {
+    margin-bottom: 40px;
+}
+
+.cta-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.feature-icon {
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-neon, #D2FF37);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.feature-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.feature-content p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* CTA Actions */
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-actions .btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 200px;
+    text-align: left;
+}
+
+.cta-actions .btn-primary {
+    background: var(--accent-neon, #D2FF37);
+    color: #000000;
+}
+
+.cta-actions .btn-primary:hover {
+    background: #b8e63f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(210, 255, 55, 0.3);
+}
+
+.cta-actions .btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta-actions .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-neon, #D2FF37);
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.btn-text strong {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.btn-text small {
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+/* CTA Footer */
+.cta-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.company-info {
+    text-align: left;
+}
+
+.company-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.company-brand strong {
+    font-size: 18px;
+    color: var(--accent-neon, #D2FF37);
+}
+
+.company-tagline {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.company-location {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.business-info {
+    text-align: right;
+}
+
+.business-item {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.business-label {
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.business-value {
+    color: var(--accent-neon, #D2FF37);
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-header h2 {
+        font-size: 32px;
+    }
+    
+    .cta-subtitle {
+        font-size: 16px;
+    }
+    
+    .cta-features {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .feature-item {
+        padding: 16px;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-actions .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .cta-footer {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+    
+    .business-info {
+        text-align: center;
+    }
+    
+    .business-item {
+        justify-content: center;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+
+/* Watermark CSS */
+/* ================================
+   WATERMARK SECTION
+   ================================ */
+
+.watermark-section {
+    width: 100vw;
+    background: transparent;
+    margin: 40px 0 0 0;
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.watermark-text {
+    text-align: center;
+    font-size: 300px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, 
+        rgba(64, 64, 64, 0.6) 0%, 
+        rgba(96, 96, 96, 0.4) 30%, 
+        rgba(128, 128, 128, 0.2) 60%, 
+        rgba(192, 192, 192, 0.05) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* ================================
+   WATERMARK RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+    .watermark-text {
+        font-size: 80px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.5) 0%, 
+            rgba(96, 96, 96, 0.3) 30%, 
+            rgba(128, 128, 128, 0.15) 60%, 
+            rgba(192, 192, 192, 0.03) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .watermark-text {
+        font-size: 100px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.55) 0%, 
+            rgba(96, 96, 96, 0.35) 30%, 
+            rgba(128, 128, 128, 0.18) 60%, 
+            rgba(192, 192, 192, 0.04) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+    }
+}
+
+
 /* Page CSS */
 /* ================================
    CSS VARIABLES & BASE STYLES
@@ -258,8 +794,8 @@ body {
     --space-micro-2: 16px;
     --space-component-1: 24px;
     --space-component-2: 32px;
-    --space-section-1: 48px;
-    --space-section-2: 64px;
+    --space-section-1: 32px;
+    --space-section-2: 48px;
     --space-page-1: 80px;
     --space-page-2: 120px;
     
@@ -293,14 +829,12 @@ body {
     padding: 0 60px;
 }
 
-
-
 /* ================================
    HERO SECTION
    ================================ */
 
 .hero {
-    padding: 60px 0 80px 0;
+    padding: 40px 0 60px 0;
     position: relative;
 }
 
@@ -1054,46 +1588,6 @@ body {
 /* ================================
    FOOTER
    ================================ */
-
-.footer {
-    background: var(--text-primary);
-    color: var(--surface-primary);
-    padding: var(--space-section-2) 0 var(--space-component-2) 0;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--space-component-2);
-    margin-bottom: var(--space-component-2);
-}
-
-.footer-section h3 {
-    font-weight: 600;
-    font-size: var(--text-body);
-    margin-bottom: var(--space-micro-2);
-}
-
-.footer-section a {
-    color: var(--surface-primary);
-    text-decoration: none;
-    font-size: var(--text-body-small);
-    display: block;
-    margin-bottom: 4px;
-    transition: color var(--transition-fast);
-}
-
-.footer-section a:hover {
-    color: var(--accent-neon);
-}
-
-.footer-copyright {
-    text-align: center;
-    padding-top: var(--space-component-2);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: var(--text-body-small);
-    color: rgba(255, 255, 255, 0.7);
-}
 
 /* ================================
    RESPONSIVE DESIGN
@@ -2080,61 +2574,74 @@ a:focus {
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>RHD Bearings</h3>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px; margin-bottom: 16px;">
-                        203 Vihar Estate, Off. Saki Vihar Road<br>
-                        Next to Autohanger, Sakinaka, Andheri East<br>
-                        Mumbai 400072, India
-                    </p>
-                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px;">
-                        Phone: +91-9702081858<br>
-                        Email: sales@rhdenterprise.in<br>
-                        OEM Sales: oemsales@rhdenterprise.in
-                    </p>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings" class="footer-logo-img">
+                        </div>
+                        <p class="footer-description">
+                            RHD Bearings specializes in high-quality ball bearings for industrial, automotive, and precision applications. With over 20 years of experience, we provide reliable bearing solutions worldwide.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-nav">
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Product</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/specs/miniature-series.html">Miniature Bearings</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6000-series.html">6000 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6200-series.html">6200 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6300-series.html">6300 Series</a></li>
+                                <li><a href="https://rhdbearings.com/bearing-size-chart/">Size Chart</a></li>
+                                <li><a href="https://rhdbearings.com/shop/">Shop Online</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Resources</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/bearing-installation-guide/">Installation Guide</a></li>
+                                <li><a href="https://rhdbearings.com/bearing-maintenance/">Maintenance Tips</a></li>
+                                <li><a href="https://rhdbearings.com/technical-specifications/">Technical Specs</a></li>
+                                <li><a href="https://rhdbearings.com/industries/">Industry Applications</a></li>
+                                <li><a href="https://rhdbearings.com/faqs/">FAQs</a></li>
+                                <li><a href="https://rhdbearings.com/support/">Support Center</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Company</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/about-us/">About Us</a></li>
+                                <li><a href="https://rhdbearings.com/quality-assurance/">Quality Assurance</a></li>
+                                <li><a href="https://rhdbearings.com/careers/">Careers</a></li>
+                                <li><a href="https://rhdbearings.com/contact-us/">Contact</a></li>
+                                <li><a href="https://rhdbearings.com/news/">News & Updates</a></li>
+                                <li><a href="https://rhdbearings.com/partnerships/">Partnerships</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="footer-section">
-                    <h3>PRODUCTS</h3>
-                    <a href="https://rhdbearings.com/miniature-bearings.html">Miniature Bearings</a>
-                    <a href="https://rhdbearings.com/6000-series.html">6000 Series</a>
-                    <a href="https://rhdbearings.com/6200-series.html">6200 Series</a>
-                    <a href="https://rhdbearings.com/6300-series.html">6300 Series</a>
-                    <a href="https://rhdbearings.com/62200-series.html">62200 Series</a>
-                    <a href="https://rhdbearings.com/62300-series.html">62300 Series</a>
-                    <a href="https://rhdbearings.com/16000-series.html">16000 Series</a>
-                    <a href="https://rhdbearings.com/6800-series.html">6800 Series</a>
-                    <a href="https://rhdbearings.com/6900-series.html">6900 Series</a>
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 RHD Bearings. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="https://rhdbearings.com/terms-of-service/">Terms of Service</a>
+                        <a href="https://rhdbearings.com/privacy-policy/">Privacy Policy</a>
+                    </div>
                 </div>
-                
-                <div class="footer-section">
-                    <h3>TECHNICAL SUPPORT</h3>
-                    <a href="#specifications">Technical Specifications</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="https://rhdbearings.com/technical-drawings.html">Technical Drawings</a>
-                    <a href="https://rhdbearings.com/installation-guides.html">Installation Guides</a>
-                    <a href="https://rhdbearings.com/maintenance.html">Maintenance Guidelines</a>
-                    <a href="https://rhdbearings.com/troubleshooting.html">Troubleshooting</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>CONTACT</h3>
-                    <a href="https://rhdbearings.com/contact.html">Contact Us</a>
-                    <a href="https://rhdbearings.com/quote.html">Request Quote</a>
-                    <a href="https://rhdbearings.com/bulk-orders.html">Bulk Orders</a>
-                    <a href="https://rhdbearings.com/distributor.html">Become a Distributor</a>
-                    <a href="https://rhdbearings.com/support.html">Technical Support</a>
-                    <a href="https://rhdbearings.com/warranty.html">Warranty Information</a>
-                </div>
-            </div>
-            
-            <div class="footer-copyright">
-                © 2024 RHD Bearings. All rights reserved. Made in India with precision engineering excellence.
             </div>
         </div>
     </footer>
 
+    <!-- Watermark Section -->
+    <section class="watermark-section">
+        <div class="watermark-text">BEARINGS</div>
+    </section>
+
     <script>
         // 6200 series bearings data
         const bearingsData = [
@@ -2300,15 +2807,18 @@ a:focus {
         });
     </script>
 
-    <!-- Load Navbar -->
+    <!-- Load Navbar and Watermark -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Load navbar
             fetch('../shared/navbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading navbar:', error));
+
+
         });
     </script>
 <script>
@@ -2477,12 +2987,15 @@ a:focus {
     </script>
 <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Load navbar
             fetch('../shared/navbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 })
                 .catch(error => console.error('Error loading navbar:', error));
+
+
         });
     </script>
 
