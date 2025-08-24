@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>608 Miniature Ball Bearing | Specifications & Pricing | RHD Bearings</title>
+    <title>608 Deep Groove Ball Bearing - 8x22x7mm | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset everything */
@@ -2024,7 +2024,7 @@ body {
     text-align: left;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    min-height: 420px;
+    min-height: 520px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -2093,7 +2093,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    overflow-y: auto;
+    overflow-y: visible;
 }
 
 .explanation-item {
@@ -2109,6 +2109,11 @@ body {
 .explanation-item strong {
     color: #000000;
     font-weight: 600;
+}
+
+/* Seal-specific flip cards (shorter than specs cards) */
+.seal-card.flip-card .flip-card-inner {
+    min-height: 360px;
 }
 
 .flip-hint {
@@ -2140,7 +2145,11 @@ body {
     }
     
     .flip-card-inner {
-        min-height: 380px;
+        min-height: 450px;
+    }
+    
+    .seal-card.flip-card .flip-card-inner {
+        min-height: 320px;
     }
     
     .explanation-item {
@@ -2875,85 +2884,93 @@ body {
             
             <!-- Most Popular Seals - Top Row -->
             <div class="seal-options-popular">
-                <div class="seal-card featured seal-hover-card">
-                    <div class="seal-header">
-                        <h3>608-ZZ</h3>
-                        <div class="seal-badge popular">Most Popular</div>
-                    </div>
-                    <p class="seal-description">Double metal shields</p>
-                    <div class="seal-specs">
-                        <div class="seal-spec">
-                            <span>Speed Factor:</span>
-                            <span>0.9 (23,400 RPM)</span>
-                        </div>
-                        <div class="seal-spec">
-                            <span>Protection:</span>
-                            <span>Dust protection</span>
-                        </div>
-                        <div class="seal-spec">
-                            <span>Lubrication:</span>
-                            <span>Sealed for life</span>
-                        </div>
-                    </div>
-                    <div class="seal-hover-hint"></div>
-                    
-                    <!-- Hover Explanation -->
-                    <div class="seal-explanation">
-                        <h4>When to Use 608-ZZ</h4>
-                        <div class="explanation-grid">
-                            <div class="explanation-item">
-                                <strong>Best For:</strong> Electronics, small motors, skateboards, general machinery
+                <div class="seal-card featured flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <div class="seal-header">
+                                <h3>608-ZZ</h3>
+                                <div class="seal-badge popular">Most Popular</div>
                             </div>
-                            <div class="explanation-item">
-                                <strong>Conditions:</strong> Dry environments, moderate dust, precision applications
+                            <p class="seal-description">Double metal shields</p>
+                            <div class="seal-specs">
+                                <div class="seal-spec">
+                                    <span>Speed Factor:</span>
+                                    <span>0.9 (23,400 RPM)</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Protection:</span>
+                                    <span>Dust protection</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Lubrication:</span>
+                                    <span>Sealed for life</span>
+                                </div>
                             </div>
-                            <div class="explanation-item">
-                                <strong>Achieves:</strong> Excellent balance of speed and protection for most applications
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Avoid When:</strong> Heavy water exposure, chemical environments, food processing
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Usage Guide) -->
+                        <div class="flip-card-back">
+                            <h4>When to Use 608-ZZ</h4>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Best For:</strong> Electronics, small motors, skateboards, general machinery
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Conditions:</strong> Dry environments, moderate dust, precision applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Achieves:</strong> Excellent balance of speed and protection for most applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Avoid When:</strong> Heavy water exposure, chemical environments, food processing
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="seal-card featured seal-hover-card">
-                    <div class="seal-header">
-                        <h3>608-2RS</h3>
-                        <div class="seal-badge popular">Most Popular</div>
-                    </div>
-                    <p class="seal-description">Double rubber seals</p>
-                    <div class="seal-specs">
-                        <div class="seal-spec">
-                            <span>Speed Factor:</span>
-                            <span>0.7 (18,200 RPM)</span>
-                        </div>
-                        <div class="seal-spec">
-                            <span>Protection:</span>
-                            <span>Complete sealing</span>
-                        </div>
-                        <div class="seal-spec">
-                            <span>Lubrication:</span>
-                            <span>Permanently sealed</span>
-                        </div>
-                    </div>
-                    <div class="seal-hover-hint"></div>
-                    
-                    <!-- Hover Explanation -->
-                    <div class="seal-explanation">
-                        <h4>When to Use 608-2RS</h4>
-                        <div class="explanation-grid">
-                            <div class="explanation-item">
-                                <strong>Best For:</strong> Outdoor applications, appliances, automotive systems, dirty environments
+                <div class="seal-card featured flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <div class="seal-header">
+                                <h3>608-2RS</h3>
+                                <div class="seal-badge popular">Most Popular</div>
                             </div>
-                            <div class="explanation-item">
-                                <strong>Conditions:</strong> Moisture, dust, contamination, washdown areas, food processing
+                            <p class="seal-description">Double rubber seals</p>
+                            <div class="seal-specs">
+                                <div class="seal-spec">
+                                    <span>Speed Factor:</span>
+                                    <span>0.7 (18,200 RPM)</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Protection:</span>
+                                    <span>Complete sealing</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Lubrication:</span>
+                                    <span>Permanently sealed</span>
+                                </div>
                             </div>
-                            <div class="explanation-item">
-                                <strong>Achieves:</strong> Maximum protection and zero maintenance requirements
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Trade-off:</strong> Lower speed limit but superior environmental protection
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Usage Guide) -->
+                        <div class="flip-card-back">
+                            <h4>When to Use 608-2RS</h4>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Best For:</strong> Outdoor applications, appliances, automotive systems, dirty environments
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Conditions:</strong> Moisture, dust, contamination, washdown areas, food processing
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Achieves:</strong> Maximum protection and zero maintenance requirements
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Trade-off:</strong> Lower speed limit but superior environmental protection
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2962,7 +2979,7 @@ body {
 
             <!-- Other Seal Options - Bottom Row -->
             <div class="seal-options-others">
-                <div class="seal-card seal-hover-card">
+                <div class="seal-card" data-seal-type="608-open">
                     <div class="seal-header">
                         <h3>608 Open</h3>
                         <div class="seal-badge">High Speed</div>
@@ -2982,29 +2999,12 @@ body {
                             <span>External required</span>
                         </div>
                     </div>
-                    <div class="seal-hover-hint"></div>
-                    
-                    <!-- Hover Explanation -->
-                    <div class="seal-explanation">
-                        <h4>When to Use 608 Open</h4>
-                        <div class="explanation-grid">
-                            <div class="explanation-item">
-                                <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Achieves:</strong> Maximum speed potential and custom lubrication optimization
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Requires:</strong> External protection system and regular maintenance schedule
-                            </div>
-                        </div>
-                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('608-open')">
+                        ℹ️ Usage Guide
+                    </button>
                 </div>
 
-                <div class="seal-card seal-hover-card">
+                <div class="seal-card" data-seal-type="608-z">
                     <div class="seal-header">
                         <h3>608-Z</h3>
                         <div class="seal-badge">Balanced</div>
@@ -3024,29 +3024,12 @@ body {
                             <span>Pre-greased</span>
                         </div>
                     </div>
-                    <div class="seal-hover-hint"></div>
-                    
-                    <!-- Hover Explanation -->
-                    <div class="seal-explanation">
-                        <h4>When to Use 608-Z</h4>
-                        <div class="explanation-grid">
-                            <div class="explanation-item">
-                                <strong>Best For:</strong> Equipment requiring periodic maintenance access but some protection
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Conditions:</strong> Semi-clean environments, accessible mounting locations, mixed conditions
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Achieves:</strong> Good speed with one-sided protection and maintenance flexibility
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Note:</strong> Ideal when you need to access one side for lubrication or inspection
-                            </div>
-                        </div>
-                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('608-z')">
+                        ℹ️ Usage Guide
+                    </button>
                 </div>
 
-                <div class="seal-card seal-hover-card">
+                <div class="seal-card" data-seal-type="608-rs">
                     <div class="seal-header">
                         <h3>608-RS</h3>
                         <div class="seal-badge">Protected</div>
@@ -3066,26 +3049,9 @@ body {
                             <span>Pre-greased, sealed</span>
                         </div>
                     </div>
-                    <div class="seal-hover-hint"></div>
-                    
-                    <!-- Hover Explanation -->
-                    <div class="seal-explanation">
-                        <h4>When to Use 608-RS</h4>
-                        <div class="explanation-grid">
-                            <div class="explanation-item">
-                                <strong>Best For:</strong> Moderate contamination with maintenance access requirements
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Conditions:</strong> Light moisture, dust exposure, serviceable locations, mixed environments
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service
-                            </div>
-                            <div class="explanation-item">
-                                <strong>Perfect When:</strong> You need environmental protection but want maintenance flexibility
-                            </div>
-                        </div>
-                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('608-rs')">
+                        ℹ️ Usage Guide
+                    </button>
                 </div>
             </div>
         </div>
@@ -3678,6 +3644,18 @@ body {
         <div class="watermark-text">BEARINGS</div>
     </section>
 
+    <!-- Seal Usage Modal -->
+    <div id="seal-modal" class="seal-modal">
+        <div class="seal-modal-dialog">
+            <div class="seal-modal-header">
+                <button class="seal-modal-close" onclick="closeSealModal()">&times;</button>
+            </div>
+            <div id="seal-modal-content" class="seal-modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="../../../../shared/cta-model.js"></script>
     <script>
@@ -3765,6 +3743,96 @@ body {
                 }
             });
         });
+
+        // Seal Modal Functions
+        function openSealModal(sealType) {
+            const modal = document.getElementById('seal-modal');
+            const content = document.getElementById('seal-modal-content');
+            
+            let modalContent = '';
+            
+            switch(sealType) {
+                case '608-open':
+                    modalContent = `
+                        <h3>When to Use 608 Open</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication optimization
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Maximum speed potential (26,000 RPM) and optimized lubrication for specific applications
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '608-z':
+                    modalContent = `
+                        <h3>When to Use 608-Z</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Semi-clean environments needing re-lubrication access with moderate protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (24,700 RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '608-rs':
+                    modalContent = `
+                        <h3>When to Use 608-RS</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Moderate contamination with maintenance access needs and environmental protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (20,800 RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications
+                            </div>
+                        </div>
+                    `;
+                    break;
+            }
+            
+            content.innerHTML = modalContent;
+            modal.style.display = 'flex';
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeSealModal();
+                }
+            });
+        }
+        
+        function closeSealModal() {
+            const modal = document.getElementById('seal-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSealModal();
+            }
+        });
     </script>
 <script>
         // Load navbar
@@ -3850,6 +3918,96 @@ body {
                     });
                 }
             });
+        });
+
+        // Seal Modal Functions
+        function openSealModal(sealType) {
+            const modal = document.getElementById('seal-modal');
+            const content = document.getElementById('seal-modal-content');
+            
+            let modalContent = '';
+            
+            switch(sealType) {
+                case '608-open':
+                    modalContent = `
+                        <h3>When to Use 608 Open</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication optimization
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Maximum speed potential (26,000 RPM) and optimized lubrication for specific applications
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '608-z':
+                    modalContent = `
+                        <h3>When to Use 608-Z</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Semi-clean environments needing re-lubrication access with moderate protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (24,700 RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '608-rs':
+                    modalContent = `
+                        <h3>When to Use 608-RS</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Moderate contamination with maintenance access needs and environmental protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (20,800 RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications
+                            </div>
+                        </div>
+                    `;
+                    break;
+            }
+            
+            content.innerHTML = modalContent;
+            modal.style.display = 'flex';
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeSealModal();
+                }
+            });
+        }
+        
+        function closeSealModal() {
+            const modal = document.getElementById('seal-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSealModal();
+            }
         });
     </script>
 

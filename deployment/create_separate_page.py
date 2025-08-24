@@ -11,22 +11,76 @@ import argparse
 def is_model_page(page_type):
     """Check if this is a model-specific page (vs series page)"""
     # Model pages are numeric or contain specific model patterns
-    return page_type.isdigit() or page_type in ['607', '608', '609', '6001', '6002']  # Add more as needed
+    return page_type.isdigit() or page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '6001', '6002']
 
 def get_model_info(page_type):
     """Get model page information"""
     model_configs = {
+        '604': {
+            'series': 'miniature-series',
+            'model': '604',
+            'title': '604 Deep Groove Ball Bearing - 4x12x4mm | RHD Bearings'
+        },
+        '605': {
+            'series': 'miniature-series',
+            'model': '605',
+            'title': '605 Deep Groove Ball Bearing - 5x14x5mm | RHD Bearings'
+        },
+        '606': {
+            'series': 'miniature-series',
+            'model': '606',
+            'title': '606 Deep Groove Ball Bearing - 6x17x6mm | RHD Bearings'
+        },
         '607': {
             'series': 'miniature-series',
             'model': '607',
-            'title': '607 Miniature Ball Bearing | Specifications & Pricing | RHD Bearings'
+            'title': '607 Deep Groove Ball Bearing - 7x19x6mm | RHD Bearings'
         },
         '608': {
             'series': 'miniature-series',
             'model': '608',
-            'title': '608 Miniature Ball Bearing | Specifications & Pricing | RHD Bearings'
+            'title': '608 Deep Groove Ball Bearing - 8x22x7mm | RHD Bearings'
+        },
+        '609': {
+            'series': 'miniature-series',
+            'model': '609',
+            'title': '609 Deep Groove Ball Bearing - 9x24x7mm | RHD Bearings'
+        },
+        '623': {
+            'series': 'miniature-series',
+            'model': '623',
+            'title': '623 Deep Groove Ball Bearing - 3x10x4mm | RHD Bearings'
+        },
+        '624': {
+            'series': 'miniature-series',
+            'model': '624',
+            'title': '624 Deep Groove Ball Bearing - 4x13x5mm | RHD Bearings'
+        },
+        '625': {
+            'series': 'miniature-series',
+            'model': '625',
+            'title': '625 Deep Groove Ball Bearing - 5x16x5mm | RHD Bearings'
+        },
+        '626': {
+            'series': 'miniature-series',
+            'model': '626',
+            'title': '626 Deep Groove Ball Bearing - 6x19x6mm | RHD Bearings'
+        },
+        '627': {
+            'series': 'miniature-series',
+            'model': '627',
+            'title': '627 Deep Groove Ball Bearing - 7x22x7mm | RHD Bearings'
+        },
+        '628': {
+            'series': 'miniature-series',
+            'model': '628',
+            'title': '628 Deep Groove Ball Bearing - 8x24x8mm | RHD Bearings'
+        },
+        '629': {
+            'series': 'miniature-series',
+            'model': '629',
+            'title': '629 Deep Groove Ball Bearing - 9x26x8mm | RHD Bearings'
         }
-        # Add more models here as needed
     }
     
     if page_type in model_configs:
@@ -325,8 +379,8 @@ def print_final_instructions(files, clean_url, page_type='miniature'):
 def main():
     """Main execution"""
     parser = argparse.ArgumentParser(description='Create a standalone HTML page')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '607', '608'], default='miniature',
-                      help='Which page to generate (miniature, 6000, 6200, 6300, 62200, 62300, 16000, 6800, 6900, specs, 607, or 608)')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629'], default='miniature',
+                      help='Which page to generate (miniature, series, or model pages like 604, 607, 608, etc.)')
     args = parser.parse_args()
     
     files, clean_url = create_working_page(args.page)

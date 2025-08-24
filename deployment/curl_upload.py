@@ -12,19 +12,24 @@ load_dotenv()
 
 def is_model_page(page_type):
     """Check if this is a model-specific page (vs series page)"""
-    return page_type.isdigit() or page_type in ['607', '608', '609', '6001', '6002']
+    return page_type.isdigit() or page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '6001', '6002']
 
 def get_model_upload_info(page_type):
     """Get model page upload information"""
     model_configs = {
-        '607': {
-            'series': 'miniature-series',
-            'model': '607'
-        },
-        '608': {
-            'series': 'miniature-series',
-            'model': '608'
-        }
+        '604': {'series': 'miniature-series', 'model': '604'},
+        '605': {'series': 'miniature-series', 'model': '605'},
+        '606': {'series': 'miniature-series', 'model': '606'},
+        '607': {'series': 'miniature-series', 'model': '607'},
+        '608': {'series': 'miniature-series', 'model': '608'},
+        '609': {'series': 'miniature-series', 'model': '609'},
+        '623': {'series': 'miniature-series', 'model': '623'},
+        '624': {'series': 'miniature-series', 'model': '624'},
+        '625': {'series': 'miniature-series', 'model': '625'},
+        '626': {'series': 'miniature-series', 'model': '626'},
+        '627': {'series': 'miniature-series', 'model': '627'},
+        '628': {'series': 'miniature-series', 'model': '628'},
+        '629': {'series': 'miniature-series', 'model': '629'}
     }
     
     if page_type in model_configs:
@@ -130,8 +135,8 @@ def curl_upload(page_type='miniature'):
 
 def main():
     parser = argparse.ArgumentParser(description='Upload bearing page via curl')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '607', '608'], 
-                       help='Which page to upload (miniature, 6000, 6200, 6300, 62200, 62300, 16000, 6800, 6900, specs, or 608). If not specified, uploads all pages.')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629'], 
+                       help='Which page to upload (miniature, series, or model pages like 604, 607, 608, etc.). If not specified, uploads all pages.')
     args = parser.parse_args()
     
     if args.page:
@@ -141,7 +146,7 @@ def main():
             exit(1)
     else:
         # Upload all pages
-        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '607', '608']
+        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629']
         print("🚀 No specific page specified. Uploading ALL pages...")
         print("=" * 60)
         

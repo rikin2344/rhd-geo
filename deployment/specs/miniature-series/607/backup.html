@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>607 Miniature Ball Bearing | Specifications & Pricing | RHD Bearings</title>
+    <title>607 Deep Groove Ball Bearing - 7x19x6mm | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset everything */
@@ -2023,7 +2023,7 @@ body {
     text-align: left;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    min-height: 420px;
+    min-height: 520px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -2092,7 +2092,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    overflow-y: auto;
+    overflow-y: visible;
 }
 
 .explanation-item {
@@ -2108,6 +2108,11 @@ body {
 .explanation-item strong {
     color: #000000;
     font-weight: 600;
+}
+
+/* Seal-specific flip cards (shorter than specs cards) */
+.seal-card.flip-card .flip-card-inner {
+    min-height: 360px;
 }
 
 .flip-hint {
@@ -2139,7 +2144,11 @@ body {
     }
     
     .flip-card-inner {
-        min-height: 380px;
+        min-height: 450px;
+    }
+    
+    .seal-card.flip-card .flip-card-inner {
+        min-height: 320px;
     }
     
     .explanation-item {

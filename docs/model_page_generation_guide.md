@@ -144,11 +144,14 @@ This comprehensive guide documents the process for creating individual bearing m
 - **Desktop**: Hover to flip functionality
 
 ### 4. Seal Options
+- **Two-tier system**: First row uses flip cards, second row uses modal popups
+- **First Row (Popular)**: ZZ and 2RS options as flip cards with hover-to-flip functionality
+- **Second Row (Others)**: Open, -Z, -RS options with modal popup system  
 - **Popular badges** for ZZ and 2RS options
-- **Grid layout** with 2 popular options on top row
+- **Grid layout** with 2 popular options on top row, 3 other options on bottom row
 - **Detailed specifications** for each seal type
-- **Modal explanations** for when/how to use each seal option
-- **Clean button interface** that doesn't affect card layout or height
+- **Modal explanations** for second row options with usage guidance
+- **Clean interface** that maintains consistent card heights and layout
 
 ### 5. Applications Section
 - **Compressed card design** matching 6000 series style
@@ -544,19 +547,51 @@ Create **3 distinct application categories** based on model characteristics:
 4. **Write specific requirements** for each category
 5. **Avoid generic lists** - make each model unique
 
-### 1.1. Seal Option Modal Explanations (IMPROVED FEATURE)
+### 1.1. Seal Options System (ENHANCED TWO-TIER DESIGN)
 
 #### Purpose
-Provide contextual guidance on when to use each seal option through a clean modal interface that doesn't affect page layout or card heights. **Solves the UI problems** of hover explanations taking too much space and creating awkward card proportions.
+Provide optimal user experience with different interaction methods for popular vs specialty seal options. **Popular seals** (ZZ, 2RS) use engaging flip cards similar to specifications, while **specialty seals** (Open, -Z, -RS) use clean modal popups for detailed guidance.
 
-#### Implementation Structure
-Each seal card must include:
+#### Two-Tier Implementation Structure
+
+**First Row (Popular Seals) - Flip Cards:**
 ```html
-<div class="seal-card" data-seal-type="[MODEL]-[SEAL]">
-    <!-- Existing seal content -->
-    <button class="seal-info-btn" onclick="openSealModal('[MODEL]-[SEAL]')">
-        ℹ️ Usage Guide
-    </button>
+<div class="seal-options-popular">
+    <div class="seal-card featured flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side (Technical Specs) -->
+            <div class="flip-card-front">
+                <div class="seal-header">
+                    <h3>[MODEL]-ZZ</h3>
+                    <div class="seal-badge popular">Most Popular</div>
+                </div>
+                <p class="seal-description">Double metal shields</p>
+                <div class="seal-specs">
+                    <!-- Speed, protection, lubrication specs -->
+                </div>
+                <div class="flip-hint"></div>
+            </div>
+            <!-- Back Side (Usage Guide) -->
+            <div class="flip-card-back">
+                <h4>When to Use [MODEL]-ZZ</h4>
+                <div class="explanation-content">
+                    <!-- Detailed usage guidance -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+**Second Row (Other Seals) - Modal Popups:**
+```html
+<div class="seal-options-others">
+    <div class="seal-card" data-seal-type="[MODEL]-[SEAL]">
+        <!-- Existing seal content -->
+        <button class="seal-info-btn" onclick="openSealModal('[MODEL]-[SEAL]')">
+            ℹ️ Usage Guide
+        </button>
+    </div>
 </div>
 ```
 
@@ -980,7 +1015,8 @@ Fetch URLs:
 ```
 
 ### Interactive Elements
-- **Flip cards**: 420px height (desktop), 380px (mobile)
+- **Specs flip cards**: 520px height (desktop), 450px (mobile) - increased to eliminate scrollers
+- **Seal flip cards**: 360px height (desktop), 320px (mobile) - shorter for simpler content
 - **Hover states**: Smooth transitions (0.3s)
 - **Touch targets**: Minimum 44px for mobile
 - **Focus indicators**: Visible keyboard navigation
@@ -1269,7 +1305,7 @@ def get_model_upload_info(page_type):
     text-align: left;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    min-height: 420px;
+    min-height: 520px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -1314,7 +1350,25 @@ def get_model_upload_info(page_type):
     }
     
     .flip-card-inner {
-        min-height: 380px;
+        min-height: 450px;
+    }
+    
+    .seal-card.flip-card .flip-card-inner {
+        min-height: 280px;
+    }
+}
+```
+
+### Seal Card Height CSS (CRITICAL - Different from Specs Cards)
+```css
+/* Seal-specific flip cards (shorter than specs cards) */
+.seal-card.flip-card .flip-card-inner {
+    min-height: 360px;
+}
+
+@media (max-width: 768px) {
+    .seal-card.flip-card .flip-card-inner {
+        min-height: 320px;
     }
 }
 ```
@@ -1363,9 +1417,10 @@ def get_model_upload_info(page_type):
 #### 2. Flip Card Content Overflow
 **Problem**: Text exceeds card boundaries
 **Solution**:
-- Increase `min-height` to 420px (desktop) / 380px (mobile)
-- Add `overflow-y: auto` for extreme cases
-- Optimize explanation text length
+- **Specs cards**: Increase `min-height` to 520px (desktop) / 450px (mobile)
+- **Seal cards**: Use shorter `min-height` 360px (desktop) / 320px (mobile)
+- Content should fit without scrollers (overflow-y: visible)
+- Optimize explanation text length for card type
 
 #### 3. Duplicate Hover Text
 **Problem**: "Hover for explanationHover for explanation"
