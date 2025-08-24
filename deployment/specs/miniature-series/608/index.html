@@ -2146,6 +2146,238 @@ body {
     }
 }
 
+/* ================================
+   SEAL HOVER EXPLANATIONS
+   ================================ */
+
+.seal-hover-card {
+    position: relative;
+    overflow: visible;
+}
+
+.seal-explanation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--accent-neon);
+    color: #000000;
+    padding: var(--space-component-1);
+    border-radius: 12px;
+    box-shadow: var(--elevation-3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-smooth);
+    z-index: 10;
+    margin-top: 8px;
+    border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.seal-hover-card:hover .seal-explanation {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.seal-explanation h4 {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    margin-bottom: var(--space-micro-2);
+    color: #000000;
+    text-align: center;
+}
+
+.explanation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-micro-2);
+}
+
+.seal-explanation .explanation-item {
+    background: rgba(0, 0, 0, 0.1);
+    padding: var(--space-micro-2);
+    border-radius: 6px;
+    border-left: 3px solid rgba(0, 0, 0, 0.3);
+    font-size: var(--text-body-small);
+    line-height: 1.4;
+}
+
+.seal-explanation .explanation-item strong {
+    color: #000000;
+    font-weight: 600;
+}
+
+.seal-hover-hint {
+    margin-top: auto;
+    padding-top: var(--space-micro-2);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-align: center;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Responsive seal explanations */
+@media (max-width: 768px) {
+    .seal-explanation {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        margin-top: 0;
+        padding: 0;
+        transform: none;
+        transition: max-height var(--transition-smooth), padding var(--transition-smooth);
+    }
+    
+    .seal-hover-card.active .seal-explanation {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        padding: var(--space-component-1);
+        margin-top: var(--space-micro-2);
+    }
+    
+    .seal-hover-hint::before {
+        content: "Tap for details";
+    }
+}
+
+/* ================================
+   SEAL MODAL SYSTEM
+   ================================ */
+
+.seal-info-btn {
+    background: var(--accent-neon);
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-smooth);
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+}
+
+.seal-info-btn:hover {
+    background: #22c55e;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(52, 211, 153, 0.3);
+}
+
+.seal-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.seal-modal-dialog {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: var(--elevation-4);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.seal-modal-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 20px 0 20px;
+}
+
+.seal-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #6B7280;
+    padding: 4px;
+    line-height: 1;
+    transition: color var(--transition-smooth);
+}
+
+.seal-modal-close:hover {
+    color: #374151;
+}
+
+.seal-modal-body {
+    padding: 0 20px 24px 20px;
+}
+
+.seal-modal-body h3 {
+    color: #111827;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.seal-modal .explanation-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.seal-modal .explanation-item {
+    background: #f8fafc;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-neon);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.seal-modal .explanation-item strong {
+    color: #111827;
+    font-weight: 600;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .seal-modal-dialog {
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .seal-modal-body {
+        padding: 0 16px 20px 16px;
+    }
+    
+    .seal-modal-header {
+        padding: 12px 16px 0 16px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -2355,13 +2587,16 @@ body {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Dynamic Load:</strong> Moving/rotating load - equivalent to 3-4 people standing on it
+                                    <strong>Dynamic Load (3.32kN = 338kg):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Static Load:</strong> Non-moving load - like supporting a heavy shelf
+                                    <strong>Static Load (1.38kN = 141kg):</strong> Maximum force when stationary. Use 80% for safety (113kg max recommended).
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Real World:</strong> Perfect for bicycle wheels, skateboards, small machinery
+                                    <strong>Calculate Your Load:</strong> Measure shaft forces, belt tensions, or gear loads. Include shock/vibration factors.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Failure Warning:</strong> Overloading causes bearing raceways to crack and balls to flatten permanently.
                                 </div>
                             </div>
                         </div>
@@ -2394,13 +2629,16 @@ body {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>26,000 RPM:</strong> 433 rotations per second - faster than most power tools
+                                    <strong>Grease Limit (26,000 RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Oil Lubrication:</strong> For high-speed applications like precision instruments
+                                    <strong>Oil Advantage (34,000 RPM):</strong> Better heat dissipation allows 31% higher speed. Required for high-speed spindles.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Safe Speed:</strong> Operating at 90% ensures maximum bearing life
+                                    <strong>Safe Operating Speed:</strong> Use 90% of limit (23,400 RPM) for maximum L10 life of 10,000+ hours.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Failure Mode:</strong> Exceeding speed causes cage failure, ball skidding, and catastrophic overheating within minutes.
                                 </div>
                             </div>
                         </div>
@@ -2618,7 +2856,7 @@ body {
             
             <!-- Most Popular Seals - Top Row -->
             <div class="seal-options-popular">
-                <div class="seal-card featured">
+                <div class="seal-card featured seal-hover-card">
                     <div class="seal-header">
                         <h3>608-ZZ</h3>
                         <div class="seal-badge popular">Most Popular</div>
@@ -2638,9 +2876,29 @@ body {
                             <span>Sealed for life</span>
                         </div>
                     </div>
+                    <div class="seal-hover-hint"></div>
+                    
+                    <!-- Hover Explanation -->
+                    <div class="seal-explanation">
+                        <h4>When to Use 608-ZZ</h4>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Electronics, small motors, skateboards, general machinery
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Dry environments, moderate dust, precision applications
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Excellent balance of speed and protection for most applications
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Avoid When:</strong> Heavy water exposure, chemical environments, food processing
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="seal-card featured">
+                <div class="seal-card featured seal-hover-card">
                     <div class="seal-header">
                         <h3>608-2RS</h3>
                         <div class="seal-badge popular">Most Popular</div>
@@ -2660,12 +2918,32 @@ body {
                             <span>Permanently sealed</span>
                         </div>
                     </div>
+                    <div class="seal-hover-hint"></div>
+                    
+                    <!-- Hover Explanation -->
+                    <div class="seal-explanation">
+                        <h4>When to Use 608-2RS</h4>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Outdoor applications, appliances, automotive systems, dirty environments
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Moisture, dust, contamination, washdown areas, food processing
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Maximum protection and zero maintenance requirements
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Trade-off:</strong> Lower speed limit but superior environmental protection
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Other Seal Options - Bottom Row -->
             <div class="seal-options-others">
-                <div class="seal-card">
+                <div class="seal-card seal-hover-card">
                     <div class="seal-header">
                         <h3>608 Open</h3>
                         <div class="seal-badge">High Speed</div>
@@ -2685,9 +2963,29 @@ body {
                             <span>External required</span>
                         </div>
                     </div>
+                    <div class="seal-hover-hint"></div>
+                    
+                    <!-- Hover Explanation -->
+                    <div class="seal-explanation">
+                        <h4>When to Use 608 Open</h4>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Maximum speed potential and custom lubrication optimization
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Requires:</strong> External protection system and regular maintenance schedule
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="seal-card">
+                <div class="seal-card seal-hover-card">
                     <div class="seal-header">
                         <h3>608-Z</h3>
                         <div class="seal-badge">Balanced</div>
@@ -2707,9 +3005,29 @@ body {
                             <span>Pre-greased</span>
                         </div>
                     </div>
+                    <div class="seal-hover-hint"></div>
+                    
+                    <!-- Hover Explanation -->
+                    <div class="seal-explanation">
+                        <h4>When to Use 608-Z</h4>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Equipment requiring periodic maintenance access but some protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Semi-clean environments, accessible mounting locations, mixed conditions
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Good speed with one-sided protection and maintenance flexibility
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Note:</strong> Ideal when you need to access one side for lubrication or inspection
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="seal-card">
+                <div class="seal-card seal-hover-card">
                     <div class="seal-header">
                         <h3>608-RS</h3>
                         <div class="seal-badge">Protected</div>
@@ -2727,6 +3045,26 @@ body {
                         <div class="seal-spec">
                             <span>Lubrication:</span>
                             <span>Pre-greased, sealed</span>
+                        </div>
+                    </div>
+                    <div class="seal-hover-hint"></div>
+                    
+                    <!-- Hover Explanation -->
+                    <div class="seal-explanation">
+                        <h4>When to Use 608-RS</h4>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Moderate contamination with maintenance access requirements
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Light moisture, dust exposure, serviceable locations, mixed environments
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Perfect When:</strong> You need environmental protection but want maintenance flexibility
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -3350,6 +3688,27 @@ body {
             });
         });
 
+        // Mobile seal card touch support
+        document.addEventListener('DOMContentLoaded', function() {
+            const sealCards = document.querySelectorAll('.seal-hover-card');
+            
+            sealCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Only on mobile devices
+                    if (window.innerWidth <= 768) {
+                        // Close all other seal explanations
+                        sealCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.classList.remove('active');
+                            }
+                        });
+                        // Toggle this seal explanation
+                        this.classList.toggle('active');
+                    }
+                });
+            });
+        });
+
 
 
         // FAQ Toggle functionality
@@ -3410,6 +3769,27 @@ body {
                     // Only on mobile devices
                     if (window.innerWidth <= 768) {
                         this.classList.toggle('flipped');
+                    }
+                });
+            });
+        });
+
+        // Mobile seal card touch support
+        document.addEventListener('DOMContentLoaded', function() {
+            const sealCards = document.querySelectorAll('.seal-hover-card');
+            
+            sealCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Only on mobile devices
+                    if (window.innerWidth <= 768) {
+                        // Close all other seal explanations
+                        sealCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.classList.remove('active');
+                            }
+                        });
+                        // Toggle this seal explanation
+                        this.classList.toggle('active');
                     }
                 });
             });

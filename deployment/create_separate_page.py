@@ -11,11 +11,16 @@ import argparse
 def is_model_page(page_type):
     """Check if this is a model-specific page (vs series page)"""
     # Model pages are numeric or contain specific model patterns
-    return page_type.isdigit() or page_type in ['608', '609', '6001', '6002']  # Add more as needed
+    return page_type.isdigit() or page_type in ['607', '608', '609', '6001', '6002']  # Add more as needed
 
 def get_model_info(page_type):
     """Get model page information"""
     model_configs = {
+        '607': {
+            'series': 'miniature-series',
+            'model': '607',
+            'title': '607 Miniature Ball Bearing | Specifications & Pricing | RHD Bearings'
+        },
         '608': {
             'series': 'miniature-series',
             'model': '608',
@@ -320,8 +325,8 @@ def print_final_instructions(files, clean_url, page_type='miniature'):
 def main():
     """Main execution"""
     parser = argparse.ArgumentParser(description='Create a standalone HTML page')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '608'], default='miniature',
-                      help='Which page to generate (miniature, 6000, 6200, 6300, 62200, 62300, 16000, 6800, 6900, specs, or 608)')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '607', '608'], default='miniature',
+                      help='Which page to generate (miniature, 6000, 6200, 6300, 62200, 62300, 16000, 6800, 6900, specs, 607, or 608)')
     args = parser.parse_args()
     
     files, clean_url = create_working_page(args.page)

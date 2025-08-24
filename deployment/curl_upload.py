@@ -12,11 +12,15 @@ load_dotenv()
 
 def is_model_page(page_type):
     """Check if this is a model-specific page (vs series page)"""
-    return page_type.isdigit() or page_type in ['608', '609', '6001', '6002']
+    return page_type.isdigit() or page_type in ['607', '608', '609', '6001', '6002']
 
 def get_model_upload_info(page_type):
     """Get model page upload information"""
     model_configs = {
+        '607': {
+            'series': 'miniature-series',
+            'model': '607'
+        },
         '608': {
             'series': 'miniature-series',
             'model': '608'
@@ -126,7 +130,7 @@ def curl_upload(page_type='miniature'):
 
 def main():
     parser = argparse.ArgumentParser(description='Upload bearing page via curl')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '608'], 
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '607', '608'], 
                        help='Which page to upload (miniature, 6000, 6200, 6300, 62200, 62300, 16000, 6800, 6900, specs, or 608). If not specified, uploads all pages.')
     args = parser.parse_args()
     
@@ -137,7 +141,7 @@ def main():
             exit(1)
     else:
         # Upload all pages
-        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '608']
+        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '607', '608']
         print("🚀 No specific page specified. Uploading ALL pages...")
         print("=" * 60)
         
