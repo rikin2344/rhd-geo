@@ -1033,9 +1033,19 @@ body {
 
 .dimensions-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-micro-2);
     margin-bottom: var(--space-micro-2);
+}
+
+/* Default 3x1 grid (when no SKF data) */
+.dimensions-grid-3x1 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 3x2 grid (when SKF data is available) */
+.dimensions-grid-3x2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 .dimension-item {
@@ -2484,10 +2494,10 @@ body {
                     
                     <h1 class="hero-title">604 Deep Groove Ball Bearing</h1>
                     <p class="hero-subtitle">
-                        The overachiever - so small it could fit in your pocket, but spins faster than your excuses on Monday morning
+                        The overachiever - so small it could fit in your pocket, but spins faster than your excuses on Monday morning.
                     </p>
                     <p class="hero-description">
-                        Meet the 604: With 0.75kN of engineering excellence and 4mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The smallest in the series yet packed with reliability for precision instruments and compact machinery.
+                        Meet the 604: With 0.75kN of engineering excellence and 4mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
                     </p>
                     
                     <div class="hero-specs">
@@ -2509,11 +2519,11 @@ body {
                                 <div class="spec-label">Load Rating</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">32,000</div>
+                                <div class="spec-value">32000</div>
                                 <div class="spec-label">Max RPM</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">2.5g</div>
+                                <div class="spec-value">0.0025kg</div>
                                 <div class="spec-label">Weight</div>
                             </div>
                         </div>
@@ -2547,7 +2557,7 @@ body {
                 <div class="dimensions-table">
                     <div class="spec-card dimensions-card">
                         <h3><span class="spec-icon">📏</span>Dimensions</h3>
-                        <div class="dimensions-grid">
+                        <div class="dimensions-grid dimensions-grid-3x1">
                             <div class="dimension-item">
                                 <div class="dimension-label">d - ID (Bore Diameter)</div>
                                 <div class="dimension-value">4mm</div>
@@ -2560,6 +2570,9 @@ body {
                                 <div class="dimension-label">B - Width</div>
                                 <div class="dimension-value">4mm</div>
                             </div>
+                            
+                            
+                            
                         </div>
                         <div class="dimension-summary">
                             <strong>604 Bearing: 4 × 12 × 4mm</strong>
@@ -2568,8 +2581,8 @@ body {
                 </div>
                 
                 <div class="specs-image">
-                    <h3 class="specs-image-title">Ball Bearing Cross Section</h3>
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg" alt="604 Deep Groove Ball Bearing Technical Drawing - Dimensions and Cross Section" />
+                    <h3 class="specs-image-title">604 Bearing Cross-Sectional View</h3>
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg" alt="604 Deep Groove Ball Bearing Technical Drawing" />
                 </div>
             </div>
 
@@ -2591,7 +2604,7 @@ body {
                                 </div>
                                 <div class="spec-row">
                                     <span>Load Capacity</span>
-                                    <span>77kg force</span>
+                                    <span>76kg force</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -2601,10 +2614,10 @@ body {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Dynamic Load (0.75kN = 77kg):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
+                                    <strong>Dynamic Load (0.75kN = 76kg):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Static Load (0.34kN = 35kg):</strong> Maximum force when stationary. Use 80% for safety (28kg max recommended).
+                                    <strong>Static Load (0.34kN):</strong> Maximum force when stationary. Use 80% for safety.
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Calculate Your Load:</strong> Measure shaft forces, belt tensions, or gear loads. Include shock/vibration factors.
@@ -2625,15 +2638,15 @@ body {
                             <div class="spec-details">
                                 <div class="spec-row">
                                     <span>Grease Lubrication</span>
-                                    <span>32,000 RPM</span>
+                                    <span>32000 RPM</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Oil Lubrication</span>
-                                    <span>40,000 RPM</span>
+                                    <span>40000 RPM</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Recommended Max</span>
-                                    <span>28,800 RPM (90%)</span>
+                                    <span>32000 RPM (90%)</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -2643,13 +2656,13 @@ body {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Grease Limit (32,000 RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
+                                    <strong>Grease Limit (32000 RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Oil Advantage (40,000 RPM):</strong> Better heat dissipation allows 25% higher speed. Required for high-speed spindles.
+                                    <strong>Oil Advantage (40000 RPM):</strong> Better heat dissipation allows higher speed. Required for high-speed spindles.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Safe Operating Speed:</strong> Use 90% of limit (28,800 RPM) for maximum L10 life of 10,000+ hours.
+                                    <strong>Safe Operating Speed:</strong> Use 90% of limit (32000 RPM) for maximum L10 life of 10,000+ hours.
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Failure Mode:</strong> Exceeding speed causes cage failure, ball skidding, and catastrophic overheating within minutes.
@@ -2693,7 +2706,7 @@ body {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Gcr15 Steel:</strong> Premium bearing steel - harder than tool steel
+                                    <strong>Gcr15 (AISI 52100) Steel:</strong> Premium bearing steel - harder than tool steel
                                 </div>
                                 <div class="explanation-item">
                                     <strong>High Carbon:</strong> Superior hardness and wear resistance
@@ -2797,7 +2810,7 @@ body {
                                     <strong>Z3 Grade:</strong> Very quiet - like a whisper (40 dB = normal whisper)
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Z4 Grade:</strong> Ultra-quiet - perfect for precision instruments, medical devices
+                                    <strong>Z4 Grade:</strong> Ultra-quiet - perfect for bedroom fans, medical equipment
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Application:</strong> Ideal for sensitive environments
@@ -2825,6 +2838,18 @@ body {
                                     <span>C3 (Loose)</span>
                                     <span>8-23 μm</span>
                                 </div>
+                                
+                                <div class="spec-row">
+                                    <span>C4 (High Temp)</span>
+                                    <span>14-29 μm</span>
+                                </div>
+                                
+                                
+                                <div class="spec-row">
+                                    <span>C5 (Extra High Temp)</span>
+                                    <span>20-37 μm</span>
+                                </div>
+                                
                             </div>
                             <div class="flip-hint"></div>
                         </div>
@@ -2841,9 +2866,11 @@ body {
                                 <div class="explanation-item">
                                     <strong>C3 (Loose):</strong> Better for hot environments - allows thermal expansion
                                 </div>
+                                
                                 <div class="explanation-item">
-                                    <strong>Temperature Guide:</strong> Use C0 for standard temps, C3 for elevated heat
+                                    <strong>C4/C5:</strong> For temperatures above 100°C and 150°C respectively
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -2867,14 +2894,14 @@ body {
                         <!-- Front Side (Technical Specs) -->
                         <div class="flip-card-front">
                             <div class="seal-header">
-                                <h3>604-ZZ</h3>
+                                <h3>ZZ</h3>
                                 <div class="seal-badge popular">Most Popular</div>
                             </div>
                             <p class="seal-description">Double metal shields</p>
                             <div class="seal-specs">
                                 <div class="seal-spec">
                                     <span>Speed Factor:</span>
-                                    <span>0.9 (28,800 RPM)</span>
+                                    <span>0.9 (28800 RPM)</span>
                                 </div>
                                 <div class="seal-spec">
                                     <span>Protection:</span>
@@ -2889,19 +2916,19 @@ body {
                         </div>
                         <!-- Back Side (Usage Guide) -->
                         <div class="flip-card-back">
-                            <h4>When to Use 604-ZZ</h4>
+                            <h4>When to Use ZZ</h4>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Best For:</strong> Electronics, precision instruments, small motors, watch mechanisms
+                                    <strong>Best For:</strong> Electronics, small motors, skateboards, general machinery
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Conditions:</strong> Dry environments, moderate dust, precision applications
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Achieves:</strong> Excellent balance of speed and protection for miniature applications
+                                    <strong>Achieves:</strong> Excellent balance of speed and protection for most applications
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Avoid When:</strong> Heavy water exposure, chemical environments, washdown areas
+                                    <strong>Avoid When:</strong> Heavy water exposure, chemical environments, food processing
                                 </div>
                             </div>
                         </div>
@@ -2913,35 +2940,35 @@ body {
                         <!-- Front Side (Technical Specs) -->
                         <div class="flip-card-front">
                             <div class="seal-header">
-                                <h3>604-2RS</h3>
-                                <div class="seal-badge popular">Most Popular</div>
+                                <h3>2RS</h3>
+                                <div class="seal-badge popular">Protected</div>
                             </div>
                             <p class="seal-description">Double rubber seals</p>
                             <div class="seal-specs">
                                 <div class="seal-spec">
                                     <span>Speed Factor:</span>
-                                    <span>0.7 (22,400 RPM)</span>
+                                    <span>0.7 (22400 RPM)</span>
                                 </div>
                                 <div class="seal-spec">
                                     <span>Protection:</span>
-                                    <span>Complete sealing</span>
+                                    <span>Moisture and dust</span>
                                 </div>
                                 <div class="seal-spec">
                                     <span>Lubrication:</span>
-                                    <span>Permanently sealed</span>
+                                    <span>Sealed for life</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
                         </div>
                         <!-- Back Side (Usage Guide) -->
                         <div class="flip-card-back">
-                            <h4>When to Use 604-2RS</h4>
+                            <h4>When to Use 2RS</h4>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Best For:</strong> Harsh environments, outdoor applications, contaminated areas
+                                    <strong>Best For:</strong> Outdoor applications, appliances, automotive systems, dirty environments
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Conditions:</strong> Moisture, dust, contamination, food processing
+                                    <strong>Conditions:</strong> Moisture, dust, contamination, washdown areas, food processing
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Achieves:</strong> Maximum protection and zero maintenance requirements
@@ -2959,14 +2986,14 @@ body {
             <div class="seal-options-others">
                 <div class="seal-card" data-seal-type="604-open">
                     <div class="seal-header">
-                        <h3>604 Open</h3>
+                        <h3>Open</h3>
                         <div class="seal-badge">High Speed</div>
                     </div>
                     <p class="seal-description">Open bearing, no seals</p>
                     <div class="seal-specs">
                         <div class="seal-spec">
                             <span>Speed Factor:</span>
-                            <span>1.0 (32,000 RPM)</span>
+                            <span>1.0 (32000 RPM)</span>
                         </div>
                         <div class="seal-spec">
                             <span>Protection:</span>
@@ -2984,14 +3011,14 @@ body {
 
                 <div class="seal-card" data-seal-type="604-z">
                     <div class="seal-header">
-                        <h3>604-Z</h3>
+                        <h3>Z</h3>
                         <div class="seal-badge">Balanced</div>
                     </div>
                     <p class="seal-description">Single metal shield</p>
                     <div class="seal-specs">
                         <div class="seal-spec">
                             <span>Speed Factor:</span>
-                            <span>0.95 (30,400 RPM)</span>
+                            <span>0.95 (30400 RPM)</span>
                         </div>
                         <div class="seal-spec">
                             <span>Protection:</span>
@@ -3009,14 +3036,14 @@ body {
 
                 <div class="seal-card" data-seal-type="604-rs">
                     <div class="seal-header">
-                        <h3>604-RS</h3>
+                        <h3>RS</h3>
                         <div class="seal-badge">Protected</div>
                     </div>
                     <p class="seal-description">Single rubber seal</p>
                     <div class="seal-specs">
                         <div class="seal-spec">
                             <span>Speed Factor:</span>
-                            <span>0.8 (25,600 RPM)</span>
+                            <span>0.8 (25600 RPM)</span>
                         </div>
                         <div class="seal-spec">
                             <span>Protection:</span>
@@ -3039,8 +3066,8 @@ body {
     <section class="section" id="applications">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">604 BEARING APPLICATIONS</h2>
-                <p class="section-subtitle">Precision performance in ultra-compact design</p>
+                <h2 class="section-title">APPLICATIONS</h2>
+                <p class="section-subtitle">Precision performance across industries</p>
             </div>
             
             <div class="applications-grid">
@@ -3048,39 +3075,48 @@ body {
                     <div class="application-header">
                         <div class="application-icon">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <!-- Precision instrument -->
-                                <rect x="4" y="10" width="24" height="12" fill="#E5E7EB" stroke="#000" stroke-width="0.8"/>
-                                <!-- Display screen -->
-                                <rect x="6" y="12" width="20" height="8" fill="#1F2937"/>
-                                <!-- Screen glow -->
-                                <rect x="7" y="13" width="18" height="6" fill="#34D399" opacity="0.3"/>
-                                <!-- Control knobs -->
-                                <circle cx="10" cy="26" r="2" fill="#6B7280" stroke="#000" stroke-width="0.5"/>
-                                <circle cx="16" cy="26" r="2" fill="#6B7280" stroke="#000" stroke-width="0.5"/>
-                                <circle cx="22" cy="26" r="2" fill="#6B7280" stroke="#000" stroke-width="0.5"/>
-                                <!-- Dial indicators -->
-                                <line x1="10" y1="24" x2="10" y2="22" stroke="#000" stroke-width="1"/>
-                                <line x1="16" y1="24" x2="16" y2="22" stroke="#000" stroke-width="1"/>
-                                <line x1="22" y1="24" x2="22" y2="22" stroke="#000" stroke-width="1"/>
-                                <!-- Feet -->
-                                <rect x="5" y="22" width="2" height="1" fill="#374151"/>
-                                <rect x="25" y="22" width="2" height="1" fill="#374151"/>
+                                <!-- Factory building main -->
+                                <rect x="4" y="16" width="24" height="12" fill="#6B7280" stroke="#000" stroke-width="0.8"/>
+                                <!-- Factory roof -->
+                                <path d="M2 16h28l-2-2H4l-2 2z" fill="#4B5563" stroke="#000" stroke-width="0.8"/>
+                                <!-- Smokestacks -->
+                                <rect x="8" y="6" width="3" height="12" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <rect x="14" y="4" width="3" height="14" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <rect x="20" y="8" width="3" height="10" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <!-- Smoke -->
+                                <ellipse cx="9.5" cy="4" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <ellipse cx="15.5" cy="2" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <ellipse cx="21.5" cy="6" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <!-- Windows -->
+                                <rect x="6" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="10" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="14" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="18" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="22" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="26" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <!-- Large entrance -->
+                                <rect x="12" y="22" width="8" height="6" fill="#1F2937" stroke="#000" stroke-width="0.5"/>
+                                <!-- Factory details -->
+                                <rect x="6" y="22" width="4" height="2" fill="#4B5563"/>
+                                <rect x="22" y="22" width="4" height="2" fill="#4B5563"/>
+                                <!-- Ground line -->
+                                <line x1="0" y1="28" x2="32" y2="28" stroke="#000" stroke-width="1"/>
                             </svg>
                         </div>
-                        <h3 class="application-title">Precision Instruments & Medical</h3>
+                        <h3 class="application-title">Precision Instruments</h3>
                     </div>
                     <ul class="application-list">
-                        <li>Measurement instruments</li>
                         <li>Medical devices</li>
-                        <li>Laboratory equipment</li>
-                        <li>Optical equipment</li>
-                        <li>Scientific instruments</li>
-                        <li>Digital calipers</li>
-                        <li>Microscopy equipment</li>
-                        <li>Analytical instruments</li>
+<li>Laboratory equipment</li>
+<li>Optical instruments</li>
+<li>Measuring tools</li>
+<li>Calibration devices</li>
+<li>Microscopes</li>
+<li>Spectrometers</li>
+<li>Analytical instruments</li>
                     </ul>
                     <p class="application-requirements">
-                        <strong>Key Requirements:</strong> Ultra-precision, minimal vibration, quiet operation, compact size
+                        <strong>Key Requirements:</strong> Ultra-precision applications requiring sub-micron accuracy and minimal vibration
                     </p>
                 </div>
                 
@@ -3088,39 +3124,46 @@ body {
                     <div class="application-header">
                         <div class="application-icon">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <!-- Micro motor -->
-                                <circle cx="16" cy="16" r="10" fill="#E5E7EB" stroke="#000" stroke-width="1"/>
-                                <!-- Motor core -->
-                                <circle cx="16" cy="16" r="6" fill="#6B7280"/>
-                                <!-- Rotor -->
-                                <circle cx="16" cy="16" r="3" fill="#374151"/>
-                                <!-- Shaft -->
-                                <rect x="15" y="6" width="2" height="20" fill="#000"/>
-                                <!-- Connectors -->
-                                <rect x="4" y="14" width="4" height="4" fill="#F59E0B"/>
-                                <rect x="24" y="14" width="4" height="4" fill="#F59E0B"/>
-                                <!-- Mounting holes -->
-                                <circle cx="8" cy="8" r="1" fill="#374151"/>
-                                <circle cx="24" cy="8" r="1" fill="#374151"/>
-                                <circle cx="8" cy="24" r="1" fill="#374151"/>
-                                <circle cx="24" cy="24" r="1" fill="#374151"/>
+                                <!-- Car body main -->
+                                <path d="M4 20h24c0-1 0-2-1-3l-3-5H8l-3 5c-1 1-1 2-1 3z" fill="#2563EB" stroke="#000" stroke-width="0.8"/>
+                                <!-- Hood and trunk -->
+                                <path d="M6 20h20v3H6v-3z" fill="#1D4ED8" stroke="#000" stroke-width="0.8"/>
+                                <!-- Windshield and windows -->
+                                <path d="M8 12h16l-2 8H10l-2-8z" fill="#374151" stroke="#000" stroke-width="0.5"/>
+                                <path d="M9 13h14l-1.5 6H10.5l-1.5-6z" fill="#1F2937"/>
+                                <!-- Grille -->
+                                <rect x="4" y="18" width="2" height="3" fill="#374151"/>
+                                <rect x="26" y="18" width="2" height="3" fill="#374151"/>
+                                <!-- Headlights -->
+                                <ellipse cx="5" cy="17" rx="1" ry="1.5" fill="#F9FAFB"/>
+                                <ellipse cx="27" cy="17" rx="1" ry="1.5" fill="#F9FAFB"/>
+                                <!-- Wheels -->
+                                <circle cx="9" cy="25" r="3.5" fill="#111827" stroke="#000" stroke-width="0.8"/>
+                                <circle cx="23" cy="25" r="3.5" fill="#111827" stroke="#000" stroke-width="0.8"/>
+                                <!-- Rims -->
+                                <circle cx="9" cy="25" r="2" fill="#6B7280"/>
+                                <circle cx="23" cy="25" r="2" fill="#6B7280"/>
+                                <circle cx="9" cy="25" r="1" fill="#9CA3AF"/>
+                                <circle cx="23" cy="25" r="1" fill="#9CA3AF"/>
+                                <!-- Side mirrors -->
+                                <rect x="7" y="15" width="1" height="1" fill="#374151"/>
+                                <rect x="24" y="15" width="1" height="1" fill="#374151"/>
                             </svg>
                         </div>
-                        <h3 class="application-title">Compact Motors & Electronics</h3>
+                        <h3 class="application-title">Miniature Motors</h3>
                     </div>
                     <ul class="application-list">
-                        <li>Micro servo motors</li>
-                        <li>Stepper motors</li>
-                        <li>Cooling fans</li>
-                        <li>Electronic actuators</li>
-                        <li>Small pumps</li>
-                        <li>Drone components</li>
-                        <li>RC vehicle parts</li>
-                        <li>Robotic joints</li>
-                        <li>Computer peripherals</li>
+                        <li>Electric toothbrushes</li>
+<li>Hair dryers</li>
+<li>Small fans</li>
+<li>Miniature pumps</li>
+<li>Model aircraft</li>
+<li>RC vehicles</li>
+<li>Small appliances</li>
+<li>Portable tools</li>
                     </ul>
                     <p class="application-requirements">
-                        <strong>Key Requirements:</strong> High speed capability, low friction, space-efficient design
+                        <strong>Key Requirements:</strong> High-speed miniature motors with compact design and reliable performance
                     </p>
                 </div>
                 
@@ -3128,39 +3171,43 @@ body {
                     <div class="application-header">
                         <div class="application-icon">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <!-- Watch mechanism -->
-                                <circle cx="16" cy="16" r="12" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
-                                <!-- Watch face -->
-                                <circle cx="16" cy="16" r="10" fill="#FFFFFF" stroke="#000" stroke-width="0.5"/>
-                                <!-- Hour markers -->
-                                <line x1="16" y1="8" x2="16" y2="10" stroke="#000" stroke-width="1"/>
-                                <line x1="24" y1="16" x2="22" y2="16" stroke="#000" stroke-width="1"/>
-                                <line x1="16" y1="24" x2="16" y2="22" stroke="#000" stroke-width="1"/>
-                                <line x1="8" y1="16" x2="10" y2="16" stroke="#000" stroke-width="1"/>
-                                <!-- Watch hands -->
-                                <line x1="16" y1="16" x2="16" y2="12" stroke="#000" stroke-width="2"/>
-                                <line x1="16" y1="16" x2="19" y2="16" stroke="#000" stroke-width="1.5"/>
-                                <!-- Center dot -->
-                                <circle cx="16" cy="16" r="1" fill="#000"/>
-                                <!-- Crown -->
-                                <rect x="26" y="15" width="3" height="2" fill="#6B7280"/>
+                                <!-- Washing machine -->
+                                <rect x="2" y="8" width="12" height="16" rx="1" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
+                                <!-- Door -->
+                                <circle cx="8" cy="16" r="5" fill="#E2E8F0" stroke="#000" stroke-width="1"/>
+                                <circle cx="8" cy="16" r="3" fill="#CBD5E0"/>
+                                <!-- Control panel -->
+                                <rect x="3" y="9" width="10" height="2" fill="#E2E8F0"/>
+                                <circle cx="5" cy="10" r="0.5" fill="#4A5568"/>
+                                <circle cx="7" cy="10" r="0.5" fill="#4A5568"/>
+                                <rect x="9" y="9.5" width="3" height="1" fill="#4A5568"/>
+                                
+                                <!-- Refrigerator -->
+                                <rect x="16" y="4" width="14" height="24" rx="1" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
+                                <!-- Fridge door line -->
+                                <line x1="16" y1="16" x2="30" y2="16" stroke="#CBD5E0" stroke-width="1"/>
+                                <!-- Handles -->
+                                <rect x="28" y="10" width="1" height="4" fill="#4A5568"/>
+                                <rect x="28" y="18" width="1" height="4" fill="#4A5568"/>
+                                <!-- Details -->
+                                <rect x="18" y="6" width="2" height="1" fill="#E2E8F0"/>
+                                <circle cx="20" cy="8" r="0.5" fill="#48BB78"/>
                             </svg>
                         </div>
-                        <h3 class="application-title">Specialty & Consumer Applications</h3>
+                        <h3 class="application-title">Electronics & Consumer Devices</h3>
                     </div>
                     <ul class="application-list">
-                        <li>Watch mechanisms</li>
-                        <li>Timing devices</li>
-                        <li>Hobby applications</li>
-                        <li>Gaming peripherals</li>
-                        <li>Camera mechanisms</li>
-                        <li>Small appliances</li>
-                        <li>Precision toys</li>
-                        <li>Educational models</li>
-                        <li>DIY projects</li>
+                        <li>Smartphones</li>
+<li>Laptops</li>
+<li>Gaming controllers</li>
+<li>Wearable devices</li>
+<li>Digital cameras</li>
+<li>Portable speakers</li>
+<li>Handheld scanners</li>
+<li>Mobile printers</li>
                     </ul>
                     <p class="application-requirements">
-                        <strong>Key Requirements:</strong> Smooth operation, long life, cost effectiveness, ultra-compact
+                        <strong>Key Requirements:</strong> Consumer electronics requiring silent operation and long service life
                     </p>
                 </div>
             </div>
@@ -3178,169 +3225,245 @@ body {
             <div class="faq-container">
                 <div class="faq-category">
                     <div class="faq-category-header" onclick="toggleFaqCategory(this)">
-                        <span>🔧 Bearing Selection & Replacement</span>
+                        <span>Bearing Selection & Replacement</span>
                         <span class="faq-chevron">▼</span>
                     </div>
                     <div class="faq-questions">
+                        
                         <div class="faq-question">
-                            <h4 class="faq-question-title">Is the 604 bearing suitable for my ultra-compact 4mm shaft precision instrument?</h4>
-                            <div class="faq-direct-answer">Perfect for 4mm shafts requiring 0.75kN load capacity in space-critical applications. Check mounting space and precision requirements match specifications.</div>
+                            <h4 class="faq-question-title">Will a 4mm bearing fit my 4mm shaft properly?</h4>
+                            <div class="faq-direct-answer">Yes, 604 bearing has exact 4mm bore diameter with h6 tolerance (±0.009mm) for proper interference fit.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">The 604 is the smallest practical bearing for precision applications. Its compact 4×12×4mm design makes it ideal for space-constrained environments like medical devices, precision instruments, and micro-motors where every millimeter counts.</div>
+                                <div class="faq-section-content">Proper shaft fit prevents bearing slippage and premature failure. Loose fit causes vibration, while tight fit damages bearing races. h6 tolerance ensures optimal interference without excessive stress.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Verify: 1) Shaft is exactly 4mm diameter, 2) Housing accommodates 12mm outer diameter, 3) You have 4mm width clearance, 4) Loads stay under 0.75kN dynamic/0.34kN static. For precision instruments and micro-mechanisms, the 604 provides optimal space efficiency.</div>
+                                <div class="faq-section-content">Measure shaft diameter with micrometer to confirm 4mm ±0.009mm tolerance. Use proper installation tools to avoid bearing damage. For high-precision applications, consider C0 clearance option.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">The 604's small size makes installation critical - use proper micro-bearing tools to avoid damage.</div>
+                            <div class="faq-pro-tip">Our 20+ years of manufacturing experience shows h6 shaft tolerance provides optimal performance for 4mm applications.</div>
                         </div>
                         
                         <div class="faq-question">
-                            <h4 class="faq-question-title">Can I substitute a 604 with a larger bearing for higher load capacity?</h4>
-                            <div class="faq-direct-answer">Size constraints usually prevent substitution. If space allows, 605 or 625 offer higher loads, but verify dimensional compatibility first.</div>
+                            <h4 class="faq-question-title">Can this bearing handle 76 kg of weight?</h4>
+                            <div class="faq-direct-answer">Yes, 604 bearing has 76 kg (0.75 kN) dynamic load rating with 1.5x safety factor for typical applications.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">The 604's ultra-compact design is chosen specifically for space-critical applications. Larger bearings require larger housing modifications and may not fit in precision instruments or miniature devices where the 604 is typically used.</div>
+                                <div class="faq-section-content">Load capacity determines bearing life and reliability. Exceeding load rating causes premature fatigue, increased vibration, and potential bearing failure. Safety factor ensures long service life.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">If 0.75kN is insufficient, consider: 605 (1.05kN, 5×14×5mm) or 625 (1.88kN, 5×16×5mm) if space permits. Alternatively, reduce loads through design changes, use multiple 604s, or specify higher-grade 604 bearings for extended life.</div>
+                                <div class="faq-section-content">Calculate actual load including dynamic forces and shock loads. For continuous operation, keep loads under 50 kg. For intermittent use, 76 kg is acceptable with proper lubrication.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">In precision applications, design constraints usually dictate bearing size - optimize the system around the 604's capabilities.</div>
+                            <div class="faq-pro-tip">Premium Gcr15 steel provides superior load handling vs. standard steel alternatives, extending service life 3-5x.</div>
                         </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">Is this bearing suitable for 32,000 RPM applications?</h4>
+                            <div class="faq-direct-answer">Yes, 604 bearing is rated for 32,000 RPM grease lubrication and 40,000 RPM oil lubrication with proper clearance selection.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Speed rating affects bearing temperature, vibration, and life expectancy. High speeds require proper clearance, lubrication, and balance to prevent overheating and premature failure.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Use C0 clearance for high-speed applications. Ensure proper lubrication and balance. Monitor temperature during operation. Consider open bearing for maximum speed capability.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Our ISO 9001:2015 certified manufacturing includes 100% dimensional testing for optimal high-speed performance.</div>
+                        </div>
+                        
                     </div>
                 </div>
                 
                 <div class="faq-category">
                     <div class="faq-category-header" onclick="toggleFaqCategory(this)">
-                        <span>🔨 Installation & Maintenance</span>
+                        <span>Installation & Maintenance</span>
                         <span class="faq-chevron">▼</span>
                     </div>
                     <div class="faq-questions">
+                        
                         <div class="faq-question">
-                            <h4 class="faq-question-title">What special precautions are needed when installing tiny 604 bearings?</h4>
-                            <div class="faq-direct-answer">Use specialized micro-bearing tools, clean room conditions, and gentle pressure. Never use hammers or excessive force on small bearings.</div>
+                            <h4 class="faq-question-title">How do I install a 4mm bearing without damaging it?</h4>
+                            <div class="faq-direct-answer">Use proper bearing installation tools and apply force evenly to outer ring only, never to inner ring or balls.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">The 604's small size makes it extremely sensitive to installation errors. Improper handling can damage internal geometry, affect precision, or cause premature failure. Micro-bearings require different installation techniques than larger bearings.</div>
+                                <div class="faq-section-content">Improper installation damages bearing races, reduces life expectancy, and causes premature failure. Force applied to inner ring can damage rolling elements and create stress concentrations.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Use micro-bearing installation tools, maintain h6 shaft tolerance (±5μm), work in clean environment, apply gradual pressure through proper tooling. Check for smooth rotation after installation. Contamination is critical at this scale.</div>
+                                <div class="faq-section-content">Use bearing press or installation sleeve. Apply force to outer ring circumference. Ensure shaft and housing are clean and properly sized. Use C0 clearance for precision applications.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">For 604 bearings, cleanliness is more important than force - one speck of dust can ruin performance.</div>
+                            <div class="faq-pro-tip">Professional installation tools prevent 80% of premature bearing failures and ensure maximum 50,000-hour service life.</div>
                         </div>
                         
                         <div class="faq-question">
-                            <h4 class="faq-question-title">How do I properly lubricate such small 604 bearings?</h4>
-                            <div class="faq-direct-answer">Use sealed bearings (604-ZZ/2RS) when possible. For open bearings, apply minimal high-quality grease with micro-dosing equipment.</div>
+                            <h4 class="faq-question-title">What tools do I need for a 76 kg capacity bearing?</h4>
+                            <div class="faq-direct-answer">For 4mm bearings, use precision tools: bearing press, installation sleeve, micrometer, and proper lubrication equipment.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">Micro-bearings like the 604 have extremely small internal volumes. Over-lubrication is as damaging as under-lubrication, causing increased friction, overheating, and reduced performance. Precision applications demand precise lubrication.</div>
+                                <div class="faq-section-content">Precision tools ensure proper fit and prevent damage. 4mm bearings require careful handling due to small size and high precision requirements. Proper tools prevent costly installation errors.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Prefer 604-ZZ for most applications. For open bearings, use synthetic grease (NLGI Grade 2), apply micro-doses with precision equipment. Lubrication intervals: every 2000-3000 hours for precision applications. Monitor temperature during operation.</div>
+                                <div class="faq-section-content">Use bearing press with proper adapters. Measure shaft and housing with micrometer (±0.001mm accuracy). Apply thin film of lubricant. Use installation sleeve for even force distribution.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">With 604 bearings, less lubrication is often better - aim for thin, even distribution rather than generous application.</div>
+                            <div class="faq-pro-tip">Our manufacturing processes include 100% dimensional testing to ensure perfect fit with standard tools.</div>
                         </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How often should I check a bearing running at 32,000 RPM?</h4>
+                            <div class="faq-direct-answer">Check 604 bearings monthly for vibration, temperature, and noise. High-speed operation requires more frequent monitoring.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">High-speed bearings generate more heat and wear faster. Regular monitoring prevents catastrophic failure and extends service life. Early detection of issues saves costly repairs.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Monitor vibration levels monthly using V2, V3, V4 standards. Check temperature (should stay under 80°C). Listen for unusual noise. Lubricate as needed.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Premium bearings last 3-10x longer than economy alternatives when properly maintained.</div>
+                        </div>
+                        
                     </div>
                 </div>
                 
                 <div class="faq-category">
                     <div class="faq-category-header" onclick="toggleFaqCategory(this)">
-                        <span>🔍 Troubleshooting & Problem Solving</span>
+                        <span>Troubleshooting & Problem Solving</span>
                         <span class="faq-chevron">▼</span>
                     </div>
                     <div class="faq-questions">
+                        
                         <div class="faq-question">
-                            <h4 class="faq-question-title">My 604 bearing is causing precision issues in my instrument - what's wrong?</h4>
-                            <div class="faq-direct-answer">Check for contamination, improper clearance selection, or installation damage. Even microscopic particles affect precision in small bearings.</div>
+                            <h4 class="faq-question-title">Why does my bearing fail under 76 kg load?</h4>
+                            <div class="faq-direct-answer">Load failure usually indicates improper installation, contamination, or excessive vibration. Check shaft fit, cleanliness, and operating conditions.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">Precision instruments rely on bearing accuracy for overall system performance. The 604's small size makes it sensitive to contamination, clearance issues, and installation errors that can introduce unwanted play, vibration, or non-repeatability.</div>
+                                <div class="faq-section-content">Bearing failure under rated load suggests installation or environmental problems. Proper diagnosis prevents repeat failures and ensures optimal performance. Early intervention saves equipment damage.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Systematically check: clearance specification (use C2 for maximum precision), contamination (inspect for particles), installation quality (no damage to races), shaft/housing tolerances (h6/H7), and preload settings if applicable.</div>
+                                <div class="faq-section-content">Inspect bearing for contamination, proper fit, and lubrication. Check shaft tolerance (must be h6 ±0.009mm). Verify housing clearance. Monitor vibration levels during operation.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">For critical precision applications, specify 604 bearings with P5 or P4 precision grades and C2 clearance.</div>
+                            <div class="faq-pro-tip">Our quality assurance includes statistical process control to ensure consistent 76 kg load capacity across all bearings.</div>
                         </div>
                         
                         <div class="faq-question">
-                            <h4 class="faq-question-title">Why do my 604 bearings fail faster than expected in high-speed applications?</h4>
-                            <div class="faq-direct-answer">Small bearings generate more heat per unit volume. Check speed limits, lubrication type, and cooling provisions for your application.</div>
+                            <h4 class="faq-question-title">What causes overheating at 32,000 RPM?</h4>
+                            <div class="faq-direct-answer">Overheating at high speed usually results from insufficient lubrication, excessive clearance, or contamination. Check lubrication quality and bearing condition.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">The 604's compact size creates thermal challenges at high speeds. Heat generation increases exponentially with speed, and small bearings have less thermal mass to absorb heat. This can cause rapid lubrication breakdown and accelerated wear.</div>
+                                <div class="faq-section-content">Overheating accelerates wear, reduces life expectancy, and can cause catastrophic failure. High-speed operation requires optimal lubrication and proper clearance selection.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Stay within speed limits: 32,000 RPM (grease) or 40,000 RPM (oil). Use synthetic lubricants for high-speed operation. Provide adequate cooling/ventilation. Consider 90% speed derating (28,800 RPM) for maximum life. Monitor bearing temperature during operation.</div>
+                                <div class="faq-section-content">Verify lubrication quantity and quality. Check clearance (C0 recommended for high speed). Ensure clean operating environment. Monitor temperature (should stay under 80°C).</div>
                             </div>
                             
-                            <div class="faq-pro-tip">For sustained high-speed operation, oil lubrication and active cooling can extend 604 bearing life significantly.</div>
+                            <div class="faq-pro-tip">Gcr15 steel provides superior heat resistance vs. standard steel alternatives.</div>
                         </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How do I diagnose problems with 4mm bearings?</h4>
+                            <div class="faq-direct-answer">Use vibration analysis, temperature monitoring, and visual inspection. Check for unusual noise, excessive play, and contamination.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Early diagnosis prevents equipment damage and reduces downtime. 4mm bearings require precise diagnosis due to small size and high precision requirements.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Measure vibration using V2, V3, V4 standards. Check temperature with infrared thermometer. Inspect for contamination and wear. Use proper diagnostic tools for small bearings.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Our 20+ years of experience shows proper diagnosis prevents 90% of bearing failures.</div>
+                        </div>
+                        
                     </div>
                 </div>
                 
                 <div class="faq-category">
                     <div class="faq-category-header" onclick="toggleFaqCategory(this)">
-                        <span>💰 Cost & Performance Optimization</span>
+                        <span>Cost & Performance Optimization</span>
                         <span class="faq-chevron">▼</span>
                     </div>
                     <div class="faq-questions">
+                        
                         <div class="faq-question">
-                            <h4 class="faq-question-title">Are precision-grade 604 bearings worth the extra cost for my application?</h4>
-                            <div class="faq-direct-answer">For precision instruments and critical applications, yes. Standard grades suffice for general-purpose micro-motors and non-critical mechanisms.</div>
+                            <h4 class="faq-question-title">Is it worth upgrading from 76 kg to higher capacity bearings?</h4>
+                            <div class="faq-direct-answer">Only if your application exceeds 76 kg load or requires longer service life. 604 provides optimal performance for most 4mm applications.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">Precision-grade 604 bearings (P5/P4) cost 2-3x more but offer significantly tighter tolerances and better performance consistency. In precision instruments, the bearing cost is negligible compared to system performance requirements and potential failure costs.</div>
+                                <div class="faq-section-content">Over-sizing bearings increases cost without performance benefits. Proper sizing ensures optimal performance and cost-effectiveness. Understanding load requirements prevents unnecessary expenses.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Use precision grades for: measurement instruments, medical devices, optical equipment, critical positioning systems. Standard P0 grades work for: general motors, fans, non-critical mechanisms, hobby applications. Calculate cost impact of precision vs. system requirements.</div>
+                                <div class="faq-section-content">Calculate actual load including safety factors. Consider service life requirements. For higher loads, consider 605 (1.05 kN) or 606 (1.95 kN). Evaluate total cost of ownership.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">In precision applications, bearing failure often costs 100x the bearing price in downtime and recalibration.</div>
+                            <div class="faq-pro-tip">Premium 604 bearings last 3-10x longer than economy alternatives, reducing total cost of ownership by 60-80%.</div>
                         </div>
                         
                         <div class="faq-question">
-                            <h4 class="faq-question-title">How can I maximize 604 bearing life in my miniature application?</h4>
-                            <div class="faq-direct-answer">Focus on perfect installation, contamination control, appropriate clearance selection, and staying within operating limits. Small bearings are less forgiving.</div>
+                            <h4 class="faq-question-title">When should I pay more for bearings rated above 32,000 RPM?</h4>
+                            <div class="faq-direct-answer">Only if your application requires speeds above 32,000 RPM. 604 provides excellent high-speed performance for most miniature applications.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">The 604's small size makes it particularly sensitive to installation errors, contamination, and operating condition variations. Proper care can extend life from hundreds to tens of thousands of hours, dramatically affecting system reliability and maintenance costs.</div>
+                                <div class="faq-section-content">Speed ratings affect bearing selection and cost. Understanding actual speed requirements prevents over-engineering and unnecessary expenses. Proper speed selection ensures optimal performance.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Optimization checklist: Use proper micro-bearing installation tools, maintain ultra-clean environment, select appropriate clearance (C2 for precision, C0 for general use), stay within 0.75kN load and 32,000 RPM limits, use sealed bearings when possible, specify proper shaft/housing tolerances.</div>
+                                <div class="faq-section-content">Determine actual operating speed requirements. Consider acceleration and deceleration cycles. For speeds above 32,000 RPM, consider specialized high-speed bearings or open design.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">For 604 bearings, prevention is everything - proper initial setup prevents 90% of premature failures.</div>
+                            <div class="faq-pro-tip">Our Gcr15 steel provides superior high-speed performance vs. standard steel alternatives.</div>
                         </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What's the cost difference between 4mm and 5mm bearings?</h4>
+                            <div class="faq-direct-answer">604 (4mm) costs approximately 15-20% less than 605 (5mm) while providing adequate capacity for most 4mm applications.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Size selection affects both performance and cost. Understanding the cost-performance relationship helps optimize bearing selection for specific applications.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Evaluate load requirements vs. cost. Consider space constraints and performance needs. For 4mm shafts, 604 provides optimal value. For higher loads, 605 may be justified.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Our volume manufacturing provides competitive pricing across all miniature bearing sizes.</div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -3359,25 +3482,24 @@ body {
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="/specs/miniature-series/605" class="model-link">605 (5×14×5mm)</a>
-                        <a href="/specs/miniature-series/606" class="model-link">606 (6×17×6mm)</a>
-                        <a href="/specs/miniature-series/607" class="model-link">607 (7×19×6mm)</a>
-                        <a href="/specs/miniature-series/608" class="model-link">608 (8×22×7mm)</a>
-                        <a href="/specs/miniature-series/609" class="model-link">609 (9×24×7mm)</a>
+                        <a href="#" class="model-link">605</a>
+<a href="#" class="model-link">606</a>
+<a href="#" class="model-link">607</a>
+<a href="#" class="model-link">608</a>
+<a href="#" class="model-link">609</a>
                     </div>
                 </div>
                 
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">⚡</span>Series Alternatives</h3>
                     <div class="alternatives-list">
-                        <div class="alternative-item">
-                            <strong>6000 Series</strong>
-                            <span>Lighter duty applications</span>
-                        </div>
-                        <div class="alternative-item">
-                            <strong>6300 Series</strong>
-                            <span>Heavier duty applications</span>
-                        </div>
+                        <div class="alternative-item"><strong>623</strong></div>
+<div class="alternative-item"><strong>624</strong></div>
+<div class="alternative-item"><strong>625</strong></div>
+<div class="alternative-item"><strong>626</strong></div>
+<div class="alternative-item"><strong>627</strong></div>
+<div class="alternative-item"><strong>628</strong></div>
+<div class="alternative-item"><strong>629</strong></div>
                     </div>
                 </div>
                 
@@ -3386,15 +3508,15 @@ body {
                     <div class="application-options">
                         <div class="option-item">
                             <strong>High Temperature:</strong>
-                            <span>604 with high-temp grease</span>
+                            <span>C3 clearance option available</span>
                         </div>
                         <div class="option-item">
                             <strong>High Speed:</strong>
-                            <span>604 with precision tolerance</span>
+                            <span>Open bearing for maximum speed</span>
                         </div>
                         <div class="option-item">
                             <strong>Corrosive Environment:</strong>
-                            <span>604 with stainless steel option</span>
+                            <span>2RS seals recommended</span>
                         </div>
                     </div>
                 </div>
@@ -3411,35 +3533,12 @@ body {
             </div>
             
             <div class="expertise-grid">
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">📋</span>ISO Compliance</h3>
-                    <p>ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">🔬</span>Material Science</h3>
-                    <p>Gcr15 chrome steel composition optimized for micro-bearing applications, providing superior hardness, wear resistance, and fatigue life in ultra-compact sizes.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">⚙️</span>Precision Engineering</h3>
-                    <p>C0 clearance standard for most applications, C2 available for ultra-precision use. h6 shaft tolerance critical for proper fit in miniature applications.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">🔧</span>Professional Installation</h3>
-                    <p>Specialized micro-bearing installation required for maximum service life. Proper techniques prevent 90% of premature failures in small bearings.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">📊</span>Performance Comparison</h3>
-                    <p>Optimal space efficiency with 0.75kN capacity in ultra-compact 4×12×4mm design. Superior Gcr15 steel vs. standard materials in competing micro-bearings.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">💰</span>Value Engineering</h3>
-                    <p>Best value in ultra-miniature category for precision applications. Quality 604 bearings last 5-15x longer than cheap alternatives in critical instruments.</p>
-                </div>
+                <div class="expertise-card"><h3><span class="expertise-icon">📋</span>ISO Compliance</h3><p>ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">🔬</span>Material Science</h3><p>Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">⚙️</span>Precision Engineering</h3><p>C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">🔧</span>Professional Installation</h3><p>Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">📊</span>Performance Comparison</h3><p>Handles 0.75kN load with superior precision vs. typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">💰</span>Value Engineering</h3><p>Best value in micro-bearing category for 0.75kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.</p></div>
             </div>
         </div>
     </section>
@@ -3608,10 +3707,10 @@ body {
     </div>
 
     <!-- Scripts -->
-    <script src="../../../../shared/cta-model.js"></script>
+    <script src="../../../// shared path removed - components embeddedcta-model.js"></script>
     <script>
         // Load navbar
-        fetch('../../../../shared/navbar.html')
+        fetch('../../../// shared path removed - components embeddednavbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-container').innerHTML = data;
@@ -3709,13 +3808,13 @@ body {
                                 <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication optimization
                             </div>
                             <div class="explanation-item">
-                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment for ultra-small applications
+                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Maximum speed potential (32,000 RPM) and optimized lubrication for specific micro-applications
+                                <strong>Achieves:</strong> Maximum speed potential (32000 RPM) and optimized lubrication for specific applications
                             </div>
                             <div class="explanation-item">
-                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination in tiny spaces
+                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
                             </div>
                         </div>
                     `;
@@ -3728,13 +3827,13 @@ body {
                                 <strong>Best For:</strong> Semi-clean environments needing re-lubrication access with moderate protection
                             </div>
                             <div class="explanation-item">
-                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting in micro-applications
+                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Balance between protection and serviceability with excellent speed performance (30,400 RPM)
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (30400 RPM)
                             </div>
                             <div class="explanation-item">
-                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for micro-bearing maintenance flexibility
+                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
                             </div>
                         </div>
                     `;
@@ -3744,16 +3843,16 @@ body {
                         <h3>When to Use 604-RS</h3>
                         <div class="explanation-grid">
                             <div class="explanation-item">
-                                <strong>Best For:</strong> Moderate contamination with maintenance access needs in ultra-compact applications
+                                <strong>Best For:</strong> Moderate contamination with maintenance access needs and environmental protection
                             </div>
                             <div class="explanation-item">
-                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient for micro-bearings
+                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (25,600 RPM)
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (25600 RPM)
                             </div>
                             <div class="explanation-item">
-                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical precision instruments
+                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications
                             </div>
                         </div>
                     `;
@@ -3785,7 +3884,7 @@ body {
     </script>
 <script>
         // Load navbar
-        fetch('../../../../shared/navbar.html')
+        fetch('../../../// problematic pattern removednavbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-container').innerHTML = data;
@@ -3883,13 +3982,13 @@ body {
                                 <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication optimization
                             </div>
                             <div class="explanation-item">
-                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment for ultra-small applications
+                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Maximum speed potential (32,000 RPM) and optimized lubrication for specific micro-applications
+                                <strong>Achieves:</strong> Maximum speed potential (32000 RPM) and optimized lubrication for specific applications
                             </div>
                             <div class="explanation-item">
-                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination in tiny spaces
+                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
                             </div>
                         </div>
                     `;
@@ -3902,13 +4001,13 @@ body {
                                 <strong>Best For:</strong> Semi-clean environments needing re-lubrication access with moderate protection
                             </div>
                             <div class="explanation-item">
-                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting in micro-applications
+                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Balance between protection and serviceability with excellent speed performance (30,400 RPM)
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (30400 RPM)
                             </div>
                             <div class="explanation-item">
-                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for micro-bearing maintenance flexibility
+                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
                             </div>
                         </div>
                     `;
@@ -3918,16 +4017,16 @@ body {
                         <h3>When to Use 604-RS</h3>
                         <div class="explanation-grid">
                             <div class="explanation-item">
-                                <strong>Best For:</strong> Moderate contamination with maintenance access needs in ultra-compact applications
+                                <strong>Best For:</strong> Moderate contamination with maintenance access needs and environmental protection
                             </div>
                             <div class="explanation-item">
-                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient for micro-bearings
+                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (25,600 RPM)
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (25600 RPM)
                             </div>
                             <div class="explanation-item">
-                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical precision instruments
+                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications
                             </div>
                         </div>
                     `;

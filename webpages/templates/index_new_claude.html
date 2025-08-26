@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{seo_metadata.title}}</title>
+    <meta name="description" content="{{seo_metadata.meta_description}}">
+    <meta name="keywords" content="{{seo_metadata.keywords_string}}">
+    <link rel="canonical" href="{{seo_metadata.canonical_url}}">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{{seo_metadata.og_data.title}}">
+    <meta property="og:description" content="{{seo_metadata.og_data.description}}">
+    <meta property="og:url" content="{{seo_metadata.og_data.url}}">
+    <meta property="og:type" content="{{seo_metadata.og_data.type}}">
+    <meta property="og:site_name" content="{{seo_metadata.og_data.site_name}}">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="{{seo_metadata.twitter_data.card}}">
+    <meta name="twitter:title" content="{{seo_metadata.twitter_data.title}}">
+    <meta name="twitter:description" content="{{seo_metadata.twitter_data.description}}">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "{{seo_metadata.schema_markup.@context}}",
+      "@type": "{{seo_metadata.schema_markup.@type}}",
+      "name": "{{seo_metadata.schema_markup.name}}",
+      "image": "{{technical_drawing.image_url}}",
+      "description": "{{seo_metadata.schema_markup.description}}",
+      "sku": "{{seo_metadata.schema_markup.sku}}",
+      "mpn": "{{seo_metadata.schema_markup.mpn}}",
+      "brand": {
+        "@type": "Brand",
+        "name": "{{company_metadata.name}}"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "{{company_metadata.name}}",
+        "url": "{{company_metadata.website}}"
+      },
+      "category": "{{seo_metadata.schema_markup.category}}",
+      "offers": {
+        "@type": "Offer",
+        "url": "{{seo_metadata.canonical_url}}",
+        "priceCurrency": "{{pricing_and_availability.currency}}",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
+        "seller": {
+          "@type": "Organization",
+          "name": "{{company_metadata.name}}"
+        }
+      }
+    }
+    </script>
+    
+    <!-- External fonts first -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../../../../shared/navbar.css">
+    <link rel="stylesheet" href="../../../../shared/footer.css">
+    <link rel="stylesheet" href="../../../../shared/cta-model.css">
+    <link rel="stylesheet" href="../../../../shared/watermark.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="miniature" data-model="{{model_number}}">
+    <!-- Navigation Header -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <!-- Main Content (60%) -->
+                <div class="hero-main">
+                    <div class="breadcrumb">
+                        <a href="{{company_metadata.website}}/">Home</a> > 
+                        <a href="{{company_metadata.website}}/specs/miniature-series.html">Miniature Bearings</a> > 
+                        <span>{{model_number}} Bearing</span>
+                    </div>
+                    
+                    <h1 class="hero-title">{{model_number}} {{bearing_type}}</h1>
+                    <p class="hero-subtitle">
+                        {{enhanced_description}}
+                    </p>
+                    <p class="hero-description">
+                        Meet the {{model_number}}: With {{load_ratings.dynamic_load_Cr_kN}}kN of engineering excellence and {{dimensions.bore_diameter_d_mm}}mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
+                    </p>
+                    
+                    <div class="hero-specs">
+                        <div class="specs-compact">
+                            <div class="spec-item">
+                                <div class="spec-value">{{dimensions.bore_diameter_d_mm}}mm</div>
+                                <div class="spec-label">Bore Diameter</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">{{dimensions.outer_diameter_D_mm}}mm</div>
+                                <div class="spec-label">Outer Diameter</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">{{dimensions.width_B_mm}}mm</div>
+                                <div class="spec-label">Width</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">{{load_ratings.dynamic_load_Cr_kN}}kN</div>
+                                <div class="spec-label">Load Rating</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">{{speed_limits.grease_rpm}}</div>
+                                <div class="spec-label">Max RPM</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">{{dimensions.weight_kg}}kg</div>
+                                <div class="spec-label">Weight</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#specifications" class="btn btn-primary">Technical Specifications</a>
+                        <a href="#applications" class="btn btn-secondary">Applications</a>
+                        <a href="tel:{{company_metadata.contact.phone}}" class="btn btn-accent">📞 Call {{company_metadata.contact.phone}}</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/08/DGBB.png" alt="{{model_number}} {{bearing_type}} - {{company_metadata.name}}" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Specifications -->
+    <section class="section" id="specifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">{{model_number}} BEARING SPECIFICATIONS</h2>
+                <p class="section-subtitle">Precision-engineered for reliability and performance</p>
+            </div>
+            
+            <!-- Dimensions and Image Section -->
+            <div class="specs-main-section">
+                <div class="dimensions-table">
+                    <div class="spec-card dimensions-card">
+                        <h3><span class="spec-icon">📏</span>Dimensions</h3>
+                        <div class="dimensions-grid dimensions-grid-{{#if dimensions.skf_extended_dimensions.d1_shoulder_diameter}}3x2{{else}}3x1{{/if}}">
+                            <div class="dimension-item">
+                                <div class="dimension-label">d - ID (Bore Diameter)</div>
+                                <div class="dimension-value">{{dimensions.bore_diameter_d_mm}}mm</div>
+                            </div>
+                            <div class="dimension-item">
+                                <div class="dimension-label">D - OD (Outer Diameter)</div>
+                                <div class="dimension-value">{{dimensions.outer_diameter_D_mm}}mm</div>
+                            </div>
+                            <div class="dimension-item">
+                                <div class="dimension-label">B - Width</div>
+                                <div class="dimension-value">{{dimensions.width_B_mm}}mm</div>
+                            </div>
+                            {{#if dimensions.skf_extended_dimensions.d1_shoulder_diameter}}
+                            <div class="dimension-item">
+                                <div class="dimension-label">d₁ - Shoulder Diameter</div>
+                                <div class="dimension-value">≈{{dimensions.skf_extended_dimensions.d1_shoulder_diameter}}mm</div>
+                            </div>
+                            {{/if}}
+                            {{#if dimensions.skf_extended_dimensions.D2_recess_diameter}}
+                            <div class="dimension-item">
+                                <div class="dimension-label">D₂ - Recess Diameter</div>
+                                <div class="dimension-value">≈{{dimensions.skf_extended_dimensions.D2_recess_diameter}}mm</div>
+                            </div>
+                            {{/if}}
+                            {{#if dimensions.skf_extended_dimensions.r1_chamfer_radius}}
+                            <div class="dimension-item">
+                                <div class="dimension-label">r₁,₂ - Chamfer Radius</div>
+                                <div class="dimension-value">min. {{dimensions.skf_extended_dimensions.r1_chamfer_radius}}mm</div>
+                            </div>
+                            {{/if}}
+                        </div>
+                        <div class="dimension-summary">
+                            <strong>{{model_number}} Bearing: {{dimensions.bore_diameter_d_mm}} × {{dimensions.outer_diameter_D_mm}} × {{dimensions.width_B_mm}}mm</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specs-image">
+                    <h3 class="specs-image-title">{{technical_drawing.image_title}}</h3>
+                    <img src="{{technical_drawing.image_url}}" alt="{{technical_drawing.image_alt}}" />
+                </div>
+            </div>
+
+            <!-- Three Cards Section -->
+            <div class="specs-cards-row">
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">⚡</span>Load Ratings</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>Dynamic Load (Cr)</span>
+                                    <span>{{load_ratings.dynamic_load_Cr_kN}}kN</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Static Load (Cor)</span>
+                                    <span>{{load_ratings.static_load_Cor_kN}}kN</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Load Capacity</span>
+                                    <span>{{load_ratings.load_capacity_kg}}kg force</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Dynamic Load ({{load_ratings.dynamic_load_Cr_kN}}kN = {{load_ratings.load_capacity_kg}}kg):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Static Load ({{load_ratings.static_load_Cor_kN}}kN):</strong> Maximum force when stationary. Use 80% for safety.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Calculate Your Load:</strong> Measure shaft forces, belt tensions, or gear loads. Include shock/vibration factors.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Failure Warning:</strong> Overloading causes bearing raceways to crack and balls to flatten permanently.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">🔄</span>Speed Limits</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>Grease Lubrication</span>
+                                    <span>{{speed_limits.grease_rpm}} RPM</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Oil Lubrication</span>
+                                    <span>{{speed_limits.oil_rpm}} RPM</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Recommended Max</span>
+                                    <span>{{speed_limits.recommended_max_rpm}} RPM (90%)</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Grease Limit ({{speed_limits.grease_rpm}} RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Oil Advantage ({{speed_limits.oil_rpm}} RPM):</strong> Better heat dissipation allows higher speed. Required for high-speed spindles.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Safe Operating Speed:</strong> Use 90% of limit ({{speed_limits.recommended_max_rpm}} RPM) for maximum L10 life of 10,000+ hours.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Failure Mode:</strong> Exceeding speed causes cage failure, ball skidding, and catastrophic overheating within minutes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">🔧</span>Material & Quality</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>Steel Grade</span>
+                                    <span>{{material.grade}}</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Carbon Content</span>
+                                    <span>{{material.carbon_content}}</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Chromium Content</span>
+                                    <span>{{material.chromium_content}}</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Silicon Content</span>
+                                    <span>{{material.silicon_content}}</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>ISO Standard</span>
+                                    <span>{{material.iso_standard}}</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>{{material.grade}} Steel:</strong> Premium bearing steel - harder than tool steel
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>High Carbon:</strong> Superior hardness and wear resistance
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Chromium:</strong> Adds corrosion resistance and toughness
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Silicon:</strong> Improves strength and deoxidizes the steel
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>ISO Standard:</strong> Fits any {{model_number}} application worldwide
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Technical Data Row -->
+            <div class="specs-cards-row">
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">📊</span>Vibration Classes</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>V2 Grade</span>
+                                    <span>&lt; {{vibration.V2.low_frequency}}/{{vibration.V2.medium_frequency}}/{{vibration.V2.high_frequency}} μm/s</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>V3 Grade</span>
+                                    <span>&lt; {{vibration.V3.low_frequency}}/{{vibration.V3.medium_frequency}}/{{vibration.V3.high_frequency}} μm/s</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>V4 Grade (Precision)</span>
+                                    <span>&lt; {{vibration.V4.low_frequency}}/{{vibration.V4.medium_frequency}}/{{vibration.V4.high_frequency}} μm/s</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Frequency Bands</span>
+                                    <span>Low/Med/High Hz</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>V2 Grade:</strong> Standard grade - good for general applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>V3 Grade:</strong> Low vibration - like a smooth car engine
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>V4 Grade:</strong> Ultra-smooth - for precision instruments
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Frequency Bands:</strong> Measured across different rotation speeds
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">🔇</span>Noise Levels</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>Z2 Grade</span>
+                                    <span>&lt; {{noise.Z2}} dB</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Z3 Grade</span>
+                                    <span>&lt; {{noise.Z3}} dB</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Z4 Grade (Quiet)</span>
+                                    <span>&lt; {{noise.Z4}} dB</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Application</span>
+                                    <span>Precision Equipment</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Z2 Grade:</strong> Quiet as a library - good for most applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Z3 Grade:</strong> Very quiet - like a whisper (40 dB = normal whisper)
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Z4 Grade:</strong> Ultra-quiet - perfect for bedroom fans, medical equipment
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Application:</strong> Ideal for sensitive environments
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">⚙️</span>Internal Clearance</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>C2 (Tight)</span>
+                                    <span>{{clearance.C2.min_microns}}-{{clearance.C2.max_microns}} μm</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>C0 (Normal)</span>
+                                    <span>{{clearance.C0.min_microns}}-{{clearance.C0.max_microns}} μm</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>C3 (Loose)</span>
+                                    <span>{{clearance.C3.min_microns}}-{{clearance.C3.max_microns}} μm</span>
+                                </div>
+                                {{#clearance.C4.min_microns}}
+                                <div class="spec-row">
+                                    <span>C4 (High Temp)</span>
+                                    <span>{{clearance.C4.min_microns}}-{{clearance.C4.max_microns}} μm</span>
+                                </div>
+                                {{/clearance.C4.min_microns}}
+                                {{#clearance.C5.min_microns}}
+                                <div class="spec-row">
+                                    <span>C5 (Extra High Temp)</span>
+                                    <span>{{clearance.C5.min_microns}}-{{clearance.C5.max_microns}} μm</span>
+                                </div>
+                                {{/clearance.C5.min_microns}}
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>C2 (Tight):</strong> Precision applications - less play, more accurate
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>C0 (Normal):</strong> Standard choice - works for most applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>C3 (Loose):</strong> Better for hot environments - allows thermal expansion
+                                </div>
+                                {{#clearance.C4.min_microns}}
+                                <div class="explanation-item">
+                                    <strong>C4/C5:</strong> For temperatures above 100°C and 150°C respectively
+                                </div>
+                                {{/clearance.C4.min_microns}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seal Options -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">SEAL OPTIONS</h2>
+                <p class="section-subtitle">Choose the right protection for your application</p>
+            </div>
+            
+            <!-- Most Popular Seals - Top Row -->
+            <div class="seal-options-popular">
+                <div class="seal-card featured flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <div class="seal-header">
+                                <h3>{{seal_options.double_shield.designation}}</h3>
+                                <div class="seal-badge popular">{{seal_options.double_shield.badge}}</div>
+                            </div>
+                            <p class="seal-description">{{seal_options.double_shield.description}}</p>
+                            <div class="seal-specs">
+                                <div class="seal-spec">
+                                    <span>Speed Factor:</span>
+                                    <span>{{seal_options.double_shield.speed_factor}} ({{seal_options.double_shield.max_rpm}} RPM)</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Protection:</span>
+                                    <span>{{seal_options.double_shield.protection}}</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Lubrication:</span>
+                                    <span>{{seal_options.double_shield.lubrication}}</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Usage Guide) -->
+                        <div class="flip-card-back">
+                            <h4>When to Use {{seal_options.double_shield.designation}}</h4>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Best For:</strong> Electronics, small motors, skateboards, general machinery
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Conditions:</strong> Dry environments, moderate dust, precision applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Achieves:</strong> Excellent balance of speed and protection for most applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Avoid When:</strong> Heavy water exposure, chemical environments, food processing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seal-card featured flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <div class="seal-header">
+                                <h3>{{seal_options.double_seal.designation}}</h3>
+                                <div class="seal-badge popular">{{seal_options.double_seal.badge}}</div>
+                            </div>
+                            <p class="seal-description">{{seal_options.double_seal.description}}</p>
+                            <div class="seal-specs">
+                                <div class="seal-spec">
+                                    <span>Speed Factor:</span>
+                                    <span>{{seal_options.double_seal.speed_factor}} ({{seal_options.double_seal.max_rpm}} RPM)</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Protection:</span>
+                                    <span>{{seal_options.double_seal.protection}}</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Lubrication:</span>
+                                    <span>{{seal_options.double_seal.lubrication}}</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Usage Guide) -->
+                        <div class="flip-card-back">
+                            <h4>When to Use {{seal_options.double_seal.designation}}</h4>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Best For:</strong> Outdoor applications, appliances, automotive systems, dirty environments
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Conditions:</strong> Moisture, dust, contamination, washdown areas, food processing
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Achieves:</strong> Maximum protection and zero maintenance requirements
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Trade-off:</strong> Lower speed limit but superior environmental protection
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Seal Options - Bottom Row -->
+            <div class="seal-options-others">
+                <div class="seal-card" data-seal-type="{{model_number}}-open">
+                    <div class="seal-header">
+                        <h3>{{seal_options.open.designation}}</h3>
+                        <div class="seal-badge">{{seal_options.open.badge}}</div>
+                    </div>
+                    <p class="seal-description">{{seal_options.open.description}}</p>
+                    <div class="seal-specs">
+                        <div class="seal-spec">
+                            <span>Speed Factor:</span>
+                            <span>{{seal_options.open.speed_factor}} ({{seal_options.open.max_rpm}} RPM)</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Protection:</span>
+                            <span>{{seal_options.open.protection}}</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Lubrication:</span>
+                            <span>{{seal_options.open.lubrication}}</span>
+                        </div>
+                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('{{model_number}}-open')">
+                        ℹ️ Usage Guide
+                    </button>
+                </div>
+
+                <div class="seal-card" data-seal-type="{{model_number}}-z">
+                    <div class="seal-header">
+                        <h3>{{seal_options.single_shield.designation}}</h3>
+                        <div class="seal-badge">{{seal_options.single_shield.badge}}</div>
+                    </div>
+                    <p class="seal-description">{{seal_options.single_shield.description}}</p>
+                    <div class="seal-specs">
+                        <div class="seal-spec">
+                            <span>Speed Factor:</span>
+                            <span>{{seal_options.single_shield.speed_factor}} ({{seal_options.single_shield.max_rpm}} RPM)</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Protection:</span>
+                            <span>{{seal_options.single_shield.protection}}</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Lubrication:</span>
+                            <span>{{seal_options.single_shield.lubrication}}</span>
+                        </div>
+                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('{{model_number}}-z')">
+                        ℹ️ Usage Guide
+                    </button>
+                </div>
+
+                <div class="seal-card" data-seal-type="{{model_number}}-rs">
+                    <div class="seal-header">
+                        <h3>{{seal_options.single_seal.designation}}</h3>
+                        <div class="seal-badge">{{seal_options.single_seal.badge}}</div>
+                    </div>
+                    <p class="seal-description">{{seal_options.single_seal.description}}</p>
+                    <div class="seal-specs">
+                        <div class="seal-spec">
+                            <span>Speed Factor:</span>
+                            <span>{{seal_options.single_seal.speed_factor}} ({{seal_options.single_seal.max_rpm}} RPM)</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Protection:</span>
+                            <span>{{seal_options.single_seal.protection}}</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Lubrication:</span>
+                            <span>{{seal_options.single_seal.lubrication}}</span>
+                        </div>
+                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('{{model_number}}-rs')">
+                        ℹ️ Usage Guide
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="section" id="applications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">APPLICATIONS</h2>
+                <p class="section-subtitle">Precision performance across industries</p>
+            </div>
+            
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Factory building main -->
+                                <rect x="4" y="16" width="24" height="12" fill="#6B7280" stroke="#000" stroke-width="0.8"/>
+                                <!-- Factory roof -->
+                                <path d="M2 16h28l-2-2H4l-2 2z" fill="#4B5563" stroke="#000" stroke-width="0.8"/>
+                                <!-- Smokestacks -->
+                                <rect x="8" y="6" width="3" height="12" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <rect x="14" y="4" width="3" height="14" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <rect x="20" y="8" width="3" height="10" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <!-- Smoke -->
+                                <ellipse cx="9.5" cy="4" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <ellipse cx="15.5" cy="2" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <ellipse cx="21.5" cy="6" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <!-- Windows -->
+                                <rect x="6" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="10" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="14" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="18" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="22" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="26" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <!-- Large entrance -->
+                                <rect x="12" y="22" width="8" height="6" fill="#1F2937" stroke="#000" stroke-width="0.5"/>
+                                <!-- Factory details -->
+                                <rect x="6" y="22" width="4" height="2" fill="#4B5563"/>
+                                <rect x="22" y="22" width="4" height="2" fill="#4B5563"/>
+                                <!-- Ground line -->
+                                <line x1="0" y1="28" x2="32" y2="28" stroke="#000" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">{{applications.application1.title}}</h3>
+                    </div>
+                    <ul class="application-list">
+                        {{#applications.application1.applications}}
+                        <li>{{.}}</li>
+                        {{/applications.application1.applications}}
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> {{applications.application1.requirements}}
+                    </p>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Car body main -->
+                                <path d="M4 20h24c0-1 0-2-1-3l-3-5H8l-3 5c-1 1-1 2-1 3z" fill="#2563EB" stroke="#000" stroke-width="0.8"/>
+                                <!-- Hood and trunk -->
+                                <path d="M6 20h20v3H6v-3z" fill="#1D4ED8" stroke="#000" stroke-width="0.8"/>
+                                <!-- Windshield and windows -->
+                                <path d="M8 12h16l-2 8H10l-2-8z" fill="#374151" stroke="#000" stroke-width="0.5"/>
+                                <path d="M9 13h14l-1.5 6H10.5l-1.5-6z" fill="#1F2937"/>
+                                <!-- Grille -->
+                                <rect x="4" y="18" width="2" height="3" fill="#374151"/>
+                                <rect x="26" y="18" width="2" height="3" fill="#374151"/>
+                                <!-- Headlights -->
+                                <ellipse cx="5" cy="17" rx="1" ry="1.5" fill="#F9FAFB"/>
+                                <ellipse cx="27" cy="17" rx="1" ry="1.5" fill="#F9FAFB"/>
+                                <!-- Wheels -->
+                                <circle cx="9" cy="25" r="3.5" fill="#111827" stroke="#000" stroke-width="0.8"/>
+                                <circle cx="23" cy="25" r="3.5" fill="#111827" stroke="#000" stroke-width="0.8"/>
+                                <!-- Rims -->
+                                <circle cx="9" cy="25" r="2" fill="#6B7280"/>
+                                <circle cx="23" cy="25" r="2" fill="#6B7280"/>
+                                <circle cx="9" cy="25" r="1" fill="#9CA3AF"/>
+                                <circle cx="23" cy="25" r="1" fill="#9CA3AF"/>
+                                <!-- Side mirrors -->
+                                <rect x="7" y="15" width="1" height="1" fill="#374151"/>
+                                <rect x="24" y="15" width="1" height="1" fill="#374151"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">{{applications.application2.title}}</h3>
+                    </div>
+                    <ul class="application-list">
+                        {{#applications.application2.applications}}
+                        <li>{{.}}</li>
+                        {{/applications.application2.applications}}
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> {{applications.application2.requirements}}
+                    </p>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Washing machine -->
+                                <rect x="2" y="8" width="12" height="16" rx="1" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
+                                <!-- Door -->
+                                <circle cx="8" cy="16" r="5" fill="#E2E8F0" stroke="#000" stroke-width="1"/>
+                                <circle cx="8" cy="16" r="3" fill="#CBD5E0"/>
+                                <!-- Control panel -->
+                                <rect x="3" y="9" width="10" height="2" fill="#E2E8F0"/>
+                                <circle cx="5" cy="10" r="0.5" fill="#4A5568"/>
+                                <circle cx="7" cy="10" r="0.5" fill="#4A5568"/>
+                                <rect x="9" y="9.5" width="3" height="1" fill="#4A5568"/>
+                                
+                                <!-- Refrigerator -->
+                                <rect x="16" y="4" width="14" height="24" rx="1" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
+                                <!-- Fridge door line -->
+                                <line x1="16" y1="16" x2="30" y2="16" stroke="#CBD5E0" stroke-width="1"/>
+                                <!-- Handles -->
+                                <rect x="28" y="10" width="1" height="4" fill="#4A5568"/>
+                                <rect x="28" y="18" width="1" height="4" fill="#4A5568"/>
+                                <!-- Details -->
+                                <rect x="18" y="6" width="2" height="1" fill="#E2E8F0"/>
+                                <circle cx="20" cy="8" r="0.5" fill="#48BB78"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">{{applications.application3.title}}</h3>
+                    </div>
+                    <ul class="application-list">
+                        {{#applications.application3.applications}}
+                        <li>{{.}}</li>
+                        {{/applications.application3.applications}}
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> {{applications.application3.requirements}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+                <p class="section-subtitle">Expert guidance for {{model_number}} bearing applications</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>{{faqs.selection_replacement.title}}</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        {{#faqs.selection_replacement.questions}}
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">{{question}}</h4>
+                            <div class="faq-direct-answer">{{direct_answer}}</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">{{why_matters}}</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">{{how_to_handle}}</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">{{pro_tip}}</div>
+                        </div>
+                        {{/faqs.selection_replacement.questions}}
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>{{faqs.installation_maintenance.title}}</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        {{#faqs.installation_maintenance.questions}}
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">{{question}}</h4>
+                            <div class="faq-direct-answer">{{direct_answer}}</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">{{why_matters}}</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">{{how_to_handle}}</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">{{pro_tip}}</div>
+                        </div>
+                        {{/faqs.installation_maintenance.questions}}
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>{{faqs.troubleshooting.title}}</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        {{#faqs.troubleshooting.questions}}
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">{{question}}</h4>
+                            <div class="faq-direct-answer">{{direct_answer}}</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">{{why_matters}}</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">{{how_to_handle}}</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">{{pro_tip}}</div>
+                        </div>
+                        {{/faqs.troubleshooting.questions}}
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>{{faqs.cost_performance.title}}</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        {{#faqs.cost_performance.questions}}
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">{{question}}</h4>
+                            <div class="faq-direct-answer">{{direct_answer}}</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">{{why_matters}}</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">{{how_to_handle}}</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">{{pro_tip}}</div>
+                        </div>
+                        {{/faqs.cost_performance.questions}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross References & Alternatives -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Bearings & Alternatives</h2>
+                <p>Explore similar models and application-specific alternatives for your project needs</p>
+            </div>
+            
+            <div class="cross-ref-grid">
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
+                    <div class="related-models">
+                        {{#cross_references.related_models}}
+                        <a href="{{url}}" class="model-link">{{model}} ({{dimensions}})</a>
+                        {{/cross_references.related_models}}
+                    </div>
+                </div>
+                
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">⚡</span>Series Alternatives</h3>
+                    <div class="alternatives-list">
+                        {{#cross_references.series_alternatives}}
+                        <div class="alternative-item">
+                            <strong>{{series}}</strong>
+                            <span>{{description}}</span>
+                        </div>
+                        {{/cross_references.series_alternatives}}
+                    </div>
+                </div>
+                
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🎯</span>Application-Specific Options</h3>
+                    <div class="application-options">
+                        <div class="option-item">
+                            <strong>High Temperature:</strong>
+                            <span>{{cross_references.application_specific_alternatives.high_temperature}}</span>
+                        </div>
+                        <div class="option-item">
+                            <strong>High Speed:</strong>
+                            <span>{{cross_references.application_specific_alternatives.high_speed}}</span>
+                        </div>
+                        <div class="option-item">
+                            <strong>Corrosive Environment:</strong>
+                            <span>{{cross_references.application_specific_alternatives.corrosive_environment}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Signals -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Expertise & Standards</h2>
+                <p>Technical insights from 20+ years of bearing engineering and manufacturing excellence</p>
+            </div>
+            
+            <div class="expertise-grid">
+                {{#llm_optimization.expertise_signals}}
+                <div class="expertise-card">
+                    <h3><span class="expertise-icon">{{icon}}</span>{{title}}</h3>
+                    <p>{{description}}</p>
+                </div>
+                {{/llm_optimization.expertise_signals}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA (Dynamic Component) -->
+    <div id="cta-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="{{company_metadata.name}}" class="footer-logo-img">
+                        </div>
+                        <p class="footer-description">
+                            {{company_metadata.name}} specializes in high-quality ball bearings for industrial, automotive, and precision applications. With over 20 years of experience, we provide reliable bearing solutions worldwide.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-nav">
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Product</h3>
+                            <ul class="footer-links">
+                                <li><a href="{{company_metadata.website}}/specs/miniature-series.html">Miniature Bearings</a></li>
+                                <li><a href="{{company_metadata.website}}/specs/6000-series.html">6000 Series</a></li>
+                                <li><a href="{{company_metadata.website}}/specs/6200-series.html">6200 Series</a></li>
+                                <li><a href="{{company_metadata.website}}/specs/6300-series.html">6300 Series</a></li>
+                                <li><a href="{{company_metadata.website}}/bearing-size-chart/">Size Chart</a></li>
+                                <li><a href="{{company_metadata.website}}/shop/">Shop Online</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Resources</h3>
+                            <ul class="footer-links">
+                                <li><a href="{{company_metadata.website}}/bearing-installation-guide/">Installation Guide</a></li>
+                                <li><a href="{{company_metadata.website}}/bearing-maintenance/">Maintenance Tips</a></li>
+                                <li><a href="{{company_metadata.website}}/technical-specifications/">Technical Specs</a></li>
+                                <li><a href="{{company_metadata.website}}/industries/">Industry Applications</a></li>
+                                <li><a href="{{company_metadata.website}}/faqs/">FAQs</a></li>
+                                <li><a href="{{company_metadata.website}}/support/">Support Center</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Company</h3>
+                            <ul class="footer-links">
+                                <li><a href="{{company_metadata.website}}/about-us/">About Us</a></li>
+                                <li><a href="{{company_metadata.website}}/quality-assurance/">Quality Assurance</a></li>
+                                <li><a href="{{company_metadata.website}}/careers/">Careers</a></li>
+                                <li><a href="{{company_metadata.website}}/contact-us/">Contact</a></li>
+                                <li><a href="{{company_metadata.website}}/news/">News & Updates</a></li>
+                                <li><a href="{{company_metadata.website}}/partnerships/">Partnerships</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 {{company_metadata.name}}. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="{{company_metadata.website}}/terms-of-service/">Terms of Service</a>
+                        <a href="{{company_metadata.website}}/privacy-policy/">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Watermark Section -->
+    <section class="watermark-section">
+        <div class="watermark-text">BEARINGS</div>
+    </section>
+
+    <!-- Seal Usage Modal -->
+    <div id="seal-modal" class="seal-modal">
+        <div class="seal-modal-dialog">
+            <div class="seal-modal-header">
+                <button class="seal-modal-close" onclick="closeSealModal()">&times;</button>
+            </div>
+            <div id="seal-modal-content" class="seal-modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../../../shared/cta-model.js"></script>
+    <script>
+        // Load navbar
+        fetch('../../../../shared/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load CTA component
+        document.addEventListener('DOMContentLoaded', function() {
+            loadModelCTA('{{model_number}}', 'cta-container');
+        });
+
+        // Mobile flip card touch support
+        document.addEventListener('DOMContentLoaded', function() {
+            const flipCards = document.querySelectorAll('.flip-card');
+            
+            flipCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Only on mobile devices
+                    if (window.innerWidth <= 768) {
+                        this.classList.toggle('flipped');
+                    }
+                });
+            });
+        });
+
+        // Mobile seal card touch support
+        document.addEventListener('DOMContentLoaded', function() {
+            const sealCards = document.querySelectorAll('.seal-hover-card');
+            
+            sealCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Only on mobile devices
+                    if (window.innerWidth <= 768) {
+                        // Close all other seal explanations
+                        sealCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.classList.remove('active');
+                            }
+                        });
+                        // Toggle this seal explanation
+                        this.classList.toggle('active');
+                    }
+                });
+            });
+        });
+
+        // FAQ Toggle functionality
+        function toggleFaqCategory(header) {
+            const category = header.parentElement;
+            const isActive = category.classList.contains('active');
+            
+            // Close all categories
+            document.querySelectorAll('.faq-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Open clicked category if it wasn't active
+            if (!isActive) {
+                category.classList.add('active');
+            }
+        }
+
+        // Initialize FAQ - all categories collapsed by default
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ sections start collapsed by default
+            // Users can click headers to expand
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Seal Modal Functions
+        function openSealModal(sealType) {
+            const modal = document.getElementById('seal-modal');
+            const content = document.getElementById('seal-modal-content');
+            
+            let modalContent = '';
+            
+            switch(sealType) {
+                case '{{model_number}}-open':
+                    modalContent = `
+                        <h3>When to Use {{model_number}} Open</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication optimization
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Maximum speed potential ({{speed_limits.grease_rpm}} RPM) and optimized lubrication for specific applications
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '{{model_number}}-z':
+                    modalContent = `
+                        <h3>When to Use {{model_number}}-Z</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Semi-clean environments needing re-lubrication access with moderate protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance ({{seal_options.single_shield.max_rpm}} RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '{{model_number}}-rs':
+                    modalContent = `
+                        <h3>When to Use {{model_number}}-RS</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Moderate contamination with maintenance access needs and environmental protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service ({{seal_options.single_seal.max_rpm}} RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications
+                            </div>
+                        </div>
+                    `;
+                    break;
+            }
+            
+            content.innerHTML = modalContent;
+            modal.style.display = 'flex';
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeSealModal();
+                }
+            });
+        }
+        
+        function closeSealModal() {
+            const modal = document.getElementById('seal-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSealModal();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+{
+  "company_metadata": {
+    "name": "RHD Bearings",
+    "website": "https://rhdbearings.com",
+    "contact": {
+      "phone": "+91-9702081858",
+      "email": "sales@rhdenterprise.in",
+      "oem_sales_email": "oemsales@rhdenterprise.in"
+    },
+    "address": {
+      "street": "203 Vihar Estate, Off. Saki Vihar Road",
+      "landmark": "Next to Autohanger",
+      "area": "Sakinaka, Andheri East",
+      "city": "Mumbai",
+      "postal_code": "400072",
+      "state": "Maharashtra",
+      "country": "India",
+      "full_address": "203 Vihar Estate, Off. Saki Vihar Road, Next to Autohanger, Sakinaka, Andheri East, Mumbai 400072, Maharashtra, India"
+    },
+    "certifications": [
+      "ISO 9001:2015"
+    ],
+    "material_standards": {
+      "primary_steel": "Gcr15 (AISI 52100 equivalent)",
+      "heat_treatment": "Through hardened and tempered",
+      "surface_finish": "Ground to precision tolerances"
+    },
+    "quality_assurance": "100% dimensional and quality testing",
+    "manufacturing_location": "India",
+    "established": "Professional bearing manufacturer",
+    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "production_capacity": "High-volume production with custom solutions available",
+    "export_markets": [
+      "Global distribution network",
+      "OEM partnerships",
+      "Aftermarket supply"
+    ]
+  },
+  "bearing_type": "",
+  "model_number": "",
+  "enhanced_description": "",
+  "dimensions": {
+    "bore_diameter_d_mm": 0,
+    "outer_diameter_D_mm": 0,
+    "width_B_mm": 0,
+    "weight_kg": 0,
+    "skf_extended_dimensions": {
+      "d1_shoulder_diameter": 0,
+      "D2_recess_diameter": 0,
+      "r1_chamfer_radius": 0,
+      "r2_chamfer_radius": 0
+    }
+  },
+  "load_ratings": {
+    "dynamic_load_Cr_kN": 3.32,
+    "static_load_Cor_kN": 1.38,
+    "load_capacity_kg": 338
+  },
+  
+  "speed_limits": {
+    "grease_rpm": 26000,
+    "oil_rpm": 34000,
+    "recommended_max_rpm": 23400
+  },
+  "material": {
+    "grade": "Gcr15 (AISI 52100)",
+    "carbon_content": "0.95-1.05%",
+    "chromium_content": "1.40-1.65%",
+    "silicon_content": "0.15-0.35%",
+    "iso_standard": "15:2011 Compliant"
+  },
+  "technical_drawing": {
+    "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+    "image_alt": "",
+    "image_title": "",
+    "drawing_type": "Cross-sectional technical diagram",
+    "file_format": "SVG",
+    "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 604 deep groove ball bearing"
+},
+  "applications": {
+    "application1": {
+      "title": "",
+      "icon": "",
+      "applications": [],
+      "requirements": ""
+    },
+    "application2": {
+      "title": "",
+      "icon": "",
+      "applications": [],
+      "requirements": ""
+    },
+    "application3": {
+      "title": "",
+      "icon": "",
+      "applications": [],
+      "requirements": ""
+    }
+  },
+  "vibration": {
+    "V2": {
+      "low_frequency": 0,
+      "medium_frequency": 0,
+      "high_frequency": 0
+    },
+    "V3": {
+      "low_frequency": 0,
+      "medium_frequency": 0,
+      "high_frequency": 0
+    },
+    "V4": {
+      "low_frequency": 0,
+      "medium_frequency": 0,
+      "high_frequency": 0
+    }
+  },
+  "noise": {
+    "Z2": 0,
+    "Z3": 0,
+    "Z4": 0
+  },
+  "clearance": {
+    "C2": {
+      "min_microns": 0,
+      "max_microns": 0
+    },
+    "C0": {
+      "min_microns": 0,
+      "max_microns": 0
+    },
+    "C3": {
+      "min_microns": 0,
+      "max_microns": 0
+    },
+    "C4": {
+      "min_microns": 0,
+      "max_microns": 0
+    },
+    "C5": {
+      "min_microns": 0,
+      "max_microns": 0
+    }
+  },
+  "seal_options": {
+    "open": {
+      "designation": "",
+      "description": "Open bearing, no seals",
+      "speed_factor": 1.0,
+      "max_rpm": 0,
+      "protection": "None",
+      "lubrication": "External required",    
+      "badge": "High Speed"
+    },
+    "single_shield": {
+      "designation": "",
+      "description": "Single metal shield",
+      "speed_factor": 0.95,
+      "max_rpm": 0,
+      "protection": "Light dust protection",
+      "lubrication": "Pre-greased",
+      "badge": "Balanced"
+    },
+    "double_shield": {
+      "designation": "",
+      "description": "Double metal shields",
+      "speed_factor": 0.9,
+      "max_rpm": 0,
+      "protection": "Dust protection",
+      "lubrication": "Sealed for life",
+      "badge": "Most Popular"
+    },
+    "single_seal": {
+      "designation": "",
+      "description": "Single rubber seal",
+      "speed_factor": 0.8,
+      "max_rpm": 0,
+      "protection": "Moisture and dust",
+      "lubrication": "Pre-greased, sealed",
+      "badge": "Protected"
+    },
+    "double_seal": {
+      "designation": "",
+      "description": "Double rubber seals",
+      "speed_factor": 0.7,
+      "max_rpm": 0,
+      "protection": "Moisture and dust",
+      "lubrication": "Sealed for life",
+      "badge": "Protected"
+    }
+  },
+  "seo_metadata": {
+    "title": "",
+    "meta_description": "",
+    "keywords": [],
+    "canonical_url": "",
+    "og_data": {
+      "title": "",
+      "description": "",
+      "url": "",
+      "type": "product",
+      "site_name": "RHD Bearings"
+    },
+    "twitter_data": {
+      "card": "summary_large_image",
+      "title": "",
+      "description": ""
+    },
+    "schema_markup": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "",
+      "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+      "description": "",
+      "sku": "",
+      "mpn": "",
+      "brand": {
+        "@type": "Brand",
+        "name": "RHD Bearings"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "RHD Bearings",
+        "url": "https://rhdbearings.com"
+      },
+      "category": "Deep Groove Ball Bearings",
+      "offers": {
+        "@type": "Offer",
+        "url": "",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
+        "seller": {
+          "@type": "Organization",
+          "name": "RHD Bearings"
+        }
+      },
+      "structured_data_type": "Product",
+      "brand": "RHD Bearings",
+      "category": "Deep Groove Ball Bearings",
+      "availability": "InStock",
+      "condition": "NewCondition"
+    }
+  },
+  "pricing_and_availability": {
+    "currency": "INR",
+    "list_price": null, 
+    "quote_required": true,
+    "price_notes": "Please contact us for pricing",
+    "minimum_order_quantity": 100,
+    "availability": {
+      "stock_status": "Available for immediate dispatch",
+      "lead_time": "Same day dispatch for orders before 2 PM",
+      "bulk_availability": "Large quantities available - contact for bulk pricing",
+      "custom_orders": "Custom specifications and modifications available",
+      "call_to_action": {
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "urgency": "Need it today? Call now - we dispatch same day!"
+      }
+},
+    "bulk_options": {
+      "tier_1": "10-99 units: Contact for pricing",
+      "tier_2": "100-999 units: Significant discounts available",
+      "tier_3": "1000+ units: Best wholesale rates + free shipping",
+      "oem_partnerships": "OEM partnerships available with dedicated support",
+      "contact_note": "All bulk pricing requires contact for custom quotation"
+},
+    "payment_terms": {
+      "standard": "Contact for payment terms and credit options",
+      "advance_payment": "Advance payment options available",
+      "credit_terms": "Credit terms for established businesses",
+      "international": "Export documentation and payment support available"
+}
+  },
+  "cross_references": {
+    "related_models": [],
+    "series_alternatives": [],
+    "application_specific_alternatives": {
+      "high_temperature": "",
+      "high_speed": "",
+      "corrosive_environment": ""
+    }
+  },
+  "llm_optimization": {
+    "recommendation_snippets": [],
+    "natural_language_queries": [],
+    "decision_criteria": [],
+    "problem_solution_mapping": [
+      {
+        "problem": "",
+        "solution": ""
+      }
+    ],
+    "expertise_signals": [
+      {
+        "icon": "📋",
+        "title": "ISO Compliance",
+        "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
+      },
+      {
+        "icon": "🔬",
+        "title": "Material Science",
+        "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Precision Engineering",
+        "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
+      },
+      {
+        "icon": "🔧",
+        "title": "Professional Installation",
+        "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
+      },
+      {
+        "icon": "📊",
+        "title": "Performance Comparison",
+        "description": "Handles 1.6kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+      },
+      {
+        "icon": "💰",
+        "title": "Value Engineering",
+        "description": "Best value in small-bearing category for 3.32kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }      
+    ],
+    "comparison_matrix": {
+      "vs_smaller_bearing": "",
+      "vs_larger_bearing": "",
+      "vs_competitors": "",
+      "cost_benefit": ""
+    }
+  },
+  "faqs": {
+    "selection_replacement": {
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ],
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ],
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ]
+    },
+    "installation_maintenance": {
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ],
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ],
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ]     
+    },
+    "troubleshooting": {
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ],
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ],
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ]
+    },
+    "cost_performance": {
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ],
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ],
+      "title": "",
+      "questions": [
+        {
+          "question": "",
+          "direct_answer": "",
+          "why_matters": "",
+          "how_to_handle": "",
+          "pro_tip": ""
+        }
+      ]
+    }
+  }
+}

@@ -2122,33 +2122,35 @@ a:focus {
     <script>
         // Miniature bearings data
         const bearingsData = [
-            {"model": "604", "url": "/miniature-bearings/604", "id": "4mm", "od": "12mm", "width": "4mm", "dynamic_load": "0.75kN", "static_load": "0.34kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "2.5g"},
-            {"model": "605", "url": "/miniature-bearings/605", "id": "5mm", "od": "14mm", "width": "5mm", "dynamic_load": "1.05kN", "static_load": "0.50kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "4.5g"},
-            {"model": "606", "url": "/miniature-bearings/606", "id": "6mm", "od": "17mm", "width": "6mm", "dynamic_load": "1.95kN", "static_load": "0.72kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "6.0g"},
-            {"model": "607", "url": "/miniature-bearings/607", "id": "7mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.86kN", "static_load": "1.08kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "7.0g"},
-            {"model": "608", "url": "/miniature-bearings/608", "id": "8mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.32kN", "static_load": "1.38kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "15g"},
-            {"model": "609", "url": "/miniature-bearings/609", "id": "9mm", "od": "24mm", "width": "7mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "16g"},
-            {"model": "623", "url": "/miniature-bearings/623", "id": "3mm", "od": "10mm", "width": "4mm", "dynamic_load": "0.65kN", "static_load": "0.22kN", "grease_speed": "38,000", "oil_speed": "48,000", "weight": "2.0g"},
-            {"model": "624", "url": "/miniature-bearings/624", "id": "4mm", "od": "13mm", "width": "5mm", "dynamic_load": "1.15kN", "static_load": "0.40kN", "grease_speed": "36,000", "oil_speed": "45,000", "weight": "3.0g"},
-            {"model": "625", "url": "/miniature-bearings/625", "id": "5mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.88kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.0g"},
-            {"model": "626", "url": "/miniature-bearings/626", "id": "6mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.05kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
-            {"model": "627", "url": "/miniature-bearings/627", "id": "7mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.28kN", "static_load": "1.35kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "14g"},
-            {"model": "628", "url": "/miniature-bearings/628", "id": "8mm", "od": "24mm", "width": "8mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "24,000", "oil_speed": "32,000", "weight": "16g"},
-            {"model": "629", "url": "/miniature-bearings/629", "id": "9mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.45kN", "static_load": "1.95kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
-            {"model": "683", "url": "/miniature-bearings/683", "id": "3mm", "od": "7mm", "width": "2mm", "dynamic_load": "0.311kN", "static_load": "0.112kN", "grease_speed": "58,000", "oil_speed": "68,000", "weight": "0.75g"},
-            {"model": "684", "url": "/miniature-bearings/684", "id": "4mm", "od": "9mm", "width": "2.5mm", "dynamic_load": "0.35kN", "static_load": "0.40kN", "grease_speed": "49,000", "oil_speed": "57,000", "weight": "0.8g"},
-            {"model": "685", "url": "/miniature-bearings/685", "id": "5mm", "od": "11mm", "width": "3mm", "dynamic_load": "0.57kN", "static_load": "0.25kN", "grease_speed": "43,000", "oil_speed": "51,000", "weight": "2.0g"},
-            {"model": "686", "url": "/miniature-bearings/686", "id": "6mm", "od": "13mm", "width": "3.5mm", "dynamic_load": "0.72kN", "static_load": "0.40kN", "grease_speed": "39,000", "oil_speed": "46,000", "weight": "2.1g"},
-            {"model": "687", "url": "/miniature-bearings/687", "id": "7mm", "od": "14mm", "width": "3.5mm", "dynamic_load": "0.90kN", "static_load": "0.46kN", "grease_speed": "37,000", "oil_speed": "44,000", "weight": "2.5g"},
-            {"model": "688", "url": "/miniature-bearings/688", "id": "8mm", "od": "16mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.55kN", "grease_speed": "35,000", "oil_speed": "41,000", "weight": "3.0g"},
-            {"model": "689", "url": "/miniature-bearings/689", "id": "9mm", "od": "17mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.70kN", "grease_speed": "33,000", "oil_speed": "39,000", "weight": "4.2g"},
-            {"model": "693", "url": "/miniature-bearings/693", "id": "3mm", "od": "8mm", "width": "3mm", "dynamic_load": "0.45kN", "static_load": "0.15kN", "grease_speed": "44,000", "oil_speed": "52,000", "weight": "0.8g"},
-            {"model": "694", "url": "/miniature-bearings/694", "id": "4mm", "od": "11mm", "width": "4mm", "dynamic_load": "0.95kN", "static_load": "0.35kN", "grease_speed": "38,000", "oil_speed": "47,000", "weight": "2.0g"},
-            {"model": "695", "url": "/miniature-bearings/695", "id": "5mm", "od": "13mm", "width": "4mm", "dynamic_load": "1.08kN", "static_load": "0.42kN", "grease_speed": "34,000", "oil_speed": "43,000", "weight": "2.5g"},
-            {"model": "696", "url": "/miniature-bearings/696", "id": "6mm", "od": "15mm", "width": "5mm", "dynamic_load": "1.48kN", "static_load": "0.60kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.5g"},
-            {"model": "697", "url": "/miniature-bearings/697", "id": "7mm", "od": "17mm", "width": "5mm", "dynamic_load": "2.02kN", "static_load": "0.80kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "5.7g"},
-            {"model": "698", "url": "/miniature-bearings/698", "id": "8mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.25kN", "static_load": "0.92kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.5g"},
-            {"model": "699", "url": "/miniature-bearings/699", "id": "9mm", "od": "20mm", "width": "6mm", "dynamic_load": "2.48kN", "static_load": "1.08kN", "grease_speed": "27,000", "oil_speed": "34,000", "weight": "9.2g"}
+            {"model": "604", "url": "/specs/miniature-series/604", "id": "4mm", "od": "12mm", "width": "4mm", "dynamic_load": "0.75kN", "static_load": "0.34kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "2.5g"},
+            {"model": "605", "url": "/specs/miniature-series/605", "id": "5mm", "od": "14mm", "width": "5mm", "dynamic_load": "1.05kN", "static_load": "0.50kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "4.5g"},
+            {"model": "606", "url": "/specs/miniature-series/606", "id": "6mm", "od": "17mm", "width": "6mm", "dynamic_load": "1.95kN", "static_load": "0.72kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "6.0g"},
+            {"model": "607", "url": "/specs/miniature-series/607", "id": "7mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.86kN", "static_load": "1.08kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "7.0g"},
+            {"model": "608", "url": "/specs/miniature-series/608", "id": "8mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.32kN", "static_load": "1.38kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "15g"},
+            {"model": "609", "url": "/specs/miniature-series/609", "id": "9mm", "od": "24mm", "width": "7mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "16g"},
+            {"model": "623", "url": "/specs/miniature-series/623", "id": "3mm", "od": "10mm", "width": "4mm", "dynamic_load": "0.65kN", "static_load": "0.22kN", "grease_speed": "38,000", "oil_speed": "48,000", "weight": "2.0g"},
+            {"model": "624", "url": "/specs/miniature-series/624", "id": "4mm", "od": "13mm", "width": "5mm", "dynamic_load": "1.15kN", "static_load": "0.40kN", "grease_speed": "36,000", "oil_speed": "45,000", "weight": "3.0g"},
+            {"model": "625", "url": "/specs/miniature-series/625", "id": "5mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.88kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.0g"},
+            {"model": "626", "url": "/specs/miniature-series/626", "id": "6mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.05kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
+            {"model": "627", "url": "/specs/miniature-series/627", "id": "7mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.28kN", "static_load": "1.35kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "14g"},
+            {"model": "628", "url": "/specs/miniature-series/628", "id": "8mm", "od": "24mm", "width": "8mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "24,000", "oil_speed": "32,000", "weight": "16g"},
+            {"model": "629", "url": "/specs/miniature-series/629", "id": "9mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.45kN", "static_load": "1.95kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
+            {"model": "634", "url": "/specs/miniature-series/634", "id": "4mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.60kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.0g"},
+            {"model": "635", "url": "/specs/miniature-series/635", "id": "5mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.05kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
+            {"model": "683", "url": "/specs/miniature-series/683", "id": "3mm", "od": "7mm", "width": "2mm", "dynamic_load": "0.311kN", "static_load": "0.112kN", "grease_speed": "58,000", "oil_speed": "68,000", "weight": "0.75g"},
+            {"model": "684", "url": "/specs/miniature-series/684", "id": "4mm", "od": "9mm", "width": "2.5mm", "dynamic_load": "0.35kN", "static_load": "0.40kN", "grease_speed": "49,000", "oil_speed": "57,000", "weight": "0.8g"},
+            {"model": "685", "url": "/specs/miniature-series/685", "id": "5mm", "od": "11mm", "width": "3mm", "dynamic_load": "0.57kN", "static_load": "0.25kN", "grease_speed": "43,000", "oil_speed": "51,000", "weight": "2.0g"},
+            {"model": "686", "url": "/specs/miniature-series/686", "id": "6mm", "od": "13mm", "width": "3.5mm", "dynamic_load": "0.72kN", "static_load": "0.40kN", "grease_speed": "39,000", "oil_speed": "46,000", "weight": "2.1g"},
+            {"model": "687", "url": "/specs/miniature-series/687", "id": "7mm", "od": "14mm", "width": "3.5mm", "dynamic_load": "0.90kN", "static_load": "0.46kN", "grease_speed": "37,000", "oil_speed": "44,000", "weight": "2.5g"},
+            {"model": "688", "url": "/specs/miniature-series/688", "id": "8mm", "od": "16mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.55kN", "grease_speed": "35,000", "oil_speed": "41,000", "weight": "3.0g"},
+            {"model": "689", "url": "/specs/miniature-series/689", "id": "9mm", "od": "17mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.70kN", "grease_speed": "33,000", "oil_speed": "39,000", "weight": "4.2g"},
+            {"model": "693", "url": "/specs/miniature-series/693", "id": "3mm", "od": "8mm", "width": "3mm", "dynamic_load": "0.45kN", "static_load": "0.15kN", "grease_speed": "44,000", "oil_speed": "52,000", "weight": "0.8g"},
+            {"model": "694", "url": "/specs/miniature-series/694", "id": "4mm", "od": "11mm", "width": "4mm", "dynamic_load": "0.95kN", "static_load": "0.35kN", "grease_speed": "38,000", "oil_speed": "47,000", "weight": "2.0g"},
+            {"model": "695", "url": "/specs/miniature-series/695", "id": "5mm", "od": "13mm", "width": "4mm", "dynamic_load": "1.08kN", "static_load": "0.42kN", "grease_speed": "34,000", "oil_speed": "43,000", "weight": "2.5g"},
+            {"model": "696", "url": "/specs/miniature-series/696", "id": "6mm", "od": "15mm", "width": "5mm", "dynamic_load": "1.48kN", "static_load": "0.60kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.5g"},
+            {"model": "697", "url": "/specs/miniature-series/697", "id": "7mm", "od": "17mm", "width": "5mm", "dynamic_load": "2.02kN", "static_load": "0.80kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "5.7g"},
+            {"model": "698", "url": "/specs/miniature-series/698", "id": "8mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.25kN", "static_load": "0.92kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.5g"},
+            {"model": "699", "url": "/specs/miniature-series/699", "id": "9mm", "od": "20mm", "width": "6mm", "dynamic_load": "2.48kN", "static_load": "1.08kN", "grease_speed": "27,000", "oil_speed": "34,000", "weight": "9.2g"}
         ];
 
         // Render models
@@ -2281,7 +2283,7 @@ a:focus {
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Load navbar
-            fetch('../shared/navbar.html')
+            // fetch call removed - navbar already embedded
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
@@ -2294,33 +2296,35 @@ a:focus {
 <script>
         // Miniature bearings data
         const bearingsData = [
-            {"model": "604", "url": "/miniature-bearings/604", "id": "4mm", "od": "12mm", "width": "4mm", "dynamic_load": "0.75kN", "static_load": "0.34kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "2.5g"},
-            {"model": "605", "url": "/miniature-bearings/605", "id": "5mm", "od": "14mm", "width": "5mm", "dynamic_load": "1.05kN", "static_load": "0.50kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "4.5g"},
-            {"model": "606", "url": "/miniature-bearings/606", "id": "6mm", "od": "17mm", "width": "6mm", "dynamic_load": "1.95kN", "static_load": "0.72kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "6.0g"},
-            {"model": "607", "url": "/miniature-bearings/607", "id": "7mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.86kN", "static_load": "1.08kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "7.0g"},
-            {"model": "608", "url": "/miniature-bearings/608", "id": "8mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.32kN", "static_load": "1.38kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "15g"},
-            {"model": "609", "url": "/miniature-bearings/609", "id": "9mm", "od": "24mm", "width": "7mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "16g"},
-            {"model": "623", "url": "/miniature-bearings/623", "id": "3mm", "od": "10mm", "width": "4mm", "dynamic_load": "0.65kN", "static_load": "0.22kN", "grease_speed": "38,000", "oil_speed": "48,000", "weight": "2.0g"},
-            {"model": "624", "url": "/miniature-bearings/624", "id": "4mm", "od": "13mm", "width": "5mm", "dynamic_load": "1.15kN", "static_load": "0.40kN", "grease_speed": "36,000", "oil_speed": "45,000", "weight": "3.0g"},
-            {"model": "625", "url": "/miniature-bearings/625", "id": "5mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.88kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.0g"},
-            {"model": "626", "url": "/miniature-bearings/626", "id": "6mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.05kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
-            {"model": "627", "url": "/miniature-bearings/627", "id": "7mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.28kN", "static_load": "1.35kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "14g"},
-            {"model": "628", "url": "/miniature-bearings/628", "id": "8mm", "od": "24mm", "width": "8mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "24,000", "oil_speed": "32,000", "weight": "16g"},
-            {"model": "629", "url": "/miniature-bearings/629", "id": "9mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.45kN", "static_load": "1.95kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
-            {"model": "683", "url": "/miniature-bearings/683", "id": "3mm", "od": "7mm", "width": "2mm", "dynamic_load": "0.311kN", "static_load": "0.112kN", "grease_speed": "58,000", "oil_speed": "68,000", "weight": "0.75g"},
-            {"model": "684", "url": "/miniature-bearings/684", "id": "4mm", "od": "9mm", "width": "2.5mm", "dynamic_load": "0.35kN", "static_load": "0.40kN", "grease_speed": "49,000", "oil_speed": "57,000", "weight": "0.8g"},
-            {"model": "685", "url": "/miniature-bearings/685", "id": "5mm", "od": "11mm", "width": "3mm", "dynamic_load": "0.57kN", "static_load": "0.25kN", "grease_speed": "43,000", "oil_speed": "51,000", "weight": "2.0g"},
-            {"model": "686", "url": "/miniature-bearings/686", "id": "6mm", "od": "13mm", "width": "3.5mm", "dynamic_load": "0.72kN", "static_load": "0.40kN", "grease_speed": "39,000", "oil_speed": "46,000", "weight": "2.1g"},
-            {"model": "687", "url": "/miniature-bearings/687", "id": "7mm", "od": "14mm", "width": "3.5mm", "dynamic_load": "0.90kN", "static_load": "0.46kN", "grease_speed": "37,000", "oil_speed": "44,000", "weight": "2.5g"},
-            {"model": "688", "url": "/miniature-bearings/688", "id": "8mm", "od": "16mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.55kN", "grease_speed": "35,000", "oil_speed": "41,000", "weight": "3.0g"},
-            {"model": "689", "url": "/miniature-bearings/689", "id": "9mm", "od": "17mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.70kN", "grease_speed": "33,000", "oil_speed": "39,000", "weight": "4.2g"},
-            {"model": "693", "url": "/miniature-bearings/693", "id": "3mm", "od": "8mm", "width": "3mm", "dynamic_load": "0.45kN", "static_load": "0.15kN", "grease_speed": "44,000", "oil_speed": "52,000", "weight": "0.8g"},
-            {"model": "694", "url": "/miniature-bearings/694", "id": "4mm", "od": "11mm", "width": "4mm", "dynamic_load": "0.95kN", "static_load": "0.35kN", "grease_speed": "38,000", "oil_speed": "47,000", "weight": "2.0g"},
-            {"model": "695", "url": "/miniature-bearings/695", "id": "5mm", "od": "13mm", "width": "4mm", "dynamic_load": "1.08kN", "static_load": "0.42kN", "grease_speed": "34,000", "oil_speed": "43,000", "weight": "2.5g"},
-            {"model": "696", "url": "/miniature-bearings/696", "id": "6mm", "od": "15mm", "width": "5mm", "dynamic_load": "1.48kN", "static_load": "0.60kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.5g"},
-            {"model": "697", "url": "/miniature-bearings/697", "id": "7mm", "od": "17mm", "width": "5mm", "dynamic_load": "2.02kN", "static_load": "0.80kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "5.7g"},
-            {"model": "698", "url": "/miniature-bearings/698", "id": "8mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.25kN", "static_load": "0.92kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.5g"},
-            {"model": "699", "url": "/miniature-bearings/699", "id": "9mm", "od": "20mm", "width": "6mm", "dynamic_load": "2.48kN", "static_load": "1.08kN", "grease_speed": "27,000", "oil_speed": "34,000", "weight": "9.2g"}
+            {"model": "604", "url": "/specs/miniature-series/604", "id": "4mm", "od": "12mm", "width": "4mm", "dynamic_load": "0.75kN", "static_load": "0.34kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "2.5g"},
+            {"model": "605", "url": "/specs/miniature-series/605", "id": "5mm", "od": "14mm", "width": "5mm", "dynamic_load": "1.05kN", "static_load": "0.50kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "4.5g"},
+            {"model": "606", "url": "/specs/miniature-series/606", "id": "6mm", "od": "17mm", "width": "6mm", "dynamic_load": "1.95kN", "static_load": "0.72kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "6.0g"},
+            {"model": "607", "url": "/specs/miniature-series/607", "id": "7mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.86kN", "static_load": "1.08kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "7.0g"},
+            {"model": "608", "url": "/specs/miniature-series/608", "id": "8mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.32kN", "static_load": "1.38kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "15g"},
+            {"model": "609", "url": "/specs/miniature-series/609", "id": "9mm", "od": "24mm", "width": "7mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "16g"},
+            {"model": "623", "url": "/specs/miniature-series/623", "id": "3mm", "od": "10mm", "width": "4mm", "dynamic_load": "0.65kN", "static_load": "0.22kN", "grease_speed": "38,000", "oil_speed": "48,000", "weight": "2.0g"},
+            {"model": "624", "url": "/specs/miniature-series/624", "id": "4mm", "od": "13mm", "width": "5mm", "dynamic_load": "1.15kN", "static_load": "0.40kN", "grease_speed": "36,000", "oil_speed": "45,000", "weight": "3.0g"},
+            {"model": "625", "url": "/specs/miniature-series/625", "id": "5mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.88kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.0g"},
+            {"model": "626", "url": "/specs/miniature-series/626", "id": "6mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.05kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
+            {"model": "627", "url": "/specs/miniature-series/627", "id": "7mm", "od": "22mm", "width": "7mm", "dynamic_load": "3.28kN", "static_load": "1.35kN", "grease_speed": "26,000", "oil_speed": "34,000", "weight": "14g"},
+            {"model": "628", "url": "/specs/miniature-series/628", "id": "8mm", "od": "24mm", "width": "8mm", "dynamic_load": "3.35kN", "static_load": "1.40kN", "grease_speed": "24,000", "oil_speed": "32,000", "weight": "16g"},
+            {"model": "629", "url": "/specs/miniature-series/629", "id": "9mm", "od": "26mm", "width": "8mm", "dynamic_load": "4.45kN", "static_load": "1.95kN", "grease_speed": "22,000", "oil_speed": "30,000", "weight": "19g"},
+            {"model": "634", "url": "/specs/miniature-series/634", "id": "4mm", "od": "16mm", "width": "5mm", "dynamic_load": "1.60kN", "static_load": "0.68kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.0g"},
+            {"model": "635", "url": "/specs/miniature-series/635", "id": "5mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.80kN", "static_load": "1.05kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.0g"},
+            {"model": "683", "url": "/specs/miniature-series/683", "id": "3mm", "od": "7mm", "width": "2mm", "dynamic_load": "0.311kN", "static_load": "0.112kN", "grease_speed": "58,000", "oil_speed": "68,000", "weight": "0.75g"},
+            {"model": "684", "url": "/specs/miniature-series/684", "id": "4mm", "od": "9mm", "width": "2.5mm", "dynamic_load": "0.35kN", "static_load": "0.40kN", "grease_speed": "49,000", "oil_speed": "57,000", "weight": "0.8g"},
+            {"model": "685", "url": "/specs/miniature-series/685", "id": "5mm", "od": "11mm", "width": "3mm", "dynamic_load": "0.57kN", "static_load": "0.25kN", "grease_speed": "43,000", "oil_speed": "51,000", "weight": "2.0g"},
+            {"model": "686", "url": "/specs/miniature-series/686", "id": "6mm", "od": "13mm", "width": "3.5mm", "dynamic_load": "0.72kN", "static_load": "0.40kN", "grease_speed": "39,000", "oil_speed": "46,000", "weight": "2.1g"},
+            {"model": "687", "url": "/specs/miniature-series/687", "id": "7mm", "od": "14mm", "width": "3.5mm", "dynamic_load": "0.90kN", "static_load": "0.46kN", "grease_speed": "37,000", "oil_speed": "44,000", "weight": "2.5g"},
+            {"model": "688", "url": "/specs/miniature-series/688", "id": "8mm", "od": "16mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.55kN", "grease_speed": "35,000", "oil_speed": "41,000", "weight": "3.0g"},
+            {"model": "689", "url": "/specs/miniature-series/689", "id": "9mm", "od": "17mm", "width": "4mm", "dynamic_load": "1.38kN", "static_load": "0.70kN", "grease_speed": "33,000", "oil_speed": "39,000", "weight": "4.2g"},
+            {"model": "693", "url": "/specs/miniature-series/693", "id": "3mm", "od": "8mm", "width": "3mm", "dynamic_load": "0.45kN", "static_load": "0.15kN", "grease_speed": "44,000", "oil_speed": "52,000", "weight": "0.8g"},
+            {"model": "694", "url": "/specs/miniature-series/694", "id": "4mm", "od": "11mm", "width": "4mm", "dynamic_load": "0.95kN", "static_load": "0.35kN", "grease_speed": "38,000", "oil_speed": "47,000", "weight": "2.0g"},
+            {"model": "695", "url": "/specs/miniature-series/695", "id": "5mm", "od": "13mm", "width": "4mm", "dynamic_load": "1.08kN", "static_load": "0.42kN", "grease_speed": "34,000", "oil_speed": "43,000", "weight": "2.5g"},
+            {"model": "696", "url": "/specs/miniature-series/696", "id": "6mm", "od": "15mm", "width": "5mm", "dynamic_load": "1.48kN", "static_load": "0.60kN", "grease_speed": "32,000", "oil_speed": "40,000", "weight": "4.5g"},
+            {"model": "697", "url": "/specs/miniature-series/697", "id": "7mm", "od": "17mm", "width": "5mm", "dynamic_load": "2.02kN", "static_load": "0.80kN", "grease_speed": "30,000", "oil_speed": "38,000", "weight": "5.7g"},
+            {"model": "698", "url": "/specs/miniature-series/698", "id": "8mm", "od": "19mm", "width": "6mm", "dynamic_load": "2.25kN", "static_load": "0.92kN", "grease_speed": "28,000", "oil_speed": "36,000", "weight": "8.5g"},
+            {"model": "699", "url": "/specs/miniature-series/699", "id": "9mm", "od": "20mm", "width": "6mm", "dynamic_load": "2.48kN", "static_load": "1.08kN", "grease_speed": "27,000", "oil_speed": "34,000", "weight": "9.2g"}
         ];
 
         // Render models
@@ -2451,7 +2455,7 @@ a:focus {
 <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Load navbar
-            fetch('../shared/navbar.html')
+            // problematic pattern removednavbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;

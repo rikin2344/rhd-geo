@@ -1,0 +1,183 @@
+{
+  "clearance_lookup_table": {
+    "description": "Radial clearance reference table for deep groove ball bearings",
+    "note": "Lookup by bore diameter ranges. Find appropriate range, then extract clearance data.",
+    "unit": "microns",
+    "ranges": [
+      {
+        "range": "2.5-6",
+        "over_mm": 2.5,
+        "to_mm": 6,
+        "clearances": {
+          "C2": { "min": 0, "max": 7 },
+          "C0": { "min": 2, "max": 13 },
+          "C3": { "min": 8, "max": 23 },
+          "C4": { "min": 14, "max": 29 },
+          "C5": { "min": 20, "max": 37 }
+        }
+      },
+      {
+        "range": "6-10", 
+        "over_mm": 6,
+        "to_mm": 10,
+        "clearances": {
+          "C2": { "min": 0, "max": 7 },
+          "C0": { "min": 2, "max": 13 },
+          "C3": { "min": 8, "max": 23 },
+          "C4": { "min": 14, "max": 29 },
+          "C5": { "min": 20, "max": 37 }
+        }
+      },
+      {
+        "range": "10-18",
+        "over_mm": 10,
+        "to_mm": 18,
+        "clearances": {
+          "C2": { "min": 0, "max": 9 },
+          "C0": { "min": 3, "max": 18 },
+          "C3": { "min": 11, "max": 25 },
+          "C4": { "min": 18, "max": 33 },
+          "C5": { "min": 25, "max": 45 }
+        }
+      },
+      {
+        "range": "18-24",
+        "over_mm": 18,
+        "to_mm": 24,
+        "clearances": {
+          "C2": { "min": 0, "max": 10 },
+          "C0": { "min": 5, "max": 20 },
+          "C3": { "min": 13, "max": 28 },
+          "C4": { "min": 20, "max": 36 },
+          "C5": { "min": 28, "max": 48 }
+        }
+      },
+      {
+        "range": "24-30",
+        "over_mm": 24,
+        "to_mm": 30,
+        "clearances": {
+          "C2": { "min": 1, "max": 11 },
+          "C0": { "min": 5, "max": 20 },
+          "C3": { "min": 13, "max": 28 },
+          "C4": { "min": 23, "max": 41 },
+          "C5": { "min": 30, "max": 53 }
+        }
+      },
+      {
+        "range": "30-40",
+        "over_mm": 30,
+        "to_mm": 40,
+        "clearances": {
+          "C2": { "min": 1, "max": 11 },
+          "C0": { "min": 6, "max": 20 },
+          "C3": { "min": 15, "max": 33 },
+          "C4": { "min": 28, "max": 46 },
+          "C5": { "min": 40, "max": 64 }
+        }
+      },
+      {
+        "range": "40-50",
+        "over_mm": 40,
+        "to_mm": 50,
+        "clearances": {
+          "C2": { "min": 1, "max": 11 },
+          "C0": { "min": 6, "max": 23 },
+          "C3": { "min": 18, "max": 36 },
+          "C4": { "min": 30, "max": 51 },
+          "C5": { "min": 45, "max": 73 }
+        }
+      },
+      {
+        "range": "50-65",
+        "over_mm": 50,
+        "to_mm": 65,
+        "clearances": {
+          "C2": { "min": 1, "max": 15 },
+          "C0": { "min": 8, "max": 28 },
+          "C3": { "min": 23, "max": 43 },
+          "C4": { "min": 38, "max": 61 },
+          "C5": { "min": 55, "max": 90 }
+        }
+      },
+      {
+        "range": "65-80",
+        "over_mm": 65,
+        "to_mm": 80,
+        "clearances": {
+          "C2": { "min": 1, "max": 15 },
+          "C0": { "min": 10, "max": 30 },
+          "C3": { "min": 25, "max": 51 },
+          "C4": { "min": 46, "max": 71 },
+          "C5": { "min": 65, "max": 105 }
+        }
+      },
+      {
+        "range": "80-100",
+        "over_mm": 80,
+        "to_mm": 100,
+        "clearances": {
+          "C2": { "min": 1, "max": 18 },
+          "C0": { "min": 12, "max": 36 },
+          "C3": { "min": 30, "max": 58 },
+          "C4": { "min": 53, "max": 84 },
+          "C5": { "min": 75, "max": 120 }
+        }
+      }
+    ]
+  },
+  "usage_instructions": {
+    "range_lookup": "Use ranges array for clearance lookup by bore diameter",
+    "missing_data_handling": "Bearings with bore < 2.5mm have no clearance data (return null)",
+    "example_6201": {
+      "bearing": "6201",
+      "bore_diameter": 12.7,
+      "range_logic": "12.7mm falls in '10-18' range (10 ≤ 12.7 ≤ 18)",
+      "result": {
+        "C2": { "min": 0, "max": 9 },
+        "C0": { "min": 3, "max": 18 },
+        "C3": { "min": 11, "max": 25 },
+        "C4": { "min": 18, "max": 33 },
+        "C5": { "min": 25, "max": 45 }
+      }
+    },
+    "example_683": {
+      "bearing": "683",
+      "bore_diameter": 3,
+      "range_logic": "3mm falls in '2.5-6' range (2.5 < 3 ≤ 6)",
+      "result": {
+        "C2": { "min": 0, "max": 7 },
+        "C0": { "min": 2, "max": 13 },
+        "C3": { "min": 8, "max": 23 },
+        "C4": { "min": 14, "max": 29 },
+        "C5": { "min": 20, "max": 37 }
+      }
+    },
+    "example_6305": {
+      "bearing": "6305",
+      "bore_diameter": 25,
+      "range_logic": "25mm falls in '24-30' range (24 < 25 ≤ 30)",
+      "result": {
+        "C2": { "min": 1, "max": 11 },
+        "C0": { "min": 5, "max": 20 },
+        "C3": { "min": 13, "max": 28 },
+        "C4": { "min": 23, "max": 41 },
+        "C5": { "min": 30, "max": 53 }
+      }
+    },
+    "example_692": {
+      "bearing": "692",
+      "bore_diameter": 2,
+      "note": "Below minimum range (< 2.5mm)",
+      "result": null
+    },
+    "implementation_code": "// Find range where: over_mm < bore_diameter <= to_mm\nconst range = ranges.find(r => r.over_mm < bore_diameter && bore_diameter <= r.to_mm);\nconst clearanceData = range ? range.clearances : null;"
+  },
+  "data_notes": {
+    "unit": "All clearance values are in microns",
+    "null_handling": "Use null only for bearings < 2.5mm bore (below minimum range)",
+    "range_logic": "Over is exclusive, To is inclusive (e.g., 6-10 means >6 and ≤10)",
+    "clearance_order": "Generally C2 < C0 < C3 < C4 < C5 (ascending clearance)",
+    "c0_standard": "C0 is the standard clearance class for most applications"
+  }
+}

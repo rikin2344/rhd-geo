@@ -1033,9 +1033,19 @@ body {
 
 .dimensions-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-micro-2);
     margin-bottom: var(--space-micro-2);
+}
+
+/* Default 3x1 grid (when no SKF data) */
+.dimensions-grid-3x1 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 3x2 grid (when SKF data is available) */
+.dimensions-grid-3x2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 .dimension-item {
@@ -2484,7 +2494,7 @@ body {
                     
                     <h1 class="hero-title">608 Deep Groove Ball Bearing</h1>
                     <p class="hero-subtitle">
-                        The popular kid everyone knows - if bearings had social media, this one would have a million followers
+                        The popular kid everyone knows - if bearings had social media, this one would have a million followers.
                     </p>
                     <p class="hero-description">
                         Meet the 608: With 3.32kN of engineering excellence and 8mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
@@ -2509,11 +2519,11 @@ body {
                                 <div class="spec-label">Load Rating</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">26,000</div>
+                                <div class="spec-value">26000</div>
                                 <div class="spec-label">Max RPM</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">15g</div>
+                                <div class="spec-value">0.011kg</div>
                                 <div class="spec-label">Weight</div>
                             </div>
                         </div>
@@ -2534,8 +2544,6 @@ body {
         </div>
     </section>
 
-
-
     <!-- Quick Specifications -->
     <section class="section" id="specifications">
         <div class="container">
@@ -2549,7 +2557,7 @@ body {
                 <div class="dimensions-table">
                     <div class="spec-card dimensions-card">
                         <h3><span class="spec-icon">📏</span>Dimensions</h3>
-                        <div class="dimensions-grid">
+                        <div class="dimensions-grid dimensions-grid-3x2">
                             <div class="dimension-item">
                                 <div class="dimension-label">d - ID (Bore Diameter)</div>
                                 <div class="dimension-value">8mm</div>
@@ -2562,18 +2570,24 @@ body {
                                 <div class="dimension-label">B - Width</div>
                                 <div class="dimension-value">7mm</div>
                             </div>
+                            
                             <div class="dimension-item">
                                 <div class="dimension-label">d₁ - Shoulder Diameter</div>
                                 <div class="dimension-value">≈12.15mm</div>
                             </div>
+                            
+                            
                             <div class="dimension-item">
                                 <div class="dimension-label">D₂ - Recess Diameter</div>
                                 <div class="dimension-value">≈19.2mm</div>
                             </div>
+                            
+                            
                             <div class="dimension-item">
                                 <div class="dimension-label">r₁,₂ - Chamfer Radius</div>
                                 <div class="dimension-value">min. 0.3mm</div>
                             </div>
+                            
                         </div>
                         <div class="dimension-summary">
                             <strong>608 Bearing: 8 × 22 × 7mm</strong>
@@ -2582,8 +2596,8 @@ body {
                 </div>
                 
                 <div class="specs-image">
-                    <h3 class="specs-image-title">Ball Bearing Cross Section</h3>
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg" alt="608 Deep Groove Ball Bearing Technical Drawing - Dimensions and Cross Section" />
+                    <h3 class="specs-image-title">608 Bearing Cross-Sectional View</h3>
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg" alt="608 Deep Groove Ball Bearing Technical Drawing" />
                 </div>
             </div>
 
@@ -2618,7 +2632,7 @@ body {
                                     <strong>Dynamic Load (3.32kN = 338kg):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Static Load (1.38kN = 141kg):</strong> Maximum force when stationary. Use 80% for safety (113kg max recommended).
+                                    <strong>Static Load (1.38kN):</strong> Maximum force when stationary. Use 80% for safety.
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Calculate Your Load:</strong> Measure shaft forces, belt tensions, or gear loads. Include shock/vibration factors.
@@ -2639,15 +2653,15 @@ body {
                             <div class="spec-details">
                                 <div class="spec-row">
                                     <span>Grease Lubrication</span>
-                                    <span>26,000 RPM</span>
+                                    <span>26000 RPM</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Oil Lubrication</span>
-                                    <span>34,000 RPM</span>
+                                    <span>34000 RPM</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Recommended Max</span>
-                                    <span>23,400 RPM (90%)</span>
+                                    <span>23400 RPM (90%)</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -2657,13 +2671,13 @@ body {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Grease Limit (26,000 RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
+                                    <strong>Grease Limit (26000 RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Oil Advantage (34,000 RPM):</strong> Better heat dissipation allows 31% higher speed. Required for high-speed spindles.
+                                    <strong>Oil Advantage (34000 RPM):</strong> Better heat dissipation allows higher speed. Required for high-speed spindles.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Safe Operating Speed:</strong> Use 90% of limit (23,400 RPM) for maximum L10 life of 10,000+ hours.
+                                    <strong>Safe Operating Speed:</strong> Use 90% of limit (23400 RPM) for maximum L10 life of 10,000+ hours.
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Failure Mode:</strong> Exceeding speed causes cage failure, ball skidding, and catastrophic overheating within minutes.
@@ -2707,7 +2721,7 @@ body {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Gcr15 Steel:</strong> Premium bearing steel - harder than tool steel
+                                    <strong>Gcr15 (AISI 52100) Steel:</strong> Premium bearing steel - harder than tool steel
                                 </div>
                                 <div class="explanation-item">
                                     <strong>High Carbon:</strong> Superior hardness and wear resistance
@@ -2741,7 +2755,7 @@ body {
                                 </div>
                                 <div class="spec-row">
                                     <span>V3 Grade</span>
-                                    <span>&lt; 44/28/24 μm/s</span>
+                                    <span>&lt; 42/26/22 μm/s</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>V4 Grade (Precision)</span>
@@ -2839,14 +2853,18 @@ body {
                                     <span>C3 (Loose)</span>
                                     <span>8-23 μm</span>
                                 </div>
+                                
                                 <div class="spec-row">
                                     <span>C4 (High Temp)</span>
                                     <span>14-29 μm</span>
                                 </div>
+                                
+                                
                                 <div class="spec-row">
                                     <span>C5 (Extra High Temp)</span>
                                     <span>20-37 μm</span>
                                 </div>
+                                
                             </div>
                             <div class="flip-hint"></div>
                         </div>
@@ -2863,9 +2881,11 @@ body {
                                 <div class="explanation-item">
                                     <strong>C3 (Loose):</strong> Better for hot environments - allows thermal expansion
                                 </div>
+                                
                                 <div class="explanation-item">
                                     <strong>C4/C5:</strong> For temperatures above 100°C and 150°C respectively
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -2889,14 +2909,14 @@ body {
                         <!-- Front Side (Technical Specs) -->
                         <div class="flip-card-front">
                             <div class="seal-header">
-                                <h3>608-ZZ</h3>
+                                <h3>ZZ</h3>
                                 <div class="seal-badge popular">Most Popular</div>
                             </div>
                             <p class="seal-description">Double metal shields</p>
                             <div class="seal-specs">
                                 <div class="seal-spec">
                                     <span>Speed Factor:</span>
-                                    <span>0.9 (23,400 RPM)</span>
+                                    <span>0.9 (23400 RPM)</span>
                                 </div>
                                 <div class="seal-spec">
                                     <span>Protection:</span>
@@ -2911,7 +2931,7 @@ body {
                         </div>
                         <!-- Back Side (Usage Guide) -->
                         <div class="flip-card-back">
-                            <h4>When to Use 608-ZZ</h4>
+                            <h4>When to Use ZZ</h4>
                             <div class="explanation-content">
                                 <div class="explanation-item">
                                     <strong>Best For:</strong> Electronics, small motors, skateboards, general machinery
@@ -2935,29 +2955,29 @@ body {
                         <!-- Front Side (Technical Specs) -->
                         <div class="flip-card-front">
                             <div class="seal-header">
-                                <h3>608-2RS</h3>
-                                <div class="seal-badge popular">Most Popular</div>
+                                <h3>2RS</h3>
+                                <div class="seal-badge popular">Protected</div>
                             </div>
                             <p class="seal-description">Double rubber seals</p>
                             <div class="seal-specs">
                                 <div class="seal-spec">
                                     <span>Speed Factor:</span>
-                                    <span>0.7 (18,200 RPM)</span>
+                                    <span>0.7 (18200 RPM)</span>
                                 </div>
                                 <div class="seal-spec">
                                     <span>Protection:</span>
-                                    <span>Complete sealing</span>
+                                    <span>Moisture and dust</span>
                                 </div>
                                 <div class="seal-spec">
                                     <span>Lubrication:</span>
-                                    <span>Permanently sealed</span>
+                                    <span>Sealed for life</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
                         </div>
                         <!-- Back Side (Usage Guide) -->
                         <div class="flip-card-back">
-                            <h4>When to Use 608-2RS</h4>
+                            <h4>When to Use 2RS</h4>
                             <div class="explanation-content">
                                 <div class="explanation-item">
                                     <strong>Best For:</strong> Outdoor applications, appliances, automotive systems, dirty environments
@@ -2981,14 +3001,14 @@ body {
             <div class="seal-options-others">
                 <div class="seal-card" data-seal-type="608-open">
                     <div class="seal-header">
-                        <h3>608 Open</h3>
+                        <h3>Open</h3>
                         <div class="seal-badge">High Speed</div>
                     </div>
                     <p class="seal-description">Open bearing, no seals</p>
                     <div class="seal-specs">
                         <div class="seal-spec">
                             <span>Speed Factor:</span>
-                            <span>1.0 (26,000 RPM)</span>
+                            <span>1.0 (26000 RPM)</span>
                         </div>
                         <div class="seal-spec">
                             <span>Protection:</span>
@@ -3006,14 +3026,14 @@ body {
 
                 <div class="seal-card" data-seal-type="608-z">
                     <div class="seal-header">
-                        <h3>608-Z</h3>
+                        <h3>Z</h3>
                         <div class="seal-badge">Balanced</div>
                     </div>
                     <p class="seal-description">Single metal shield</p>
                     <div class="seal-specs">
                         <div class="seal-spec">
                             <span>Speed Factor:</span>
-                            <span>0.95 (24,700 RPM)</span>
+                            <span>0.95 (24700 RPM)</span>
                         </div>
                         <div class="seal-spec">
                             <span>Protection:</span>
@@ -3031,14 +3051,14 @@ body {
 
                 <div class="seal-card" data-seal-type="608-rs">
                     <div class="seal-header">
-                        <h3>608-RS</h3>
+                        <h3>RS</h3>
                         <div class="seal-badge">Protected</div>
                     </div>
                     <p class="seal-description">Single rubber seal</p>
                     <div class="seal-specs">
                         <div class="seal-spec">
                             <span>Speed Factor:</span>
-                            <span>0.8 (20,800 RPM)</span>
+                            <span>0.8 (20800 RPM)</span>
                         </div>
                         <div class="seal-spec">
                             <span>Protection:</span>
@@ -3098,24 +3118,20 @@ body {
                                 <line x1="0" y1="28" x2="32" y2="28" stroke="#000" stroke-width="1"/>
                             </svg>
                         </div>
-                        <h3 class="application-title">Industrial & Precision</h3>
+                        <h3 class="application-title">Precision Instruments</h3>
                     </div>
                     <ul class="application-list">
-                        <li>Small electric motors</li>
-                        <li>Precision instruments</li>
-                        <li>Computer equipment</li>
                         <li>Medical devices</li>
-                        <li>Timing mechanisms</li>
-                        <li>Hand tools</li>
-                        <li>Laboratory equipment</li>
-                        <li>Small pumps</li>
-                        <li>Cooling fans</li>
-                        <li>Textile machinery</li>
-                        <li>Machine tools</li>
-                        <li>Electric tools</li>
+<li>Laboratory equipment</li>
+<li>Optical instruments</li>
+<li>Measuring tools</li>
+<li>Calibration devices</li>
+<li>Microscopes</li>
+<li>Spectrometers</li>
+<li>Analytical instruments</li>
                     </ul>
                     <p class="application-requirements">
-                        <strong>Key Requirements:</strong> Precision, reliability, quiet operation, high speed capability
+                        <strong>Key Requirements:</strong> Ultra-precision applications requiring sub-micron accuracy and minimal vibration
                     </p>
                 </div>
                 
@@ -3149,18 +3165,20 @@ body {
                                 <rect x="24" y="15" width="1" height="1" fill="#374151"/>
                             </svg>
                         </div>
-                        <h3 class="application-title">Automotive & Transportation</h3>
+                        <h3 class="application-title">Miniature Motors</h3>
                     </div>
                     <ul class="application-list">
-                        <li>Automotive cooling systems</li>
-                        <li>Motorcycles</li>
-                        <li>Transmission equipment</li>
-                        <li>Construction equipment</li>
-                        <li>Small motor assemblies</li>
-                        <li>Vehicle HVAC systems</li>
+                        <li>Electric toothbrushes</li>
+<li>Hair dryers</li>
+<li>Small fans</li>
+<li>Miniature pumps</li>
+<li>Model aircraft</li>
+<li>RC vehicles</li>
+<li>Small appliances</li>
+<li>Portable tools</li>
                     </ul>
                     <p class="application-requirements">
-                        <strong>Key Requirements:</strong> Temperature resistance, vibration resistance, compact design
+                        <strong>Key Requirements:</strong> High-speed miniature motors with compact design and reliable performance
                     </p>
                 </div>
                 
@@ -3191,25 +3209,20 @@ body {
                                 <circle cx="20" cy="8" r="0.5" fill="#48BB78"/>
                             </svg>
                         </div>
-                        <h3 class="application-title">Home Appliances</h3>
+                        <h3 class="application-title">Electronics & Consumer Devices</h3>
                     </div>
                     <ul class="application-list">
-                        <li>Washing machines</li>
-                        <li>Refrigerators</li>
-                        <li>Air conditioners</li>
-                        <li>Microwave ovens</li>
-                        <li>Vacuum cleaners</li>
-                        <li>Sewing machines</li>
-                        <li>Massage chairs</li>
-                        <li>Fitness equipment</li>
-                        <li>Personal care appliances</li>
-                        <li>Small kitchen appliances</li>
-                        <li>Bathroom ventilation</li>
-                        <li>Portable devices</li>
-                        <li>Home electronics</li>
+                        <li>Smartphones</li>
+<li>Laptops</li>
+<li>Gaming controllers</li>
+<li>Wearable devices</li>
+<li>Digital cameras</li>
+<li>Portable speakers</li>
+<li>Handheld scanners</li>
+<li>Mobile printers</li>
                     </ul>
                     <p class="application-requirements">
-                        <strong>Key Requirements:</strong> Quiet operation, long life, cost effectiveness, maintenance-free
+                        <strong>Key Requirements:</strong> Consumer electronics requiring silent operation and long service life
                     </p>
                 </div>
             </div>
@@ -3227,169 +3240,245 @@ body {
             <div class="faq-container">
                 <div class="faq-category">
                     <div class="faq-category-header" onclick="toggleFaqCategory(this)">
-                        <span>🔧 Bearing Selection & Replacement</span>
+                        <span>Bearing Selection & Replacement</span>
                         <span class="faq-chevron">▼</span>
                     </div>
                     <div class="faq-questions">
+                        
                         <div class="faq-question">
-                            <h4 class="faq-question-title">How do I know if the 608 bearing is the right choice for my 8mm shaft application?</h4>
-                            <div class="faq-direct-answer">Perfect for 8mm shafts requiring 3.32kN load capacity. Check shaft diameter, housing space, and load requirements match specifications.</div>
+                            <h4 class="faq-question-title">Will an 8mm bearing fit my 8mm shaft properly?</h4>
+                            <div class="faq-direct-answer">Yes, 608 bearing has exact 8mm bore diameter with h6 tolerance (±0.009mm) for proper interference fit.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">The 608 is the most popular bearing in electronics and small motor applications. Wrong bearing selection leads to premature failure, equipment damage, and costly downtime. Proper sizing ensures optimal performance and maximum service life in precision applications.</div>
+                                <div class="faq-section-content">Proper shaft fit prevents bearing slippage and premature failure. Loose fit causes vibration, while tight fit damages bearing races. h6 tolerance ensures optimal interference without excessive stress.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Verify: 1) Shaft is exactly 8mm diameter, 2) Housing accommodates 22mm outer diameter, 3) You have 7mm width clearance, 4) Loads stay under 3.32kN dynamic/1.38kN static. For electronics and precision instruments, the 608 provides the ideal balance of size, capacity, and reliability.</div>
+                                <div class="faq-section-content">Measure shaft diameter with micrometer to confirm 8mm ±0.009mm tolerance. Use proper installation tools to avoid bearing damage. For high-precision applications, consider C0 clearance option.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">The 608 is the world's most popular bearing - if it fits your specs, it's likely the right choice.</div>
+                            <div class="faq-pro-tip">Our 20+ years of manufacturing experience shows h6 shaft tolerance provides optimal performance for 8mm applications.</div>
                         </div>
                         
                         <div class="faq-question">
-                            <h4 class="faq-question-title">Can I use a cheaper bearing instead of the 608, or does it need to be exact?</h4>
-                            <div class="faq-direct-answer">Dimensions must match exactly (8x22x7mm), but quality matters significantly. Cheaper bearings fail 3-5x faster, costing more in downtime.</div>
+                            <h4 class="faq-question-title">Can this bearing handle 338 kg of weight?</h4>
+                            <div class="faq-direct-answer">Yes, 608 bearing has 338 kg (3.32 kN) dynamic load rating with 1.5x safety factor for typical applications.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">Quality differences in 608 bearings are substantial. Cheap bearings use inferior steel, poor heat treatment, and loose tolerances. While initial cost is lower, total cost of ownership is much higher due to frequent replacements, downtime, and potential equipment damage.</div>
+                                <div class="faq-section-content">Load capacity determines bearing life and reliability. Exceeding load rating causes premature fatigue, increased vibration, and potential bearing failure. Safety factor ensures long service life.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Invest in quality 608 bearings with Gcr15 steel and precision manufacturing. Calculate total cost including replacement labor, downtime, and potential equipment damage. For critical applications, premium bearings pay for themselves through extended life and reliability.</div>
+                                <div class="faq-section-content">Calculate actual load including dynamic forces and shock loads. For continuous operation, keep loads under 220 kg. For intermittent use, 338 kg is acceptable with proper lubrication.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">Our 20+ years experience shows quality 608 bearings last 3-10x longer than cheap alternatives.</div>
+                            <div class="faq-pro-tip">Premium Gcr15 steel provides superior load handling vs. standard steel alternatives, extending service life 3-5x.</div>
                         </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">Is this bearing suitable for 26,000 RPM applications?</h4>
+                            <div class="faq-direct-answer">Yes, 608 bearing is rated for 26,000 RPM grease lubrication and 34,000 RPM oil lubrication with proper clearance selection.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Speed rating affects bearing temperature, vibration, and life expectancy. High speeds require proper clearance, lubrication, and balance to prevent overheating and premature failure.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Use C0 clearance for high-speed applications. Ensure proper lubrication and balance. Monitor temperature during operation. Consider open bearing for maximum speed capability.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Our ISO 9001:2015 certified manufacturing includes 100% dimensional testing for optimal high-speed performance.</div>
+                        </div>
+                        
                     </div>
                 </div>
                 
                 <div class="faq-category">
                     <div class="faq-category-header" onclick="toggleFaqCategory(this)">
-                        <span>🔨 Installation & Maintenance</span>
+                        <span>Installation & Maintenance</span>
                         <span class="faq-chevron">▼</span>
                     </div>
                     <div class="faq-questions">
+                        
                         <div class="faq-question">
-                            <h4 class="faq-question-title">Why do my 608 bearings keep failing early, and how can I prevent it?</h4>
-                            <div class="faq-direct-answer">Most failures come from hammer installation, wrong tolerances, overloading, or poor lubrication. Focus on proper installation and staying within specifications.</div>
+                            <h4 class="faq-question-title">How do I install an 8mm bearing without damaging it?</h4>
+                            <div class="faq-direct-answer">Use proper bearing installation tools and apply force evenly to outer ring only, never to inner ring or balls.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">608 bearings in precision applications operate continuously under varying conditions. Improper installation damages internal geometry, while exceeding specifications causes accelerated wear. Small bearings are particularly sensitive to installation errors and contamination.</div>
+                                <div class="faq-section-content">Improper installation damages bearing races, reduces life expectancy, and causes premature failure. Force applied to inner ring can damage rolling elements and create stress concentrations.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Prevention checklist: Use proper bearing pullers (never hammer), maintain h6 shaft tolerance, stay within 3.32kN load limit, don't exceed 26,000 RPM, re-grease every 6-12 months. Keep installation area clean and use proper tools for precision work.</div>
+                                <div class="faq-section-content">Use bearing press or installation sleeve. Apply force to outer ring circumference. Ensure shaft and housing are clean and properly sized. Use C0 clearance for precision applications.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">Most 608 bearing failures are installation-related - invest in proper tools and training.</div>
+                            <div class="faq-pro-tip">Professional installation tools prevent 80% of premature bearing failures and ensure maximum 50,000-hour service life.</div>
                         </div>
                         
                         <div class="faq-question">
-                            <h4 class="faq-question-title">How often should I re-lubricate my 608 bearings, and with what type of grease?</h4>
-                            <div class="faq-direct-answer">Re-grease every 6-12 months or 2000-5000 operating hours. Use lithium complex grease (NLGI Grade 2) for standard applications.</div>
+                            <h4 class="faq-question-title">What tools do I need for a 338 kg capacity bearing?</h4>
+                            <div class="faq-direct-answer">For 8mm bearings, use precision tools: bearing press, installation sleeve, micrometer, and proper lubrication equipment.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">Proper lubrication is critical for 608 bearings in high-speed precision applications. Wrong grease type or intervals leads to overheating, increased friction, and premature wear. Small bearings are particularly sensitive to lubrication quality.</div>
+                                <div class="faq-section-content">Precision tools ensure proper fit and prevent damage. 8mm bearings require careful handling due to small size and high precision requirements. Proper tools prevent costly installation errors.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Use lithium complex grease (NLGI Grade 2) for temperatures -30°C to +120°C. High-speed applications (26,000 RPM) need synthetic grease. Apply until old grease purges out, then stop - over-greasing causes overheating. Monitor temperature during operation.</div>
+                                <div class="faq-section-content">Use bearing press with proper adapters. Measure shaft and housing with micrometer (±0.001mm accuracy). Apply thin film of lubricant. Use installation sleeve for even force distribution.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">Quality grease extends 608 bearing life 2-3x - don't compromise on lubrication.</div>
+                            <div class="faq-pro-tip">Our manufacturing processes include 100% dimensional testing to ensure perfect fit with standard tools.</div>
                         </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How often should I check a bearing running at 26,000 RPM?</h4>
+                            <div class="faq-direct-answer">Check 608 bearings monthly for vibration, temperature, and noise. High-speed operation requires more frequent monitoring.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">High-speed bearings generate more heat and wear faster. Regular monitoring prevents catastrophic failure and extends service life. Early detection of issues saves costly repairs.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Monitor vibration levels monthly using V2, V3, V4 standards. Check temperature (should stay under 80°C). Listen for unusual noise. Lubricate as needed.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Premium bearings last 3-10x longer than economy alternatives when properly maintained.</div>
+                        </div>
+                        
                     </div>
                 </div>
                 
                 <div class="faq-category">
                     <div class="faq-category-header" onclick="toggleFaqCategory(this)">
-                        <span>🔍 Troubleshooting & Problem Solving</span>
+                        <span>Troubleshooting & Problem Solving</span>
                         <span class="faq-chevron">▼</span>
                     </div>
                     <div class="faq-questions">
+                        
                         <div class="faq-question">
-                            <h4 class="faq-question-title">My 608 bearing is making noise - is it dangerous and what should I do?</h4>
-                            <div class="faq-direct-answer">Noise indicates problems but isn't always immediately dangerous. Diagnose quickly: grinding = contamination, squealing = lubrication failure, knocking = severe damage.</div>
+                            <h4 class="faq-question-title">Why does my bearing fail under 338 kg load?</h4>
+                            <div class="faq-direct-answer">Load failure usually indicates improper installation, contamination, or excessive vibration. Check shaft fit, cleanliness, and operating conditions.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">Bearing noise is an early warning system. Different sounds indicate different problems, and early intervention can prevent catastrophic failure. In precision applications, even minor noise can indicate performance degradation that affects equipment accuracy.</div>
+                                <div class="faq-section-content">Bearing failure under rated load suggests installation or environmental problems. Proper diagnosis prevents repeat failures and ensures optimal performance. Early intervention saves equipment damage.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Diagnose immediately: Light humming = normal, grinding = contamination/wear, squealing = lubrication failure, knocking = severe damage. Stop operation if noise is loud or irregular. Clean and re-lubricate first - if noise persists, replace bearing before catastrophic failure.</div>
+                                <div class="faq-section-content">Inspect bearing for contamination, proper fit, and lubrication. Check shaft tolerance (must be h6 ±0.009mm). Verify housing clearance. Monitor vibration levels during operation.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">In precision applications, any unusual noise warrants immediate attention - don't wait for complete failure.</div>
+                            <div class="faq-pro-tip">Our quality assurance includes statistical process control to ensure consistent 338 kg load capacity across all bearings.</div>
                         </div>
                         
                         <div class="faq-question">
-                            <h4 class="faq-question-title">What causes 608 bearings to overheat and how do I fix it?</h4>
-                            <div class="faq-direct-answer">Common causes: excessive speed (over 26,000 RPM), overloading (above 3.32kN), poor lubrication, tight clearance, or misalignment.</div>
+                            <h4 class="faq-question-title">What causes overheating at 26,000 RPM?</h4>
+                            <div class="faq-direct-answer">Overheating at high speed usually results from insufficient lubrication, excessive clearance, or contamination. Check lubrication quality and bearing condition.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">Overheating rapidly degrades bearing materials, reduces lubrication effectiveness, and can cause thermal expansion leading to seizure. Small bearings like the 608 are particularly sensitive to temperature due to their compact design and high-speed capabilities.</div>
+                                <div class="faq-section-content">Overheating accelerates wear, reduces life expectancy, and can cause catastrophic failure. High-speed operation requires optimal lubrication and proper clearance selection.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Check immediately: Speed (stay under 26,000 RPM), load (below 3.32kN), lubrication quality and quantity, shaft/housing tolerances, and alignment. Operating temperature should stay under 70°C. Address root cause before continuing operation.</div>
+                                <div class="faq-section-content">Verify lubrication quantity and quality. Check clearance (C0 recommended for high speed). Ensure clean operating environment. Monitor temperature (should stay under 80°C).</div>
                             </div>
                             
-                            <div class="faq-pro-tip">Temperature monitoring is critical for 608 bearings - invest in infrared thermometers for regular checks.</div>
+                            <div class="faq-pro-tip">Gcr15 steel provides superior heat resistance vs. standard steel alternatives.</div>
                         </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How do I diagnose problems with 8mm bearings?</h4>
+                            <div class="faq-direct-answer">Use vibration analysis, temperature monitoring, and visual inspection. Check for unusual noise, excessive play, and contamination.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Early diagnosis prevents equipment damage and reduces downtime. 8mm bearings require precise diagnosis due to small size and high precision requirements.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Measure vibration using V2, V3, V4 standards. Check temperature with infrared thermometer. Inspect for contamination and wear. Use proper diagnostic tools for small bearings.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Our 20+ years of experience shows proper diagnosis prevents 90% of bearing failures.</div>
+                        </div>
+                        
                     </div>
                 </div>
                 
                 <div class="faq-category">
                     <div class="faq-category-header" onclick="toggleFaqCategory(this)">
-                        <span>💰 Cost & Performance Optimization</span>
+                        <span>Cost & Performance Optimization</span>
                         <span class="faq-chevron">▼</span>
                     </div>
                     <div class="faq-questions">
+                        
                         <div class="faq-question">
-                            <h4 class="faq-question-title">Is it worth upgrading to premium 608 bearings, or are standard ones sufficient?</h4>
-                            <div class="faq-direct-answer">Premium 608 bearings cost 20-30% more but last 3-10x longer in demanding applications. Calculate total cost including downtime and replacement labor.</div>
+                            <h4 class="faq-question-title">Is it worth upgrading from 338 kg to higher capacity bearings?</h4>
+                            <div class="faq-direct-answer">Only if your application exceeds 338 kg load or requires longer service life. 608 provides optimal performance for most 8mm applications.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">608 bearings are often used in critical precision equipment where failure causes expensive downtime. While premium bearings have higher upfront costs, they use superior materials (Gcr15 steel), tighter tolerances, and better lubrication, dramatically extending service life and reliability.</div>
+                                <div class="faq-section-content">Over-sizing bearings increases cost without performance benefits. Proper sizing ensures optimal performance and cost-effectiveness. Understanding load requirements prevents unnecessary expenses.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Calculate total cost of ownership: bearing cost + installation labor + downtime costs + potential equipment damage. For critical applications (precision instruments, medical devices, high-speed equipment), premium bearings typically pay for themselves. Use standard bearings only for non-critical, easily accessible applications.</div>
+                                <div class="faq-section-content">Calculate actual load including safety factors. Consider service life requirements. For higher loads, consider 609 (3.35 kN) or larger bearings. Evaluate total cost of ownership.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">In precision applications, bearing failure often costs 10-50x the bearing price in downtime and repairs.</div>
+                            <div class="faq-pro-tip">Premium 608 bearings last 3-10x longer than economy alternatives, reducing total cost of ownership by 60-80%.</div>
                         </div>
                         
                         <div class="faq-question">
-                            <h4 class="faq-question-title">How can I maximize the lifespan and performance of my 608 bearings?</h4>
-                            <div class="faq-direct-answer">Focus on proper installation, quality lubrication, staying within load/speed limits, and environmental protection. These steps can extend life 5-10x.</div>
+                            <h4 class="faq-question-title">When should I pay more for bearings rated above 26,000 RPM?</h4>
+                            <div class="faq-direct-answer">Only if your application requires speeds above 26,000 RPM. 608 provides excellent high-speed performance for most miniature applications.</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">608 bearings in precision applications operate in demanding conditions with little room for error. Proper care and maintenance practices can extend bearing life from thousands to tens of thousands of hours, dramatically reducing maintenance costs and improving equipment reliability.</div>
+                                <div class="faq-section-content">Speed ratings affect bearing selection and cost. Understanding actual speed requirements prevents over-engineering and unnecessary expenses. Proper speed selection ensures optimal performance.</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">Optimization checklist: Use proper installation tools (never hammer), maintain clean environment, use quality grease (lithium complex NLGI Grade 2), stay within 3.32kN load and 26,000 RPM limits, monitor temperature (keep under 70°C), specify sealed bearings (2RS) for contaminated environments, maintain proper shaft tolerances (h6).</div>
+                                <div class="faq-section-content">Determine actual operating speed requirements. Consider acceleration and deceleration cycles. For speeds above 26,000 RPM, consider specialized high-speed bearings or open design.</div>
                             </div>
                             
-                            <div class="faq-pro-tip">The 608's popularity means optimization techniques are well-documented - follow proven practices for maximum ROI.</div>
+                            <div class="faq-pro-tip">Our Gcr15 steel provides superior high-speed performance vs. standard steel alternatives.</div>
                         </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What's the cost difference between 8mm and 9mm bearings?</h4>
+                            <div class="faq-direct-answer">608 (8mm) costs approximately 15-20% less than 609 (9mm) while providing adequate capacity for most 8mm applications.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Size selection affects both performance and cost. Understanding the cost-performance relationship helps optimize bearing selection for specific applications.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Evaluate load requirements vs. cost. Consider space constraints and performance needs. For 8mm shafts, 608 provides optimal value. For higher loads, 609 may be justified.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Our volume manufacturing provides competitive pricing across all miniature bearing sizes.</div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -3408,25 +3497,16 @@ body {
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="/specs/miniature-series/604" class="model-link">604 (4×12×4mm)</a>
-                        <a href="/specs/miniature-series/605" class="model-link">605 (5×14×5mm)</a>
-                        <a href="/specs/miniature-series/606" class="model-link">606 (6×17×6mm)</a>
-                        <a href="/specs/miniature-series/607" class="model-link">607 (7×19×6mm)</a>
-                        <a href="/specs/miniature-series/609" class="model-link">609 (9×24×7mm)</a>
+                        <a href="#" class="model-link">607</a>
+<a href="#" class="model-link">609</a>
                     </div>
                 </div>
                 
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">⚡</span>Series Alternatives</h3>
                     <div class="alternatives-list">
-                        <div class="alternative-item">
-                            <strong>6000 Series</strong>
-                            <span>Lighter duty applications</span>
-                        </div>
-                        <div class="alternative-item">
-                            <strong>6300 Series</strong>
-                            <span>Heavier duty applications</span>
-                        </div>
+                        <div class="alternative-item"><strong>628</strong></div>
+<div class="alternative-item"><strong>629</strong></div>
                     </div>
                 </div>
                 
@@ -3435,15 +3515,15 @@ body {
                     <div class="application-options">
                         <div class="option-item">
                             <strong>High Temperature:</strong>
-                            <span>608 with high-temp grease</span>
+                            <span>C3 clearance option available</span>
                         </div>
                         <div class="option-item">
                             <strong>High Speed:</strong>
-                            <span>608 with precision tolerance</span>
+                            <span>Open bearing for maximum speed</span>
                         </div>
                         <div class="option-item">
                             <strong>Corrosive Environment:</strong>
-                            <span>608 with stainless steel option</span>
+                            <span>2RS seals recommended</span>
                         </div>
                     </div>
                 </div>
@@ -3460,35 +3540,12 @@ body {
             </div>
             
             <div class="expertise-grid">
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">📋</span>ISO Compliance</h3>
-                    <p>ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">🔬</span>Material Science</h3>
-                    <p>Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">⚙️</span>Precision Engineering</h3>
-                    <p>C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">🔧</span>Professional Installation</h3>
-                    <p>Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">📊</span>Performance Comparison</h3>
-                    <p>Handles 1.6kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products.</p>
-                </div>
-                
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">💰</span>Value Engineering</h3>
-                    <p>Best value in small-bearing category for 3.32kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.</p>
-                </div>
+                <div class="expertise-card"><h3><span class="expertise-icon">📋</span>ISO Compliance</h3><p>ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">🔬</span>Material Science</h3><p>Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">⚙️</span>Precision Engineering</h3><p>C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">🔧</span>Professional Installation</h3><p>Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">📊</span>Performance Comparison</h3><p>Handles 3.32kN load with superior precision vs. typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">💰</span>Value Engineering</h3><p>Best value in micro-bearing category for 3.32kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.</p></div>
             </div>
         </div>
     </section>
@@ -3706,8 +3763,6 @@ body {
             });
         });
 
-
-
         // FAQ Toggle functionality
         function toggleFaqCategory(header) {
             const category = header.parentElement;
@@ -3763,7 +3818,7 @@ body {
                                 <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Maximum speed potential (26,000 RPM) and optimized lubrication for specific applications
+                                <strong>Achieves:</strong> Maximum speed potential (26000 RPM) and optimized lubrication for specific applications
                             </div>
                             <div class="explanation-item">
                                 <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
@@ -3782,7 +3837,7 @@ body {
                                 <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (24,700 RPM)
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (24700 RPM)
                             </div>
                             <div class="explanation-item">
                                 <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
@@ -3801,7 +3856,7 @@ body {
                                 <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (20,800 RPM)
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (20800 RPM)
                             </div>
                             <div class="explanation-item">
                                 <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications
@@ -3882,8 +3937,6 @@ body {
             });
         });
 
-
-
         // FAQ Toggle functionality
         function toggleFaqCategory(header) {
             const category = header.parentElement;
@@ -3939,7 +3992,7 @@ body {
                                 <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Maximum speed potential (26,000 RPM) and optimized lubrication for specific applications
+                                <strong>Achieves:</strong> Maximum speed potential (26000 RPM) and optimized lubrication for specific applications
                             </div>
                             <div class="explanation-item">
                                 <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
@@ -3958,7 +4011,7 @@ body {
                                 <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (24,700 RPM)
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (24700 RPM)
                             </div>
                             <div class="explanation-item">
                                 <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
@@ -3977,7 +4030,7 @@ body {
                                 <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (20,800 RPM)
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (20800 RPM)
                             </div>
                             <div class="explanation-item">
                                 <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications

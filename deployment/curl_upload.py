@@ -12,7 +12,7 @@ load_dotenv()
 
 def is_model_page(page_type):
     """Check if this is a model-specific page (vs series page)"""
-    return page_type.isdigit() or page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '6001', '6002']
+    return page_type.isdigit() or page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6001', '6002']
 
 def get_model_upload_info(page_type):
     """Get model page upload information"""
@@ -29,7 +29,23 @@ def get_model_upload_info(page_type):
         '626': {'series': 'miniature-series', 'model': '626'},
         '627': {'series': 'miniature-series', 'model': '627'},
         '628': {'series': 'miniature-series', 'model': '628'},
-        '629': {'series': 'miniature-series', 'model': '629'}
+        '629': {'series': 'miniature-series', 'model': '629'},
+        '634': {'series': 'miniature-series', 'model': '634'},
+        '635': {'series': 'miniature-series', 'model': '635'},
+        '683': {'series': 'miniature-series', 'model': '683'},
+        '684': {'series': 'miniature-series', 'model': '684'},
+        '685': {'series': 'miniature-series', 'model': '685'},
+        '686': {'series': 'miniature-series', 'model': '686'},
+        '687': {'series': 'miniature-series', 'model': '687'},
+        '688': {'series': 'miniature-series', 'model': '688'},
+        '689': {'series': 'miniature-series', 'model': '689'},
+        '693': {'series': 'miniature-series', 'model': '693'},
+        '694': {'series': 'miniature-series', 'model': '694'},
+        '695': {'series': 'miniature-series', 'model': '695'},
+        '696': {'series': 'miniature-series', 'model': '696'},
+        '697': {'series': 'miniature-series', 'model': '697'},
+        '698': {'series': 'miniature-series', 'model': '698'},
+        '699': {'series': 'miniature-series', 'model': '699'}
     }
     
     if page_type in model_configs:
@@ -135,7 +151,7 @@ def curl_upload(page_type='miniature'):
 
 def main():
     parser = argparse.ArgumentParser(description='Upload bearing page via curl')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629'], 
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699'], 
                        help='Which page to upload (miniature, series, or model pages like 604, 607, 608, etc.). If not specified, uploads all pages.')
     args = parser.parse_args()
     
@@ -146,7 +162,7 @@ def main():
             exit(1)
     else:
         # Upload all pages
-        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629']
+        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699']
         print("🚀 No specific page specified. Uploading ALL pages...")
         print("=" * 60)
         

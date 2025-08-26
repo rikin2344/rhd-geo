@@ -267,9 +267,19 @@ body {
 
 .dimensions-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-micro-2);
     margin-bottom: var(--space-micro-2);
+}
+
+/* Default 3x1 grid (when no SKF data) */
+.dimensions-grid-3x1 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 3x2 grid (when SKF data is available) */
+.dimensions-grid-3x2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 .dimension-item {
@@ -919,6 +929,7 @@ body {
     }
     
 
+    
 
 }
 

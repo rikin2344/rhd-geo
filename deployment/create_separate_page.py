@@ -11,7 +11,7 @@ import argparse
 def is_model_page(page_type):
     """Check if this is a model-specific page (vs series page)"""
     # Model pages are numeric or contain specific model patterns
-    return page_type.isdigit() or page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '6001', '6002']
+    return page_type.isdigit() or page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6001', '6002']
 
 def get_model_info(page_type):
     """Get model page information"""
@@ -80,6 +80,86 @@ def get_model_info(page_type):
             'series': 'miniature-series',
             'model': '629',
             'title': '629 Deep Groove Ball Bearing - 9x26x8mm | RHD Bearings'
+        },
+        '634': {
+            'series': 'miniature-series',
+            'model': '634',
+            'title': '634 Deep Groove Ball Bearing - 4x16x5mm | RHD Bearings'
+        },
+        '635': {
+            'series': 'miniature-series',
+            'model': '635',
+            'title': '635 Deep Groove Ball Bearing - 5x19x6mm | RHD Bearings'
+        },
+        '683': {
+            'series': 'miniature-series',
+            'model': '683',
+            'title': '683 Deep Groove Ball Bearing - 3x7x2mm | RHD Bearings'
+        },
+        '684': {
+            'series': 'miniature-series',
+            'model': '684',
+            'title': '684 Deep Groove Ball Bearing - 4x9x2.5mm | RHD Bearings'
+        },
+        '685': {
+            'series': 'miniature-series',
+            'model': '685',
+            'title': '685 Deep Groove Ball Bearing - 5x11x3mm | RHD Bearings'
+        },
+        '686': {
+            'series': 'miniature-series',
+            'model': '686',
+            'title': '686 Deep Groove Ball Bearing - 6x13x3.5mm | RHD Bearings'
+        },
+        '687': {
+            'series': 'miniature-series',
+            'model': '687',
+            'title': '687 Deep Groove Ball Bearing - 7x14x3.5mm | RHD Bearings'
+        },
+        '688': {
+            'series': 'miniature-series',
+            'model': '688',
+            'title': '688 Deep Groove Ball Bearing - 8x16x4mm | RHD Bearings'
+        },
+        '689': {
+            'series': 'miniature-series',
+            'model': '689',
+            'title': '689 Deep Groove Ball Bearing - 9x17x4mm | RHD Bearings'
+        },
+        '693': {
+            'series': 'miniature-series',
+            'model': '693',
+            'title': '693 Deep Groove Ball Bearing - 3x8x3mm | RHD Bearings'
+        },
+        '694': {
+            'series': 'miniature-series',
+            'model': '694',
+            'title': '694 Deep Groove Ball Bearing - 4x11x4mm | RHD Bearings'
+        },
+        '695': {
+            'series': 'miniature-series',
+            'model': '695',
+            'title': '695 Deep Groove Ball Bearing - 5x13x4mm | RHD Bearings'
+        },
+        '696': {
+            'series': 'miniature-series',
+            'model': '696',
+            'title': '696 Deep Groove Ball Bearing - 6x15x5mm | RHD Bearings'
+        },
+        '697': {
+            'series': 'miniature-series',
+            'model': '697',
+            'title': '697 Deep Groove Ball Bearing - 7x17x5mm | RHD Bearings'
+        },
+        '698': {
+            'series': 'miniature-series',
+            'model': '698',
+            'title': '698 Deep Groove Ball Bearing - 8x19x6mm | RHD Bearings'
+        },
+        '699': {
+            'series': 'miniature-series',
+            'model': '699',
+            'title': '699 Deep Groove Ball Bearing - 9x20x6mm | RHD Bearings'
         }
     }
     
@@ -233,6 +313,53 @@ def create_working_page(page_type='miniature'):
         # Replace navbar container with actual navbar HTML
         body_content = body_content.replace('<div id="navbar-container"></div>', navbar_html)
         
+        # Comprehensive removal of all fetch calls and related script blocks
+        # Remove individual fetch calls
+        body_content = body_content.replace("fetch('../shared/navbar.html')", "// fetch call removed - navbar already embedded")
+        body_content = body_content.replace("fetch('../shared/footer.html')", "// fetch call removed - footer already embedded")
+        body_content = body_content.replace("fetch('../shared/watermark.html')", "// fetch call removed - watermark already embedded")
+        
+        # Remove script blocks that load shared components via fetch
+        # Use more flexible pattern matching to catch variations in formatting
+        import re
+        
+        # Pattern 1: Standard navbar loading script
+        navbar_script_pattern = r'<script>\s*document\.addEventListener\("DOMContentLoaded",\s*function\(\)\s*\{\s*//\s*Load navbar\s*fetch\(\.\./shared/navbar\.html"\)\s*\.then\(response\s*=>\s*response\.text\(\)\)\s*\.then\(data\s*=>\s*\{\s*document\.getElementById\("navbar-container"\)\.innerHTML\s*=\s*data;\s*\}\s*\)\s*\.catch\(error\s*=>\s*console\.error\("Error loading navbar:",\s*error\)\);\s*\}\s*\);\s*</script>'
+        body_content = re.sub(navbar_script_pattern, '<!-- Navbar loading script removed - navbar already embedded -->', body_content, flags=re.DOTALL)
+        
+        # Pattern 2: More generic navbar loading script (catch variations)
+        generic_navbar_pattern = r'<script>[^<]*fetch\(\.\./shared/navbar\.html"\)[^<]*</script>'
+        body_content = re.sub(generic_navbar_pattern, '<!-- Navbar loading script removed - navbar already embedded -->', body_content, flags=re.DOTALL)
+        
+        # Pattern 3: Any remaining script blocks with fetch calls to shared components
+        shared_fetch_pattern = r'<script>[^<]*fetch\(\.\./shared/[^<]*</script>'
+        body_content = re.sub(shared_fetch_pattern, '<!-- Shared component loading script removed - components already embedded -->', body_content, flags=re.DOTALL)
+        
+        # Additional cleanup: Remove any remaining problematic patterns
+        # Remove any remaining references to ../shared/ paths
+        body_content = body_content.replace('../shared/', '// shared path removed - components embedded')
+        
+        # Remove any console.error calls related to failed fetches
+        body_content = body_content.replace('console.error("Error loading navbar:", error)', '// error logging removed')
+        body_content = body_content.replace('console.error("Error loading footer:", error)', '// error logging removed')
+        body_content = body_content.replace('console.error("Error loading watermark:", error)', '// error logging removed')
+        
+        # Clean up any empty script tags that might be left
+        body_content = re.sub(r'<script>\s*</script>', '', body_content)
+        
+        # Final validation: Ensure no problematic patterns remain
+        problematic_patterns = [
+            'fetch(\'../shared/',
+            'fetch("../shared/',
+            '../shared/',
+            'console.error("Error loading'
+        ]
+        
+        for pattern in problematic_patterns:
+            if pattern in body_content:
+                print(f"⚠️  Warning: Found problematic pattern '{pattern}' - removing...")
+                body_content = body_content.replace(pattern, '// problematic pattern removed')
+        
         # Handle shared components for model pages
         if is_model_page(page_type):
             # Read shared component files
@@ -303,6 +430,32 @@ body {{
 {script_content}
 </body>
 </html>'''
+        
+        # Final verification: Ensure the generated HTML is clean
+        print("🔍 Verifying generated HTML is clean...")
+        verification_patterns = [
+            'fetch(\'../shared/',
+            'fetch("../shared/',
+            '../shared/',
+            'console.error("Error loading'
+        ]
+        
+        html_clean = True
+        for pattern in verification_patterns:
+            if pattern in working_html:
+                print(f"❌ Found problematic pattern in final HTML: '{pattern}'")
+                html_clean = False
+        
+        if html_clean:
+            print("✅ Generated HTML is clean and ready for deployment")
+        else:
+            print("⚠️  Warning: HTML contains problematic patterns - attempting final cleanup...")
+            cleanup_count = 0
+            for pattern in verification_patterns:
+                if pattern in working_html:
+                    working_html = working_html.replace(pattern, '// problematic pattern removed')
+                    cleanup_count += 1
+            print(f"✅ Final cleanup completed - removed {cleanup_count} problematic patterns")
         
         # Save files
         files_created = []
@@ -379,7 +532,7 @@ def print_final_instructions(files, clean_url, page_type='miniature'):
 def main():
     """Main execution"""
     parser = argparse.ArgumentParser(description='Create a standalone HTML page')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629'], default='miniature',
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699'], default='miniature',
                       help='Which page to generate (miniature, series, or model pages like 604, 607, 608, etc.)')
     args = parser.parse_args()
     

@@ -1,0 +1,404 @@
+{
+    "model_number": "608",
+    "bearing_type": "Deep Groove Ball Bearing",
+    "enhanced_description": "The popular kid everyone knows - if bearings had social media, this one would have a million followers",
+    "hero_description": "Meet the 608: With 3.32kN of engineering excellence and 8mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.",
+    
+    "dimensions": {
+      "bore_diameter_d_mm": 8,
+      "outer_diameter_D_mm": 22,
+      "width_B_mm": 7,
+      "weight_kg": 0.015,
+      "skf_extended_dimensions": {
+        "d1_shoulder_diameter": 12.15,
+        "D2_recess_diameter": 19.2,
+        "r1_chamfer_radius": 0.3,
+        "r2_chamfer_radius": 0.3
+      }
+    },
+    
+    "load_ratings": {
+      "dynamic_load_Cr_kN": 3.32,
+      "static_load_Cor_kN": 1.38,
+      "load_capacity_kg": 338
+    },
+    
+    "speed_limits": {
+      "grease_rpm": 26000,
+      "oil_rpm": 34000,
+      "recommended_max_rpm": 23400
+    },
+    
+    "material": {
+      "grade": "Gcr15 (AISI 52100)",
+      "carbon_content": "0.95-1.05%",
+      "chromium_content": "1.40-1.65%",
+      "silicon_content": "0.15-0.35%",
+      "iso_standard": "15:2011 Compliant"
+    },
+    
+    "technical_drawing": {
+      "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+      "image_alt": "608 Deep Groove Ball Bearing Technical Drawing - Dimensions and Cross Section",
+      "image_title": "Ball Bearing Cross Section"
+    },
+    
+    "vibration": {
+      "V2": {
+        "low_frequency": 72,
+        "medium_frequency": 48,
+        "high_frequency": 40
+      },
+      "V3": {
+        "low_frequency": 44,
+        "medium_frequency": 28,
+        "high_frequency": 24
+      },
+      "V4": {
+        "low_frequency": 38,
+        "medium_frequency": 12,
+        "high_frequency": 12
+      }
+    },
+    
+    "noise": {
+      "Z2": 35,
+      "Z3": 31,
+      "Z4": 27
+    },
+    
+    "clearance": {
+      "C2": {
+        "min_microns": 0,
+        "max_microns": 7
+      },
+      "C0": {
+        "min_microns": 2,
+        "max_microns": 13
+      },
+      "C3": {
+        "min_microns": 8,
+        "max_microns": 23
+      },
+      "C4": {
+        "min_microns": 14,
+        "max_microns": 29
+      },
+      "C5": {
+        "min_microns": 20,
+        "max_microns": 37
+      }
+    },
+    
+    "seal_options": {
+      "open": {
+        "designation": "608 Open",
+        "description": "Open bearing, no seals",
+        "speed_factor": 1.0,
+        "max_rpm": 26000,
+        "protection": "None",
+        "lubrication": "External required",
+        "badge": "High Speed"
+      },
+      "single_shield": {
+        "designation": "608-Z",
+        "description": "Single metal shield",
+        "speed_factor": 0.95,
+        "max_rpm": 24700,
+        "protection": "Light dust protection",
+        "lubrication": "Pre-greased",
+        "badge": "Balanced"
+      },
+      "double_shielded": {
+        "designation": "608-ZZ",
+        "description": "Double metal shields",
+        "speed_factor": 0.9,
+        "max_rpm": 23400,
+        "protection": "Dust protection",
+        "lubrication": "Sealed for life",
+        "badge": "Most Popular",
+        "is_popular": true
+      },
+      "single_seal": {
+        "designation": "608-RS",
+        "description": "Single rubber seal",
+        "speed_factor": 0.8,
+        "max_rpm": 20800,
+        "protection": "Moisture and dust",
+        "lubrication": "Pre-greased, sealed",
+        "badge": "Protected"
+      },
+      "double_sealed": {
+        "designation": "608-2RS",
+        "description": "Double rubber seals",
+        "speed_factor": 0.7,
+        "max_rpm": 18200,
+        "protection": "Complete sealing",
+        "lubrication": "Permanently sealed",
+        "badge": "Most Popular",
+        "is_popular": true
+      }
+    },
+    
+    "applications": {
+      "industrial_precision": {
+        "title": "Industrial & Precision",
+        "icon": "factory",
+        "applications": [
+          "Small electric motors",
+          "Precision instruments",
+          "Computer equipment",
+          "Medical devices",
+          "Timing mechanisms",
+          "Hand tools",
+          "Laboratory equipment",
+          "Small pumps",
+          "Cooling fans",
+          "Textile machinery",
+          "Machine tools",
+          "Electric tools"
+        ],
+        "requirements": "Precision, reliability, quiet operation, high speed capability"
+      },
+      "automotive_transportation": {
+        "title": "Automotive & Transportation",
+        "icon": "car",
+        "applications": [
+          "Automotive cooling systems",
+          "Motorcycles",
+          "Transmission equipment",
+          "Construction equipment",
+          "Small motor assemblies",
+          "Vehicle HVAC systems"
+        ],
+        "requirements": "Temperature resistance, vibration resistance, compact design"
+      },
+      "home_appliances": {
+        "title": "Home Appliances",
+        "icon": "appliances",
+        "applications": [
+          "Washing machines",
+          "Refrigerators",
+          "Air conditioners",
+          "Microwave ovens",
+          "Vacuum cleaners",
+          "Sewing machines",
+          "Massage chairs",
+          "Fitness equipment",
+          "Personal care appliances",
+          "Small kitchen appliances",
+          "Bathroom ventilation",
+          "Portable devices",
+          "Home electronics"
+        ],
+        "requirements": "Quiet operation, long life, cost effectiveness, maintenance-free"
+      }
+    },
+    
+    "faqs": {
+      "selection_replacement": {
+        "title": "🔧 Bearing Selection & Replacement",
+        "questions": [
+          {
+            "question": "How do I know if the 608 bearing is the right choice for my 8mm shaft application?",
+            "direct_answer": "Perfect for 8mm shafts requiring 3.32kN load capacity. Check shaft diameter, housing space, and load requirements match specifications.",
+            "why_matters": "The 608 is the most popular bearing in electronics and small motor applications. Wrong bearing selection leads to premature failure, equipment damage, and costly downtime. Proper sizing ensures optimal performance and maximum service life in precision applications.",
+            "how_to_handle": "Verify: 1) Shaft is exactly 8mm diameter, 2) Housing accommodates 22mm outer diameter, 3) You have 7mm width clearance, 4) Loads stay under 3.32kN dynamic/1.38kN static. For electronics and precision instruments, the 608 provides the ideal balance of size, capacity, and reliability.",
+            "pro_tip": "The 608 is the world's most popular bearing - if it fits your specs, it's likely the right choice."
+          },
+          {
+            "question": "Can I use a cheaper bearing instead of the 608, or does it need to be exact?",
+            "direct_answer": "Dimensions must match exactly (8x22x7mm), but quality matters significantly. Cheaper bearings fail 3-5x faster, costing more in downtime.",
+            "why_matters": "Quality differences in 608 bearings are substantial. Cheap bearings use inferior steel, poor heat treatment, and loose tolerances. While initial cost is lower, total cost of ownership is much higher due to frequent replacements, downtime, and potential equipment damage.",
+            "how_to_handle": "Invest in quality 608 bearings with Gcr15 steel and precision manufacturing. Calculate total cost including replacement labor, downtime, and potential equipment damage. For critical applications, premium bearings pay for themselves through extended life and reliability.",
+            "pro_tip": "Our 20+ years experience shows quality 608 bearings last 3-10x longer than cheap alternatives."
+          }
+        ]
+      },
+      "installation_maintenance": {
+        "title": "🔨 Installation & Maintenance",
+        "questions": [
+          {
+            "question": "Why do my 608 bearings keep failing early, and how can I prevent it?",
+            "direct_answer": "Most failures come from hammer installation, wrong tolerances, overloading, or poor lubrication. Focus on proper installation and staying within specifications.",
+            "why_matters": "608 bearings in precision applications operate continuously under varying conditions. Improper installation damages internal geometry, while exceeding specifications causes accelerated wear. Small bearings are particularly sensitive to installation errors and contamination.",
+            "how_to_handle": "Prevention checklist: Use proper bearing pullers (never hammer), maintain h6 shaft tolerance, stay within 3.32kN load limit, don't exceed 26,000 RPM, re-grease every 6-12 months. Keep installation area clean and use proper tools for precision work.",
+            "pro_tip": "Most 608 bearing failures are installation-related - invest in proper tools and training."
+          },
+          {
+            "question": "How often should I re-lubricate my 608 bearings, and with what type of grease?",
+            "direct_answer": "Re-grease every 6-12 months or 2000-5000 operating hours. Use lithium complex grease (NLGI Grade 2) for standard applications.",
+            "why_matters": "Proper lubrication is critical for 608 bearings in high-speed precision applications. Wrong grease type or intervals leads to overheating, increased friction, and premature wear. Small bearings are particularly sensitive to lubrication quality.",
+            "how_to_handle": "Use lithium complex grease (NLGI Grade 2) for temperatures -30°C to +120°C. High-speed applications (26,000 RPM) need synthetic grease. Apply until old grease purges out, then stop - over-greasing causes overheating. Monitor temperature during operation.",
+            "pro_tip": "Quality grease extends 608 bearing life 2-3x - don't compromise on lubrication."
+          }
+        ]
+      },
+      "troubleshooting": {
+        "title": "🔍 Troubleshooting & Problem Solving",
+        "questions": [
+          {
+            "question": "My 608 bearing is making noise - is it dangerous and what should I do?",
+            "direct_answer": "Noise indicates problems but isn't always immediately dangerous. Diagnose quickly: grinding = contamination, squealing = lubrication failure, knocking = severe damage.",
+            "why_matters": "Bearing noise is an early warning system. Different sounds indicate different problems, and early intervention can prevent catastrophic failure. In precision applications, even minor noise can indicate performance degradation that affects equipment accuracy.",
+            "how_to_handle": "Diagnose immediately: Light humming = normal, grinding = contamination/wear, squealing = lubrication failure, knocking = severe damage. Stop operation if noise is loud or irregular. Clean and re-lubricate first - if noise persists, replace bearing before catastrophic failure.",
+            "pro_tip": "In precision applications, any unusual noise warrants immediate attention - don't wait for complete failure."
+          },
+          {
+            "question": "What causes 608 bearings to overheat and how do I fix it?",
+            "direct_answer": "Common causes: excessive speed (over 26,000 RPM), overloading (above 3.32kN), poor lubrication, tight clearance, or misalignment.",
+            "why_matters": "Overheating rapidly degrades bearing materials, reduces lubrication effectiveness, and can cause thermal expansion leading to seizure. Small bearings like the 608 are particularly sensitive to temperature due to their compact design and high-speed capabilities.",
+            "how_to_handle": "Check immediately: Speed (stay under 26,000 RPM), load (below 3.32kN), lubrication quality and quantity, shaft/housing tolerances, and alignment. Operating temperature should stay under 70°C. Address root cause before continuing operation.",
+            "pro_tip": "Temperature monitoring is critical for 608 bearings - invest in infrared thermometers for regular checks."
+          }
+        ]
+      },
+      "cost_performance": {
+        "title": "💰 Cost & Performance Optimization",
+        "questions": [
+          {
+            "question": "Is it worth upgrading to premium 608 bearings, or are standard ones sufficient?",
+            "direct_answer": "Premium 608 bearings cost 20-30% more but last 3-10x longer in demanding applications. Calculate total cost including downtime and replacement labor.",
+            "why_matters": "608 bearings are often used in critical precision equipment where failure causes expensive downtime. While premium bearings have higher upfront costs, they use superior materials (Gcr15 steel), tighter tolerances, and better lubrication, dramatically extending service life and reliability.",
+            "how_to_handle": "Calculate total cost of ownership: bearing cost + installation labor + downtime costs + potential equipment damage. For critical applications (precision instruments, medical devices, high-speed equipment), premium bearings typically pay for themselves. Use standard bearings only for non-critical, easily accessible applications.",
+            "pro_tip": "In precision applications, bearing failure often costs 10-50x the bearing price in downtime and repairs."
+          },
+          {
+            "question": "How can I maximize the lifespan and performance of my 608 bearings?",
+            "direct_answer": "Focus on proper installation, quality lubrication, staying within load/speed limits, and environmental protection. These steps can extend life 5-10x.",
+            "why_matters": "608 bearings in precision applications operate in demanding conditions with little room for error. Proper care and maintenance practices can extend bearing life from thousands to tens of thousands of hours, dramatically reducing maintenance costs and improving equipment reliability.",
+            "how_to_handle": "Optimization checklist: Use proper installation tools (never hammer), maintain clean environment, use quality grease (lithium complex NLGI Grade 2), stay within 3.32kN load and 26,000 RPM limits, monitor temperature (keep under 70°C), specify sealed bearings (2RS) for contaminated environments, maintain proper shaft tolerances (h6).",
+            "pro_tip": "The 608's popularity means optimization techniques are well-documented - follow proven practices for maximum ROI."
+          }
+        ]
+      }
+    },
+    
+    "cross_references": {
+      "related_models": [
+        {"model": "604", "dimensions": "4×12×4mm", "url": "/specs/miniature-series/604"},
+        {"model": "605", "dimensions": "5×14×5mm", "url": "/specs/miniature-series/605"},
+        {"model": "606", "dimensions": "6×17×6mm", "url": "/specs/miniature-series/606"},
+        {"model": "607", "dimensions": "7×19×6mm", "url": "/specs/miniature-series/607"},
+        {"model": "609", "dimensions": "9×24×7mm", "url": "/specs/miniature-series/609"}
+      ],
+      "series_alternatives": [
+        {"series": "6000 Series", "description": "Lighter duty applications"},
+        {"series": "6300 Series", "description": "Heavier duty applications"}
+      ],
+      "application_specific": [
+        {"type": "High Temperature", "solution": "608 with high-temp grease"},
+        {"type": "High Speed", "solution": "608 with precision tolerance"},
+        {"type": "Corrosive Environment", "solution": "608 with stainless steel option"}
+      ]
+    },
+    
+    "expertise_signals": [
+      {
+        "icon": "📋",
+        "title": "ISO Compliance",
+        "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
+      },
+      {
+        "icon": "🔬",
+        "title": "Material Science",
+        "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Precision Engineering",
+        "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
+      },
+      {
+        "icon": "🔧",
+        "title": "Professional Installation",
+        "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
+      },
+      {
+        "icon": "📊",
+        "title": "Performance Comparison",
+        "description": "Handles 1.6kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+      },
+      {
+        "icon": "💰",
+        "title": "Value Engineering",
+        "description": "Best value in small-bearing category for 3.32kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
+    ],
+    
+    "seo_metadata": {
+      "title": "608 Deep Groove Ball Bearing - 8x22x7mm | RHD Bearings",
+      "meta_description": "Premium 608 bearing (8x22x7mm) with 3.32kN load capacity. Perfect for automotive, industrial & household applications. ISO certified quality.",
+      "keywords": [
+        "608 bearing",
+        "8mm bearing",
+        "deep groove ball bearing",
+        "rhd bearings",
+        "automotive bearing",
+        "industrial bearing",
+        "precision bearing",
+        "3.32kN bearing",
+        "ISO certified bearing",
+        "chrome steel bearing",
+        "gcr15 bearing",
+        "mumbai bearings",
+        "india bearing manufacturer",
+        "andheri bearings"
+      ],
+      "canonical_url": "https://rhdbearings.com/specs/miniature-series/608",
+      "og_data": {
+        "title": "608 Deep Groove Ball Bearing - 8x22x7mm | RHD Bearings",
+        "description": "Premium 608 bearing (8x22x7mm) with 3.32kN load capacity. Perfect for automotive, industrial & household applications. ISO certified quality.",
+        "url": "https://rhdbearings.com/specs/miniature-series/608",
+        "type": "product",
+        "site_name": "RHD Bearings"
+      },
+      "twitter_data": {
+        "card": "summary_large_image",
+        "title": "608 Deep Groove Ball Bearing - 8x22x7mm | RHD Bearings",
+        "description": "Premium 608 bearing (8x22x7mm) with 3.32kN load capacity. Perfect for automotive, industrial & household applications."
+      },
+      "schema_markup": {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "608 Deep Groove Ball Bearing",
+        "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+        "description": "Premium 608 bearing (8x22x7mm) with 3.32kN load capacity. Perfect for automotive, industrial & household applications.",
+        "sku": "608",
+        "mpn": "608",
+        "brand": {
+          "@type": "Brand",
+          "name": "RHD Bearings"
+        },
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "RHD Bearings",
+          "url": "https://rhdbearings.com"
+        },
+        "category": "Deep Groove Ball Bearings",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://rhdbearings.com/specs/miniature-series/608",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "seller": {
+            "@type": "Organization",
+            "name": "RHD Bearings"
+          }
+        }
+      }
+    },
+    
+    "page_config": {
+      "has_skf_data": true,
+      "dimensions_grid_type": "4x2",
+      "hero_image": "https://rhdbearings.com/wp-content/uploads/2025/08/DGBB.png",
+      "hero_image_alt": "608 Deep Groove Ball Bearing - RHD Bearings",
+      "breadcrumb_path": [
+        {"text": "Home", "url": "https://rhdbearings.com/"},
+        {"text": "Miniature Bearings", "url": "https://rhdbearings.com/specs/miniature-series.html"},
+        {"text": "608 Bearing", "url": null}
+      ]
+    }
+  }
