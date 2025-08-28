@@ -6,7 +6,7 @@
     <title>Miniature Ball Bearings | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-/* Reset and base styles */
+/* Reset everything */
 * {
     margin: 0;
     padding: 0;
@@ -227,7 +227,296 @@ body {
     }
 }
 
+/* Footer CSS */
+
+
+/* CTA CSS */
+
+
+/* Watermark CSS */
+/* ================================
+   WATERMARK SECTION
+   ================================ */
+
+.watermark-section {
+    width: 100vw;
+    background: transparent;
+    margin: 40px 0 0 0;
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.watermark-text {
+    text-align: center;
+    font-size: 300px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, 
+        rgba(64, 64, 64, 0.6) 0%, 
+        rgba(96, 96, 96, 0.4) 30%, 
+        rgba(128, 128, 128, 0.2) 60%, 
+        rgba(192, 192, 192, 0.05) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* ================================
+   WATERMARK RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+    .watermark-text {
+        font-size: 80px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.5) 0%, 
+            rgba(96, 96, 96, 0.3) 30%, 
+            rgba(128, 128, 128, 0.15) 60%, 
+            rgba(192, 192, 192, 0.03) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .watermark-text {
+        font-size: 100px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.55) 0%, 
+            rgba(96, 96, 96, 0.35) 30%, 
+            rgba(128, 128, 128, 0.18) 60%, 
+            rgba(192, 192, 192, 0.04) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+    }
+}
+
+
 /* Page CSS */
+/* ================================
+   RHD BEARINGS NAVIGATION HEADER
+   ================================ */
+
+:root {
+    --nav-height: 85px;
+    --nav-padding: 24px;
+    --menu-gap: 50px;
+    --menu-font: "Bai Jamjuree", sans-serif;
+    --menu-color: #212121;
+    --menu-hover-color: #000000;
+    --ui-radius: 16px;
+    --ui-radius-sm: 8px;
+}
+
+/* Wrapper */
+#wrapper-navbar {
+    margin: 10px auto;
+    max-width: calc(1200px + 20px);
+    padding: 0 10px;
+}
+
+/* Header Wrapper */
+.uicore-header-wrapper {
+    margin-top: 35px;
+    background: #EBEBEB;
+    box-shadow: 0 0 0 1px #D1D1D1;
+    position: relative;
+    border-radius: 22px;
+    height: var(--nav-height, 100%);
+    overflow: visible;
+}
+
+/* Container */
+.uicore.uicore-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--nav-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Logo */
+.uicore-branding {
+    height: 100%;
+    padding: 10px 0;
+}
+
+.uicore-branding a {
+    height: 100%;
+    display: block;
+}
+
+.uicore-logo {
+    height: 100%;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.uicore-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Menu */
+.uicore-nav-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--menu-gap);
+}
+
+.uicore-menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.uicore-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--menu-gap);
+}
+
+/* Menu Items */
+.menu-item {
+    color: var(--menu-color);
+    font-family: var(--menu-font);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Flip Animation */
+.ui-flip-anim-wrapp {
+    position: relative;
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.ui-flip-anim-wrapp span {
+    display: block;
+    position: relative;
+    padding: 0;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+}
+
+.ui-flip-anim-wrapp span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(-90deg);
+}
+
+.menu-item:hover .ui-flip-anim-wrapp span:first-child {
+    transform: rotateX(90deg);
+}
+
+.menu-item:hover .ui-flip-anim-wrapp span:nth-child(2) {
+    transform: rotateX(0deg);
+}
+
+/* Submenu */
+.has-submenu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: var(--ui-radius-sm);
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.has-submenu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.sub-menu a:hover {
+    color: var(--menu-hover-color);
+    background: rgba(0,0,0,0.05);
+}
+
+/* Contact Button */
+.uicore-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-family: var(--menu-font);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.uicore-btn.uicore-inverted {
+    color: var(--menu-color);
+    border: 1px solid var(--menu-color);
+}
+
+.uicore-btn.uicore-inverted:hover {
+    background: var(--menu-color);
+    color: #ffffff;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .uicore-nav-menu,
+    .uicore-extra {
+        display: none;
+    }
+
+    .uicore-mobile-menu {
+        display: block;
+    }
+}
+
 /* ================================
    CSS VARIABLES & BASE STYLES
    ================================ */
@@ -800,14 +1089,21 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--space-component-1);
+    min-height: 200px;
+    background: #F8F9FA;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px dashed #CBD5E0;
 }
 
 .model-card {
-    background: var(--surface-primary);
+    background: #FFFFFF !important;
     padding: var(--space-component-1);
     border-radius: 12px;
-    box-shadow: var(--elevation-1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
     transition: all var(--transition-fast);
+    border: 1px solid #E2E8F0;
+    margin-bottom: 16px;
 }
 
 .model-card:hover {
@@ -1049,6 +1345,116 @@ body {
    FOOTER
    ================================ */
 
+.footer {
+    background: transparent;
+    padding: var(--space-section-2) 0;
+}
+
+.footer-content {
+    background: var(--surface-primary);
+    border-radius: 24px;
+    margin: 0 var(--space-component-2);
+    padding: var(--space-section-2);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--elevation-2);
+    border: 1px solid var(--border-subtle);
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-section-1);
+    margin-bottom: var(--space-section-1);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: var(--space-component-1);
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-description {
+    font-size: var(--text-body-small);
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-2);
+}
+
+.footer-column-title {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    margin-bottom: var(--space-component-1);
+    color: var(--text-primary);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-micro-2);
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-body-small);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-component-1);
+    border-top: 1px solid var(--border-subtle);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-copyright p {
+    font-size: var(--text-body-small);
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: var(--space-component-1);
+}
+
+.footer-legal a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-body-small);
+    transition: color var(--transition-fast);
+}
+
+.footer-legal a:hover {
+    color: var(--text-primary);
+}
+
 /* ================================
    RESPONSIVE DESIGN
    ================================ */
@@ -1080,6 +1486,20 @@ body {
     .sidebar-title {
         text-align: center;
         margin-bottom: 24px;
+    }
+    
+    .footer-content {
+        margin: 0 var(--space-component-1);
+        padding: var(--space-section-1);
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1195,6 +1615,31 @@ body {
         grid-template-columns: 1fr;
         gap: var(--space-micro-2);
     }
+    
+    .footer-content {
+        margin: 0 var(--space-micro-2);
+        padding: var(--space-component-2);
+        border-radius: 16px;
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-micro-2);
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1244,74 +1689,73 @@ a:focus {
 </head>
 <body>
 <!-- Navigation Header -->
-    <!-- RHD Bearings Navigation Header -->
-<div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
-    <div class="uicore-header-wrapper">
-        <nav class="uicore uicore-container">
-            <!-- Logo -->
-            <div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
-                <a href="https://rhdbearings.com/">
-                    <img class="uicore-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
-                </a>
-            </div>
+    <div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
+        <div class="uicore-header-wrapper">
+            <nav class="uicore uicore-container">
+                <!-- Logo -->
+                <div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
+                    <a href="https://rhdbearings.com/">
+                        <img class="uicore-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                    </a>
+                </div>
 
-            <!-- Navigation Menu -->
-            <div class="uicore-nav-menu">
-                <div class="uicore-menu-container">
-                    <div class="uicore-menu">
-                        <a href="https://rhdbearings.com/" class="menu-item ui-anim-flip">
-                            <div class="ui-flip-anim-wrapp">
-                                <span class="ui-menu-item-wrapper">Home</span>
-                                <span class="ui-menu-item-wrapper">Home</span>
-                            </div>
-                        </a>
-                        <a href="https://rhdbearings.com/about-us/" class="menu-item ui-anim-flip">
-                            <div class="ui-flip-anim-wrapp">
-                                <span class="ui-menu-item-wrapper">About Us</span>
-                                <span class="ui-menu-item-wrapper">About Us</span>
-                            </div>
-                        </a>
-                        <a href="https://rhdbearings.com/products/" class="menu-item has-submenu ui-anim-flip">
-                            <div class="ui-flip-anim-wrapp">
-                                <span class="ui-menu-item-wrapper">Products</span>
-                                <span class="ui-menu-item-wrapper">Products</span>
-                            </div>
-                            <div class="sub-menu">
-                                <a href="https://rhdbearings.com/specs/miniature-series.html" data-page="miniature">Miniature Bearings</a>
-                                <a href="https://rhdbearings.com/specs/6000-series.html" data-page="6000">6000 Series</a>
-                                <a href="https://rhdbearings.com/specs/6200-series.html" data-page="6200">6200 Series</a>
-                                <a href="https://rhdbearings.com/specs/6300-series.html" data-page="6300">6300 Series</a>
-                            </div>
-                        </a>
-                        <a href="https://rhdbearings.com/industries/" class="menu-item ui-anim-flip">
-                            <div class="ui-flip-anim-wrapp">
-                                <span class="ui-menu-item-wrapper">Industries</span>
-                                <span class="ui-menu-item-wrapper">Industries</span>
-                            </div>
-                        </a>
-                        <a href="https://rhdbearings.com/bearing-size-chart/" class="menu-item ui-anim-flip">
-                            <div class="ui-flip-anim-wrapp">
-                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
-                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
-                            </div>
-                        </a>
-                        <a href="https://rhdbearings.com/shop/" class="menu-item ui-anim-flip">
-                            <div class="ui-flip-anim-wrapp">
-                                <span class="ui-menu-item-wrapper">Shop</span>
-                                <span class="ui-menu-item-wrapper">Shop</span>
-                            </div>
-                        </a>
+                <!-- Navigation Menu -->
+                <div class="uicore-nav-menu">
+                    <div class="uicore-menu-container">
+                        <div class="uicore-menu">
+                            <a href="https://rhdbearings.com/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Home</span>
+                                    <span class="ui-menu-item-wrapper">Home</span>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/about-us/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">About Us</span>
+                                    <span class="ui-menu-item-wrapper">About Us</span>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/products/" class="menu-item has-submenu ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Products</span>
+                                    <span class="ui-menu-item-wrapper">Products</span>
+                                </div>
+                                <div class="sub-menu">
+                                    <a href="https://rhdbearings.com/specs/miniature-series.html" data-page="miniature">Miniature Bearings</a>
+                                    <a href="https://rhdbearings.com/specs/6000-series.html" data-page="6000">6000 Series</a>
+                                    <a href="https://rhdbearings.com/specs/6200-series.html" data-page="6200">6200 Series</a>
+                                    <a href="https://rhdbearings.com/specs/6300-series.html" data-page="6300">6300 Series</a>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/industries/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Industries</span>
+                                    <span class="ui-menu-item-wrapper">Industries</span>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/bearing-size-chart/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                    <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/shop/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Shop</span>
+                                    <span class="ui-menu-item-wrapper">Shop</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Contact Button -->
-            <div class="uicore-extra">
-                <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
-            </div>
-        </nav>
+                <!-- Contact Button -->
+                <div class="uicore-extra">
+                    <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
+                </div>
+            </nav>
+        </div>
     </div>
-</div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -2244,44 +2688,101 @@ a:focus {
             }
         }
 
-        // Event listeners
-        document.getElementById('sizeFilter').addEventListener('change', filterModels);
-        document.getElementById('loadFilter').addEventListener('change', filterModels);
-        document.getElementById('speedFilter').addEventListener('change', filterModels);
-        document.getElementById('searchInput').addEventListener('input', filterModels);
-
-        // Initialize
+        // Initialize everything when DOM is ready
         document.addEventListener('DOMContentLoaded', function() {
-            renderModels(bearingsData);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+            try {
+                console.log('Initializing MiniatureBearingsWebPage...');
+                
+                // Test if basic JavaScript is working
+                console.log('Bearings data length:', bearingsData.length);
+                console.log('First bearing:', bearingsData[0]);
+                
+                // Test if the grid element exists
+                const grid = document.getElementById('modelsGrid');
+                console.log('Grid element found:', grid);
+                if (grid) {
+                    console.log('Grid innerHTML before:', grid.innerHTML);
                 }
-            });
+                
+                // Initialize models
+                renderModels(bearingsData);
+                console.log('Models rendered successfully');
+                
+                if (grid) {
+                    console.log('Grid innerHTML after:', grid.innerHTML);
+                }
+                
+                // Add event listeners with error checking
+                const sizeFilter = document.getElementById('sizeFilter');
+                const loadFilter = document.getElementById('loadFilter');
+                const speedFilter = document.getElementById('speedFilter');
+                const searchInput = document.getElementById('searchInput');
+                
+                console.log('Filter elements found:', { sizeFilter, loadFilter, speedFilter, searchInput });
+                
+                if (sizeFilter) {
+                    sizeFilter.addEventListener('change', filterModels);
+                    console.log('Size filter event listener added');
+                } else {
+                    console.warn('Size filter element not found');
+                }
+                
+                if (loadFilter) {
+                    loadFilter.addEventListener('change', filterModels);
+                    console.log('Load filter event listener added');
+                } else {
+                    console.warn('Load filter element not found');
+                }
+                
+                if (speedFilter) {
+                    speedFilter.addEventListener('change', filterModels);
+                    console.log('Speed filter event listener added');
+                } else {
+                    console.warn('Speed filter element not found');
+                }
+                
+                if (searchInput) {
+                    searchInput.addEventListener('input', filterModels);
+                    console.log('Search input event listener added');
+                } else {
+                    console.warn('Search input element not found');
+                }
+                
+                // Initialize smooth scrolling
+                const anchorLinks = document.querySelectorAll('a[href^="#"]');
+                anchorLinks.forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+                console.log(`Smooth scrolling initialized for ${anchorLinks.length} anchor links`);
+                
+                console.log('MiniatureBearingsWebPage initialization complete');
+            } catch (error) {
+                console.error('Error during initialization:', error);
+                console.error('Error stack:', error.stack);
+            }
         });
     </script>
 
-    <!-- Load Navbar and Watermark -->
+    <!-- Load Shared Components -->
     <script>
+        // Auto-highlight current page in navigation
         document.addEventListener('DOMContentLoaded', function() {
-            // Load navbar
-            // fetch call removed - component already embedded
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-container').innerHTML = data;
-                })
-                .catch(error => // error logging removed);
-
-
+            const currentPage = document.body.getAttribute('data-page');
+            if (currentPage) {
+                const menuLink = document.querySelector(`[data-page="${currentPage}"]`);
+                if (menuLink) {
+                    menuLink.classList.add('current-menu-item');
+                }
+            }
         });
     </script>
 <script>
@@ -2418,42 +2919,99 @@ a:focus {
             }
         }
 
-        // Event listeners
-        document.getElementById('sizeFilter').addEventListener('change', filterModels);
-        document.getElementById('loadFilter').addEventListener('change', filterModels);
-        document.getElementById('speedFilter').addEventListener('change', filterModels);
-        document.getElementById('searchInput').addEventListener('input', filterModels);
-
-        // Initialize
+        // Initialize everything when DOM is ready
         document.addEventListener('DOMContentLoaded', function() {
-            renderModels(bearingsData);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+            try {
+                console.log('Initializing MiniatureBearingsWebPage...');
+                
+                // Test if basic JavaScript is working
+                console.log('Bearings data length:', bearingsData.length);
+                console.log('First bearing:', bearingsData[0]);
+                
+                // Test if the grid element exists
+                const grid = document.getElementById('modelsGrid');
+                console.log('Grid element found:', grid);
+                if (grid) {
+                    console.log('Grid innerHTML before:', grid.innerHTML);
                 }
-            });
+                
+                // Initialize models
+                renderModels(bearingsData);
+                console.log('Models rendered successfully');
+                
+                if (grid) {
+                    console.log('Grid innerHTML after:', grid.innerHTML);
+                }
+                
+                // Add event listeners with error checking
+                const sizeFilter = document.getElementById('sizeFilter');
+                const loadFilter = document.getElementById('loadFilter');
+                const speedFilter = document.getElementById('speedFilter');
+                const searchInput = document.getElementById('searchInput');
+                
+                console.log('Filter elements found:', { sizeFilter, loadFilter, speedFilter, searchInput });
+                
+                if (sizeFilter) {
+                    sizeFilter.addEventListener('change', filterModels);
+                    console.log('Size filter event listener added');
+                } else {
+                    console.warn('Size filter element not found');
+                }
+                
+                if (loadFilter) {
+                    loadFilter.addEventListener('change', filterModels);
+                    console.log('Load filter event listener added');
+                } else {
+                    console.warn('Load filter element not found');
+                }
+                
+                if (speedFilter) {
+                    speedFilter.addEventListener('change', filterModels);
+                    console.log('Speed filter event listener added');
+                } else {
+                    console.warn('Speed filter element not found');
+                }
+                
+                if (searchInput) {
+                    searchInput.addEventListener('input', filterModels);
+                    console.log('Search input event listener added');
+                } else {
+                    console.warn('Search input element not found');
+                }
+                
+                // Initialize smooth scrolling
+                const anchorLinks = document.querySelectorAll('a[href^="#"]');
+                anchorLinks.forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+                console.log(`Smooth scrolling initialized for ${anchorLinks.length} anchor links`);
+                
+                console.log('MiniatureBearingsWebPage initialization complete');
+            } catch (error) {
+                console.error('Error during initialization:', error);
+                console.error('Error stack:', error.stack);
+            }
         });
     </script>
 <script>
+        // Auto-highlight current page in navigation
         document.addEventListener('DOMContentLoaded', function() {
-            // Load navbar
-            fetch('../shared/navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navbar:', error));
-
-
+            const currentPage = document.body.getAttribute('data-page');
+            if (currentPage) {
+                const menuLink = document.querySelector(`[data-page="${currentPage}"]`);
+                if (menuLink) {
+                    menuLink.classList.add('current-menu-item');
+                }
+            }
         });
     </script>
 

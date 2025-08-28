@@ -139,17 +139,21 @@ def create_working_page(page_type='miniature'):
         with open('../webpages/shared/navbar.css', 'r', encoding='utf-8') as f:
             navbar_css = f.read()
         
-        # Read additional shared CSS for model pages
+        # Read additional shared CSS for all pages
         footer_css = ""
         cta_css = ""
         watermark_css = ""
+        
+        # Always read watermark CSS for all page types
+        with open('../webpages/shared/watermark.css', 'r', encoding='utf-8') as f:
+            watermark_css = f.read()
+        
+        # Read footer and CTA CSS for model pages
         if is_model_page(page_type):
             with open('../webpages/shared/footer.css', 'r', encoding='utf-8') as f:
                 footer_css = f.read()
             with open('../webpages/shared/cta-model.css', 'r', encoding='utf-8') as f:
                 cta_css = f.read()
-            with open('../webpages/shared/watermark.css', 'r', encoding='utf-8') as f:
-                watermark_css = f.read()
         
         # Read navbar HTML
         with open('../webpages/shared/navbar.html', 'r', encoding='utf-8') as f:

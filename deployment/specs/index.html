@@ -234,6 +234,80 @@ body {
 
 
 /* Watermark CSS */
+/* ================================
+   WATERMARK SECTION
+   ================================ */
+
+.watermark-section {
+    width: 100vw;
+    background: transparent;
+    margin: 40px 0 0 0;
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.watermark-text {
+    text-align: center;
+    font-size: 300px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, 
+        rgba(64, 64, 64, 0.6) 0%, 
+        rgba(96, 96, 96, 0.4) 30%, 
+        rgba(128, 128, 128, 0.2) 60%, 
+        rgba(192, 192, 192, 0.05) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* ================================
+   WATERMARK RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+    .watermark-text {
+        font-size: 80px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.5) 0%, 
+            rgba(96, 96, 96, 0.3) 30%, 
+            rgba(128, 128, 128, 0.15) 60%, 
+            rgba(192, 192, 192, 0.03) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .watermark-text {
+        font-size: 100px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.55) 0%, 
+            rgba(96, 96, 96, 0.35) 30%, 
+            rgba(128, 128, 128, 0.18) 60%, 
+            rgba(192, 192, 192, 0.04) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+    }
+}
 
 
 /* Page CSS */
@@ -833,6 +907,116 @@ body {
    FOOTER
    ================================ */
 
+.footer {
+    background: transparent;
+    padding: var(--space-section-2) 0;
+}
+
+.footer-content {
+    background: var(--surface-primary);
+    border-radius: 24px;
+    margin: 0 var(--space-component-2);
+    padding: var(--space-section-2);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--elevation-2);
+    border: 1px solid var(--border-subtle);
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-section-1);
+    margin-bottom: var(--space-section-1);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: var(--space-component-1);
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-description {
+    font-size: var(--text-body-small);
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-2);
+}
+
+.footer-column-title {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    margin-bottom: var(--space-component-1);
+    color: var(--text-primary);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-micro-2);
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-body-small);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-component-1);
+    border-top: 1px solid var(--border-subtle);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-copyright p {
+    font-size: var(--text-body-small);
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: var(--space-component-1);
+}
+
+.footer-legal a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-body-small);
+    transition: color var(--transition-fast);
+}
+
+.footer-legal a:hover {
+    color: var(--text-primary);
+}
+
 /* ================================
    RESPONSIVE DESIGN
    ================================ */
@@ -849,6 +1033,20 @@ body {
     }
     
     .series-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-content {
+        margin: 0 var(--space-component-1);
+        padding: var(--space-section-1);
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -929,6 +1127,32 @@ body {
     .comparison-table th,
     .comparison-table td {
         padding: 8px;
+    }
+    
+    /* Footer Responsive */
+    .footer-content {
+        margin: 0 var(--space-micro-2);
+        padding: var(--space-component-2);
+        border-radius: 16px;
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-micro-2);
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
     }
 }
 
