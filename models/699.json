@@ -28,7 +28,7 @@
     "quality_assurance": "100% dimensional and quality testing",
     "manufacturing_location": "India",
     "established": "Professional bearing manufacturer",
-    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "specialization": "Deep Groove Ball Bearings for automotive, industrial, and precision applications",
     "production_capacity": "High-volume production with custom solutions available",
     "export_markets": [
       "Global distribution network",
@@ -38,12 +38,12 @@
   },
   "bearing_type": "Deep Groove Ball Bearing",
   "model_number": "699",
-  "enhanced_description": "The mighty performer - 9mm bore that conquers any challenge.",
+  "enhanced_description": "Nine millimeter bore that's the grand finale of the miniature series - powerful, precise, and ready to take on the world.",
   "dimensions": {
     "bore_diameter_d_mm": 9,
-    "outer_diameter_D_mm": 14,
-    "width_B_mm": 3,
-    "weight_kg": 0.007,
+    "outer_diameter_D_mm": 20,
+    "width_B_mm": 6,
+    "weight_kg": 0.009,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
       "D2_recess_diameter": null,
@@ -52,14 +52,14 @@
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 3.90,
-    "static_load_Cor_kN": 1.30,
-    "load_capacity_kg": 398
+    "dynamic_load_Cr_kN": 1.38,
+    "static_load_Cor_kN": 0.70,
+    "load_capacity_kg": 141
   },
   "speed_limits": {
-    "grease_rpm": 20000,
-    "oil_rpm": 28000,
-    "recommended_max_rpm": 18000
+    "grease_rpm": 32000,
+    "oil_rpm": 38000,
+    "recommended_max_rpm": 28800
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -71,200 +71,196 @@
   "technical_drawing": {
     "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
     "image_alt": "699 Deep Groove Ball Bearing Technical Drawing",
-    "image_title": "699 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
     "drawing_type": "Cross-sectional technical diagram",
     "file_format": "SVG",
     "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 699 deep groove ball bearing"
   },
   "applications": {
     "application1": {
-      "title": "Precision Instruments",
-      "icon": "🔬",
+      "title": "Heavy Industrial",
+      "icon": "settings",
       "applications": [
-        "Medical devices",
-        "Laboratory equipment",
-        "Optical instruments",
-        "Measuring devices",
-        "Calibration tools",
-        "Microscopes",
-        "Spectrometers"
+        "heavy machinery",
+        "industrial equipment",
+        "construction tools",
+        "mining equipment",
+        "agricultural machinery",
+        "forestry equipment",
+        "marine systems",
+        "offshore equipment"
       ],
-      "requirements": "Ultra-precision, low vibration, high-speed capability"
+      "requirements": "9mm shaft with 1.38kN dynamic load capacity, 32,000 RPM grease lubrication, heavy industrial 20×6mm profile for demanding applications"
     },
     "application2": {
-      "title": "Electronics & Miniature Motors",
-      "icon": "⚡",
+      "title": "High-Performance Systems",
+      "icon": "zap",
       "applications": [
-        "Computer fans",
-        "Hard disk drives",
-        "CD/DVD drives",
-        "Small electric motors",
-        "Servo motors",
-        "Stepper motors",
-        "Micro actuators"
+        "performance motors",
+        "racing applications",
+        "high-speed machinery",
+        "precision equipment",
+        "testing systems",
+        "calibration devices",
+        "sensor assemblies",
+        "measurement instruments"
       ],
-      "requirements": "Compact size, high-speed operation, low noise"
+      "requirements": "9mm precision shaft with 0.70kN static load rating, high-performance capability, minimal friction for high-performance applications"
     },
     "application3": {
-      "title": "Consumer Electronics",
-      "icon": "📱",
+      "title": "Advanced Applications",
+      "icon": "cpu",
       "applications": [
-        "Smartphones",
-        "Tablets",
-        "Laptops",
-        "Gaming controllers",
-        "Smart watches",
-        "Wireless earbuds",
-        "Portable devices"
+        "automotive systems",
+        "aerospace components",
+        "aviation equipment",
+        "spacecraft systems",
+        "satellite mechanisms",
+        "drone systems",
+        "robotic applications",
+        "control systems"
       ],
-      "requirements": "Miniature dimensions, reliable performance, long life"
+      "requirements": "9mm shaft with 141kg load capacity, robust 9g design, reliable 32,000 RPM operation for advanced applications"
     }
   },
   "vibration": {
     "V2": {
-      "low_frequency": 48,
-      "medium_frequency": 26,
-      "high_frequency": 22
+      "low_frequency": 72,
+      "medium_frequency": 48,
+      "high_frequency": 40
     },
     "V3": {
-      "low_frequency": 31,
-      "medium_frequency": 16,
-      "high_frequency": 15
+      "low_frequency": 44,
+      "medium_frequency": 28,
+      "high_frequency": 24
     },
     "V4": {
-      "low_frequency": 28,
-      "medium_frequency": 10,
-      "high_frequency": 10
+      "low_frequency": 38,
+      "medium_frequency": 12,
+      "high_frequency": 12
     }
   },
   "noise": {
-    "Z2": 31,
-    "Z3": 29,
-    "Z4": 25
+    "Z2": 35,
+    "Z3": 31,
+    "Z4": 27
   },
   "clearance": {
     "C2": {
       "min_microns": 0,
-      "max_microns": 8
+      "max_microns": 7
     },
     "C0": {
       "min_microns": 2,
-      "max_microns": 15
+      "max_microns": 13
     },
     "C3": {
       "min_microns": 8,
-      "max_microns": 28
+      "max_microns": 23
     },
     "C4": {
-      "min_microns": 15,
-      "max_microns": 33
+      "min_microns": 14,
+      "max_microns": 29
     },
     "C5": {
-      "min_microns": 23,
-      "max_microns": 43
+      "min_microns": 20,
+      "max_microns": 37
     }
   },
   "seal_options": {
     "open": {
-      "designation": "Open",
+      "designation": "699",
       "description": "Open bearing, no seals",
       "speed_factor": 1.0,
-      "max_rpm": 20000,
+      "max_rpm": 32000,
       "protection": "None",
-      "lubrication": "External required",    
+      "lubrication": "External required",
       "badge": "High Speed"
     },
     "single_shield": {
-      "designation": "Z",
+      "designation": "699-Z",
       "description": "Single metal shield",
       "speed_factor": 0.95,
-      "max_rpm": 19000,
+      "max_rpm": 30400,
       "protection": "Light dust protection",
       "lubrication": "Pre-greased",
       "badge": "Balanced"
     },
     "double_shield": {
-      "designation": "ZZ",
+      "designation": "699-ZZ",
       "description": "Double metal shields",
       "speed_factor": 0.9,
-      "max_rpm": 18000,
+      "max_rpm": 28800,
       "protection": "Dust protection",
       "lubrication": "Sealed for life",
       "badge": "Most Popular"
     },
     "single_seal": {
-      "designation": "RS",
+      "designation": "699-RS",
       "description": "Single rubber seal",
       "speed_factor": 0.8,
-      "max_rpm": 16000,
+      "max_rpm": 25600,
       "protection": "Moisture and dust",
       "lubrication": "Pre-greased, sealed",
       "badge": "Protected"
     },
     "double_seal": {
-      "designation": "2RS",
+      "designation": "699-2RS",
       "description": "Double rubber seals",
       "speed_factor": 0.7,
-      "max_rpm": 14000,
+      "max_rpm": 22400,
       "protection": "Moisture and dust",
       "lubrication": "Sealed for life",
       "badge": "Protected"
     }
   },
   "seo_metadata": {
-    "title": "699 Deep Groove Ball Bearing - 9x14x3mm | RHD Bearings",
-    "meta_description": "Mighty 699 bearing (9x14x3mm) with 398 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
+    "title": "699 Deep Groove Ball Bearing 9×20×6mm | RHD Bearings",
+    "meta_description": "699 heavy industrial deep groove ball bearing with 9×20×6mm dimensions, 141kg load capacity, 32,000 RPM for heavy industrial and high-performance systems. Made in India.",
     "keywords": [
       "699 bearing",
-      "9mm bearing",
+      "9mm bore ball bearing",
+      "heavy industrial bearing",
       "deep groove ball bearing",
-      "rhd bearings",
-      "mumbai bearings",
-      "india bearing manufacturer",
-      "precision bearing",
       "miniature bearing",
-      "micro bearing",
-      "bearing for precision instruments",
-      "bearing for miniature motors",
-      "bearing for electronics",
-      "bearing that fits 9mm shaft",
-      "bearing for high speed applications",
-      "bearing for small machinery",
-      "ISO certified bearing",
-      "chrome steel bearing",
-      "gcr15 bearing",
-      "andheri bearings",
-      "mumbai bearing supplier",
-      "india bearing company",
-      "how to choose 9mm bearing",
-      "best bearing for precision",
-      "bearing selection guide",
-      "698 vs 699 bearing",
-      "miniature bearing comparison",
-      "precision bearing alternatives",
-      "bearing load capacity for 9mm shaft",
-      "bearing speed rating for precision"
+      "precision bearing",
+      "heavy machinery bearing",
+      "industrial equipment bearing",
+      "construction tool bearing",
+      "mining equipment bearing",
+      "agricultural machinery bearing",
+      "performance motor bearing",
+      "racing application bearing",
+      "high-speed machinery bearing",
+      "automotive system bearing",
+      "aerospace component bearing",
+      "RHD bearings",
+      "India bearings",
+      "Gcr15 bearing",
+      "heavy industrial bearing",
+      "high-performance bearing",
+      "robust bearing"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/miniature-series/699",
+    "canonical_url": "https://rhdbearings.com/specs/miniature-series/699/",
     "og_data": {
-      "title": "699 Deep Groove Ball Bearing - 9x14x3mm with 398 kg Load Capacity",
-      "description": "Mighty 699 bearing (9x14x3mm) with 398 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
-      "url": "https://rhdbearings.com/specs/miniature-series/699",
+      "title": "699 Deep Groove Ball Bearing 9×20×6mm",
+      "description": "Heavy industrial 699 bearing for heavy industrial and high-performance systems. 141kg load, 32,000 RPM operation.",
+      "url": "https://rhdbearings.com/specs/miniature-series/699/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "699 Deep Groove Ball Bearing - 9x14x3mm | RHD Bearings",
-      "description": "Mighty 699 bearing with 398 kg load capacity. Perfect for precision instruments, miniature motors & electronics."
+      "title": "699 Heavy Industrial Deep Groove Ball Bearing",
+      "description": "9×20×6mm heavy industrial bearing for heavy industrial and high-performance applications"
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "699 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Mighty 699 deep groove ball bearing (9x14x3mm) with 398 kg load capacity. Perfect for precision instruments, miniature motors and electronics applications.",
-      "sku": "699",
+      "description": "Heavy industrial 699 deep groove ball bearing with 9×20×6mm dimensions for heavy industrial and high-performance systems applications",
+      "sku": "699-DGBB",
       "mpn": "699",
       "brand": {
         "@type": "Brand",
@@ -278,9 +274,9 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/miniature-series/699",
+        "url": "https://rhdbearings.com/specs/miniature-series/699/",
         "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
+        "availability": "Yes",
         "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
@@ -296,7 +292,7 @@
   },
   "pricing_and_availability": {
     "currency": "INR",
-    "list_price": null, 
+    "list_price": null,
     "quote_required": true,
     "price_notes": "Please contact us for pricing",
     "minimum_order_quantity": 100,
@@ -328,50 +324,55 @@
   },
   "cross_references": {
     "related_models": [
-      "693",
-      "694",
-      "695",
-      "696",
-      "697",
-      "698"
+      "609",
+      "629",
+      "639",
+      "689"
     ],
-    "series_alternatives": [
-      "609"
-    ],
+    "shaft_requirements": {
+      "nominal_diameter": "9.000mm",
+      "tolerance_grade": "h6 (8.991-9.000mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
     "application_specific_alternatives": {
-      "high_temperature": "699 with C3 clearance",
-      "high_speed": "699 with open design",
-      "corrosive_environment": "699 with 2RS seals"
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
     }
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Handles 398 kg (3.90 kN) loads with 1.5x safety factor for typical applications",
-      "Rated for 20,000 RPM - ideal for high-speed precision instruments and miniature motors",
-      "Perfect for medical devices requiring sub-micron precision and ultra-low vibration",
-      "Mighty choice for 9mm shafts in precision instruments where performance is critical",
-      "Gcr15 chrome steel provides 3-5x longer life vs. standard steel alternatives",
-      "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "699 bearing excels in heavy industrial applications requiring 9mm shaft precision and 32,000 RPM operation",
+      "Heavy industrial 20×6mm profile makes 699 ideal for demanding heavy industrial and high-performance applications",
+      "141kg load capacity and 1.38kN dynamic rating perfect for heavy industrial and advanced applications",
+      "Gcr15 chrome steel construction ensures long service life in demanding heavy industrial applications",
+      "9g weight optimized for applications where robustness and heavy industrial design are critical",
+      "C0 clearance standard provides optimal performance for most heavy industrial applications"
     ],
     "natural_language_queries": [
-      "699 bearing specifications",
-      "bearing for 9mm shaft",
-      "698 vs 699 bearing",
-      "bearing for precision instruments",
-      "how to choose 9mm bearing",
-      "bearing load capacity for 9mm shaft"
+      "699 bearing dimensions",
+      "9mm bore ball bearing",
+      "heavy industrial bearing",
+      "heavy machinery bearing",
+      "industrial equipment bearing",
+      "performance motor bearing"
     ],
     "decision_criteria": [
-      "Shaft diameter must be exactly 9mm with h6 tolerance (±0.009mm)",
-      "Housing must accommodate 14mm outer diameter with 3mm width clearance",
-      "Dynamic loads must stay under 398 kg (3.90 kN) for safe operation",
-      "Maximum operating speed should not exceed 20,000 RPM for optimal life",
-      "Application must require mighty precision bearings for miniature or micro-scale equipment"
+      "9mm shaft diameter requirement",
+      "Heavy industrial 20×6mm envelope",
+      "1.38kN dynamic load capacity",
+      "32,000 RPM grease lubrication",
+      "Heavy industrial applications"
     ],
     "problem_solution_mapping": [
       {
-        "problem": "Need mighty precision bearing for 9mm shaft in medical device",
-        "solution": "699 bearing with C0 clearance provides sub-micron precision and 398 kg load capacity in mighty 9x14x3mm package"
+        "problem": "Need heavy industrial bearing for 9mm shaft in demanding applications",
+        "solution": "699 bearing provides 20×6mm profile with 32,000 RPM capability"
+      },
+      {
+        "problem": "Require robust bearing for high-performance systems with 9mm shaft",
+        "solution": "699 offers 0.70kN static load rating with C0 clearance for smooth operation"
       }
     ],
     "expertise_signals": [
@@ -383,7 +384,7 @@
       {
         "icon": "🔬",
         "title": "Material Science",
-        "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
+        "description": "Gcr15 chrome steel composition optimized for heavy industrial bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
         "icon": "⚙️",
@@ -398,19 +399,19 @@
       {
         "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Mighty 9x14x3mm design vs. larger bearings requiring more space. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Handles same load as 698 bearings while providing larger 20×6mm profile. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
         "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in mighty bearing category for 3.90kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
-      }      
+        "description": "Best value in heavy industrial bearing category for 1.38kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "699 provides 398 kg load capacity in mighty 9x14x3mm package",
-      "vs_larger_bearing": "699 offers 9mm bore mighty design vs. larger bearings requiring more space",
-      "vs_competitors": "Superior Gcr15 steel composition vs. standard steel alternatives",
-      "cost_benefit": "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "vs_smaller_bearing": "699 provides 1.38kN dynamic load vs. 698 with 1.38kN, offering same capacity in larger heavy industrial profile",
+      "vs_larger_bearing": "699 maintains heavy industrial 20×6mm profile while providing sufficient load capacity for heavy industrial applications",
+      "vs_competitors": "RHD 699 offers superior Gcr15 steel quality and precision manufacturing compared to generic heavy industrial bearings",
+      "cost_benefit": "699 delivers optimal performance-to-size ratio for heavy industrial applications, reducing system costs through robust engineering"
     }
   },
   "faqs": {
@@ -418,25 +419,25 @@
       "title": "Bearing Selection & Replacement",
       "questions": [
         {
-          "question": "How do I know if the 699 bearing is the right size for my 9mm shaft?",
-          "direct_answer": "The 699 bearing has a 9mm bore diameter with h6 tolerance (±0.009mm), making it perfect for 9mm shafts with standard tolerance requirements.",
-          "why_matters": "Proper shaft fit prevents premature wear, vibration, and bearing failure. h6 tolerance ensures optimal interference fit for most applications.",
-          "how_to_handle": "Measure your shaft diameter with a micrometer. If it's 9mm ±0.009mm, the 699 bearing will fit perfectly. For tighter tolerances, consider h5 or h4 shaft grades.",
-          "pro_tip": "From 20+ years of manufacturing experience: Always measure both shaft and housing before ordering. 80% of bearing failures come from improper sizing."
+          "question": "When should I choose 699 bearing over 698 alternatives?",
+          "direct_answer": "Choose 699 when you need 9mm shaft diameter with 1.38kN dynamic load capacity for heavy industrial, high-performance systems, or applications requiring larger 20×6mm profile than 698 bearings can provide.",
+          "why_matters": "Selecting the right bearing size prevents system redesign, reduces costs, and ensures optimal performance for your specific application requirements.",
+          "how_to_handle": "Measure your shaft diameter (must be exactly 9mm), verify load requirements (≤1.38kN dynamic), and confirm space constraints allow 20×6mm envelope.",
+          "pro_tip": "699 is ideal for heavy industrial, high-performance systems, and applications where 9mm shaft and robust design are required."
         },
         {
-          "question": "What's the difference between 698 and 699 bearings for my precision application?",
-          "direct_answer": "698 has 8mm bore (13x3mm), 699 has 9mm bore (14x3mm). 698 offers 306 kg load capacity, 699 provides 398 kg load capacity.",
-          "why_matters": "Space constraints vs. load requirements determine your choice. 698 is ideal for balanced designs, 699 for higher load applications.",
-          "how_to_handle": "Measure available space and calculate load requirements. If space is critical and loads are under 306 kg, choose 698. If you need higher capacity, choose 699.",
-          "pro_tip": "Our precision engineering team recommends 698 for balanced medical devices and 699 for precision instruments where space allows."
+          "question": "Can 699 bearing replace other 9mm bore bearings?",
+          "direct_answer": "Yes, 699 can replace other 9mm bore bearings if they have compatible outer diameter (≤20mm) and width (≤6mm) requirements, and load capacity needs (≤1.38kN dynamic).",
+          "why_matters": "Proper replacement ensures system compatibility, prevents premature failures, and maintains performance specifications.",
+          "how_to_handle": "Verify dimensional compatibility (d×D×B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
+          "pro_tip": "Always check both dimensional and performance compatibility before replacement to avoid system issues."
         },
         {
-          "question": "Can I use the 699 bearing in high-temperature applications?",
-          "direct_answer": "Standard 699 bearings operate from -20°C to +120°C. For high-temperature use, we offer C3 clearance variants that handle up to +150°C.",
-          "why_matters": "Temperature affects bearing clearance, lubrication, and material properties. High temperatures can cause premature failure without proper clearance.",
-          "how_to_handle": "For temperatures above 120°C, specify C3 clearance when ordering. Above 150°C, consider special high-temperature materials and lubrication.",
-          "pro_tip": "Our ISO 9001:2015 certified manufacturing includes temperature testing to ensure bearings meet specified operating ranges."
+          "question": "What applications are 699 bearings NOT suitable for?",
+          "direct_answer": "699 bearings are NOT suitable for applications requiring dynamic loads >1.38kN, speeds >32,000 RPM, operating temperatures >120°C, or environments with heavy contamination.",
+          "why_matters": "Using bearings beyond their specifications leads to premature failure, increased maintenance costs, and potential system damage.",
+          "how_to_handle": "For higher loads, consider larger bearings. For higher speeds, use oil lubrication. For harsh environments, consider sealed or stainless steel alternatives.",
+          "pro_tip": "Always verify application requirements against bearing specifications to ensure long service life."
         }
       ]
     },
@@ -444,25 +445,25 @@
       "title": "Installation & Maintenance",
       "questions": [
         {
-          "question": "What's the proper installation method for the 699 bearing in a precision instrument?",
-          "direct_answer": "Use a precision bearing press or induction heater for installation. Apply force to the outer ring only, never to the inner ring or balls.",
-          "why_matters": "Improper installation damages bearing surfaces, reduces precision, and shortens service life. Precision instruments require sub-micron accuracy.",
-          "how_to_handle": "Clean shaft and housing thoroughly. Heat housing to 80-100°C or use precision press. Install bearing with gentle, even pressure on outer ring.",
-          "pro_tip": "Our manufacturing process includes 100% dimensional testing. Professional installation tools prevent 80% of premature bearing failures."
+          "question": "What tools are needed for proper 699 bearing installation?",
+          "direct_answer": "For 699 bearing installation, you need precision tools: 9mm bore gauge, micrometer for shaft measurement, bearing heater (80-100°C), clean gloves, and appropriate mounting tools for the 20mm outer diameter.",
+          "why_matters": "Proper tools ensure accurate installation, prevent bearing damage, and maximize service life while maintaining precision requirements.",
+          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (8.991-9.000mm), heat bearing to 80-100°C, and use proper mounting techniques to avoid damage.",
+          "pro_tip": "Never force-fit 699 bearings - the 9mm bore requires precise shaft tolerances for optimal performance."
         },
         {
-          "question": "How often should I lubricate the 699 bearing in continuous operation?",
-          "direct_answer": "Open bearings require external lubrication every 3-6 months. Shielded/sealed bearings are lubricated for life.",
-          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Insufficient lubrication causes 60% of bearing failures.",
-          "how_to_handle": "For open bearings, use high-quality grease compatible with operating temperature. For sealed bearings, no additional lubrication needed.",
-          "pro_tip": "Our Gcr15 steel composition provides superior wear resistance, but proper lubrication is still essential for maximum 50,000-hour service life."
+          "question": "How often should 699 bearings be lubricated?",
+          "direct_answer": "Open 699 bearings require lubrication every 3-6 months depending on operating conditions. Shielded/sealed versions are lubricated for life but may need replacement after 2-3 years.",
+          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Over-lubrication can cause overheating, while under-lubrication leads to premature failure.",
+          "how_to_handle": "Monitor operating temperature and noise levels. For open bearings, use high-quality grease compatible with operating conditions. Replace sealed bearings when performance degrades.",
+          "pro_tip": "699 bearings in high-speed applications (>20,000 RPM) may require more frequent lubrication due to increased operating temperatures."
         },
         {
-          "question": "What tools do I need for proper 699 bearing installation and maintenance?",
-          "direct_answer": "Essential tools include: precision bearing press, induction heater, micrometer, dial indicator, and proper cleaning supplies.",
-          "why_matters": "Proper tools ensure accurate installation, prevent damage, and maintain precision. Precision bearings require professional-grade equipment.",
-          "how_to_handle": "Invest in quality tools or use professional installation services. For critical applications, consider our installation training programs.",
-          "pro_tip": "Our technical support team provides installation guidance and can recommend specific tools for your application requirements."
+          "question": "What maintenance schedule is recommended for 699 bearings?",
+          "direct_answer": "For 699 bearings, inspect monthly for noise, vibration, and temperature changes. Clean and relubricate open bearings every 3-6 months. Replace sealed bearings every 2-3 years or when performance degrades.",
+          "why_matters": "Regular maintenance prevents unexpected failures, maintains precision performance, and extends bearing service life in critical applications.",
+          "how_to_handle": "Establish maintenance logs, monitor operating parameters, and replace bearings proactively rather than reactively. Use vibration analysis for early failure detection.",
+          "pro_tip": "699 bearings in heavy industrial applications require more frequent inspection due to critical performance requirements."
         }
       ]
     },
@@ -470,25 +471,25 @@
       "title": "Troubleshooting & Problem Solving",
       "questions": [
         {
-          "question": "My 699 bearing is making unusual noise. What could be causing this?",
-          "direct_answer": "Unusual noise usually indicates contamination, improper installation, or excessive load. Check for dirt, verify installation, and confirm load is under 398 kg.",
-          "why_matters": "Noise indicates bearing damage or improper operation. Early detection prevents catastrophic failure and maintains precision.",
-          "how_to_handle": "Inspect for contamination, verify shaft and housing tolerances, check load calculations, and ensure proper lubrication. Replace if damage is found.",
-          "pro_tip": "Our vibration analysis shows 699 bearings should operate below 48 μm/s² (V2) for optimal performance. Higher levels indicate problems."
+          "question": "Why is my 699 bearing making unusual noise?",
+          "direct_answer": "Unusual noise in 699 bearings typically indicates contamination, improper lubrication, misalignment, or wear. The 9mm bore is sensitive to shaft imperfections and contamination due to its size.",
+          "why_matters": "Early noise detection prevents bearing failure, maintains precision, and reduces maintenance costs in heavy industrial applications.",
+          "how_to_handle": "Inspect for contamination, check lubrication levels, verify shaft alignment and surface finish, and replace bearing if noise persists or worsens.",
+          "pro_tip": "699 bearings amplify noise due to their size - what sounds minor in larger bearings can indicate serious issues in heavy industrial bearings."
         },
         {
-          "question": "The 699 bearing is running hot during operation. What should I check?",
-          "direct_answer": "Check lubrication, load, speed, and clearance. Ensure load is under 398 kg, speed under 20,000 RPM, and proper grease is used.",
-          "why_matters": "Excessive heat damages bearing materials, reduces precision, and shortens life. Heat indicates friction and potential failure.",
-          "how_to_handle": "Verify load calculations, check lubrication quantity and type, ensure proper clearance, and monitor operating speed.",
-          "pro_tip": "Our Gcr15 steel composition handles temperatures up to 120°C, but optimal operation is below 80°C for maximum life."
+          "question": "What causes 699 bearing overheating?",
+          "direct_answer": "699 bearing overheating is caused by over-lubrication, excessive load (>1.38kN), high speeds (>32,000 RPM), misalignment, or contamination. The size makes 699 bearings sensitive to these conditions.",
+          "why_matters": "Overheating accelerates wear, reduces precision, and can cause catastrophic failure in heavy industrial bearing applications.",
+          "how_to_handle": "Check lubrication quantity and type, verify load and speed limits, inspect alignment, clean contamination, and ensure proper ventilation around the bearing.",
+          "pro_tip": "699 bearings have limited heat dissipation due to size - monitor temperature closely in high-speed applications."
         },
         {
-          "question": "How can I prevent premature failure of the 699 bearing in my application?",
-          "direct_answer": "Prevent failure by: proper installation, correct load (under 398 kg), adequate lubrication, contamination control, and regular inspection.",
-          "why_matters": "Preventive maintenance extends bearing life 3-10x and prevents costly equipment downtime. Most failures are preventable.",
-          "how_to_handle": "Follow installation procedures, monitor operating conditions, maintain clean environment, and inspect regularly for wear signs.",
-          "pro_tip": "Our quality assurance process includes statistical process control. Premium bearings last 3-10x longer than economy alternatives."
+          "question": "How do I diagnose 699 bearing vibration issues?",
+          "direct_answer": "Diagnose 699 bearing vibration by checking shaft runout (≤0.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 9mm bore bearings.",
+          "why_matters": "Excessive vibration reduces precision, increases wear, and can damage connected equipment in heavy industrial applications.",
+          "how_to_handle": "Use vibration analysis tools, check shaft specifications, verify bearing installation, and replace bearing if vibration exceeds acceptable limits.",
+          "pro_tip": "699 bearings require higher precision in shaft preparation due to their size and sensitivity to imperfections."
         }
       ]
     },
@@ -496,25 +497,25 @@
       "title": "Cost & Performance Optimization",
       "questions": [
         {
-          "question": "Is the 699 bearing cost-effective for my precision instrument application?",
-          "direct_answer": "Yes, the 699 bearing offers excellent value with 398 kg load capacity, 20,000 RPM speed rating, and 50,000-hour service life at competitive pricing.",
-          "why_matters": "Total cost of ownership includes initial cost, maintenance, replacement, and downtime. Quality bearings reduce overall costs significantly.",
-          "how_to_handle": "Compare total cost over 5-10 years including maintenance and replacement. Premium bearings typically reduce costs by 60-80%.",
-          "pro_tip": "Our bulk pricing for 100+ units provides significant savings. OEM partnerships offer dedicated support and volume discounts."
+          "question": "How can I optimize 699 bearing performance for cost efficiency?",
+          "direct_answer": "Optimize 699 bearing performance by selecting appropriate clearance (C0 for most applications), using proper lubrication, maintaining clean environment, and implementing preventive maintenance to extend service life beyond 50,000 hours.",
+          "why_matters": "Performance optimization reduces total cost of ownership, minimizes downtime, and ensures consistent precision in heavy industrial applications.",
+          "how_to_handle": "Choose clearance based on application requirements, establish maintenance schedules, monitor operating conditions, and replace bearings proactively rather than reactively.",
+          "pro_tip": "699 bearings offer excellent value when properly maintained - their heavy industrial size means replacement costs are minimal compared to system downtime."
         },
         {
-          "question": "What's the ROI of choosing premium 699 bearings over economy alternatives?",
-          "direct_answer": "Premium 699 bearings provide 3-10x longer life, reducing replacement costs and downtime. ROI typically exceeds 200% over 3-5 years.",
-          "why_matters": "Economy bearings fail more frequently, causing equipment downtime, lost production, and higher maintenance costs.",
-          "how_to_handle": "Calculate cost savings from reduced replacements, maintenance, and downtime. Premium bearings pay for themselves within 1-2 years.",
-          "pro_tip": "Our customers report 60-80% reduction in total cost of ownership when switching from economy to premium bearings."
+          "question": "What factors affect 699 bearing service life?",
+          "direct_answer": "699 bearing service life is affected by load conditions (≤1.38kN), operating speed (≤32,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
+          "why_matters": "Understanding service life factors helps optimize maintenance schedules, reduce costs, and ensure reliable operation in critical heavy industrial applications.",
+          "how_to_handle": "Monitor operating parameters, maintain clean environment, use quality lubricants, implement preventive maintenance, and replace bearings based on performance degradation.",
+          "pro_tip": "699 bearings can achieve 50,000+ hours service life when operated within specifications and properly maintained."
         },
         {
-          "question": "How can I optimize the performance of my 699 bearing for maximum efficiency?",
-          "direct_answer": "Optimize performance by: proper installation, optimal clearance selection, adequate lubrication, load optimization, and speed control.",
-          "why_matters": "Optimized performance extends bearing life, reduces energy consumption, and maintains precision throughout service life.",
-          "how_to_handle": "Select appropriate clearance grade, ensure proper installation, maintain clean environment, and monitor operating conditions.",
-          "pro_tip": "Our technical team provides performance optimization consulting. Proper setup can improve efficiency by 15-25% and extend life by 2-3x."
+          "question": "How do 699 bearings compare to alternatives in terms of total cost?",
+          "direct_answer": "699 bearings offer excellent total cost value for heavy industrial applications due to their heavy industrial size, reliable performance, and low replacement costs. Quality 699 bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.",
+          "why_matters": "Total cost analysis helps make informed purchasing decisions, considering initial cost, maintenance, replacement, and downtime costs over the bearing's service life.",
+          "how_to_handle": "Compare initial costs, expected service life, maintenance requirements, and replacement costs. Consider system downtime costs when evaluating alternatives.",
+          "pro_tip": "699 bearings provide optimal cost-performance ratio for heavy industrial applications when quality and proper maintenance are prioritized."
         }
       ]
     }

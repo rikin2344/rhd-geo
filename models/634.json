@@ -38,28 +38,28 @@
   },
   "bearing_type": "Deep Groove Ball Bearing",
   "model_number": "634",
-  "enhanced_description": "The mini overachiever - 4mm bore that refuses to acknowledge size limitations.",
+  "enhanced_description": "The 4mm precision master - proving that the smallest bearings can handle the biggest challenges with grace and reliability.",
   "dimensions": {
     "bore_diameter_d_mm": 4,
     "outer_diameter_D_mm": 16,
     "width_B_mm": 5,
-    "weight_kg": 0.005,
-    "skf_extended_dimensions": {
-      "d1_shoulder_diameter": null,
-      "D2_recess_diameter": null,
-      "r1_chamfer_radius": null,
-      "r2_chamfer_radius": null
-    }
+    "weight_kg": 0.003,
+          "skf_extended_dimensions": {
+        "d1_shoulder_diameter": 8.4,
+        "D2_recess_diameter": 13.3,
+        "r1_chamfer_radius": 0.3,
+        "r2_chamfer_radius": 0.3
+      }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 2.15,
-    "static_load_Cor_kN": 0.78,
-    "load_capacity_kg": 219
+    "dynamic_load_Cr_kN": 1.15,
+    "static_load_Cor_kN": 0.42,
+    "load_capacity_kg": 117
   },
   "speed_limits": {
-    "grease_rpm": 32000,
-    "oil_rpm": 40000,
-    "recommended_max_rpm": 28800
+    "grease_rpm": 36000,
+    "oil_rpm": 45000,
+    "recommended_max_rpm": 32400
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -71,76 +71,79 @@
   "technical_drawing": {
     "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
     "image_alt": "634 Deep Groove Ball Bearing Technical Drawing",
-    "image_title": "634 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
     "drawing_type": "Cross-sectional technical diagram",
     "file_format": "SVG",
     "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 634 deep groove ball bearing"
   },
   "applications": {
     "application1": {
-      "title": "Precision Instruments",
-      "icon": "🔬",
+      "title": "Ultra-Precision Instruments",
+      "icon": "target",
       "applications": [
-        "Medical devices",
-        "Laboratory equipment",
-        "Optical instruments",
-        "Measuring devices",
-        "Calibration tools",
-        "Microscopes",
-        "Spectrometers"
+        "atomic force microscopes",
+        "scanning electron microscopes",
+        "interferometers",
+        "spectrometers",
+        "optical profilers",
+        "surface analyzers",
+        "nano-indenters",
+        "quantum sensors"
       ],
-      "requirements": "Ultra-precision, low vibration, high-speed capability"
+      "requirements": "4mm shaft with 1.15kN dynamic load capacity, 36,000 RPM grease lubrication, precision 16×5mm profile for ultra-precision applications"
     },
     "application2": {
-      "title": "Electronics & Miniature Motors",
-      "icon": "⚡",
+      "title": "Micro-Electromechanical Systems",
+      "icon": "chip",
       "applications": [
-        "Computer fans",
-        "Hard disk drives",
-        "CD/DVD drives",
-        "Small electric motors",
-        "Servo motors",
-        "Stepper motors",
-        "Micro actuators"
+        "MEMS sensors",
+        "micro-actuators",
+        "micro-motors",
+        "micro-pumps",
+        "micro-valves",
+        "micro-switches",
+        "micro-gyroscopes",
+        "micro-accelerometers"
       ],
-      "requirements": "Compact size, high-speed operation, low noise"
+      "requirements": "Precision 4mm bore with 0.3mm chamfer radius, 0.42kN static load rating for stable operation, 117kg load capacity for micro-system accuracy"
     },
     "application3": {
-      "title": "Consumer Electronics",
-      "icon": "📱",
+      "title": "Advanced Robotics",
+      "icon": "robot",
       "applications": [
-        "Smartphones",
-        "Tablets",
-        "Laptops",
-        "Gaming controllers",
-        "Smart watches",
-        "Wireless earbuds",
-        "Portable devices"
+        "surgical robots",
+        "micro-assembly robots",
+        "precision grippers",
+        "micro-manipulators",
+        "nano-positioning systems",
+        "bio-robotics",
+        "micro-robotic arms",
+        "precision stages"
       ],
-      "requirements": "Miniature dimensions, reliable performance, long life"
+      "requirements": "4mm bore fits robotic shafts, 5mm width for compact mounting, 0.003kg weight for efficiency, 45,000 RPM oil lubrication capability"
     }
   },
   "vibration": {
     "V2": {
-      "low_frequency": 48,
-      "medium_frequency": 26,
-      "high_frequency": 22
+      "low_frequency": 58,
+      "medium_frequency": 36,
+      "high_frequency": 30
     },
     "V3": {
-      "low_frequency": 31,
-      "medium_frequency": 16,
-      "high_frequency": 15
+      "low_frequency": 35,
+      "medium_frequency": 21,
+      "high_frequency": 18
     },
     "V4": {
-      "low_frequency": 28,
-      "medium_frequency": 10,
-      "high_frequency": 10
+      "low_frequency": 32,
+      "medium_frequency": 11,
+      "high_frequency": 11
     }
   },
   "noise": {
-    "Z2": 33,
-    "Z3": 31,
-    "Z4": 27
+    "Z2": 34,
+    "Z3": 32,
+    "Z4": 28
   },
   "clearance": {
     "C2": {
@@ -166,104 +169,101 @@
   },
   "seal_options": {
     "open": {
-      "designation": "Open",
+      "designation": "634",
       "description": "Open bearing, no seals",
       "speed_factor": 1.0,
-      "max_rpm": 32000,
+      "max_rpm": 36000,
       "protection": "None",
       "lubrication": "External required",    
       "badge": "High Speed"
     },
     "single_shield": {
-      "designation": "Z",
+      "designation": "634-Z",
       "description": "Single metal shield",
       "speed_factor": 0.95,
-      "max_rpm": 30400,
+      "max_rpm": 34200,
       "protection": "Light dust protection",
       "lubrication": "Pre-greased",
       "badge": "Balanced"
     },
     "double_shield": {
-      "designation": "ZZ",
+      "designation": "634-ZZ",
       "description": "Double metal shields",
       "speed_factor": 0.9,
-      "max_rpm": 28800,
+      "max_rpm": 32400,
       "protection": "Dust protection",
       "lubrication": "Sealed for life",
       "badge": "Most Popular"
     },
     "single_seal": {
-      "designation": "RS",
+      "designation": "634-RS",
       "description": "Single rubber seal",
       "speed_factor": 0.8,
-      "max_rpm": 25600,
+      "max_rpm": 28800,
       "protection": "Moisture and dust",
       "lubrication": "Pre-greased, sealed",
       "badge": "Protected"
     },
     "double_seal": {
-      "designation": "2RS",
+      "designation": "634-2RS",
       "description": "Double rubber seals",
       "speed_factor": 0.7,
-      "max_rpm": 22400,
+      "max_rpm": 25200,
       "protection": "Moisture and dust",
       "lubrication": "Sealed for life",
       "badge": "Protected"
     }
   },
   "seo_metadata": {
-    "title": "634 Deep Groove Ball Bearing - 4x16x5mm | RHD Bearings",
-    "meta_description": "Ultra-precision 634 bearing (4x16x5mm) with 219 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
+    "title": "634 Bearing 4×16×5mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "634 deep groove ball bearing with 4mm bore, 16mm OD, 5mm width. 1.15kN dynamic load, 117kg capacity. Perfect for ultra-precision instruments, MEMS, advanced robotics.",
     "keywords": [
       "634 bearing",
-      "4mm bearing",
+      "4mm bore bearing",
+      "16mm OD bearing",
       "deep groove ball bearing",
-      "rhd bearings",
-      "mumbai bearings",
-      "india bearing manufacturer",
-      "precision bearing",
       "miniature bearing",
-      "micro bearing",
-      "bearing for precision instruments",
-      "bearing for miniature motors",
-      "bearing for electronics",
-      "bearing that fits 4mm shaft",
-      "bearing for high speed applications",
-      "bearing for small machinery",
-      "ISO certified bearing",
-      "chrome steel bearing",
-      "gcr15 bearing",
-      "andheri bearings",
-      "mumbai bearing supplier",
-      "india bearing company",
-      "how to choose 4mm bearing",
-      "best bearing for precision",
-      "bearing selection guide",
-      "634 vs 635 bearing",
-      "miniature bearing comparison",
-      "precision bearing alternatives",
-      "bearing load capacity for 4mm shaft",
-      "bearing speed rating for precision"
+      "ultra precision instrument bearing",
+      "atomic force microscope bearing",
+      "scanning electron microscope bearing",
+      "interferometer bearing",
+      "spectrometer bearing",
+      "optical profiler bearing",
+      "surface analyzer bearing",
+      "MEMS sensor bearing",
+      "micro actuator bearing",
+      "micro motor bearing",
+      "micro pump bearing",
+      "micro valve bearing",
+      "micro switch bearing",
+      "surgical robot bearing",
+      "micro assembly robot bearing",
+      "precision gripper bearing",
+      "micro manipulator bearing",
+      "nano positioning system bearing",
+      "bio robotics bearing",
+      "RHD bearings",
+      "India bearings"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/miniature-series/634",
+    "canonical_url": "https://rhdbearings.com/specs/miniature-series/634/",
     "og_data": {
-      "title": "634 Deep Groove Ball Bearing - 4x16x5mm with 219 kg Load Capacity",
-      "description": "Ultra-precision 634 bearing (4x16x5mm) with 219 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
-      "url": "https://rhdbearings.com/specs/miniature-series/634",
+      "title": "634 Deep Groove Ball Bearing - 4×16×5mm | RHD Bearings",
+      "description": "Ultra-precision 634 miniature bearing with 1.15kN dynamic load capacity. Perfect for precision instruments, MEMS, and advanced robotics.",
+      "url": "https://rhdbearings.com/specs/miniature-series/634/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "634 Deep Groove Ball Bearing - 4x16x5mm | RHD Bearings",
-      "description": "Ultra-precision 634 bearing with 219 kg load capacity. Perfect for precision instruments, miniature motors & electronics."
+      "title": "634 Bearing - Ultra-Precision Instrument Solution",
+      "description": "4mm bore, 1.15kN load capacity, 36,000 RPM. Ideal for precision instruments, MEMS, and advanced robotics."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "634 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Ultra-precision 634 deep groove ball bearing (4x16x5mm) with 219 kg load capacity. Perfect for precision instruments, miniature motors and electronics applications.",
+      "description": "634 deep groove ball bearing with 4mm bore, 16mm outer diameter, 5mm width. 1.15kN dynamic load capacity, 117kg load capacity.",
       "sku": "634",
       "mpn": "634",
       "brand": {
@@ -278,9 +278,9 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/miniature-series/634",
+        "url": "https://rhdbearings.com/specs/miniature-series/634/",
         "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
+        "availability": "Yes",
         "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
@@ -327,51 +327,55 @@
     }
   },
   "cross_references": {
-    "related_models": [
-      "635"
-    ],
-    "series_alternatives": [
-      "604",
-      "605",
-      "606",
-      "607",
-      "608",
-      "609"
-    ],
+    "related_models": ["604", "624", "644", "654"],
+    "shaft_requirements": {
+      "nominal_diameter": "4.000mm",
+      "tolerance_grade": "h6 (3.991-4.009mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
     "application_specific_alternatives": {
-      "high_temperature": "634 with C3 clearance",
-      "high_speed": "634 with open design",
-      "corrosive_environment": "634 with 2RS seals"
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
     }
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Handles 219 kg (2.15 kN) loads with 1.5x safety factor for typical applications",
-      "Rated for 32,000 RPM - ideal for high-speed precision instruments and miniature motors",
-      "Perfect for medical devices requiring sub-micron precision and ultra-low vibration",
-      "Optimal choice for 4mm shafts in precision instruments where space is critical",
-      "Gcr15 chrome steel provides 3-5x longer life vs. standard steel alternatives",
-      "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "Choose 634 for 4mm shafts requiring 1.15kN dynamic load capacity in ultra-precision instrument applications",
+      "Select 634-ZZ for dust protection with 32,400 RPM capability and sealed-for-life lubrication",
+      "Use 634-RS in moisture-prone environments requiring 28,800 RPM with rubber seal protection",
+      "Consider 634 for precision instruments where 16×5mm profile and 117kg load capacity optimize performance",
+      "Opt for 634 in MEMS systems needing 0.3mm chamfer radius and stable positioning",
+      "Deploy 634 in advanced robotics requiring 36,000 RPM grease lubrication with precision design"
     ],
     "natural_language_queries": [
-      "634 bearing specifications",
-      "bearing for 4mm shaft",
-      "634 vs 635 bearing",
-      "bearing for precision instruments",
-      "how to choose 4mm bearing",
-      "bearing load capacity for 4mm shaft"
+      "634 bearing dimensions",
+      "4mm bore bearing load capacity",
+      "miniature bearing for precision instruments",
+      "MEMS bearing",
+      "advanced robotics bearing 4mm shaft",
+      "634 bearing specifications"
     ],
     "decision_criteria": [
-      "Shaft diameter must be exactly 4mm with h6 tolerance (±0.009mm)",
-      "Housing must accommodate 16mm outer diameter with 5mm width clearance",
-      "Dynamic loads must stay under 219 kg (2.15 kN) for safe operation",
-      "Maximum operating speed should not exceed 32,000 RPM for optimal life",
-      "Application must require precision bearings for miniature or micro-scale equipment"
+      "4mm bore diameter requirement for shaft compatibility",
+      "1.15kN dynamic load capacity for application demands",
+      "5mm width constraint for compact mounting",
+      "36,000 RPM grease lubrication speed requirement",
+      "16mm outer diameter for housing fit"
     ],
     "problem_solution_mapping": [
       {
-        "problem": "Need ultra-precision bearing for 4mm shaft in medical device",
-        "solution": "634 bearing with C0 clearance provides sub-micron precision and 219 kg load capacity"
+        "problem": "Need ultra-precision bearing for 4mm shaft with substantial load capacity",
+        "solution": "634 bearing provides 1.15kN dynamic load in 16×5mm profile"
+      },
+      {
+        "problem": "Require dust protection in precision application",
+        "solution": "634-ZZ offers 32,400 RPM with double metal shield protection"
+      },
+      {
+        "problem": "Moisture exposure in laboratory environment",
+        "solution": "634-RS provides rubber seal protection up to 28,800 RPM"
       }
     ],
     "expertise_signals": [
@@ -398,19 +402,19 @@
       {
         "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 2.15kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "4mm bore with 1.15kN load capacity and 36,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
         "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in micro-bearing category for 2.15kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in miniature bearing category for 1.15kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }      
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "634 provides 219 kg load capacity vs. smaller bearings with 66-117 kg capacity",
-      "vs_larger_bearing": "634 offers 4mm bore compactness vs. larger bearings requiring more space",
-      "vs_competitors": "Superior Gcr15 steel composition vs. standard steel alternatives",
-      "cost_benefit": "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "vs_smaller_bearing": "634 provides 0.50kN higher dynamic load than 623 with 1mm larger bore for enhanced precision performance",
+      "vs_larger_bearing": "634 offers 0.73kN lower load than 624 but with 1mm smaller diameter for space-constrained applications",
+      "vs_competitors": "RHD 634 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
+      "cost_benefit": "634 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
   },
   "faqs": {
@@ -418,25 +422,25 @@
       "title": "Bearing Selection & Replacement",
       "questions": [
         {
-          "question": "How do I know if the 634 bearing is the right size for my 4mm shaft?",
-          "direct_answer": "The 634 bearing has a 4mm bore diameter with h6 tolerance (±0.009mm), making it perfect for 4mm shafts with standard tolerance requirements.",
-          "why_matters": "Proper shaft fit prevents premature wear, vibration, and bearing failure. h6 tolerance ensures optimal interference fit for most applications.",
-          "how_to_handle": "Measure your shaft diameter with a micrometer. If it's 4mm ±0.009mm, the 634 bearing will fit perfectly. For tighter tolerances, consider h5 or h4 shaft grades.",
-          "pro_tip": "From 20+ years of manufacturing experience: Always measure both shaft and housing before ordering. 80% of bearing failures come from improper sizing."
+          "question": "What shaft tolerance is recommended for 634 bearing installation?",
+          "direct_answer": "h6 tolerance grade (3.991-4.009mm) provides optimal fit and performance for 634 bearings.",
+          "why_matters": "Proper shaft tolerance ensures correct interference fit, preventing slippage while allowing thermal expansion.",
+          "how_to_handle": "Measure shaft diameter with precision micrometers, ensuring it falls within h6 tolerance range before installation.",
+          "pro_tip": "Use h6 tolerance for standard applications, h5 for high-precision requirements, and h7 for loose fits."
         },
         {
-          "question": "What's the difference between 634 and 635 bearings for my precision application?",
-          "direct_answer": "634 has 4mm bore (16x5mm), 635 has 5mm bore (19x6mm). 634 is more compact but 635 offers higher load capacity (219 kg vs. 286 kg).",
-          "why_matters": "Space constraints vs. load requirements determine your choice. 634 is ideal for ultra-compact designs, 635 for higher load applications.",
-          "how_to_handle": "Measure available space and calculate load requirements. If space is critical and loads are under 219 kg, choose 634. If you need higher capacity, choose 635.",
-          "pro_tip": "Our precision engineering team recommends 634 for medical devices and 635 for industrial instruments where space allows."
+          "question": "Can I replace a 634 bearing with a different size bearing?",
+          "direct_answer": "No, 634 bearings have unique 4×16×5mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
+          "how_to_handle": "Always use exact 634 replacement or consult engineering specifications for alternative solutions.",
+          "pro_tip": "Keep spare 634 bearings in stock to avoid production delays and ensure consistent quality."
         },
         {
-          "question": "Can I use the 634 bearing in high-temperature applications?",
-          "direct_answer": "Standard 634 bearings operate from -20°C to +120°C. For high-temperature use, we offer C3 clearance variants that handle up to +150°C.",
-          "why_matters": "Temperature affects bearing clearance, lubrication, and material properties. High temperatures can cause premature failure without proper clearance.",
-          "how_to_handle": "For temperatures above 120°C, specify C3 clearance when ordering. Above 150°C, consider special high-temperature materials and lubrication.",
-          "pro_tip": "Our ISO 9001:2015 certified manufacturing includes temperature testing to ensure bearings meet specified operating ranges."
+          "question": "What load capacity does the 634 bearing provide?",
+          "direct_answer": "634 bearing offers 1.15kN dynamic load capacity and 0.42kN static load capacity, suitable for ultra-precision instrument applications.",
+          "why_matters": "Load capacity determines bearing suitability for specific applications and operating conditions.",
+          "how_to_handle": "Calculate actual application loads and ensure they remain within 1.15kN dynamic limit with appropriate safety factors.",
+          "pro_tip": "Use 634 bearings for applications requiring up to 117kg load capacity with standard safety margins."
         }
       ]
     },
@@ -444,25 +448,25 @@
       "title": "Installation & Maintenance",
       "questions": [
         {
-          "question": "What's the proper installation method for the 634 bearing in a precision instrument?",
-          "direct_answer": "Use a precision bearing press or induction heater for installation. Apply force to the outer ring only, never to the inner ring or balls.",
-          "why_matters": "Improper installation damages bearing surfaces, reduces precision, and shortens service life. Precision instruments require sub-micron accuracy.",
-          "how_to_handle": "Clean shaft and housing thoroughly. Heat housing to 80-100°C or use precision press. Install bearing with gentle, even pressure on outer ring.",
-          "pro_tip": "Our manufacturing process includes 100% dimensional testing. Professional installation tools prevent 80% of premature bearing failures."
+          "question": "What lubrication is required for 634 bearings?",
+          "direct_answer": "634 bearings require grease lubrication for standard applications, with 36,000 RPM capability under proper lubrication conditions.",
+          "why_matters": "Proper lubrication reduces friction, prevents wear, and extends bearing service life significantly.",
+          "how_to_handle": "Apply high-quality bearing grease during installation and maintain regular lubrication intervals based on operating conditions.",
+          "pro_tip": "Use lithium-based grease for general applications and synthetic grease for high-temperature or high-speed operations."
         },
         {
-          "question": "How often should I lubricate the 634 bearing in continuous operation?",
-          "direct_answer": "Open bearings require external lubrication every 3-6 months. Shielded/sealed bearings are lubricated for life.",
-          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Insufficient lubrication causes 60% of bearing failures.",
-          "how_to_handle": "For open bearings, use high-quality grease compatible with operating temperature. For sealed bearings, no additional lubrication needed.",
-          "pro_tip": "Our Gcr15 steel composition provides superior wear resistance, but proper lubrication is still essential for maximum 50,000-hour service life."
+          "question": "How do I properly install a 634 bearing?",
+          "direct_answer": "Install 634 bearings using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to bearing surfaces.",
+          "why_matters": "Proper installation prevents premature failure, ensures optimal performance, and maintains dimensional accuracy.",
+          "how_to_handle": "Use bearing heaters for interference fits, apply force evenly, and verify proper seating after installation.",
+          "pro_tip": "Professional installation tools prevent 80% of premature bearing failures and ensure maximum service life."
         },
         {
-          "question": "What tools do I need for proper 634 bearing installation and maintenance?",
-          "direct_answer": "Essential tools include: precision bearing press, induction heater, micrometer, dial indicator, and proper cleaning supplies.",
-          "why_matters": "Proper tools ensure accurate installation, prevent damage, and maintain precision. Precision bearings require professional-grade equipment.",
-          "how_to_handle": "Invest in quality tools or use professional installation services. For critical applications, consider our installation training programs.",
-          "pro_tip": "Our technical support team provides installation guidance and can recommend specific tools for your application requirements."
+          "question": "What maintenance schedule is recommended for 634 bearings?",
+          "direct_answer": "634 bearings require regular inspection every 3-6 months, with lubrication replenishment based on operating hours and conditions.",
+          "why_matters": "Regular maintenance prevents unexpected failures, maintains performance, and extends bearing lifespan.",
+          "how_to_handle": "Establish maintenance schedules based on operating conditions, document all maintenance activities, and monitor bearing condition regularly.",
+          "pro_tip": "Implement predictive maintenance using vibration analysis to detect issues before they cause failures."
         }
       ]
     },
@@ -470,25 +474,25 @@
       "title": "Troubleshooting & Problem Solving",
       "questions": [
         {
-          "question": "My 634 bearing is making unusual noise. What could be causing this?",
-          "direct_answer": "Unusual noise usually indicates contamination, improper installation, or excessive load. Check for dirt, verify installation, and confirm load is under 219 kg.",
-          "why_matters": "Noise indicates bearing damage or improper operation. Early detection prevents catastrophic failure and maintains precision.",
-          "how_to_handle": "Inspect for contamination, verify shaft and housing tolerances, check load calculations, and ensure proper lubrication. Replace if damage is found.",
-          "pro_tip": "Our vibration analysis shows 634 bearings should operate below 48 μm/s² (V2) for optimal performance. Higher levels indicate problems."
+          "question": "What causes premature failure in 634 bearings?",
+          "direct_answer": "Common causes include improper installation, inadequate lubrication, contamination, excessive loads, and misalignment.",
+          "why_matters": "Understanding failure causes helps prevent future issues and improves system reliability.",
+          "how_to_handle": "Implement proper installation procedures, maintain clean environments, ensure adequate lubrication, and monitor operating conditions.",
+          "pro_tip": "80% of premature failures are preventable through proper installation and maintenance practices."
         },
         {
-          "question": "The 634 bearing is running hot during operation. What should I check?",
-          "direct_answer": "Check lubrication, load, speed, and clearance. Ensure load is under 219 kg, speed under 32,000 RPM, and proper grease is used.",
-          "why_matters": "Excessive heat damages bearing materials, reduces precision, and shortens life. Heat indicates friction and potential failure.",
-          "how_to_handle": "Verify load calculations, check lubrication quantity and type, ensure proper clearance, and monitor operating speed.",
-          "pro_tip": "Our Gcr15 steel composition handles temperatures up to 120°C, but optimal operation is below 80°C for maximum life."
+          "question": "How do I identify bearing wear in 634 bearings?",
+          "direct_answer": "Signs of wear include increased noise, vibration, temperature rise, and reduced performance in 634 bearings.",
+          "why_matters": "Early detection of wear prevents catastrophic failures and allows for planned replacement.",
+          "how_to_handle": "Monitor bearing condition regularly, use vibration analysis equipment, and establish baseline performance measurements.",
+          "pro_tip": "Implement condition monitoring systems to detect wear patterns before they affect system performance."
         },
         {
-          "question": "How can I prevent premature failure of the 634 bearing in my application?",
-          "direct_answer": "Prevent failure by: proper installation, correct load (under 219 kg), adequate lubrication, contamination control, and regular inspection.",
-          "why_matters": "Preventive maintenance extends bearing life 3-10x and prevents costly equipment downtime. Most failures are preventable.",
-          "how_to_handle": "Follow installation procedures, monitor operating conditions, maintain clean environment, and inspect regularly for wear signs.",
-          "pro_tip": "Our quality assurance process includes statistical process control. Premium bearings last 3-10x longer than economy alternatives."
+          "question": "What should I do if a 634 bearing fails unexpectedly?",
+          "direct_answer": "Immediately stop operation, inspect for damage, identify root cause, and replace with properly installed new bearing.",
+          "why_matters": "Quick response prevents secondary damage and minimizes production downtime.",
+          "how_to_handle": "Document failure details, analyze root causes, implement corrective actions, and maintain spare bearings for critical applications.",
+          "pro_tip": "Keep detailed failure records to identify patterns and prevent similar issues in the future."
         }
       ]
     },
@@ -496,25 +500,25 @@
       "title": "Cost & Performance Optimization",
       "questions": [
         {
-          "question": "Is the 634 bearing cost-effective for my precision instrument application?",
-          "direct_answer": "Yes, the 634 bearing offers excellent value with 219 kg load capacity, 32,000 RPM speed rating, and 50,000-hour service life at competitive pricing.",
-          "why_matters": "Total cost of ownership includes initial cost, maintenance, replacement, and downtime. Quality bearings reduce overall costs significantly.",
-          "how_to_handle": "Compare total cost over 5-10 years including maintenance and replacement. Premium bearings typically reduce costs by 60-80%.",
-          "pro_tip": "Our bulk pricing for 100+ units provides significant savings. OEM partnerships offer dedicated support and volume discounts."
+          "question": "How does 634 bearing cost compare to alternatives?",
+          "direct_answer": "634 bearings offer excellent value with 1.15kN load capacity at competitive pricing, providing 3-10x longer lifespan than budget alternatives.",
+          "why_matters": "Total cost of ownership includes initial cost, maintenance, replacement frequency, and downtime costs.",
+          "how_to_handle": "Calculate total cost of ownership, consider quality vs. price trade-offs, and invest in proper installation and maintenance.",
+          "pro_tip": "High-quality bearings like 634 typically cost 20-30% more but last 3-10x longer than budget alternatives."
         },
         {
-          "question": "What's the ROI of choosing premium 634 bearings over economy alternatives?",
-          "direct_answer": "Premium 634 bearings provide 3-10x longer life, reducing replacement costs and downtime. ROI typically exceeds 200% over 3-5 years.",
-          "why_matters": "Economy bearings fail more frequently, causing equipment downtime, lost production, and higher maintenance costs.",
-          "how_to_handle": "Calculate cost savings from reduced replacements, maintenance, and downtime. Premium bearings pay for themselves within 1-2 years.",
-          "pro_tip": "Our customers report 60-80% reduction in total cost of ownership when switching from economy to premium bearings."
+          "question": "What performance benefits does 634 bearing provide?",
+          "direct_answer": "634 bearings deliver high load capacity, excellent speed capability, precision dimensions, and reliable performance in ultra-precision applications.",
+          "why_matters": "Performance directly impacts system efficiency, reliability, and overall productivity.",
+          "how_to_handle": "Select 634 bearings for applications requiring 4mm bore, 1.15kN load capacity, and 36,000 RPM capability.",
+          "pro_tip": "634 bearings excel in applications requiring ultra-precision performance with substantial load handling."
         },
         {
-          "question": "How can I optimize the performance of my 634 bearing for maximum efficiency?",
-          "direct_answer": "Optimize performance by: proper installation, optimal clearance selection, adequate lubrication, load optimization, and speed control.",
-          "why_matters": "Optimized performance extends bearing life, reduces energy consumption, and maintains precision throughout service life.",
-          "how_to_handle": "Select appropriate clearance grade, ensure proper installation, maintain clean environment, and monitor operating conditions.",
-          "pro_tip": "Our technical team provides performance optimization consulting. Proper setup can improve efficiency by 15-25% and extend life by 2-3x."
+          "question": "How can I optimize 634 bearing performance?",
+          "direct_answer": "Optimize performance through proper installation, adequate lubrication, contamination control, and regular maintenance practices.",
+          "why_matters": "Optimized performance extends bearing life, reduces maintenance costs, and improves system reliability.",
+          "how_to_handle": "Follow manufacturer recommendations, implement preventive maintenance, monitor operating conditions, and use quality lubricants.",
+          "pro_tip": "Proper optimization can extend 634 bearing service life from 20,000 to 50,000+ hours in typical applications."
         }
       ]
     }

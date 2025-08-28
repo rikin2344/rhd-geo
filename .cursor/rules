@@ -1,310 +1,143 @@
-# RHD Bearings - Bearing Model Generation Rules
-# This file contains CRITICAL and MANDATORY rules extracted directly from 
-# bearing_model_generation_instructions.md - NO ADDITIONAL RULES ADDED
+# RHD Bearings - Model Generation Rules
+# Critical compliance requirements extracted from bearing_model_generation_instructions.md
+# This file ensures token-efficient access to mandatory rules for automated generation
 
-## 🚨 CRITICAL DATA SOURCE RULES - NEVER VIOLATE 🚨
+## ABSOLUTELY FORBIDDEN - WILL CAUSE IMMEDIATE FAILURE
 
-### Data Source Priority (NEVER generate when data exists):
-1. **FIRST**: Look up in appropriate data file
-2. **SECOND**: Check for typos or alternative keys  
-3. **THIRD**: Log missing data for manual review
-4. **LAST**: Use fallback defaults (only for truly missing data)
+### Data Generation Violations
+- **NEVER generate clearance, vibration, noise, SKF, or material data** - use lookup tables ONLY
+- **NEVER estimate or assume technical specifications** - use actual data or null values
+- **NEVER hallucinate specifications** when data is not found in lookup tables
 
-### MANDATORY Data Sources - Use These Files, Don't Generate:
-- **SKF Dimensions**: `docs/skf_dimensions_only.json` - Look up by exact model number
-- **Vibration Data**: `docs/vibration_lookup_table.json` - Look up by bore diameter
-- **Noise Data**: `docs/noise_lookup_table.json` - Look up by bore diameter AND series
-- **Clearance Data**: `docs/clearance_lookup_table.json` - Look up by bore diameter range
-- **Enhanced Descriptions**: `docs/witty_bearing_descriptions.json` - Look up by exact model number
-- **Material Specs**: `docs/bearing_database.json` metadata section
-- **Base Specifications**: `docs/bearing_database.json` main section
+### Application Group Violations
+- **NEVER group bearings by bore diameter ranges** (5-10mm, 10-20mm, etc.)
+- **NEVER copy identical application lists** (4+ matching items) from any bearing model
+- **NEVER use identical application group titles** across different bearing models
+- **NEVER rotate/rearrange the same application blocks** between bearing models
+- **NEVER use generic titles** like "Industrial", "Automotive", "Consumer", "Versatile Solutions", "Precision Instruments"
 
-### CRITICAL VIOLATION EXAMPLE - NEVER REPEAT:
-**What NOT to do**: Generate C4/C5 clearance data for 605 bearing
-**What TO do**: Use exact data from clearance_lookup_table.json (including null values)
+### Structure Violations
+- **NEVER add, delete, or rename JSON fields**
+- **NEVER change field types or nested structure**
+- **NEVER modify bearing_template.json structure**
 
-## 📋 MANDATORY CHECKLIST BEFORE SAVING ANY FILE
+## MANDATORY REQUIREMENTS - MUST BE COMPLETED
 
-### Data Accuracy Validation:
-- [ ] All clearance data matches clearance_lookup_table.json exactly
-- [ ] All vibration data matches vibration_lookup_table.json exactly  
-- [ ] All noise data matches noise_lookup_table.json exactly
-- [ ] All SKF dimensions match skf_dimensions_only.json exactly
-- [ ] **CRITICAL SKF LOOKUP RULE**: Before setting any SKF field to `null`, you MUST:
-  - Check `skf_dimensions_only.json` for the exact model number
-  - If found, use the exact data (d1, D2, r1, r2) - NEVER set to `null`
-  - If NOT found, only then set to `null`
-  - Log any missing data for manual review
-- [ ] All enhanced descriptions match witty_bearing_descriptions.json exactly
-- [ ] All material specs match bearing_database.json metadata exactly
-- [ ] All base specifications match bearing_database.json exactly
-- [ ] No data has been generated - only looked up from source files
+### Data Source Requirements
+- **SKF dimensions**: Look up exact model in skf_dimensions_only.json - if NOT found, set ALL SKF fields to null (never generate or estimate)
+- **Vibration data**: Look up bore diameter in vibration_lookup_table.json
+- **Noise data**: Look up bore diameter + series in noise_lookup_table.json
+- **Clearance data**: Use range logic in clearance_lookup_table.json (over_mm < bore ≤ to_mm)
+- **Enhanced description**: Look up exact model in witty_bearing_descriptions.json
+- **Base specs**: Extract from bearing_database.json by exact model match
 
-### Structure Validation:
-- [ ] JSON structure matches bearing_template.json EXACTLY (no fields added/deleted)
-- [ ] Field count equals template field count exactly
-- [ ] All field names match template exactly (case-sensitive)
-- [ ] All field types match template exactly
-- [ ] All nested objects and arrays maintain template structure
+### Application Group Requirements
+- **Individual analysis**: Each bearing analyzed based on complete d×D×B×Cr×Cor×RPM×weight profile
+- **Model-specific applications**: Generate applications that reflect THIS bearing's specific capabilities
+- **Limited overlap allowed**: Individual applications may repeat when technically appropriate
+- **List copying prohibited**: Application lists with 4+ identical items are forbidden regardless of position
+- **Title uniqueness required**: Application group titles must be model-specific, not generic across models
+- **Specification references required**: Requirements text must reference actual bearing specifications
+- **Icon assignment**: Select appropriate icon from approved list matching application theme
 
-### Content Quality Validation:
-- [ ] Exactly 6 recommendation_snippets (15-25 words each)
-- [ ] Exactly 6 natural_language_queries (5-15 words each)
-- [ ] Exactly 5 decision_criteria (10-20 words each)
-- [ ] Exactly 12 FAQ questions (3 per category)
-- [ ] SEO metadata includes 15-25 long-tail keywords
-- [ ] Meta description is 150-160 characters with kg load capacity
-- [ ] Title tag is 50-60 characters with dimensions and brand
+### Cross-References Requirements
+- **Related models**: Up to 4 models sharing same bore size
+  - Miniature series: Last digit = bore size (604 relates to 624, 634, 684, 694)
+  - Standard series: Last 2 digits × 5 = bore size (6004 relates to 6204, 6304, 6804, 6904)
+- **Shaft requirements**: Dynamic h6 calculation based on bore diameter with universal surface finish and runout values
+- **Application alternatives**: Use hardcoded values (C3 clearance, RHD V3/V4, SS bearings)
 
-## 🔧 TECHNICAL REQUIREMENTS FROM ORIGINAL INSTRUCTIONS
+### Content Count Requirements
+- **Application groups**: Exactly 3 per bearing model
+- **Applications per group**: Exactly 8 relevant items
+- **FAQ questions**: Exactly 12 total (3 per category)
+- **Recommendation snippets**: Exactly 6 items (15-25 words each)
+- **Natural language queries**: Exactly 6 items (5-15 words each)
+- **Decision criteria**: Exactly 5 items (10-20 words each)
+- **SEO keywords**: 15-25 items
 
-### Seal Options Calculation:
-- **MANDATORY**: Calculate RPM values from actual `grease_rpm` in bearing database
-- **Use these factors**:
-  - Open: 100% of grease_rpm (no reduction)
-  - Single Shield (Z): 95% of grease_rpm (0.95 factor)
-  - Double Shield (ZZ): 90% of grease_rpm (0.9 factor)
-  - Single Seal (RS): 80% of grease_rpm (0.8 factor)
-  - Double Seal (2RS): 70% of grease_rpm (0.7 factor)
+## CRITICAL VALIDATION CHECKPOINTS
 
-### Application Categories:
-- **Generate 3 categories** based on size-based logic
-- **Items Per Category**: 5-8 high-quality, relevant applications per category (no junk applications)
-- **Quality Standards**: Only include applications that are genuinely suitable for the bearing model
-- **Size-Based Logic**:
-  - Micro bearings (d < 10mm): Precision instruments, electronics, miniature motors
-  - Small bearings (10mm ≤ d < 30mm): Electric tools, small appliances, automotive accessories
-  - Medium bearings (30mm ≤ d < 80mm): Industrial machinery, automotive components, HVAC systems
-  - Large bearings (d ≥ 80mm): Heavy machinery, construction equipment, large motors
+### Pre-Generation Validation
+- [ ] I have access to all required lookup table files
+- [ ] I understand missing data requires null values, never estimation
+- [ ] I will analyze each bearing individually based on complete specifications
+- [ ] I will not copy entire application group blocks
 
-### FAQ Content Requirements:
-- **Theme**: "Smart But Useful" - technical expertise balanced with practical usability
-- **Technical Depth**: Industry standards, material science, tolerance specifications, clearance explanations
-- **Practical Usability**: Real-world examples, step-by-step guidance, cost-benefit analysis
-- **Professional Authority**: Manufacturing expertise, quality assurance, industry experience
+### Data Accuracy Validation
+- [ ] All technical data sourced from lookup tables or set to null
+- [ ] All lookup attempts documented (found/not found status)
+- [ ] SKF dimensions either exact values or null (never zero)
+- [ ] No generated, estimated, or assumed values used
 
-### FAQ Content Enhancement (MANDATORY: "Smart But Useful" Theme):
-**CRITICAL**: All FAQ content must balance technical expertise with practical usability:
+### Application Quality Validation
+- [ ] Applications technically appropriate for bearing specifications
+- [ ] No copying of identical application lists (4+ matching items) between models
+- [ ] Application group titles are model-specific, not generic or repeated across models
+- [ ] No systematic rotation of same application blocks between models
+- [ ] Individual applications may overlap when technically justified (1-3 items maximum)
+- [ ] Requirements text references actual bearing specifications (bore, load, speed)
+- [ ] Icons match application group themes per selection rules
 
-**Technical Depth Requirements (MANDATORY):**
-- **Industry Standards**: Reference ISO, ABMA, ANSI standards where applicable
-- **Material Science**: Include steel grade specifications (Gcr15, AISI 52100)
-- **Tolerance Specifications**: Include shaft tolerance requirements (h6, h7)
-- **Clearance Explanations**: Explain C0, C3, C4, C5 clearance differences
-- **Performance Data**: Include actual load ratings, speed limits, life expectancy
+### Structure and Content Validation
+- [ ] JSON structure matches bearing_template.json exactly
+- [ ] All content counts meet exact requirements
+- [ ] Cross-references include related models and shaft requirements
+- [ ] Application alternatives use hardcoded standardized text
 
-**Practical Usability Requirements (MANDATORY):**
-- **Real-World Examples**: Use relatable comparisons (weight of person, size of objects)
-- **Step-by-Step Guidance**: Provide actionable installation and maintenance steps
-- **Cost-Benefit Analysis**: Include ROI considerations for premium vs. economy options
-- **Warning Signs**: Identify failure indicators and prevention measures
-- **Professional Insights**: Include "20+ years experience" knowledge sharing
+## ICON SELECTION RULES
 
-**Content Balance Guidelines (MANDATORY):**
-- **Technical enough** to demonstrate expertise and build trust
-- **Simple enough** that maintenance technicians can understand and apply
-- **Specific enough** to be actionable for real problems
-- **General enough** to apply to multiple situations
-- **Professional enough** to show industry authority
-- **Accessible enough** for quick decision-making
+Choose icons matching application themes:
+- **cog**: Mechanical systems, precision instruments, machinery
+- **zap**: High-speed applications, electronic devices, power transmission
+- **target**: Precision applications, measurement devices, calibration
+- **layers**: Multi-component assemblies, stacked systems, complex mechanisms
+- **settings**: Automated systems, control devices, adjustment mechanisms
+- **cpu**: Electronic components, computing devices, digital systems
+- **compass**: Navigation equipment, positioning systems, directional controls
+- **gauge**: Measurement instruments, monitoring devices, sensor applications
 
-**Enhanced FAQ Structure (MANDATORY):**
-```
-Question: [Real problem with technical context]
-Direct Answer: [Quick solution with key specifications]
-Why This Matters: [Technical explanation with practical consequences]
-How To Handle: [Step-by-step guidance with professional tips]
-Pro Tip: [Expert insight from manufacturing experience]
-```
+## SHAFT REQUIREMENTS CALCULATION
 
-**Technical Content Examples (MANDATORY):**
-- **Load Capacity**: "76 kg (0.75 kN) - handles loads up to the weight of an average person"
-- **Speed Ratings**: "32,000 RPM - like a high-speed electric drill or small motor"
-- **Tolerance Requirements**: "h6 shaft tolerance (±0.009mm) ensures proper interference fit"
-- **Clearance Selection**: "C0 clearance for precision, C3 for high-temperature applications"
-- **Material Benefits**: "Gcr15 steel provides superior hardness vs. standard steel alternatives"
+Generate dynamically based on bearing's bore diameter:
+- **nominal_diameter**: Bore diameter with .000mm precision (e.g., "8.000mm")
+- **tolerance_grade**: h6 calculation using ISO ranges (3-6mm: -0.008/0mm, 6-10mm: -0.009/0mm, etc.)
+- **surface_finish**: "Ra 0.8μm max" (universal)
+- **runout_tolerance**: "0.013mm max" (universal)
 
-**Professional Authority Elements (MANDATORY):**
-- **Manufacturing Expertise**: "Our production processes include 100% dimensional testing"
-- **Quality Assurance**: "ISO 9001:2015 certified manufacturing with statistical process control"
-- **Industry Experience**: "20+ years of bearing manufacturing experience shows..."
-- **Performance Data**: "Premium bearings last 3-10x longer than economy alternatives"
-- **Technical Standards**: "Meets or exceeds industrial bearing standards for precision applications"
+## APPLICATION-SPECIFIC ALTERNATIVES (HARDCODED)
 
-**Content Validation (MANDATORY):**
-- [ ] Each FAQ demonstrates technical expertise without overwhelming users
-- [ ] All technical specifications are accurate and referenced from bearing data
-- [ ] Practical guidance is actionable and specific to the bearing model
-- [ ] Professional insights add value without being overly promotional
-- [ ] Content balances technical depth with accessibility
-- [ ] Real-world examples make technical concepts understandable
-- [ ] Professional authority is demonstrated through experience and standards
-
-## 📋 SEO METADATA ENHANCEMENT (MANDATORY)
-
-### Keywords Array Enhancement (MANDATORY: 15-25 keywords):
-**CRITICAL**: The `seo_metadata.keywords` array must contain exactly 15-25 keywords covering:
-
-**Primary Keywords (5-8 keywords):**
-- Model-specific: "604 bearing", "4mm bearing", "deep groove ball bearing"
-- Brand-specific: "rhd bearings", "mumbai bearings", "india bearing manufacturer"
-- Type-specific: "precision bearing", "miniature bearing", "micro bearing"
-
-**Long-Tail Keywords (8-12 keywords):**
-- Application-specific: "bearing for precision instruments", "bearing for miniature motors", "bearing for electronics"
-- Problem-specific: "bearing that fits 4mm shaft", "bearing for high speed applications", "bearing for small machinery"
-- Technical-specific: "ISO certified bearing", "chrome steel bearing", "gcr15 bearing"
-- Location-specific: "andheri bearings", "mumbai bearing supplier", "india bearing company"
-
-**Search Intent Keywords (5-8 keywords):**
-- Selection queries: "how to choose 4mm bearing", "best bearing for precision", "bearing selection guide"
-- Comparison queries: "604 vs 605 bearing", "miniature bearing comparison", "precision bearing alternatives"
-- Technical queries: "bearing load capacity kg", "bearing speed rating rpm", "bearing installation guide"
-
-### Meta Description Enhancement (MANDATORY: 150-160 characters):
-**CRITICAL**: Meta description must include:
-- Primary bearing model and dimensions
-- Load capacity in kg (not kN)
-- Key applications
-- Quality indicators
-- Location/brand information
-
-**Example Format:**
-"Ultra-precision 604 bearing (4x12x4mm) with 76 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer."
-
-### Title Tag Enhancement (MANDATORY: 50-60 characters):
-**CRITICAL**: Title must include:
-- Bearing model number
-- Dimensions in mm
-- Key benefit or application
-- Brand name
-
-**Example Format:**
-"604 Deep Groove Ball Bearing - 4x12x4mm | RHD Bearings"
-
-### Canonical URL Enhancement (MANDATORY):
-**CRITICAL**: Canonical URL must follow exact format:
-- Base: `https://rhdbearings.com/specs/miniature-series/{model_number}`
-- Example: `https://rhdbearings.com/specs/miniature-series/604`
-
-### Open Graph Data Enhancement (MANDATORY):
-**CRITICAL**: Open Graph data must include:
-- Enhanced title with dimensions and load capacity
-- Detailed description with applications and benefits
-- Proper URL structure
-- Site name: "RHD Bearings"
-
-### Twitter Card Enhancement (MANDATORY):
-**CRITICAL**: Twitter data must include:
-- Summary large image card type
-- Enhanced title with technical specifications
-- Detailed description with practical applications
-
-### Schema Markup Enhancement (MANDATORY):
-**CRITICAL**: Schema markup must include:
-- Product type: "Deep Groove Ball Bearing"
-- Brand: "RHD Bearings"
-- Manufacturer: "RHD Bearings"
-- Category: "Deep Groove Ball Bearings"
-- Availability: "InStock"
-- Condition: "NewCondition"
-
-**SEO Validation Checklist (MANDATORY):**
-- [ ] Keywords array contains exactly 15-25 keywords
-- [ ] Meta description is 150-160 characters
-- [ ] Title tag is 50-60 characters
-- [ ] Canonical URL follows exact format
-- [ ] Open Graph data is complete
-- [ ] Twitter Card data is complete
-- [ ] Schema markup includes all required fields
-- [ ] Load capacity is expressed in kg (not kN)
-- [ ] Dimensions are included in mm format
-- [ ] Applications are specific and relevant
-
-## 📁 FILE ORGANIZATION RULES
-
-### Naming Convention:
-- Use exact format: `{model_number}.json`
-- Example: `605.json`, `608.json`, `623.json`
-
-### File Location:
-- All bearing model files go in `/models/` directory
-- Support files are in `/docs/` directory
-- SKF data is in `/scripts/` directory
-
-## 🚫 ABSOLUTELY FORBIDDEN
-
-### Never Do These:
-- Generate data that exists in lookup tables
-- Add new fields to JSON structure
-- Delete fields from JSON structure
-- Change field names or types
-- Use arbitrary values for specifications
-- Create generic or marketing content
-- Skip the mandatory checklist
-- Assume data without looking it up
-
-### Content Restrictions:
-- No "quality product", "good performance", "reliable operation" language
-- No "revolutionary", "cutting-edge", "best in class" marketing fluff
-- No vague specifications like "small bearing" when you can say "4mm bore"
-- No over-promising without data support
-
-## 📚 REFERENCE FILES
-
-### Always Check These Files:
-- `docs/bearing_template.json` - Structure template
-- `docs/bearing_database.json` - Base specifications
-- `docs/clearance_lookup_table.json` - Clearance data
-- `docs/vibration_lookup_table.json` - Vibration data
-- `docs/noise_lookup_table.json` - Noise data
-- `docs/witty_bearing_descriptions.json` - Enhanced descriptions
-- `docs/faq_generation_guide.md` - FAQ structure guide
-
-### SKF Data:
-- `scripts/skf_dimensions_only.json` - SKF dimensional data
-
-## 🔄 AUTOMATION CONSIDERATIONS
-
-### For Batch Processing:
-1. **CRITICAL**: Create model mapping functions for each lookup table
-2. **CRITICAL**: NEVER generate data that exists in lookup tables
-3. **CRITICAL**: Log ALL data lookups for audit trail
-4. **CRITICAL**: Validate that required data files exist before processing
-5. **CRITICAL**: Validate output structure against `bearing_template.json` before saving
-6. Use template strings for dynamic content generation (only for truly dynamic content)
-7. **MANDATORY**: Log any fallback data usage for manual review
-8. **MANDATORY**: Flag any missing data that should exist in lookup tables
-9. **MANDATORY**: Structural validation must pass before file creation
-
-## 📁 SUPPORT FILES LOCATION
-
-**CRITICAL: Verify exact file locations in codebase before processing**
-Based on current codebase structure, files are located at:
-
-```
-/docs/
-  ├── bearing_database.json
-  ├── vibration_lookup_table.json
-  ├── noise_lookup_table.json
-  ├── clearance_lookup_table.json
-  ├── witty_bearing_descriptions.json
-  ├── faq_generation_guide.md
-  └── bearing_template.json
-
-/scripts/
-  ├── skf_dimensions_only.json
-  └── skf_api_data.json
+Use exact text for ALL bearing models:
+```json
+"application_specific_alternatives": {
+  "high_temperature": "C3 clearance recommended",
+  "high_speed": "RHD V3 & V4 bearings recommended", 
+  "corrosive_environment": "SS (Stainless Steel) bearings recommended"
+}
 ```
 
-**MANDATORY**: Always verify file paths before attempting to read data files.
+## IMMEDIATE FAILURE TRIGGERS
 
-## 🎯 REMEMBER
+Stop generation immediately if:
+- **Technical data estimated or assumed** instead of looked up
+- **SKF dimensions generated** when data exists in lookup tables
+- **Placeholder values used** instead of null for missing data
+- **Identical application lists copied** (4+ matching items) between bearing models
+- **Identical application group titles used** across different bearing models
+- **Systematic rotation of application blocks** detected between models
+- **Generic application titles** used (Industrial, Automotive, Versatile, Precision Instruments, etc.)
+- **Bore range categorization** logic detected
 
-**The goal is 100% accuracy and consistency across hundreds of bearing model files.**
-**Every violation compromises the entire system's reliability.**
-**Follow these rules religiously - there are no shortcuts to quality.**
+## SUCCESS PATTERN
+
+1. **Verify lookup table access** before starting
+2. **Extract base specifications** from bearing_database.json
+3. **Perform all data lookups** with proper null handling
+4. **Analyze complete bearing profile** individually
+5. **Generate technically appropriate applications** based on specifications
+6. **Calculate cross-references and shaft requirements** using defined logic
+7. **Validate structure and content** before saving
 
 ---
 
-*This rules file contains ONLY rules extracted from bearing_model_generation_instructions.md - NO ADDITIONAL RULES ADDED*
+**REMEMBER**: Use lookup tables for all technical data. Allow natural application overlap. Prevent wholesale block copying. Focus on technical appropriateness over artificial uniqueness.

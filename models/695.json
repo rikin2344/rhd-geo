@@ -28,7 +28,7 @@
     "quality_assurance": "100% dimensional and quality testing",
     "manufacturing_location": "India",
     "established": "Professional bearing manufacturer",
-    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "specialization": "Deep Groove Ball Bearings for automotive, industrial, and precision applications",
     "production_capacity": "High-volume production with custom solutions available",
     "export_markets": [
       "Global distribution network",
@@ -38,12 +38,12 @@
   },
   "bearing_type": "Deep Groove Ball Bearing",
   "model_number": "695",
-  "enhanced_description": "The balanced performer - 5mm bore that strikes the perfect balance.",
+  "enhanced_description": "Five millimeter bore that's the perfect middle child - not too big, not too small, just right for most applications.",
   "dimensions": {
     "bore_diameter_d_mm": 5,
-    "outer_diameter_D_mm": 10,
-    "width_B_mm": 3,
-    "weight_kg": 0.003,
+    "outer_diameter_D_mm": 13,
+    "width_B_mm": 4,
+    "weight_kg": 0.0025,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
       "D2_recess_diameter": null,
@@ -52,14 +52,14 @@
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 1.20,
-    "static_load_Cor_kN": 0.40,
-    "load_capacity_kg": 122
+    "dynamic_load_Cr_kN": 1.38,
+    "static_load_Cor_kN": 0.55,
+    "load_capacity_kg": 141
   },
   "speed_limits": {
-    "grease_rpm": 36000,
-    "oil_rpm": 45000,
-    "recommended_max_rpm": 32400
+    "grease_rpm": 38000,
+    "oil_rpm": 47000,
+    "recommended_max_rpm": 34200
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -71,7 +71,7 @@
   "technical_drawing": {
     "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
     "image_alt": "695 Deep Groove Ball Bearing Technical Drawing",
-    "image_title": "695 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
     "drawing_type": "Cross-sectional technical diagram",
     "file_format": "SVG",
     "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 695 deep groove ball bearing"
@@ -79,45 +79,48 @@
   "applications": {
     "application1": {
       "title": "Precision Instruments",
-      "icon": "🔬",
+      "icon": "target",
       "applications": [
-        "Medical devices",
-        "Laboratory equipment",
-        "Optical instruments",
-        "Measuring devices",
-        "Calibration tools",
-        "Microscopes",
-        "Spectrometers"
+        "optical instruments",
+        "measuring devices",
+        "calibration tools",
+        "sensor assemblies",
+        "test equipment",
+        "laboratory instruments",
+        "scientific equipment",
+        "precision tools"
       ],
-      "requirements": "Ultra-precision, low vibration, high-speed capability"
+      "requirements": "5mm shaft with 1.38kN dynamic load capacity, 38,000 RPM grease lubrication, precision 13×4mm profile for precision applications"
     },
     "application2": {
-      "title": "Electronics & Miniature Motors",
-      "icon": "⚡",
+      "title": "Compact Mechanisms",
+      "icon": "settings",
       "applications": [
-        "Computer fans",
-        "Hard disk drives",
-        "CD/DVD drives",
-        "Small electric motors",
-        "Servo motors",
-        "Stepper motors",
-        "Micro actuators"
+        "miniature gearboxes",
+        "precision actuators",
+        "micro-drive systems",
+        "compact transmissions",
+        "small power tools",
+        "hobby mechanisms",
+        "model engineering",
+        "miniature robotics"
       ],
-      "requirements": "Compact size, high-speed operation, low noise"
+      "requirements": "5mm precision shaft with 0.55kN static load rating, high-speed capability, minimal friction for compact applications"
     },
     "application3": {
-      "title": "Consumer Electronics",
-      "icon": "📱",
+      "title": "Electronic Systems",
+      "icon": "cpu",
       "applications": [
-        "Smartphones",
-        "Tablets",
-        "Laptops",
-        "Gaming controllers",
-        "Smart watches",
-        "Wireless earbuds",
-        "Portable devices"
+        "computer components",
+        "cooling fans",
+        "optical drives",
+        "hard drive spindles",
+        "printer mechanisms",
+        "scanner assemblies",
+        "CD/DVD drives",
+        "floppy disk drives"
       ],
-      "requirements": "Miniature dimensions, reliable performance, long life"
+      "requirements": "5mm shaft with 141kg load capacity, lightweight 2.5g design, reliable 38,000 RPM operation for electronic systems"
     }
   },
   "vibration": {
@@ -138,9 +141,9 @@
     }
   },
   "noise": {
-    "Z2": 31,
-    "Z3": 29,
-    "Z4": 25
+    "Z2": 32,
+    "Z3": 30,
+    "Z4": 26
   },
   "clearance": {
     "C2": {
@@ -166,105 +169,98 @@
   },
   "seal_options": {
     "open": {
-      "designation": "Open",
+      "designation": "695",
       "description": "Open bearing, no seals",
       "speed_factor": 1.0,
-      "max_rpm": 36000,
+      "max_rpm": 38000,
       "protection": "None",
-      "lubrication": "External required",    
+      "lubrication": "External required",
       "badge": "High Speed"
     },
     "single_shield": {
-      "designation": "Z",
+      "designation": "695-Z",
       "description": "Single metal shield",
       "speed_factor": 0.95,
-      "max_rpm": 34200,
+      "max_rpm": 36100,
       "protection": "Light dust protection",
       "lubrication": "Pre-greased",
       "badge": "Balanced"
     },
     "double_shield": {
-      "designation": "ZZ",
+      "designation": "695-ZZ",
       "description": "Double metal shields",
       "speed_factor": 0.9,
-      "max_rpm": 32400,
+      "max_rpm": 34200,
       "protection": "Dust protection",
       "lubrication": "Sealed for life",
       "badge": "Most Popular"
     },
     "single_seal": {
-      "designation": "RS",
+      "designation": "695-RS",
       "description": "Single rubber seal",
       "speed_factor": 0.8,
-      "max_rpm": 28800,
+      "max_rpm": 30400,
       "protection": "Moisture and dust",
       "lubrication": "Pre-greased, sealed",
       "badge": "Protected"
     },
     "double_seal": {
-      "designation": "2RS",
+      "designation": "695-2RS",
       "description": "Double rubber seals",
       "speed_factor": 0.7,
-      "max_rpm": 25200,
+      "max_rpm": 26600,
       "protection": "Moisture and dust",
       "lubrication": "Sealed for life",
       "badge": "Protected"
     }
   },
   "seo_metadata": {
-    "title": "695 Deep Groove Ball Bearing - 5x10x3mm | RHD Bearings",
-    "meta_description": "Balanced 695 bearing (5x10x3mm) with 122 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
+    "title": "695 Deep Groove Ball Bearing 5×13×4mm | RHD Bearings",
+    "meta_description": "695 precision deep groove ball bearing with 5×13×4mm dimensions, 141kg load capacity, 38,000 RPM for precision instruments and compact mechanisms. Made in India.",
     "keywords": [
       "695 bearing",
-      "5mm bearing",
+      "5mm bore bearing",
+      "precision ball bearing",
       "deep groove ball bearing",
-      "rhd bearings",
-      "mumbai bearings",
-      "india bearing manufacturer",
-      "precision bearing",
       "miniature bearing",
-      "micro bearing",
-      "bearing for precision instruments",
-      "bearing for miniature motors",
-      "bearing for electronics",
-      "bearing that fits 5mm shaft",
-      "bearing for high speed applications",
-      "bearing for small machinery",
-      "ISO certified bearing",
-      "chrome steel bearing",
-      "gcr15 bearing",
-      "andheri bearings",
-      "mumbai bearing supplier",
-      "india bearing company",
-      "how to choose 5mm bearing",
-      "best bearing for precision",
-      "bearing selection guide",
-      "695 vs 696 bearing",
-      "miniature bearing comparison",
-      "precision bearing alternatives",
-      "bearing load capacity for 5mm shaft",
-      "bearing speed rating for precision"
+      "precision bearing",
+      "optical instrument bearing",
+      "measuring device bearing",
+      "calibration tool bearing",
+      "sensor assembly bearing",
+      "miniature gearbox bearing",
+      "precision actuator bearing",
+      "micro-drive bearing",
+      "compact transmission bearing",
+      "computer component bearing",
+      "cooling fan bearing",
+      "RHD bearings",
+      "India bearings",
+      "Gcr15 bearing",
+      "precision bearing",
+      "compact mechanism bearing",
+      "high-speed bearing"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/miniature-series/695",
+    "canonical_url": "https://rhdbearings.com/specs/miniature-series/695/",
     "og_data": {
-      "title": "695 Deep Groove Ball Bearing - 5x10x3mm with 122 kg Load Capacity",
-      "description": "Balanced 695 bearing (5x10x3mm) with 122 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
-      "url": "https://rhdbearings.com/specs/miniature-series/695",
+      "title": "695 Deep Groove Ball Bearing 5×13×4mm",
+      "description": "Precision 695 bearing for precision instruments and compact mechanisms. 141kg load, 38,000 RPM operation.",
+      "url": "https://rhdbearings.com/specs/miniature-series/695/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "695 Deep Groove Ball Bearing - 5x10x3mm | RHD Bearings",
-      "description": "Balanced 695 bearing with 122 kg load capacity. Perfect for precision instruments, miniature motors & electronics."
+      "title": "695 Precision Deep Groove Ball Bearing",
+      "description": "5×13×4mm precision bearing for precision instruments and compact mechanisms"
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "695 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Balanced 695 deep groove ball bearing (5x10x3mm) with 122 kg load capacity. Perfect for precision instruments, miniature motors and electronics applications.",
-      "sku": "695",
+      "description": "Precision 695 deep groove ball bearing with 5×13×4mm dimensions for precision instruments and compact mechanisms applications",
+      "sku": "695-DGBB",
       "mpn": "695",
       "brand": {
         "@type": "Brand",
@@ -278,9 +274,9 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/miniature-series/695",
+        "url": "https://rhdbearings.com/specs/miniature-series/695/",
         "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
+        "availability": "Yes",
         "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
@@ -296,7 +292,7 @@
   },
   "pricing_and_availability": {
     "currency": "INR",
-    "list_price": null, 
+    "list_price": null,
     "quote_required": true,
     "price_notes": "Please contact us for pricing",
     "minimum_order_quantity": 100,
@@ -328,54 +324,55 @@
   },
   "cross_references": {
     "related_models": [
-      "693",
-      "694",
-      "696",
-      "697",
-      "698",
-      "699"
-    ],
-    "series_alternatives": [
       "605",
-      "606",
-      "607",
-      "608",
-      "609"
+      "625",
+      "635",
+      "685"
     ],
+    "shaft_requirements": {
+      "nominal_diameter": "5.000mm",
+      "tolerance_grade": "h6 (4.991-5.000mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
     "application_specific_alternatives": {
-      "high_temperature": "695 with C3 clearance",
-      "high_speed": "695 with open design",
-      "corrosive_environment": "695 with 2RS seals"
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
     }
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Handles 122 kg (1.20 kN) loads with 1.5x safety factor for typical applications",
-      "Rated for 36,000 RPM - ideal for high-speed precision instruments and miniature motors",
-      "Perfect for medical devices requiring sub-micron precision and ultra-low vibration",
-      "Balanced choice for 5mm shafts in precision instruments where space is critical",
-      "Gcr15 chrome steel provides 3-5x longer life vs. standard steel alternatives",
-      "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "695 bearing excels in precision applications requiring 5mm shaft precision and 38,000 RPM operation",
+      "Precision 13×4mm profile makes 695 ideal for precision instruments and compact mechanisms",
+      "141kg load capacity and 1.38kN dynamic rating perfect for precision and compact applications",
+      "Gcr15 chrome steel construction ensures long service life in demanding precision applications",
+      "2.5g weight optimized for applications where mass reduction and precision design are critical",
+      "C0 clearance standard provides optimal performance for most precision applications"
     ],
     "natural_language_queries": [
-      "695 bearing specifications",
-      "bearing for 5mm shaft",
-      "695 vs 696 bearing",
-      "bearing for precision instruments",
-      "how to choose 5mm bearing",
-      "bearing load capacity for 5mm shaft"
+      "695 bearing dimensions",
+      "5mm bore ball bearing",
+      "precision bearing",
+      "optical instrument bearing",
+      "measuring device bearing",
+      "miniature gearbox bearing"
     ],
     "decision_criteria": [
-      "Shaft diameter must be exactly 5mm with h6 tolerance (±0.009mm)",
-      "Housing must accommodate 10mm outer diameter with 3mm width clearance",
-      "Dynamic loads must stay under 122 kg (1.20 kN) for safe operation",
-      "Maximum operating speed should not exceed 36,000 RPM for optimal life",
-      "Application must require balanced precision bearings for miniature or micro-scale equipment"
+      "5mm shaft diameter requirement",
+      "Precision 13×4mm envelope",
+      "1.38kN dynamic load capacity",
+      "38,000 RPM grease lubrication",
+      "Precision instrument applications"
     ],
     "problem_solution_mapping": [
       {
-        "problem": "Need balanced precision bearing for 5mm shaft in medical device",
-        "solution": "695 bearing with C0 clearance provides sub-micron precision and 122 kg load capacity in balanced 5x10x3mm package"
+        "problem": "Need precision bearing for 5mm shaft in precision instruments",
+        "solution": "695 bearing provides 13×4mm profile with 38,000 RPM capability"
+      },
+      {
+        "problem": "Require reliable bearing for compact mechanisms with 5mm shaft",
+        "solution": "695 offers 0.55kN static load rating with C0 clearance for smooth operation"
       }
     ],
     "expertise_signals": [
@@ -387,7 +384,7 @@
       {
         "icon": "🔬",
         "title": "Material Science",
-        "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
+        "description": "Gcr15 chrome steel composition optimized for precision bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
         "icon": "⚙️",
@@ -402,19 +399,19 @@
       {
         "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Balanced 5x10x3mm design vs. larger bearings requiring more space. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Handles 0.43kN more load than 694 bearings while maintaining precision design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
         "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in balanced bearing category for 1.20kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
-      }      
+        "description": "Best value in precision bearing category for 1.38kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "695 provides 122 kg load capacity in balanced 5x10x3mm package",
-      "vs_larger_bearing": "695 offers 5mm bore balanced design vs. larger bearings requiring more space",
-      "vs_competitors": "Superior Gcr15 steel composition vs. standard steel alternatives",
-      "cost_benefit": "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "vs_smaller_bearing": "695 provides 1.38kN dynamic load vs. 694 with 0.95kN, offering 45% more capacity in precision profile",
+      "vs_larger_bearing": "695 maintains precision 13×4mm profile while providing sufficient load capacity for precision applications",
+      "vs_competitors": "RHD 695 offers superior Gcr15 steel quality and precision manufacturing compared to generic precision bearings",
+      "cost_benefit": "695 delivers optimal performance-to-size ratio for precision applications, reducing system costs through precision engineering"
     }
   },
   "faqs": {
@@ -422,25 +419,25 @@
       "title": "Bearing Selection & Replacement",
       "questions": [
         {
-          "question": "How do I know if the 695 bearing is the right size for my 5mm shaft?",
-          "direct_answer": "The 695 bearing has a 5mm bore diameter with h6 tolerance (±0.009mm), making it perfect for 5mm shafts with standard tolerance requirements.",
-          "why_matters": "Proper shaft fit prevents premature wear, vibration, and bearing failure. h6 tolerance ensures optimal interference fit for most applications.",
-          "how_to_handle": "Measure your shaft diameter with a micrometer. If it's 5mm ±0.009mm, the 695 bearing will fit perfectly. For tighter tolerances, consider h5 or h4 shaft grades.",
-          "pro_tip": "From 20+ years of manufacturing experience: Always measure both shaft and housing before ordering. 80% of bearing failures come from improper sizing."
+          "question": "When should I choose 695 bearing over 694 alternatives?",
+          "direct_answer": "Choose 695 when you need 5mm shaft diameter with 1.38kN dynamic load capacity for precision instruments, compact mechanisms, or applications requiring higher load capacity than 694 bearings can provide.",
+          "why_matters": "Selecting the right bearing size prevents system redesign, reduces costs, and ensures optimal performance for your specific application requirements.",
+          "how_to_handle": "Measure your shaft diameter (must be exactly 5mm), verify load requirements (≤1.38kN dynamic), and confirm space constraints allow 13×4mm envelope.",
+          "pro_tip": "695 is ideal for precision instruments, compact mechanisms, and applications where 5mm shaft is required."
         },
         {
-          "question": "What's the difference between 695 and 696 bearings for my precision application?",
-          "direct_answer": "695 has 5mm bore (10x3mm), 696 has 6mm bore (11x3mm). 695 is more balanced but 696 offers higher load capacity (122 kg vs. 170 kg).",
-          "why_matters": "Space constraints vs. load requirements determine your choice. 695 is ideal for balanced designs, 696 for higher load applications.",
-          "how_to_handle": "Measure available space and calculate load requirements. If space is critical and loads are under 122 kg, choose 695. If you need higher capacity, choose 696.",
-          "pro_tip": "Our precision engineering team recommends 695 for balanced medical devices and 696 for precision instruments where space allows."
+          "question": "Can 695 bearing replace other 5mm bore bearings?",
+          "direct_answer": "Yes, 695 can replace other 5mm bore bearings if they have compatible outer diameter (≤13mm) and width (≤4mm) requirements, and load capacity needs (≤1.38kN dynamic).",
+          "why_matters": "Proper replacement ensures system compatibility, prevents premature failures, and maintains performance specifications.",
+          "how_to_handle": "Verify dimensional compatibility (d×D×B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
+          "pro_tip": "Always check both dimensional and performance compatibility before replacement to avoid system issues."
         },
         {
-          "question": "Can I use the 695 bearing in high-temperature applications?",
-          "direct_answer": "Standard 695 bearings operate from -20°C to +120°C. For high-temperature use, we offer C3 clearance variants that handle up to +150°C.",
-          "why_matters": "Temperature affects bearing clearance, lubrication, and material properties. High temperatures can cause premature failure without proper clearance.",
-          "how_to_handle": "For temperatures above 120°C, specify C3 clearance when ordering. Above 150°C, consider special high-temperature materials and lubrication.",
-          "pro_tip": "Our ISO 9001:2015 certified manufacturing includes temperature testing to ensure bearings meet specified operating ranges."
+          "question": "What applications are 695 bearings NOT suitable for?",
+          "direct_answer": "695 bearings are NOT suitable for applications requiring dynamic loads >1.38kN, speeds >38,000 RPM, operating temperatures >120°C, or environments with heavy contamination.",
+          "why_matters": "Using bearings beyond their specifications leads to premature failure, increased maintenance costs, and potential system damage.",
+          "how_to_handle": "For higher loads, consider 696 or 697 bearings. For higher speeds, use oil lubrication. For harsh environments, consider sealed or stainless steel alternatives.",
+          "pro_tip": "Always verify application requirements against bearing specifications to ensure long service life."
         }
       ]
     },
@@ -448,25 +445,25 @@
       "title": "Installation & Maintenance",
       "questions": [
         {
-          "question": "What's the proper installation method for the 695 bearing in a precision instrument?",
-          "direct_answer": "Use a precision bearing press or induction heater for installation. Apply force to the outer ring only, never to the inner ring or balls.",
-          "why_matters": "Improper installation damages bearing surfaces, reduces precision, and shortens service life. Precision instruments require sub-micron accuracy.",
-          "how_to_handle": "Clean shaft and housing thoroughly. Heat housing to 80-100°C or use precision press. Install bearing with gentle, even pressure on outer ring.",
-          "pro_tip": "Our manufacturing process includes 100% dimensional testing. Professional installation tools prevent 80% of premature bearing failures."
+          "question": "What tools are needed for proper 695 bearing installation?",
+          "direct_answer": "For 695 bearing installation, you need precision tools: 5mm bore gauge, micrometer for shaft measurement, bearing heater (80-100°C), clean gloves, and appropriate mounting tools for the 13mm outer diameter.",
+          "why_matters": "Proper tools ensure accurate installation, prevent bearing damage, and maximize service life while maintaining precision requirements.",
+          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (4.991-5.000mm), heat bearing to 80-100°C, and use proper mounting techniques to avoid damage.",
+          "pro_tip": "Never force-fit 695 bearings - the 5mm bore requires precise shaft tolerances for optimal performance."
         },
         {
-          "question": "How often should I lubricate the 695 bearing in continuous operation?",
-          "direct_answer": "Open bearings require external lubrication every 3-6 months. Shielded/sealed bearings are lubricated for life.",
-          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Insufficient lubrication causes 60% of bearing failures.",
-          "how_to_handle": "For open bearings, use high-quality grease compatible with operating temperature. For sealed bearings, no additional lubrication needed.",
-          "pro_tip": "Our Gcr15 steel composition provides superior wear resistance, but proper lubrication is still essential for maximum 50,000-hour service life."
+          "question": "How often should 695 bearings be lubricated?",
+          "direct_answer": "Open 695 bearings require lubrication every 3-6 months depending on operating conditions. Shielded/sealed versions are lubricated for life but may need replacement after 2-3 years.",
+          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Over-lubrication can cause overheating, while under-lubrication leads to premature failure.",
+          "how_to_handle": "Monitor operating temperature and noise levels. For open bearings, use high-quality grease compatible with operating conditions. Replace sealed bearings when performance degrades.",
+          "pro_tip": "695 bearings in high-speed applications (>25,000 RPM) may require more frequent lubrication due to increased operating temperatures."
         },
         {
-          "question": "What tools do I need for proper 695 bearing installation and maintenance?",
-          "direct_answer": "Essential tools include: precision bearing press, induction heater, micrometer, dial indicator, and proper cleaning supplies.",
-          "why_matters": "Proper tools ensure accurate installation, prevent damage, and maintain precision. Precision bearings require professional-grade equipment.",
-          "how_to_handle": "Invest in quality tools or use professional installation services. For critical applications, consider our installation training programs.",
-          "pro_tip": "Our technical support team provides installation guidance and can recommend specific tools for your application requirements."
+          "question": "What maintenance schedule is recommended for 695 bearings?",
+          "direct_answer": "For 695 bearings, inspect monthly for noise, vibration, and temperature changes. Clean and relubricate open bearings every 3-6 months. Replace sealed bearings every 2-3 years or when performance degrades.",
+          "why_matters": "Regular maintenance prevents unexpected failures, maintains precision performance, and extends bearing service life in critical applications.",
+          "how_to_handle": "Establish maintenance logs, monitor operating parameters, and replace bearings proactively rather than reactively. Use vibration analysis for early failure detection.",
+          "pro_tip": "695 bearings in precision instruments require more frequent inspection due to critical performance requirements."
         }
       ]
     },
@@ -474,25 +471,25 @@
       "title": "Troubleshooting & Problem Solving",
       "questions": [
         {
-          "question": "My 695 bearing is making unusual noise. What could be causing this?",
-          "direct_answer": "Unusual noise usually indicates contamination, improper installation, or excessive load. Check for dirt, verify installation, and confirm load is under 122 kg.",
-          "why_matters": "Noise indicates bearing damage or improper operation. Early detection prevents catastrophic failure and maintains precision.",
-          "how_to_handle": "Inspect for contamination, verify shaft and housing tolerances, check load calculations, and ensure proper lubrication. Replace if damage is found.",
-          "pro_tip": "Our vibration analysis shows 695 bearings should operate below 48 μm/s² (V2) for optimal performance. Higher levels indicate problems."
+          "question": "Why is my 695 bearing making unusual noise?",
+          "direct_answer": "Unusual noise in 695 bearings typically indicates contamination, improper lubrication, misalignment, or wear. The 5mm bore is sensitive to shaft imperfections and contamination due to its small size.",
+          "why_matters": "Early noise detection prevents bearing failure, maintains precision, and reduces maintenance costs in precision applications.",
+          "how_to_handle": "Inspect for contamination, check lubrication levels, verify shaft alignment and surface finish, and replace bearing if noise persists or worsens.",
+          "pro_tip": "695 bearings amplify noise due to their small size - what sounds minor in larger bearings can indicate serious issues in precision bearings."
         },
         {
-          "question": "The 695 bearing is running hot during operation. What should I check?",
-          "direct_answer": "Check lubrication, load, speed, and clearance. Ensure load is under 122 kg, speed under 36,000 RPM, and proper grease is used.",
-          "why_matters": "Excessive heat damages bearing materials, reduces precision, and shortens life. Heat indicates friction and potential failure.",
-          "how_to_handle": "Verify load calculations, check lubrication quantity and type, ensure proper clearance, and monitor operating speed.",
-          "pro_tip": "Our Gcr15 steel composition handles temperatures up to 120°C, but optimal operation is below 80°C for maximum life."
+          "question": "What causes 695 bearing overheating?",
+          "direct_answer": "695 bearing overheating is caused by over-lubrication, excessive load (>1.38kN), high speeds (>38,000 RPM), misalignment, or contamination. The small size makes 695 bearings sensitive to these conditions.",
+          "why_matters": "Overheating accelerates wear, reduces precision, and can cause catastrophic failure in precision bearing applications.",
+          "how_to_handle": "Check lubrication quantity and type, verify load and speed limits, inspect alignment, clean contamination, and ensure proper ventilation around the bearing.",
+          "pro_tip": "695 bearings have limited heat dissipation due to small size - monitor temperature closely in high-speed applications."
         },
         {
-          "question": "How can I prevent premature failure of the 695 bearing in my application?",
-          "direct_answer": "Prevent failure by: proper installation, correct load (under 122 kg), adequate lubrication, contamination control, and regular inspection.",
-          "why_matters": "Preventive maintenance extends bearing life 3-10x and prevents costly equipment downtime. Most failures are preventable.",
-          "how_to_handle": "Follow installation procedures, monitor operating conditions, maintain clean environment, and inspect regularly for wear signs.",
-          "pro_tip": "Our quality assurance process includes statistical process control. Premium bearings last 3-10x longer than economy alternatives."
+          "question": "How do I diagnose 695 bearing vibration issues?",
+          "direct_answer": "Diagnose 695 bearing vibration by checking shaft runout (≤0.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 5mm bore bearings.",
+          "why_matters": "Excessive vibration reduces precision, increases wear, and can damage connected equipment in precision applications.",
+          "how_to_handle": "Use vibration analysis tools, check shaft specifications, verify bearing installation, and replace bearing if vibration exceeds acceptable limits.",
+          "pro_tip": "695 bearings require higher precision in shaft preparation due to their small size and sensitivity to imperfections."
         }
       ]
     },
@@ -500,25 +497,25 @@
       "title": "Cost & Performance Optimization",
       "questions": [
         {
-          "question": "Is the 695 bearing cost-effective for my precision instrument application?",
-          "direct_answer": "Yes, the 695 bearing offers excellent value with 122 kg load capacity, 36,000 RPM speed rating, and 50,000-hour service life at competitive pricing.",
-          "why_matters": "Total cost of ownership includes initial cost, maintenance, replacement, and downtime. Quality bearings reduce overall costs significantly.",
-          "how_to_handle": "Compare total cost over 5-10 years including maintenance and replacement. Premium bearings typically reduce costs by 60-80%.",
-          "pro_tip": "Our bulk pricing for 100+ units provides significant savings. OEM partnerships offer dedicated support and volume discounts."
+          "question": "How can I optimize 695 bearing performance for cost efficiency?",
+          "direct_answer": "Optimize 695 bearing performance by selecting appropriate clearance (C0 for most applications), using proper lubrication, maintaining clean environment, and implementing preventive maintenance to extend service life beyond 50,000 hours.",
+          "why_matters": "Performance optimization reduces total cost of ownership, minimizes downtime, and ensures consistent precision in precision applications.",
+          "how_to_handle": "Choose clearance based on application requirements, establish maintenance schedules, monitor operating conditions, and replace bearings proactively rather than reactively.",
+          "pro_tip": "695 bearings offer excellent value when properly maintained - their precision size means replacement costs are minimal compared to system downtime."
         },
         {
-          "question": "What's the ROI of choosing premium 695 bearings over economy alternatives?",
-          "direct_answer": "Premium 695 bearings provide 3-10x longer life, reducing replacement costs and downtime. ROI typically exceeds 200% over 3-5 years.",
-          "why_matters": "Economy bearings fail more frequently, causing equipment downtime, lost production, and higher maintenance costs.",
-          "how_to_handle": "Calculate cost savings from reduced replacements, maintenance, and downtime. Premium bearings pay for themselves within 1-2 years.",
-          "pro_tip": "Our customers report 60-80% reduction in total cost of ownership when switching from economy to premium bearings."
+          "question": "What factors affect 695 bearing service life?",
+          "direct_answer": "695 bearing service life is affected by load conditions (≤1.38kN), operating speed (≤38,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
+          "why_matters": "Understanding service life factors helps optimize maintenance schedules, reduce costs, and ensure reliable operation in critical precision applications.",
+          "how_to_handle": "Monitor operating parameters, maintain clean environment, use quality lubricants, implement preventive maintenance, and replace bearings based on performance degradation.",
+          "pro_tip": "695 bearings can achieve 50,000+ hours service life when operated within specifications and properly maintained."
         },
         {
-          "question": "How can I optimize the performance of my 695 bearing for maximum efficiency?",
-          "direct_answer": "Optimize performance by: proper installation, optimal clearance selection, adequate lubrication, load optimization, and speed control.",
-          "why_matters": "Optimized performance extends bearing life, reduces energy consumption, and maintains precision throughout service life.",
-          "how_to_handle": "Select appropriate clearance grade, ensure proper installation, maintain clean environment, and monitor operating conditions.",
-          "pro_tip": "Our technical team provides performance optimization consulting. Proper setup can improve efficiency by 15-25% and extend life by 2-3x."
+          "question": "How do 695 bearings compare to alternatives in terms of total cost?",
+          "direct_answer": "695 bearings offer excellent total cost value for precision applications due to their precision size, reliable performance, and low replacement costs. Quality 695 bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.",
+          "why_matters": "Total cost analysis helps make informed purchasing decisions, considering initial cost, maintenance, replacement, and downtime costs over the bearing's service life.",
+          "how_to_handle": "Compare initial costs, expected service life, maintenance requirements, and replacement costs. Consider system downtime costs when evaluating alternatives.",
+          "pro_tip": "695 bearings provide optimal cost-performance ratio for precision applications when quality and proper maintenance are prioritized."
         }
       ]
     }

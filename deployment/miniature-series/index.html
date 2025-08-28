@@ -6,7 +6,7 @@
     <title>Miniature Ball Bearings | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-/* Reset everything */
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -226,15 +226,6 @@ body {
         display: block;
     }
 }
-
-/* Footer CSS */
-
-
-/* CTA CSS */
-
-
-/* Watermark CSS */
-
 
 /* Page CSS */
 /* ================================
@@ -2283,12 +2274,12 @@ a:focus {
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Load navbar
-            // fetch call removed - navbar already embedded
+            // fetch call removed - component already embedded
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 })
-                .catch(error => console.error('Error loading navbar:', error));
+                .catch(error => // error logging removed);
 
 
         });
@@ -2455,7 +2446,7 @@ a:focus {
 <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Load navbar
-            // problematic pattern removednavbar.html')
+            fetch('../shared/navbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;

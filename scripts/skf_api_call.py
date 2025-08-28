@@ -209,8 +209,8 @@ def main():
     
     scraper = SKFAPIBearingScraper()
     
-    # All miniature bearing models we need to create pages for
-    test_models = ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629']
+    # All bearing models from bearing_database.json
+    test_models = ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699']
     
     results = scraper.scrape_multiple_bearings(test_models)
     

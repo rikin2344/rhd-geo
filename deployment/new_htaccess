@@ -1,3 +1,82 @@
+# ========================================
+# RHD BEARINGS - CLEAN URL CONFIGURATION
+# ========================================
+# This .htaccess file enables clean URLs for all series and model pages
+# Users can access /specs/6000-series/ instead of /specs/6000-series.html
+# ========================================
+
+# IMPORTANT: Custom rules must come BEFORE WordPress rules
+# URL Rewriting for Clean URLs (No .html extension needed)
+RewriteEngine On
+
+# Force direct serving of HTML files, bypass WordPress
+<Files "*.html">
+    SetHandler default-handler
+</Files>
+
+# Series Pages - Clean URLs (no .html extension needed)
+RewriteRule ^specs/miniature-series/?$ /specs/miniature-series.html [L]
+RewriteRule ^specs/6000-series/?$ /specs/6000-series.html [L]
+RewriteRule ^specs/6200-series/?$ /specs/6200-series.html [L]
+RewriteRule ^specs/6300-series/?$ /specs/6300-series.html [L]
+RewriteRule ^specs/62200-series/?$ /specs/62200-series.html [L]
+RewriteRule ^specs/62300-series/?$ /specs/62300-series.html [L]
+RewriteRule ^specs/16000-series/?$ /specs/16000-series.html [L]
+RewriteRule ^specs/6800-series/?$ /specs/6800-series.html [L]
+RewriteRule ^specs/6900-series/?$ /specs/6900-series.html [L]
+
+# Additional Series Pages (if any exist)
+# This rule automatically handles any series page with the pattern: /specs/NAME-series/
+# It will redirect to /specs/NAME-series.html without showing the .html extension
+RewriteRule ^specs/([a-zA-Z0-9-]+)-series/?$ /specs/$1-series.html [L]
+
+# Individual Model Pages
+RewriteRule ^specs/miniature-series/604/?$ /specs/miniature-series/604/index.html [L]
+RewriteRule ^specs/miniature-series/605/?$ /specs/miniature-series/605/index.html [L]
+RewriteRule ^specs/miniature-series/606/?$ /specs/miniature-series/606/index.html [L]
+RewriteRule ^specs/miniature-series/607/?$ /specs/miniature-series/607/index.html [L]
+RewriteRule ^specs/miniature-series/608/?$ /specs/miniature-series/608/index.html [L]
+RewriteRule ^specs/miniature-series/609/?$ /specs/miniature-series/609/index.html [L]
+RewriteRule ^specs/miniature-series/623/?$ /specs/miniature-series/623/index.html [L]
+RewriteRule ^specs/miniature-series/624/?$ /specs/miniature-series/624/index.html [L]
+RewriteRule ^specs/miniature-series/625/?$ /specs/miniature-series/625/index.html [L]
+RewriteRule ^specs/miniature-series/626/?$ /specs/miniature-series/626/index.html [L]
+RewriteRule ^specs/miniature-series/627/?$ /specs/miniature-series/627/index.html [L]
+RewriteRule ^specs/miniature-series/628/?$ /specs/miniature-series/628/index.html [L]
+RewriteRule ^specs/miniature-series/629/?$ /specs/miniature-series/629/index.html [L]
+RewriteRule ^specs/miniature-series/634/?$ /specs/miniature-series/634/index.html [L]
+RewriteRule ^specs/miniature-series/635/?$ /specs/miniature-series/635/index.html [L]
+RewriteRule ^specs/miniature-series/683/?$ /specs/miniature-series/683/index.html [L]
+RewriteRule ^specs/miniature-series/684/?$ /specs/miniature-series/684/index.html [L]
+RewriteRule ^specs/miniature-series/685/?$ /specs/miniature-series/685/index.html [L]
+RewriteRule ^specs/miniature-series/686/?$ /specs/miniature-series/686/index.html [L]
+RewriteRule ^specs/miniature-series/687/?$ /specs/miniature-series/687/index.html [L]
+RewriteRule ^specs/miniature-series/688/?$ /specs/miniature-series/688/index.html [L]
+RewriteRule ^specs/miniature-series/689/?$ /specs/miniature-series/689/index.html [L]
+RewriteRule ^specs/miniature-series/693/?$ /specs/miniature-series/693/index.html [L]
+RewriteRule ^specs/miniature-series/694/?$ /specs/miniature-series/694/index.html [L]
+RewriteRule ^specs/miniature-series/695/?$ /specs/miniature-series/695/index.html [L]
+RewriteRule ^specs/miniature-series/696/?$ /specs/miniature-series/696/index.html [L]
+RewriteRule ^specs/miniature-series/697/?$ /specs/miniature-series/697/index.html [L]
+RewriteRule ^specs/miniature-series/698/?$ /specs/miniature-series/698/index.html [L]
+RewriteRule ^specs/miniature-series/699/?$ /specs/miniature-series/699/index.html [L]
+
+# Specs Hub Page
+RewriteRule ^specs/?$ /specs.html [L]
+
+# Force MIME type for HTML files
+<FilesMatch "\.html$">
+    ForceType text/html
+</FilesMatch>
+
+# Security: Prevent direct access to .htaccess
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# ========================================
+# WORDPRESS RULES (must come AFTER custom rules)
+# ========================================
 # BEGIN WordPress
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -8,20 +87,62 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 # END WordPress
 
-# Force direct serving of specific files, bypass WordPress
-<Files "miniature-series.html">
-    SetHandler default-handler
-</Files>
+# Series Pages - Clean URLs (no .html extension needed)
+RewriteRule ^specs/miniature-series/?$ /specs/miniature-series.html [L]
+RewriteRule ^specs/6000-series/?$ /specs/6000-series.html [L]
+RewriteRule ^specs/6200-series/?$ /specs/6200-series.html [L]
+RewriteRule ^specs/6300-series/?$ /specs/6300-series.html [L]
+RewriteRule ^specs/62200-series/?$ /specs/62200-series.html [L]
+RewriteRule ^specs/62300-series/?$ /specs/62300-series.html [L]
+RewriteRule ^specs/16000-series/?$ /specs/16000-series.html [L]
+RewriteRule ^specs/6800-series/?$ /specs/6800-series.html [L]
+RewriteRule ^specs/6900-series/?$ /specs/6900-series.html [L]
 
-<Files "miniature_bearings_page.html">
-    SetHandler default-handler
-</Files>
+# Additional Series Pages (if any exist)
+# This rule automatically handles any series page with the pattern: /specs/NAME-series/
+# It will redirect to /specs/NAME-series.html without showing the .html extension
+RewriteRule ^specs/([a-zA-Z0-9-]+)-series/?$ /specs/$1-series.html [L]
 
-<Files "6000-series.html">
-    SetHandler default-handler
-</Files>
+# Individual Model Pages
+RewriteRule ^specs/miniature-series/604/?$ /specs/miniature-series/604/index.html [L]
+RewriteRule ^specs/miniature-series/605/?$ /specs/miniature-series/605/index.html [L]
+RewriteRule ^specs/miniature-series/606/?$ /specs/miniature-series/606/index.html [L]
+RewriteRule ^specs/miniature-series/607/?$ /specs/miniature-series/607/index.html [L]
+RewriteRule ^specs/miniature-series/608/?$ /specs/miniature-series/608/index.html [L]
+RewriteRule ^specs/miniature-series/609/?$ /specs/miniature-series/609/index.html [L]
+RewriteRule ^specs/miniature-series/623/?$ /specs/miniature-series/623/index.html [L]
+RewriteRule ^specs/miniature-series/624/?$ /specs/miniature-series/624/index.html [L]
+RewriteRule ^specs/miniature-series/625/?$ /specs/miniature-series/625/index.html [L]
+RewriteRule ^specs/miniature-series/626/?$ /specs/miniature-series/626/index.html [L]
+RewriteRule ^specs/miniature-series/627/?$ /specs/miniature-series/627/index.html [L]
+RewriteRule ^specs/miniature-series/628/?$ /specs/miniature-series/628/index.html [L]
+RewriteRule ^specs/miniature-series/629/?$ /specs/miniature-series/629/index.html [L]
+RewriteRule ^specs/miniature-series/634/?$ /specs/miniature-series/634/index.html [L]
+RewriteRule ^specs/miniature-series/635/?$ /specs/miniature-series/635/index.html [L]
+RewriteRule ^specs/miniature-series/683/?$ /specs/miniature-series/683/index.html [L]
+RewriteRule ^specs/miniature-series/684/?$ /specs/miniature-series/684/index.html [L]
+RewriteRule ^specs/miniature-series/685/?$ /specs/miniature-series/685/index.html [L]
+RewriteRule ^specs/miniature-series/686/?$ /specs/miniature-series/686/index.html [L]
+RewriteRule ^specs/miniature-series/687/?$ /specs/miniature-series/687/index.html [L]
+RewriteRule ^specs/miniature-series/688/?$ /specs/miniature-series/688/index.html [L]
+RewriteRule ^specs/miniature-series/689/?$ /specs/miniature-series/689/index.html [L]
+RewriteRule ^specs/miniature-series/693/?$ /specs/miniature-series/693/index.html [L]
+RewriteRule ^specs/miniature-series/694/?$ /specs/miniature-series/694/index.html [L]
+RewriteRule ^specs/miniature-series/695/?$ /specs/miniature-series/695/index.html [L]
+RewriteRule ^specs/miniature-series/696/?$ /specs/miniature-series/696/index.html [L]
+RewriteRule ^specs/miniature-series/697/?$ /specs/miniature-series/697/index.html [L]
+RewriteRule ^specs/miniature-series/698/?$ /specs/miniature-series/698/index.html [L]
+RewriteRule ^specs/miniature-series/699/?$ /specs/miniature-series/699/index.html [L]
 
-# Alternative: Use RewriteRule to serve files directly
-RewriteEngine On
-RewriteRule ^miniature-series/?$ /miniature-series.html [L]
-RewriteRule ^6000-series/?$ /6000-series.html [L]
+# Specs Hub Page
+RewriteRule ^specs/?$ /specs.html [L]
+
+# Force MIME type for HTML files
+<FilesMatch "\.html$">
+    ForceType text/html
+</FilesMatch>
+
+# Security: Prevent direct access to .htaccess
+<Files ".htaccess">
+    Require all denied
+</Files>

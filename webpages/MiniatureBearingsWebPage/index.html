@@ -19,7 +19,73 @@
 </head>
 <body data-page="miniature">
     <!-- Navigation Header -->
-    <div id="navbar-container"></div>
+    <div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
+        <div class="uicore-header-wrapper">
+            <nav class="uicore uicore-container">
+                <!-- Logo -->
+                <div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
+                    <a href="https://rhdbearings.com/">
+                        <img class="uicore-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <div class="uicore-nav-menu">
+                    <div class="uicore-menu-container">
+                        <div class="uicore-menu">
+                            <a href="https://rhdbearings.com/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Home</span>
+                                    <span class="ui-menu-item-wrapper">Home</span>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/about-us/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">About Us</span>
+                                    <span class="ui-menu-item-wrapper">About Us</span>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/products/" class="menu-item has-submenu ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Products</span>
+                                    <span class="ui-menu-item-wrapper">Products</span>
+                                </div>
+                                <div class="sub-menu">
+                                    <a href="https://rhdbearings.com/specs/miniature-series.html" data-page="miniature">Miniature Bearings</a>
+                                    <a href="https://rhdbearings.com/specs/6000-series.html" data-page="6000">6000 Series</a>
+                                    <a href="https://rhdbearings.com/specs/6200-series.html" data-page="6200">6200 Series</a>
+                                    <a href="https://rhdbearings.com/specs/6300-series.html" data-page="6300">6300 Series</a>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/industries/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Industries</span>
+                                    <span class="ui-menu-item-wrapper">Industries</span>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/bearing-size-chart/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                    <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                </div>
+                            </a>
+                            <a href="https://rhdbearings.com/shop/" class="menu-item ui-anim-flip">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper">Shop</span>
+                                    <span class="ui-menu-item-wrapper">Shop</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Button -->
+                <div class="uicore-extra">
+                    <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
+                </div>
+            </nav>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -790,7 +856,7 @@
                             <h3 class="footer-column-title">Company</h3>
                             <ul class="footer-links">
                                 <li><a href="https://rhdbearings.com/about-us/">About Us</a></li>
-                                <li><a href="https://rhdbearings.com/quality-assurance/">Quality Assurance</a></li>
+                                <li><a href="https://rhdbearings.com/bearing-instance/">Quality Assurance</a></li>
                                 <li><a href="https://rhdbearings.com/careers/">Careers</a></li>
                                 <li><a href="https://rhdbearings.com/contact-us/">Contact</a></li>
                                 <li><a href="https://rhdbearings.com/news/">News & Updates</a></li>
@@ -952,44 +1018,101 @@
             }
         }
 
-        // Event listeners
-        document.getElementById('sizeFilter').addEventListener('change', filterModels);
-        document.getElementById('loadFilter').addEventListener('change', filterModels);
-        document.getElementById('speedFilter').addEventListener('change', filterModels);
-        document.getElementById('searchInput').addEventListener('input', filterModels);
-
-        // Initialize
+        // Initialize everything when DOM is ready
         document.addEventListener('DOMContentLoaded', function() {
-            renderModels(bearingsData);
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+            try {
+                console.log('Initializing MiniatureBearingsWebPage...');
+                
+                // Test if basic JavaScript is working
+                console.log('Bearings data length:', bearingsData.length);
+                console.log('First bearing:', bearingsData[0]);
+                
+                // Test if the grid element exists
+                const grid = document.getElementById('modelsGrid');
+                console.log('Grid element found:', grid);
+                if (grid) {
+                    console.log('Grid innerHTML before:', grid.innerHTML);
                 }
-            });
+                
+                // Initialize models
+                renderModels(bearingsData);
+                console.log('Models rendered successfully');
+                
+                if (grid) {
+                    console.log('Grid innerHTML after:', grid.innerHTML);
+                }
+                
+                // Add event listeners with error checking
+                const sizeFilter = document.getElementById('sizeFilter');
+                const loadFilter = document.getElementById('loadFilter');
+                const speedFilter = document.getElementById('speedFilter');
+                const searchInput = document.getElementById('searchInput');
+                
+                console.log('Filter elements found:', { sizeFilter, loadFilter, speedFilter, searchInput });
+                
+                if (sizeFilter) {
+                    sizeFilter.addEventListener('change', filterModels);
+                    console.log('Size filter event listener added');
+                } else {
+                    console.warn('Size filter element not found');
+                }
+                
+                if (loadFilter) {
+                    loadFilter.addEventListener('change', filterModels);
+                    console.log('Load filter event listener added');
+                } else {
+                    console.warn('Load filter element not found');
+                }
+                
+                if (speedFilter) {
+                    speedFilter.addEventListener('change', filterModels);
+                    console.log('Speed filter event listener added');
+                } else {
+                    console.warn('Speed filter element not found');
+                }
+                
+                if (searchInput) {
+                    searchInput.addEventListener('input', filterModels);
+                    console.log('Search input event listener added');
+                } else {
+                    console.warn('Search input element not found');
+                }
+                
+                // Initialize smooth scrolling
+                const anchorLinks = document.querySelectorAll('a[href^="#"]');
+                anchorLinks.forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+                console.log(`Smooth scrolling initialized for ${anchorLinks.length} anchor links`);
+                
+                console.log('MiniatureBearingsWebPage initialization complete');
+            } catch (error) {
+                console.error('Error during initialization:', error);
+                console.error('Error stack:', error.stack);
+            }
         });
     </script>
 
-    <!-- Load Navbar and Watermark -->
+    <!-- Load Shared Components -->
     <script>
+        // Auto-highlight current page in navigation
         document.addEventListener('DOMContentLoaded', function() {
-            // Load navbar
-            fetch('../shared/navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navbar:', error));
-
-
+            const currentPage = document.body.getAttribute('data-page');
+            if (currentPage) {
+                const menuLink = document.querySelector(`[data-page="${currentPage}"]`);
+                if (menuLink) {
+                    menuLink.classList.add('current-menu-item');
+                }
+            }
         });
     </script>
 </body>

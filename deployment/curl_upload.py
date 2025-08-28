@@ -12,47 +12,54 @@ load_dotenv()
 
 def is_model_page(page_type):
     """Check if this is a model-specific page (vs series page)"""
-    return page_type.isdigit() or page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6001', '6002']
+    # Check if it's a 3-digit model number (604, 605, etc.)
+    if page_type.isdigit() and len(page_type) == 3:
+        return True
+    # Check if it's a 4-digit model number (6001, 6002, etc.)
+    if page_type.isdigit() and len(page_type) == 4:
+        return True
+    # Check specific model numbers
+    return page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6001', '6002']
 
 def get_model_upload_info(page_type):
     """Get model page upload information"""
     model_configs = {
-        '604': {'series': 'miniature-series', 'model': '604'},
-        '605': {'series': 'miniature-series', 'model': '605'},
-        '606': {'series': 'miniature-series', 'model': '606'},
-        '607': {'series': 'miniature-series', 'model': '607'},
-        '608': {'series': 'miniature-series', 'model': '608'},
-        '609': {'series': 'miniature-series', 'model': '609'},
-        '623': {'series': 'miniature-series', 'model': '623'},
-        '624': {'series': 'miniature-series', 'model': '624'},
-        '625': {'series': 'miniature-series', 'model': '625'},
-        '626': {'series': 'miniature-series', 'model': '626'},
-        '627': {'series': 'miniature-series', 'model': '627'},
-        '628': {'series': 'miniature-series', 'model': '628'},
-        '629': {'series': 'miniature-series', 'model': '629'},
-        '634': {'series': 'miniature-series', 'model': '634'},
-        '635': {'series': 'miniature-series', 'model': '635'},
-        '683': {'series': 'miniature-series', 'model': '683'},
-        '684': {'series': 'miniature-series', 'model': '684'},
-        '685': {'series': 'miniature-series', 'model': '685'},
-        '686': {'series': 'miniature-series', 'model': '686'},
-        '687': {'series': 'miniature-series', 'model': '687'},
-        '688': {'series': 'miniature-series', 'model': '688'},
-        '689': {'series': 'miniature-series', 'model': '689'},
-        '693': {'series': 'miniature-series', 'model': '693'},
-        '694': {'series': 'miniature-series', 'model': '694'},
-        '695': {'series': 'miniature-series', 'model': '695'},
-        '696': {'series': 'miniature-series', 'model': '696'},
-        '697': {'series': 'miniature-series', 'model': '697'},
-        '698': {'series': 'miniature-series', 'model': '698'},
-        '699': {'series': 'miniature-series', 'model': '699'}
+        '604': {'series': 'miniature-series-internal-pages', 'model': '604'},
+        '605': {'series': 'miniature-series-internal-pages', 'model': '605'},
+        '606': {'series': 'miniature-series-internal-pages', 'model': '606'},
+        '607': {'series': 'miniature-series-internal-pages', 'model': '607'},
+        '608': {'series': 'miniature-series-internal-pages', 'model': '608'},
+        '609': {'series': 'miniature-series-internal-pages', 'model': '609'},
+        '623': {'series': 'miniature-series-internal-pages', 'model': '623'},
+        '624': {'series': 'miniature-series-internal-pages', 'model': '624'},
+        '625': {'series': 'miniature-series-internal-pages', 'model': '625'},
+        '626': {'series': 'miniature-series-internal-pages', 'model': '626'},
+        '627': {'series': 'miniature-series-internal-pages', 'model': '627'},
+        '628': {'series': 'miniature-series-internal-pages', 'model': '628'},
+        '629': {'series': 'miniature-series-internal-pages', 'model': '629'},
+        '634': {'series': 'miniature-series-internal-pages', 'model': '634'},
+        '635': {'series': 'miniature-series-internal-pages', 'model': '635'},
+        '683': {'series': 'miniature-series-internal-pages', 'model': '683'},
+        '684': {'series': 'miniature-series-internal-pages', 'model': '684'},
+        '685': {'series': 'miniature-series-internal-pages', 'model': '685'},
+        '686': {'series': 'miniature-series-internal-pages', 'model': '686'},
+        '687': {'series': 'miniature-series-internal-pages', 'model': '687'},
+        '688': {'series': 'miniature-series-internal-pages', 'model': '688'},
+        '689': {'series': 'miniature-series-internal-pages', 'model': '689'},
+        '693': {'series': 'miniature-series-internal-pages', 'model': '693'},
+        '694': {'series': 'miniature-series-internal-pages', 'model': '694'},
+        '695': {'series': 'miniature-series-internal-pages', 'model': '695'},
+        '696': {'series': 'miniature-series-internal-pages', 'model': '696'},
+        '697': {'series': 'miniature-series-internal-pages', 'model': '697'},
+        '698': {'series': 'miniature-series-internal-pages', 'model': '698'},
+        '699': {'series': 'miniature-series-internal-pages', 'model': '699'}
     }
     
     if page_type in model_configs:
         return model_configs[page_type]
     
     return {
-        'series': 'miniature-series',
+        'series': 'miniature-series-internal-pages',
         'model': page_type
     }
 
@@ -116,6 +123,12 @@ def curl_upload(page_type='miniature'):
         local_file = f'./specs/{model_info["series"]}/{model_info["model"]}/index.html'
         remote_file = f'specs/{model_info["series"]}/{model_info["model"]}/index.html'
         clean_url = f'https://rhdbearings.com/specs/{model_info["series"]}/{model_info["model"]}'
+        
+        # Check if the local file exists
+        if not os.path.exists(local_file):
+            print(f"⚠️  Warning: Local file {local_file} not found!")
+            print(f"💡 Make sure to run generate_all_models.py first to create the model pages")
+            return False
     else:
         raise ValueError(f"Unknown page type: {page_type}")
     

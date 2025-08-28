@@ -38,28 +38,28 @@
   },
   "bearing_type": "Deep Groove Ball Bearing",
   "model_number": "635",
-  "enhanced_description": "5mm bore with 19mm dreams and the determination to achieve them.",
+  "enhanced_description": "The 5mm precision powerhouse - where accuracy meets reliability in a compact, high-performance package.",
   "dimensions": {
     "bore_diameter_d_mm": 5,
     "outer_diameter_D_mm": 19,
     "width_B_mm": 6,
-    "weight_kg": 0.008,
-    "skf_extended_dimensions": {
-      "d1_shoulder_diameter": null,
-      "D2_recess_diameter": null,
-      "r1_chamfer_radius": null,
-      "r2_chamfer_radius": null
-    }
+    "weight_kg": 0.006,
+          "skf_extended_dimensions": {
+        "d1_shoulder_diameter": 11.1,
+        "D2_recess_diameter": 16.5,
+        "r1_chamfer_radius": 0.3,
+        "r2_chamfer_radius": 0.3
+      }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 2.80,
-    "static_load_Cor_kN": 1.05,
-    "load_capacity_kg": 286
+    "dynamic_load_Cr_kN": 1.88,
+    "static_load_Cor_kN": 0.68,
+    "load_capacity_kg": 192
   },
   "speed_limits": {
-    "grease_rpm": 28000,
-    "oil_rpm": 36000,
-    "recommended_max_rpm": 25200
+    "grease_rpm": 32000,
+    "oil_rpm": 40000,
+    "recommended_max_rpm": 28800
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -71,53 +71,56 @@
   "technical_drawing": {
     "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
     "image_alt": "635 Deep Groove Ball Bearing Technical Drawing",
-    "image_title": "635 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
     "drawing_type": "Cross-sectional technical diagram",
     "file_format": "SVG",
     "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 635 deep groove ball bearing"
   },
   "applications": {
     "application1": {
-      "title": "Precision Instruments",
-      "icon": "🔬",
+      "title": "High-Speed Spindles",
+      "icon": "zap",
       "applications": [
-        "Medical devices",
-        "Laboratory equipment",
-        "Optical instruments",
-        "Measuring devices",
-        "Calibration tools",
-        "Microscopes",
-        "Spectrometers"
+        "CNC spindles",
+        "grinding spindles",
+        "milling spindles",
+        "drilling spindles",
+        "turning spindles",
+        "precision spindles",
+        "boring spindles",
+        "reaming spindles"
       ],
-      "requirements": "Ultra-precision, low vibration, high-speed capability"
+      "requirements": "5mm shaft with 1.88kN dynamic load capacity, 32,000 RPM grease lubrication, robust 19×6mm profile for high-speed spindle applications"
     },
     "application2": {
-      "title": "Electronics & Miniature Motors",
-      "icon": "⚡",
+      "title": "Optical Systems",
+      "icon": "eye",
       "applications": [
-        "Computer fans",
-        "Hard disk drives",
-        "CD/DVD drives",
-        "Small electric motors",
-        "Servo motors",
-        "Stepper motors",
-        "Micro actuators"
+        "camera lenses",
+        "telescope systems",
+        "microscope objectives",
+        "laser systems",
+        "optical scanners",
+        "imaging devices",
+        "spectroscopic systems",
+        "interferometric devices"
       ],
-      "requirements": "Compact size, high-speed operation, low noise"
+      "requirements": "Precision 5mm bore with 0.3mm chamfer radius, 0.68kN static load rating for stable operation, 192kg load capacity for optical accuracy"
     },
     "application3": {
-      "title": "Consumer Electronics",
-      "icon": "📱",
+      "title": "Semiconductor Equipment",
+      "icon": "chip",
       "applications": [
-        "Smartphones",
-        "Tablets",
-        "Laptops",
-        "Gaming controllers",
-        "Smart watches",
-        "Wireless earbuds",
-        "Portable devices"
+        "wafer handlers",
+        "etching systems",
+        "deposition tools",
+        "inspection equipment",
+        "cleaning systems",
+        "metrology tools",
+        "lithography systems",
+        "packaging equipment"
       ],
-      "requirements": "Miniature dimensions, reliable performance, long life"
+      "requirements": "5mm bore fits semiconductor shafts, 6mm width for compact mounting, 0.006kg weight for efficiency, 40,000 RPM oil lubrication capability"
     }
   },
   "vibration": {
@@ -166,104 +169,101 @@
   },
   "seal_options": {
     "open": {
-      "designation": "Open",
+      "designation": "635",
       "description": "Open bearing, no seals",
       "speed_factor": 1.0,
-      "max_rpm": 28000,
+      "max_rpm": 32000,
       "protection": "None",
       "lubrication": "External required",    
       "badge": "High Speed"
     },
     "single_shield": {
-      "designation": "Z",
+      "designation": "635-Z",
       "description": "Single metal shield",
       "speed_factor": 0.95,
-      "max_rpm": 26600,
+      "max_rpm": 30400,
       "protection": "Light dust protection",
       "lubrication": "Pre-greased",
       "badge": "Balanced"
     },
     "double_shield": {
-      "designation": "ZZ",
+      "designation": "635-ZZ",
       "description": "Double metal shields",
       "speed_factor": 0.9,
-      "max_rpm": 25200,
+      "max_rpm": 28800,
       "protection": "Dust protection",
       "lubrication": "Sealed for life",
       "badge": "Most Popular"
     },
     "single_seal": {
-      "designation": "RS",
+      "designation": "635-RS",
       "description": "Single rubber seal",
       "speed_factor": 0.8,
-      "max_rpm": 22400,
+      "max_rpm": 25600,
       "protection": "Moisture and dust",
       "lubrication": "Pre-greased, sealed",
       "badge": "Protected"
     },
     "double_seal": {
-      "designation": "2RS",
+      "designation": "635-2RS",
       "description": "Double rubber seals",
       "speed_factor": 0.7,
-      "max_rpm": 19600,
+      "max_rpm": 22400,
       "protection": "Moisture and dust",
       "lubrication": "Sealed for life",
       "badge": "Protected"
     }
   },
   "seo_metadata": {
-    "title": "635 Deep Groove Ball Bearing - 5x19x6mm | RHD Bearings",
-    "meta_description": "Ultra-precision 635 bearing (5x19x6mm) with 286 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
+    "title": "635 Bearing 5×19×6mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "635 deep groove ball bearing with 5mm bore, 19mm OD, 6mm width. 1.88kN dynamic load, 192kg capacity. Perfect for high-speed spindles, optical systems, semiconductor equipment.",
     "keywords": [
       "635 bearing",
-      "5mm bearing",
+      "5mm bore bearing",
+      "19mm OD bearing",
       "deep groove ball bearing",
-      "rhd bearings",
-      "mumbai bearings",
-      "india bearing manufacturer",
-      "precision bearing",
       "miniature bearing",
-      "micro bearing",
-      "bearing for precision instruments",
-      "bearing for miniature motors",
-      "bearing for electronics",
-      "bearing that fits 5mm shaft",
-      "bearing for high speed applications",
-      "bearing for small machinery",
-      "ISO certified bearing",
-      "chrome steel bearing",
-      "gcr15 bearing",
-      "andheri bearings",
-      "mumbai bearing supplier",
-      "india bearing company",
-      "how to choose 5mm bearing",
-      "best bearing for precision",
-      "bearing selection guide",
-      "635 vs 636 bearing",
-      "miniature bearing comparison",
-      "precision bearing alternatives",
-      "bearing load capacity for 5mm shaft",
-      "bearing speed rating for precision"
+      "high speed spindle bearing",
+      "CNC spindle bearing",
+      "grinding spindle bearing",
+      "milling spindle bearing",
+      "drilling spindle bearing",
+      "turning spindle bearing",
+      "precision spindle bearing",
+      "camera lens bearing",
+      "telescope system bearing",
+      "microscope objective bearing",
+      "laser system bearing",
+      "optical scanner bearing",
+      "imaging device bearing",
+      "wafer handler bearing",
+      "etching system bearing",
+      "deposition tool bearing",
+      "inspection equipment bearing",
+      "cleaning system bearing",
+      "metrology tool bearing",
+      "RHD bearings",
+      "India bearings"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/miniature-series/635",
+    "canonical_url": "https://rhdbearings.com/specs/miniature-series/635/",
     "og_data": {
-      "title": "635 Deep Groove Ball Bearing - 5x19x6mm with 286 kg Load Capacity",
-      "description": "Ultra-precision 635 bearing (5x19x6mm) with 286 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
-      "url": "https://rhdbearings.com/specs/miniature-series/635",
+      "title": "635 Deep Groove Ball Bearing - 5×19×6mm | RHD Bearings",
+      "description": "High-speed spindle 635 miniature bearing with 1.88kN dynamic load capacity. Perfect for spindles, optical systems, and semiconductor equipment.",
+      "url": "https://rhdbearings.com/specs/miniature-series/635/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "635 Deep Groove Ball Bearing - 5x19x6mm | RHD Bearings",
-      "description": "Ultra-precision 635 bearing with 286 kg load capacity. Perfect for precision instruments, miniature motors & electronics."
+      "title": "635 Bearing - High-Speed Spindle Solution",
+      "description": "5mm bore, 1.88kN load capacity, 32,000 RPM. Ideal for high-speed spindles, optical systems, and semiconductor equipment."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "635 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Ultra-precision 635 deep groove ball bearing (5x19x6mm) with 286 kg load capacity. Perfect for precision instruments, miniature motors and electronics applications.",
+      "description": "635 deep groove ball bearing with 5mm bore, 19mm outer diameter, 6mm width. 1.88kN dynamic load capacity, 192kg load capacity.",
       "sku": "635",
       "mpn": "635",
       "brand": {
@@ -278,9 +278,9 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/miniature-series/635",
+        "url": "https://rhdbearings.com/specs/miniature-series/635/",
         "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
+        "availability": "Yes",
         "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
@@ -327,50 +327,55 @@
     }
   },
   "cross_references": {
-    "related_models": [
-      "634"
-    ],
-    "series_alternatives": [
-      "605",
-      "606",
-      "607",
-      "608",
-      "609"
-    ],
+    "related_models": ["605", "625", "645", "655"],
+    "shaft_requirements": {
+      "nominal_diameter": "5.000mm",
+      "tolerance_grade": "h6 (4.991-5.009mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
     "application_specific_alternatives": {
-      "high_temperature": "635 with C3 clearance",
-      "high_speed": "635 with open design",
-      "corrosive_environment": "635 with 2RS seals"
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
     }
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Handles 286 kg (2.80 kN) loads with 1.5x safety factor for typical applications",
-      "Rated for 28,000 RPM - ideal for high-speed precision instruments and miniature motors",
-      "Perfect for medical devices requiring sub-micron precision and ultra-low vibration",
-      "Optimal choice for 5mm shafts in precision instruments where space is critical",
-      "Gcr15 chrome steel provides 3-5x longer life vs. standard steel alternatives",
-      "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "Choose 635 for 5mm shafts requiring 1.88kN dynamic load capacity in high-speed spindle applications",
+      "Select 635-ZZ for dust protection with 28,800 RPM capability and sealed-for-life lubrication",
+      "Use 635-RS in moisture-prone environments requiring 25,600 RPM with rubber seal protection",
+      "Consider 635 for spindles where 19×6mm profile and 192kg load capacity optimize performance",
+      "Opt for 635 in optical systems needing 0.3mm chamfer radius and stable positioning",
+      "Deploy 635 in semiconductor equipment requiring 32,000 RPM grease lubrication with precision design"
     ],
     "natural_language_queries": [
-      "635 bearing specifications",
-      "bearing for 5mm shaft",
-      "635 vs 636 bearing",
-      "bearing for precision instruments",
-      "how to choose 5mm bearing",
-      "bearing load capacity for 5mm shaft"
+      "635 bearing dimensions",
+      "5mm bore bearing load capacity",
+      "miniature bearing for spindles",
+      "optical system bearing",
+      "semiconductor bearing 5mm shaft",
+      "635 bearing specifications"
     ],
     "decision_criteria": [
-      "Shaft diameter must be exactly 5mm with h6 tolerance (±0.011mm)",
-      "Housing must accommodate 19mm outer diameter with 6mm width clearance",
-      "Dynamic loads must stay under 286 kg (2.80 kN) for safe operation",
-      "Maximum operating speed should not exceed 28,000 RPM for optimal life",
-      "Application must require precision bearings for miniature or micro-scale equipment"
+      "5mm bore diameter requirement for shaft compatibility",
+      "1.88kN dynamic load capacity for application demands",
+      "6mm width constraint for compact mounting",
+      "32,000 RPM grease lubrication speed requirement",
+      "19mm outer diameter for housing fit"
     ],
     "problem_solution_mapping": [
       {
-        "problem": "Need ultra-precision bearing for 5mm shaft in medical device",
-        "solution": "635 bearing with C0 clearance provides sub-micron precision and 286 kg load capacity"
+        "problem": "Need high-performance bearing for 5mm shaft with substantial load capacity",
+        "solution": "635 bearing provides 1.88kN dynamic load in 19×6mm profile"
+      },
+      {
+        "problem": "Require dust protection in spindle application",
+        "solution": "635-ZZ offers 28,800 RPM with double metal shield protection"
+      },
+      {
+        "problem": "Moisture exposure in optical environment",
+        "solution": "635-RS provides rubber seal protection up to 25,600 RPM"
       }
     ],
     "expertise_signals": [
@@ -397,19 +402,19 @@
       {
         "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 2.80kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "5mm bore with 1.88kN load capacity and 32,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
         "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in micro-bearing category for 2.80kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in miniature bearing category for 1.88kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }      
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "635 provides 286 kg load capacity vs. smaller bearings with 66-219 kg capacity",
-      "vs_larger_bearing": "635 offers 5mm bore compactness vs. larger bearings requiring more space",
-      "vs_competitors": "Superior Gcr15 steel composition vs. standard steel alternatives",
-      "cost_benefit": "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "vs_smaller_bearing": "635 provides 0.73kN higher dynamic load than 634 with 1mm larger bore for enhanced spindle performance",
+      "vs_larger_bearing": "635 offers 0.92kN lower load than 626 but with 1mm smaller diameter for space-constrained applications",
+      "vs_competitors": "RHD 635 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
+      "cost_benefit": "635 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
   },
   "faqs": {
@@ -417,25 +422,25 @@
       "title": "Bearing Selection & Replacement",
       "questions": [
         {
-          "question": "How do I know if the 635 bearing is the right size for my 5mm shaft?",
-          "direct_answer": "The 635 bearing has a 5mm bore diameter with h6 tolerance (±0.011mm), making it perfect for 5mm shafts with standard tolerance requirements.",
-          "why_matters": "Proper shaft fit prevents premature wear, vibration, and bearing failure. h6 tolerance ensures optimal interference fit for most applications.",
-          "how_to_handle": "Measure your shaft diameter with a micrometer. If it's 5mm ±0.011mm, the 635 bearing will fit perfectly. For tighter tolerances, consider h5 or h4 shaft grades.",
-          "pro_tip": "From 20+ years of manufacturing experience: Always measure both shaft and housing before ordering. 80% of bearing failures come from improper sizing."
+          "question": "What shaft tolerance is recommended for 635 bearing installation?",
+          "direct_answer": "h6 tolerance grade (4.991-5.009mm) provides optimal fit and performance for 635 bearings.",
+          "why_matters": "Proper shaft tolerance ensures correct interference fit, preventing slippage while allowing thermal expansion.",
+          "how_to_handle": "Measure shaft diameter with precision micrometers, ensuring it falls within h6 tolerance range before installation.",
+          "pro_tip": "Use h6 tolerance for standard applications, h5 for high-precision requirements, and h7 for loose fits."
         },
         {
-          "question": "What's the difference between 635 and 636 bearings for my precision application?",
-          "direct_answer": "635 has 5mm bore (19x6mm), 636 has 6mm bore (22x7mm). 635 is more compact but 636 offers higher load capacity (286 kg vs. 335 kg).",
-          "why_matters": "Space constraints vs. load requirements determine your choice. 635 is ideal for ultra-compact designs, 636 for higher load applications.",
-          "how_to_handle": "Measure available space and calculate load requirements. If space is critical and loads are under 286 kg, choose 635. If you need higher capacity, choose 636.",
-          "pro_tip": "Our precision engineering team recommends 635 for medical devices and 636 for industrial instruments where space allows."
+          "question": "Can I replace a 635 bearing with a different size bearing?",
+          "direct_answer": "No, 635 bearings have unique 5×19×6mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
+          "how_to_handle": "Always use exact 635 replacement or consult engineering specifications for alternative solutions.",
+          "pro_tip": "Keep spare 635 bearings in stock to avoid production delays and ensure consistent quality."
         },
         {
-          "question": "Can I use the 635 bearing in high-temperature applications?",
-          "direct_answer": "Standard 635 bearings operate from -20°C to +120°C. For high-temperature use, we offer C3 clearance variants that handle up to +150°C.",
-          "why_matters": "Temperature affects bearing clearance, lubrication, and material properties. High temperatures can cause premature failure without proper clearance.",
-          "how_to_handle": "For temperatures above 120°C, specify C3 clearance when ordering. Above 150°C, consider special high-temperature materials and lubrication.",
-          "pro_tip": "Our ISO 9001:2015 certified manufacturing includes temperature testing to ensure bearings meet specified operating ranges."
+          "question": "What load capacity does the 635 bearing provide?",
+          "direct_answer": "635 bearing offers 1.88kN dynamic load capacity and 0.68kN static load capacity, suitable for high-speed spindle applications.",
+          "why_matters": "Load capacity determines bearing suitability for specific applications and operating conditions.",
+          "how_to_handle": "Calculate actual application loads and ensure they remain within 1.88kN dynamic limit with appropriate safety factors.",
+          "pro_tip": "Use 635 bearings for applications requiring up to 192kg load capacity with standard safety margins."
         }
       ]
     },
@@ -443,25 +448,25 @@
       "title": "Installation & Maintenance",
       "questions": [
         {
-          "question": "What's the proper installation method for the 635 bearing in a precision instrument?",
-          "direct_answer": "Use a precision bearing press or induction heater for installation. Apply force to the outer ring only, never to the inner ring or balls.",
-          "why_matters": "Improper installation damages bearing surfaces, reduces precision, and shortens service life. Precision instruments require sub-micron accuracy.",
-          "how_to_handle": "Clean shaft and housing thoroughly. Heat housing to 80-100°C or use precision press. Install bearing with gentle, even pressure on outer ring.",
-          "pro_tip": "Our manufacturing process includes 100% dimensional testing. Professional installation tools prevent 80% of premature bearing failures."
+          "question": "What lubrication is required for 635 bearings?",
+          "direct_answer": "635 bearings require grease lubrication for standard applications, with 32,000 RPM capability under proper lubrication conditions.",
+          "why_matters": "Proper lubrication reduces friction, prevents wear, and extends bearing service life significantly.",
+          "how_to_handle": "Apply high-quality bearing grease during installation and maintain regular lubrication intervals based on operating conditions.",
+          "pro_tip": "Use lithium-based grease for general applications and synthetic grease for high-temperature or high-speed operations."
         },
         {
-          "question": "How often should I lubricate the 635 bearing in continuous operation?",
-          "direct_answer": "Open bearings require external lubrication every 3-6 months. Shielded/sealed bearings are lubricated for life.",
-          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Insufficient lubrication causes 60% of bearing failures.",
-          "how_to_handle": "For open bearings, use high-quality grease compatible with operating temperature. For sealed bearings, no additional lubrication needed.",
-          "pro_tip": "Our Gcr15 steel composition provides superior wear resistance, but proper lubrication is still essential for maximum 50,000-hour service life."
+          "question": "How do I properly install a 635 bearing?",
+          "direct_answer": "Install 635 bearings using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to bearing surfaces.",
+          "why_matters": "Proper installation prevents premature failure, ensures optimal performance, and maintains dimensional accuracy.",
+          "how_to_handle": "Use bearing heaters for interference fits, apply force evenly, and verify proper seating after installation.",
+          "pro_tip": "Professional installation tools prevent 80% of premature bearing failures and ensure maximum service life."
         },
         {
-          "question": "What tools do I need for proper 635 bearing installation and maintenance?",
-          "direct_answer": "Essential tools include: precision bearing press, induction heater, micrometer, dial indicator, and proper cleaning supplies.",
-          "why_matters": "Proper tools ensure accurate installation, prevent damage, and maintain precision. Precision bearings require professional-grade equipment.",
-          "how_to_handle": "Invest in quality tools or use professional installation services. For critical applications, consider our installation training programs.",
-          "pro_tip": "Our technical support team provides installation guidance and can recommend specific tools for your application requirements."
+          "question": "What maintenance schedule is recommended for 635 bearings?",
+          "direct_answer": "635 bearings require regular inspection every 3-6 months, with lubrication replenishment based on operating hours and conditions.",
+          "why_matters": "Regular maintenance prevents unexpected failures, maintains performance, and extends bearing lifespan.",
+          "how_to_handle": "Establish maintenance schedules based on operating conditions, document all maintenance activities, and monitor bearing condition regularly.",
+          "pro_tip": "Implement predictive maintenance using vibration analysis to detect issues before they cause failures."
         }
       ]
     },
@@ -469,25 +474,25 @@
       "title": "Troubleshooting & Problem Solving",
       "questions": [
         {
-          "question": "My 635 bearing is making unusual noise. What could be causing this?",
-          "direct_answer": "Unusual noise usually indicates contamination, improper installation, or excessive load. Check for dirt, verify installation, and confirm load is under 286 kg.",
-          "why_matters": "Noise indicates bearing damage or improper operation. Early detection prevents catastrophic failure and maintains precision.",
-          "how_to_handle": "Inspect for contamination, verify shaft and housing tolerances, check load calculations, and ensure proper lubrication. Replace if damage is found.",
-          "pro_tip": "Our vibration analysis shows 635 bearings should operate below 58 μm/s² (V2) for optimal performance. Higher levels indicate problems."
+          "question": "What causes premature failure in 635 bearings?",
+          "direct_answer": "Common causes include improper installation, inadequate lubrication, contamination, excessive loads, and misalignment.",
+          "why_matters": "Understanding failure causes helps prevent future issues and improves system reliability.",
+          "how_to_handle": "Implement proper installation procedures, maintain clean environments, ensure adequate lubrication, and monitor operating conditions.",
+          "pro_tip": "80% of premature failures are preventable through proper installation and maintenance practices."
         },
         {
-          "question": "The 635 bearing is running hot during operation. What should I check?",
-          "direct_answer": "Check lubrication, load, speed, and clearance. Ensure load is under 286 kg, speed under 28,000 RPM, and proper grease is used.",
-          "why_matters": "Excessive heat damages bearing materials, reduces precision, and shortens life. Heat indicates friction and potential failure.",
-          "how_to_handle": "Verify load calculations, check lubrication quantity and type, ensure proper clearance, and monitor operating speed.",
-          "pro_tip": "Our Gcr15 steel composition handles temperatures up to 120°C, but optimal operation is below 80°C for maximum life."
+          "question": "How do I identify bearing wear in 635 bearings?",
+          "direct_answer": "Signs of wear include increased noise, vibration, temperature rise, and reduced performance in 635 bearings.",
+          "why_matters": "Early detection of wear prevents catastrophic failures and allows for planned replacement.",
+          "how_to_handle": "Monitor bearing condition regularly, use vibration analysis equipment, and establish baseline performance measurements.",
+          "pro_tip": "Implement condition monitoring systems to detect wear patterns before they affect system performance."
         },
         {
-          "question": "How can I prevent premature failure of the 635 bearing in my application?",
-          "direct_answer": "Prevent failure by: proper installation, correct load (under 286 kg), adequate lubrication, contamination control, and regular inspection.",
-          "why_matters": "Preventive maintenance extends bearing life 3-10x and prevents costly equipment downtime. Most failures are preventable.",
-          "how_to_handle": "Follow installation procedures, monitor operating conditions, maintain clean environment, and inspect regularly for wear signs.",
-          "pro_tip": "Our quality assurance process includes statistical process control. Premium bearings last 3-10x longer than economy alternatives."
+          "question": "What should I do if a 635 bearing fails unexpectedly?",
+          "direct_answer": "Immediately stop operation, inspect for damage, identify root cause, and replace with properly installed new bearing.",
+          "why_matters": "Quick response prevents secondary damage and minimizes production downtime.",
+          "how_to_handle": "Document failure details, analyze root causes, implement corrective actions, and maintain spare bearings for critical applications.",
+          "pro_tip": "Keep detailed failure records to identify patterns and prevent similar issues in the future."
         }
       ]
     },
@@ -495,25 +500,25 @@
       "title": "Cost & Performance Optimization",
       "questions": [
         {
-          "question": "Is the 635 bearing cost-effective for my precision instrument application?",
-          "direct_answer": "Yes, the 635 bearing offers excellent value with 286 kg load capacity, 28,000 RPM speed rating, and 50,000-hour service life at competitive pricing.",
-          "why_matters": "Total cost of ownership includes initial cost, maintenance, replacement, and downtime. Quality bearings reduce overall costs significantly.",
-          "how_to_handle": "Compare total cost over 5-10 years including maintenance and replacement. Premium bearings typically reduce costs by 60-80%.",
-          "pro_tip": "Our bulk pricing for 100+ units provides significant savings. OEM partnerships offer dedicated support and volume discounts."
+          "question": "How does 635 bearing cost compare to alternatives?",
+          "direct_answer": "635 bearings offer excellent value with 1.88kN load capacity at competitive pricing, providing 3-10x longer lifespan than budget alternatives.",
+          "why_matters": "Total cost of ownership includes initial cost, maintenance, replacement frequency, and downtime costs.",
+          "how_to_handle": "Calculate total cost of ownership, consider quality vs. price trade-offs, and invest in proper installation and maintenance.",
+          "pro_tip": "High-quality bearings like 635 typically cost 20-30% more but last 3-10x longer than budget alternatives."
         },
         {
-          "question": "What's the ROI of choosing premium 635 bearings over economy alternatives?",
-          "direct_answer": "Premium 635 bearings provide 3-10x longer life, reducing replacement costs and downtime. ROI typically exceeds 200% over 3-5 years.",
-          "why_matters": "Economy bearings fail more frequently, causing equipment downtime, lost production, and higher maintenance costs.",
-          "how_to_handle": "Calculate cost savings from reduced replacements, maintenance, and downtime. Premium bearings pay for themselves within 1-2 years.",
-          "pro_tip": "Our customers report 60-80% reduction in total cost of ownership when switching from economy to premium bearings."
+          "question": "What performance benefits does 635 bearing provide?",
+          "direct_answer": "635 bearings deliver high load capacity, excellent speed capability, precision dimensions, and reliable performance in spindle applications.",
+          "why_matters": "Performance directly impacts system efficiency, reliability, and overall productivity.",
+          "how_to_handle": "Select 635 bearings for applications requiring 5mm bore, 1.88kN load capacity, and 32,000 RPM capability.",
+          "pro_tip": "635 bearings excel in applications requiring high-speed spindle performance with substantial load handling."
         },
         {
-          "question": "How can I optimize the performance of my 635 bearing for maximum efficiency?",
-          "direct_answer": "Optimize performance by: proper installation, optimal clearance selection, adequate lubrication, load optimization, and speed control.",
-          "why_matters": "Optimized performance extends bearing life, reduces energy consumption, and maintains precision throughout service life.",
-          "how_to_handle": "Select appropriate clearance grade, ensure proper installation, maintain clean environment, and monitor operating conditions.",
-          "pro_tip": "Our technical team provides performance optimization consulting. Proper setup can improve efficiency by 15-25% and extend life by 2-3x."
+          "question": "How can I optimize 635 bearing performance?",
+          "direct_answer": "Optimize performance through proper installation, adequate lubrication, contamination control, and regular maintenance practices.",
+          "why_matters": "Optimized performance extends bearing life, reduces maintenance costs, and improves system reliability.",
+          "how_to_handle": "Follow manufacturer recommendations, implement preventive maintenance, monitor operating conditions, and use quality lubricants.",
+          "pro_tip": "Proper optimization can extend 635 bearing service life from 20,000 to 50,000+ hours in typical applications."
         }
       ]
     }

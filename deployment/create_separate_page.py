@@ -10,156 +10,24 @@ import argparse
 
 def is_model_page(page_type):
     """Check if this is a model-specific page (vs series page)"""
-    # Model pages are numeric or contain specific model patterns
-    return page_type.isdigit() or page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6001', '6002']
+    # Check if it's a 4-digit model number (6001, 6002, etc.)
+    if page_type.isdigit() and len(page_type) == 4:
+        return True
+    # Check specific 4-digit model numbers
+    return page_type in ['6001', '6002']
 
 def get_model_info(page_type):
     """Get model page information"""
     model_configs = {
-        '604': {
-            'series': 'miniature-series',
-            'model': '604',
-            'title': '604 Deep Groove Ball Bearing - 4x12x4mm | RHD Bearings'
+        '6001': {
+            'series': '6000-series',
+            'model': '6001',
+            'title': '6001 Deep Groove Ball Bearing | RHD Bearings'
         },
-        '605': {
-            'series': 'miniature-series',
-            'model': '605',
-            'title': '605 Deep Groove Ball Bearing - 5x14x5mm | RHD Bearings'
-        },
-        '606': {
-            'series': 'miniature-series',
-            'model': '606',
-            'title': '606 Deep Groove Ball Bearing - 6x17x6mm | RHD Bearings'
-        },
-        '607': {
-            'series': 'miniature-series',
-            'model': '607',
-            'title': '607 Deep Groove Ball Bearing - 7x19x6mm | RHD Bearings'
-        },
-        '608': {
-            'series': 'miniature-series',
-            'model': '608',
-            'title': '608 Deep Groove Ball Bearing - 8x22x7mm | RHD Bearings'
-        },
-        '609': {
-            'series': 'miniature-series',
-            'model': '609',
-            'title': '609 Deep Groove Ball Bearing - 9x24x7mm | RHD Bearings'
-        },
-        '623': {
-            'series': 'miniature-series',
-            'model': '623',
-            'title': '623 Deep Groove Ball Bearing - 3x10x4mm | RHD Bearings'
-        },
-        '624': {
-            'series': 'miniature-series',
-            'model': '624',
-            'title': '624 Deep Groove Ball Bearing - 4x13x5mm | RHD Bearings'
-        },
-        '625': {
-            'series': 'miniature-series',
-            'model': '625',
-            'title': '625 Deep Groove Ball Bearing - 5x16x5mm | RHD Bearings'
-        },
-        '626': {
-            'series': 'miniature-series',
-            'model': '626',
-            'title': '626 Deep Groove Ball Bearing - 6x19x6mm | RHD Bearings'
-        },
-        '627': {
-            'series': 'miniature-series',
-            'model': '627',
-            'title': '627 Deep Groove Ball Bearing - 7x22x7mm | RHD Bearings'
-        },
-        '628': {
-            'series': 'miniature-series',
-            'model': '628',
-            'title': '628 Deep Groove Ball Bearing - 8x24x8mm | RHD Bearings'
-        },
-        '629': {
-            'series': 'miniature-series',
-            'model': '629',
-            'title': '629 Deep Groove Ball Bearing - 9x26x8mm | RHD Bearings'
-        },
-        '634': {
-            'series': 'miniature-series',
-            'model': '634',
-            'title': '634 Deep Groove Ball Bearing - 4x16x5mm | RHD Bearings'
-        },
-        '635': {
-            'series': 'miniature-series',
-            'model': '635',
-            'title': '635 Deep Groove Ball Bearing - 5x19x6mm | RHD Bearings'
-        },
-        '683': {
-            'series': 'miniature-series',
-            'model': '683',
-            'title': '683 Deep Groove Ball Bearing - 3x7x2mm | RHD Bearings'
-        },
-        '684': {
-            'series': 'miniature-series',
-            'model': '684',
-            'title': '684 Deep Groove Ball Bearing - 4x9x2.5mm | RHD Bearings'
-        },
-        '685': {
-            'series': 'miniature-series',
-            'model': '685',
-            'title': '685 Deep Groove Ball Bearing - 5x11x3mm | RHD Bearings'
-        },
-        '686': {
-            'series': 'miniature-series',
-            'model': '686',
-            'title': '686 Deep Groove Ball Bearing - 6x13x3.5mm | RHD Bearings'
-        },
-        '687': {
-            'series': 'miniature-series',
-            'model': '687',
-            'title': '687 Deep Groove Ball Bearing - 7x14x3.5mm | RHD Bearings'
-        },
-        '688': {
-            'series': 'miniature-series',
-            'model': '688',
-            'title': '688 Deep Groove Ball Bearing - 8x16x4mm | RHD Bearings'
-        },
-        '689': {
-            'series': 'miniature-series',
-            'model': '689',
-            'title': '689 Deep Groove Ball Bearing - 9x17x4mm | RHD Bearings'
-        },
-        '693': {
-            'series': 'miniature-series',
-            'model': '693',
-            'title': '693 Deep Groove Ball Bearing - 3x8x3mm | RHD Bearings'
-        },
-        '694': {
-            'series': 'miniature-series',
-            'model': '694',
-            'title': '694 Deep Groove Ball Bearing - 4x11x4mm | RHD Bearings'
-        },
-        '695': {
-            'series': 'miniature-series',
-            'model': '695',
-            'title': '695 Deep Groove Ball Bearing - 5x13x4mm | RHD Bearings'
-        },
-        '696': {
-            'series': 'miniature-series',
-            'model': '696',
-            'title': '696 Deep Groove Ball Bearing - 6x15x5mm | RHD Bearings'
-        },
-        '697': {
-            'series': 'miniature-series',
-            'model': '697',
-            'title': '697 Deep Groove Ball Bearing - 7x17x5mm | RHD Bearings'
-        },
-        '698': {
-            'series': 'miniature-series',
-            'model': '698',
-            'title': '698 Deep Groove Ball Bearing - 8x19x6mm | RHD Bearings'
-        },
-        '699': {
-            'series': 'miniature-series',
-            'model': '699',
-            'title': '699 Deep Groove Ball Bearing - 9x20x6mm | RHD Bearings'
+        '6002': {
+            'series': '6000-series',
+            'model': '6002',
+            'title': '6002 Deep Groove Ball Bearing | RHD Bearings'
         }
     }
     
@@ -168,7 +36,7 @@ def get_model_info(page_type):
     
     # If not in configs, try to infer from page_type
     return {
-        'series': 'miniature-series',  # Default series, could be made smarter
+        'series': '6000-series',  # Default series for 4-digit models
         'model': page_type,
         'title': f'{page_type} Ball Bearing | Specifications & Pricing | RHD Bearings'
     }
@@ -254,8 +122,8 @@ def create_working_page(page_type='miniature'):
         elif is_model_page(page_type):
             # Handle any model page dynamically
             model_info = get_model_info(page_type)
-            page_dir = f'../webpages/internalwebpages/specs/{model_info["series"]}/{model_info["model"]}'
-            output_dir = f'specs/{model_info["series"]}/{model_info["model"]}'
+            page_dir = f'../webpages/internalwebpages/specs/{model_info["series"]}-internal-pages/{model_info["model"]}'
+            output_dir = f'{model_info["series"]}-internal-pages/{model_info["model"]}'
             output_file = f'{output_dir}/index.html'
             backup_file = f'{output_dir}/backup.html'
             page_title = model_info["title"]
@@ -498,7 +366,12 @@ def print_final_instructions(files, clean_url, page_type='miniature'):
     print("\n🎯 UPLOAD INSTRUCTIONS (Choose ONE):")
     print("-" * 40)
     
-    directory_name = '6000-series' if page_type == '6000' else 'miniature-series'
+    if page_type == '6000':
+        directory_name = '6000-series'
+    elif page_type in ['6001', '6002']:
+        directory_name = f'{page_type}-series-internal-pages/{page_type}'
+    else:
+        directory_name = 'miniature-series'
     
     print("\n1️⃣ cPanel File Manager:")
     print("   • Login to cPanel → File Manager")
@@ -532,8 +405,8 @@ def print_final_instructions(files, clean_url, page_type='miniature'):
 def main():
     """Main execution"""
     parser = argparse.ArgumentParser(description='Create a standalone HTML page')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699'], default='miniature',
-                      help='Which page to generate (miniature, series, or model pages like 604, 607, 608, etc.)')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '6001', '6002'], default='miniature',
+                      help='Which page to generate (miniature, series, or 4-digit model pages like 6001, 6002)')
     args = parser.parse_args()
     
     files, clean_url = create_working_page(args.page)

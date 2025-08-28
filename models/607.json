@@ -28,7 +28,7 @@
     "quality_assurance": "100% dimensional and quality testing",
     "manufacturing_location": "India",
     "established": "Professional bearing manufacturer",
-    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "specialization": "Deep Groove Ball Bearings for automotive, industrial, and precision applications",
     "production_capacity": "High-volume production with custom solutions available",
     "export_markets": [
       "Global distribution network",
@@ -38,12 +38,12 @@
   },
   "bearing_type": "Deep Groove Ball Bearing",
   "model_number": "607",
-  "enhanced_description": "The reliable workhorse - when you need a bearing that's bigger than a 606 but not quite a 608, this one's your golden ticket.",
+  "enhanced_description": "Compact but mighty, like a smartphone - packs more reliability into 7mm bore than most people fit into their entire personality.",
   "dimensions": {
     "bore_diameter_d_mm": 7,
     "outer_diameter_D_mm": 19,
     "width_B_mm": 6,
-    "weight_kg": 0.008,
+    "weight_kg": 0.007,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": 11.1,
       "D2_recess_diameter": 16.5,
@@ -53,13 +53,13 @@
   },
   "load_ratings": {
     "dynamic_load_Cr_kN": 2.86,
-    "static_load_Cor_kN": 1.12,
+    "static_load_Cor_kN": 1.08,
     "load_capacity_kg": 292
   },
   "speed_limits": {
     "grease_rpm": 28000,
     "oil_rpm": 36000,
-    "recommended_max_rpm": 28000
+    "recommended_max_rpm": 25200
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -71,52 +71,79 @@
   "technical_drawing": {
     "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
     "image_alt": "607 Deep Groove Ball Bearing Technical Drawing",
-    "image_title": "607 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
     "drawing_type": "Cross-sectional technical diagram",
     "file_format": "SVG",
     "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 607 deep groove ball bearing"
   },
   "applications": {
     "application1": {
-      "title": "Precision Instruments",
-      "icon": "🔬",
-      "applications": ["Medical devices", "Laboratory equipment", "Optical instruments", "Measuring tools", "Calibration devices", "Microscopes", "Spectrometers", "Analytical instruments"],
-      "requirements": "Ultra-precision applications requiring sub-micron accuracy and minimal vibration"
+      "title": "Power Transmission Systems",
+      "icon": "zap",
+      "applications": [
+        "gear motors",
+        "pump drives",
+        "compressor drives",
+        "conveyor drives",
+        "mixer drives",
+        "agitator drives",
+        "fan drives",
+        "blower drives"
+      ],
+      "requirements": "7mm shaft with 2.86kN dynamic load capacity, 28,000 RPM grease lubrication, robust 19×6mm profile for power transmission applications"
     },
     "application2": {
-      "title": "Miniature Motors",
-      "icon": "⚡",
-      "applications": ["Electric toothbrushes", "Hair dryers", "Small fans", "Miniature pumps", "Model aircraft", "RC vehicles", "Small appliances", "Portable tools"],
-      "requirements": "High-speed miniature motors with compact design and reliable performance"
+      "title": "Precision Equipment",
+      "icon": "target",
+      "applications": [
+        "optical instruments",
+        "measuring devices",
+        "calibration tools",
+        "laboratory equipment",
+        "sensor assemblies",
+        "test equipment",
+        "inspection fixtures",
+        "quality control devices"
+      ],
+      "requirements": "7mm precision shaft with 1.08kN static load rating, high accuracy operation, stable dimensions for precision equipment"
     },
     "application3": {
-      "title": "Electronics & Consumer Devices",
-      "icon": "📱",
-      "applications": ["Smartphones", "Laptops", "Gaming controllers", "Wearable devices", "Digital cameras", "Portable speakers", "Handheld scanners", "Mobile printers"],
-      "requirements": "Consumer electronics requiring silent operation and long service life"
+      "title": "Industrial Automation",
+      "icon": "settings",
+      "applications": [
+        "robotic joints",
+        "automated valves",
+        "control mechanisms",
+        "actuator assemblies",
+        "positioning systems",
+        "linear guides",
+        "conveyor rollers",
+        "sorting mechanisms"
+      ],
+      "requirements": "7mm shaft with 292kg load capacity, reliable 28,000 RPM operation, durable 7g design for automation applications"
     }
   },
   "vibration": {
     "V2": {
-      "low_frequency": 58,
-      "medium_frequency": 36,
-      "high_frequency": 30
+      "low_frequency": 72,
+      "medium_frequency": 48,
+      "high_frequency": 40
     },
     "V3": {
-      "low_frequency": 35,
-      "medium_frequency": 21,
-      "high_frequency": 18
+      "low_frequency": 44,
+      "medium_frequency": 28,
+      "high_frequency": 24
     },
     "V4": {
-      "low_frequency": 32,
-      "medium_frequency": 11,
-      "high_frequency": 11
+      "low_frequency": 38,
+      "medium_frequency": 12,
+      "high_frequency": 12
     }
   },
   "noise": {
-    "Z2": 34,
-    "Z3": 30,
-    "Z4": 26
+    "Z2": 35,
+    "Z3": 31,
+    "Z4": 27
   },
   "clearance": {
     "C2": {
@@ -142,16 +169,16 @@
   },
   "seal_options": {
     "open": {
-      "designation": "Open",
+      "designation": "607",
       "description": "Open bearing, no seals",
       "speed_factor": 1.0,
       "max_rpm": 28000,
       "protection": "None",
-      "lubrication": "External required",    
+      "lubrication": "External required",
       "badge": "High Speed"
     },
     "single_shield": {
-      "designation": "Z",
+      "designation": "607-Z",
       "description": "Single metal shield",
       "speed_factor": 0.95,
       "max_rpm": 26600,
@@ -160,7 +187,7 @@
       "badge": "Balanced"
     },
     "double_shield": {
-      "designation": "ZZ",
+      "designation": "607-ZZ",
       "description": "Double metal shields",
       "speed_factor": 0.9,
       "max_rpm": 25200,
@@ -169,7 +196,7 @@
       "badge": "Most Popular"
     },
     "single_seal": {
-      "designation": "RS",
+      "designation": "607-RS",
       "description": "Single rubber seal",
       "speed_factor": 0.8,
       "max_rpm": 22400,
@@ -178,7 +205,7 @@
       "badge": "Protected"
     },
     "double_seal": {
-      "designation": "2RS",
+      "designation": "607-2RS",
       "description": "Double rubber seals",
       "speed_factor": 0.7,
       "max_rpm": 19600,
@@ -188,29 +215,55 @@
     }
   },
   "seo_metadata": {
-    "title": "607 Deep Groove Ball Bearing - 7x19x6mm | RHD Bearings",
-    "meta_description": "Ultra-precision 607 bearing (7x19x6mm) with 292 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
-    "keywords": ["607 bearing", "7mm bearing", "deep groove ball bearing", "rhd bearings", "mumbai bearings", "india bearing manufacturer", "precision bearing", "miniature bearing", "micro bearing", "bearing for precision instruments", "bearing for miniature motors", "bearing for electronics", "bearing that fits 7mm shaft", "bearing for high speed applications", "bearing for small machinery", "ISO certified bearing", "chrome steel bearing", "gcr15 bearing", "andheri bearings", "mumbai bearing supplier", "india bearing company", "how to choose 7mm bearing", "best bearing for precision", "bearing selection guide", "607 vs 606 bearing", "miniature bearing comparison", "precision bearing alternatives", "bearing load capacity kg", "bearing speed rating rpm", "bearing installation guide"],
-    "canonical_url": "https://rhdbearings.com/specs/miniature-series/607",
+    "title": "607 Deep Groove Ball Bearing 7×19×6mm | RHD Bearings",
+    "meta_description": "607 miniature deep groove ball bearing with 7×19×6mm dimensions, 292kg load capacity, 28,000 RPM for power transmission, precision equipment, and industrial automation. Made in India.",
+    "keywords": [
+      "607 bearing",
+      "7mm bore bearing",
+      "miniature ball bearing",
+      "deep groove ball bearing",
+      "power transmission bearing",
+      "precision bearing",
+      "gear motor bearing",
+      "pump drive bearing",
+      "compressor drive bearing",
+      "conveyor drive bearing",
+      "mixer drive bearing",
+      "optical instrument bearing",
+      "measuring device bearing",
+      "calibration tool bearing",
+      "laboratory equipment bearing",
+      "robotic joint bearing",
+      "automated valve bearing",
+      "actuator bearing",
+      "positioning system bearing",
+      "RHD bearings",
+      "India bearings",
+      "Gcr15 bearing",
+      "high speed bearing",
+      "low friction bearing",
+      "compact bearing"
+    ],
+    "canonical_url": "https://rhdbearings.com/specs/miniature-series/607/",
     "og_data": {
-      "title": "607 Deep Groove Ball Bearing - 7x19x6mm | 292 kg Load Capacity",
-      "description": "Ultra-precision 607 bearing for precision instruments, miniature motors & electronics. ISO certified quality with 292 kg load capacity.",
-      "url": "https://rhdbearings.com/specs/miniature-series/607",
+      "title": "607 Deep Groove Ball Bearing 7×19×6mm",
+      "description": "Robust 607 bearing for power transmission and precision equipment. 292kg load, 28,000 RPM operation.",
+      "url": "https://rhdbearings.com/specs/miniature-series/607/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "607 Deep Groove Ball Bearing - 7x19x6mm | RHD Bearings",
-      "description": "Ultra-precision 607 bearing for precision instruments, miniature motors & electronics. ISO certified quality."
+      "title": "607 Miniature Deep Groove Ball Bearing",
+      "description": "7×19×6mm robust bearing for power transmission and precision applications"
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "607 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Ultra-precision 607 deep groove ball bearing with 7x19x6mm dimensions and 292 kg load capacity. Perfect for precision instruments, miniature motors, and electronics.",
-      "sku": "607",
+      "description": "Robust 607 deep groove ball bearing with 7×19×6mm dimensions for power transmission systems and precision equipment",
+      "sku": "607-DGBB",
       "mpn": "607",
       "brand": {
         "@type": "Brand",
@@ -224,9 +277,9 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/miniature-series/607",
+        "url": "https://rhdbearings.com/specs/miniature-series/607/",
         "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
+        "availability": "Yes",
         "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
@@ -242,7 +295,7 @@
   },
   "pricing_and_availability": {
     "currency": "INR",
-    "list_price": null, 
+    "list_price": null,
     "quote_required": true,
     "price_notes": "Please contact us for pricing",
     "minimum_order_quantity": 100,
@@ -273,42 +326,56 @@
     }
   },
   "cross_references": {
-    "related_models": ["606", "608", "609"],
-    "series_alternatives": ["627", "628", "629"],
+    "related_models": [
+      "627",
+      "637",
+      "687",
+      "697"
+    ],
+    "shaft_requirements": {
+      "nominal_diameter": "7.000mm",
+      "tolerance_grade": "h6 (6.991-7.000mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
     "application_specific_alternatives": {
-      "high_temperature": "C3 clearance option available",
-      "high_speed": "Open bearing for maximum speed",
-      "corrosive_environment": "2RS seals recommended"
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
     }
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Handles 292 kg (2.86 kN) loads with 1.5x safety factor for typical applications",
-      "Rated for 28,000 RPM - ideal for high-speed precision instruments and miniature motors",
-      "Perfect for medical devices requiring sub-micron precision and ultra-low vibration",
-      "Optimal choice for 7mm shafts in precision instruments where space is critical",
-      "Gcr15 chrome steel provides 3-5x longer life vs. standard steel alternatives",
-      "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "607 bearing excels in power transmission applications requiring 7mm shaft precision and 28,000 RPM operation",
+      "Robust 19×6mm profile makes 607 ideal for demanding power transmission and precision equipment applications",
+      "292kg load capacity and 2.86kN dynamic rating perfect for power transmission systems and industrial automation",
+      "Gcr15 chrome steel construction ensures long service life in demanding power transmission bearing applications",
+      "7g weight optimized for applications requiring durability and load capacity in compact design",
+      "C0 clearance standard provides optimal performance for most power transmission and precision applications"
     ],
     "natural_language_queries": [
-      "607 bearing specifications",
-      "bearing for 7mm shaft",
-      "607 vs 606 bearing",
-      "bearing for precision instruments",
-      "how to choose 7mm bearing",
-      "bearing load capacity for 7mm shaft"
+      "607 bearing dimensions",
+      "7mm bore ball bearing",
+      "power transmission bearing",
+      "precision equipment bearing",
+      "gear motor bearing",
+      "industrial automation bearing"
     ],
     "decision_criteria": [
-      "Shaft diameter must be exactly 7mm with h6 tolerance (±0.009mm)",
-      "Housing must accommodate 19mm outer diameter with 6mm width clearance",
-      "Dynamic loads must stay under 292 kg (2.86 kN) for safe operation",
-      "Maximum operating speed should not exceed 28,000 RPM for optimal life",
-      "Application must require precision bearings for miniature or micro-scale equipment"
+      "7mm shaft diameter requirement",
+      "Robust 19×6mm envelope",
+      "2.86kN dynamic load capacity",
+      "28,000 RPM grease lubrication",
+      "Power transmission applications"
     ],
     "problem_solution_mapping": [
       {
-        "problem": "Need ultra-precision bearing for 7mm shaft in medical device",
-        "solution": "607 bearing with C0 clearance provides sub-micron precision and 292 kg load capacity"
+        "problem": "Need robust bearing for 7mm shaft in power transmission applications",
+        "solution": "607 bearing provides 19×6mm profile with 2.86kN load capacity"
+      },
+      {
+        "problem": "Require durable bearing for precision equipment with 7mm shaft",
+        "solution": "607 offers 1.08kN static load rating with C0 clearance for stable operation"
       }
     ],
     "expertise_signals": [
@@ -320,7 +387,7 @@
       {
         "icon": "🔬",
         "title": "Material Science",
-        "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
+        "description": "Gcr15 chrome steel composition optimized for power transmission bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
         "icon": "⚙️",
@@ -335,19 +402,19 @@
       {
         "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 2.86kN load with superior precision vs. typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Handles 0.91kN more load than 606 bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
         "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in micro-bearing category for 2.86kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
-      }      
+        "description": "Best value in power transmission bearing category for 2.86kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "607 provides 2.86kN vs. 606 with 1.95kN capacity",
-      "vs_larger_bearing": "607 offers space savings vs. 608 (3.32kN) for applications where 2.86kN is sufficient",
-      "vs_competitors": "Superior Gcr15 steel vs. standard steel alternatives, 3-5x longer life expectancy",
-      "cost_benefit": "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "vs_smaller_bearing": "607 provides 2.86kN dynamic load vs. 606 with 1.95kN, offering 47% more capacity in slightly larger profile",
+      "vs_larger_bearing": "607 maintains compact 19×6mm profile while providing substantial load capacity for power transmission applications",
+      "vs_competitors": "RHD 607 offers superior Gcr15 steel quality and precision manufacturing compared to generic power transmission bearings",
+      "cost_benefit": "607 delivers optimal performance-to-size ratio for power transmission applications, reducing system costs through reliable operation"
     }
   },
   "faqs": {
@@ -355,25 +422,25 @@
       "title": "Bearing Selection & Replacement",
       "questions": [
         {
-          "question": "Will a 7mm bearing fit my 7mm shaft properly?",
-          "direct_answer": "Yes, 607 bearing has exact 7mm bore diameter with h6 tolerance (±0.009mm) for proper interference fit.",
-          "why_matters": "Proper shaft fit prevents bearing slippage and premature failure. Loose fit causes vibration, while tight fit damages bearing races. h6 tolerance ensures optimal interference without excessive stress.",
-          "how_to_handle": "Measure shaft diameter with micrometer to confirm 7mm ±0.009mm tolerance. Use proper installation tools to avoid bearing damage. For high-precision applications, consider C0 clearance option.",
-          "pro_tip": "Our 20+ years of manufacturing experience shows h6 shaft tolerance provides optimal performance for 7mm applications."
+          "question": "When should I choose 607 bearing over 606 alternatives?",
+          "direct_answer": "Choose 607 when you need 7mm shaft diameter with 2.86kN dynamic load capacity for power transmission systems, precision equipment, or applications requiring higher load capacity than 606 bearings can provide.",
+          "why_matters": "Selecting the right bearing size prevents system redesign, reduces costs, and ensures optimal performance for your specific application requirements.",
+          "how_to_handle": "Measure your shaft diameter (must be exactly 7mm), verify load requirements (≤2.86kN dynamic), and confirm space constraints allow 19×6mm envelope.",
+          "pro_tip": "607 is ideal for power transmission systems, gear motors, and precision equipment where 7mm shaft is required."
         },
         {
-          "question": "Can this bearing handle 292 kg of weight?",
-          "direct_answer": "Yes, 607 bearing has 292 kg (2.86 kN) dynamic load rating with 1.5x safety factor for typical applications.",
-          "why_matters": "Load capacity determines bearing life and reliability. Exceeding load rating causes premature fatigue, increased vibration, and potential bearing failure. Safety factor ensures long service life.",
-          "how_to_handle": "Calculate actual load including dynamic forces and shock loads. For continuous operation, keep loads under 190 kg. For intermittent use, 292 kg is acceptable with proper lubrication.",
-          "pro_tip": "Premium Gcr15 steel provides superior load handling vs. standard steel alternatives, extending service life 3-5x."
+          "question": "Can 607 bearing replace other 7mm bore bearings?",
+          "direct_answer": "Yes, 607 can replace other 7mm bore bearings if they have compatible outer diameter (≤19mm) and width (≤6mm) requirements, and load capacity needs (≤2.86kN dynamic).",
+          "why_matters": "Proper replacement ensures system compatibility, prevents premature failures, and maintains performance specifications.",
+          "how_to_handle": "Verify dimensional compatibility (d×D×B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
+          "pro_tip": "Always check both dimensional and performance compatibility before replacement to avoid system issues."
         },
         {
-          "question": "Is this bearing suitable for 28,000 RPM applications?",
-          "direct_answer": "Yes, 607 bearing is rated for 28,000 RPM grease lubrication and 36,000 RPM oil lubrication with proper clearance selection.",
-          "why_matters": "Speed rating affects bearing temperature, vibration, and life expectancy. High speeds require proper clearance, lubrication, and balance to prevent overheating and premature failure.",
-          "how_to_handle": "Use C0 clearance for high-speed applications. Ensure proper lubrication and balance. Monitor temperature during operation. Consider open bearing for maximum speed capability.",
-          "pro_tip": "Our ISO 9001:2015 certified manufacturing includes 100% dimensional testing for optimal high-speed performance."
+          "question": "What applications are 607 bearings NOT suitable for?",
+          "direct_answer": "607 bearings are NOT suitable for applications requiring dynamic loads >2.86kN, speeds >28,000 RPM, operating temperatures >120°C, or environments with heavy contamination.",
+          "why_matters": "Using bearings beyond their specifications leads to premature failure, increased maintenance costs, and potential system damage.",
+          "how_to_handle": "For higher loads, consider 608 or 609 bearings. For higher speeds, use oil lubrication. For harsh environments, consider sealed or stainless steel alternatives.",
+          "pro_tip": "Always verify application requirements against bearing specifications to ensure long service life."
         }
       ]
     },
@@ -381,25 +448,25 @@
       "title": "Installation & Maintenance",
       "questions": [
         {
-          "question": "How do I install a 7mm bearing without damaging it?",
-          "direct_answer": "Use proper bearing installation tools and apply force evenly to outer ring only, never to inner ring or balls.",
-          "why_matters": "Improper installation damages bearing races, reduces life expectancy, and causes premature failure. Force applied to inner ring can damage rolling elements and create stress concentrations.",
-          "how_to_handle": "Use bearing press or installation sleeve. Apply force to outer ring circumference. Ensure shaft and housing are clean and properly sized. Use C0 clearance for precision applications.",
-          "pro_tip": "Professional installation tools prevent 80% of premature bearing failures and ensure maximum 50,000-hour service life."
+          "question": "What tools are needed for proper 607 bearing installation?",
+          "direct_answer": "For 607 bearing installation, you need precision tools: 7mm bore gauge, micrometer for shaft measurement, bearing heater (80-100°C), clean gloves, and appropriate mounting tools for the 19mm outer diameter.",
+          "why_matters": "Proper tools ensure accurate installation, prevent bearing damage, and maximize service life while maintaining precision requirements.",
+          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (6.991-7.000mm), heat bearing to 80-100°C, and use proper mounting techniques to avoid damage.",
+          "pro_tip": "Never force-fit 607 bearings - the 7mm bore requires precise shaft tolerances for optimal performance."
         },
         {
-          "question": "What tools do I need for a 292 kg capacity bearing?",
-          "direct_answer": "For 7mm bearings, use precision tools: bearing press, installation sleeve, micrometer, and proper lubrication equipment.",
-          "why_matters": "Precision tools ensure proper fit and prevent damage. 7mm bearings require careful handling due to small size and high precision requirements. Proper tools prevent costly installation errors.",
-          "how_to_handle": "Use bearing press with proper adapters. Measure shaft and housing with micrometer (±0.001mm accuracy). Apply thin film of lubricant. Use installation sleeve for even force distribution.",
-          "pro_tip": "Our manufacturing processes include 100% dimensional testing to ensure perfect fit with standard tools."
+          "question": "How often should 607 bearings be lubricated?",
+          "direct_answer": "Open 607 bearings require lubrication every 3-6 months depending on operating conditions. Shielded/sealed versions are lubricated for life but may need replacement after 2-3 years.",
+          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Over-lubrication can cause overheating, while under-lubrication leads to premature failure.",
+          "how_to_handle": "Monitor operating temperature and noise levels. For open bearings, use high-quality grease compatible with operating conditions. Replace sealed bearings when performance degrades.",
+          "pro_tip": "607 bearings in high-speed applications (>20,000 RPM) may require more frequent lubrication due to increased operating temperatures."
         },
         {
-          "question": "How often should I check a bearing running at 28,000 RPM?",
-          "direct_answer": "Check 607 bearings monthly for vibration, temperature, and noise. High-speed operation requires more frequent monitoring.",
-          "why_matters": "High-speed bearings generate more heat and wear faster. Regular monitoring prevents catastrophic failure and extends service life. Early detection of issues saves costly repairs.",
-          "how_to_handle": "Monitor vibration levels monthly using V2, V3, V4 standards. Check temperature (should stay under 80°C). Listen for unusual noise. Lubricate as needed.",
-          "pro_tip": "Premium bearings last 3-10x longer than economy alternatives when properly maintained."
+          "question": "What maintenance schedule is recommended for 607 bearings?",
+          "direct_answer": "For 607 bearings, inspect monthly for noise, vibration, and temperature changes. Clean and relubricate open bearings every 3-6 months. Replace sealed bearings every 2-3 years or when performance degrades.",
+          "why_matters": "Regular maintenance prevents unexpected failures, maintains precision performance, and extends bearing service life in critical applications.",
+          "how_to_handle": "Establish maintenance logs, monitor operating parameters, and replace bearings proactively rather than reactively. Use vibration analysis for early failure detection.",
+          "pro_tip": "607 bearings in power transmission applications require more frequent inspection due to demanding operating conditions."
         }
       ]
     },
@@ -407,25 +474,25 @@
       "title": "Troubleshooting & Problem Solving",
       "questions": [
         {
-          "question": "Why does my bearing fail under 292 kg load?",
-          "direct_answer": "Load failure usually indicates improper installation, contamination, or excessive vibration. Check shaft fit, cleanliness, and operating conditions.",
-          "why_matters": "Bearing failure under rated load suggests installation or environmental problems. Proper diagnosis prevents repeat failures and ensures optimal performance. Early intervention saves equipment damage.",
-          "how_to_handle": "Inspect bearing for contamination, proper fit, and lubrication. Check shaft tolerance (must be h6 ±0.009mm). Verify housing clearance. Monitor vibration levels during operation.",
-          "pro_tip": "Our quality assurance includes statistical process control to ensure consistent 292 kg load capacity across all bearings."
+          "question": "Why is my 607 bearing making unusual noise?",
+          "direct_answer": "Unusual noise in 607 bearings typically indicates contamination, improper lubrication, misalignment, or wear. The 7mm bore is sensitive to shaft imperfections and contamination due to its size.",
+          "why_matters": "Early noise detection prevents bearing failure, maintains system precision, and reduces maintenance costs in power transmission bearing applications.",
+          "how_to_handle": "Inspect for contamination, check lubrication levels, verify shaft alignment and surface finish, and replace bearing if noise persists or worsens.",
+          "pro_tip": "607 bearings amplify noise due to their size - what sounds minor in larger bearings can indicate serious issues in power transmission bearings."
         },
         {
-          "question": "What causes overheating at 28,000 RPM?",
-          "direct_answer": "Overheating at high speed usually results from insufficient lubrication, excessive clearance, or contamination. Check lubrication quality and bearing condition.",
-          "why_matters": "Overheating accelerates wear, reduces life expectancy, and can cause catastrophic failure. High-speed operation requires optimal lubrication and proper clearance selection.",
-          "how_to_handle": "Verify lubrication quantity and quality. Check clearance (C0 recommended for high speed). Ensure clean operating environment. Monitor temperature (should stay under 80°C).",
-          "pro_tip": "Gcr15 steel provides superior heat resistance vs. standard steel alternatives."
+          "question": "What causes 607 bearing overheating?",
+          "direct_answer": "607 bearing overheating is caused by over-lubrication, excessive load (>2.86kN), high speeds (>28,000 RPM), misalignment, or contamination. The size makes 607 bearings sensitive to these conditions.",
+          "why_matters": "Overheating accelerates wear, reduces precision, and can cause catastrophic failure in power transmission bearing applications.",
+          "how_to_handle": "Check lubrication quantity and type, verify load and speed limits, inspect alignment, clean contamination, and ensure proper ventilation around the bearing.",
+          "pro_tip": "607 bearings have limited heat dissipation due to size - monitor temperature closely in high-speed applications."
         },
         {
-          "question": "How do I diagnose problems with 7mm bearings?",
-          "direct_answer": "Use vibration analysis, temperature monitoring, and visual inspection. Check for unusual noise, excessive play, and contamination.",
-          "why_matters": "Early diagnosis prevents equipment damage and reduces downtime. 7mm bearings require precise diagnosis due to small size and high precision requirements.",
-          "how_to_handle": "Measure vibration using V2, V3, V4 standards. Check temperature with infrared thermometer. Inspect for contamination and wear. Use proper diagnostic tools for small bearings.",
-          "pro_tip": "Our 20+ years of experience shows proper diagnosis prevents 90% of bearing failures."
+          "question": "How do I diagnose 607 bearing vibration issues?",
+          "direct_answer": "Diagnose 607 bearing vibration by checking shaft runout (≤0.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 7mm bore bearings.",
+          "why_matters": "Excessive vibration reduces precision, increases wear, and can damage connected equipment in power transmission bearing applications.",
+          "how_to_handle": "Use vibration analysis tools, check shaft specifications, verify bearing installation, and replace bearing if vibration exceeds acceptable limits.",
+          "pro_tip": "607 bearings require higher precision in shaft preparation due to their size and sensitivity to imperfections."
         }
       ]
     },
@@ -433,25 +500,25 @@
       "title": "Cost & Performance Optimization",
       "questions": [
         {
-          "question": "Is it worth upgrading from 292 kg to higher capacity bearings?",
-          "direct_answer": "Only if your application exceeds 292 kg load or requires longer service life. 607 provides optimal performance for most 7mm applications.",
-          "why_matters": "Over-sizing bearings increases cost without performance benefits. Proper sizing ensures optimal performance and cost-effectiveness. Understanding load requirements prevents unnecessary expenses.",
-          "how_to_handle": "Calculate actual load including safety factors. Consider service life requirements. For higher loads, consider 608 (3.32 kN) or 609 (3.35 kN). Evaluate total cost of ownership.",
-          "pro_tip": "Premium 607 bearings last 3-10x longer than economy alternatives, reducing total cost of ownership by 60-80%."
+          "question": "How can I optimize 607 bearing performance for cost efficiency?",
+          "direct_answer": "Optimize 607 bearing performance by selecting appropriate clearance (C0 for most applications), using proper lubrication, maintaining clean environment, and implementing preventive maintenance to extend service life beyond 50,000 hours.",
+          "why_matters": "Performance optimization reduces total cost of ownership, minimizes downtime, and ensures consistent precision in power transmission bearing applications.",
+          "how_to_handle": "Choose clearance based on application requirements, establish maintenance schedules, monitor operating conditions, and replace bearings proactively rather than reactively.",
+          "pro_tip": "607 bearings offer excellent value when properly maintained - their robust design means replacement costs are minimal compared to system downtime."
         },
         {
-          "question": "When should I pay more for bearings rated above 28,000 RPM?",
-          "direct_answer": "Only if your application requires speeds above 28,000 RPM. 607 provides excellent high-speed performance for most miniature applications.",
-          "why_matters": "Speed ratings affect bearing selection and cost. Understanding actual speed requirements prevents over-engineering and unnecessary expenses. Proper speed selection ensures optimal performance.",
-          "how_to_handle": "Determine actual operating speed requirements. Consider acceleration and deceleration cycles. For speeds above 28,000 RPM, consider specialized high-speed bearings or open design.",
-          "pro_tip": "Our Gcr15 steel provides superior high-speed performance vs. standard steel alternatives."
+          "question": "What factors affect 607 bearing service life?",
+          "direct_answer": "607 bearing service life is affected by load conditions (≤2.86kN), operating speed (≤28,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
+          "why_matters": "Understanding service life factors helps optimize maintenance schedules, reduce costs, and ensure reliable operation in critical power transmission bearing applications.",
+          "how_to_handle": "Monitor operating parameters, maintain clean environment, use quality lubricants, implement preventive maintenance, and replace bearings based on performance degradation.",
+          "pro_tip": "607 bearings can achieve 50,000+ hours service life when operated within specifications and properly maintained."
         },
         {
-          "question": "What's the cost difference between 7mm and 8mm bearings?",
-          "direct_answer": "607 (7mm) costs approximately 15-20% less than 608 (8mm) while providing adequate capacity for most 7mm applications.",
-          "why_matters": "Size selection affects both performance and cost. Understanding the cost-performance relationship helps optimize bearing selection for specific applications.",
-          "how_to_handle": "Evaluate load requirements vs. cost. Consider space constraints and performance needs. For 7mm shafts, 607 provides optimal value. For higher loads, 608 may be justified.",
-          "pro_tip": "Our volume manufacturing provides competitive pricing across all miniature bearing sizes."
+          "question": "How do 607 bearings compare to alternatives in terms of total cost?",
+          "direct_answer": "607 bearings offer excellent total cost value for power transmission bearing applications due to their robust design, reliable performance, and low replacement costs. Quality 607 bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.",
+          "why_matters": "Total cost analysis helps make informed purchasing decisions, considering initial cost, maintenance, replacement, and downtime costs over the bearing's service life.",
+          "how_to_handle": "Compare initial costs, expected service life, maintenance requirements, and replacement costs. Consider system downtime costs when evaluating alternatives.",
+          "pro_tip": "607 bearings provide optimal cost-performance ratio for power transmission applications when quality and proper maintenance are prioritized."
         }
       ]
     }

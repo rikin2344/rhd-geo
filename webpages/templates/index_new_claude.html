@@ -209,7 +209,7 @@
                                 </div>
                                 <div class="spec-row">
                                     <span>Load Capacity</span>
-                                    <span>{{load_ratings.load_capacity_kg}}kg force</span>
+                                    <span>{{load_ratings.load_capacity_kg}}kg ({{load_ratings.dynamic_load_Cr_kN}}kN) force</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -219,7 +219,7 @@
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Dynamic Load ({{load_ratings.dynamic_load_Cr_kN}}kN = {{load_ratings.load_capacity_kg}}kg):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
+                                    <strong>Dynamic Load ({{load_ratings.dynamic_load_Cr_kN}}kN):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Static Load ({{load_ratings.static_load_Cor_kN}}kN):</strong> Maximum force when stationary. Use 80% for safety.
@@ -928,8 +928,8 @@
     <section class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Related Bearings & Alternatives</h2>
-                <p>Explore similar models and application-specific alternatives for your project needs</p>
+                <h2>Compatible Models & Shaft Requirementss</h2>
+                <p>Find bearings with the same bore size and ensure proper shaft preparation</p>
             </div>
             
             <div class="cross-ref-grid">
@@ -937,23 +937,33 @@
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
                         {{#cross_references.related_models}}
-                        <a href="{{url}}" class="model-link">{{model}} ({{dimensions}})</a>
+                        <a href="{{seo_metadata.canonical_url}}" class="model-link">{{.}} ({{#if (eq . "604")}}4×12×4mm{{else if (eq . "605")}}5×14×5mm{{else if (eq . "606")}}6×17×6mm{{else if (eq . "607")}}7×19×6mm{{else if (eq . "608")}}8×22×7mm{{else if (eq . "609")}}9×24×7mm{{else if (eq . "623")}}3×10×4mm{{else if (eq . "624")}}4×13×5mm{{else if (eq . "625")}}5×16×5mm{{else if (eq . "626")}}6×19×6mm{{else if (eq . "627")}}7×22×7mm{{else if (eq . "628")}}8×24×8mm{{else if (eq . "629")}}9×26×8mm{{else if (eq . "634")}}4×16×5mm{{else if (eq . "635")}}5×19×6mm{{else if (eq . "683")}}3×7×2mm{{else if (eq . "684")}}4×9×2.5mm{{else if (eq . "685")}}5×11×3mm{{else if (eq . "686")}}6×13×3.5mm{{else if (eq . "687")}}7×14×3.5mm{{else if (eq . "688")}}8×16×4mm{{else if (eq . "689")}}9×17×4mm{{else if (eq . "693")}}3×8×3mm{{else if (eq . "694")}}4×11×4mm{{else if (eq . "695")}}5×13×4mm{{else if (eq . "696")}}6×15×5mm{{else if (eq . "697")}}7×17×5mm{{else if (eq . "698")}}8×19×6mm{{else if (eq . "699")}}9×20×6mm{{else}}dimensions{{/if}})</a>
                         {{/cross_references.related_models}}
                     </div>
                 </div>
                 
                 <div class="cross-ref-card">
-                    <h3><span class="cross-ref-icon">⚡</span>Series Alternatives</h3>
+                    <h3><span class="cross-ref-icon">🔧</span>Shaft Requirements</h3>
                     <div class="alternatives-list">
-                        {{#cross_references.series_alternatives}}
                         <div class="alternative-item">
-                            <strong>{{series}}</strong>
-                            <span>{{description}}</span>
+                            <strong>Nominal Diameter</strong>
+                            <span>{{cross_references.shaft_requirements.nominal_diameter}}</span>
                         </div>
-                        {{/cross_references.series_alternatives}}
+                        <div class="alternative-item">
+                            <strong>Tolerance Grade</strong>
+                            <span>{{cross_references.shaft_requirements.tolerance_grade}}</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Surface Finish</strong>
+                            <span>{{cross_references.shaft_requirements.surface_finish}}</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Runout Tolerance</strong>
+                            <span>{{cross_references.shaft_requirements.runout_tolerance}}</span>
+                        </div>
                     </div>
                 </div>
-                
+                                
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🎯</span>Application-Specific Options</h3>
                     <div class="application-options">

@@ -28,7 +28,7 @@
     "quality_assurance": "100% dimensional and quality testing",
     "manufacturing_location": "India",
     "established": "Professional bearing manufacturer",
-    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "specialization": "Deep Groove Ball Bearings for automotive, industrial, and precision applications",
     "production_capacity": "High-volume production with custom solutions available",
     "export_markets": [
       "Global distribution network",
@@ -59,7 +59,7 @@
   "speed_limits": {
     "grease_rpm": 32000,
     "oil_rpm": 40000,
-    "recommended_max_rpm": 32000
+    "recommended_max_rpm": 28800
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -71,29 +71,56 @@
   "technical_drawing": {
     "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
     "image_alt": "604 Deep Groove Ball Bearing Technical Drawing",
-    "image_title": "604 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
     "drawing_type": "Cross-sectional technical diagram",
     "file_format": "SVG",
     "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 604 deep groove ball bearing"
   },
   "applications": {
     "application1": {
-      "title": "Precision Instruments",
-      "icon": "🔬",
-      "applications": ["Medical devices", "Laboratory equipment", "Optical instruments", "Measuring tools", "Calibration devices", "Microscopes", "Spectrometers", "Analytical instruments"],
-      "requirements": "Ultra-precision applications requiring sub-micron accuracy and minimal vibration"
+      "title": "Micro-Electronic Systems",
+      "icon": "cpu",
+      "applications": [
+        "computer cooling fans",
+        "hard drive spindles",
+        "optical drives",
+        "printer mechanisms",
+        "scanner assemblies",
+        "CD/DVD drives",
+        "floppy disk drives",
+        "tape drive mechanisms"
+      ],
+      "requirements": "4mm shaft with 76kg (0.75kN) dynamic load capacity, 32,000 RPM grease lubrication, ultra-compact 12×4mm profile for micro-electronic applications"
     },
     "application2": {
-      "title": "Miniature Motors",
-      "icon": "⚡",
-      "applications": ["Electric toothbrushes", "Hair dryers", "Small fans", "Miniature pumps", "Model aircraft", "RC vehicles", "Small appliances", "Portable tools"],
-      "requirements": "High-speed miniature motors with compact design and reliable performance"
+      "title": "Precision Measurement Devices",
+      "icon": "target",
+      "applications": [
+        "calipers",
+        "micrometers",
+        "dial indicators",
+        "gauge blocks",
+        "measuring instruments",
+        "calibration tools",
+        "inspection fixtures",
+        "test equipment"
+      ],
+      "requirements": "4mm precision shaft with 35kg (0.34kN) static load rating, ultra-low friction operation, compact dimensions for handheld measurement tools"
     },
     "application3": {
-      "title": "Electronics & Consumer Devices",
-      "icon": "📱",
-      "applications": ["Smartphones", "Laptops", "Gaming controllers", "Wearable devices", "Digital cameras", "Portable speakers", "Handheld scanners", "Mobile printers"],
-      "requirements": "Consumer electronics requiring silent operation and long service life"
+      "title": "Miniature Automation",
+      "icon": "settings",
+      "applications": [
+        "robotic joints",
+        "automated valves",
+        "control mechanisms",
+        "actuator assemblies",
+        "positioning systems",
+        "linear guides",
+        "conveyor rollers",
+        "sorting mechanisms"
+      ],
+      "requirements": "4mm shaft with 76kg load capacity, high-speed 32,000 RPM operation, lightweight 2.5g design for automated systems"
     }
   },
   "vibration": {
@@ -142,16 +169,16 @@
   },
   "seal_options": {
     "open": {
-      "designation": "Open",
+      "designation": "604",
       "description": "Open bearing, no seals",
       "speed_factor": 1.0,
       "max_rpm": 32000,
       "protection": "None",
-      "lubrication": "External required",    
+      "lubrication": "External required",
       "badge": "High Speed"
     },
     "single_shield": {
-      "designation": "Z",
+      "designation": "604-Z",
       "description": "Single metal shield",
       "speed_factor": 0.95,
       "max_rpm": 30400,
@@ -160,7 +187,7 @@
       "badge": "Balanced"
     },
     "double_shield": {
-      "designation": "ZZ",
+      "designation": "604-ZZ",
       "description": "Double metal shields",
       "speed_factor": 0.9,
       "max_rpm": 28800,
@@ -169,7 +196,7 @@
       "badge": "Most Popular"
     },
     "single_seal": {
-      "designation": "RS",
+      "designation": "604-RS",
       "description": "Single rubber seal",
       "speed_factor": 0.8,
       "max_rpm": 25600,
@@ -178,7 +205,7 @@
       "badge": "Protected"
     },
     "double_seal": {
-      "designation": "2RS",
+      "designation": "604-2RS",
       "description": "Double rubber seals",
       "speed_factor": 0.7,
       "max_rpm": 22400,
@@ -188,29 +215,53 @@
     }
   },
   "seo_metadata": {
-    "title": "604 Deep Groove Ball Bearing - 4x12x4mm | RHD Bearings",
-    "meta_description": "Ultra-precision 604 bearing (4x12x4mm) with 76 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
-    "keywords": ["604 bearing", "4mm bearing", "deep groove ball bearing", "rhd bearings", "mumbai bearings", "india bearing manufacturer", "precision bearing", "miniature bearing", "micro bearing", "bearing for precision instruments", "bearing for miniature motors", "bearing for electronics", "bearing that fits 4mm shaft", "bearing for high speed applications", "bearing for small machinery", "ISO certified bearing", "chrome steel bearing", "gcr15 bearing", "andheri bearings", "mumbai bearing supplier", "india bearing company", "how to choose 4mm bearing", "best bearing for precision", "bearing selection guide", "604 vs 605 bearing", "miniature bearing comparison", "precision bearing alternatives", "bearing load capacity kg", "bearing speed rating rpm", "bearing installation guide"],
-    "canonical_url": "https://rhdbearings.com/specs/miniature-series/604",
+    "title": "604 Deep Groove Ball Bearing 4×12×4mm | RHD Bearings",
+    "meta_description": "604 miniature deep groove ball bearing with 4×12×4mm dimensions, 76kg load capacity, 32,000 RPM for micro-electronics, precision instruments, and automation. Made in India.",
+    "keywords": [
+      "604 bearing",
+      "4mm bore bearing",
+      "miniature ball bearing",
+      "deep groove ball bearing",
+      "micro bearing",
+      "precision bearing",
+      "electronic bearing",
+      "cooling fan bearing",
+      "hard drive bearing",
+      "optical drive bearing",
+      "printer bearing",
+      "measurement bearing",
+      "caliper bearing",
+      "micrometer bearing",
+      "automation bearing",
+      "robotic bearing",
+      "actuator bearing",
+      "RHD bearings",
+      "India bearings",
+      "Gcr15 bearing",
+      "high speed bearing",
+      "low friction bearing",
+      "compact bearing"
+    ],
+    "canonical_url": "https://rhdbearings.com/specs/miniature-series/604/",
     "og_data": {
-      "title": "604 Deep Groove Ball Bearing - 4x12x4mm | 76 kg Load Capacity",
-      "description": "Ultra-precision 604 bearing for precision instruments, miniature motors & electronics. ISO certified quality with 76 kg load capacity.",
-      "url": "https://rhdbearings.com/specs/miniature-series/604",
+      "title": "604 Deep Groove Ball Bearing 4×12×4mm",
+      "description": "Ultra-compact 604 bearing for micro-electronics and precision instruments. 76kg load, 32,000 RPM operation.",
+      "url": "https://rhdbearings.com/specs/miniature-series/604/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "604 Deep Groove Ball Bearing - 4x12x4mm | RHD Bearings",
-      "description": "Ultra-precision 604 bearing for precision instruments, miniature motors & electronics. ISO certified quality."
+      "title": "604 Miniature Deep Groove Ball Bearing",
+      "description": "4×12×4mm ultra-compact bearing for micro-electronics and precision applications"
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "604 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Ultra-precision 604 deep groove ball bearing with 4x12x4mm dimensions and 76 kg load capacity. Perfect for precision instruments, miniature motors, and electronics.",
-      "sku": "604",
+      "description": "Ultra-compact 604 deep groove ball bearing with 4×12×4mm dimensions for micro-electronic systems and precision instruments",
+      "sku": "604-DGBB",
       "mpn": "604",
       "brand": {
         "@type": "Brand",
@@ -224,9 +275,9 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/miniature-series/604",
+        "url": "https://rhdbearings.com/specs/miniature-series/604/",
         "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
+        "availability": "Yes",
         "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
@@ -242,7 +293,7 @@
   },
   "pricing_and_availability": {
     "currency": "INR",
-    "list_price": null, 
+    "list_price": null,
     "quote_required": true,
     "price_notes": "Please contact us for pricing",
     "minimum_order_quantity": 100,
@@ -273,42 +324,56 @@
     }
   },
   "cross_references": {
-    "related_models": ["605", "606", "607", "608", "609"],
-    "series_alternatives": ["623", "624", "625", "626", "627", "628", "629"],
+    "related_models": [
+      "624",
+      "634",
+      "684",
+      "694"
+    ],
+    "shaft_requirements": {
+      "nominal_diameter": "4.000mm",
+      "tolerance_grade": "h6 (3.992-4.000mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
     "application_specific_alternatives": {
-      "high_temperature": "C3 clearance option available",
-      "high_speed": "Open bearing for maximum speed",
-      "corrosive_environment": "2RS seals recommended"
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
     }
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Handles 76 kg (0.75 kN) loads with 1.5x safety factor for typical applications",
-      "Rated for 32,000 RPM - ideal for high-speed precision instruments and miniature motors",
-      "Perfect for medical devices requiring sub-micron precision and ultra-low vibration",
-      "Optimal choice for 4mm shafts in precision instruments where space is critical",
-      "Gcr15 chrome steel provides 3-5x longer life vs. standard steel alternatives",
-      "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "604 bearing excels in micro-electronic applications requiring 4mm shaft precision and 32,000 RPM operation",
+      "Ultra-compact 12×4mm profile makes 604 ideal for space-constrained precision measurement devices",
+      "76kg load capacity and 76kg (0.75kN) dynamic rating perfect for lightweight automation and robotic systems",
+      "Gcr15 chrome steel construction ensures long service life in demanding micro-bearing applications",
+      "2.5g weight optimized for high-speed applications where mass reduction is critical",
+      "C0 clearance standard provides optimal performance for most precision instrument applications"
     ],
     "natural_language_queries": [
-      "604 bearing specifications",
-      "bearing for 4mm shaft",
-      "604 vs 605 bearing",
-      "bearing for precision instruments",
-      "how to choose 4mm bearing",
-      "bearing load capacity for 4mm shaft"
+      "604 bearing dimensions",
+      "4mm bore ball bearing",
+      "miniature bearing for electronics",
+      "cooling fan bearing 4mm",
+      "precision instrument bearing",
+      "micro automation bearing"
     ],
     "decision_criteria": [
-      "Shaft diameter must be exactly 4mm with h6 tolerance (±0.009mm)",
-      "Housing must accommodate 12mm outer diameter with 4mm width clearance",
-      "Dynamic loads must stay under 76 kg (0.75 kN) for safe operation",
-      "Maximum operating speed should not exceed 32,000 RPM for optimal life",
-      "Application must require precision bearings for miniature or micro-scale equipment"
+      "4mm shaft diameter requirement",
+      "Ultra-compact 12×4mm envelope",
+      "0.75kN dynamic load capacity",
+      "32,000 RPM grease lubrication",
+      "Precision measurement applications"
     ],
     "problem_solution_mapping": [
       {
-        "problem": "Need ultra-precision bearing for 4mm shaft in medical device",
-        "solution": "604 bearing with C0 clearance provides sub-micron precision and 76 kg load capacity"
+        "problem": "Need ultra-compact bearing for 4mm shaft in micro-electronic systems",
+        "solution": "604 bearing provides 12×4mm profile with 32,000 RPM capability"
+      },
+      {
+        "problem": "Require precision bearing for measurement instruments with minimal friction",
+        "solution": "604 offers 35kg (0.34kN) static load rating with C0 clearance for smooth operation"
       }
     ],
     "expertise_signals": [
@@ -320,7 +385,7 @@
       {
         "icon": "🔬",
         "title": "Material Science",
-        "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
+        "description": "Gcr15 chrome steel composition optimized for micro-bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
         "icon": "⚙️",
@@ -335,19 +400,19 @@
       {
         "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 0.75kN load with superior precision vs. typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Handles 0.75kN more load than typical smaller bearings while maintaining ultra-compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
         "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in micro-bearing category for 0.75kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
-      }      
+      }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "604 provides 0.75kN vs. smaller bearings with 0.3-0.5kN capacity",
-      "vs_larger_bearing": "604 offers space savings vs. 605 (1.05kN) for applications where 0.75kN is sufficient",
-      "vs_competitors": "Superior Gcr15 steel vs. standard steel alternatives, 3-5x longer life expectancy",
-      "cost_benefit": "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "vs_smaller_bearing": "604 provides 0.75kN dynamic load vs. smaller bearings with 0.5kN, offering 50% more capacity in same compact profile",
+      "vs_larger_bearing": "604 maintains ultra-compact 12×4mm profile while providing sufficient load capacity for micro-applications",
+      "vs_competitors": "RHD 604 offers superior Gcr15 steel quality and precision manufacturing compared to generic micro-bearings",
+      "cost_benefit": "604 delivers optimal performance-to-size ratio for micro-electronic applications, reducing system costs through space savings"
     }
   },
   "faqs": {
@@ -355,25 +420,25 @@
       "title": "Bearing Selection & Replacement",
       "questions": [
         {
-          "question": "Will a 4mm bearing fit my 4mm shaft properly?",
-          "direct_answer": "Yes, 604 bearing has exact 4mm bore diameter with h6 tolerance (±0.009mm) for proper interference fit.",
-          "why_matters": "Proper shaft fit prevents bearing slippage and premature failure. Loose fit causes vibration, while tight fit damages bearing races. h6 tolerance ensures optimal interference without excessive stress.",
-          "how_to_handle": "Measure shaft diameter with micrometer to confirm 4mm ±0.009mm tolerance. Use proper installation tools to avoid bearing damage. For high-precision applications, consider C0 clearance option.",
-          "pro_tip": "Our 20+ years of manufacturing experience shows h6 shaft tolerance provides optimal performance for 4mm applications."
+          "question": "When should I choose 604 bearing over larger alternatives?",
+          "direct_answer": "Choose 604 when you need ultra-compact 4×12×4mm profile with 0.75kN dynamic load capacity for micro-electronic systems, precision instruments, or space-constrained automation applications.",
+          "why_matters": "Selecting the right bearing size prevents system redesign, reduces costs, and ensures optimal performance in space-limited applications.",
+          "how_to_handle": "Measure your shaft diameter (must be exactly 4mm), verify load requirements (≤0.75kN dynamic), and confirm space constraints allow 12×4mm envelope.",
+          "pro_tip": "604 is ideal for cooling fans, hard drives, and precision instruments where every millimeter matters."
         },
         {
-          "question": "Can this bearing handle 76 kg of weight?",
-          "direct_answer": "Yes, 604 bearing has 76 kg (0.75 kN) dynamic load rating with 1.5x safety factor for typical applications.",
-          "why_matters": "Load capacity determines bearing life and reliability. Exceeding load rating causes premature fatigue, increased vibration, and potential bearing failure. Safety factor ensures long service life.",
-          "how_to_handle": "Calculate actual load including dynamic forces and shock loads. For continuous operation, keep loads under 50 kg. For intermittent use, 76 kg is acceptable with proper lubrication.",
-          "pro_tip": "Premium Gcr15 steel provides superior load handling vs. standard steel alternatives, extending service life 3-5x."
+          "question": "Can 604 bearing replace other 4mm bore bearings?",
+          "direct_answer": "Yes, 604 can replace other 4mm bore bearings if they have compatible outer diameter (≤12mm) and width (≤4mm) requirements, and load capacity needs (≤0.75kN dynamic).",
+          "why_matters": "Proper replacement ensures system compatibility, prevents premature failures, and maintains performance specifications.",
+          "how_to_handle": "Verify dimensional compatibility (d×D×B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
+          "pro_tip": "Always check both dimensional and performance compatibility before replacement to avoid system issues."
         },
         {
-          "question": "Is this bearing suitable for 32,000 RPM applications?",
-          "direct_answer": "Yes, 604 bearing is rated for 32,000 RPM grease lubrication and 40,000 RPM oil lubrication with proper clearance selection.",
-          "why_matters": "Speed rating affects bearing temperature, vibration, and life expectancy. High speeds require proper clearance, lubrication, and balance to prevent overheating and premature failure.",
-          "how_to_handle": "Use C0 clearance for high-speed applications. Ensure proper lubrication and balance. Monitor temperature during operation. Consider open bearing for maximum speed capability.",
-          "pro_tip": "Our ISO 9001:2015 certified manufacturing includes 100% dimensional testing for optimal high-speed performance."
+          "question": "What applications are 604 bearings NOT suitable for?",
+          "direct_answer": "604 bearings are NOT suitable for applications requiring dynamic loads >0.75kN, speeds >32,000 RPM, operating temperatures >120°C, or environments with heavy contamination.",
+          "why_matters": "Using bearings beyond their specifications leads to premature failure, increased maintenance costs, and potential system damage.",
+          "how_to_handle": "For higher loads, consider 605 or 606 bearings. For higher speeds, use oil lubrication. For harsh environments, consider sealed or stainless steel alternatives.",
+          "pro_tip": "Always verify application requirements against bearing specifications to ensure long service life."
         }
       ]
     },
@@ -381,25 +446,25 @@
       "title": "Installation & Maintenance",
       "questions": [
         {
-          "question": "How do I install a 4mm bearing without damaging it?",
-          "direct_answer": "Use proper bearing installation tools and apply force evenly to outer ring only, never to inner ring or balls.",
-          "why_matters": "Improper installation damages bearing races, reduces life expectancy, and causes premature failure. Force applied to inner ring can damage rolling elements and create stress concentrations.",
-          "how_to_handle": "Use bearing press or installation sleeve. Apply force to outer ring circumference. Ensure shaft and housing are clean and properly sized. Use C0 clearance for precision applications.",
-          "pro_tip": "Professional installation tools prevent 80% of premature bearing failures and ensure maximum 50,000-hour service life."
+          "question": "What tools are needed for proper 604 bearing installation?",
+          "direct_answer": "For 604 bearing installation, you need precision tools: 4mm bore gauge, micrometer for shaft measurement, bearing heater (80-100°C), clean gloves, and appropriate mounting tools for the 12mm outer diameter.",
+          "why_matters": "Proper tools ensure accurate installation, prevent bearing damage, and maximize service life while maintaining precision requirements.",
+          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (3.992-4.000mm), heat bearing to 80-100°C, and use proper mounting techniques to avoid damage.",
+          "pro_tip": "Never force-fit 604 bearings - the 4mm bore requires precise shaft tolerances for optimal performance."
         },
         {
-          "question": "What tools do I need for a 76 kg capacity bearing?",
-          "direct_answer": "For 4mm bearings, use precision tools: bearing press, installation sleeve, micrometer, and proper lubrication equipment.",
-          "why_matters": "Precision tools ensure proper fit and prevent damage. 4mm bearings require careful handling due to small size and high precision requirements. Proper tools prevent costly installation errors.",
-          "how_to_handle": "Use bearing press with proper adapters. Measure shaft and housing with micrometer (±0.001mm accuracy). Apply thin film of lubricant. Use installation sleeve for even force distribution.",
-          "pro_tip": "Our manufacturing processes include 100% dimensional testing to ensure perfect fit with standard tools."
+          "question": "How often should 604 bearings be lubricated?",
+          "open": "Open 604 bearings require lubrication every 3-6 months depending on operating conditions. Shielded/sealed versions are lubricated for life but may need replacement after 2-3 years.",
+          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Over-lubrication can cause overheating, while under-lubrication leads to premature failure.",
+          "how_to_handle": "Monitor operating temperature and noise levels. For open bearings, use high-quality grease compatible with operating conditions. Replace sealed bearings when performance degrades.",
+          "pro_tip": "604 bearings in high-speed applications (>20,000 RPM) may require more frequent lubrication due to increased operating temperatures."
         },
         {
-          "question": "How often should I check a bearing running at 32,000 RPM?",
-          "direct_answer": "Check 604 bearings monthly for vibration, temperature, and noise. High-speed operation requires more frequent monitoring.",
-          "why_matters": "High-speed bearings generate more heat and wear faster. Regular monitoring prevents catastrophic failure and extends service life. Early detection of issues saves costly repairs.",
-          "how_to_handle": "Monitor vibration levels monthly using V2, V3, V4 standards. Check temperature (should stay under 80°C). Listen for unusual noise. Lubricate as needed.",
-          "pro_tip": "Premium bearings last 3-10x longer than economy alternatives when properly maintained."
+          "question": "What maintenance schedule is recommended for 604 bearings?",
+          "direct_answer": "For 604 bearings, inspect monthly for noise, vibration, and temperature changes. Clean and relubricate open bearings every 3-6 months. Replace sealed bearings every 2-3 years or when performance degrades.",
+          "why_matters": "Regular maintenance prevents unexpected failures, maintains precision performance, and extends bearing service life in critical applications.",
+          "how_to_handle": "Establish maintenance logs, monitor operating parameters, and replace bearings proactively rather than reactively. Use vibration analysis for early failure detection.",
+          "pro_tip": "604 bearings in precision instruments require more frequent inspection due to critical performance requirements."
         }
       ]
     },
@@ -407,25 +472,25 @@
       "title": "Troubleshooting & Problem Solving",
       "questions": [
         {
-          "question": "Why does my bearing fail under 76 kg load?",
-          "direct_answer": "Load failure usually indicates improper installation, contamination, or excessive vibration. Check shaft fit, cleanliness, and operating conditions.",
-          "why_matters": "Bearing failure under rated load suggests installation or environmental problems. Proper diagnosis prevents repeat failures and ensures optimal performance. Early intervention saves equipment damage.",
-          "how_to_handle": "Inspect bearing for contamination, proper fit, and lubrication. Check shaft tolerance (must be h6 ±0.009mm). Verify housing clearance. Monitor vibration levels during operation.",
-          "pro_tip": "Our quality assurance includes statistical process control to ensure consistent 76 kg load capacity across all bearings."
+          "question": "Why is my 604 bearing making unusual noise?",
+          "direct_answer": "Unusual noise in 604 bearings typically indicates contamination, improper lubrication, misalignment, or wear. The 4mm bore is sensitive to shaft imperfections and contamination due to its small size.",
+          "why_matters": "Early noise detection prevents bearing failure, maintains system precision, and reduces maintenance costs in micro-applications.",
+          "how_to_handle": "Inspect for contamination, check lubrication levels, verify shaft alignment and surface finish, and replace bearing if noise persists or worsens.",
+          "pro_tip": "604 bearings amplify noise due to their small size - what sounds minor in larger bearings can indicate serious issues in micro-bearings."
         },
         {
-          "question": "What causes overheating at 32,000 RPM?",
-          "direct_answer": "Overheating at high speed usually results from insufficient lubrication, excessive clearance, or contamination. Check lubrication quality and bearing condition.",
-          "why_matters": "Overheating accelerates wear, reduces life expectancy, and can cause catastrophic failure. High-speed operation requires optimal lubrication and proper clearance selection.",
-          "how_to_handle": "Verify lubrication quantity and quality. Check clearance (C0 recommended for high speed). Ensure clean operating environment. Monitor temperature (should stay under 80°C).",
-          "pro_tip": "Gcr15 steel provides superior heat resistance vs. standard steel alternatives."
+          "question": "What causes 604 bearing overheating?",
+          "direct_answer": "604 bearing overheating is caused by over-lubrication, excessive load (>0.75kN), high speeds (>32,000 RPM), misalignment, or contamination. The small size makes 604 bearings sensitive to these conditions.",
+          "why_matters": "Overheating accelerates wear, reduces precision, and can cause catastrophic failure in micro-bearing applications.",
+          "how_to_handle": "Check lubrication quantity and type, verify load and speed limits, inspect alignment, clean contamination, and ensure proper ventilation around the bearing.",
+          "pro_tip": "604 bearings have limited heat dissipation due to small size - monitor temperature closely in high-speed applications."
         },
         {
-          "question": "How do I diagnose problems with 4mm bearings?",
-          "direct_answer": "Use vibration analysis, temperature monitoring, and visual inspection. Check for unusual noise, excessive play, and contamination.",
-          "why_matters": "Early diagnosis prevents equipment damage and reduces downtime. 4mm bearings require precise diagnosis due to small size and high precision requirements.",
-          "how_to_handle": "Measure vibration using V2, V3, V4 standards. Check temperature with infrared thermometer. Inspect for contamination and wear. Use proper diagnostic tools for small bearings.",
-          "pro_tip": "Our 20+ years of experience shows proper diagnosis prevents 90% of bearing failures."
+          "question": "How do I diagnose 604 bearing vibration issues?",
+          "direct_answer": "Diagnose 604 bearing vibration by checking shaft runout (≤0.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 4mm bore bearings.",
+          "why_matters": "Excessive vibration reduces precision, increases wear, and can damage connected equipment in micro-applications.",
+          "how_to_handle": "Use vibration analysis tools, check shaft specifications, verify bearing installation, and replace bearing if vibration exceeds acceptable limits.",
+          "pro_tip": "604 bearings require higher precision in shaft preparation due to their small size and sensitivity to imperfections."
         }
       ]
     },
@@ -433,25 +498,25 @@
       "title": "Cost & Performance Optimization",
       "questions": [
         {
-          "question": "Is it worth upgrading from 76 kg to higher capacity bearings?",
-          "direct_answer": "Only if your application exceeds 76 kg load or requires longer service life. 604 provides optimal performance for most 4mm applications.",
-          "why_matters": "Over-sizing bearings increases cost without performance benefits. Proper sizing ensures optimal performance and cost-effectiveness. Understanding load requirements prevents unnecessary expenses.",
-          "how_to_handle": "Calculate actual load including safety factors. Consider service life requirements. For higher loads, consider 605 (1.05 kN) or 606 (1.95 kN). Evaluate total cost of ownership.",
-          "pro_tip": "Premium 604 bearings last 3-10x longer than economy alternatives, reducing total cost of ownership by 60-80%."
+          "question": "How can I optimize 604 bearing performance for cost efficiency?",
+          "direct_answer": "Optimize 604 bearing performance by selecting appropriate clearance (C0 for most applications), using proper lubrication, maintaining clean environment, and implementing preventive maintenance to extend service life beyond 50,000 hours.",
+          "why_matters": "Performance optimization reduces total cost of ownership, minimizes downtime, and ensures consistent precision in micro-applications.",
+          "how_to_handle": "Choose clearance based on application requirements, establish maintenance schedules, monitor operating conditions, and replace bearings proactively rather than reactively.",
+          "pro_tip": "604 bearings offer excellent value when properly maintained - their small size means replacement costs are minimal compared to system downtime."
         },
         {
-          "question": "When should I pay more for bearings rated above 32,000 RPM?",
-          "direct_answer": "Only if your application requires speeds above 32,000 RPM. 604 provides excellent high-speed performance for most miniature applications.",
-          "why_matters": "Speed ratings affect bearing selection and cost. Understanding actual speed requirements prevents over-engineering and unnecessary expenses. Proper speed selection ensures optimal performance.",
-          "how_to_handle": "Determine actual operating speed requirements. Consider acceleration and deceleration cycles. For speeds above 32,000 RPM, consider specialized high-speed bearings or open design.",
-          "pro_tip": "Our Gcr15 steel provides superior high-speed performance vs. standard steel alternatives."
+          "question": "What factors affect 604 bearing service life?",
+          "direct_answer": "604 bearing service life is affected by load conditions (≤0.75kN), operating speed (≤32,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
+          "why_matters": "Understanding service life factors helps optimize maintenance schedules, reduce costs, and ensure reliable operation in critical micro-applications.",
+          "how_to_handle": "Monitor operating parameters, maintain clean environment, use quality lubricants, implement preventive maintenance, and replace bearings based on performance degradation.",
+          "pro_tip": "604 bearings can achieve 50,000+ hours service life when operated within specifications and properly maintained."
         },
         {
-          "question": "What's the cost difference between 4mm and 5mm bearings?",
-          "direct_answer": "604 (4mm) costs approximately 15-20% less than 605 (5mm) while providing adequate capacity for most 4mm applications.",
-          "why_matters": "Size selection affects both performance and cost. Understanding the cost-performance relationship helps optimize bearing selection for specific applications.",
-          "how_to_handle": "Evaluate load requirements vs. cost. Consider space constraints and performance needs. For 4mm shafts, 604 provides optimal value. For higher loads, 605 may be justified.",
-          "pro_tip": "Our volume manufacturing provides competitive pricing across all miniature bearing sizes."
+          "question": "How do 604 bearings compare to alternatives in terms of total cost?",
+          "direct_answer": "604 bearings offer excellent total cost value for micro-applications due to their compact size, reliable performance, and low replacement costs. Quality 604 bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.",
+          "why_matters": "Total cost analysis helps make informed purchasing decisions, considering initial cost, maintenance, replacement, and downtime costs over the bearing's service life.",
+          "how_to_handle": "Compare initial costs, expected service life, maintenance requirements, and replacement costs. Consider system downtime costs when evaluating alternatives.",
+          "pro_tip": "604 bearings provide optimal cost-performance ratio for micro-applications when quality and proper maintenance are prioritized."
         }
       ]
     }

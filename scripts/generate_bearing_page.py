@@ -42,6 +42,90 @@ class BearingPageGenerator:
             print(f"❌ Error loading template file: {e}")
             return False
     
+    def get_series_from_model(self, model_number):
+        """
+        Determine the series from the model number automatically.
+        This avoids the need to edit JSON files.
+        """
+        if not model_number:
+            return "miniature-series"  # Default fallback
+            
+        model_str = str(model_number)
+        
+        # Miniature series: 3-digit models starting with 6
+        if model_str.startswith('6') and len(model_str) == 3:
+            return "miniature-series"
+        
+        # 6000 series: 4-digit models starting with 60
+        elif model_str.startswith('60') and len(model_str) == 4:
+            return "6000-series"
+        
+        # 6200 series: 4-digit models starting with 62
+        elif model_str.startswith('62') and len(model_str) == 4:
+            return "6200-series"
+        
+        # 6300 series: 4-digit models starting with 63
+        elif model_str.startswith('63') and len(model_str) == 4:
+            return "6300-series"
+        
+        # 6800 series: 4-digit models starting with 68
+        elif model_str.startswith('68') and len(model_str) == 4:
+            return "6800-series"
+        
+        # 6900 series: 4-digit models starting with 69
+        elif model_str.startswith('69') and len(model_str) == 4:
+            return "6900-series"
+        
+        # 62200 series: 5-digit models starting with 622
+        elif model_str.startswith('622') and len(model_str) == 5:
+            return "62200-series"
+        
+        # 62300 series: 5-digit models starting with 623
+        elif model_str.startswith('623') and len(model_str) == 5:
+            return "62300-series"
+        
+        # 16000 series: 5-digit models starting with 16
+        elif model_str.startswith('16') and len(model_str) == 5:
+            return "16000-series"
+        
+        # Default fallback
+        else:
+            return "miniature-series"
+    
+    def convert_kn_to_kg(self, value, field_name=""):
+        """
+        Convert kN values to kg while keeping kN in parentheses for reference.
+        
+        Args:
+            value: The value to process (string or number)
+            field_name: The field name (kept for compatibility)
+        
+        Returns:
+            Converted value in kg (kN) format, or original value if no conversion needed
+        """
+        # Skip conversion for load_ratings fields (keep them in kN)
+        if 'load_ratings' in field_name:
+            return str(value)
+        
+        # Convert string values containing kN
+        if isinstance(value, str):
+            # Look for patterns like "0.75kN" or "1.2 kN"
+            import re
+            kn_pattern = r'(\d+\.?\d*)\s*kN'
+            match = re.search(kn_pattern, value)
+            if match:
+                kn_value = float(match.group(1))
+                kg_value = round(kn_value * 102, 2)  # Convert kN to kg (1 kN = 102 kg)
+                return value.replace(match.group(0), f"{kg_value}kg ({match.group(1)}kN)")
+        
+        # Convert numeric values that are likely kN (assuming values < 1000 are kN)
+        if isinstance(value, (int, float)) and value < 1000:
+            kg_value = round(value * 102, 2)  # Convert kN to kg
+            return f"{kg_value}kg ({value}kN)"
+        
+        # Return original value if no conversion needed
+        return str(value)
+    
     def generate_page(self) -> bool:
         """Generate the complete HTML page"""
         try:
@@ -150,9 +234,12 @@ class BearingPageGenerator:
             if app_key in applications:
                 app_data = applications[app_key]
                 
-                # Replace title and requirements
-                content = content.replace(f"{{{{applications.{app_key}.title}}}}", app_data.get('title', ''))
-                content = content.replace(f"{{{{applications.{app_key}.requirements}}}}", app_data.get('requirements', ''))
+                # Replace title and requirements (without kN to kg conversion)
+                title = app_data.get('title', '')
+                requirements = app_data.get('requirements', '')
+                
+                content = content.replace(f"{{{{applications.{app_key}.title}}}}", title)
+                content = content.replace(f"{{{{applications.{app_key}.requirements}}}}", requirements)
                 
                 # Replace applications list
                 app_list = app_data.get('applications', [])
@@ -179,22 +266,29 @@ class BearingPageGenerator:
                 questions = category_data.get('questions', [])
                 questions_html = ""
                 for question_data in questions:
+                    # Convert kN to kg in FAQ content using the function
+                    question = question_data.get('question', '')
+                    direct_answer = self.convert_kn_to_kg(question_data.get('direct_answer', ''), f"faqs.{category_key}.questions.direct_answer")
+                    why_matters = self.convert_kn_to_kg(question_data.get('why_matters', ''), f"faqs.{category_key}.questions.why_matters")
+                    how_to_handle = self.convert_kn_to_kg(question_data.get('how_to_handle', ''), f"faqs.{category_key}.questions.how_to_handle")
+                    pro_tip = self.convert_kn_to_kg(question_data.get('pro_tip', ''), f"faqs.{category_key}.questions.pro_tip")
+                    
                     question_html = f"""
                         <div class="faq-question">
-                            <h4 class="faq-question-title">{question_data.get('question', '')}</h4>
-                            <div class="faq-direct-answer">{question_data.get('direct_answer', '')}</div>
+                            <h4 class="faq-question-title">{question}</h4>
+                            <div class="faq-direct-answer">{direct_answer}</div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">Why This Matters</div>
-                                <div class="faq-section-content">{question_data.get('why_matters', '')}</div>
+                                <div class="faq-section-content">{why_matters}</div>
                             </div>
                             
                             <div class="faq-section">
                                 <div class="faq-section-title">How To Handle It</div>
-                                <div class="faq-section-content">{question_data.get('how_to_handle', '')}</div>
+                                <div class="faq-section-content">{how_to_handle}</div>
                             </div>
                             
-                            <div class="faq-pro-tip">{question_data.get('pro_tip', '')}</div>
+                            <div class="faq-pro-tip">{pro_tip}</div>
                         </div>
                         """
                     questions_html += question_html
@@ -209,18 +303,32 @@ class BearingPageGenerator:
         """Replace cross references placeholders"""
         cross_refs = self.data.get('cross_references', {})
         
-        # Related models - handle as simple string array
+        # Related models - generate proper URLs based on series detection
         related_models = cross_refs.get('related_models', [])
         if related_models:
-            models_html = '\n'.join([f'<a href="#" class="model-link">{model}</a>' for model in related_models])
+            models_html = '\n'.join([
+                f'<a href="https://rhdbearings.com/specs/{self.get_series_from_model(model)}/{model}/" class="model-link">{model}</a>' 
+                for model in related_models
+            ])
             content = re.sub(r'\{\{#cross_references\.related_models\}\}.*?\{\{/cross_references\.related_models\}\}', models_html, content, flags=re.DOTALL)
         
-        # Series alternatives - handle as simple string array
-        series_alternatives = cross_refs.get('series_alternatives', [])
-        if series_alternatives:
-            series_html = '\n'.join([f'<div class="alternative-item"><strong>{alt}</strong></div>' for alt in series_alternatives])
-            content = re.sub(r'\{\{#cross_references\.series_alternatives\}\}.*?\{\{/cross_references\.series_alternatives\}\}', series_html, content, flags=re.DOTALL)
+        # Shaft requirements - handle individual fields
+        shaft_reqs = cross_refs.get('shaft_requirements', {})
+        if shaft_reqs:
+            # Replace individual shaft requirement placeholders
+            content = content.replace('{{cross_references.shaft_requirements.nominal_diameter}}', str(shaft_reqs.get('nominal_diameter', '')))
+            content = content.replace('{{cross_references.shaft_requirements.tolerance_grade}}', str(shaft_reqs.get('tolerance_grade', '')))
+            content = content.replace('{{cross_references.shaft_requirements.surface_finish}}', str(shaft_reqs.get('surface_finish', '')))
+            content = content.replace('{{cross_references.shaft_requirements.runout_tolerance}}', str(shaft_reqs.get('runout_tolerance', '')))
         
+        # Application specific alternatives - handle individual fields
+        app_alternatives = cross_refs.get('application_specific_alternatives', {})
+        if app_alternatives:
+            # Replace individual alternative placeholders
+            content = content.replace('{{cross_references.application_specific_alternatives.high_temperature}}', str(app_alternatives.get('high_temperature', '')))
+            content = content.replace('{{cross_references.application_specific_alternatives.high_speed}}', str(app_alternatives.get('high_speed', '')))
+            content = content.replace('{{cross_references.application_specific_alternatives.corrosive_environment}}', str(app_alternatives.get('corrosive_environment', '')))
+                
         return content
     
     def _replace_expertise_signals(self, content: str) -> str:
@@ -252,13 +360,18 @@ class BearingPageGenerator:
             'weight': 'weight_kg'
         }
         
-        # Replace all other placeholders
+        # Replace all other placeholders, but EXCLUDE FAQ content to preserve kN to kg conversion
         for key, value in self._flatten_dict(self.data).items():
+            # Skip FAQ content to preserve the kN to kg conversion done in _replace_faqs
+            if key.startswith('faqs.'):
+                continue
+                
             placeholder = f"{{{{{key}}}}}"
             if placeholder in content:
                 if value is None:
                     content = content.replace(placeholder, "N/A")
                 else:
+                    # Use original value without conversion
                     content = content.replace(placeholder, str(value))
         
         # Also replace old field name placeholders with new field values
@@ -267,11 +380,13 @@ class BearingPageGenerator:
                 old_placeholder = f"{{{{{old_name}}}}}"
                 new_value = self.data['dimensions'][new_name]
                 if old_placeholder in content:
+                    # Use original value without conversion
                     content = content.replace(old_placeholder, str(new_value))
             elif new_name in self.data.get('load_ratings', {}):
                 old_placeholder = f"{{{{{old_name}}}}}"
                 new_value = self.data['load_ratings'][new_name]
                 if old_placeholder in content:
+                    # Use original value without conversion
                     content = content.replace(old_placeholder, str(new_value))
         
         return content

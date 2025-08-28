@@ -275,7 +275,12 @@
   },
   "cross_references": {
     "related_models": [],
-    "series_alternatives": [],
+    "shaft_requirements": {
+      "nominal_diameter": "",
+      "tolerance_grade": "",
+      "surface_finish": "",
+      "runout_tolerance": ""
+    },
     "application_specific_alternatives": {
       "high_temperature": "",
       "high_speed": "",

@@ -38,23 +38,23 @@
   },
   "bearing_type": "Deep Groove Ball Bearing",
   "model_number": "627",
-  "enhanced_description": "The mini-me of industrial bearings - all the capability, half the space requirements.",
+  "enhanced_description": "The 7mm wonder - proving that good things come in small packages, especially when they're this reliable.",
   "dimensions": {
     "bore_diameter_d_mm": 7,
     "outer_diameter_D_mm": 22,
     "width_B_mm": 7,
-    "weight_kg": 0.014,
-    "skf_extended_dimensions": {
-      "d1_shoulder_diameter": 12.15,
-      "D2_recess_diameter": 19.2,
-      "r1_chamfer_radius": 0.3,
-      "r2_chamfer_radius": 0.3
-    }
+    "weight_kg": 0.012,
+          "skf_extended_dimensions": {
+        "d1_shoulder_diameter": 12.15,
+        "D2_recess_diameter": 19.2,
+        "r1_chamfer_radius": 0.3,
+        "r2_chamfer_radius": 0.3
+      }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 3.28,
-    "static_load_Cor_kN": 1.35,
-    "load_capacity_kg": 335
+    "dynamic_load_Cr_kN": 3.32,
+    "static_load_Cor_kN": 1.25,
+    "load_capacity_kg": 339
   },
   "speed_limits": {
     "grease_rpm": 26000,
@@ -71,76 +71,79 @@
   "technical_drawing": {
     "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
     "image_alt": "627 Deep Groove Ball Bearing Technical Drawing",
-    "image_title": "627 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
     "drawing_type": "Cross-sectional technical diagram",
     "file_format": "SVG",
     "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 627 deep groove ball bearing"
   },
   "applications": {
     "application1": {
-      "title": "Precision Instruments",
-      "icon": "🔬",
+      "title": "High-Speed Drives",
+      "icon": "zap",
       "applications": [
-        "Medical devices",
-        "Laboratory equipment",
-        "Optical instruments",
-        "Measuring devices",
-        "Calibration tools",
-        "Microscopes",
-        "Spectrometers"
+        "spindle drives",
+        "high-speed motors",
+        "precision drives",
+        "servo systems",
+        "stepper drives",
+        "brushless drives",
+        "turbine drives",
+        "compressor systems"
       ],
-      "requirements": "Ultra-precision, low vibration, high-speed capability"
+      "requirements": "7mm shaft with 3.32kN dynamic load capacity, 26,000 RPM grease lubrication, robust 22×7mm profile for high-speed applications"
     },
     "application2": {
-      "title": "Electronics & Miniature Motors",
-      "icon": "⚡",
+      "title": "Medical Equipment",
+      "icon": "heart",
       "applications": [
-        "Computer fans",
-        "Hard disk drives",
-        "CD/DVD drives",
-        "Small electric motors",
-        "Servo motors",
-        "Stepper motors",
-        "Micro actuators"
+        "dental drills",
+        "surgical tools",
+        "imaging devices",
+        "diagnostic equipment",
+        "monitoring systems",
+        "therapeutic devices",
+        "laboratory equipment",
+        "research instruments"
       ],
-      "requirements": "Compact size, high-speed operation, low noise"
+      "requirements": "Precision 7mm bore with 0.3mm chamfer radius, 1.25kN static load rating for stable operation, 339kg load capacity for medical accuracy"
     },
     "application3": {
-      "title": "Consumer Electronics",
-      "icon": "📱",
+      "title": "Aerospace Components",
+      "icon": "plane",
       "applications": [
-        "Smartphones",
-        "Tablets",
-        "Laptops",
-        "Gaming controllers",
-        "Smart watches",
-        "Wireless earbuds",
-        "Portable devices"
+        "actuator systems",
+        "control mechanisms",
+        "sensor assemblies",
+        "instrumentation",
+        "guidance systems",
+        "communication devices",
+        "navigation systems",
+        "safety equipment"
       ],
-      "requirements": "Miniature dimensions, reliable performance, long life"
+      "requirements": "7mm bore fits aerospace shafts, 7mm width for compact mounting, 0.012kg weight for efficiency, 34,000 RPM oil lubrication capability"
     }
   },
   "vibration": {
     "V2": {
-      "low_frequency": 72,
-      "medium_frequency": 48,
-      "high_frequency": 40
+      "low_frequency": 58,
+      "medium_frequency": 36,
+      "high_frequency": 30
     },
     "V3": {
-      "low_frequency": 44,
-      "medium_frequency": 28,
-      "high_frequency": 24
+      "low_frequency": 35,
+      "medium_frequency": 21,
+      "high_frequency": 18
     },
     "V4": {
-      "low_frequency": 38,
-      "medium_frequency": 12,
-      "high_frequency": 12
+      "low_frequency": 32,
+      "medium_frequency": 11,
+      "high_frequency": 11
     }
   },
   "noise": {
-    "Z2": 36,
-    "Z3": 34,
-    "Z4": 29
+    "Z2": 34,
+    "Z3": 32,
+    "Z4": 28
   },
   "clearance": {
     "C2": {
@@ -166,7 +169,7 @@
   },
   "seal_options": {
     "open": {
-      "designation": "Open",
+      "designation": "627",
       "description": "Open bearing, no seals",
       "speed_factor": 1.0,
       "max_rpm": 26000,
@@ -175,7 +178,7 @@
       "badge": "High Speed"
     },
     "single_shield": {
-      "designation": "Z",
+      "designation": "627-Z",
       "description": "Single metal shield",
       "speed_factor": 0.95,
       "max_rpm": 24700,
@@ -184,7 +187,7 @@
       "badge": "Balanced"
     },
     "double_shield": {
-      "designation": "ZZ",
+      "designation": "627-ZZ",
       "description": "Double metal shields",
       "speed_factor": 0.9,
       "max_rpm": 23400,
@@ -193,7 +196,7 @@
       "badge": "Most Popular"
     },
     "single_seal": {
-      "designation": "RS",
+      "designation": "627-RS",
       "description": "Single rubber seal",
       "speed_factor": 0.8,
       "max_rpm": 20800,
@@ -202,7 +205,7 @@
       "badge": "Protected"
     },
     "double_seal": {
-      "designation": "2RS",
+      "designation": "627-2RS",
       "description": "Double rubber seals",
       "speed_factor": 0.7,
       "max_rpm": 18200,
@@ -212,58 +215,55 @@
     }
   },
   "seo_metadata": {
-    "title": "627 Deep Groove Ball Bearing - 7x22x7mm | RHD Bearings",
-    "meta_description": "Ultra-precision 627 bearing (7x22x7mm) with 335 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
+    "title": "627 Bearing 7×22×7mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "627 deep groove ball bearing with 7mm bore, 22mm OD, 7mm width. 3.32kN dynamic load, 339kg capacity. Perfect for high-speed drives, medical equipment, aerospace.",
     "keywords": [
       "627 bearing",
-      "7mm bearing",
+      "7mm bore bearing",
+      "22mm OD bearing",
       "deep groove ball bearing",
-      "rhd bearings",
-      "mumbai bearings",
-      "india bearing manufacturer",
-      "precision bearing",
       "miniature bearing",
-      "micro bearing",
-      "bearing for precision instruments",
-      "bearing for miniature motors",
-      "bearing for electronics",
-      "bearing that fits 7mm shaft",
-      "bearing for high speed applications",
-      "bearing for small machinery",
-      "ISO certified bearing",
-      "chrome steel bearing",
-      "gcr15 bearing",
-      "andheri bearings",
-      "mumbai bearing supplier",
-      "india bearing company",
-      "how to choose 7mm bearing",
-      "best bearing for precision",
-      "bearing selection guide",
-      "627 vs 628 bearing",
-      "miniature bearing comparison",
-      "precision bearing alternatives",
-      "bearing load capacity for 7mm shaft",
-      "bearing speed rating for precision"
+      "high speed drive bearing",
+      "spindle drive bearing",
+      "high speed motor bearing",
+      "precision drive bearing",
+      "servo system bearing",
+      "stepper drive bearing",
+      "brushless drive bearing",
+      "dental drill bearing",
+      "surgical tool bearing",
+      "imaging device bearing",
+      "diagnostic equipment bearing",
+      "monitoring system bearing",
+      "therapeutic device bearing",
+      "actuator system bearing",
+      "control mechanism bearing",
+      "sensor assembly bearing",
+      "aerospace instrumentation bearing",
+      "guidance system bearing",
+      "communication device bearing",
+      "RHD bearings",
+      "India bearings"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/miniature-series/627",
+    "canonical_url": "https://rhdbearings.com/specs/miniature-series/627/",
     "og_data": {
-      "title": "627 Deep Groove Ball Bearing - 7x22x7mm with 335 kg Load Capacity",
-      "description": "Ultra-precision 627 bearing (7x22x7mm) with 335 kg load capacity. Perfect for precision instruments, miniature motors & electronics. ISO certified quality from Mumbai manufacturer.",
-      "url": "https://rhdbearings.com/specs/miniature-series/627",
+      "title": "627 Deep Groove Ball Bearing - 7×22×7mm | RHD Bearings",
+      "description": "High-speed 627 miniature bearing with 3.32kN dynamic load capacity. Perfect for drives, medical equipment, and aerospace components.",
+      "url": "https://rhdbearings.com/specs/miniature-series/627/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "627 Deep Groove Ball Bearing - 7x22x7mm | RHD Bearings",
-      "description": "Ultra-precision 627 bearing with 335 kg load capacity. Perfect for precision instruments, miniature motors & electronics."
+      "title": "627 Bearing - High-Speed Drive Solution",
+      "description": "7mm bore, 3.32kN load capacity, 26,000 RPM. Ideal for high-speed drives, medical equipment, and aerospace."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "627 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Ultra-precision 627 deep groove ball bearing (7x22x7mm) with 335 kg load capacity. Perfect for precision instruments, miniature motors and electronics applications.",
+      "description": "627 deep groove ball bearing with 7mm bore, 22mm outer diameter, 7mm width. 3.32kN dynamic load capacity, 339kg load capacity.",
       "sku": "627",
       "mpn": "627",
       "brand": {
@@ -278,9 +278,9 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/miniature-series/627",
+        "url": "https://rhdbearings.com/specs/miniature-series/627/",
         "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
+        "availability": "Yes",
         "priceValidUntil": "2025-12-31",
         "seller": {
           "@type": "Organization",
@@ -327,53 +327,55 @@
     }
   },
   "cross_references": {
-    "related_models": [
-      "623",
-      "624",
-      "625",
-      "626",
-      "628",
-      "629"
-    ],
-    "series_alternatives": [
-      "607",
-      "608",
-      "609"
-    ],
+    "related_models": ["607", "637", "687", "697"],
+    "shaft_requirements": {
+      "nominal_diameter": "7.000mm",
+      "tolerance_grade": "h6 (6.991-7.009mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
     "application_specific_alternatives": {
-      "high_temperature": "627 with C3 clearance",
-      "high_speed": "627 with open design",
-      "corrosive_environment": "627 with 2RS seals"
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
     }
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Handles 335 kg (3.28 kN) loads with 1.5x safety factor for typical applications",
-      "Rated for 26,000 RPM - ideal for high-speed precision instruments and miniature motors",
-      "Perfect for medical devices requiring sub-micron precision and ultra-low vibration",
-      "Optimal choice for 7mm shafts in precision instruments where space is critical",
-      "Gcr15 chrome steel provides 3-5x longer life vs. standard steel alternatives",
-      "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "Choose 627 for 7mm shafts requiring 3.32kN dynamic load capacity in high-speed drive applications",
+      "Select 627-ZZ for dust protection with 23,400 RPM capability and sealed-for-life lubrication",
+      "Use 627-RS in moisture-prone environments requiring 20,800 RPM with rubber seal protection",
+      "Consider 627 for high-speed drives where 22×7mm profile and 339kg load capacity optimize performance",
+      "Opt for 627 in medical equipment needing 0.3mm chamfer radius and stable positioning",
+      "Deploy 627 in aerospace components requiring 26,000 RPM grease lubrication with robust design"
     ],
     "natural_language_queries": [
-      "627 bearing specifications",
-      "bearing for 7mm shaft",
-      "627 vs 628 bearing",
-      "bearing for precision instruments",
-      "how to choose 7mm bearing",
-      "bearing load capacity for 7mm shaft"
+      "627 bearing dimensions",
+      "7mm bore bearing load capacity",
+      "miniature bearing for high speed drives",
+      "medical equipment bearing",
+      "aerospace bearing 7mm shaft",
+      "627 bearing specifications"
     ],
     "decision_criteria": [
-      "Shaft diameter must be exactly 7mm with h6 tolerance (±0.013mm)",
-      "Housing must accommodate 22mm outer diameter with 7mm width clearance",
-      "Dynamic loads must stay under 335 kg (3.28 kN) for safe operation",
-      "Maximum operating speed should not exceed 26,000 RPM for optimal life",
-      "Application must require precision bearings for miniature or micro-scale equipment"
+      "7mm bore diameter requirement for shaft compatibility",
+      "3.32kN dynamic load capacity for application demands",
+      "7mm width constraint for compact mounting",
+      "26,000 RPM grease lubrication speed requirement",
+      "22mm outer diameter for housing fit"
     ],
     "problem_solution_mapping": [
       {
-        "problem": "Need ultra-precision bearing for 7mm shaft in medical device",
-        "solution": "627 bearing with C0 clearance provides sub-micron precision and 335 kg load capacity"
+        "problem": "Need high-performance bearing for 7mm shaft with substantial load capacity",
+        "solution": "627 bearing provides 3.32kN dynamic load in 22×7mm profile"
+      },
+      {
+        "problem": "Require dust protection in high-speed application",
+        "solution": "627-ZZ offers 23,400 RPM with double metal shield protection"
+      },
+      {
+        "problem": "Moisture exposure in medical environment",
+        "solution": "627-RS provides rubber seal protection up to 20,800 RPM"
       }
     ],
     "expertise_signals": [
@@ -400,19 +402,19 @@
       {
         "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 3.28kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "7mm bore with 3.32kN load capacity and 26,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
         "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in micro-bearing category for 3.28kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in miniature bearing category for 3.32kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }      
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "627 provides 335 kg load capacity vs. smaller bearings with 66-286 kg capacity",
-      "vs_larger_bearing": "627 offers 7mm bore compactness vs. larger bearings requiring more space",
-      "vs_competitors": "Superior Gcr15 steel composition vs. standard steel alternatives",
-      "cost_benefit": "Premium quality extends service life 3-10x, reducing total cost of ownership by 60-80%"
+      "vs_smaller_bearing": "627 provides 0.52kN higher dynamic load than 626 with 1mm larger bore for enhanced drive performance",
+      "vs_larger_bearing": "627 offers 0.68kN lower load than 608 but with 1mm smaller diameter for space-constrained applications",
+      "vs_competitors": "RHD 627 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
+      "cost_benefit": "627 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
   },
   "faqs": {
@@ -420,25 +422,25 @@
       "title": "Bearing Selection & Replacement",
       "questions": [
         {
-          "question": "How do I know if the 627 bearing is the right size for my 7mm shaft?",
-          "direct_answer": "The 627 bearing has a 7mm bore diameter with h6 tolerance (±0.013mm), making it perfect for 7mm shafts with standard tolerance requirements.",
-          "why_matters": "Proper shaft fit prevents premature wear, vibration, and bearing failure. h6 tolerance ensures optimal interference fit for most applications.",
-          "how_to_handle": "Measure your shaft diameter with a micrometer. If it's 7mm ±0.013mm, the 627 bearing will fit perfectly. For tighter tolerances, consider h5 or h4 shaft grades.",
-          "pro_tip": "From 20+ years of manufacturing experience: Always measure both shaft and housing before ordering. 80% of bearing failures come from improper sizing."
+          "question": "What shaft tolerance is recommended for 627 bearing installation?",
+          "direct_answer": "h6 tolerance grade (6.991-7.009mm) provides optimal fit and performance for 627 bearings.",
+          "why_matters": "Proper shaft tolerance ensures correct interference fit, preventing slippage while allowing thermal expansion.",
+          "how_to_handle": "Measure shaft diameter with precision micrometers, ensuring it falls within h6 tolerance range before installation.",
+          "pro_tip": "Use h6 tolerance for standard applications, h5 for high-precision requirements, and h7 for loose fits."
         },
         {
-          "question": "What's the difference between 627 and 628 bearings for my precision application?",
-          "direct_answer": "627 has 7mm bore (22x7mm), 628 has 8mm bore (24x8mm). 627 is more compact but 628 offers higher load capacity (335 kg vs. 342 kg).",
-          "why_matters": "Space constraints vs. load requirements determine your choice. 627 is ideal for ultra-compact designs, 628 for higher load applications.",
-          "how_to_handle": "Measure available space and calculate load requirements. If space is critical and loads are under 335 kg, choose 627. If you need higher capacity, choose 628.",
-          "pro_tip": "Our precision engineering team recommends 627 for medical devices and 628 for industrial instruments where space allows."
+          "question": "Can I replace a 627 bearing with a different size bearing?",
+          "direct_answer": "No, 627 bearings have unique 7×22×7mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
+          "how_to_handle": "Always use exact 627 replacement or consult engineering specifications for alternative solutions.",
+          "pro_tip": "Keep spare 627 bearings in stock to avoid production delays and ensure consistent quality."
         },
         {
-          "question": "Can I use the 627 bearing in high-temperature applications?",
-          "direct_answer": "Standard 627 bearings operate from -20°C to +120°C. For high-temperature use, we offer C3 clearance variants that handle up to +150°C.",
-          "why_matters": "Temperature affects bearing clearance, lubrication, and material properties. High temperatures can cause premature failure without proper clearance.",
-          "how_to_handle": "For temperatures above 120°C, specify C3 clearance when ordering. Above 150°C, consider special high-temperature materials and lubrication.",
-          "pro_tip": "Our ISO 9001:2015 certified manufacturing includes temperature testing to ensure bearings meet specified operating ranges."
+          "question": "What load capacity does the 627 bearing provide?",
+          "direct_answer": "627 bearing offers 3.32kN dynamic load capacity and 1.25kN static load capacity, suitable for high-speed drive applications.",
+          "why_matters": "Load capacity determines bearing suitability for specific applications and operating conditions.",
+          "how_to_handle": "Calculate actual application loads and ensure they remain within 3.32kN dynamic limit with appropriate safety factors.",
+          "pro_tip": "Use 627 bearings for applications requiring up to 339kg load capacity with standard safety margins."
         }
       ]
     },
@@ -446,25 +448,25 @@
       "title": "Installation & Maintenance",
       "questions": [
         {
-          "question": "What's the proper installation method for the 627 bearing in a precision instrument?",
-          "direct_answer": "Use a precision bearing press or induction heater for installation. Apply force to the outer ring only, never to the inner ring or balls.",
-          "why_matters": "Improper installation damages bearing surfaces, reduces precision, and shortens service life. Precision instruments require sub-micron accuracy.",
-          "how_to_handle": "Clean shaft and housing thoroughly. Heat housing to 80-100°C or use precision press. Install bearing with gentle, even pressure on outer ring.",
-          "pro_tip": "Our manufacturing process includes 100% dimensional testing. Professional installation tools prevent 80% of premature bearing failures."
+          "question": "What lubrication is required for 627 bearings?",
+          "direct_answer": "627 bearings require grease lubrication for standard applications, with 26,000 RPM capability under proper lubrication conditions.",
+          "why_matters": "Proper lubrication reduces friction, prevents wear, and extends bearing service life significantly.",
+          "how_to_handle": "Apply high-quality bearing grease during installation and maintain regular lubrication intervals based on operating conditions.",
+          "pro_tip": "Use lithium-based grease for general applications and synthetic grease for high-temperature or high-speed operations."
         },
         {
-          "question": "How often should I lubricate the 627 bearing in continuous operation?",
-          "direct_answer": "Open bearings require external lubrication every 3-6 months. Shielded/sealed bearings are lubricated for life.",
-          "why_matters": "Proper lubrication prevents wear, reduces friction, and extends bearing life. Insufficient lubrication causes 60% of bearing failures.",
-          "how_to_handle": "For open bearings, use high-quality grease compatible with operating temperature. For sealed bearings, no additional lubrication needed.",
-          "pro_tip": "Our Gcr15 steel composition provides superior wear resistance, but proper lubrication is still essential for maximum 50,000-hour service life."
+          "question": "How do I properly install a 627 bearing?",
+          "direct_answer": "Install 627 bearings using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to bearing surfaces.",
+          "why_matters": "Proper installation prevents premature failure, ensures optimal performance, and maintains dimensional accuracy.",
+          "how_to_handle": "Use bearing heaters for interference fits, apply force evenly, and verify proper seating after installation.",
+          "pro_tip": "Professional installation tools prevent 80% of premature bearing failures and ensure maximum service life."
         },
         {
-          "question": "What tools do I need for proper 627 bearing installation and maintenance?",
-          "direct_answer": "Essential tools include: precision bearing press, induction heater, micrometer, dial indicator, and proper cleaning supplies.",
-          "why_matters": "Proper tools ensure accurate installation, prevent damage, and maintain precision. Precision bearings require professional-grade equipment.",
-          "how_to_handle": "Invest in quality tools or use professional installation services. For critical applications, consider our installation training programs.",
-          "pro_tip": "Our technical support team provides installation guidance and can recommend specific tools for your application requirements."
+          "question": "What maintenance schedule is recommended for 627 bearings?",
+          "direct_answer": "627 bearings require regular inspection every 3-6 months, with lubrication replenishment based on operating hours and conditions.",
+          "why_matters": "Regular maintenance prevents unexpected failures, maintains performance, and extends bearing lifespan.",
+          "how_to_handle": "Establish maintenance schedules based on operating conditions, document all maintenance activities, and monitor bearing condition regularly.",
+          "pro_tip": "Implement predictive maintenance using vibration analysis to detect issues before they cause failures."
         }
       ]
     },
@@ -472,25 +474,25 @@
       "title": "Troubleshooting & Problem Solving",
       "questions": [
         {
-          "question": "My 627 bearing is making unusual noise. What could be causing this?",
-          "direct_answer": "Unusual noise usually indicates contamination, improper installation, or excessive load. Check for dirt, verify installation, and confirm load is under 335 kg.",
-          "why_matters": "Noise indicates bearing damage or improper operation. Early detection prevents catastrophic failure and maintains precision.",
-          "how_to_handle": "Inspect for contamination, verify shaft and housing tolerances, check load calculations, and ensure proper lubrication. Replace if damage is found.",
-          "pro_tip": "Our vibration analysis shows 627 bearings should operate below 72 μm/s² (V2) for optimal performance. Higher levels indicate problems."
+          "question": "What causes premature failure in 627 bearings?",
+          "direct_answer": "Common causes include improper installation, inadequate lubrication, contamination, excessive loads, and misalignment.",
+          "why_matters": "Understanding failure causes helps prevent future issues and improves system reliability.",
+          "how_to_handle": "Implement proper installation procedures, maintain clean environments, ensure adequate lubrication, and monitor operating conditions.",
+          "pro_tip": "80% of premature failures are preventable through proper installation and maintenance practices."
         },
         {
-          "question": "The 627 bearing is running hot during operation. What should I check?",
-          "direct_answer": "Check lubrication, load, speed, and clearance. Ensure load is under 335 kg, speed under 26,000 RPM, and proper grease is used.",
-          "why_matters": "Excessive heat damages bearing materials, reduces precision, and shortens life. Heat indicates friction and potential failure.",
-          "how_to_handle": "Verify load calculations, check lubrication quantity and type, ensure proper clearance, and monitor operating speed.",
-          "pro_tip": "Our Gcr15 steel composition handles temperatures up to 120°C, but optimal operation is below 80°C for maximum life."
+          "question": "How do I identify bearing wear in 627 bearings?",
+          "direct_answer": "Signs of wear include increased noise, vibration, temperature rise, and reduced performance in 627 bearings.",
+          "why_matters": "Early detection of wear prevents catastrophic failures and allows for planned replacement.",
+          "how_to_handle": "Monitor bearing condition regularly, use vibration analysis equipment, and establish baseline performance measurements.",
+          "pro_tip": "Implement condition monitoring systems to detect wear patterns before they affect system performance."
         },
         {
-          "question": "How can I prevent premature failure of the 627 bearing in my application?",
-          "direct_answer": "Prevent failure by: proper installation, correct load (under 335 kg), adequate lubrication, contamination control, and regular inspection.",
-          "why_matters": "Preventive maintenance extends bearing life 3-10x and prevents costly equipment downtime. Most failures are preventable.",
-          "how_to_handle": "Follow installation procedures, monitor operating conditions, maintain clean environment, and inspect regularly for wear signs.",
-          "pro_tip": "Our quality assurance process includes statistical process control. Premium bearings last 3-10x longer than economy alternatives."
+          "question": "What should I do if a 627 bearing fails unexpectedly?",
+          "direct_answer": "Immediately stop operation, inspect for damage, identify root cause, and replace with properly installed new bearing.",
+          "why_matters": "Quick response prevents secondary damage and minimizes production downtime.",
+          "how_to_handle": "Document failure details, analyze root causes, implement corrective actions, and maintain spare bearings for critical applications.",
+          "pro_tip": "Keep detailed failure records to identify patterns and prevent similar issues in the future."
         }
       ]
     },
@@ -498,25 +500,25 @@
       "title": "Cost & Performance Optimization",
       "questions": [
         {
-          "question": "Is the 627 bearing cost-effective for my precision instrument application?",
-          "direct_answer": "Yes, the 627 bearing offers excellent value with 335 kg load capacity, 26,000 RPM speed rating, and 50,000-hour service life at competitive pricing.",
-          "why_matters": "Total cost of ownership includes initial cost, maintenance, replacement, and downtime. Quality bearings reduce overall costs significantly.",
-          "how_to_handle": "Compare total cost over 5-10 years including maintenance and replacement. Premium bearings typically reduce costs by 60-80%.",
-          "pro_tip": "Our bulk pricing for 100+ units provides significant savings. OEM partnerships offer dedicated support and volume discounts."
+          "question": "How does 627 bearing cost compare to alternatives?",
+          "direct_answer": "627 bearings offer excellent value with 3.32kN load capacity at competitive pricing, providing 3-10x longer lifespan than budget alternatives.",
+          "why_matters": "Total cost of ownership includes initial cost, maintenance, replacement frequency, and downtime costs.",
+          "how_to_handle": "Calculate total cost of ownership, consider quality vs. price trade-offs, and invest in proper installation and maintenance.",
+          "pro_tip": "High-quality bearings like 627 typically cost 20-30% more but last 3-10x longer than budget alternatives."
         },
         {
-          "question": "What's the ROI of choosing premium 627 bearings over economy alternatives?",
-          "direct_answer": "Premium 627 bearings provide 3-10x longer life, reducing replacement costs and downtime. ROI typically exceeds 200% over 3-5 years.",
-          "why_matters": "Economy bearings fail more frequently, causing equipment downtime, lost production, and higher maintenance costs.",
-          "how_to_handle": "Calculate cost savings from reduced replacements, maintenance, and downtime. Premium bearings pay for themselves within 1-2 years.",
-          "pro_tip": "Our customers report 60-80% reduction in total cost of ownership when switching from economy to premium bearings."
+          "question": "What performance benefits does 627 bearing provide?",
+          "direct_answer": "627 bearings deliver high load capacity, excellent speed capability, precision dimensions, and reliable performance in high-speed drive applications.",
+          "why_matters": "Performance directly impacts system efficiency, reliability, and overall productivity.",
+          "how_to_handle": "Select 627 bearings for applications requiring 7mm bore, 3.32kN load capacity, and 26,000 RPM capability.",
+          "pro_tip": "627 bearings excel in applications requiring high-speed performance with substantial load handling."
         },
         {
-          "question": "How can I optimize the performance of my 627 bearing for maximum efficiency?",
-          "direct_answer": "Optimize performance by: proper installation, optimal clearance selection, adequate lubrication, load optimization, and speed control.",
-          "why_matters": "Optimized performance extends bearing life, reduces energy consumption, and maintains precision throughout service life.",
-          "how_to_handle": "Select appropriate clearance grade, ensure proper installation, maintain clean environment, and monitor operating conditions.",
-          "pro_tip": "Our technical team provides performance optimization consulting. Proper setup can improve efficiency by 15-25% and extend life by 2-3x."
+          "question": "How can I optimize 627 bearing performance?",
+          "direct_answer": "Optimize performance through proper installation, adequate lubrication, contamination control, and regular maintenance practices.",
+          "why_matters": "Optimized performance extends bearing life, reduces maintenance costs, and improves system reliability.",
+          "how_to_handle": "Follow manufacturer recommendations, implement preventive maintenance, monitor operating conditions, and use quality lubricants.",
+          "pro_tip": "Proper optimization can extend 627 bearing service life from 20,000 to 50,000+ hours in typical applications."
         }
       ]
     }
