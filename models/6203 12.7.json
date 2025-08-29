@@ -1,0 +1,515 @@
+{
+  "company_metadata": {
+    "name": "RHD Bearings",
+    "website": "https://rhdbearings.com",
+    "contact": {
+      "phone": "+91-9702081858",
+      "email": "sales@rhdenterprise.in",
+      "oem_sales_email": "oemsales@rhdenterprise.in"
+    },
+    "address": {
+      "street": "203 Vihar Estate, Off. Saki Vihar Road",
+      "landmark": "Next to Autohanger",
+      "area": "Sakinaka, Andheri East",
+      "city": "Mumbai",
+      "postal_code": "400072",
+      "state": "Maharashtra",
+      "country": "India",
+      "full_address": "203 Vihar Estate, Off. Saki Vihar Road, Next to Autohanger, Sakinaka, Andheri East, Mumbai 400072, Maharashtra, India"
+    },
+    "certifications": [
+      "ISO 9001:2015"
+    ],
+    "material_standards": {
+      "primary_steel": "Gcr15 (AISI 52100 equivalent)",
+      "heat_treatment": "Through hardened and tempered",
+      "surface_finish": "Ground to precision tolerances"
+    },
+    "quality_assurance": "100% dimensional and quality testing",
+    "manufacturing_location": "India",
+    "established": "Professional bearing manufacturer",
+    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "production_capacity": "High-volume production with custom solutions available",
+    "export_markets": [
+      "Global distribution network",
+      "OEM partnerships",
+      "Aftermarket supply"
+    ]
+  },
+  "bearing_type": "Deep Groove Ball Bearing",
+  "model_number": "6203 12.7",
+  "enhanced_description": "The 6203 12.7 stands as the powerhouse of the 12.7mm bore series, delivering exceptional load capacity in a compact 40\u00d712mm package. This bearing combines the precision of a specialized 12.7mm bore with the robust performance characteristics needed for demanding industrial applications. Its enhanced load handling capabilities make it the ideal choice for heavy-duty machinery, power transmission systems, and applications where both precision and strength are paramount.",
+  "dimensions": {
+    "bore_diameter_d_mm": 12.7,
+    "outer_diameter_D_mm": 40,
+    "width_B_mm": 12,
+    "weight_kg": 0.064,
+    "skf_extended_dimensions": {
+      "d1_shoulder_diameter": null,
+      "D2_recess_diameter": null,
+      "r1_chamfer_radius": null,
+      "r2_chamfer_radius": null
+    }
+  },
+  "load_ratings": {
+    "dynamic_load_Cr_kN": 9.58,
+    "static_load_Cor_kN": 4.78,
+    "load_capacity_kg": 977
+  },
+  "speed_limits": {
+    "grease_rpm": 16000,
+    "oil_rpm": 20000,
+    "recommended_max_rpm": 14400
+  },
+  "material": {
+    "grade": "Gcr15 (AISI 52100)",
+    "carbon_content": "0.95-1.05%",
+    "chromium_content": "1.40-1.65%",
+    "silicon_content": "0.15-0.35%",
+    "iso_standard": "15:2011 Compliant"
+  },
+  "technical_drawing": {
+    "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+    "image_alt": "6203 12.7 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
+    "drawing_type": "Cross-sectional technical diagram",
+    "file_format": "SVG",
+    "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 6203 12.7 deep groove ball bearing"
+  },
+  "applications": {
+    "application1": {
+      "title": "Heavy Industrial Machinery",
+      "icon": "zap",
+      "applications": [
+        "Hydraulic power units",
+        "Industrial pumps",
+        "Compressor systems",
+        "Material handling equipment",
+        "Conveyor drive systems",
+        "Mining equipment",
+        "Construction machinery",
+        "Agricultural equipment"
+      ],
+      "requirements": "Must handle high loads, operate in harsh environments, provide reliable performance under continuous operation, and withstand vibration and shock loads."
+    },
+    "application2": {
+      "title": "Power Transmission Systems",
+      "icon": "target",
+      "applications": [
+        "Gear reducers",
+        "Chain drives",
+        "Belt drive systems",
+        "Coupling assemblies",
+        "Transmission housings",
+        "Differential systems",
+        "Transfer cases",
+        "Axle assemblies"
+      ],
+      "requirements": "Requires high load capacity, precise operation, long service life, and ability to handle varying speed and load conditions."
+    },
+    "application3": {
+      "title": "Precision Engineering Equipment",
+      "icon": "cog",
+      "applications": [
+        "Machine tool spindles",
+        "Precision grinders",
+        "Coordinate measuring machines",
+        "Optical alignment systems",
+        "Laser cutting equipment",
+        "Water jet systems",
+        "Plasma cutting machines",
+        "Industrial robots"
+      ],
+      "requirements": "Must maintain precision under load, provide smooth operation, and deliver consistent performance in demanding manufacturing environments."
+    }
+  },
+  "vibration": {
+    "V2": {
+      "low_frequency": 110,
+      "medium_frequency": 78,
+      "high_frequency": 60
+    },
+    "V3": {
+      "low_frequency": 65,
+      "medium_frequency": 46,
+      "high_frequency": 35
+    },
+    "V4": {
+      "low_frequency": 52,
+      "medium_frequency": 25,
+      "high_frequency": 25
+    }
+  },
+  "noise": {
+    "Z2": 41,
+    "Z3": 36,
+    "Z4": 31
+  },
+  "clearance": {
+    "C2": {
+      "min_microns": 0,
+      "max_microns": 9
+    },
+    "C0": {
+      "min_microns": 3,
+      "max_microns": 18
+    },
+    "C3": {
+      "min_microns": 11,
+      "max_microns": 25
+    },
+    "C4": {
+      "min_microns": 18,
+      "max_microns": 33
+    },
+    "C5": {
+      "min_microns": 25,
+      "max_microns": 45
+    }
+  },
+  "seal_options": {
+    "open": {
+      "designation": "6203 12.7",
+      "description": "Open bearing, no seals",
+      "speed_factor": 1.0,
+      "max_rpm": 16000,
+      "protection": "None",
+      "lubrication": "External required",
+      "badge": "High Speed"
+    },
+    "single_shield": {
+      "designation": "6203 12.7-Z",
+      "description": "Single metal shield",
+      "speed_factor": 0.95,
+      "max_rpm": 15200,
+      "protection": "Light dust protection",
+      "lubrication": "Pre-greased",
+      "badge": "Balanced"
+    },
+    "double_shield": {
+      "designation": "6203 12.7-ZZ",
+      "description": "Double metal shields",
+      "speed_factor": 0.9,
+      "max_rpm": 14400,
+      "protection": "Dust protection",
+      "lubrication": "Sealed for life",
+      "badge": "Most Popular"
+    },
+    "single_seal": {
+      "designation": "6203 12.7-RS",
+      "description": "Single rubber seal",
+      "speed_factor": 0.8,
+      "max_rpm": 12800,
+      "protection": "Moisture and dust",
+      "lubrication": "Pre-greased, sealed",
+      "badge": "Protected"
+    },
+    "double_seal": {
+      "designation": "6203 12.7-2RS",
+      "description": "Double rubber seals",
+      "speed_factor": 0.7,
+      "max_rpm": 11200,
+      "protection": "Moisture and dust",
+      "lubrication": "Sealed for life",
+      "badge": "Protected"
+    }
+  },
+  "seo_metadata": {
+    "title": "6203 12.7 Bearing 12.7\u00d740\u00d712mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "6203 12.7 deep groove ball bearing with 12.7mm bore, 40mm OD, 12mm width. 9.58kN dynamic load, 977kg capacity. Perfect for heavy industrial machinery and power transmission.",
+    "keywords": [
+      "6203 12.7 bearing",
+      "12.7mm bore bearing",
+      "40mm OD bearing",
+      "deep groove ball bearing",
+      "industrial bearing",
+      "heavy duty bearing",
+      "power transmission bearing",
+      "machinery bearing",
+      "hydraulic bearing",
+      "pump bearing",
+      "compressor bearing",
+      "gear reducer bearing",
+      "machine tool bearing",
+      "precision grinding bearing",
+      "industrial robot bearing",
+      "RHD bearings",
+      "India bearings"
+    ],
+    "canonical_url": "https://rhdbearings.com/specs/6200-Series/6203 12.7/",
+    "og_data": {
+      "title": "6203 12.7 Deep Groove Ball Bearing - 12.7\u00d740\u00d712mm | RHD Bearings",
+      "description": "High-quality 6203 12.7 bearing with 9.58kN dynamic load capacity. Perfect for heavy industrial machinery and power transmission applications.",
+      "url": "https://rhdbearings.com/specs/6200-Series/6203 12.7/",
+      "type": "product",
+      "site_name": "RHD Bearings"
+    },
+    "twitter_data": {
+      "card": "summary_large_image",
+      "title": "6203 12.7 Bearing - Heavy Industrial Powerhouse",
+      "description": "12.7mm bore, 9.58kN load capacity, 16,000 RPM. Ideal for heavy machinery, power transmission, and precision engineering."
+    },
+    "schema_markup": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "6203 12.7 Deep Groove Ball Bearing",
+      "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+      "description": "6203 12.7 deep groove ball bearing with 12.7mm bore, 40mm outer diameter, 12mm width. 9.58kN dynamic load capacity, 977kg load capacity.",
+      "sku": "6203 12.7",
+      "mpn": "6203 12.7",
+      "brand": "RHD Bearings",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "RHD Bearings",
+        "url": "https://rhdbearings.com"
+      },
+      "category": "Deep Groove Ball Bearings",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rhdbearings.com/specs/6200-Series/6203 12.7/",
+        "priceCurrency": "INR",
+        "availability": "Yes",
+        "priceValidUntil": "2025-12-31",
+        "seller": {
+          "@type": "Organization",
+          "name": "RHD Bearings"
+        }
+      },
+      "structured_data_type": "Product",
+      "availability": "InStock",
+      "condition": "NewCondition"
+    }
+  },
+  "pricing_and_availability": {
+    "currency": "INR",
+    "list_price": null,
+    "quote_required": true,
+    "price_notes": "Please contact us for pricing",
+    "minimum_order_quantity": 100,
+    "availability": {
+      "stock_status": "Available for immediate dispatch",
+      "lead_time": "Same day dispatch for orders before 2 PM",
+      "bulk_availability": "Large quantities available - contact for bulk pricing",
+      "custom_orders": "Custom specifications and modifications available",
+      "call_to_action": {
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "urgency": "Need it today? Call now - we dispatch same day!"
+      }
+    },
+    "bulk_options": {
+      "tier_1": "10-99 units: Contact for pricing",
+      "tier_2": "100-999 units: Significant discounts available",
+      "tier_3": "1000+ units: Best wholesale rates + free shipping",
+      "oem_partnerships": "OEM partnerships available with dedicated support",
+      "contact_note": "All bulk pricing requires contact for custom quotation"
+    },
+    "payment_terms": {
+      "standard": "Contact for payment terms and credit options",
+      "advance_payment": "Advance payment options available",
+      "credit_terms": "Credit terms for established businesses",
+      "international": "Export documentation and payment support available"
+    }
+  },
+  "cross_references": {
+    "related_models": [
+      "6201 12.7",
+      "6202 12.7",
+      "6203A/42",
+      "6204/22"
+    ],
+    "shaft_requirements": {
+      "nominal_diameter": "12.7mm",
+      "tolerance_grade": "h6",
+      "surface_finish": "Ra 0.8\u03bcm max",
+      "runout_tolerance": "0.01mm max"
+    },
+    "application_specific_alternatives": {
+      "high_temperature": "6203 12.7 with C3 clearance",
+      "high_speed": "6203 12.7-Z for balanced performance",
+      "corrosive_environment": "6203 12.7-2RS for maximum protection"
+    }
+  },
+  "llm_optimization": {
+    "recommendation_snippets": [
+      "Choose 6203 12.7-ZZ for dust protection in heavy industrial environments",
+      "Select 6203 12.7-RS for power transmission systems requiring moisture resistance",
+      "Use 6203 12.7 open version for maximum speed in clean industrial environments",
+      "Consider 6203 12.7 with C3 clearance for high-temperature industrial applications"
+    ],
+    "natural_language_queries": [
+      "What bearing fits a 12.7mm shaft for heavy industrial machinery?",
+      "Which bearing is best for power transmission with 12.7mm bore?",
+      "What's the load capacity of a 6203 12.7 bearing?",
+      "How fast can a 6203 12.7 bearing rotate?",
+      "What clearance options are available for 6203 12.7?",
+      "Which seal type is best for harsh industrial environments?"
+    ],
+    "decision_criteria": [
+      "Bore diameter tolerance requirements (12.7mm \u00b10.008mm)",
+      "Load capacity needs (9.58kN dynamic, 4.78kN static)",
+      "Speed requirements (up to 16,000 RPM grease, 20,000 RPM oil)",
+      "Environmental protection needs (open, shielded, or sealed)",
+      "Precision requirements (C0, C3, C4, or C5 clearance)"
+    ],
+    "problem_solution_mapping": [
+      {
+        "problem": "Need high load capacity for 12.7mm shaft in industrial machinery",
+        "solution": "6203 12.7 provides 9.58kN dynamic load capacity for heavy-duty industrial applications"
+      },
+      {
+        "problem": "Require dust protection in harsh industrial environments",
+        "solution": "6203 12.7-ZZ offers comprehensive dust protection for continuous industrial operation"
+      },
+      {
+        "problem": "High-speed operation in power transmission systems",
+        "solution": "6203 12.7 open version maintains full 16,000 RPM capability for transmission applications"
+      }
+    ],
+    "expertise_signals": [
+      {
+        "icon": "\ud83d\udccf",
+        "title": "Precision Engineering",
+        "description": "12.7mm bore with h6 tolerance provides \u00b10.008mm precision fit, essential for heavy industrial machinery and power transmission applications."
+      },
+      {
+        "icon": "\ud83d\udd2c",
+        "title": "Material Science",
+        "description": "Gcr15 chrome steel composition optimized for heavy-duty bearing applications, providing superior hardness, wear resistance, and fatigue life."
+      },
+      {
+        "icon": "\u2699\ufe0f",
+        "title": "Performance Optimization",
+        "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
+      },
+      {
+        "icon": "\ud83d\udd27",
+        "title": "Professional Installation",
+        "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
+      },
+      {
+        "icon": "\ud83d\udcca",
+        "title": "Performance Comparison",
+        "description": "Handles 1.93kN more dynamic load than 6202 12.7 while maintaining the same bore diameter. Superior Gcr15 steel vs. standard steel in competing products."
+      },
+      {
+        "icon": "\ud83d\udcb0",
+        "title": "Value Engineering",
+        "description": "Best value in heavy industrial bearing category for 9.58kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
+    ],
+    "comparison_matrix": {
+      "vs_smaller_bearing": "6203 12.7 provides 1.93kN more dynamic load capacity than 6202 12.7 while requiring larger installation space",
+      "vs_larger_bearing": "6203A/42 offers similar load capacity but with 17mm bore for different shaft requirements",
+      "vs_competitors": "RHD 6203 12.7 uses superior Gcr15 steel vs. standard steel in competing products, providing 20% longer service life",
+      "cost_benefit": "Premium quality at competitive pricing, with 3-10x longer service life compared to budget alternatives"
+    }
+  },
+  "faqs": {
+    "selection_replacement": {
+      "title": "Selection & Replacement",
+      "questions": [
+        {
+          "question": "What makes the 6203 12.7 suitable for heavy industrial applications?",
+          "direct_answer": "The 6203 12.7 offers the highest load capacity (9.58kN) in the 12.7mm bore series, making it ideal for heavy industrial machinery and power transmission systems.",
+          "why_matters": "Heavy industrial applications demand bearings that can handle high loads reliably under continuous operation.",
+          "how_to_handle": "Verify your application's load requirements and ensure the 9.58kN dynamic load capacity meets your needs.",
+          "pro_tip": "Consider environmental factors and operating conditions when selecting seal options for industrial applications."
+        },
+        {
+          "question": "Can the 6203 12.7 handle power transmission requirements?",
+          "direct_answer": "Yes, the 6203 12.7 is specifically designed for power transmission applications, offering high load capacity and reliable performance under varying conditions.",
+          "why_matters": "Power transmission systems require bearings that can handle both radial and axial loads reliably.",
+          "how_to_handle": "Choose appropriate seal options based on your environment and ensure proper installation and maintenance.",
+          "pro_tip": "Regular maintenance and monitoring are crucial for power transmission applications."
+        },
+        {
+          "question": "What's the difference between 6203 12.7 and standard 6203 bearings?",
+          "direct_answer": "The 6203 12.7 has a 12.7mm bore instead of the standard 17mm, providing precise fit for applications requiring this specific shaft diameter.",
+          "why_matters": "This allows for perfect shaft fit without requiring custom machining or compromising on bearing selection.",
+          "how_to_handle": "Measure your shaft diameter precisely and select the bearing that provides the best fit.",
+          "pro_tip": "Use precision measuring tools to ensure accurate shaft diameter measurement."
+        }
+      ]
+    },
+    "installation_maintenance": {
+      "title": "Installation & Maintenance",
+      "questions": [
+        {
+          "question": "What shaft tolerance is recommended for the 6203 12.7?",
+          "direct_answer": "An h6 tolerance grade is recommended for the shaft, which provides a precision fit with the 12.7mm bore.",
+          "why_matters": "Proper shaft tolerance ensures optimal bearing performance, reduces vibration, and extends bearing life.",
+          "how_to_handle": "Machine your shaft to 12.7mm with h6 tolerance (\u00b10.008mm) for the best fit.",
+          "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation."
+        },
+        {
+          "question": "How should I lubricate the 6203 12.7 bearing?",
+          "direct_answer": "Use high-quality grease or oil suitable for your operating conditions. The bearing can handle up to 16,000 RPM with grease lubrication.",
+          "why_matters": "Proper lubrication reduces friction, prevents wear, and extends bearing service life.",
+          "how_to_handle": "For sealed versions, the bearing comes pre-lubricated. For open versions, apply appropriate lubricant during installation.",
+          "pro_tip": "Choose lubricants rated for your operating temperature range and speed requirements."
+        },
+        {
+          "question": "What's the maximum speed for the 6203 12.7?",
+          "direct_answer": "The 6203 12.7 can operate at up to 16,000 RPM with grease lubrication and 20,000 RPM with oil lubrication.",
+          "why_matters": "Operating within speed limits prevents overheating and premature bearing failure.",
+          "how_to_handle": "Choose the appropriate seal type based on your speed requirements and environmental conditions.",
+          "pro_tip": "Sealed versions have reduced speed ratings due to increased friction from seals."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "questions": [
+        {
+          "question": "Why is my 6203 12.7 bearing running hot?",
+          "direct_answer": "High temperatures usually indicate insufficient lubrication, excessive load, or speed beyond the bearing's capabilities.",
+          "why_matters": "Overheating can cause premature bearing failure and damage to surrounding components.",
+          "how_to_handle": "Check lubrication levels, verify load doesn't exceed capacity, and ensure speed is within limits.",
+          "pro_tip": "Monitor bearing temperature during operation - it should remain stable and not exceed 80\u00b0C."
+        },
+        {
+          "question": "What causes excessive vibration in the 6203 12.7?",
+          "direct_answer": "Excessive vibration can be caused by improper shaft fit, misalignment, or bearing damage from improper handling.",
+          "why_matters": "High vibration reduces precision, increases wear, and can damage other components.",
+          "how_to_handle": "Check shaft fit, ensure proper alignment, and inspect for visible damage or contamination.",
+          "pro_tip": "Use vibration analysis tools to identify the specific frequency causing the issue."
+        },
+        {
+          "question": "How do I know if my 6203 12.7 bearing needs replacement?",
+          "direct_answer": "Signs include increased noise, excessive vibration, elevated temperature, or reduced precision in your application.",
+          "why_matters": "Continuing to use a worn bearing can cause damage to other components and reduce system performance.",
+          "how_to_handle": "Monitor bearing performance regularly and replace when performance degrades beyond acceptable limits.",
+          "pro_tip": "Keep spare bearings on hand for critical applications to minimize downtime."
+        }
+      ]
+    },
+    "cost_performance": {
+      "title": "Cost & Performance",
+      "questions": [
+        {
+          "question": "Is the 6203 12.7 worth the investment for heavy industrial applications?",
+          "direct_answer": "Yes, the 6203 12.7 provides the highest load capacity in the 12.7mm bore series, making it ideal for heavy industrial machinery and power transmission.",
+          "why_matters": "Heavy industrial applications require bearings that can handle high loads reliably under continuous operation.",
+          "how_to_handle": "Calculate the total cost including installation, maintenance, and potential downtime from using alternative solutions.",
+          "pro_tip": "Consider the long-term value of reliable performance and reduced maintenance requirements."
+        },
+        {
+          "question": "What's the expected service life of the 6203 12.7?",
+          "direct_answer": "With proper installation and maintenance, the 6203 12.7 can provide 50,000+ hours of service life.",
+          "why_matters": "Longer service life reduces replacement costs and system downtime over time.",
+          "how_to_handle": "Follow proper installation procedures, maintain adequate lubrication, and operate within load and speed limits.",
+          "pro_tip": "Regular maintenance and monitoring can extend bearing life beyond the expected 50,000 hours."
+        },
+        {
+          "question": "How does the 6203 12.7 compare to other industrial bearing options?",
+          "direct_answer": "The 6203 12.7 offers excellent load capacity, precision, and speed capability at a competitive price point for heavy industrial applications.",
+          "why_matters": "Understanding the value proposition helps justify the investment in quality bearings.",
+          "how_to_handle": "Compare specifications, performance data, and total cost of ownership with alternative solutions.",
+          "pro_tip": "Consider factors beyond just the initial price, including maintenance costs and system performance."
+        }
+      ]
+    }
+  }
+}

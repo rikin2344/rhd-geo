@@ -1,9 +1,68 @@
 #!/usr/bin/env python3
 """
 Miniature Series Page Generator Script
+=====================================
 
 This script takes bearing JSON files from the models/ directory and generates
 HTML pages in the appropriate miniature-series/ subdirectories.
+
+DIRECTORY STRUCTURE & EXECUTION:
+===============================
+This script should be run from the ROOT WORKSPACE DIRECTORY (e.g., /Users/rdesai/Desktop/RHD GEO)
+
+Expected directory structure:
+├── models/                                    # Source JSON files for all bearing models
+├── webpages/
+│   ├── templates/
+│   │   ├── index_new_claude.html            # HTML template for bearing pages
+│   │   └── styles.css                       # Main CSS file for bearing pages
+│   ├── shared/                              # Shared components (navbar, footer, CTA, watermark)
+│   │   ├── navbar.css, navbar.html
+│   │   ├── footer.css, footer.html
+│   │   ├── cta-model.css, cta-model.html
+│   │   └── watermark.css, watermark.html
+│   └── MiniatureBearingsWebPage/
+│       ├── index.html                       # Main miniature series page
+│       ├── styles.css                       # Main page styles
+│       └── internalpages/                   # Individual model pages (generated here)
+│           ├── 604/
+│           │   ├── index.html               # Generated HTML page
+│           │   └── styles.css               # Copied CSS file
+│           ├── 605/
+│           └── ... (29 total model directories)
+├── deployment/                               # Final deployment files
+│   ├── miniature-series-internal-pages/     # Standalone pages with embedded CSS
+│   │   ├── 604/
+│   │   │   └── index.html                   # Standalone HTML with all CSS embedded
+│   │   ├── 605/
+│   │   └── ... (29 total model directories)
+│   └── miniature-series/                    # Main page standalone version
+│       └── index.html                       # Main page with embedded CSS
+└── scripts/
+    └── generate_miniature_pages.py          # This script
+
+WORKFLOW STEPS:
+===============
+1. GENERATION: Read JSON from models/, create HTML pages in webpages/MiniatureBearingsWebPage/internalpages/
+2. STANDALONE: Create standalone pages with embedded CSS in deployment/miniature-series-internal-pages/
+3. UPLOAD: Upload standalone pages to server from deployment/ directory
+4. MAIN PAGE: Process and upload main MiniatureBearingsWebPage
+
+USAGE:
+======
+From ROOT WORKSPACE DIRECTORY:
+- Complete workflow: python3 scripts/generate_miniature_pages.py
+- Generate only: python3 scripts/generate_miniature_pages.py --generate-only
+- Standalone only: python3 scripts/generate_miniature_pages.py --standalone-only
+- Upload only: python3 scripts/generate_miniature_pages.py --upload-only
+- Webpage only: python3 scripts/generate_miniature_pages.py --webpage-only
+
+REQUIREMENTS:
+=============
+- .env file with FTP_PASSWORD
+- deployment/curl_upload.py available
+- All directories and files in expected locations
+- Run from root workspace directory
 """
 
 import json
@@ -13,6 +72,13 @@ import re
 import subprocess
 from pathlib import Path
 from dotenv import load_dotenv
+
+# Import the curl_upload function from deployment/curl_upload.py
+import importlib.util
+spec = importlib.util.spec_from_file_location("curl_upload", "deployment/curl_upload.py")
+curl_upload_module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(curl_upload_module)
+curl_upload = curl_upload_module.curl_upload
 
 # Load environment variables for FTP credentials
 load_dotenv()
@@ -408,10 +474,22 @@ class MiniaturePageGenerator:
         return dict(items)
 
 def generate_miniature_pages():
-    """Generate only miniature series pages (3-digit models starting with 6)"""
-    models_dir = Path("../models")
-    template_file = Path("../webpages/templates/index_new_claude.html")
-    output_base_dir = Path("../webpages/internalwebpages/specs/miniature-series-internal-pages")
+    """
+    STEP 1: Generate HTML pages from JSON files
+    
+    This function:
+    1. Scans the models/ directory for all JSON files
+    2. Filters for 3-digit models starting with '6' (604, 605, 606, etc.)
+    3. Generates HTML pages using the template from webpages/templates/index_new_claude.html
+    4. Outputs pages to webpages/MiniatureBearingsWebPage/internalpages/
+    5. Copies styles.css to each model directory for proper styling
+    
+    Input: models/*.json files
+    Output: webpages/MiniatureBearingsWebPage/internalpages/[model]/index.html + styles.css
+    """
+    models_dir = Path("models")
+    template_file = Path("webpages/templates/index_new_claude.html")
+    output_base_dir = Path("webpages/MiniatureBearingsWebPage/internalpages")
     
     # Check if required files exist
     if not models_dir.exists():
@@ -487,14 +565,25 @@ def generate_miniature_pages():
         print(f"   📁 Output: {output_dir}/index.html")
         
         try:
-            # Import and use the generate_bearing_page function
-            from generate_bearing_page import generate_bearing_page
+            # Use the built-in MiniaturePageGenerator class
+            output_file = output_dir / "index.html"
+            generator = MiniaturePageGenerator(str(json_file), str(template_file), str(output_file))
             
-            success = generate_bearing_page(str(json_file), str(template_file), str(output_dir))
+            success = generator.generate_page()
             
             if success:
-                print(f"   ✅ Successfully generated {model_name} page")
-                success_count += 1
+                # Copy styles.css to the model directory
+                styles_source = Path("webpages/templates/styles.css")
+                styles_dest = output_dir / "styles.css"
+                if styles_source.exists():
+                    import shutil
+                    shutil.copy2(styles_source, styles_dest)
+                    print(f"   ✅ Successfully generated {model_name} page")
+                    print(f"   📁 Copied styles.css to {model_name}/")
+                    success_count += 1
+                else:
+                    print(f"   ⚠️  Generated {model_name} page but styles.css not found")
+                    success_count += 1
             else:
                 print(f"   ❌ Failed to generate {model_name} page")
                 failed_count += 1
@@ -519,11 +608,23 @@ def generate_miniature_pages():
         return False
 
 def create_standalone_pages():
-    """Create standalone HTML pages directly in this script (no external dependencies)"""
+    """
+    STEP 2: Create standalone pages with embedded CSS
+    
+    This function:
+    1. Reads the generated HTML pages from webpages/MiniatureBearingsWebPage/internalpages/
+    2. Embeds all shared CSS (navbar, footer, CTA, watermark) directly into the HTML
+    3. Embeds the main styles.css content for complete styling
+    4. Creates completely standalone HTML files with no external dependencies
+    5. Outputs to deployment/miniature-series-internal-pages/
+    
+    Input: webpages/MiniatureBearingsWebPage/internalpages/[model]/index.html + styles.css
+    Output: deployment/miniature-series-internal-pages/[model]/index.html (standalone)
+    """
     print(f"\n🚀 CREATING STANDALONE PAGES")
     print(f"==================================================")
     
-    miniature_base_dir = Path("../webpages/internalwebpages/specs/miniature-series")
+    miniature_base_dir = Path("webpages/MiniatureBearingsWebPage/internalpages")
     if not miniature_base_dir.exists():
         print(f"❌ Miniature base directory not found: {miniature_base_dir}")
         print("💡 Make sure to run generate_miniature_pages() first")
@@ -567,14 +668,26 @@ def create_standalone_pages():
     
     if failed_count == 0:
         print(f"\n🎉 All {successful_count} standalone pages created successfully!")
-        print(f"📁 Pages are ready in ../deployment/miniature-series-internal-pages/")
+        print(f"📁 Pages are ready in deployment/miniature-series-internal-pages/")
         return True
     else:
         print(f"\n⚠️  {failed_count} page(s) failed to create. Check the errors above.")
         return False
 
 def create_standalone_model_page(model_name, model_dir):
-    """Create a standalone HTML page for a specific model (integrated logic from create_separate_page.py)"""
+    """
+    Helper function for create_standalone_pages()
+    
+    This function:
+    1. Reads the HTML content from a specific model directory
+    2. Reads and embeds all shared CSS files (navbar, footer, CTA, watermark)
+    3. Reads and embeds the main styles.css for the specific model
+    4. Replaces component placeholders with actual HTML content
+    5. Creates a completely standalone HTML file with all CSS embedded
+    
+    Input: model_dir/index.html + styles.css + shared components
+    Output: deployment/miniature-series-internal-pages/[model]/index.html (standalone)
+    """
     try:
         # Read the generated HTML file
         index_file = model_dir / "index.html"
@@ -586,11 +699,20 @@ def create_standalone_model_page(model_name, model_dir):
             html_content = f.read()
         
         # Read shared CSS files
-        shared_dir = Path("../webpages/shared")
+        shared_dir = Path("webpages/shared")
         navbar_css = ""
         footer_css = ""
         cta_css = ""
         watermark_css = ""
+        
+        # Read the main styles.css file
+        styles_css = ""
+        try:
+            styles_file = model_dir / "styles.css"
+            with open(styles_file, 'r', encoding='utf-8') as f:
+                styles_css = f.read()
+        except:
+            print(f"      ⚠️  styles.css not found, using empty CSS")
         
         try:
             with open(shared_dir / "navbar.css", 'r', encoding='utf-8') as f:
@@ -743,7 +865,8 @@ body {{
 /* Watermark CSS */
 {watermark_css}
 
-/* Page-specific CSS is already embedded in the body content */
+/* Main Page Styles */
+{styles_css}
     </style>
 </head>
 <body>
@@ -753,7 +876,7 @@ body {{
 </html>'''
         
         # Create deployment directory
-        deployment_dir = Path("../deployment/miniature-series-internal-pages")
+        deployment_dir = Path("deployment/miniature-series-internal-pages")
         deployment_dir.mkdir(parents=True, exist_ok=True)
         
         # Save standalone page
@@ -771,10 +894,21 @@ body {{
         return False
 
 def create_standalone_miniature_webpage():
-    """Create standalone HTML page for MiniatureBearingsWebPage (integrated logic)"""
+    """
+    Helper function for process_miniature_webpage()
+    
+    This function:
+    1. Reads the main MiniatureBearingsWebPage index.html and styles.css
+    2. Embeds shared components (navbar, footer, CTA, watermark)
+    3. Creates a standalone version of the main page
+    4. Outputs to deployment/miniature-series/index.html
+    
+    Input: webpages/MiniatureBearingsWebPage/index.html + styles.css + shared components
+    Output: deployment/miniature-series/index.html (standalone)
+    """
     try:
         # Source directory (MiniatureBearingsWebPage)
-        source_dir = Path("../webpages/MiniatureBearingsWebPage")
+        source_dir = Path("webpages/MiniatureBearingsWebPage")
         source_index = source_dir / "index.html"
         source_styles = source_dir / "styles.css"
         
@@ -785,16 +919,42 @@ def create_standalone_miniature_webpage():
             css_content = f.read()
         
         # Read shared CSS files
-        shared_dir = Path("../webpages/shared")
+        shared_dir = Path("webpages/shared")
         navbar_css = ""
+        footer_css = ""
+        cta_css = ""
+        watermark_css = ""
+        
         try:
             with open(shared_dir / "navbar.css", 'r', encoding='utf-8') as f:
                 navbar_css = f.read()
         except:
             print(f"      ⚠️  navbar.css not found, using empty CSS")
         
-        # Read navbar HTML
+        try:
+            with open(shared_dir / "footer.css", 'r', encoding='utf-8') as f:
+                footer_css = f.read()
+        except:
+            print(f"      ⚠️  footer.css not found, using empty CSS")
+        
+        try:
+            with open(shared_dir / "cta-model.css", 'r', encoding='utf-8') as f:
+                cta_css = f.read()
+        except:
+            print(f"      ⚠️  cta-model.css not found, using empty CSS")
+        
+        try:
+            with open(shared_dir / "watermark.css", 'r', encoding='utf-8') as f:
+                watermark_css = f.read()
+        except:
+            print(f"      ⚠️  watermark.css not found, using empty CSS")
+        
+        # Read shared HTML files
         navbar_html = ""
+        footer_html = ""
+        cta_html = ""
+        watermark_html = ""
+        
         try:
             with open(shared_dir / "navbar.html", 'r', encoding='utf-8') as f:
                 navbar_html = f.read()
@@ -804,6 +964,24 @@ def create_standalone_miniature_webpage():
                     navbar_html = navbar_html[:script_start].strip()
         except:
             print(f"      ⚠️  navbar.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "footer.html", 'r', encoding='utf-8') as f:
+                footer_html = f.read()
+        except:
+            print(f"      ⚠️  footer.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "cta-model.html", 'r', encoding='utf-8') as f:
+                cta_html = f.read()
+        except:
+            print(f"      ⚠️  cta-model.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "watermark.html", 'r', encoding='utf-8') as f:
+                watermark_html = f.read()
+        except:
+            print(f"      ⚠️  watermark.html not found, using empty HTML")
         
         # Extract body content
         body_start = html_content.find('<body')
@@ -835,6 +1013,13 @@ def create_standalone_miniature_webpage():
         
         # Replace navbar container with actual navbar HTML
         body_content = body_content.replace('<div id="navbar-container"></div>', navbar_html)
+        
+        # Replace component containers with actual HTML
+        body_content = body_content.replace('<div id="cta-container"></div>', cta_html)
+        if 'id="footer-container"' in body_content:
+            body_content = body_content.replace('<div id="footer-container"></div>', footer_html)
+        if 'id="watermark-container"' in body_content:
+            body_content = body_content.replace('<div id="watermark-container"></div>', watermark_html)
         
         # Remove all fetch calls and problematic patterns
         import re
@@ -880,6 +1065,15 @@ body {{
 /* Navbar CSS */
 {navbar_css}
 
+/* Footer CSS */
+{footer_css}
+
+/* CTA CSS */
+{cta_css}
+
+/* Watermark CSS */
+{watermark_css}
+
 /* Page CSS */
 {css_content}
     </style>
@@ -891,7 +1085,7 @@ body {{
 </html>'''
         
         # Create deployment directory
-        deployment_dir = Path("../deployment/miniature-series")
+        deployment_dir = Path("deployment/miniature-series")
         deployment_dir.mkdir(parents=True, exist_ok=True)
         
         # Save standalone page
@@ -908,34 +1102,39 @@ body {{
         return False
 
 def upload_pages():
-    """Upload all miniature series pages using curl"""
+    """
+    STEP 3: Upload standalone pages to server
+    
+    This function:
+    1. Reads standalone HTML files from deployment/miniature-series-internal-pages/
+    2. Uploads each model page to the server using curl FTP
+    3. Creates proper directory structure on server: specs/miniature-series/[model]/
+    4. Generates live URLs: https://rhdbearings.com/specs/miniature-series/[model]/
+    
+    IMPORTANT: This uploads from deployment/ directory (standalone pages with embedded CSS)
+    NOT from the source directory (pages with external CSS dependencies)
+    
+    Input: deployment/miniature-series-internal-pages/[model]/index.html (standalone)
+    Output: Live server URLs for all 29 model pages
+    """
     print(f"\n🚀 UPLOADING PAGES TO SERVER")
     print(f"==================================================")
     
-    username = os.getenv('FTP_USERNAME', 'rikin@rhdbearings.com')
-    password = os.getenv('FTP_PASSWORD')
-    host = os.getenv('FTP_HOST', 'ftp.rhdbearings.com')
+    # No need for FTP credentials - curl_upload handles that
     
-    # Check if password is available
-    if not password:
-        print("❌ FTP_PASSWORD environment variable not found!")
-        print("💡 Make sure you have a .env file with FTP_PASSWORD=your_password")
-        return False
-    
-    print(f"🔐 Using FTP credentials: {username}@{host}")
-    
-    deployment_dir = Path("../deployment/miniature-series-internal-pages")
-    if not deployment_dir.exists():
-        print(f"   ❌ Deployment directory not found: {deployment_dir}")
+    source_dir = Path("deployment/miniature-series-internal-pages")
+    if not source_dir.exists():
+        print(f"   ❌ Source directory not found: {source_dir}")
         return False
     
     # Get all model directories
-    model_dirs = [d for d in deployment_dir.iterdir() if d.is_dir()]
+    model_dirs = [d for d in source_dir.iterdir() if d.is_dir()]
     if not model_dirs:
-        print(f"   ❌ No model directories found in {deployment_dir}")
+        print(f"   ❌ No model directories found in {source_dir}")
         return False
     
-    print(f"📋 Found {len(model_dirs)} model directories to upload")
+        print(f"📋 Found {len(model_dirs)} model directories to upload")
+    print(f"🔧 Using deployment/curl_upload.py for reliable uploads")
     
     failed_count = 0
     successful_count = 0
@@ -952,26 +1151,22 @@ def upload_pages():
         print(f"\n📤 Uploading {model_name}...")
         
         try:
-            local_file = str(index_file)
-            remote_file = f"specs/miniature-series/{model_name}/index.html"
+            # Change to deployment directory for curl_upload to work correctly
+            original_cwd = os.getcwd()
+            os.chdir("deployment")
             
-            # Build curl command with directory creation
-            cmd = [
-                'curl',
-                '--ftp-create-dirs',
-                '-T', local_file,
-                '-u', f"{username}:{password}",
-                f"ftp://{host}/public_html/{remote_file}"
-            ]
+            # Use the imported curl_upload function
+            success = curl_upload(model_name)
             
-            result = subprocess.run(cmd, capture_output=True, text=True)
+            # Change back to original directory
+            os.chdir(original_cwd)
             
-            if result.returncode == 0:
+            if success:
                 print(f"   ✅ Successfully uploaded {model_name}")
                 print(f"   🔗 URL: https://rhdbearings.com/specs/miniature-series/{model_name}/")
                 successful_count += 1
             else:
-                print(f"   ❌ Failed to upload {model_name}: {result.stderr}")
+                print(f"   ❌ Failed to upload {model_name}")
                 failed_count += 1
                 
         except Exception as e:
@@ -994,12 +1189,23 @@ def upload_pages():
         return False
 
 def process_miniature_webpage():
-    """Process MiniatureBearingsWebPage and create standalone page in deployment/miniature-series/, then upload it"""
+    """
+    STEP 4: Process and upload main MiniatureBearingsWebPage
+    
+    This function:
+    1. Reads the main MiniatureBearingsWebPage from webpages/MiniatureBearingsWebPage/
+    2. Creates a standalone version with embedded CSS in deployment/miniature-series/
+    3. Uploads the standalone main page to the server
+    4. Generates live URL: https://rhdbearings.com/specs/miniature-series.html
+    
+    Input: webpages/MiniatureBearingsWebPage/index.html + styles.css + shared components
+    Output: Live server URL for main miniature series page
+    """
     print(f"\n🚀 PROCESSING MINIATURE WEBPAGE")
     print(f"==================================================")
     
     # Source directory (MiniatureBearingsWebPage)
-    source_dir = Path("../webpages/MiniatureBearingsWebPage")
+    source_dir = Path("webpages/MiniatureBearingsWebPage")
     if not source_dir.exists():
         print(f"   ❌ Source directory not found: {source_dir}")
         return False
@@ -1028,7 +1234,7 @@ def process_miniature_webpage():
         success = create_standalone_miniature_webpage()
         if success:
             print(f"   ✅ Successfully created standalone page")
-            print(f"   📁 Output: ../deployment/miniature-series/index.html")
+            print(f"   📁 Output: deployment/miniature-series/index.html")
         else:
             print(f"   ❌ Failed to create standalone page")
             return False
@@ -1040,38 +1246,25 @@ def process_miniature_webpage():
     # Upload the page to the server
     print(f"\n📤 Uploading MiniatureBearingsWebPage to server...")
     
-    username = os.getenv('FTP_USERNAME', 'rikin@rhdbearings.com')
-    password = os.getenv('FTP_PASSWORD')
-    host = os.getenv('FTP_HOST', 'ftp.rhdbearings.com')
-    
-    # Check if password is available
-    if not password:
-        print("   ❌ FTP_PASSWORD environment variable not found!")
-        print("   💡 Make sure you have a .env file with FTP_PASSWORD=your_password")
-        return False
-    
-    print(f"   🔐 Using FTP credentials: {username}@{host}")
+    # No need for FTP credentials - curl_upload handles that
+    print(f"   🔧 Using deployment/curl_upload.py for reliable upload")
     
     try:
-        local_file = "../deployment/miniature-series/index.html"
-        remote_file = "specs/miniature-series.html"
+        # Change to deployment directory for curl_upload to work correctly
+        original_cwd = os.getcwd()
+        os.chdir("deployment")
         
-        # Build curl command with directory creation
-        cmd = [
-            'curl',
-            '--ftp-create-dirs',
-            '-T', local_file,
-            '-u', f"{username}:{password}",
-            f"ftp://{host}/public_html/{remote_file}"
-        ]
+        # Use the imported curl_upload function for the main page
+        success = curl_upload('miniature')
         
-        result = subprocess.run(cmd, capture_output=True, text=True)
+        # Change back to original directory
+        os.chdir(original_cwd)
         
-        if result.returncode == 0:
+        if success:
             print(f"   ✅ Successfully uploaded MiniatureBearingsWebPage")
             print(f"   🔗 URL: https://rhdbearings.com/specs/miniature-series.html")
         else:
-            print(f"   ❌ Failed to upload: {result.stderr}")
+            print(f"   ❌ Failed to upload MiniatureBearingsWebPage")
             return False
             
     except Exception as e:
@@ -1079,12 +1272,32 @@ def process_miniature_webpage():
         return False
     
     print(f"\n🎉 MiniatureBearingsWebPage processed and uploaded successfully!")
-    print(f"📁 Standalone page ready in: ../deployment/miniature-series/")
+    print(f"📁 Standalone page ready in: deployment/miniature-series/")
     print(f"🌐 Live on server at: https://rhdbearings.com/specs/miniature-series.html")
     return True
 
 def main():
-    """Main function"""
+    """
+    Main function - Complete workflow execution
+    
+    This function orchestrates the entire 4-step process:
+    1. Generate HTML pages from JSON files
+    2. Create standalone pages with embedded CSS
+    3. Upload all pages to the server
+    4. Process and upload main MiniatureBearingsWebPage
+    
+    COMMAND LINE USAGE:
+    - No arguments: Run complete workflow (all 4 steps)
+    - --generate-only: Run only step 1 (HTML generation)
+    - --standalone-only: Run only step 2 (standalone page creation)
+    - --upload-only: Run only step 3 (server upload)
+    - --webpage-only: Run only step 4 (main page processing)
+    - --help: Show usage information
+    
+    EXECUTION ORDER:
+    The steps must be run in sequence for the complete workflow to work properly.
+    Each step depends on the output of the previous step.
+    """
     if len(sys.argv) > 1:
         step = sys.argv[1].lower()
         
@@ -1115,7 +1328,7 @@ def main():
         elif step == '--help' or step == '-h':
             print("🚀 MINIATURE SERIES COMPLETE WORKFLOW SCRIPT")
             print("=" * 60)
-            print("✅ COMPLETELY INDEPENDENT - No external script dependencies!")
+            print("✅ Uses deployment/curl_upload.py for reliable uploads!")
             print("=" * 60)
             print("Usage:")
             print("  python generate_miniature_pages.py              # Run complete workflow")
@@ -1147,9 +1360,9 @@ def main():
     print("=" * 60)
     print("\n📋 REQUIREMENTS:")
     print("   • .env file with FTP credentials (FTP_PASSWORD)")
-    print("   • curl command available")
-    print("   • MiniatureBearingsWebPage in ../webpages/")
-    print("   • Shared components in ../webpages/shared/")
+    print("   • deployment/curl_upload.py available")
+    print("   • MiniatureBearingsWebPage in webpages/")
+    print("   • Shared components in webpages/shared/")
     print("=" * 60)
     
     # Step 1: Generate HTML pages
@@ -1201,6 +1414,29 @@ def main():
     print("🔗 Visit: https://rhdbearings.com/specs/miniature-series/")
     print("🔗 Visit: https://rhdbearings.com/specs/miniature-series.html")
     print("=" * 60)
+    
+    """
+    WORKFLOW COMPLETION SUMMARY:
+    ===========================
+    
+    WHAT WAS ACCOMPLISHED:
+    - 29 miniature series model pages generated from JSON data
+    - All pages converted to standalone format with embedded CSS
+    - All pages uploaded to live server with proper URLs
+    - Main miniature series page processed and uploaded
+    
+    FINAL OUTPUT LOCATIONS:
+    - Source pages: webpages/MiniatureBearingsWebPage/internalpages/
+    - Standalone pages: deployment/miniature-series-internal-pages/
+    - Main page: deployment/miniature-series/
+    - Live URLs: https://rhdbearings.com/specs/miniature-series/[model]/
+    
+    NEXT STEPS:
+    - Verify all pages are displaying correctly on the live server
+    - Check that CSS styling is working properly
+    - Monitor for any issues or errors
+    - Repeat workflow when new models are added or updates are needed
+    """
 
 if __name__ == "__main__":
     main()

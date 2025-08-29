@@ -44,12 +44,12 @@
     "outer_diameter_D_mm": 16,
     "width_B_mm": 5,
     "weight_kg": 0.004,
-          "skf_extended_dimensions": {
-        "d1_shoulder_diameter": 8.4,
-        "D2_recess_diameter": 13.22,
-        "r1_chamfer_radius": 0.3,
-        "r2_chamfer_radius": 0.3
-      }
+    "skf_extended_dimensions": {
+      "d1_shoulder_diameter": 8.4,
+      "D2_recess_diameter": 13.22,
+      "r1_chamfer_radius": 0.3,
+      "r2_chamfer_radius": 0.3
+    }
   },
   "load_ratings": {
     "dynamic_load_Cr_kN": 1.88,
@@ -90,7 +90,7 @@
         "sanders",
         "planers"
       ],
-      "requirements": "5mm shaft with 1.88kN dynamic load capacity, 32,000 RPM grease lubrication, robust 16×5mm profile for power tool applications"
+      "requirements": "5mm shaft with 1.88kN dynamic load capacity, 32,000 RPM grease lubrication, robust 16\u00d75mm profile for power tool applications"
     },
     "application2": {
       "title": "Precision Measurement",
@@ -142,8 +142,8 @@
   },
   "noise": {
     "Z2": 34,
-    "Z3": 32,
-    "Z4": 28
+    "Z3": 30,
+    "Z4": 26
   },
   "clearance": {
     "C2": {
@@ -174,7 +174,7 @@
       "speed_factor": 1.0,
       "max_rpm": 32000,
       "protection": "None",
-      "lubrication": "External required",    
+      "lubrication": "External required",
       "badge": "High Speed"
     },
     "single_shield": {
@@ -215,7 +215,7 @@
     }
   },
   "seo_metadata": {
-    "title": "625 Bearing 5×16×5mm Deep Groove Ball Bearing | RHD",
+    "title": "625 Bearing 5\u00d716\u00d75mm Deep Groove Ball Bearing | RHD",
     "meta_description": "625 deep groove ball bearing with 5mm bore, 16mm OD, 5mm width. 1.88kN dynamic load, 192kg capacity. Perfect for power tools, precision measurement, automation.",
     "keywords": [
       "625 bearing",
@@ -247,7 +247,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/625/",
     "og_data": {
-      "title": "625 Deep Groove Ball Bearing - 5×16×5mm | RHD Bearings",
+      "title": "625 Deep Groove Ball Bearing - 5\u00d716\u00d75mm | RHD Bearings",
       "description": "High-performance 625 miniature bearing with 1.88kN dynamic load capacity. Perfect for power tools, precision measurement, and industrial automation.",
       "url": "https://rhdbearings.com/specs/miniature-series/625/",
       "type": "product",
@@ -266,10 +266,7 @@
       "description": "625 deep groove ball bearing with 5mm bore, 16mm outer diameter, 5mm width. 1.88kN dynamic load capacity, 192kg load capacity.",
       "sku": "625",
       "mpn": "625",
-      "brand": {
-        "@type": "Brand",
-        "name": "RHD Bearings"
-      },
+      "brand": "RHD Bearings",
       "manufacturer": {
         "@type": "Organization",
         "name": "RHD Bearings",
@@ -288,15 +285,13 @@
         }
       },
       "structured_data_type": "Product",
-      "brand": "RHD Bearings",
-      "category": "Deep Groove Ball Bearings",
       "availability": "InStock",
       "condition": "NewCondition"
     }
   },
   "pricing_and_availability": {
     "currency": "INR",
-    "list_price": null, 
+    "list_price": null,
     "quote_required": true,
     "price_notes": "Please contact us for pricing",
     "minimum_order_quantity": 100,
@@ -306,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -327,11 +322,16 @@
     }
   },
   "cross_references": {
-    "related_models": ["605", "635", "685", "695"],
+    "related_models": [
+      "605",
+      "635",
+      "685",
+      "695"
+    ],
     "shaft_requirements": {
       "nominal_diameter": "5.000mm",
       "tolerance_grade": "h6 (4.991-5.009mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -345,7 +345,7 @@
       "Choose 625 for 5mm shafts requiring 1.88kN dynamic load capacity in performance applications",
       "Select 625-ZZ for dust protection with 28,800 RPM capability and sealed-for-life lubrication",
       "Use 625-RS in moisture-prone environments requiring 25,600 RPM with rubber seal protection",
-      "Consider 625 for power tools where 16×5mm profile and 192kg load capacity optimize performance",
+      "Consider 625 for power tools where 16\u00d75mm profile and 192kg load capacity optimize performance",
       "Opt for 625 in precision measurement needing 0.3mm chamfer radius and stable positioning",
       "Deploy 625 in industrial automation requiring 32,000 RPM grease lubrication with robust design"
     ],
@@ -367,7 +367,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need high-performance bearing for 5mm shaft with substantial load capacity",
-        "solution": "625 bearing provides 1.88kN dynamic load in 16×5mm profile"
+        "solution": "625 bearing provides 1.88kN dynamic load in 16\u00d75mm profile"
       },
       {
         "problem": "Require dust protection in power tool application",
@@ -380,35 +380,35 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "5mm bore with 1.88kN load capacity and 32,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in miniature bearing category for 1.88kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
-      }      
+      }
     ],
     "comparison_matrix": {
       "vs_smaller_bearing": "625 provides 0.73kN higher dynamic load than 624 with 1mm larger bore for enhanced performance",
@@ -430,7 +430,7 @@
         },
         {
           "question": "Can I replace a 625 bearing with a different size bearing?",
-          "direct_answer": "No, 625 bearings have unique 5×16×5mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 625 bearings have unique 5\u00d716\u00d75mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 625 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 625 bearings in stock to avoid production delays and ensure consistent quality."

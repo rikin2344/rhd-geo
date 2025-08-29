@@ -44,16 +44,16 @@
     "outer_diameter_D_mm": 24,
     "width_B_mm": 7,
     "weight_kg": 0.016,
-          "skf_extended_dimensions": {
-        "d1_shoulder_diameter": 14.45,
-        "D2_recess_diameter": 21.2,
-        "r1_chamfer_radius": 0.3,
-        "r2_chamfer_radius": 0.3
-      }
+    "skf_extended_dimensions": {
+      "d1_shoulder_diameter": 14.45,
+      "D2_recess_diameter": 21.2,
+      "r1_chamfer_radius": 0.3,
+      "r2_chamfer_radius": 0.3
+    }
   },
   "load_ratings": {
     "dynamic_load_Cr_kN": 3.35,
-    "static_load_Cor_kN": 1.40,
+    "static_load_Cor_kN": 1.4,
     "load_capacity_kg": 342
   },
   "speed_limits": {
@@ -90,7 +90,7 @@
         "belt drives",
         "pulley systems"
       ],
-      "requirements": "9mm shaft with 3.35kN dynamic load capacity, 22,000 RPM grease lubrication, robust 24×7mm profile for demanding industrial applications"
+      "requirements": "9mm shaft with 3.35kN dynamic load capacity, 22,000 RPM grease lubrication, robust 24\u00d77mm profile for demanding industrial applications"
     },
     "application2": {
       "title": "Precision Instrumentation",
@@ -174,7 +174,7 @@
       "speed_factor": 1.0,
       "max_rpm": 22000,
       "protection": "None",
-      "lubrication": "External required",    
+      "lubrication": "External required",
       "badge": "High Speed"
     },
     "single_shield": {
@@ -215,7 +215,7 @@
     }
   },
   "seo_metadata": {
-    "title": "609 Bearing 9×24×7mm Deep Groove Ball Bearing | RHD",
+    "title": "609 Bearing 9\u00d724\u00d77mm Deep Groove Ball Bearing | RHD",
     "meta_description": "609 deep groove ball bearing with 9mm bore, 24mm OD, 7mm width. 3.35kN dynamic load, 342kg capacity. Ideal for pumps, compressors, automotive systems.",
     "keywords": [
       "609 bearing",
@@ -247,7 +247,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/609/",
     "og_data": {
-      "title": "609 Deep Groove Ball Bearing - 9×24×7mm | RHD Bearings",
+      "title": "609 Deep Groove Ball Bearing - 9\u00d724\u00d77mm | RHD Bearings",
       "description": "High-quality 609 miniature bearing with 3.35kN dynamic load capacity. Perfect for industrial pumps, compressors, and automotive applications.",
       "url": "https://rhdbearings.com/specs/miniature-series/609/",
       "type": "product",
@@ -266,10 +266,7 @@
       "description": "609 deep groove ball bearing with 9mm bore, 24mm outer diameter, 7mm width. 3.35kN dynamic load capacity, 342kg load capacity.",
       "sku": "609",
       "mpn": "609",
-      "brand": {
-        "@type": "Brand",
-        "name": "RHD Bearings"
-      },
+      "brand": "RHD Bearings",
       "manufacturer": {
         "@type": "Organization",
         "name": "RHD Bearings",
@@ -288,15 +285,13 @@
         }
       },
       "structured_data_type": "Product",
-      "brand": "RHD Bearings",
-      "category": "Deep Groove Ball Bearings",
       "availability": "InStock",
       "condition": "NewCondition"
     }
   },
   "pricing_and_availability": {
     "currency": "INR",
-    "list_price": null, 
+    "list_price": null,
     "quote_required": true,
     "price_notes": "Please contact us for pricing",
     "minimum_order_quantity": 100,
@@ -306,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -327,11 +322,16 @@
     }
   },
   "cross_references": {
-    "related_models": ["629", "639", "689", "699"],
+    "related_models": [
+      "629",
+      "639",
+      "689",
+      "699"
+    ],
     "shaft_requirements": {
       "nominal_diameter": "9.000mm",
       "tolerance_grade": "h6 (8.991-9.009mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -345,7 +345,7 @@
       "Choose 609 for 9mm shafts requiring 3.35kN dynamic load capacity in industrial applications",
       "Select 609-ZZ for dust protection with 19,800 RPM capability and sealed-for-life lubrication",
       "Use 609-RS in moisture-prone environments requiring 17,600 RPM with rubber seal protection",
-      "Consider 609 for industrial pumps where 24×7mm profile and 342kg load capacity optimize performance",
+      "Consider 609 for industrial pumps where 24\u00d77mm profile and 342kg load capacity optimize performance",
       "Opt for 609 in precision instrumentation needing 0.3mm chamfer radius and stable positioning",
       "Deploy 609 in automotive systems requiring 22,000 RPM grease lubrication with enhanced load handling"
     ],
@@ -367,7 +367,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need robust bearing for 9mm shaft with high load capacity",
-        "solution": "609 bearing provides 3.35kN dynamic load in 24×7mm profile"
+        "solution": "609 bearing provides 3.35kN dynamic load in 24\u00d77mm profile"
       },
       {
         "problem": "Require dust protection in industrial environment",
@@ -380,35 +380,35 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 0.03kN higher load than 608 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in small-bearing category for 3.35kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
-      }      
+      }
     ],
     "comparison_matrix": {
       "vs_smaller_bearing": "609 provides 0.03kN higher dynamic load than 608 with 2mm larger diameter for enhanced load distribution",
@@ -430,7 +430,7 @@
         },
         {
           "question": "Can I replace a 609 bearing with a different size bearing?",
-          "direct_answer": "No, 609 bearings have unique 9×24×7mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 609 bearings have unique 9\u00d724\u00d77mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 609 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 609 bearings in stock to avoid production delays and ensure consistent quality."

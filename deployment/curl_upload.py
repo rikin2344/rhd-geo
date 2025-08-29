@@ -120,9 +120,9 @@ def curl_upload(page_type='miniature'):
     elif is_model_page(page_type):
         # Handle any model page dynamically
         model_info = get_model_upload_info(page_type)
-        local_file = f'./specs/{model_info["series"]}/{model_info["model"]}/index.html'
-        remote_file = f'specs/{model_info["series"]}/{model_info["model"]}/index.html'
-        clean_url = f'https://rhdbearings.com/specs/{model_info["series"]}/{model_info["model"]}'
+        local_file = f'./{model_info["series"]}/{model_info["model"]}/index.html'
+        remote_file = f'specs/miniature-series/{model_info["model"]}/index.html'
+        clean_url = f'https://rhdbearings.com/specs/miniature-series/{model_info["model"]}'
         
         # Check if the local file exists
         if not os.path.exists(local_file):

@@ -1,0 +1,515 @@
+{
+  "company_metadata": {
+    "name": "RHD Bearings",
+    "website": "https://rhdbearings.com",
+    "contact": {
+      "phone": "+91-9702081858",
+      "email": "sales@rhdenterprise.in",
+      "oem_sales_email": "oemsales@rhdenterprise.in"
+    },
+    "address": {
+      "street": "203 Vihar Estate, Off. Saki Vihar Road",
+      "landmark": "Next to Autohanger",
+      "area": "Sakinaka, Andheri East",
+      "city": "Mumbai",
+      "postal_code": "400072",
+      "state": "Maharashtra",
+      "country": "India",
+      "full_address": "203 Vihar Estate, Off. Saki Vihar Road, Next to Autohanger, Sakinaka, Andheri East, Mumbai 400072, Maharashtra, India"
+    },
+    "certifications": [
+      "ISO 9001:2015"
+    ],
+    "material_standards": {
+      "primary_steel": "Gcr15 (AISI 52100 equivalent)",
+      "heat_treatment": "Through hardened and tempered",
+      "surface_finish": "Ground to precision tolerances"
+    },
+    "quality_assurance": "100% dimensional and quality testing",
+    "manufacturing_location": "India",
+    "established": "Professional bearing manufacturer",
+    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "production_capacity": "High-volume production with custom solutions available",
+    "export_markets": [
+      "Global distribution network",
+      "OEM partnerships",
+      "Aftermarket supply"
+    ]
+  },
+  "bearing_type": "Deep Groove Ball Bearing",
+  "model_number": "6203A/42",
+  "enhanced_description": "The 6203A/42 represents a specialized variant designed for applications requiring a 17mm bore with enhanced load handling capabilities. This bearing combines the precision engineering of the 6200 series with the unique dimensional requirements of specialized machinery and equipment. Its 42\u00d712mm profile provides the perfect balance between compact design and robust performance, making it ideal for applications where standard bearing dimensions don't meet specific design requirements.",
+  "dimensions": {
+    "bore_diameter_d_mm": 17,
+    "outer_diameter_D_mm": 42,
+    "width_B_mm": 12,
+    "weight_kg": 0.064,
+    "skf_extended_dimensions": {
+      "d1_shoulder_diameter": null,
+      "D2_recess_diameter": null,
+      "r1_chamfer_radius": null,
+      "r2_chamfer_radius": null
+    }
+  },
+  "load_ratings": {
+    "dynamic_load_Cr_kN": 9.58,
+    "static_load_Cor_kN": 4.78,
+    "load_capacity_kg": 977
+  },
+  "speed_limits": {
+    "grease_rpm": 16000,
+    "oil_rpm": 20000,
+    "recommended_max_rpm": 14400
+  },
+  "material": {
+    "grade": "Gcr15 (AISI 52100)",
+    "carbon_content": "0.95-1.05%",
+    "chromium_content": "1.40-1.65%",
+    "silicon_content": "0.15-0.35%",
+    "iso_standard": "15:2011 Compliant"
+  },
+  "technical_drawing": {
+    "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+    "image_alt": "6203A/42 Bearing Cross-Sectional View",
+    "image_title": "Bearing Cross-Sectional View",
+    "drawing_type": "Cross-sectional technical diagram",
+    "file_format": "SVG",
+    "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 6203A/42 deep groove ball bearing"
+  },
+  "applications": {
+    "application1": {
+      "title": "Specialized Industrial Equipment",
+      "icon": "zap",
+      "applications": [
+        "Custom machinery",
+        "Specialized conveyors",
+        "Unique drive systems",
+        "Custom automation",
+        "Specialized pumps",
+        "Custom compressors",
+        "Unique material handling",
+        "Specialized processing"
+      ],
+      "requirements": "Must handle specific dimensional requirements, provide reliable performance under varying loads, and maintain precision in specialized applications."
+    },
+    "application2": {
+      "title": "Custom Automotive Systems",
+      "icon": "target",
+      "applications": [
+        "Custom transmission systems",
+        "Specialized drivetrain components",
+        "Custom steering mechanisms",
+        "Unique suspension systems",
+        "Custom engine components",
+        "Specialized brake systems",
+        "Custom clutch mechanisms",
+        "Unique cooling systems"
+      ],
+      "requirements": "Must withstand automotive temperature ranges, provide reliable performance under varying loads, and maintain precision in harsh environments."
+    },
+    "application3": {
+      "title": "Precision Engineering & Research",
+      "icon": "cog",
+      "applications": [
+        "Research equipment",
+        "Custom measurement devices",
+        "Specialized laboratory equipment",
+        "Custom optical systems",
+        "Unique positioning devices",
+        "Specialized calibration equipment",
+        "Custom testing apparatus",
+        "Unique research instruments"
+      ],
+      "requirements": "Must maintain high precision, provide smooth operation, and deliver consistent performance in specialized research and engineering environments."
+    }
+  },
+  "vibration": {
+    "V2": {
+      "low_frequency": 110,
+      "medium_frequency": 78,
+      "high_frequency": 60
+    },
+    "V3": {
+      "low_frequency": 65,
+      "medium_frequency": 46,
+      "high_frequency": 35
+    },
+    "V4": {
+      "low_frequency": 52,
+      "medium_frequency": 25,
+      "high_frequency": 25
+    }
+  },
+  "noise": {
+    "Z2": 41,
+    "Z3": 36,
+    "Z4": 31
+  },
+  "clearance": {
+    "C2": {
+      "min_microns": 0,
+      "max_microns": 9
+    },
+    "C0": {
+      "min_microns": 3,
+      "max_microns": 18
+    },
+    "C3": {
+      "min_microns": 11,
+      "max_microns": 25
+    },
+    "C4": {
+      "min_microns": 18,
+      "max_microns": 33
+    },
+    "C5": {
+      "min_microns": 25,
+      "max_microns": 45
+    }
+  },
+  "seal_options": {
+    "open": {
+      "designation": "6203A/42",
+      "description": "Open bearing, no seals",
+      "speed_factor": 1.0,
+      "max_rpm": 16000,
+      "protection": "None",
+      "lubrication": "External required",
+      "badge": "High Speed"
+    },
+    "single_shield": {
+      "designation": "6203A/42-Z",
+      "description": "Single metal shield",
+      "speed_factor": 0.95,
+      "max_rpm": 15200,
+      "protection": "Light dust protection",
+      "lubrication": "Pre-greased",
+      "badge": "Balanced"
+    },
+    "double_shield": {
+      "designation": "6203A/42-ZZ",
+      "description": "Double metal shields",
+      "speed_factor": 0.9,
+      "max_rpm": 14400,
+      "protection": "Dust protection",
+      "lubrication": "Sealed for life",
+      "badge": "Most Popular"
+    },
+    "single_seal": {
+      "designation": "6203A/42-RS",
+      "description": "Single rubber seal",
+      "speed_factor": 0.8,
+      "max_rpm": 12800,
+      "protection": "Moisture and dust",
+      "lubrication": "Pre-greased, sealed",
+      "badge": "Protected"
+    },
+    "double_seal": {
+      "designation": "6203A/42-2RS",
+      "description": "Double rubber seals",
+      "speed_factor": 0.7,
+      "max_rpm": 11200,
+      "protection": "Moisture and dust",
+      "lubrication": "Sealed for life",
+      "badge": "Protected"
+    }
+  },
+  "seo_metadata": {
+    "title": "6203A/42 Bearing 17\u00d742\u00d712mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "6203A/42 deep groove ball bearing with 17mm bore, 42mm OD, 12mm width. 9.58kN dynamic load, 977kg capacity. Perfect for specialized industrial and custom automotive applications.",
+    "keywords": [
+      "6203A/42 bearing",
+      "17mm bore bearing",
+      "42mm OD bearing",
+      "deep groove ball bearing",
+      "specialized bearing",
+      "custom bearing",
+      "industrial bearing",
+      "automotive bearing",
+      "custom machinery bearing",
+      "specialized equipment bearing",
+      "custom transmission bearing",
+      "specialized drivetrain bearing",
+      "research equipment bearing",
+      "custom measurement bearing",
+      "laboratory equipment bearing",
+      "RHD bearings",
+      "India bearings"
+    ],
+    "canonical_url": "https://rhdbearings.com/specs/6200-Series/6203A/42/",
+    "og_data": {
+      "title": "6203A/42 Deep Groove Ball Bearing - 17\u00d742\u00d712mm | RHD Bearings",
+      "description": "High-quality 6203A/42 bearing with 9.58kN dynamic load capacity. Perfect for specialized industrial equipment and custom automotive applications.",
+      "url": "https://rhdbearings.com/specs/6200-Series/6203A/42/",
+      "type": "product",
+      "site_name": "RHD Bearings"
+    },
+    "twitter_data": {
+      "card": "summary_large_image",
+      "title": "6203A/42 Bearing - Specialized Application Solution",
+      "description": "17mm bore, 9.58kN load capacity, 16,000 RPM. Ideal for custom machinery, specialized equipment, and research applications."
+    },
+    "schema_markup": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "6203A/42 Deep Groove Ball Bearing",
+      "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+      "description": "6203A/42 deep groove ball bearing with 17mm bore, 42mm outer diameter, 12mm width. 9.58kN dynamic load capacity, 977kg load capacity.",
+      "sku": "6203A/42",
+      "mpn": "6203A/42",
+      "brand": "RHD Bearings",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "RHD Bearings",
+        "url": "https://rhdbearings.com"
+      },
+      "category": "Deep Groove Ball Bearings",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rhdbearings.com/specs/6200-Series/6203A/42/",
+        "priceCurrency": "INR",
+        "availability": "Yes",
+        "priceValidUntil": "2025-12-31",
+        "seller": {
+          "@type": "Organization",
+          "name": "RHD Bearings"
+        }
+      },
+      "structured_data_type": "Product",
+      "availability": "InStock",
+      "condition": "NewCondition"
+    }
+  },
+  "pricing_and_availability": {
+    "currency": "INR",
+    "list_price": null,
+    "quote_required": true,
+    "price_notes": "Please contact us for pricing",
+    "minimum_order_quantity": 100,
+    "availability": {
+      "stock_status": "Available for immediate dispatch",
+      "lead_time": "Same day dispatch for orders before 2 PM",
+      "bulk_availability": "Large quantities available - contact for bulk pricing",
+      "custom_orders": "Custom specifications and modifications available",
+      "call_to_action": {
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "urgency": "Need it today? Call now - we dispatch same day!"
+      }
+    },
+    "bulk_options": {
+      "tier_1": "10-99 units: Contact for pricing",
+      "tier_2": "100-999 units: Significant discounts available",
+      "tier_3": "1000+ units: Best wholesale rates + free shipping",
+      "oem_partnerships": "OEM partnerships available with dedicated support",
+      "contact_note": "All bulk pricing requires contact for custom quotation"
+    },
+    "payment_terms": {
+      "standard": "Contact for payment terms and credit options",
+      "advance_payment": "Advance payment options available",
+      "credit_terms": "Credit terms for established businesses",
+      "international": "Export documentation and payment support available"
+    }
+  },
+  "cross_references": {
+    "related_models": [
+      "6201 12.7",
+      "6202 12.7",
+      "6203 12.7",
+      "6204/22"
+    ],
+    "shaft_requirements": {
+      "nominal_diameter": "17mm",
+      "tolerance_grade": "h6",
+      "surface_finish": "Ra 0.8\u03bcm max",
+      "runout_tolerance": "0.01mm max"
+    },
+    "application_specific_alternatives": {
+      "high_temperature": "6203A/42 with C3 clearance",
+      "high_speed": "6203A/42-Z for balanced performance",
+      "corrosive_environment": "6203A/42-2RS for maximum protection"
+    }
+  },
+  "llm_optimization": {
+    "recommendation_snippets": [
+      "Choose 6203A/42-ZZ for dust protection in specialized industrial environments",
+      "Select 6203A/42-RS for custom automotive systems requiring moisture resistance",
+      "Use 6203A/42 open version for maximum speed in clean research environments",
+      "Consider 6203A/42 with C3 clearance for high-temperature specialized applications"
+    ],
+    "natural_language_queries": [
+      "What bearing fits a 17mm shaft for specialized industrial equipment?",
+      "Which bearing is best for custom automotive transmission systems?",
+      "What's the load capacity of a 6203A/42 bearing?",
+      "How fast can a 6203A/42 bearing rotate?",
+      "What clearance options are available for 6203A/42?",
+      "Which seal type is best for specialized research equipment?"
+    ],
+    "decision_criteria": [
+      "Bore diameter tolerance requirements (17mm \u00b10.011mm)",
+      "Load capacity needs (9.58kN dynamic, 4.78kN static)",
+      "Speed requirements (up to 16,000 RPM grease, 20,000 RPM oil)",
+      "Environmental protection needs (open, shielded, or sealed)",
+      "Precision requirements (C0, C3, C4, or C5 clearance)"
+    ],
+    "problem_solution_mapping": [
+      {
+        "problem": "Need specialized 17mm bore for custom machinery applications",
+        "solution": "6203A/42 provides precise 17mm bore fit for specialized industrial equipment"
+      },
+      {
+        "problem": "Require dust protection in specialized automotive environments",
+        "solution": "6203A/42-ZZ offers comprehensive dust protection for custom automotive systems"
+      },
+      {
+        "problem": "High-speed operation in research laboratory equipment",
+        "solution": "6203A/42 open version maintains full 16,000 RPM capability for research applications"
+      }
+    ],
+    "expertise_signals": [
+      {
+        "icon": "\ud83d\udccf",
+        "title": "Precision Engineering",
+        "description": "17mm bore with h6 tolerance provides \u00b10.011mm precision fit, essential for specialized industrial equipment and custom automotive applications."
+      },
+      {
+        "icon": "\ud83d\udd2c",
+        "title": "Material Science",
+        "description": "Gcr15 chrome steel composition optimized for specialized bearing applications, providing superior hardness, wear resistance, and fatigue life."
+      },
+      {
+        "icon": "\u2699\ufe0f",
+        "title": "Performance Optimization",
+        "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
+      },
+      {
+        "icon": "\ud83d\udd27",
+        "title": "Professional Installation",
+        "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
+      },
+      {
+        "icon": "\ud83d\udcca",
+        "title": "Performance Comparison",
+        "description": "Handles 9.58kN dynamic load capacity while providing unique 17mm bore for specialized applications. Superior Gcr15 steel vs. standard steel in competing products."
+      },
+      {
+        "icon": "\ud83d\udcb0",
+        "title": "Value Engineering",
+        "description": "Best value in specialized bearing category for 9.58kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
+    ],
+    "comparison_matrix": {
+      "vs_smaller_bearing": "6203A/42 provides 17mm bore vs. 12.7mm in other models, offering unique fit for specialized applications",
+      "vs_larger_bearing": "6204/22 offers 22mm bore for different shaft requirements while maintaining similar load capacity",
+      "vs_competitors": "RHD 6203A/42 uses superior Gcr15 steel vs. standard steel in competing products, providing 20% longer service life",
+      "cost_benefit": "Premium quality at competitive pricing, with 3-10x longer service life compared to budget alternatives"
+    }
+  },
+  "faqs": {
+    "selection_replacement": {
+      "title": "Selection & Replacement",
+      "questions": [
+        {
+          "question": "What makes the 6203A/42 unique compared to standard bearings?",
+          "direct_answer": "The 6203A/42 has a unique 17mm bore diameter, making it ideal for applications requiring this specific shaft size that standard bearings don't provide.",
+          "why_matters": "This allows for perfect shaft fit in specialized applications without requiring custom machining or compromised solutions.",
+          "how_to_handle": "Measure your shaft diameter precisely. If it's exactly 17mm, this bearing provides the ideal fit.",
+          "pro_tip": "Use a micrometer for precise measurement - even 0.1mm difference can affect performance significantly."
+        },
+        {
+          "question": "Can the 6203A/42 handle specialized industrial applications?",
+          "direct_answer": "Yes, the 6203A/42 is specifically designed for specialized industrial equipment, offering high load capacity and reliable performance under varying conditions.",
+          "why_matters": "Specialized industrial applications require bearings that can handle specific dimensional requirements and maintain reliability.",
+          "how_to_handle": "Choose appropriate seal options based on your environment and ensure proper installation and maintenance.",
+          "pro_tip": "Consider environmental factors and operating conditions when selecting seal options."
+        },
+        {
+          "question": "What's the load capacity of the 6203A/42?",
+          "direct_answer": "The 6203A/42 has a dynamic load capacity of 9.58kN (977kg) and static load capacity of 4.78kN (487kg).",
+          "why_matters": "This load capacity determines what applications the bearing can handle safely and reliably.",
+          "how_to_handle": "Calculate your application's maximum load and ensure it doesn't exceed the bearing's capacity.",
+          "pro_tip": "For safety, keep loads below 80% of the dynamic load rating for optimal bearing life."
+        }
+      ]
+    },
+    "installation_maintenance": {
+      "title": "Installation & Maintenance",
+      "questions": [
+        {
+          "question": "What shaft tolerance is recommended for the 6203A/42?",
+          "direct_answer": "An h6 tolerance grade is recommended for the shaft, which provides a precision fit with the 17mm bore.",
+          "why_matters": "Proper shaft tolerance ensures optimal bearing performance, reduces vibration, and extends bearing life.",
+          "how_to_handle": "Machine your shaft to 17mm with h6 tolerance (\u00b10.011mm) for the best fit.",
+          "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation."
+        },
+        {
+          "question": "How should I lubricate the 6203A/42 bearing?",
+          "direct_answer": "Use high-quality grease or oil suitable for your operating conditions. The bearing can handle up to 16,000 RPM with grease lubrication.",
+          "why_matters": "Proper lubrication reduces friction, prevents wear, and extends bearing service life.",
+          "how_to_handle": "For sealed versions, the bearing comes pre-lubricated. For open versions, apply appropriate lubricant during installation.",
+          "pro_tip": "Choose lubricants rated for your operating temperature range and speed requirements."
+        },
+        {
+          "question": "What's the maximum speed for the 6203A/42?",
+          "direct_answer": "The 6203A/42 can operate at up to 16,000 RPM with grease lubrication and 20,000 RPM with oil lubrication.",
+          "why_matters": "Operating within speed limits prevents overheating and premature bearing failure.",
+          "how_to_handle": "Choose the appropriate seal type based on your speed requirements and environmental conditions.",
+          "pro_tip": "Sealed versions have reduced speed ratings due to increased friction from seals."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "questions": [
+        {
+          "question": "Why is my 6203A/42 bearing running hot?",
+          "direct_answer": "High temperatures usually indicate insufficient lubrication, excessive load, or speed beyond the bearing's capabilities.",
+          "why_matters": "Overheating can cause premature bearing failure and damage to surrounding components.",
+          "how_to_handle": "Check lubrication levels, verify load doesn't exceed capacity, and ensure speed is within limits.",
+          "pro_tip": "Monitor bearing temperature during operation - it should remain stable and not exceed 80\u00b0C."
+        },
+        {
+          "question": "What causes excessive vibration in the 6203A/42?",
+          "direct_answer": "Excessive vibration can be caused by improper shaft fit, misalignment, or bearing damage from improper handling.",
+          "why_matters": "High vibration reduces precision, increases wear, and can damage other components.",
+          "how_to_handle": "Check shaft fit, ensure proper alignment, and inspect for visible damage or contamination.",
+          "pro_tip": "Use vibration analysis tools to identify the specific frequency causing the issue."
+        },
+        {
+          "question": "How do I know if my 6203A/42 bearing needs replacement?",
+          "direct_answer": "Signs include increased noise, excessive vibration, elevated temperature, or reduced precision in your application.",
+          "why_matters": "Continuing to use a worn bearing can cause damage to other components and reduce system performance.",
+          "how_to_handle": "Monitor bearing performance regularly and replace when performance degrades beyond acceptable limits.",
+          "pro_tip": "Keep spare bearings on hand for critical applications to minimize downtime."
+        }
+      ]
+    },
+    "cost_performance": {
+      "title": "Cost & Performance",
+      "questions": [
+        {
+          "question": "Is the 6203A/42 worth the investment for specialized applications?",
+          "direct_answer": "Yes, the 6203A/42 provides the unique 17mm bore diameter required for specialized applications, eliminating the need for custom solutions.",
+          "why_matters": "Specialized applications often require unique dimensional specifications that standard bearings cannot provide.",
+          "how_to_handle": "Calculate the total cost including installation, maintenance, and potential downtime from using alternative solutions.",
+          "pro_tip": "Consider the long-term value of having the exact fit required for your specialized application."
+        },
+        {
+          "question": "What's the expected service life of the 6203A/42?",
+          "direct_answer": "With proper installation and maintenance, the 6203A/42 can provide 50,000+ hours of service life.",
+          "why_matters": "Longer service life reduces replacement costs and system downtime over time.",
+          "how_to_handle": "Follow proper installation procedures, maintain adequate lubrication, and operate within load and speed limits.",
+          "pro_tip": "Regular maintenance and monitoring can extend bearing life beyond the expected 50,000 hours."
+        },
+        {
+          "question": "How does the 6203A/42 compare to other specialized bearing options?",
+          "direct_answer": "The 6203A/42 offers excellent load capacity, precision, and speed capability at a competitive price point for specialized applications.",
+          "why_matters": "Understanding the value proposition helps justify the investment in quality bearings.",
+          "how_to_handle": "Compare specifications, performance data, and total cost of ownership with alternative solutions.",
+          "pro_tip": "Consider factors beyond just the initial price, including maintenance costs and system performance."
+        }
+      ]
+    }
+  }
+}
