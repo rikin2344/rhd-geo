@@ -90,7 +90,7 @@
         "Textile machinery rollers",
         "Machine tool spindles"
       ],
-      "requirements": "85mm shaft with 46.0kN (≈4690kg) dynamic load capacity, 4,200 RPM grease lubrication, 150×28mm size for high endurance"
+      "requirements": "85mm shaft with 46.0kN (\u22484690kg) dynamic load capacity, 4,200 RPM grease lubrication, 150\u00d728mm size for high endurance"
     },
     "application2": {
       "title": "Measuring Tools",
@@ -105,7 +105,7 @@
         "High accuracy rotary tools",
         "Scientific instrument supports"
       ],
-      "requirements": "85mm bore with 2.5mm chamfer, 32kN (≈3260kg) static load, grease lubrication for stable operation"
+      "requirements": "85mm bore with 2.5mm chamfer, 32kN (\u22483260kg) static load, grease lubrication for stable operation"
     },
     "application3": {
       "title": "Heavy Vehicles",
@@ -215,7 +215,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6217 Bearing 85×150×28mm Deep Groove Ball Bearing | RHD",
+    "title": "6217 Bearing 85\u00d7150\u00d728mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6217 deep groove ball bearing with 85mm bore, 150mm OD, 28mm width. 102.00kN dynamic load, 10408kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6217 bearing",
@@ -250,7 +250,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6200-Series/6217/",
     "og_data": {
-      "title": "6217 Deep Groove Ball Bearing - 85×150×28mm | RHD Bearings",
+      "title": "6217 Deep Groove Ball Bearing - 85\u00d7150\u00d728mm | RHD Bearings",
       "description": "High-quality 6217 bearing with 102.00kN dynamic load capacity. Perfect for industrial power systems and precision applications.",
       "url": "https://rhdbearings.com/specs/6200-Series/6217/",
       "type": "product",
@@ -304,9 +304,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -334,7 +334,7 @@
     "shaft_requirements": {
       "nominal_diameter": "85.000mm",
       "tolerance_grade": "h6 (84.987-85.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -350,7 +350,7 @@
       "Use 6217-RS in moisture-prone environments requiring 4,000 RPM with rubber seal protection",
       "Consider 6217 for automotive components where 28mm width and 3.800kg weight ensure durability and reliability",
       "Opt for 6217 in precision applications needing 1.0mm chamfer radius and 10408kg load capacity",
-      "Deploy 6217 in power transmission systems requiring 5,000 RPM grease lubrication with 150×28mm profile"
+      "Deploy 6217 in power transmission systems requiring 5,000 RPM grease lubrication with 150\u00d728mm profile"
     ],
     "natural_language_queries": [
       "6217 bearing dimensions",
@@ -370,7 +370,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 85mm shaft with high load capacity",
-        "solution": "6217 bearing provides 102.00kN dynamic load in 150×28mm profile"
+        "solution": "6217 bearing provides 102.00kN dynamic load in 150\u00d728mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -383,38 +383,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 8.00kN higher dynamic load than 6216 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 102.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6217 provides 8.00kN higher dynamic load than 6216 while maintaining compact 150×28mm profile",
+      "vs_smaller_bearing": "6217 provides 8.00kN higher dynamic load than 6216 while maintaining compact 150\u00d728mm profile",
       "vs_larger_bearing": "6217 offers 8.00kN lower load than 6218 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6217 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6217 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -433,7 +433,7 @@
         },
         {
           "question": "Can I replace a 6217 bearing with a different size bearing?",
-          "direct_answer": "No, 6217 bearings have unique 85×150×28mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6217 bearings have unique 85\u00d7150\u00d728mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6217 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6217 bearings in stock to avoid production delays and ensure consistent quality."

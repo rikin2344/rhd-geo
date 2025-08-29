@@ -45,15 +45,15 @@
     "width_B_mm": 25,
     "weight_kg": 0.955,
     "skf_extended_dimensions": {
-      "d1_shoulder_diameter": null,
-      "D2_recess_diameter": null,
-      "r1_chamfer_radius": null,
-      "r2_chamfer_radius": null
+      "d1_shoulder_diameter": 62.18,
+      "D2_recess_diameter": 86.7,
+      "r1_chamfer_radius": 1.5,
+      "r2_chamfer_radius": 1.5
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 52.80,
-    "static_load_Cor_kN": 31.80,
+    "dynamic_load_Cr_kN": 52.8,
+    "static_load_Cor_kN": 31.8,
     "load_capacity_kg": 5388
   },
   "speed_limits": {
@@ -78,66 +78,93 @@
   },
   "applications": {
     "application1": {
-      "title": null,
+      "title": "Mill Rollers",
       "icon": "zap",
-      "applications": null,
-      "requirements": null
+      "applications": [
+        "Flour mill rollers",
+        "Rubber mixing drums",
+        "Sugarcane crushing mills",
+        "Paper making presses",
+        "Metal sheet coil rollers",
+        "Feed pelletizing shafts",
+        "Wire straightener spindles",
+        "Textile thickening rolls"
+      ],
+      "requirements": "45mm shaft with 52.7kN (\u22485,375kg) dynamic load, 4,500 RPM grease, 100\u00d725mm for continuous process rollers"
     },
     "application2": {
-      "title": "gear",
-      "icon": null,
-      "applications": null,
-      "requirements": null
+      "title": "Rotary Tools",
+      "icon": "target",
+      "applications": [
+        "Large capacity drills",
+        "Surface grinder arbors",
+        "Pipe polisher heads",
+        "Tube cutting rollers",
+        "Granulator rotary drums",
+        "Lathe feed screws",
+        "Precision sander shafts",
+        "Tube expander gears"
+      ],
+      "requirements": "Precision 45mm bore, 31.5kN (\u22483,210kg) static load, balanced for stable, high torque"
     },
     "application3": {
-      "title": null,
+      "title": "Vehicle Wheels",
       "icon": "cog",
-      "applications": null,
-      "requirements": null
+      "applications": [
+        "Electric tram axles",
+        "Mini truck wheel centers",
+        "Rail wagon bogies",
+        "Mobile generator trailers",
+        "Heavy-duty hand truck hubs",
+        "Utility cart pivots",
+        "Inspection trolley axles",
+        "Crate mover wheels"
+      ],
+      "requirements": "45mm bore, 25mm width, supports varied transit loads"
     }
   },
   "vibration": {
     "V2": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 180,
+      "medium_frequency": 150,
+      "high_frequency": 130
     },
     "V3": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 110,
+      "medium_frequency": 90,
+      "high_frequency": 80
     },
     "V4": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 82,
+      "medium_frequency": 60,
+      "high_frequency": 60
     }
   },
   "noise": {
-    "Z2": null,
-    "Z3": null,
-    "Z4": null
+    "Z2": 51,
+    "Z3": 47,
+    "Z4": 44
   },
   "clearance": {
     "C2": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 1,
+      "max_microns": 11
     },
     "C0": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 6,
+      "max_microns": 23
     },
     "C3": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 18,
+      "max_microns": 36
     },
     "C4": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 30,
+      "max_microns": 51
     },
     "C5": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 45,
+      "max_microns": 73
     }
   },
   "seal_options": {
@@ -188,7 +215,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6309 Bearing 45×100×25mm Deep Groove Ball Bearing | RHD",
+    "title": "6309 Bearing 45\u00d7100\u00d725mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6309 deep groove ball bearing with 45mm bore, 100mm OD, 25mm width. 52.80kN dynamic load, 5388kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6309 bearing",
@@ -219,7 +246,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6309/",
     "og_data": {
-      "title": "6309 Deep Groove Ball Bearing - 45×100×25mm | RHD Bearings",
+      "title": "6309 Deep Groove Ball Bearing - 45\u00d7100\u00d725mm | RHD Bearings",
       "description": "High-quality 6309 bearing with 52.80kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6309/",
       "type": "product",
@@ -238,10 +265,7 @@
       "description": "6309 deep groove ball bearing with 45mm bore, 100mm outer diameter, 25mm width. 52.80kN dynamic load capacity, 5388kg load capacity.",
       "sku": "6309",
       "mpn": "6309",
-      "brand": {
-        "@type": "Brand",
-        "name": "RHD Bearings"
-      },
+      "brand": "RHD Bearings",
       "manufacturer": {
         "@type": "Organization",
         "name": "RHD Bearings",
@@ -260,8 +284,6 @@
         }
       },
       "structured_data_type": "Product",
-      "brand": "RHD Bearings",
-      "category": "Deep Groove Ball Bearings",
       "availability": "InStock",
       "condition": "NewCondition"
     }
@@ -278,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -308,7 +330,7 @@
     "shaft_requirements": {
       "nominal_diameter": "45.000mm",
       "tolerance_grade": "h6 (44.987-45.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.016mm max"
     },
     "application_specific_alternatives": {
@@ -324,7 +346,7 @@
       "Use 6309-RS in moisture-prone environments requiring 5,600 RPM with rubber seal protection",
       "Consider 6309 for machinery where 25mm width and 0.955kg weight ensure robust design",
       "Opt for 6309 in industrial applications needing 45mm bore with 5388kg load capacity",
-      "Deploy 6309 in automation systems requiring 7,000 RPM grease lubrication with 100×25mm profile"
+      "Deploy 6309 in automation systems requiring 7,000 RPM grease lubrication with 100\u00d725mm profile"
     ],
     "natural_language_queries": [
       "6309 bearing dimensions",
@@ -344,7 +366,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 45mm shaft with high load capacity",
-        "solution": "6309 bearing provides 52.80kN dynamic load in 100×25mm profile"
+        "solution": "6309 bearing provides 52.80kN dynamic load in 100\u00d725mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
@@ -357,38 +379,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 12.00kN higher dynamic load than 6308 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 52.80kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6309 provides 12.00kN higher dynamic load than 6308 while maintaining compact 100×25mm profile",
+      "vs_smaller_bearing": "6309 provides 12.00kN higher dynamic load than 6308 while maintaining compact 100\u00d725mm profile",
       "vs_larger_bearing": "6309 offers 12.00kN lower load than 6310 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6309 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6309 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -407,7 +429,7 @@
         },
         {
           "question": "Can I replace a 6309 bearing with a different size bearing?",
-          "direct_answer": "No, 6309 bearings have unique 45×100×25mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6309 bearings have unique 45\u00d7100\u00d725mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6309 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6309 bearings in stock to avoid production delays and ensure consistent quality."

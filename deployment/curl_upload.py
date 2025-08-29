@@ -16,8 +16,12 @@ def is_model_page(page_type):
     # Check if it's a 3-digit model number (604, 605, etc.)
     if page_type.isdigit() and len(page_type) == 3:
         return True
-    # Check if it's a 4-digit model number (6001, 6002, 6200, 6201, etc.)
+    # Check if it's a 4-digit model number (6001, 6002, 6201, 6202, etc.)
+    # BUT NOT 6200, 6300, 6800, 6900 which are series names
     if page_type.isdigit() and len(page_type) == 4:
+        # Exclude series names that end with "00"
+        if page_type.endswith('00'):
+            return False
         return True
     # Check if it's a 5-digit model number (16000, 62200, 62300, etc.)
     if page_type.isdigit() and len(page_type) == 5:
@@ -132,47 +136,7 @@ def curl_upload(page_type='miniature'):
         return False
     
 
-    if page_type == 'miniature':
-        local_file = './miniature-series/index.html'
-        remote_file = 'specs/miniature-series.html'
-        clean_url = 'https://rhdbearings.com/specs/miniature-series.html'
-    elif page_type == '6000':
-        local_file = './6000-series/index.html'
-        remote_file = 'specs/6000-series.html'
-        clean_url = 'https://rhdbearings.com/specs/6000-series.html'
-    elif page_type == '6200':
-        local_file = './6200-series/index.html'
-        remote_file = 'specs/6200-series.html'
-        clean_url = 'https://rhdbearings.com/specs/6200-series.html'
-    elif page_type == '6300':
-        local_file = './6300-series/index.html'
-        remote_file = 'specs/6300-series.html'
-        clean_url = 'https://rhdbearings.com/specs/6300-series.html'
-    elif page_type == '62200':
-        local_file = './62200-series/index.html'
-        remote_file = 'specs/62200-series.html'
-        clean_url = 'https://rhdbearings.com/specs/62200-series.html'
-    elif page_type == '62300':
-        local_file = './62300-series/index.html'
-        remote_file = 'specs/62300-series.html'
-        clean_url = 'https://rhdbearings.com/specs/62300-series.html'
-    elif page_type == '16000':
-        local_file = './16000-series/index.html'
-        remote_file = 'specs/16000-series.html'
-        clean_url = 'https://rhdbearings.com/specs/16000-series.html'
-    elif page_type == '6800':
-        local_file = './6800-series/index.html'
-        remote_file = 'specs/6800-series.html'
-        clean_url = 'https://rhdbearings.com/specs/6800-series.html'
-    elif page_type == '6900':
-        local_file = './6900-series/index.html'
-        remote_file = 'specs/6900-series.html'
-        clean_url = 'https://rhdbearings.com/specs/6900-series.html'
-    elif page_type == 'specs':
-        local_file = './specs/index.html'
-        remote_file = 'specs.html'
-        clean_url = 'https://rhdbearings.com/specs.html'
-    elif is_model_page(page_type):
+    if is_model_page(page_type):
         # Handle any model page dynamically
         model_info = get_model_upload_info(page_type)
         local_file = f'./{model_info["series"]}/{model_info["model"]}/index.html'
@@ -214,6 +178,53 @@ def curl_upload(page_type='miniature'):
             print(f"⚠️  Warning: Local file {local_file} not found!")
             print(f"💡 Make sure to run generate_all_models.py first to create the model pages")
             return False
+    elif page_type == 'miniature':
+        local_file = './miniature-series/index.html'
+        remote_file = 'specs/miniature-series.html'
+        clean_url = 'https://rhdbearings.com/specs/miniature-series.html'
+    elif page_type == '6000':
+        local_file = './6000-series/index.html'
+        remote_file = 'specs/6000-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6000-series.html'
+    elif page_type == '6200':
+        # Check if this is a request for the 6200 model page (not the series page)
+        # If someone wants the model page, they should use '6200-model' instead
+        local_file = './6200-series/index.html'
+        remote_file = 'specs/6200-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6200-series.html'
+    elif page_type == '6200-model':
+        # Special case for the 6200 model page
+        local_file = './deployment/6200-series/6200-series-internal-pages-deployment/6200/index.html'
+        remote_file = 'specs/6200-series/6200/index.html'
+        clean_url = 'https://rhdbearings.com/specs/6200-series/6200/'
+    elif page_type == '62200':
+        local_file = './62200-series/index.html'
+        remote_file = 'specs/62200-series.html'
+        clean_url = 'https://rhdbearings.com/specs/62200-series.html'
+    elif page_type == '62300':
+        local_file = './62300-series/index.html'
+        remote_file = 'specs/62300-series.html'
+        clean_url = 'https://rhdbearings.com/specs/62300-series.html'
+    elif page_type == '16000':
+        local_file = './16000-series/index.html'
+        remote_file = 'specs/16000-series.html'
+        clean_url = 'https://rhdbearings.com/specs/16000-series.html'
+    elif page_type == '6800':
+        local_file = './6800-series/index.html'
+        remote_file = 'specs/6800-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6800-series.html'
+    elif page_type == '6900':
+        local_file = './6900-series/index.html'
+        remote_file = 'specs/6900-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6900-series.html'
+    elif page_type == 'specs':
+        local_file = './specs/index.html'
+        remote_file = 'specs.html'
+        clean_url = 'https://rhdbearings.com/specs.html'
+    elif page_type == '6300':
+        local_file = './6300-series/index.html'
+        remote_file = 'specs/6300-series.html'
+        clean_url = 'https://rhdbearings.com/specs/6300-series.html'
     else:
         raise ValueError(f"Unknown page type: {page_type}")
     

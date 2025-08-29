@@ -45,15 +45,15 @@
     "width_B_mm": 27,
     "weight_kg": 1.35,
     "skf_extended_dimensions": {
-      "d1_shoulder_diameter": null,
-      "D2_recess_diameter": null,
-      "r1_chamfer_radius": null,
-      "r2_chamfer_radius": null
+      "d1_shoulder_diameter": 68.76,
+      "D2_recess_diameter": 95.2,
+      "r1_chamfer_radius": 2.0,
+      "r2_chamfer_radius": 2.0
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 64.80,
-    "static_load_Cor_kN": 39.50,
+    "dynamic_load_Cr_kN": 64.8,
+    "static_load_Cor_kN": 39.5,
     "load_capacity_kg": 6607
   },
   "speed_limits": {
@@ -78,66 +78,93 @@
   },
   "applications": {
     "application1": {
-      "title": null,
+      "title": "Drive Motors",
       "icon": "zap",
-      "applications": null,
-      "requirements": null
+      "applications": [
+        "Industrial blower drives",
+        "Water pump motor shafts",
+        "Large conveyor drive units",
+        "Automated lift motors",
+        "Crusher motor supports",
+        "Chest freezer compressors",
+        "Turbine core shafts",
+        "Plastic granulator motors"
+      ],
+      "requirements": "50mm shaft with 68.5kN (\u22487,000kg) dynamic load, 6,400 RPM grease, 110\u00d727mm for heavy machinery motors"
     },
     "application2": {
-      "title": "gear",
-      "icon": null,
-      "applications": null,
-      "requirements": null
+      "title": "Precision Machines",
+      "icon": "target",
+      "applications": [
+        "Surface grinder tables",
+        "Heavy duty positioners",
+        "Optical grinding lens beds",
+        "Robotic base rotation axes",
+        "Steel rolling guides",
+        "Tyre molding presses",
+        "Precision press bed rollers",
+        "Measuring tool carriers"
+      ],
+      "requirements": "50mm bore, 38kN (\u22483,875kg) static load, smooth motion for industrial control"
     },
     "application3": {
-      "title": null,
+      "title": "Mobile Axles",
       "icon": "cog",
-      "applications": null,
-      "requirements": null
+      "applications": [
+        "Lift truck drive axles",
+        "Electric vehicle wheels",
+        "Rail cart bearing centers",
+        "Motorized platform hubs",
+        "Boom lift turntables",
+        "Conveyor transfer car wheels",
+        "Dock yard shuttle movers",
+        "Mining crawler links"
+      ],
+      "requirements": "50mm bore, 27mm width, offers robust support for moving assemblies"
     }
   },
   "vibration": {
     "V2": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 210,
+      "medium_frequency": 160,
+      "high_frequency": 160
     },
     "V3": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 125,
+      "medium_frequency": 100,
+      "high_frequency": 100
     },
     "V4": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 95,
+      "medium_frequency": 70,
+      "high_frequency": 70
     }
   },
   "noise": {
-    "Z2": null,
-    "Z3": null,
-    "Z4": null
+    "Z2": 53,
+    "Z3": 49,
+    "Z4": 46
   },
   "clearance": {
     "C2": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 1,
+      "max_microns": 11
     },
     "C0": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 6,
+      "max_microns": 23
     },
     "C3": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 18,
+      "max_microns": 36
     },
     "C4": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 30,
+      "max_microns": 51
     },
     "C5": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 45,
+      "max_microns": 73
     }
   },
   "seal_options": {
@@ -188,7 +215,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6310 Bearing 50×110×27mm Deep Groove Ball Bearing | RHD",
+    "title": "6310 Bearing 50\u00d7110\u00d727mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6310 deep groove ball bearing with 50mm bore, 110mm OD, 27mm width. 64.80kN dynamic load, 6607kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6310 bearing",
@@ -219,7 +246,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6310/",
     "og_data": {
-      "title": "6310 Deep Groove Ball Bearing - 50×110×27mm | RHD Bearings",
+      "title": "6310 Deep Groove Ball Bearing - 50\u00d7110\u00d727mm | RHD Bearings",
       "description": "High-quality 6310 bearing with 64.80kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6310/",
       "type": "product",
@@ -238,10 +265,7 @@
       "description": "6310 deep groove ball bearing with 50mm bore, 110mm outer diameter, 27mm width. 64.80kN dynamic load capacity, 6607kg load capacity.",
       "sku": "6310",
       "mpn": "6310",
-      "brand": {
-        "@type": "Brand",
-        "name": "RHD Bearings"
-      },
+      "brand": "RHD Bearings",
       "manufacturer": {
         "@type": "Organization",
         "name": "RHD Bearings",
@@ -260,8 +284,6 @@
         }
       },
       "structured_data_type": "Product",
-      "brand": "RHD Bearings",
-      "category": "Deep Groove Ball Bearings",
       "availability": "InStock",
       "condition": "NewCondition"
     }
@@ -278,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -308,7 +330,7 @@
     "shaft_requirements": {
       "nominal_diameter": "50.000mm",
       "tolerance_grade": "h6 (49.987-50.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.017mm max"
     },
     "application_specific_alternatives": {
@@ -324,7 +346,7 @@
       "Use 6310-RS in moisture-prone environments requiring 5,200 RPM with rubber seal protection",
       "Consider 6310 for machinery where 27mm width and 1.35kg weight ensure robust design",
       "Opt for 6310 in industrial applications needing 50mm bore with 6607kg load capacity",
-      "Deploy 6310 in automation systems requiring 6,500 RPM grease lubrication with 110×27mm profile"
+      "Deploy 6310 in automation systems requiring 6,500 RPM grease lubrication with 110\u00d727mm profile"
     ],
     "natural_language_queries": [
       "6310 bearing dimensions",
@@ -344,7 +366,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 50mm shaft with high load capacity",
-        "solution": "6310 bearing provides 64.80kN dynamic load in 110×27mm profile"
+        "solution": "6310 bearing provides 64.80kN dynamic load in 110\u00d727mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
@@ -357,38 +379,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 12.00kN higher dynamic load than 6309 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 64.80kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6310 provides 12.00kN higher dynamic load than 6309 while maintaining compact 110×27mm profile",
+      "vs_smaller_bearing": "6310 provides 12.00kN higher dynamic load than 6309 while maintaining compact 110\u00d727mm profile",
       "vs_larger_bearing": "6310 offers 12.00kN lower load than 6311 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6310 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6310 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -407,7 +429,7 @@
         },
         {
           "question": "Can I replace a 6310 bearing with a different size bearing?",
-          "direct_answer": "No, 6310 bearings have unique 50×110×27mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6310 bearings have unique 50\u00d7110\u00d727mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6310 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6310 bearings in stock to avoid production delays and ensure consistent quality."

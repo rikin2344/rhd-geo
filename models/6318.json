@@ -43,17 +43,17 @@
     "bore_diameter_d_mm": 90,
     "outer_diameter_D_mm": 190,
     "width_B_mm": 43,
-    "weight_kg": 10.20,
+    "weight_kg": 10.2,
     "skf_extended_dimensions": {
-      "d1_shoulder_diameter": null,
-      "D2_recess_diameter": null,
-      "r1_chamfer_radius": null,
-      "r2_chamfer_radius": null
+      "d1_shoulder_diameter": 121.15,
+      "D2_recess_diameter": 163.9,
+      "r1_chamfer_radius": 3.0,
+      "r2_chamfer_radius": 3.0
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 172.00,
-    "static_load_Cor_kN": 116.40,
+    "dynamic_load_Cr_kN": 172.0,
+    "static_load_Cor_kN": 116.4,
     "load_capacity_kg": 17551
   },
   "speed_limits": {
@@ -78,66 +78,93 @@
   },
   "applications": {
     "application1": {
-      "title": null,
+      "title": "Winch Spools",
       "icon": "zap",
-      "applications": null,
-      "requirements": null
+      "applications": [
+        "Port dock winches",
+        "Ship anchor rope drums",
+        "Logging cable pulls",
+        "Tower crane winches",
+        "Freight elevator spools",
+        "Stage curtain winches",
+        "Bulk material haul drums",
+        "Large garage door winders"
+      ],
+      "requirements": "90mm shaft with 143kN (\u224814,580kg) dynamic load, 2,400 RPM grease, 190\u00d743mm for strong cable and winch mechanisms"
     },
     "application2": {
-      "title": "gear",
-      "icon": null,
-      "applications": null,
-      "requirements": null
+      "title": "Rotary Kilns",
+      "icon": "target",
+      "applications": [
+        "Lime rotary kilns",
+        "Cement kiln drum rollers",
+        "Large pottery ovens",
+        "Oven loader turntables",
+        "Continuous burning kilns",
+        "Composting drum drives",
+        "Biomass processor rollers",
+        "Industrial roasting beds"
+      ],
+      "requirements": "90mm bore, 108kN (\u224811,000kg) static load, for high-temperature, heavy turning"
     },
     "application3": {
-      "title": null,
+      "title": "Bulk Loaders",
       "icon": "cog",
-      "applications": null,
-      "requirements": null
+      "applications": [
+        "Railcar dumper rolls",
+        "Big mining loader wheels",
+        "Coal handling conveyors",
+        "Aggregate drop chutes",
+        "Iron pellet spreaders",
+        "Ore transfer wagons",
+        "Container roller bases",
+        "Mining shaker axles"
+      ],
+      "requirements": "90mm bore, 43mm width, withstanding industrial loads"
     }
   },
   "vibration": {
     "V2": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 210,
+      "medium_frequency": 180,
+      "high_frequency": 270
     },
     "V3": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 145,
+      "medium_frequency": 125,
+      "high_frequency": 180
     },
     "V4": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 75,
+      "medium_frequency": 75,
+      "high_frequency": 115
     }
   },
   "noise": {
-    "Z2": null,
-    "Z3": null,
-    "Z4": null
+    "Z2": 54,
+    "Z3": 49,
+    "Z4": 43
   },
   "clearance": {
     "C2": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 1,
+      "max_microns": 18
     },
     "C0": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 12,
+      "max_microns": 36
     },
     "C3": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 30,
+      "max_microns": 58
     },
     "C4": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 53,
+      "max_microns": 84
     },
     "C5": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 75,
+      "max_microns": 120
     }
   },
   "seal_options": {
@@ -188,7 +215,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6318 Bearing 90×190×43mm Deep Groove Ball Bearing | RHD",
+    "title": "6318 Bearing 90\u00d7190\u00d743mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6318 deep groove ball bearing with 90mm bore, 190mm OD, 43mm width. 172.00kN dynamic load, 17551kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6318 bearing",
@@ -219,7 +246,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6318/",
     "og_data": {
-      "title": "6318 Deep Groove Ball Bearing - 90×190×43mm | RHD Bearings",
+      "title": "6318 Deep Groove Ball Bearing - 90\u00d7190\u00d743mm | RHD Bearings",
       "description": "High-quality 6318 bearing with 172.00kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6318/",
       "type": "product",
@@ -238,10 +265,7 @@
       "description": "6318 deep groove ball bearing with 90mm bore, 190mm outer diameter, 43mm width. 172.00kN dynamic load capacity, 17551kg load capacity.",
       "sku": "6318",
       "mpn": "6318",
-      "brand": {
-        "@type": "Brand",
-        "name": "RHD Bearings"
-      },
+      "brand": "RHD Bearings",
       "manufacturer": {
         "@type": "Organization",
         "name": "RHD Bearings",
@@ -260,8 +284,6 @@
         }
       },
       "structured_data_type": "Product",
-      "brand": "RHD Bearings",
-      "category": "Deep Groove Ball Bearings",
       "availability": "InStock",
       "condition": "NewCondition"
     }
@@ -278,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -308,7 +330,7 @@
     "shaft_requirements": {
       "nominal_diameter": "90.000mm",
       "tolerance_grade": "h6 (89.987-90.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.025mm max"
     },
     "application_specific_alternatives": {
@@ -324,7 +346,7 @@
       "Use 6318-RS in moisture-prone environments requiring 2,560 RPM with rubber seal protection",
       "Consider 6318 for machinery where 43mm width and 10.20kg weight ensure robust design",
       "Opt for 6318 in industrial applications needing 90mm bore with 17551kg load capacity",
-      "Deploy 6318 in automation systems requiring 3,200 RPM grease lubrication with 190×43mm profile"
+      "Deploy 6318 in automation systems requiring 3,200 RPM grease lubrication with 190\u00d743mm profile"
     ],
     "natural_language_queries": [
       "6318 bearing dimensions",
@@ -344,7 +366,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 90mm shaft with high load capacity",
-        "solution": "6318 bearing provides 172.00kN dynamic load in 190×43mm profile"
+        "solution": "6318 bearing provides 172.00kN dynamic load in 190\u00d743mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
@@ -357,38 +379,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 13.40kN higher dynamic load than 6317 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 172.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6318 provides 13.40kN higher dynamic load than 6317 while maintaining compact 190×43mm profile",
+      "vs_smaller_bearing": "6318 provides 13.40kN higher dynamic load than 6317 while maintaining compact 190\u00d743mm profile",
       "vs_larger_bearing": "6318 offers 13.40kN lower load than 6319 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6318 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6318 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -407,7 +429,7 @@
         },
         {
           "question": "Can I replace a 6318 bearing with a different size bearing?",
-          "direct_answer": "No, 6318 bearings have unique 90×190×43mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6318 bearings have unique 90\u00d7190\u00d743mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6318 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6318 bearings in stock to avoid production delays and ensure consistent quality."

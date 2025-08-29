@@ -45,15 +45,15 @@
     "width_B_mm": 17,
     "weight_kg": 0.219,
     "skf_extended_dimensions": {
-      "d1_shoulder_diameter": null,
-      "D2_recess_diameter": null,
-      "r1_chamfer_radius": null,
-      "r2_chamfer_radius": null
+      "d1_shoulder_diameter": 36.6,
+      "D2_recess_diameter": 52.7,
+      "r1_chamfer_radius": 1.1,
+      "r2_chamfer_radius": 1.1
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 22.20,
-    "static_load_Cor_kN": 11.50,
+    "dynamic_load_Cr_kN": 22.2,
+    "static_load_Cor_kN": 11.5,
     "load_capacity_kg": 2264
   },
   "speed_limits": {
@@ -78,66 +78,93 @@
   },
   "applications": {
     "application1": {
-      "title": null,
+      "title": "Power Tools",
       "icon": "zap",
-      "applications": null,
-      "requirements": null
+      "applications": [
+        "Circular saw arbor supports",
+        "Belt sander motors",
+        "Hand drill drives",
+        "Polisher spindle bearings",
+        "Electric planer rotors",
+        "Portable compressor shafts",
+        "Tile cutter gearboxes",
+        "Cordless chainsaw assemblies"
+      ],
+      "requirements": "25mm shaft with 22.5kN (\u22482,290kg) dynamic load, 7,500 RPM grease lubrication, 62\u00d717mm for heavy duty tools"
     },
     "application2": {
-      "title": "gear",
-      "icon": null,
-      "applications": null,
-      "requirements": null
+      "title": "Material Feeders",
+      "icon": "target",
+      "applications": [
+        "Stamping press feeders",
+        "Granule loader shafts",
+        "Molten metal rollers",
+        "Casting belt supports",
+        "Industrial ink dispensers",
+        "Panel conveyor wheels",
+        "Resin extruder shafts",
+        "Recycling plant sorters"
+      ],
+      "requirements": "Precision 25mm bore, 11.6kN (\u22481,180kg) static load, reliable for bulk material transfer"
     },
     "application3": {
-      "title": null,
+      "title": "Transport Devices",
       "icon": "cog",
-      "applications": null,
-      "requirements": null
+      "applications": [
+        "Automated guided vehicles",
+        "AGV steering columns",
+        "E-cart wheel centers",
+        "Workshop dollies",
+        "Assembly line robots",
+        "Factory shuttle movers",
+        "Light rail bogie joints",
+        "Auto parts carousel rollers"
+      ],
+      "requirements": "25mm bore, 17mm width, chosen for versatility in material handling"
     }
   },
   "vibration": {
     "V2": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 130,
+      "medium_frequency": 100,
+      "high_frequency": 75
     },
     "V3": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 80,
+      "medium_frequency": 60,
+      "high_frequency": 45
     },
     "V4": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 60,
+      "medium_frequency": 30,
+      "high_frequency": 32
     }
   },
   "noise": {
-    "Z2": null,
-    "Z3": null,
-    "Z4": null
+    "Z2": 44,
+    "Z3": 41,
+    "Z4": 37
   },
   "clearance": {
     "C2": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 1,
+      "max_microns": 11
     },
     "C0": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 5,
+      "max_microns": 20
     },
     "C3": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 13,
+      "max_microns": 28
     },
     "C4": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 23,
+      "max_microns": 41
     },
     "C5": {
-      "min_microns": null,
-      "max_microns": null
+      "min_microns": 30,
+      "max_microns": 53
     }
   },
   "seal_options": {
@@ -188,7 +215,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6305 Bearing 25×62×17mm Deep Groove Ball Bearing | RHD",
+    "title": "6305 Bearing 25\u00d762\u00d717mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6305 deep groove ball bearing with 25mm bore, 62mm OD, 17mm width. 22.20kN dynamic load, 2264kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6305 bearing",
@@ -219,7 +246,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6305/",
     "og_data": {
-      "title": "6305 Deep Groove Ball Bearing - 25×62×17mm | RHD Bearings",
+      "title": "6305 Deep Groove Ball Bearing - 25\u00d762\u00d717mm | RHD Bearings",
       "description": "High-quality 6305 bearing with 22.20kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6305/",
       "type": "product",
@@ -238,10 +265,7 @@
       "description": "6305 deep groove ball bearing with 25mm bore, 62mm outer diameter, 17mm width. 22.20kN dynamic load capacity, 2264kg load capacity.",
       "sku": "6305",
       "mpn": "6305",
-      "brand": {
-        "@type": "Brand",
-        "name": "RHD Bearings"
-      },
+      "brand": "RHD Bearings",
       "manufacturer": {
         "@type": "Organization",
         "name": "RHD Bearings",
@@ -260,8 +284,6 @@
         }
       },
       "structured_data_type": "Product",
-      "brand": "RHD Bearings",
-      "category": "Deep Groove Ball Bearings",
       "availability": "InStock",
       "condition": "NewCondition"
     }
@@ -278,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -308,7 +330,7 @@
     "shaft_requirements": {
       "nominal_diameter": "25.000mm",
       "tolerance_grade": "h6 (24.987-25.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -324,7 +346,7 @@
       "Use 6305-RS in moisture-prone environments requiring 8,000 RPM with rubber seal protection",
       "Consider 6305 for machinery where 17mm width and 0.219kg weight ensure robust design",
       "Opt for 6305 in industrial applications needing 25mm bore with 2264kg load capacity",
-      "Deploy 6305 in automation systems requiring 10,000 RPM grease lubrication with 62×17mm profile"
+      "Deploy 6305 in automation systems requiring 10,000 RPM grease lubrication with 62\u00d717mm profile"
     ],
     "natural_language_queries": [
       "6305 bearing dimensions",
@@ -344,7 +366,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 25mm shaft with high load capacity",
-        "solution": "6305 bearing provides 22.20kN dynamic load in 62×17mm profile"
+        "solution": "6305 bearing provides 22.20kN dynamic load in 62\u00d717mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
@@ -357,38 +379,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 6.40kN higher dynamic load than 6304 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 22.20kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6305 provides 6.40kN higher dynamic load than 6304 while maintaining compact 62×17mm profile",
+      "vs_smaller_bearing": "6305 provides 6.40kN higher dynamic load than 6304 while maintaining compact 62\u00d717mm profile",
       "vs_larger_bearing": "6305 offers 6.40kN lower load than 6306 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6305 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6305 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -407,7 +429,7 @@
         },
         {
           "question": "Can I replace a 6305 bearing with a different size bearing?",
-          "direct_answer": "No, 6305 bearings have unique 25×62×17mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6305 bearings have unique 25\u00d762\u00d717mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6305 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6305 bearings in stock to avoid production delays and ensure consistent quality."

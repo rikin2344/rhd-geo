@@ -87,7 +87,7 @@
                         {{enhanced_description}}
                     </p>
                     <p class="hero-description">
-                        Meet the {{model_number}}: With {{load_ratings.dynamic_load_Cr_kN}}kN of engineering excellence and {{dimensions.bore_diameter_d_mm}}mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
+                        Meet the {{model_number}}: With {{load_ratings.load_capacity_kg}}kg ({{load_ratings.dynamic_load_Cr_kN}}kN) of engineering excellence and {{dimensions.bore_diameter_d_mm}}mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
                     </p>
                     
                     <div class="hero-specs">
@@ -473,9 +473,14 @@
                                 </div>
                                 {{#clearance.C4.min_microns}}
                                 <div class="explanation-item">
-                                    <strong>C4/C5:</strong> For temperatures above 100°C and 150°C respectively
+                                    <strong>C4 (Exta Loose):</strong> Hot or tight-fit setups — extra room for thermal expansion.
                                 </div>
                                 {{/clearance.C4.min_microns}}
+                                {{#clearance.C5.min_microns}}
+                                <div class="explanation-item">
+                                    <strong>C5 (Max Loose):</strong> Extreme heat/tight fits or near-limit speeds — maximum expansion allowance
+                                </div>
+                                {{/clearance.C5.min_microns}}
                             </div>
                         </div>
                     </div>

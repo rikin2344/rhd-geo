@@ -125,25 +125,25 @@
   },
   "vibration": {
     "V2": {
-      "low_frequency": 110,
-      "medium_frequency": 78,
-      "high_frequency": 60
+      "low_frequency": null,
+      "medium_frequency": null,
+      "high_frequency": null
     },
     "V3": {
-      "low_frequency": 65,
-      "medium_frequency": 46,
-      "high_frequency": 35
+      "low_frequency": null,
+      "medium_frequency": null,
+      "high_frequency": null
     },
     "V4": {
-      "low_frequency": 52,
-      "medium_frequency": 18,
-      "high_frequency": 18
+      "low_frequency": null,
+      "medium_frequency": null,
+      "high_frequency": null
     }
   },
   "noise": {
-    "Z2": 41,
-    "Z3": 36,
-    "Z4": 31
+    "Z2": null,
+    "Z3": null,
+    "Z4": null
   },
   "clearance": {
     "C2": {

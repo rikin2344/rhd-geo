@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6300 Series Maximum Load Ball Bearings | RHD Bearings</title>
+    <title>6300 Series Deep Groove Ball Bearings | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-/* Reset everything */
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -763,7 +763,7 @@ body {
 }
 
 
-/* Page CSS */
+/* Main Page Styles */
 /* ================================
    CSS VARIABLES & BASE STYLES
    ================================ */
@@ -2644,27 +2644,27 @@ a:focus {
     <script>
         // 6300 series bearings data
         const bearingsData = [
-            {"model": "6300", "url": "/6300-series/6300", "id": "10mm", "od": "35mm", "width": "11mm", "dynamic_load": "7.65kN", "static_load": "3.48kN", "grease_speed": "18,000", "oil_speed": "24,000", "weight": "53g"},
-            {"model": "6301", "url": "/6300-series/6301", "id": "12mm", "od": "37mm", "width": "12mm", "dynamic_load": "9.72kN", "static_load": "5.08kN", "grease_speed": "17,000", "oil_speed": "22,000", "weight": "51g"},
-            {"model": "6302", "url": "/6300-series/6302", "id": "15mm", "od": "42mm", "width": "13mm", "dynamic_load": "11.50kN", "static_load": "5.42kN", "grease_speed": "16,000", "oil_speed": "20,000", "weight": "80g"},
-            {"model": "6303", "url": "/6300-series/6303", "id": "17mm", "od": "47mm", "width": "14mm", "dynamic_load": "13.50kN", "static_load": "6.58kN", "grease_speed": "15,000", "oil_speed": "18,000", "weight": "109g"},
-            {"model": "6304", "url": "/6300-series/6304", "id": "20mm", "od": "52mm", "width": "15mm", "dynamic_load": "15.80kN", "static_load": "7.88kN", "grease_speed": "13,000", "oil_speed": "16,000", "weight": "142g"},
-            {"model": "6305", "url": "/6300-series/6305", "id": "25mm", "od": "62mm", "width": "17mm", "dynamic_load": "22.20kN", "static_load": "11.50kN", "grease_speed": "10,000", "oil_speed": "14,000", "weight": "219g"},
-            {"model": "6306", "url": "/6300-series/6306", "id": "30mm", "od": "72mm", "width": "19mm", "dynamic_load": "27.00kN", "static_load": "15.20kN", "grease_speed": "9,000", "oil_speed": "11,000", "weight": "349g"},
-            {"model": "6307", "url": "/6300-series/6307", "id": "35mm", "od": "80mm", "width": "21mm", "dynamic_load": "33.40kN", "static_load": "19.20kN", "grease_speed": "8,000", "oil_speed": "9,500", "weight": "455g"},
-            {"model": "6308", "url": "/6300-series/6308", "id": "40mm", "od": "90mm", "width": "23mm", "dynamic_load": "40.80kN", "static_load": "24.00kN", "grease_speed": "7,000", "oil_speed": "8,500", "weight": "639g"},
-            {"model": "6309", "url": "/6300-series/6309", "id": "45mm", "od": "100mm", "width": "25mm", "dynamic_load": "52.80kN", "static_load": "31.80kN", "grease_speed": "6,300", "oil_speed": "7,500", "weight": "837g"},
-            {"model": "6310", "url": "/6300-series/6310", "id": "50mm", "od": "110mm", "width": "27mm", "dynamic_load": "61.80kN", "static_load": "38.00kN", "grease_speed": "6,000", "oil_speed": "7,000", "weight": "1.082kg"},
-            {"model": "6311", "url": "/6300-series/6311", "id": "55mm", "od": "120mm", "width": "29mm", "dynamic_load": "71.50kN", "static_load": "44.80kN", "grease_speed": "5,600", "oil_speed": "6,700", "weight": "1.367kg"},
-            {"model": "6312", "url": "/6300-series/6312", "id": "60mm", "od": "130mm", "width": "31mm", "dynamic_load": "81.80kN", "static_load": "51.80kN", "grease_speed": "5,000", "oil_speed": "6,000", "weight": "1.710kg"},
-            {"model": "6313", "url": "/6300-series/6313", "id": "65mm", "od": "140mm", "width": "33mm", "dynamic_load": "93.80kN", "static_load": "60.50kN", "grease_speed": "4,500", "oil_speed": "5,300", "weight": "2.100kg"},
-            {"model": "6314", "url": "/6300-series/6314", "id": "70mm", "od": "150mm", "width": "35mm", "dynamic_load": "105kN", "static_load": "68.00kN", "grease_speed": "4,300", "oil_speed": "5,000", "weight": "2.550kg"},
-            {"model": "6315", "url": "/6300-series/6315", "id": "75mm", "od": "160mm", "width": "37mm", "dynamic_load": "113kN", "static_load": "76.80kN", "grease_speed": "4,000", "oil_speed": "4,800", "weight": "3.050kg"},
-            {"model": "6316", "url": "/6300-series/6316", "id": "80mm", "od": "170mm", "width": "39mm", "dynamic_load": "123kN", "static_load": "86.50kN", "grease_speed": "3,800", "oil_speed": "4,500", "weight": "3.610kg"},
-            {"model": "6317", "url": "/6300-series/6317", "id": "85mm", "od": "180mm", "width": "41mm", "dynamic_load": "132kN", "static_load": "96.50kN", "grease_speed": "3,600", "oil_speed": "4,300", "weight": "4.284kg"},
-            {"model": "6318", "url": "/6300-series/6318", "id": "90mm", "od": "190mm", "width": "43mm", "dynamic_load": "145kN", "static_load": "108kN", "grease_speed": "3,400", "oil_speed": "4,000", "weight": "4.870kg"},
-            {"model": "6319", "url": "/6300-series/6319", "id": "95mm", "od": "200mm", "width": "45mm", "dynamic_load": "157kN", "static_load": "122kN", "grease_speed": "3,200", "oil_speed": "3,800", "weight": "5.740kg"},
-            {"model": "6320", "url": "/6300-series/6320", "id": "100mm", "od": "215mm", "width": "47mm", "dynamic_load": "173kN", "static_load": "140kN", "grease_speed": "2,800", "oil_speed": "3,600", "weight": "7.09kg"}
+            {"model": "6300", "url": "https://rhdbearings.com/specs/6300-series/6300/", "id": "10mm", "od": "35mm", "width": "11mm", "dynamic_load": "7.65kN", "static_load": "3.48kN", "grease_speed": "18,000", "oil_speed": "24,000", "weight": "53g"},
+            {"model": "6301", "url": "https://rhdbearings.com/specs/6300-series/6301/", "id": "12mm", "od": "37mm", "width": "12mm", "dynamic_load": "9.72kN", "static_load": "5.08kN", "grease_speed": "17,000", "oil_speed": "22,000", "weight": "51g"},
+            {"model": "6302", "url": "https://rhdbearings.com/specs/6300-series/6302/", "id": "15mm", "od": "42mm", "width": "13mm", "dynamic_load": "11.50kN", "static_load": "5.42kN", "grease_speed": "16,000", "oil_speed": "20,000", "weight": "80g"},
+            {"model": "6303", "url": "https://rhdbearings.com/specs/6300-series/6303/", "id": "17mm", "od": "47mm", "width": "14mm", "dynamic_load": "13.50kN", "static_load": "6.58kN", "grease_speed": "15,000", "oil_speed": "18,000", "weight": "109g"},
+            {"model": "6304", "url": "https://rhdbearings.com/specs/6300-series/6304/", "id": "20mm", "od": "52mm", "width": "15mm", "dynamic_load": "15.80kN", "static_load": "7.88kN", "grease_speed": "13,000", "oil_speed": "16,000", "weight": "142g"},
+            {"model": "6305", "url": "https://rhdbearings.com/specs/6300-series/6305/", "id": "25mm", "od": "62mm", "width": "17mm", "dynamic_load": "22.20kN", "static_load": "11.50kN", "grease_speed": "10,000", "oil_speed": "14,000", "weight": "219g"},
+            {"model": "6306", "url": "https://rhdbearings.com/specs/6300-series/6306/", "id": "30mm", "od": "72mm", "width": "19mm", "dynamic_load": "27.00kN", "static_load": "15.20kN", "grease_speed": "9,000", "oil_speed": "11,000", "weight": "349g"},
+            {"model": "6307", "url": "https://rhdbearings.com/specs/6300-series/6307/", "id": "35mm", "od": "80mm", "width": "21mm", "dynamic_load": "33.40kN", "static_load": "19.20kN", "grease_speed": "8,000", "oil_speed": "9,500", "weight": "455g"},
+            {"model": "6308", "url": "https://rhdbearings.com/specs/6300-series/6308/", "id": "40mm", "od": "90mm", "width": "23mm", "dynamic_load": "40.80kN", "static_load": "24.00kN", "grease_speed": "7,000", "oil_speed": "8,500", "weight": "639g"},
+            {"model": "6309", "url": "https://rhdbearings.com/specs/6300-series/6309/", "id": "45mm", "od": "100mm", "width": "25mm", "dynamic_load": "52.80kN", "static_load": "31.80kN", "grease_speed": "6,300", "oil_speed": "7,500", "weight": "837g"},
+            {"model": "6310", "url": "https://rhdbearings.com/specs/6300-series/6310/", "id": "50mm", "od": "110mm", "width": "27mm", "dynamic_load": "61.80kN", "static_load": "38.00kN", "grease_speed": "6,000", "oil_speed": "7,000", "weight": "1.082kg"},
+            {"model": "6311", "url": "https://rhdbearings.com/specs/6300-series/6311/", "id": "55mm", "od": "120mm", "width": "29mm", "dynamic_load": "71.50kN", "static_load": "44.80kN", "grease_speed": "5,600", "oil_speed": "6,700", "weight": "1.367kg"},
+            {"model": "6312", "url": "https://rhdbearings.com/specs/6300-series/6312/", "id": "60mm", "od": "130mm", "width": "31mm", "dynamic_load": "81.80kN", "static_load": "51.80kN", "grease_speed": "5,000", "oil_speed": "6,000", "weight": "1.710kg"},
+            {"model": "6313", "url": "https://rhdbearings.com/specs/6300-series/6313/", "id": "65mm", "od": "140mm", "width": "33mm", "dynamic_load": "93.80kN", "static_load": "60.50kN", "grease_speed": "4,500", "oil_speed": "5,300", "weight": "2.100kg"},
+            {"model": "6314", "url": "https://rhdbearings.com/specs/6300-series/6314/", "id": "70mm", "od": "150mm", "width": "35mm", "dynamic_load": "105kN", "static_load": "68.00kN", "grease_speed": "4,300", "oil_speed": "5,000", "weight": "2.550kg"},
+            {"model": "6315", "url": "https://rhdbearings.com/specs/6300-series/6315/", "id": "75mm", "od": "160mm", "width": "37mm", "dynamic_load": "113kN", "static_load": "76.80kN", "grease_speed": "4,000", "oil_speed": "4,800", "weight": "3.050kg"},
+            {"model": "6316", "url": "https://rhdbearings.com/specs/6300-series/6316/", "id": "80mm", "od": "170mm", "width": "39mm", "dynamic_load": "123kN", "static_load": "86.50kN", "grease_speed": "3,800", "oil_speed": "4,500", "weight": "3.610kg"},
+            {"model": "6317", "url": "https://rhdbearings.com/specs/6300-series/6317/", "id": "85mm", "od": "180mm", "width": "41mm", "dynamic_load": "132kN", "static_load": "96.50kN", "grease_speed": "3,600", "oil_speed": "4,300", "weight": "4.284kg"},
+            {"model": "6318", "url": "https://rhdbearings.com/specs/6300-series/6318/", "id": "90mm", "od": "190mm", "width": "43mm", "dynamic_load": "145kN", "static_load": "108kN", "grease_speed": "3,400", "oil_speed": "4,000", "weight": "4.870kg"},
+            {"model": "6319", "url": "https://rhdbearings.com/specs/6300-series/6319/", "id": "95mm", "od": "200mm", "width": "45mm", "dynamic_load": "157kN", "static_load": "122kN", "grease_speed": "3,200", "oil_speed": "3,800", "weight": "5.740kg"},
+            {"model": "6320", "url": "https://rhdbearings.com/specs/6300-series/6320/", "id": "100mm", "od": "215mm", "width": "47mm", "dynamic_load": "173kN", "static_load": "140kN", "grease_speed": "2,800", "oil_speed": "3,600", "weight": "7.09kg"}
         ];
 
         // Render models
@@ -2809,38 +2809,38 @@ a:focus {
     <!-- Load Navbar -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            fetch('../shared/navbar.html')
+            // fetch call removed - component already embedded
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 })
-                .catch(error => console.error('Error loading navbar:', error));
+                .catch(error => // error logging removed);
         });
     </script>
 <script>
         // 6300 series bearings data
         const bearingsData = [
-            {"model": "6300", "url": "/6300-series/6300", "id": "10mm", "od": "35mm", "width": "11mm", "dynamic_load": "7.65kN", "static_load": "3.48kN", "grease_speed": "18,000", "oil_speed": "24,000", "weight": "53g"},
-            {"model": "6301", "url": "/6300-series/6301", "id": "12mm", "od": "37mm", "width": "12mm", "dynamic_load": "9.72kN", "static_load": "5.08kN", "grease_speed": "17,000", "oil_speed": "22,000", "weight": "51g"},
-            {"model": "6302", "url": "/6300-series/6302", "id": "15mm", "od": "42mm", "width": "13mm", "dynamic_load": "11.50kN", "static_load": "5.42kN", "grease_speed": "16,000", "oil_speed": "20,000", "weight": "80g"},
-            {"model": "6303", "url": "/6300-series/6303", "id": "17mm", "od": "47mm", "width": "14mm", "dynamic_load": "13.50kN", "static_load": "6.58kN", "grease_speed": "15,000", "oil_speed": "18,000", "weight": "109g"},
-            {"model": "6304", "url": "/6300-series/6304", "id": "20mm", "od": "52mm", "width": "15mm", "dynamic_load": "15.80kN", "static_load": "7.88kN", "grease_speed": "13,000", "oil_speed": "16,000", "weight": "142g"},
-            {"model": "6305", "url": "/6300-series/6305", "id": "25mm", "od": "62mm", "width": "17mm", "dynamic_load": "22.20kN", "static_load": "11.50kN", "grease_speed": "10,000", "oil_speed": "14,000", "weight": "219g"},
-            {"model": "6306", "url": "/6300-series/6306", "id": "30mm", "od": "72mm", "width": "19mm", "dynamic_load": "27.00kN", "static_load": "15.20kN", "grease_speed": "9,000", "oil_speed": "11,000", "weight": "349g"},
-            {"model": "6307", "url": "/6300-series/6307", "id": "35mm", "od": "80mm", "width": "21mm", "dynamic_load": "33.40kN", "static_load": "19.20kN", "grease_speed": "8,000", "oil_speed": "9,500", "weight": "455g"},
-            {"model": "6308", "url": "/6300-series/6308", "id": "40mm", "od": "90mm", "width": "23mm", "dynamic_load": "40.80kN", "static_load": "24.00kN", "grease_speed": "7,000", "oil_speed": "8,500", "weight": "639g"},
-            {"model": "6309", "url": "/6300-series/6309", "id": "45mm", "od": "100mm", "width": "25mm", "dynamic_load": "52.80kN", "static_load": "31.80kN", "grease_speed": "6,300", "oil_speed": "7,500", "weight": "837g"},
-            {"model": "6310", "url": "/6300-series/6310", "id": "50mm", "od": "110mm", "width": "27mm", "dynamic_load": "61.80kN", "static_load": "38.00kN", "grease_speed": "6,000", "oil_speed": "7,000", "weight": "1.082kg"},
-            {"model": "6311", "url": "/6300-series/6311", "id": "55mm", "od": "120mm", "width": "29mm", "dynamic_load": "71.50kN", "static_load": "44.80kN", "grease_speed": "5,600", "oil_speed": "6,700", "weight": "1.367kg"},
-            {"model": "6312", "url": "/6300-series/6312", "id": "60mm", "od": "130mm", "width": "31mm", "dynamic_load": "81.80kN", "static_load": "51.80kN", "grease_speed": "5,000", "oil_speed": "6,000", "weight": "1.710kg"},
-            {"model": "6313", "url": "/6300-series/6313", "id": "65mm", "od": "140mm", "width": "33mm", "dynamic_load": "93.80kN", "static_load": "60.50kN", "grease_speed": "4,500", "oil_speed": "5,300", "weight": "2.100kg"},
-            {"model": "6314", "url": "/6300-series/6314", "id": "70mm", "od": "150mm", "width": "35mm", "dynamic_load": "105kN", "static_load": "68.00kN", "grease_speed": "4,300", "oil_speed": "5,000", "weight": "2.550kg"},
-            {"model": "6315", "url": "/6300-series/6315", "id": "75mm", "od": "160mm", "width": "37mm", "dynamic_load": "113kN", "static_load": "76.80kN", "grease_speed": "4,000", "oil_speed": "4,800", "weight": "3.050kg"},
-            {"model": "6316", "url": "/6300-series/6316", "id": "80mm", "od": "170mm", "width": "39mm", "dynamic_load": "123kN", "static_load": "86.50kN", "grease_speed": "3,800", "oil_speed": "4,500", "weight": "3.610kg"},
-            {"model": "6317", "url": "/6300-series/6317", "id": "85mm", "od": "180mm", "width": "41mm", "dynamic_load": "132kN", "static_load": "96.50kN", "grease_speed": "3,600", "oil_speed": "4,300", "weight": "4.284kg"},
-            {"model": "6318", "url": "/6300-series/6318", "id": "90mm", "od": "190mm", "width": "43mm", "dynamic_load": "145kN", "static_load": "108kN", "grease_speed": "3,400", "oil_speed": "4,000", "weight": "4.870kg"},
-            {"model": "6319", "url": "/6300-series/6319", "id": "95mm", "od": "200mm", "width": "45mm", "dynamic_load": "157kN", "static_load": "122kN", "grease_speed": "3,200", "oil_speed": "3,800", "weight": "5.740kg"},
-            {"model": "6320", "url": "/6300-series/6320", "id": "100mm", "od": "215mm", "width": "47mm", "dynamic_load": "173kN", "static_load": "140kN", "grease_speed": "2,800", "oil_speed": "3,600", "weight": "7.09kg"}
+            {"model": "6300", "url": "https://rhdbearings.com/specs/6300-series/6300/", "id": "10mm", "od": "35mm", "width": "11mm", "dynamic_load": "7.65kN", "static_load": "3.48kN", "grease_speed": "18,000", "oil_speed": "24,000", "weight": "53g"},
+            {"model": "6301", "url": "https://rhdbearings.com/specs/6300-series/6301/", "id": "12mm", "od": "37mm", "width": "12mm", "dynamic_load": "9.72kN", "static_load": "5.08kN", "grease_speed": "17,000", "oil_speed": "22,000", "weight": "51g"},
+            {"model": "6302", "url": "https://rhdbearings.com/specs/6300-series/6302/", "id": "15mm", "od": "42mm", "width": "13mm", "dynamic_load": "11.50kN", "static_load": "5.42kN", "grease_speed": "16,000", "oil_speed": "20,000", "weight": "80g"},
+            {"model": "6303", "url": "https://rhdbearings.com/specs/6300-series/6303/", "id": "17mm", "od": "47mm", "width": "14mm", "dynamic_load": "13.50kN", "static_load": "6.58kN", "grease_speed": "15,000", "oil_speed": "18,000", "weight": "109g"},
+            {"model": "6304", "url": "https://rhdbearings.com/specs/6300-series/6304/", "id": "20mm", "od": "52mm", "width": "15mm", "dynamic_load": "15.80kN", "static_load": "7.88kN", "grease_speed": "13,000", "oil_speed": "16,000", "weight": "142g"},
+            {"model": "6305", "url": "https://rhdbearings.com/specs/6300-series/6305/", "id": "25mm", "od": "62mm", "width": "17mm", "dynamic_load": "22.20kN", "static_load": "11.50kN", "grease_speed": "10,000", "oil_speed": "14,000", "weight": "219g"},
+            {"model": "6306", "url": "https://rhdbearings.com/specs/6300-series/6306/", "id": "30mm", "od": "72mm", "width": "19mm", "dynamic_load": "27.00kN", "static_load": "15.20kN", "grease_speed": "9,000", "oil_speed": "11,000", "weight": "349g"},
+            {"model": "6307", "url": "https://rhdbearings.com/specs/6300-series/6307/", "id": "35mm", "od": "80mm", "width": "21mm", "dynamic_load": "33.40kN", "static_load": "19.20kN", "grease_speed": "8,000", "oil_speed": "9,500", "weight": "455g"},
+            {"model": "6308", "url": "https://rhdbearings.com/specs/6300-series/6308/", "id": "40mm", "od": "90mm", "width": "23mm", "dynamic_load": "40.80kN", "static_load": "24.00kN", "grease_speed": "7,000", "oil_speed": "8,500", "weight": "639g"},
+            {"model": "6309", "url": "https://rhdbearings.com/specs/6300-series/6309/", "id": "45mm", "od": "100mm", "width": "25mm", "dynamic_load": "52.80kN", "static_load": "31.80kN", "grease_speed": "6,300", "oil_speed": "7,500", "weight": "837g"},
+            {"model": "6310", "url": "https://rhdbearings.com/specs/6300-series/6310/", "id": "50mm", "od": "110mm", "width": "27mm", "dynamic_load": "61.80kN", "static_load": "38.00kN", "grease_speed": "6,000", "oil_speed": "7,000", "weight": "1.082kg"},
+            {"model": "6311", "url": "https://rhdbearings.com/specs/6300-series/6311/", "id": "55mm", "od": "120mm", "width": "29mm", "dynamic_load": "71.50kN", "static_load": "44.80kN", "grease_speed": "5,600", "oil_speed": "6,700", "weight": "1.367kg"},
+            {"model": "6312", "url": "https://rhdbearings.com/specs/6300-series/6312/", "id": "60mm", "od": "130mm", "width": "31mm", "dynamic_load": "81.80kN", "static_load": "51.80kN", "grease_speed": "5,000", "oil_speed": "6,000", "weight": "1.710kg"},
+            {"model": "6313", "url": "https://rhdbearings.com/specs/6300-series/6313/", "id": "65mm", "od": "140mm", "width": "33mm", "dynamic_load": "93.80kN", "static_load": "60.50kN", "grease_speed": "4,500", "oil_speed": "5,300", "weight": "2.100kg"},
+            {"model": "6314", "url": "https://rhdbearings.com/specs/6300-series/6314/", "id": "70mm", "od": "150mm", "width": "35mm", "dynamic_load": "105kN", "static_load": "68.00kN", "grease_speed": "4,300", "oil_speed": "5,000", "weight": "2.550kg"},
+            {"model": "6315", "url": "https://rhdbearings.com/specs/6300-series/6315/", "id": "75mm", "od": "160mm", "width": "37mm", "dynamic_load": "113kN", "static_load": "76.80kN", "grease_speed": "4,000", "oil_speed": "4,800", "weight": "3.050kg"},
+            {"model": "6316", "url": "https://rhdbearings.com/specs/6300-series/6316/", "id": "80mm", "od": "170mm", "width": "39mm", "dynamic_load": "123kN", "static_load": "86.50kN", "grease_speed": "3,800", "oil_speed": "4,500", "weight": "3.610kg"},
+            {"model": "6317", "url": "https://rhdbearings.com/specs/6300-series/6317/", "id": "85mm", "od": "180mm", "width": "41mm", "dynamic_load": "132kN", "static_load": "96.50kN", "grease_speed": "3,600", "oil_speed": "4,300", "weight": "4.284kg"},
+            {"model": "6318", "url": "https://rhdbearings.com/specs/6300-series/6318/", "id": "90mm", "od": "190mm", "width": "43mm", "dynamic_load": "145kN", "static_load": "108kN", "grease_speed": "3,400", "oil_speed": "4,000", "weight": "4.870kg"},
+            {"model": "6319", "url": "https://rhdbearings.com/specs/6300-series/6319/", "id": "95mm", "od": "200mm", "width": "45mm", "dynamic_load": "157kN", "static_load": "122kN", "grease_speed": "3,200", "oil_speed": "3,800", "weight": "5.740kg"},
+            {"model": "6320", "url": "https://rhdbearings.com/specs/6300-series/6320/", "id": "100mm", "od": "215mm", "width": "47mm", "dynamic_load": "173kN", "static_load": "140kN", "grease_speed": "2,800", "oil_speed": "3,600", "weight": "7.09kg"}
         ];
 
         // Render models
