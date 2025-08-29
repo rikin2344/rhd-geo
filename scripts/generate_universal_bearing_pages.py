@@ -837,22 +837,20 @@ def create_standalone_model_page(model_name, model_dir, series):
         # Remove all fetch calls and problematic patterns
         import re
         
-        # Note: No watermark section replacement needed - watermark is already in template
-        
-        # Clean up script content instead of body content
-        script_content = re.sub(r'fetch\([\'"][^\'"]*\.\./shared/[^\'"]*[\'"]\)', '// fetch call removed - component already embedded', script_content)
-        script_content = re.sub(r'src=[\'"].*?/shared/[^\'\"]*[\'""]', '// shared script src removed', script_content)
-        script_content = script_content.replace('../shared/', '// shared path removed - components embedded')
-        script_content = re.sub(r'console\.error\([^)]*\)', '// error logging removed', script_content)
-        
-        # Remove fetch calls to shared components from body content
+        # Remove fetch calls to shared components
         body_content = re.sub(r'fetch\([\'"][^\'"]*\.\./shared/[^\'"]*[\'"]\)', '// fetch call removed - component already embedded', body_content)
         
-        # Remove script blocks that load shared components from body content
+        # Remove script blocks that load shared components
         body_content = re.sub(r'<script>[^<]*fetch\([^<]*\.\./shared/[^<]*</script>', '<!-- Shared component loading script removed -->', body_content, flags=re.DOTALL)
         
-        # Remove any remaining references to ../shared/ paths in body content
-        body_content = body_content.replace('../shared/', '// shared path removed - components embedded')
+        # Remove external script tags (script tags with src attribute)
+        body_content = re.sub(r'<script[^>]*src=[^>]*></script>', '<!-- External script removed -->', body_content)
+        
+        # Remove any remaining references to ../shared/ paths (handle multiple levels)
+        body_content = re.sub(r'\.\./shared/', '// shared path removed - components embedded', body_content)
+        
+        # Remove console.error calls related to failed fetches
+        body_content = re.sub(r'console\.error\([^)]*\)', '// error logging removed', body_content)
         
         # Clean up empty script tags
         body_content = re.sub(r'<script>\s*</script>', '', body_content)

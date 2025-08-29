@@ -15,8 +15,11 @@ def is_model_page(page_type):
     # Check if it's a 3-digit model number (604, 605, etc.)
     if page_type.isdigit() and len(page_type) == 3:
         return True
-    # Check if it's a 4-digit model number (6001, 6002, etc.)
+    # Check if it's a 4-digit model number (6001, 6002, 6200, 6201, etc.)
     if page_type.isdigit() and len(page_type) == 4:
+        return True
+    # Check if it's a 5-digit model number (16000, 62200, 62300, etc.)
+    if page_type.isdigit() and len(page_type) == 5:
         return True
     # Check specific model numbers
     return page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6001', '6002']
@@ -24,6 +27,7 @@ def is_model_page(page_type):
 def get_model_upload_info(page_type):
     """Get model page upload information"""
     model_configs = {
+        # Miniature series (3-digit models)
         '604': {'series': 'miniature-series-internal-pages', 'model': '604'},
         '605': {'series': 'miniature-series-internal-pages', 'model': '605'},
         '606': {'series': 'miniature-series-internal-pages', 'model': '606'},
@@ -52,11 +56,55 @@ def get_model_upload_info(page_type):
         '696': {'series': 'miniature-series-internal-pages', 'model': '696'},
         '697': {'series': 'miniature-series-internal-pages', 'model': '697'},
         '698': {'series': 'miniature-series-internal-pages', 'model': '698'},
-        '699': {'series': 'miniature-series-internal-pages', 'model': '699'}
+        '699': {'series': 'miniature-series-internal-pages', 'model': '699'},
+        
+        # 6200 series (4-digit models starting with 62)
+        '6200': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6200'},
+        '6201': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6201'},
+        '6202': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6202'},
+        '6203': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6203'},
+        '6204': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6204'},
+        '6205': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6205'},
+        '6206': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6206'},
+        '6207': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6207'},
+        '6208': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6208'},
+        '6209': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6209'},
+        '6210': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6210'},
+        '6211': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6211'},
+        '6212': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6212'},
+        '6213': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6213'},
+        '6214': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6214'},
+        '6215': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6215'},
+        '6216': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6216'},
+        '6217': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6217'},
+        '6218': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6218'},
+        '6219': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6219'},
+        '6220': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6220'}
     }
     
     if page_type in model_configs:
         return model_configs[page_type]
+    
+    # Default fallback - try to determine series from model number
+    if page_type.isdigit():
+        if len(page_type) == 3 and page_type.startswith('6'):
+            return {'series': 'miniature-series-internal-pages', 'model': page_type}
+        elif len(page_type) == 4 and page_type.startswith('62'):
+            return {'series': '6200-series/6200-series-internal-pages-deployment', 'model': page_type}
+        elif len(page_type) == 4 and page_type.startswith('60'):
+            return {'series': '6000-series/6000-series-internal-pages-deployment', 'model': page_type}
+        elif len(page_type) == 4 and page_type.startswith('63'):
+            return {'series': '6300-series/6300-series-internal-pages-deployment', 'model': page_type}
+        elif len(page_type) == 4 and page_type.startswith('68'):
+            return {'series': '6800-series/6800-series-internal-pages-deployment', 'model': page_type}
+        elif len(page_type) == 4 and page_type.startswith('69'):
+            return {'series': '6900-series/6900-series-internal-pages-deployment', 'model': page_type}
+        elif len(page_type) == 5 and page_type.startswith('16'):
+            return {'series': '16000-series/16000-series-internal-pages-deployment', 'model': page_type}
+        elif len(page_type) == 5 and page_type.startswith('622'):
+            return {'series': '62200-series/62200-series-internal-pages-deployment', 'model': page_type}
+        elif len(page_type) == 5 and page_type.startswith('623'):
+            return {'series': '62300-series/62300-series-internal-pages-deployment', 'model': page_type}
     
     return {
         'series': 'miniature-series-internal-pages',
@@ -121,8 +169,36 @@ def curl_upload(page_type='miniature'):
         # Handle any model page dynamically
         model_info = get_model_upload_info(page_type)
         local_file = f'./{model_info["series"]}/{model_info["model"]}/index.html'
-        remote_file = f'specs/miniature-series/{model_info["model"]}/index.html'
-        clean_url = f'https://rhdbearings.com/specs/miniature-series/{model_info["model"]}'
+        
+        # Determine the correct remote path and URL based on series
+        if '6200-series' in model_info["series"]:
+            remote_file = f'specs/6200-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/6200-series/{model_info["model"]}'
+        elif '6000-series' in model_info["series"]:
+            remote_file = f'specs/6000-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/6000-series/{model_info["model"]}'
+        elif '6300-series' in model_info["series"]:
+            remote_file = f'specs/6300-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/6300-series/{model_info["model"]}'
+        elif '6800-series' in model_info["series"]:
+            remote_file = f'specs/6800-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/6800-series/{model_info["model"]}'
+        elif '6900-series' in model_info["series"]:
+            remote_file = f'specs/6900-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/6900-series/{model_info["model"]}'
+        elif '16000-series' in model_info["series"]:
+            remote_file = f'specs/16000-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/16000-series/{model_info["model"]}'
+        elif '62200-series' in model_info["series"]:
+            remote_file = f'specs/62200-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/62200-series/{model_info["model"]}'
+        elif '62300-series' in model_info["series"]:
+            remote_file = f'specs/62300-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/62300-series/{model_info["model"]}'
+        else:
+            # Default to miniature series
+            remote_file = f'specs/miniature-series/{model_info["model"]}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/miniature-series/{model_info["model"]}'
         
         # Check if the local file exists
         if not os.path.exists(local_file):
@@ -164,8 +240,8 @@ def curl_upload(page_type='miniature'):
 
 def main():
     parser = argparse.ArgumentParser(description='Upload bearing page via curl')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699'], 
-                       help='Which page to upload (miniature, series, or model pages like 604, 607, 608, etc.). If not specified, uploads all pages.')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6200', '6201', '6202', '6203', '6204', '6205', '6206', '6207', '6208', '6209', '6210', '6211', '6212', '6213', '6214', '6215', '6216', '6217', '6218', '6219', '6220'], 
+                       help='Which page to upload (miniature, series, or model pages like 604, 607, 608, 6200, 6201, etc.). If not specified, uploads all pages.')
     args = parser.parse_args()
     
     if args.page:
