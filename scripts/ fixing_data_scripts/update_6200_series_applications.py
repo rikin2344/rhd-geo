@@ -11,17 +11,17 @@ def update_6200_series_applications():
     applications_file = Path('docs/6200 Series Applications.json')
     models_dir = Path('models/')
     
-    print('=== UPDATING 6200 SERIES APPLICATIONS ===\n')
+    print('=== UPDATING 6300 SERIES APPLICATIONS ===\n')
     
     # Read the applications data
     with open(applications_file, 'r', encoding='utf-8') as f:
         applications_data = json.load(f)
     
-    # Process each model from 6200 to 6220
+    # Process each model from 6300 to 6320
     updated_count = 0
     total_count = 0
     
-    for model_num in range(6200, 6221):
+    for model_num in range(6300, 6321):
         model_file = models_dir / f'{model_num}.json'
         
         if not model_file.exists():

@@ -45,10 +45,10 @@
     "width_B_mm": 0,
     "weight_kg": 0,
     "skf_extended_dimensions": {
-      "d1_shoulder_diameter": 0,
-      "D2_recess_diameter": 0,
-      "r1_chamfer_radius": 0,
-      "r2_chamfer_radius": 0
+      "d1_shoulder_diameter": null,
+      "D2_recess_diameter": null,
+      "r1_chamfer_radius": null,
+      "r2_chamfer_radius": null
     }
   },
   "load_ratings": {
@@ -80,19 +80,19 @@
   "applications": {
     "application1": {
       "title": "",
-      "icon": "",
+      "icon": "zap",
       "applications": [],
       "requirements": ""
     },
     "application2": {
       "title": "",
-      "icon": "",
+      "icon": "gear",
       "applications": [],
       "requirements": ""
     },
     "application3": {
       "title": "",
-      "icon": "",
+      "icon": "cog",
       "applications": [],
       "requirements": ""
     }

@@ -1,20 +1,26 @@
 # RHD Bearings - Model Generation Rules
-# Critical compliance requirements extracted from bearing_model_generation_instructions.md
-# This file ensures token-efficient access to mandatory rules for automated generation
+# Critical compliance requirements for automated generation
+# This file ensures token-efficient access to mandatory rules
 
 ## ABSOLUTELY FORBIDDEN - WILL CAUSE IMMEDIATE FAILURE
 
-### Data Generation Violations
-- **NEVER generate clearance, vibration, noise, SKF, or material data** - use lookup tables ONLY
-- **NEVER estimate or assume technical specifications** - use actual data or null values
-- **NEVER hallucinate specifications** when data is not found in lookup tables
+### NULL VALUE REQUIREMENTS (TOP PRIORITY)
+- **NEVER set entire objects to null** - maintain object structure with individual field values set to null
+- **MANDATORY STRUCTURE**: Keep object hierarchy intact, set individual fields to null:
+  ```json
+  "skf_extended_dimensions": {
+    "d1_shoulder_diameter": null,
+    "D2_recess_diameter": null,
+    "r1_chamfer_radius": null,
+    "r2_chamfer_radius": null
+  }
+  ```
+- **APPLY TO**: noise, vibration, clearance, SKF data, and applications objects
 
-### Application Group Violations
-- **NEVER group bearings by bore diameter ranges** (5-10mm, 10-20mm, etc.)
-- **NEVER copy identical application lists** (4+ matching items) from any bearing model
-- **NEVER use identical application group titles** across different bearing models
-- **NEVER rotate/rearrange the same application blocks** between bearing models
-- **NEVER use generic titles** like "Industrial", "Automotive", "Consumer", "Versatile Solutions", "Precision Instruments"
+### Data Generation Violations
+- **EXPLICITLY set to null** - never estimate or assume technical specifications
+- **EXPLICITLY set to null** - never create alternatives when lookup tables don't exist
+- **NEVER hallucinate specifications** when data is not found in lookup tables
 
 ### Structure Violations
 - **NEVER add, delete, or rename JSON fields**
@@ -24,32 +30,18 @@
 ## MANDATORY REQUIREMENTS - MUST BE COMPLETED
 
 ### Data Source Requirements
-- **SKF dimensions**: Look up exact model in skf_dimensions_only.json - if NOT found, set ALL SKF fields to null (never generate or estimate)
-- **Vibration data**: Look up bore diameter in vibration_lookup_table.json
-- **Noise data**: Look up bore diameter + series in noise_lookup_table.json
-- **Clearance data**: Use range logic in clearance_lookup_table.json (over_mm < bore ≤ to_mm)
-- **Enhanced description**: Look up exact model in witty_bearing_descriptions.json
 - **Base specs**: Extract from bearing_database.json by exact model match
-
-### Application Group Requirements
-- **Individual analysis**: Each bearing analyzed based on complete d×D×B×Cr×Cor×RPM×weight profile
-- **Model-specific applications**: Generate applications that reflect THIS bearing's specific capabilities
-- **Limited overlap allowed**: Individual applications may repeat when technically appropriate
-- **List copying prohibited**: Application lists with 4+ identical items are forbidden regardless of position
-- **Title uniqueness required**: Application group titles must be model-specific, not generic across models
-- **Specification references required**: Requirements text must reference actual bearing specifications
-- **Icon assignment**: Select appropriate icon from approved list matching application theme
+- **Enhanced description**: Look up exact model in witty_bearing_descriptions.json
+- **All other technical data**: SET TO NULL with proper object structure
 
 ### Cross-References Requirements
 - **Related models**: Up to 4 models sharing same bore size
   - Miniature series: Last digit = bore size (604 relates to 624, 634, 684, 694)
   - Standard series: Last 2 digits × 5 = bore size (6004 relates to 6204, 6304, 6804, 6904)
-- **Shaft requirements**: Dynamic h6 calculation based on bore diameter with universal surface finish and runout values
+- **Shaft requirements**: Dynamic h6 calculation based on bore diameter
 - **Application alternatives**: Use hardcoded values (C3 clearance, RHD V3/V4, SS bearings)
 
 ### Content Count Requirements
-- **Application groups**: Exactly 3 per bearing model
-- **Applications per group**: Exactly 8 relevant items
 - **FAQ questions**: Exactly 12 total (3 per category)
 - **Recommendation snippets**: Exactly 6 items (15-25 words each)
 - **Natural language queries**: Exactly 6 items (5-15 words each)
@@ -58,86 +50,24 @@
 
 ## CRITICAL VALIDATION CHECKPOINTS
 
-### Pre-Generation Validation
-- [ ] I have access to all required lookup table files
-- [ ] I understand missing data requires null values, never estimation
-- [ ] I will analyze each bearing individually based on complete specifications
-- [ ] I will not copy entire application group blocks
-
 ### Data Accuracy Validation
-- [ ] All technical data sourced from lookup tables or set to null
-- [ ] All lookup attempts documented (found/not found status)
-- [ ] SKF dimensions either exact values or null (never zero)
+- [ ] All technical data from bearing_database.json or set to null with proper structure
 - [ ] No generated, estimated, or assumed values used
-
-### Application Quality Validation
-- [ ] Applications technically appropriate for bearing specifications
-- [ ] No copying of identical application lists (4+ matching items) between models
-- [ ] Application group titles are model-specific, not generic or repeated across models
-- [ ] No systematic rotation of same application blocks between models
-- [ ] Individual applications may overlap when technically justified (1-3 items maximum)
-- [ ] Requirements text references actual bearing specifications (bore, load, speed)
-- [ ] Icons match application group themes per selection rules
+- [ ] Null values maintain object hierarchy per template
 
 ### Structure and Content Validation
 - [ ] JSON structure matches bearing_template.json exactly
 - [ ] All content counts meet exact requirements
 - [ ] Cross-references include related models and shaft requirements
-- [ ] Application alternatives use hardcoded standardized text
-
-## ICON SELECTION RULES
-
-Choose icons matching application themes:
-- **cog**: Mechanical systems, precision instruments, machinery
-- **zap**: High-speed applications, electronic devices, power transmission
-- **target**: Precision applications, measurement devices, calibration
-- **layers**: Multi-component assemblies, stacked systems, complex mechanisms
-- **settings**: Automated systems, control devices, adjustment mechanisms
-- **cpu**: Electronic components, computing devices, digital systems
-- **compass**: Navigation equipment, positioning systems, directional controls
-- **gauge**: Measurement instruments, monitoring devices, sensor applications
-
-## SHAFT REQUIREMENTS CALCULATION
-
-Generate dynamically based on bearing's bore diameter:
-- **nominal_diameter**: Bore diameter with .000mm precision (e.g., "8.000mm")
-- **tolerance_grade**: h6 calculation using ISO ranges (3-6mm: -0.008/0mm, 6-10mm: -0.009/0mm, etc.)
-- **surface_finish**: "Ra 0.8μm max" (universal)
-- **runout_tolerance**: "0.013mm max" (universal)
-
-## APPLICATION-SPECIFIC ALTERNATIVES (HARDCODED)
-
-Use exact text for ALL bearing models:
-```json
-"application_specific_alternatives": {
-  "high_temperature": "C3 clearance recommended",
-  "high_speed": "RHD V3 & V4 bearings recommended", 
-  "corrosive_environment": "SS (Stainless Steel) bearings recommended"
-}
-```
-
-## IMMEDIATE FAILURE TRIGGERS
-
-Stop generation immediately if:
-- **Technical data estimated or assumed** instead of looked up
-- **SKF dimensions generated** when data exists in lookup tables
-- **Placeholder values used** instead of null for missing data
-- **Identical application lists copied** (4+ matching items) between bearing models
-- **Identical application group titles used** across different bearing models
-- **Systematic rotation of application blocks** detected between models
-- **Generic application titles** used (Industrial, Automotive, Versatile, Precision Instruments, etc.)
-- **Bore range categorization** logic detected
 
 ## SUCCESS PATTERN
 
-1. **Verify lookup table access** before starting
-2. **Extract base specifications** from bearing_database.json
-3. **Perform all data lookups** with proper null handling
-4. **Analyze complete bearing profile** individually
-5. **Generate technically appropriate applications** based on specifications
-6. **Calculate cross-references and shaft requirements** using defined logic
-7. **Validate structure and content** before saving
+1. **Extract base specifications** from bearing_database.json
+2. **Set technical objects to null** with proper structure maintained
+3. **Generate cross-references** using defined logic
+4. **Create content** meeting exact count requirements
+5. **Validate structure** before saving
 
 ---
 
-**REMEMBER**: Use lookup tables for all technical data. Allow natural application overlap. Prevent wholesale block copying. Focus on technical appropriateness over artificial uniqueness.
+**REMEMBER**: Maintain object structure with null field values. Use bearing_database.json for base specs only. Set everything else to null with proper hierarchy.

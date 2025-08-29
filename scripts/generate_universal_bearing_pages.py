@@ -104,6 +104,18 @@ class UniversalBearingPageGenerator:
             
         model_str = str(model_number)
         
+        # Special handling for 12.7mm bore variants and special models
+        special_models = {
+            "6201 12.7": "6200-series",
+            "6202 12.7": "6200-series", 
+            "6203 12.7": "6200-series",
+            "6203A42": "6200-series"
+        }
+        
+        # Check if this is a special model first
+        if model_str in special_models:
+            return special_models[model_str]
+        
         # Exclude miniature series (3-digit models starting with 6)
         if model_str.startswith('6') and len(model_str) == 3:
             return None  # Exclude these
@@ -466,6 +478,18 @@ def get_series_from_model_number(model_number):
         
     model_str = str(model_number)
     
+    # Special handling for 12.7mm bore variants and special models
+    special_models = {
+        "6201 12.7": "6200-series",
+        "6202 12.7": "6200-series", 
+        "6203 12.7": "6200-series",
+        "6203A42": "6200-series"
+    }
+    
+    # Check if this is a special model first
+    if model_str in special_models:
+        return special_models[model_str]
+    
     # Exclude miniature series (3-digit models starting with 6)
     if model_str.startswith('6') and len(model_str) == 3:
         return None  # Exclude these
@@ -645,10 +669,11 @@ def create_standalone_pages(selected_series=None):
     STEP 2: Create standalone pages with embedded CSS
     
     This function:
-    1. Reads the generated HTML pages from webpages/{series}SeriesWebPage/internalpages/
-    2. Embeds all shared CSS and HTML components
-    3. Creates completely standalone HTML files
-    4. Outputs to deployment/{series}-series/{series}-series-internal-pages-deployment/
+    1. Creates standalone main series pages (from existing HTML/CSS)
+    2. Creates standalone individual model pages (from generated HTML)
+    3. Embeds all shared CSS and HTML components
+    4. Creates completely standalone HTML files
+    5. Outputs to deployment/{series}-series/ and deployment/{series}-series/{series}-series-internal-pages-deployment/
     """
     print(f"\n🚀 CREATING STANDALONE PAGES")
     print(f"==================================================")
@@ -659,18 +684,34 @@ def create_standalone_pages(selected_series=None):
     
     for series, series_dir_name in series_mapping.items():
         if selected_series is None or series in selected_series:
+            print(f"\n🔧 Creating standalone pages for {series} series...")
+            
+            # STEP 2A: Create standalone main series page
+            print(f"   📋 Processing main series page...")
+            try:
+                success = create_standalone_main_series_page(series, series_dir_name)
+                if success:
+                    print(f"      ✅ Successfully created standalone main series page")
+                    successful_count += 1
+                else:
+                    print(f"      ❌ Failed to create standalone main series page")
+                    failed_count += 1
+            except Exception as e:
+                print(f"      ❌ Error processing main series page: {e}")
+                failed_count += 1
+            
+            # STEP 2B: Create standalone individual model pages
             series_base_dir = Path(f"webpages/{series_dir_name}/internalpages")
             if not series_base_dir.exists():
-                print(f"⚠️  Series directory not found: {series_base_dir}")
+                print(f"   ⚠️  Internal pages directory not found: {series_base_dir}")
                 continue
             
             # Get all model directories
             model_dirs = [d for d in series_base_dir.iterdir() if d.is_dir()]
             if not model_dirs:
-                print(f"⚠️  No model directories found in {series_base_dir}")
+                print(f"   ⚠️  No model directories found in {series_base_dir}")
                 continue
             
-            print(f"\n🔧 Creating standalone pages for {series} series...")
             print(f"   📋 Found {len(model_dirs)} model directories")
             
             for model_dir in model_dirs:
@@ -704,8 +745,226 @@ def create_standalone_pages(selected_series=None):
         print(f"\n⚠️  {failed_count} page(s) failed to create. Check the errors above.")
         return False
 
+def create_standalone_main_series_page(series, series_dir_name):
+    """Helper function for create_standalone_pages() - creates standalone main series page"""
+    try:
+        # Read the existing main series HTML file
+        series_dir = Path(f"webpages/{series_dir_name}")
+        index_file = series_dir / "index.html"
+        styles_file = series_dir / "styles.css"
+        
+        if not index_file.exists():
+            print(f"            ❌ index.html not found in {series_dir}")
+            return False
+        
+        with open(index_file, 'r', encoding='utf-8') as f:
+            html_content = f.read()
+        
+        # Read the main styles.css file
+        styles_css = ""
+        if styles_file.exists():
+            try:
+                with open(styles_file, 'r', encoding='utf-8') as f:
+                    styles_css = f.read()
+                print(f"            ✅ Loaded main series CSS: {len(styles_css)} characters")
+            except:
+                print(f"            ⚠️  styles.css not found, using empty CSS")
+                styles_css = ""
+        
+        # Read shared CSS files
+        shared_dir = Path("webpages/shared")
+        navbar_css = ""
+        footer_css = ""
+        cta_css = ""
+        watermark_css = ""
+        
+        try:
+            with open(shared_dir / "navbar.css", 'r', encoding='utf-8') as f:
+                navbar_css = f.read()
+        except:
+            print(f"            ⚠️  navbar.css not found, using empty CSS")
+        
+        try:
+            with open(shared_dir / "footer.css", 'r', encoding='utf-8') as f:
+                footer_css = f.read()
+        except:
+            print(f"            ⚠️  footer.css not found, using empty CSS")
+        
+        try:
+            with open(shared_dir / "cta-model.css", 'r', encoding='utf-8') as f:
+                cta_css = f.read()
+        except:
+            print(f"            ⚠️  cta-model.css not found, using empty CSS")
+        
+        try:
+            with open(shared_dir / "watermark.css", 'r', encoding='utf-8') as f:
+                watermark_css = f.read()
+            print(f"            ✅ Loaded watermark CSS: {len(watermark_css)} characters")
+        except:
+            print(f"            ⚠️  watermark.css not found, using empty CSS")
+            watermark_css = ""
+        
+        # Read shared HTML files
+        navbar_html = ""
+        footer_html = ""
+        cta_html = ""
+        watermark_html = ""
+        
+        try:
+            with open(shared_dir / "navbar.html", 'r', encoding='utf-8') as f:
+                navbar_html = f.read()
+                # Remove script tag from navbar
+                script_start = navbar_html.find('<script>')
+                if script_start != -1:
+                    navbar_html = navbar_html[:script_start].strip()
+        except:
+            print(f"            ⚠️  navbar.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "footer.html", 'r', encoding='utf-8') as f:
+                footer_html = f.read()
+        except:
+            print(f"            ⚠️  footer.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "cta-model.html", 'r', encoding='utf-8') as f:
+                cta_html = f.read()
+                # Replace [MODEL] placeholder with series name
+                cta_html = cta_html.replace('[MODEL]', series.replace('-series', '').upper())
+        except:
+            print(f"            ⚠️  cta-model.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "watermark.html", 'r', encoding='utf-8') as f:
+                watermark_html = f.read()
+            print(f"            ✅ Loaded watermark HTML: {len(watermark_html)} characters")
+        except:
+            print(f"            ⚠️  watermark.html not found, using empty HTML")
+            watermark_html = ""
+        
+        # Extract body content and scripts
+        body_start = html_content.find('<body')
+        if body_start == -1:
+            print(f"            ❌ No <body> tag found in HTML")
+            return False
+        
+        body_start = body_start + html_content[body_start:].find('>') + 1
+        body_end = html_content.find('</body>')
+        if body_end == -1:
+            print(f"            ❌ No </body> tag found in HTML")
+            return False
+        
+        body_content = html_content[body_start:body_end].strip()
+        
+        # Extract script content
+        script_content = ""
+        current_pos = 0
+        while True:
+            script_start = html_content.find('<script>', current_pos)
+            if script_start == -1:
+                break
+            script_end = html_content.find('</script>', script_start) + len('</script>')
+            script_content += html_content[script_start:script_end] + "\n"
+            current_pos = script_end
+        
+        # Replace image with remote URL
+        body_content = body_content.replace('src="DGBB.png"', 'src="https://rhdbearings.com/wp-content/uploads/2025/08/DGBB.png"')
+        
+        # Replace navbar container with actual navbar HTML
+        body_content = body_content.replace('<div id="navbar-container"></div>', navbar_html)
+        
+        # Replace component containers with actual HTML
+        body_content = body_content.replace('<div id="cta-container"></div>', cta_html)
+        if 'id="footer-container"' in body_content:
+            body_content = body_content.replace('<div id="footer-container"></div>', footer_html)
+        if 'id="watermark-container"' in body_content:
+            body_content = body_content.replace('<div id="watermark-container"></div>', watermark_html)
+        
+        # Remove all fetch calls and problematic patterns
+        import re
+        
+        # Remove fetch calls to shared components
+        body_content = re.sub(r'fetch\([\'"][^\'"]*\.\./shared/[^\'"]*[\'"]\)', '// fetch call removed - component already embedded', body_content)
+        
+        # Remove script blocks that load shared components
+        body_content = re.sub(r'<script>[^<]*fetch\([^<]*\.\./shared/[^<]*</script>', '<!-- Shared component loading script removed -->', body_content, flags=re.DOTALL)
+        
+        # Remove external script tags (script tags with src attribute)
+        body_content = re.sub(r'<script[^>]*src=[^>]*></script>', '<!-- External script removed -->', body_content)
+        
+        # Remove any remaining references to ../shared/ paths (handle multiple levels)
+        body_content = re.sub(r'\.\./shared/', '// shared path removed - components embedded', body_content)
+        
+        # Remove console.error calls related to failed fetches
+        body_content = re.sub(r'console\.error\([^)]*\)', '// error logging removed', body_content)
+        
+        # Clean up empty script tags
+        body_content = re.sub(r'<script>\s*</script>', '', body_content)
+        
+        # Create standalone HTML
+        standalone_html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{series.replace('-series', '').upper()} Series Deep Groove Ball Bearings | RHD Bearings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+/* Reset and base styles */
+* {{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}}
+
+body {{
+    font-family: 'Bai Jamjuree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background: #F8F9FA;
+}}
+
+/* Navbar CSS */
+{navbar_css}
+
+/* Footer CSS */
+{footer_css}
+
+/* CTA CSS */
+{cta_css}
+
+/* Watermark CSS */
+{watermark_css}
+
+/* Main Page Styles */
+{styles_css}
+    </style>
+</head>
+<body>
+{body_content}
+{script_content}
+</body>
+</html>'''
+        
+        # Create deployment directory
+        deployment_dir = Path(f"deployment/{series}")
+        deployment_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Save standalone main series page
+        output_file = deployment_dir / "index.html"
+        
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(standalone_html)
+        
+        print(f"            ✅ Created standalone main series page: {output_file}")
+        return True
+        
+    except Exception as e:
+        print(f"            ❌ Error creating standalone main series page: {e}")
+        return False
+
 def create_standalone_model_page(model_name, model_dir, series):
-    """Helper function for create_standalone_pages()"""
+    """Helper function for create_standalone_pages() - creates standalone individual model pages"""
     try:
         # Read the generated HTML file
         index_file = model_dir / "index.html"
@@ -923,9 +1182,10 @@ def upload_pages(selected_series=None):
     STEP 3: Upload standalone pages to server
     
     This function:
-    1. Reads standalone HTML files from deployment/{series}/{series}-internal-pages-deployment/
-    2. Uploads each model page to the server using curl_upload
-    3. Creates proper directory structure on server
+    1. Uploads the main series page to the server
+    2. Reads standalone HTML files from deployment/{series}/{series}-internal-pages-deployment/
+    3. Uploads each model page to the server using curl_upload
+    4. Creates proper directory structure on server
     """
     print(f"\n🚀 UPLOADING PAGES TO SERVER")
     print(f"==================================================")
@@ -948,6 +1208,38 @@ def upload_pages(selected_series=None):
                 continue
             
             print(f"\n🔧 Uploading {series} series...")
+            
+            # STEP 3A: Upload main series page
+            main_series_file = Path(f"deployment/{series}/index.html")
+            if main_series_file.exists():
+                print(f"   📤 Uploading main series page...")
+                try:
+                    # Change to deployment directory for curl_upload to work correctly
+                    original_cwd = os.getcwd()
+                    os.chdir("deployment")
+                    
+                    # Use the imported curl_upload function for main series
+                    success = curl_upload(series.replace('-series', ''))
+                    
+                    # Change back to original directory
+                    os.chdir(original_cwd)
+                    
+                    if success:
+                        print(f"      ✅ Successfully uploaded main series page")
+                        print(f"      🔗 URL: https://rhdbearings.com/specs/{series}.html")
+                        successful_count += 1
+                    else:
+                        print(f"      ❌ Failed to upload main series page")
+                        failed_count += 1
+                        
+                except Exception as e:
+                    print(f"      ❌ Error uploading main series page: {e}")
+                    failed_count += 1
+            else:
+                print(f"   ⚠️  Main series page not found: {main_series_file}")
+                failed_count += 1
+            
+            # STEP 3B: Upload individual model pages
             print(f"   📋 Found {len(model_dirs)} model directories")
             
             for model_dir in model_dirs:
@@ -974,7 +1266,9 @@ def upload_pages(selected_series=None):
                     
                     if success:
                         print(f"         ✅ Successfully uploaded {model_name}")
-                        print(f"         🔗 URL: https://rhdbearings.com/specs/{series}/{model_name}/")
+                        # Display clean URL with hyphens instead of spaces
+                        clean_url_display = f"https://rhdbearings.com/specs/{series}/{model_name.replace(' ', '-')}/"
+                        print(f"         🔗 URL: {clean_url_display}")
                         successful_count += 1
                     else:
                         print(f"         ❌ Failed to upload {model_name}")

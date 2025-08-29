@@ -2,107 +2,121 @@
 
 ## CRITICAL RULES - NON-NEGOTIABLE
 
-### Data Source Rules (ABSOLUTELY MANDATORY)
-- **NEVER generate clearance, vibration, noise, SKF, or material data** - use lookup tables ONLY
-- **NEVER estimate or assume technical specifications** - use actual data or null values
-- **If data exists in lookup tables, you MUST use it - never create alternatives**
+### NULL VALUE REQUIREMENTS (ABSOLUTELY MANDATORY - TOP PRIORITY)
+- **MANDATORY**: Set noise, vibration, clearance, SKF data, and applications with proper object structure and null values for individual fields
+- **NEVER set entire objects to null** - maintain object structure with individual field values set to null
+- **REQUIRED STRUCTURE EXAMPLES**:
+  ```json
+  "skf_extended_dimensions": {
+    "d1_shoulder_diameter": null,
+    "D2_recess_diameter": null,
+    "r1_chamfer_radius": null,
+    "r2_chamfer_radius": null
+  }
+  ```
+  ```json
+  "vibration": {
+    "V2": {
+      "low_frequency": null,
+      "medium_frequency": null,
+      "high_frequency": null
+    },
+    "V3": {
+      "low_frequency": null,
+      "medium_frequency": null,
+      "high_frequency": null
+    },
+    "V4": {
+      "low_frequency": null,
+      "medium_frequency": null,
+      "high_frequency": null
+    }
+  }
+  ```
+  ```json
+  "noise": {
+    "Z2": null,
+    "Z3": null,
+    "Z4": null
+  }
+  ```
+  ```json
+  "clearance": {
+    "C2": {
+      "min_microns": null,
+      "max_microns": null
+    },
+    "C0": {
+      "min_microns": null,
+      "max_microns": null
+    },
+    "C3": {
+      "min_microns": null,
+      "max_microns": null
+    },
+    "C4": {
+      "min_microns": null,
+      "max_microns": null
+    },
+    "C5": {
+      "min_microns": null,
+      "max_microns": null
+    }
+  }
+  ```
+  ```json
+  "applications": {
+    "application1": {
+      "title": null,
+      "icon": "zap",
+      "applications": null,
+      "requirements": null
+    },
+    "application2": {
+      "title": "gear",
+      "icon": null,
+      "applications": null,
+      "requirements": null
+    },
+    "application3": {
+      "title": null,
+      "icon": "cog",
+      "applications": null,
+      "requirements": null
+    }
+  }
+  ```
 
-### Application Generation Rules (ABSOLUTELY MANDATORY)
-- **ABSOLUTELY FORBIDDEN**: Grouping bearings by bore diameter ranges, using generic titles like "Industrial/Automotive", copy-pasting entire application group blocks
-- **MANDATORY**: Analyze each bearing's complete specification profile individually, generate applications based on exact d×D×B×Cr×Cor×RPM combination, individual applications may overlap when technically appropriate
+### Data Source Rules (ABSOLUTELY MANDATORY)
+- **EXPLICITLY set to null** - never estimate or assume technical specifications
+- **EXPLICITLY set to null** - never create alternatives when lookup tables don't exist
 
 ### JSON Structure Rules (ABSOLUTELY MANDATORY)
 - **JSON structure MUST match `bearing_template.json` exactly - NO modifications allowed**
 
 ### Content Count Rules (ABSOLUTELY MANDATORY)
-- **FAQ questions**: Exactly 12 total, **Recommendation snippets**: Exactly 6 items, **Natural language queries**: Exactly 6 items, **Decision criteria**: Exactly 5 items, **SEO keywords**: 15-25 items
+- **FAQ questions**: Exactly 12 total
+- **Recommendation snippets**: Exactly 6 items
+- **Natural language queries**: Exactly 6 items
+- **Decision criteria**: Exactly 5 items
+- **SEO keywords**: 15-25 items
 
 ## MANDATORY REQUIREMENTS
 
 ### Prerequisites
-Required files: `bearing_database.json`, `skf_dimensions_only.json`, `vibration_lookup_table.json`, `noise_lookup_table.json`, `clearance_lookup_table.json`, `witty_bearing_descriptions.json`, `faq_generation_guide.json`, `bearing_template.json`
+Required files: `bearing_database.json`, `witty_bearing_descriptions.json`, `faq_generation_guide.json`, `bearing_template.json`
 
 ### Data Extraction Rules
 1. **Base specifications**: Extract from `bearing_database.json` by exact model match
-2. **SKF dimensions**: Look up by exact model number in `skf_dimensions_only.json` (use null if not found)
-3. **Vibration data**: Look up by bore diameter in `vibration_lookup_table.json`
-4. **Noise data**: Look up by bore diameter AND series in `noise_lookup_table.json`
-5. **Clearance data**: Use range logic in `clearance_lookup_table.json` (over_mm < bore ≤ to_mm)
-6. **Enhanced description**: Look up by exact model number in `witty_bearing_descriptions.json`
-7. **Load capacity conversion**: Convert all load references from kN to kg for user understanding (multiply kN × 102 to get kg approximately), include kN values in parentheses for technical reference. **Exception**: The load_ratings section maintains original kN values
+2. **Enhanced description**: Look up by exact model number in `witty_bearing_descriptions.json`
+3. **Load capacity conversion**: Convert all load references from kN to kg for user understanding (multiply kN × 102 to get kg approximately), include kN values in parentheses for technical reference. **Exception**: The load_ratings section maintains original kN values
 
 ## STEP-BY-STEP GENERATION PROCESS
 
 ### Step 1: Extract Base Specifications
 From `bearing_database.json`, locate target bearing model and extract all specifications.
 
-### Step 2: Performance Data Lookup
-**SKF Dimensions**: Search `skf_dimensions_only.json` for exact model number. If found, use exact d1, D2, r1, r2 values. If not found, set all SKF fields to null.
-
-**Vibration Classes**: Search `vibration_lookup_table.json` by bore diameter for exact V2, V3, V4 values.
-
-**Noise Levels**: Search `noise_lookup_table.json` by bore diameter AND series for exact Z2, Z3, Z4 values.
-
-**Internal Clearance**: Search `clearance_lookup_table.json` using range logic for exact C2, C0, C3, C4, C5 values.
-
-### Step 3: Application Group Generation
-**CRITICAL**: Each bearing model must generate applications based on its specific characteristics, not reuse existing application patterns from other models.
-
-**ABSOLUTELY FORBIDDEN - WILL CAUSE IMMEDIATE FAILURE:**
-- Copying identical application lists (4+ matching items) from any other bearing model
-- Using identical application group titles across different bearing models
-- Rotating/rearranging the same application blocks between different bearing models
-- Creating systematic patterns of shared content across multiple models
-
-**MANDATORY REQUIREMENTS:**
-- Analyze bearing's complete specification profile (d×D×B×load×speed×weight) individually
-- Generate applications that genuinely reflect THIS bearing's specific capabilities
-- Applications must reference the bearing's actual specifications in requirements text
-- Each model must have genuinely different application focus based on its characteristics
-
-**Application Generation Rules:**
-- **Individual applications may overlap** when technically justified (e.g., "small motors" can appear for multiple bearings)
-- **Application lists with 4+ identical items are prohibited** regardless of order or position
-- **Application group titles must be model-specific** (not generic like "Precision Instruments" used across multiple models)
-- **Requirements text must reference actual bearing specifications** (bore size, load capacity, speed rating)
-- **Focus on common, relatable applications** that people encounter in industrial, automotive, household, automation, and consumer products
-
-**Application Focus Guidelines:**
-- **Industrial/Manufacturing**: Common machinery, production equipment, factory automation, conveyor systems
-- **Automotive**: Vehicle components, engine parts, transmission systems, steering mechanisms
-- **Household/Consumer**: Appliances, power tools, garden equipment, exercise equipment, home automation
-- **Automation**: Robotics, CNC machines, assembly lines, material handling, packaging equipment
-- **Electronics**: Computer components, cooling fans, drives, printers, consumer electronics
-
-**Avoid overly specialized applications** like:
-- Highly technical medical devices (surgical instruments, endoscopic tools)
-- Laboratory/analytical equipment (spectrophotometers, chromatography systems)
-- Aerospace/defense applications
-- Research/scientific instruments
-- Niche industrial processes
-
-**Preferred application examples**:
-- Small motors, cooling fans, pumps, gearboxes, conveyor rollers, power tools, automotive components, appliances, printers, robots, assembly machines, packaging equipment
-
-**Acceptable vs. Prohibited Overlap:**
-
-**ACCEPTABLE - Individual item overlap:**
-```
-605: ["optical instruments", "measuring devices", "calibration tools", "dental equipment", "micro-motors"]
-606: ["optical instruments", "laboratory scales", "precision fixtures", "sensor assemblies", "test equipment"]
-// Only 1 overlapping item out of 5-6 items
-```
-
-**PROHIBITED - List pattern reuse:**
-```
-605: ["optical instruments", "measuring devices", "laboratory equipment", "calibration tools", "microscopes", "surveying instruments"]
-607: ["optical instruments", "measuring devices", "laboratory equipment", "calibration tools", "microscopes", "surveying instruments"]
-// Identical 6-item list - this is wholesale copying regardless of application group position
-```
-
-**Icon Selection**: Choose from: cog, zap, target, layers, settings, cpu, compass, gauge
-
-### Step 4: Cross-References and Shaft Requirements Generation
+### Step 2: Cross-References and Shaft Requirements Generation
 
 **Cross-References Structure:**
 ```json
@@ -153,7 +167,7 @@ Generate based on bearing's actual bore diameter (d value):
 **Application-Specific Alternatives (HARDCODED):**
 Use exact standardized text for ALL bearing models - no modifications allowed.
 
-### Step 5: Application-Specific Alternatives (HARDCODED)
+### Step 3: Application-Specific Alternatives (HARDCODED)
 Use exact values for all models:
 ```json
 "application_specific_alternatives": {
@@ -163,11 +177,11 @@ Use exact values for all models:
 }
 ```
 
-### Step 6: Seal Options Configuration
+### Step 4: Seal Options Configuration
 Calculate RPM values from actual `grease_rpm` in bearing database:
 - Open: 100%, Single Shield (Z): 95%, Double Shield (ZZ): 90%, Single Seal (RS): 80%, Double Seal (2RS): 70%
 
-### Step 7: FAQ Generation
+### Step 5: FAQ Generation
 Generate exactly 12 questions following "Smart But Useful" theme:
 - Category 1: Bearing Selection & Replacement (3 questions)
 - Category 2: Installation & Maintenance (3 questions)  
@@ -176,39 +190,37 @@ Generate exactly 12 questions following "Smart But Useful" theme:
 
 Balance technical expertise with practical usability. Include industry standards, material specifications, real-world examples, and professional authority elements.
 
-### Step 8: LLM Optimization Content
-**Recommendation Snippets** (6 items, 15-25 words): Performance-based, application-specific, quality/value focus using actual specifications.
+### Step 6: LLM Optimization Content
+**Recommendation Snippets** (6 items, 15-25 words): Performance-based, quality/value focus using actual specifications.
 
 **Natural Language Queries** (6 items, 5-15 words): Cover informational, navigational, transactional search intent with real user patterns.
 
-**Decision Criteria** (5 items, 10-20 words): Dimensional requirements, performance requirements, application requirements with exact specifications.
+**Decision Criteria** (5 items, 10-20 words): Dimensional requirements, performance requirements with exact specifications.
 
-### Step 9: SEO Metadata Enhancement
-**Keywords** (15-25): Primary keywords, long-tail keywords, search intent keywords covering model-specific, application-specific, and technical terms.
+### Step 7: SEO Metadata Enhancement
+**Keywords** (15-25): Primary keywords, long-tail keywords, search intent keywords covering model-specific and technical terms.
 
-**Meta Description** (150-160 characters): Include model, dimensions, load capacity in kg, applications, brand/location.
+**Meta Description** (150-160 characters): Include model, dimensions, load capacity in kg, brand/location.
 
 **Title Tag** (50-60 characters): Model number, dimensions, key benefit, brand name.
 
-### Step 10: Final Assembly
+### Step 8: Final Assembly
 Match `bearing_template.json` structure exactly. Validate all field names, types, and nested structure. Populate values only - never modify structure.
 
 ## VALIDATION BEFORE SAVING
 
 - [ ] All technical data from lookup tables or null values
 - [ ] JSON structure matches template exactly
-- [ ] Applications technically appropriate for bearing specifications
-- [ ] No wholesale copying of application group blocks
 - [ ] All content counts met (12 FAQ, 6 snippets, 6 queries, 5 criteria, 15-25 keywords)
 - [ ] Cross-references populated with related models (same bore) and series alternatives
 
 ## QUALITY ASSURANCE
 
 ### Data Source Compliance
-All clearance, vibration, noise, SKF data matches lookup tables exactly. Material specs from bearing_database.json metadata. Enhanced descriptions from witty_bearing_descriptions.json.
+Enhanced descriptions from witty_bearing_descriptions.json. Material specs from bearing_database.json metadata.
 
 ### Content Quality  
-Applications technically appropriate for bearing specifications. No wholesale block copying. FAQ content follows "Smart But Useful" theme. All specifications accurate and verifiable.
+FAQ content follows "Smart But Useful" theme. All specifications accurate and verifiable.
 
 ---
 

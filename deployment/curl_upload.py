@@ -6,6 +6,7 @@ Reliable upload using curl command
 import os
 import subprocess
 import argparse
+import urllib.parse
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -22,7 +23,7 @@ def is_model_page(page_type):
     if page_type.isdigit() and len(page_type) == 5:
         return True
     # Check specific model numbers
-    return page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6001', '6002']
+    return page_type in ['604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6001', '6002', '6201 12.7', '6202 12.7', '6203 12.7', '6203A42']
 
 def get_model_upload_info(page_type):
     """Get model page upload information"""
@@ -79,7 +80,13 @@ def get_model_upload_info(page_type):
         '6217': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6217'},
         '6218': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6218'},
         '6219': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6219'},
-        '6220': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6220'}
+        '6220': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6220'},
+        
+        # Special 12.7mm bore variants and special models
+        '6201 12.7': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6201 12.7'},
+        '6202 12.7': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6202 12.7'},
+        '6203 12.7': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6203 12.7'},
+        '6203A42': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6203A42'}
     }
     
     if page_type in model_configs:
@@ -172,8 +179,10 @@ def curl_upload(page_type='miniature'):
         
         # Determine the correct remote path and URL based on series
         if '6200-series' in model_info["series"]:
-            remote_file = f'specs/6200-series/{model_info["model"]}/index.html'
-            clean_url = f'https://rhdbearings.com/specs/6200-series/{model_info["model"]}'
+            # Replace spaces with hyphens for cleaner URLs
+            clean_model = model_info["model"].replace(' ', '-')
+            remote_file = f'specs/6200-series/{clean_model}/index.html'
+            clean_url = f'https://rhdbearings.com/specs/6200-series/{clean_model}'
         elif '6000-series' in model_info["series"]:
             remote_file = f'specs/6000-series/{model_info["model"]}/index.html'
             clean_url = f'https://rhdbearings.com/specs/6000-series/{model_info["model"]}'
