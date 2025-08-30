@@ -37,6 +37,7 @@
     ]
   },
   "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "6300-series",
   "model_number": "6301",
   "enhanced_description": "12mm bore with 37mm ambitions and the skills to back them up.",
   "dimensions": {
@@ -90,7 +91,7 @@
         "Portable vacuum spindles",
         "Garden shredder drives"
       ],
-      "requirements": "12mm shaft with 9.75kN (\u2248995kg) dynamic load capacity, 14,000 RPM grease lubrication, 37\u00d712mm for medium duty appliances"
+      "requirements": "12mm shaft with 9.75kN (≈995kg) dynamic load capacity, 14,000 RPM grease lubrication, 37×12mm for medium duty appliances"
     },
     "application2": {
       "title": "Instrument Motion",
@@ -105,7 +106,7 @@
         "Weather sensor rotors",
         "Ticket dispensing rollers"
       ],
-      "requirements": "Precision 12mm bore, 4.15kN (\u2248425kg) static load, accurate and smooth for instrument movement"
+      "requirements": "Precision 12mm bore, 4.15kN (≈425kg) static load, accurate and smooth for instrument movement"
     },
     "application3": {
       "title": "Light Industry",
@@ -215,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6301 Bearing 12\u00d737\u00d712mm Deep Groove Ball Bearing | RHD",
+    "title": "6301 Bearing 12×37×12mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6301 deep groove ball bearing with 12mm bore, 37mm OD, 12mm width. 9.72kN dynamic load, 991kg capacity. Perfect for small motors, pumps, precision equipment.",
     "keywords": [
       "6301 bearing",
@@ -246,7 +247,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6301/",
     "og_data": {
-      "title": "6301 Deep Groove Ball Bearing - 12\u00d737\u00d712mm | RHD Bearings",
+      "title": "6301 Deep Groove Ball Bearing - 12×37×12mm | RHD Bearings",
       "description": "High-quality 6301 bearing with 9.72kN dynamic load capacity. Perfect for small motors, pumps, and precision applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6301/",
       "type": "product",
@@ -300,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -330,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "12.000mm",
       "tolerance_grade": "h6 (11.989-12.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -346,7 +347,7 @@
       "Use 6301-RS in moisture-prone environments requiring 13,600 RPM with rubber seal protection",
       "Consider 6301 for precision equipment where 12mm width and 0.051kg weight ensure compact design",
       "Opt for 6301 in small machinery applications needing 12mm bore with 991kg load capacity",
-      "Deploy 6301 in automation systems requiring 17,000 RPM grease lubrication with 37\u00d712mm profile"
+      "Deploy 6301 in automation systems requiring 17,000 RPM grease lubrication with 37×12mm profile"
     ],
     "natural_language_queries": [
       "6301 bearing dimensions",
@@ -366,7 +367,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need small bearing for 12mm shaft with moderate load capacity",
-        "solution": "6301 bearing provides 9.72kN dynamic load in 37\u00d712mm profile"
+        "solution": "6301 bearing provides 9.72kN dynamic load in 37×12mm profile"
       },
       {
         "problem": "Require dust protection in small motor application",
@@ -379,38 +380,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 2.07kN higher dynamic load than 6300 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in small-bearing category for 9.72kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6301 provides 2.07kN higher dynamic load than 6300 while maintaining compact 37\u00d712mm profile",
+      "vs_smaller_bearing": "6301 provides 2.07kN higher dynamic load than 6300 while maintaining compact 37×12mm profile",
       "vs_larger_bearing": "6301 offers 2.07kN lower load than 6302 but with 2mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6301 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6301 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -429,7 +430,7 @@
         },
         {
           "question": "Can I replace a 6301 bearing with a different size bearing?",
-          "direct_answer": "No, 6301 bearings have unique 12\u00d737\u00d712mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6301 bearings have unique 12×37×12mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6301 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6301 bearings in stock to avoid production delays and ensure consistent quality."

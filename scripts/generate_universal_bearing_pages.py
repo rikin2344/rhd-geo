@@ -1208,38 +1208,6 @@ def upload_pages(selected_series=None):
                 continue
             
             print(f"\n🔧 Uploading {series} series...")
-            
-            # STEP 3A: Upload main series page
-            main_series_file = Path(f"deployment/{series}/index.html")
-            if main_series_file.exists():
-                print(f"   📤 Uploading main series page...")
-                try:
-                    # Change to deployment directory for curl_upload to work correctly
-                    original_cwd = os.getcwd()
-                    os.chdir("deployment")
-                    
-                    # Use the imported curl_upload function for main series
-                    success = curl_upload(series.replace('-series', ''))
-                    
-                    # Change back to original directory
-                    os.chdir(original_cwd)
-                    
-                    if success:
-                        print(f"      ✅ Successfully uploaded main series page")
-                        print(f"      🔗 URL: https://rhdbearings.com/specs/{series}.html")
-                        successful_count += 1
-                    else:
-                        print(f"      ❌ Failed to upload main series page")
-                        failed_count += 1
-                        
-                except Exception as e:
-                    print(f"      ❌ Error uploading main series page: {e}")
-                    failed_count += 1
-            else:
-                print(f"   ⚠️  Main series page not found: {main_series_file}")
-                failed_count += 1
-            
-            # STEP 3B: Upload individual model pages
             print(f"   📋 Found {len(model_dirs)} model directories")
             
             for model_dir in model_dirs:

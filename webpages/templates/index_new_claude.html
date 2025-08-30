@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="../../../../shared/watermark.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body data-page="miniature" data-model="{{model_number}}">
+<body data-page="{{bearing_series_name}}" data-model="{{model_number}}">
     <!-- Navigation Header -->
     <div id="navbar-container"></div>
 
@@ -78,7 +78,7 @@
                 <div class="hero-main">
                     <div class="breadcrumb">
                         <a href="{{company_metadata.website}}/">Home</a> > 
-                        <a href="{{company_metadata.website}}/specs/miniature-series.html">Miniature Bearings</a> > 
+                        <a href="{{company_metadata.website}}/specs/{{bearing_series}}.html">{{bearing_series_name}}</a> > 
                         <span>{{model_number}} Bearing</span>
                     </div>
                     
@@ -105,15 +105,15 @@
                                 <div class="spec-label">Width</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">{{load_ratings.dynamic_load_Cr_kN}}kN</div>
+                                <div class="spec-value">{{load_ratings.dynamic_load_Cr_kN}} kN</div>
                                 <div class="spec-label">Load Rating</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">{{speed_limits.grease_rpm}}</div>
-                                <div class="spec-label">Max RPM</div>
+                                <div class="spec-value">{{load_ratings.load_capacity_kg}} Kg</div>
+                                <div class="spec-label">Load Capacity</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">{{dimensions.weight_kg}}kg</div>
+                                <div class="spec-value">{{dimensions.weight_kg}} Kg</div>
                                 <div class="spec-label">Weight</div>
                             </div>
                         </div>
@@ -208,8 +208,12 @@
                                     <span>{{load_ratings.static_load_Cor_kN}}kN</span>
                                 </div>
                                 <div class="spec-row">
-                                    <span>Load Capacity</span>
-                                    <span>{{load_ratings.load_capacity_kg}}kg ({{load_ratings.dynamic_load_Cr_kN}}kN) force</span>
+                                    <span>Load Capacity (kN)</span>
+                                    <span>{{load_ratings.dynamic_load_Cr_kN}}kN</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Load Capacity (kg)</span>
+                                    <span>{{load_ratings.load_capacity_kg}}kg</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -249,9 +253,17 @@
                                     <span>Oil Lubrication</span>
                                     <span>{{speed_limits.oil_rpm}} RPM</span>
                                 </div>
-                                <div class="spec-row">
-                                    <span>Recommended Max</span>
-                                    <span>{{speed_limits.recommended_max_rpm}} RPM (90%)</span>
+                                <div class="spec-row speed-rating-row speed-z2v2">
+                                    <span>RHD Z2V2 Bearings</span>
+                                    <span class="speed-value" id="z2v2-speed">1400 RPM</span>
+                                </div>
+                                <div class="spec-row speed-rating-row speed-z3v3">
+                                    <span>RHD Z3V3 Bearings</span>
+                                    <span class="speed-value" id="z3v3-speed">2880 RPM</span>
+                                </div>
+                                <div class="spec-row speed-rating-row speed-z4v4">
+                                    <span>RHD Z4V4 Bearings</span>
+                                    <span class="speed-value" id="z4v4-speed">4000+ RPM</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -285,7 +297,11 @@
                             <div class="spec-details">
                                 <div class="spec-row">
                                     <span>Steel Grade</span>
-                                    <span>{{material.grade}}</span>
+                                    <span>SAE52100</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Ball Grade</span>
+                                    <span>G10</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Carbon Content</span>
@@ -294,10 +310,6 @@
                                 <div class="spec-row">
                                     <span>Chromium Content</span>
                                     <span>{{material.chromium_content}}</span>
-                                </div>
-                                <div class="spec-row">
-                                    <span>Silicon Content</span>
-                                    <span>{{material.silicon_content}}</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>ISO Standard</span>
@@ -311,16 +323,16 @@
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>{{material.grade}} Steel:</strong> Premium bearing steel - harder than tool steel
+                                    <strong>SAE52100 Chrome Steel:</strong> Premium bearing steel - harder than tool steel
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>G10 Balls:</strong> Ultra-precision balls with ±0.25µm tolerance
                                 </div>
                                 <div class="explanation-item">
                                     <strong>High Carbon:</strong> Superior hardness and wear resistance
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Chromium:</strong> Adds corrosion resistance and toughness
-                                </div>
-                                <div class="explanation-item">
-                                    <strong>Silicon:</strong> Improves strength and deoxidizes the steel
                                 </div>
                                 <div class="explanation-item">
                                     <strong>ISO Standard:</strong> Fits any {{model_number}} application worldwide
@@ -339,21 +351,29 @@
                         <div class="flip-card-front">
                             <h3><span class="spec-icon">📊</span>Vibration Classes</h3>
                             <div class="spec-details">
-                                <div class="spec-row">
-                                    <span>V2 Grade</span>
-                                    <span>&lt; {{vibration.V2.low_frequency}}/{{vibration.V2.medium_frequency}}/{{vibration.V2.high_frequency}} μm/s</span>
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V2 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">{{vibration.V2.low_frequency}}</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">{{vibration.V2.medium_frequency}}</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">{{vibration.V2.high_frequency}}</span> μm/s</div>
+                                    </div>
                                 </div>
-                                <div class="spec-row">
-                                    <span>V3 Grade</span>
-                                    <span>&lt; {{vibration.V3.low_frequency}}/{{vibration.V3.medium_frequency}}/{{vibration.V3.high_frequency}} μm/s</span>
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V3 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">{{vibration.V3.low_frequency}}</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">{{vibration.V3.medium_frequency}}</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">{{vibration.V3.high_frequency}}</span> μm/s</div>
+                                    </div>
                                 </div>
-                                <div class="spec-row">
-                                    <span>V4 Grade (Precision)</span>
-                                    <span>&lt; {{vibration.V4.low_frequency}}/{{vibration.V4.medium_frequency}}/{{vibration.V4.high_frequency}} μm/s</span>
-                                </div>
-                                <div class="spec-row">
-                                    <span>Frequency Bands</span>
-                                    <span>Low/Med/High Hz</span>
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V4 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">{{vibration.V4.low_frequency}}</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">{{vibration.V4.medium_frequency}}</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">{{vibration.V4.high_frequency}}</span> μm/s</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -809,6 +829,86 @@
         </div>
     </section>
 
+    <!-- Cross References & Alternatives -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compatible Models & Shaft Requirements</h2>
+                <p>Find bearings with the same bore size and ensure proper shaft preparation</p>
+            </div>
+            
+            <div class="cross-ref-grid">
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
+                    <div class="related-models">
+                        {{#cross_references.related_models}}
+                        <a href="{{seo_metadata.canonical_url}}" class="model-link">{{.}} ({{#if (eq . "604")}}4×12×4mm{{else if (eq . "605")}}5×14×5mm{{else if (eq . "606")}}6×17×6mm{{else if (eq . "607")}}7×19×6mm{{else if (eq . "608")}}8×22×7mm{{else if (eq . "609")}}9×24×7mm{{else if (eq . "623")}}3×10×4mm{{else if (eq . "624")}}4×13×5mm{{else if (eq . "625")}}5×16×5mm{{else if (eq . "626")}}6×19×6mm{{else if (eq . "627")}}7×22×7mm{{else if (eq . "628")}}8×24×8mm{{else if (eq . "629")}}9×26×8mm{{else if (eq . "634")}}4×16×5mm{{else if (eq . "635")}}5×19×6mm{{else if (eq . "683")}}3×7×2mm{{else if (eq . "684")}}4×9×2.5mm{{else if (eq . "685")}}5×11×3mm{{else if (eq . "686")}}6×13×3.5mm{{else if (eq . "687")}}7×14×3.5mm{{else if (eq . "688")}}8×16×4mm{{else if (eq . "689")}}9×17×4mm{{else if (eq . "693")}}3×8×3mm{{else if (eq . "694")}}4×11×4mm{{else if (eq . "695")}}5×13×4mm{{else if (eq . "696")}}6×15×5mm{{else if (eq . "697")}}7×17×5mm{{else if (eq . "698")}}8×19×6mm{{else if (eq . "699")}}9×20×6mm{{else}}dimensions{{/if}})</a>
+                        {{/cross_references.related_models}}
+                    </div>
+                </div>
+                
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🔧</span>Shaft Requirements</h3>
+                    <div class="alternatives-list">
+                        <div class="alternative-item">
+                            <strong>Nominal Diameter</strong>
+                            <span>{{cross_references.shaft_requirements.nominal_diameter}}</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Tolerance Grade</strong>
+                            <span>{{cross_references.shaft_requirements.tolerance_grade}}</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Surface Finish</strong>
+                            <span>{{cross_references.shaft_requirements.surface_finish}}</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Runout Tolerance</strong>
+                            <span>{{cross_references.shaft_requirements.runout_tolerance}}</span>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🎯</span>Application-Specific Options</h3>
+                    <div class="application-options">
+                        <div class="option-item">
+                            <strong>High Temperature:</strong>
+                            <span>{{cross_references.application_specific_alternatives.high_temperature}}</span>
+                        </div>
+                        <div class="option-item">
+                            <strong>High Speed:</strong>
+                            <span>{{cross_references.application_specific_alternatives.high_speed}}</span>
+                        </div>
+                        <div class="option-item">
+                            <strong>Corrosive Environment:</strong>
+                            <span>{{cross_references.application_specific_alternatives.corrosive_environment}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Signals -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Expertise & Standards</h2>
+                <p>Technical insights from 20+ years of bearing engineering and manufacturing excellence</p>
+            </div>
+            
+            <div class="expertise-grid">
+                {{#llm_optimization.expertise_signals}}
+                <div class="expertise-card">
+                    <h3><span class="expertise-icon">{{icon}}</span>{{title}}</h3>
+                    <p>{{description}}</p>
+                </div>
+                {{/llm_optimization.expertise_signals}}
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="section bg-light">
         <div class="container">
@@ -925,86 +1025,6 @@
                         {{/faqs.cost_performance.questions}}
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cross References & Alternatives -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Compatible Models & Shaft Requirementss</h2>
-                <p>Find bearings with the same bore size and ensure proper shaft preparation</p>
-            </div>
-            
-            <div class="cross-ref-grid">
-                <div class="cross-ref-card">
-                    <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
-                    <div class="related-models">
-                        {{#cross_references.related_models}}
-                        <a href="{{seo_metadata.canonical_url}}" class="model-link">{{.}} ({{#if (eq . "604")}}4×12×4mm{{else if (eq . "605")}}5×14×5mm{{else if (eq . "606")}}6×17×6mm{{else if (eq . "607")}}7×19×6mm{{else if (eq . "608")}}8×22×7mm{{else if (eq . "609")}}9×24×7mm{{else if (eq . "623")}}3×10×4mm{{else if (eq . "624")}}4×13×5mm{{else if (eq . "625")}}5×16×5mm{{else if (eq . "626")}}6×19×6mm{{else if (eq . "627")}}7×22×7mm{{else if (eq . "628")}}8×24×8mm{{else if (eq . "629")}}9×26×8mm{{else if (eq . "634")}}4×16×5mm{{else if (eq . "635")}}5×19×6mm{{else if (eq . "683")}}3×7×2mm{{else if (eq . "684")}}4×9×2.5mm{{else if (eq . "685")}}5×11×3mm{{else if (eq . "686")}}6×13×3.5mm{{else if (eq . "687")}}7×14×3.5mm{{else if (eq . "688")}}8×16×4mm{{else if (eq . "689")}}9×17×4mm{{else if (eq . "693")}}3×8×3mm{{else if (eq . "694")}}4×11×4mm{{else if (eq . "695")}}5×13×4mm{{else if (eq . "696")}}6×15×5mm{{else if (eq . "697")}}7×17×5mm{{else if (eq . "698")}}8×19×6mm{{else if (eq . "699")}}9×20×6mm{{else}}dimensions{{/if}})</a>
-                        {{/cross_references.related_models}}
-                    </div>
-                </div>
-                
-                <div class="cross-ref-card">
-                    <h3><span class="cross-ref-icon">🔧</span>Shaft Requirements</h3>
-                    <div class="alternatives-list">
-                        <div class="alternative-item">
-                            <strong>Nominal Diameter</strong>
-                            <span>{{cross_references.shaft_requirements.nominal_diameter}}</span>
-                        </div>
-                        <div class="alternative-item">
-                            <strong>Tolerance Grade</strong>
-                            <span>{{cross_references.shaft_requirements.tolerance_grade}}</span>
-                        </div>
-                        <div class="alternative-item">
-                            <strong>Surface Finish</strong>
-                            <span>{{cross_references.shaft_requirements.surface_finish}}</span>
-                        </div>
-                        <div class="alternative-item">
-                            <strong>Runout Tolerance</strong>
-                            <span>{{cross_references.shaft_requirements.runout_tolerance}}</span>
-                        </div>
-                    </div>
-                </div>
-                                
-                <div class="cross-ref-card">
-                    <h3><span class="cross-ref-icon">🎯</span>Application-Specific Options</h3>
-                    <div class="application-options">
-                        <div class="option-item">
-                            <strong>High Temperature:</strong>
-                            <span>{{cross_references.application_specific_alternatives.high_temperature}}</span>
-                        </div>
-                        <div class="option-item">
-                            <strong>High Speed:</strong>
-                            <span>{{cross_references.application_specific_alternatives.high_speed}}</span>
-                        </div>
-                        <div class="option-item">
-                            <strong>Corrosive Environment:</strong>
-                            <span>{{cross_references.application_specific_alternatives.corrosive_environment}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise Signals -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Professional Expertise & Standards</h2>
-                <p>Technical insights from 20+ years of bearing engineering and manufacturing excellence</p>
-            </div>
-            
-            <div class="expertise-grid">
-                {{#llm_optimization.expertise_signals}}
-                <div class="expertise-card">
-                    <h3><span class="expertise-icon">{{icon}}</span>{{title}}</h3>
-                    <p>{{description}}</p>
-                </div>
-                {{/llm_optimization.expertise_signals}}
             </div>
         </div>
     </section>
@@ -1270,6 +1290,31 @@
                 closeSealModal();
             }
         });
+
+        // Speed Limits Conditional Logic
+        function updateSpeedLimits() {
+            const bearingSeries = '{{bearing_series_name}}';
+            const isMiniature = bearingSeries === 'miniature-series';
+            
+            const z2v2Element = document.getElementById('z2v2-speed');
+            const z3v3Element = document.getElementById('z3v3-speed');
+            const z4v4Element = document.getElementById('z4v4-speed');
+            
+            if (z2v2Element && z3v3Element && z4v4Element) {
+                if (isMiniature) {
+                    z2v2Element.textContent = '8000 RPM';
+                    z3v3Element.textContent = '15000 RPM';
+                    z4v4Element.textContent = '24000 RPM';
+                } else {
+                    z2v2Element.textContent = '1400 RPM';
+                    z3v3Element.textContent = '2880 RPM';
+                    z4v4Element.textContent = '4000+ RPM';
+                }
+            }
+        }
+
+        // Run speed limits update when page loads
+        document.addEventListener('DOMContentLoaded', updateSpeedLimits);
     </script>
 </body>
 </html>

@@ -37,6 +37,7 @@
     ]
   },
   "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "miniature-series",
   "model_number": "683",
   "enhanced_description": "The 3mm micro marvel - proving that the tiniest bearings can deliver the most impressive performance with unwavering reliability.",
   "dimensions": {
@@ -90,7 +91,7 @@
         "nano-manipulators",
         "quantum microscopes"
       ],
-      "requirements": "3mm shaft with 0.65kN dynamic load capacity, 40,000 RPM grease lubrication, precision 10\u00d74mm profile for nano-precision applications"
+      "requirements": "3mm shaft with 0.65kN dynamic load capacity, 40,000 RPM grease lubrication, precision 10×4mm profile for nano-precision applications"
     },
     "application2": {
       "title": "Micro-Fluidics",
@@ -215,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "683 Bearing 3\u00d710\u00d74mm Deep Groove Ball Bearing | RHD",
+    "title": "683 Bearing 3×10×4mm Deep Groove Ball Bearing | RHD",
     "meta_description": "683 deep groove ball bearing with 3mm bore, 10mm OD, 4mm width. 0.65kN dynamic load, 66kg capacity. Perfect for nano-precision instruments, micro-fluidics, quantum computing.",
     "keywords": [
       "683 bearing",
@@ -247,7 +248,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/683/",
     "og_data": {
-      "title": "683 Deep Groove Ball Bearing - 3\u00d710\u00d74mm | RHD Bearings",
+      "title": "683 Deep Groove Ball Bearing - 3×10×4mm | RHD Bearings",
       "description": "Nano-precision 683 miniature bearing with 0.65kN dynamic load capacity. Perfect for nano-precision instruments, micro-fluidics, and quantum computing.",
       "url": "https://rhdbearings.com/specs/miniature-series/683/",
       "type": "product",
@@ -301,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +332,7 @@
     "shaft_requirements": {
       "nominal_diameter": "3.000mm",
       "tolerance_grade": "h6 (2.991-3.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -345,7 +346,7 @@
       "Choose 683 for 3mm shafts requiring 0.65kN dynamic load capacity in nano-precision instrument applications",
       "Select 683-ZZ for dust protection with 36,000 RPM capability and sealed-for-life lubrication",
       "Use 683-RS in moisture-prone environments requiring 32,000 RPM with rubber seal protection",
-      "Consider 683 for nano-precision instruments where 10\u00d74mm profile and 66kg load capacity optimize performance",
+      "Consider 683 for nano-precision instruments where 10×4mm profile and 66kg load capacity optimize performance",
       "Opt for 683 in micro-fluidics needing 0.3mm chamfer radius and stable positioning",
       "Deploy 683 in quantum computing requiring 40,000 RPM grease lubrication with nano-precision design"
     ],
@@ -367,7 +368,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need nano-precision bearing for 3mm shaft with substantial load capacity",
-        "solution": "683 bearing provides 0.65kN dynamic load in 10\u00d74mm profile"
+        "solution": "683 bearing provides 0.65kN dynamic load in 10×4mm profile"
       },
       {
         "problem": "Require dust protection in nano-precision application",
@@ -380,32 +381,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "3mm bore with 0.65kN load capacity and 40,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in miniature bearing category for 0.65kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -430,7 +431,7 @@
         },
         {
           "question": "Can I replace a 683 bearing with a different size bearing?",
-          "direct_answer": "No, 683 bearings have unique 3\u00d710\u00d74mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 683 bearings have unique 3×10×4mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 683 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 683 bearings in stock to avoid production delays and ensure consistent quality."

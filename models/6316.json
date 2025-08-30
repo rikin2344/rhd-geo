@@ -37,6 +37,7 @@
     ]
   },
   "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "6300-series",
   "model_number": "6316",
   "enhanced_description": "The powerful performer - 80mm bore of exceptional capability.",
   "dimensions": {
@@ -90,7 +91,7 @@
         "Harbor material feeders",
         "Stone crushing transfer beds"
       ],
-      "requirements": "80mm shaft with 124kN (\u224812,650kg) dynamic load, 2,600 RPM grease, 170\u00d739mm for bulk handler machinery"
+      "requirements": "80mm shaft with 124kN (≈12,650kg) dynamic load, 2,600 RPM grease, 170×39mm for bulk handler machinery"
     },
     "application2": {
       "title": "Drive Modules",
@@ -105,7 +106,7 @@
         "Palletizing robot guides",
         "Crane swing turntables"
       ],
-      "requirements": "80mm bore, 86.5kN (\u22488,820kg) static load, high axial/radial support"
+      "requirements": "80mm bore, 86.5kN (≈8,820kg) static load, high axial/radial support"
     },
     "application3": {
       "title": "Agricultural Rollers",
@@ -215,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6316 Bearing 80\u00d7170\u00d739mm Deep Groove Ball Bearing | RHD",
+    "title": "6316 Bearing 80×170×39mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6316 deep groove ball bearing with 80mm bore, 170mm OD, 39mm width. 145.20kN dynamic load, 14816kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6316 bearing",
@@ -246,7 +247,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6316/",
     "og_data": {
-      "title": "6316 Deep Groove Ball Bearing - 80\u00d7170\u00d739mm | RHD Bearings",
+      "title": "6316 Deep Groove Ball Bearing - 80×170×39mm | RHD Bearings",
       "description": "High-quality 6316 bearing with 145.20kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6316/",
       "type": "product",
@@ -300,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -330,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "80.000mm",
       "tolerance_grade": "h6 (79.987-80.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.023mm max"
     },
     "application_specific_alternatives": {
@@ -346,7 +347,7 @@
       "Use 6316-RS in moisture-prone environments requiring 2,880 RPM with rubber seal protection",
       "Consider 6316 for machinery where 39mm width and 6.45kg weight ensure robust design",
       "Opt for 6316 in industrial applications needing 80mm bore with 14816kg load capacity",
-      "Deploy 6316 in automation systems requiring 3,600 RPM grease lubrication with 170\u00d739mm profile"
+      "Deploy 6316 in automation systems requiring 3,600 RPM grease lubrication with 170×39mm profile"
     ],
     "natural_language_queries": [
       "6316 bearing dimensions",
@@ -366,7 +367,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 80mm shaft with high load capacity",
-        "solution": "6316 bearing provides 145.20kN dynamic load in 170\u00d739mm profile"
+        "solution": "6316 bearing provides 145.20kN dynamic load in 170×39mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
@@ -379,38 +380,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 13.40kN higher dynamic load than 6315 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 145.20kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6316 provides 13.40kN higher dynamic load than 6315 while maintaining compact 170\u00d739mm profile",
+      "vs_smaller_bearing": "6316 provides 13.40kN higher dynamic load than 6315 while maintaining compact 170×39mm profile",
       "vs_larger_bearing": "6316 offers 13.40kN lower load than 6317 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6316 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6316 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -429,7 +430,7 @@
         },
         {
           "question": "Can I replace a 6316 bearing with a different size bearing?",
-          "direct_answer": "No, 6316 bearings have unique 80\u00d7170\u00d739mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6316 bearings have unique 80×170×39mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6316 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6316 bearings in stock to avoid production delays and ensure consistent quality."

@@ -37,6 +37,7 @@
     ]
   },
   "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "miniature-series",
   "model_number": "687",
   "enhanced_description": "The 7mm micro marvel - delivering exceptional performance in a compact package for precision engineering applications.",
   "dimensions": {
@@ -90,7 +91,7 @@
         "communication systems",
         "safety equipment"
       ],
-      "requirements": "7mm shaft with 5.1kN dynamic load capacity, 24,000 RPM grease lubrication, precision 22\u00d77mm profile for aerospace system reliability"
+      "requirements": "7mm shaft with 5.1kN dynamic load capacity, 24,000 RPM grease lubrication, precision 22×7mm profile for aerospace system reliability"
     },
     "application2": {
       "title": "High-Precision Instrumentation",
@@ -215,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "687 Bearing 7\u00d722\u00d77mm Deep Groove Ball Bearing | RHD",
+    "title": "687 Bearing 7×22×7mm Deep Groove Ball Bearing | RHD",
     "meta_description": "687 deep groove ball bearing with 7mm bore, 22mm OD, 7mm width. 5.1kN dynamic load, 520kg capacity. Perfect for precision aerospace systems, high-precision instrumentation, advanced automation.",
     "keywords": [
       "687 bearing",
@@ -247,7 +248,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/687/",
     "og_data": {
-      "title": "687 Deep Groove Ball Bearing - 7\u00d722\u00d77mm | RHD Bearings",
+      "title": "687 Deep Groove Ball Bearing - 7×22×7mm | RHD Bearings",
       "description": "Precision aerospace system 687 miniature bearing with 5.1kN dynamic load capacity. Perfect for aerospace systems, instrumentation, and automation.",
       "url": "https://rhdbearings.com/specs/miniature-series/687/",
       "type": "product",
@@ -301,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +332,7 @@
     "shaft_requirements": {
       "nominal_diameter": "7.000mm",
       "tolerance_grade": "h6 (6.991-7.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -345,7 +346,7 @@
       "Choose 687 for 7mm shafts requiring 5.1kN dynamic load capacity in precision aerospace system applications",
       "Select 687-ZZ for dust protection with 21,600 RPM capability and sealed-for-life lubrication",
       "Use 687-RS in moisture-prone environments requiring 19,200 RPM with rubber seal protection",
-      "Consider 687 for aerospace systems where 22\u00d77mm profile and 520kg load capacity optimize performance",
+      "Consider 687 for aerospace systems where 22×7mm profile and 520kg load capacity optimize performance",
       "Opt for 687 in instrumentation needing 0.3mm chamfer radius and stable positioning",
       "Deploy 687 in automation requiring 24,000 RPM grease lubrication with precision design"
     ],
@@ -367,7 +368,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need precision bearing for 7mm shaft with substantial load capacity",
-        "solution": "687 bearing provides 5.1kN dynamic load in 22\u00d77mm profile"
+        "solution": "687 bearing provides 5.1kN dynamic load in 22×7mm profile"
       },
       {
         "problem": "Require dust protection in aerospace application",
@@ -380,32 +381,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "7mm bore with 5.1kN load capacity and 24,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in miniature bearing category for 5.1kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -430,7 +431,7 @@
         },
         {
           "question": "Can I replace a 687 bearing with a different size bearing?",
-          "direct_answer": "No, 687 bearings have unique 7\u00d722\u00d77mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 687 bearings have unique 7×22×7mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 687 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 687 bearings in stock to avoid production delays and ensure consistent quality."

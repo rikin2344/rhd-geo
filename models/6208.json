@@ -37,6 +37,7 @@
     ]
   },
   "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "6200-series",
   "model_number": "6208",
   "enhanced_description": "The robust performer - built like a tank but moves like a dancer.",
   "dimensions": {
@@ -90,7 +91,7 @@
         "Drilling equipment",
         "Heavy-duty fans"
       ],
-      "requirements": "40mm shaft with 20.0kN (\u22482040kg) dynamic load capacity, 8,000 RPM grease lubrication, 80\u00d718mm size for demanding power applications"
+      "requirements": "40mm shaft with 20.0kN (≈2040kg) dynamic load capacity, 8,000 RPM grease lubrication, 80×18mm size for demanding power applications"
     },
     "application2": {
       "title": "Automation Devices",
@@ -105,7 +106,7 @@
         "Industrial sewing machines",
         "Scientific rotors"
       ],
-      "requirements": "40mm bore with 1.6mm chamfer, 13.0kN (\u22481325kg) static load for accuracy, grease lubrication"
+      "requirements": "40mm bore with 1.6mm chamfer, 13.0kN (≈1325kg) static load for accuracy, grease lubrication"
     },
     "application3": {
       "title": "Marine Equipment",
@@ -215,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6208 Bearing 40\u00d780\u00d718mm Deep Groove Ball Bearing | RHD",
+    "title": "6208 Bearing 40×80×18mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6208 deep groove ball bearing with 40mm bore, 80mm OD, 18mm width. 32.00kN dynamic load, 3265kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6208 bearing",
@@ -250,7 +251,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6200-Series/6208/",
     "og_data": {
-      "title": "6208 Deep Groove Ball Bearing - 40\u00d780\u00d718mm | RHD Bearings",
+      "title": "6208 Deep Groove Ball Bearing - 40×80×18mm | RHD Bearings",
       "description": "High-quality 6208 bearing with 32.00kN dynamic load capacity. Perfect for industrial power transmission and precision applications.",
       "url": "https://rhdbearings.com/specs/6200-Series/6208/",
       "type": "product",
@@ -304,9 +305,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -334,7 +335,7 @@
     "shaft_requirements": {
       "nominal_diameter": "40.000mm",
       "tolerance_grade": "h6 (39.987-40.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -350,7 +351,7 @@
       "Use 6208-RS in moisture-prone environments requiring 7,600 RPM with rubber seal protection",
       "Consider 6208 for automotive components where 18mm width and 0.520kg weight ensure durability and reliability",
       "Opt for 6208 in precision applications needing 1.0mm chamfer radius and 3265kg load capacity",
-      "Deploy 6208 in power transmission systems requiring 9,500 RPM grease lubrication with 80\u00d718mm profile"
+      "Deploy 6208 in power transmission systems requiring 9,500 RPM grease lubrication with 80×18mm profile"
     ],
     "natural_language_queries": [
       "6208 bearing dimensions",
@@ -370,7 +371,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 40mm shaft with high load capacity",
-        "solution": "6208 bearing provides 32.00kN dynamic load in 80\u00d718mm profile"
+        "solution": "6208 bearing provides 32.00kN dynamic load in 80×18mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -383,38 +384,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 6.50kN higher dynamic load than 6207 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 32.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6208 provides 6.50kN higher dynamic load than 6207 while maintaining compact 80\u00d718mm profile",
+      "vs_smaller_bearing": "6208 provides 6.50kN higher dynamic load than 6207 while maintaining compact 80×18mm profile",
       "vs_larger_bearing": "6208 offers 6.50kN lower load than 6209 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6208 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6208 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -433,7 +434,7 @@
         },
         {
           "question": "Can I replace a 6208 bearing with a different size bearing?",
-          "direct_answer": "No, 6208 bearings have unique 40\u00d780\u00d718mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6208 bearings have unique 40×80×18mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6208 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6208 bearings in stock to avoid production delays and ensure consistent quality."

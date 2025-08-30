@@ -37,6 +37,7 @@
     ]
   },
   "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "6200-series",
   "model_number": "6201",
   "enhanced_description": "The student who became the teacher - learned from 6001's mistakes and came back stronger.",
   "dimensions": {
@@ -90,7 +91,7 @@
         "3D printer motion shafts",
         "Photocopier rollers"
       ],
-      "requirements": "12mm shaft with 6.0kN (\u2248610kg) dynamic load capacity, 17,000 RPM grease lubrication, 32\u00d710mm profile for moderate load and speed"
+      "requirements": "12mm shaft with 6.0kN (≈610kg) dynamic load capacity, 17,000 RPM grease lubrication, 32×10mm profile for moderate load and speed"
     },
     "application2": {
       "title": "Automation Controls",
@@ -105,7 +106,7 @@
         "Sensor mount shafts",
         "Printing press cams"
       ],
-      "requirements": "12mm bore with 0.75mm chamfer radius, 3.0kN (\u2248305kg) static load rating for stable control, grease lubrication for long term reliability"
+      "requirements": "12mm bore with 0.75mm chamfer radius, 3.0kN (≈305kg) static load rating for stable control, grease lubrication for long term reliability"
     },
     "application3": {
       "title": "Motor Housings",
@@ -215,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6201 Bearing 12\u00d732\u00d710mm Deep Groove Ball Bearing | RHD",
+    "title": "6201 Bearing 12×32×10mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6201 deep groove ball bearing with 12mm bore, 32mm OD, 10mm width. 6.82kN dynamic load, 695kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6201 bearing",
@@ -248,7 +249,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6200-Series/6201/",
     "og_data": {
-      "title": "6201 Deep Groove Ball Bearing - 12\u00d732\u00d710mm | RHD Bearings",
+      "title": "6201 Deep Groove Ball Bearing - 12×32×10mm | RHD Bearings",
       "description": "High-quality 6201 bearing with 6.82kN dynamic load capacity. Perfect for enhanced power transmission and precision applications.",
       "url": "https://rhdbearings.com/specs/6200-Series/6201/",
       "type": "product",
@@ -302,9 +303,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -332,7 +333,7 @@
     "shaft_requirements": {
       "nominal_diameter": "12.000mm",
       "tolerance_grade": "h6 (11.989-12.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -348,7 +349,7 @@
       "Use 6201-RS in moisture-prone environments requiring 15,200 RPM with rubber seal protection",
       "Consider 6201 for automotive components where 10mm width and 0.035kg weight optimize space and efficiency",
       "Opt for 6201 in precision applications needing 0.6mm chamfer radius and 695kg load capacity",
-      "Deploy 6201 in power transmission systems requiring 19,000 RPM grease lubrication with 32\u00d710mm profile"
+      "Deploy 6201 in power transmission systems requiring 19,000 RPM grease lubrication with 32×10mm profile"
     ],
     "natural_language_queries": [
       "6201 bearing dimensions",
@@ -368,7 +369,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need enhanced power bearing for 12mm shaft with high load capacity",
-        "solution": "6201 bearing provides 6.82kN dynamic load in 32\u00d710mm profile"
+        "solution": "6201 bearing provides 6.82kN dynamic load in 32×10mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -381,38 +382,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 1.72kN higher dynamic load than 6200 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 6.82kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6201 provides 1.72kN higher dynamic load than 6200 while maintaining compact 32\u00d710mm profile",
+      "vs_smaller_bearing": "6201 provides 1.72kN higher dynamic load than 6200 while maintaining compact 32×10mm profile",
       "vs_larger_bearing": "6201 offers 0.83kN lower load than 6202 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6201 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6201 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -431,7 +432,7 @@
         },
         {
           "question": "Can I replace a 6201 bearing with a different size bearing?",
-          "direct_answer": "No, 6201 bearings have unique 12\u00d732\u00d710mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6201 bearings have unique 12×32×10mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6201 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6201 bearings in stock to avoid production delays and ensure consistent quality."

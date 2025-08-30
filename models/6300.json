@@ -37,6 +37,7 @@
     ]
   },
   "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "6300-series",
   "model_number": "6300",
   "enhanced_description": "The new generation leader - bigger, stronger, and learned from everyone else's mistakes.",
   "dimensions": {
@@ -90,7 +91,7 @@
         "Residential power tools",
         "HVAC damper motors"
       ],
-      "requirements": "10mm shaft with 8.06kN (\u2248820kg) dynamic load capacity, 15,000 RPM grease lubrication, 35\u00d711mm profile for small power drive applications"
+      "requirements": "10mm shaft with 8.06kN (≈820kg) dynamic load capacity, 15,000 RPM grease lubrication, 35×11mm profile for small power drive applications"
     },
     "application2": {
       "title": "Precision Control",
@@ -105,7 +106,7 @@
         "Electronic lock actuators",
         "Optical scanner wheels"
       ],
-      "requirements": "Precision 10mm bore with 0.6mm chamfer, 3.4kN (\u2248350kg) static load rating, steady positioning for lab and automation systems"
+      "requirements": "Precision 10mm bore with 0.6mm chamfer, 3.4kN (≈350kg) static load rating, steady positioning for lab and automation systems"
     },
     "application3": {
       "title": "Light Machinery",
@@ -215,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6300 Bearing 10\u00d735\u00d711mm Deep Groove Ball Bearing | RHD",
+    "title": "6300 Bearing 10×35×11mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6300 deep groove ball bearing with 10mm bore, 35mm OD, 11mm width. 7.65kN dynamic load, 780kg capacity. Perfect for small motors, pumps, precision equipment.",
     "keywords": [
       "6300 bearing",
@@ -246,7 +247,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6300/",
     "og_data": {
-      "title": "6300 Deep Groove Ball Bearing - 10\u00d735\u00d711mm | RHD Bearings",
+      "title": "6300 Deep Groove Ball Bearing - 10×35×11mm | RHD Bearings",
       "description": "High-quality 6300 bearing with 7.65kN dynamic load capacity. Perfect for small motors, pumps, and precision applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6300/",
       "type": "product",
@@ -300,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -330,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "10.000mm",
       "tolerance_grade": "h6 (9.989-10.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -346,7 +347,7 @@
       "Use 6300-RS in moisture-prone environments requiring 14,400 RPM with rubber seal protection",
       "Consider 6300 for precision equipment where 11mm width and 0.053kg weight ensure compact design",
       "Opt for 6300 in small machinery applications needing 10mm bore with 780kg load capacity",
-      "Deploy 6300 in automation systems requiring 18,000 RPM grease lubrication with 35\u00d711mm profile"
+      "Deploy 6300 in automation systems requiring 18,000 RPM grease lubrication with 35×11mm profile"
     ],
     "natural_language_queries": [
       "6300 bearing dimensions",
@@ -366,7 +367,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need small bearing for 10mm shaft with moderate load capacity",
-        "solution": "6300 bearing provides 7.65kN dynamic load in 35\u00d711mm profile"
+        "solution": "6300 bearing provides 7.65kN dynamic load in 35×11mm profile"
       },
       {
         "problem": "Require dust protection in small motor application",
@@ -379,38 +380,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 3.07kN higher dynamic load than 6000 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in small-bearing category for 7.65kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6300 provides 3.07kN higher dynamic load than 6000 while maintaining compact 35\u00d711mm profile",
+      "vs_smaller_bearing": "6300 provides 3.07kN higher dynamic load than 6000 while maintaining compact 35×11mm profile",
       "vs_larger_bearing": "6300 offers 3.07kN lower load than 6301 but with 2mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6300 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6300 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -429,7 +430,7 @@
         },
         {
           "question": "Can I replace a 6300 bearing with a different size bearing?",
-          "direct_answer": "No, 6300 bearings have unique 10\u00d735\u00d711mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6300 bearings have unique 10×35×11mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6300 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6300 bearings in stock to avoid production delays and ensure consistent quality."

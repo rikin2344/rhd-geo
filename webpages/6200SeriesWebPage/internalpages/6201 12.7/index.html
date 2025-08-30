@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="../../../../shared/watermark.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body data-page="miniature" data-model="6201 12.7">
+<body data-page="6200-series" data-model="6201 12.7">
     <!-- Navigation Header -->
     <div id="navbar-container"></div>
 
@@ -78,7 +78,7 @@
                 <div class="hero-main">
                     <div class="breadcrumb">
                         <a href="https://rhdbearings.com/">Home</a> > 
-                        <a href="https://rhdbearings.com/specs/miniature-series.html">Miniature Bearings</a> > 
+                        <a href="https://rhdbearings.com/specs/{{bearing_series}}.html">6200-series</a> > 
                         <span>6201 12.7 Bearing</span>
                     </div>
                     
@@ -105,15 +105,15 @@
                                 <div class="spec-label">Width</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">6.82kN</div>
+                                <div class="spec-value">6.82 kN</div>
                                 <div class="spec-label">Load Rating</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">19000</div>
-                                <div class="spec-label">Max RPM</div>
+                                <div class="spec-value">695 Kg</div>
+                                <div class="spec-label">Load Capacity</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">0.035kg</div>
+                                <div class="spec-value">0.035 Kg</div>
                                 <div class="spec-label">Weight</div>
                             </div>
                         </div>
@@ -193,8 +193,12 @@
                                     <span>3.05kN</span>
                                 </div>
                                 <div class="spec-row">
-                                    <span>Load Capacity</span>
-                                    <span>695kg (6.82kN) force</span>
+                                    <span>Load Capacity (kN)</span>
+                                    <span>6.82kN</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Load Capacity (kg)</span>
+                                    <span>695kg</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -234,9 +238,17 @@
                                     <span>Oil Lubrication</span>
                                     <span>24000 RPM</span>
                                 </div>
-                                <div class="spec-row">
-                                    <span>Recommended Max</span>
-                                    <span>17100 RPM (90%)</span>
+                                <div class="spec-row speed-rating-row speed-z2v2">
+                                    <span>RHD Z2V2 Bearings</span>
+                                    <span class="speed-value" id="z2v2-speed">1400 RPM</span>
+                                </div>
+                                <div class="spec-row speed-rating-row speed-z3v3">
+                                    <span>RHD Z3V3 Bearings</span>
+                                    <span class="speed-value" id="z3v3-speed">2880 RPM</span>
+                                </div>
+                                <div class="spec-row speed-rating-row speed-z4v4">
+                                    <span>RHD Z4V4 Bearings</span>
+                                    <span class="speed-value" id="z4v4-speed">4000+ RPM</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -270,7 +282,11 @@
                             <div class="spec-details">
                                 <div class="spec-row">
                                     <span>Steel Grade</span>
-                                    <span>Gcr15 (AISI 52100)</span>
+                                    <span>SAE52100</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Ball Grade</span>
+                                    <span>G10</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Carbon Content</span>
@@ -279,10 +295,6 @@
                                 <div class="spec-row">
                                     <span>Chromium Content</span>
                                     <span>1.40-1.65%</span>
-                                </div>
-                                <div class="spec-row">
-                                    <span>Silicon Content</span>
-                                    <span>0.15-0.35%</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>ISO Standard</span>
@@ -296,16 +308,16 @@
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Gcr15 (AISI 52100) Steel:</strong> Premium bearing steel - harder than tool steel
+                                    <strong>SAE52100 Chrome Steel:</strong> Premium bearing steel - harder than tool steel
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>G10 Balls:</strong> Ultra-precision balls with ±0.25µm tolerance
                                 </div>
                                 <div class="explanation-item">
                                     <strong>High Carbon:</strong> Superior hardness and wear resistance
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Chromium:</strong> Adds corrosion resistance and toughness
-                                </div>
-                                <div class="explanation-item">
-                                    <strong>Silicon:</strong> Improves strength and deoxidizes the steel
                                 </div>
                                 <div class="explanation-item">
                                     <strong>ISO Standard:</strong> Fits any 6201 12.7 application worldwide
@@ -324,21 +336,29 @@
                         <div class="flip-card-front">
                             <h3><span class="spec-icon">📊</span>Vibration Classes</h3>
                             <div class="spec-details">
-                                <div class="spec-row">
-                                    <span>V2 Grade</span>
-                                    <span>&lt; N/A/N/A/N/A μm/s</span>
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V2 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                    </div>
                                 </div>
-                                <div class="spec-row">
-                                    <span>V3 Grade</span>
-                                    <span>&lt; N/A/N/A/N/A μm/s</span>
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V3 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                    </div>
                                 </div>
-                                <div class="spec-row">
-                                    <span>V4 Grade (Precision)</span>
-                                    <span>&lt; N/A/N/A/N/A μm/s</span>
-                                </div>
-                                <div class="spec-row">
-                                    <span>Frequency Bands</span>
-                                    <span>Low/Med/High Hz</span>
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V4 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">N/A</span> μm/s</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -809,6 +829,87 @@
         </div>
     </section>
 
+    <!-- Cross References & Alternatives -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compatible Models & Shaft Requirements</h2>
+                <p>Find bearings with the same bore size and ensure proper shaft preparation</p>
+            </div>
+            
+            <div class="cross-ref-grid">
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
+                    <div class="related-models">
+                        <a href="https://rhdbearings.com/specs/6200-series/6201/" class="model-link">6201</a>
+<a href="https://rhdbearings.com/specs/6200-series/6202/" class="model-link">6202</a>
+<a href="https://rhdbearings.com/specs/6200-series/6203/" class="model-link">6203</a>
+<a href="https://rhdbearings.com/specs/6200-series/6204/" class="model-link">6204</a>
+                    </div>
+                </div>
+                
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🔧</span>Shaft Requirements</h3>
+                    <div class="alternatives-list">
+                        <div class="alternative-item">
+                            <strong>Nominal Diameter</strong>
+                            <span>12.7mm</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Tolerance Grade</strong>
+                            <span>h6</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Surface Finish</strong>
+                            <span>Ra 0.8μm max</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Runout Tolerance</strong>
+                            <span>0.01mm max</span>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🎯</span>Application-Specific Options</h3>
+                    <div class="application-options">
+                        <div class="option-item">
+                            <strong>High Temperature:</strong>
+                            <span>6201 12.7 with C3 clearance</span>
+                        </div>
+                        <div class="option-item">
+                            <strong>High Speed:</strong>
+                            <span>6201 12.7-Z for balanced performance</span>
+                        </div>
+                        <div class="option-item">
+                            <strong>Corrosive Environment:</strong>
+                            <span>6201 12.7-2RS for maximum protection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Signals -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Expertise & Standards</h2>
+                <p>Technical insights from 20+ years of bearing engineering and manufacturing excellence</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card"><h3><span class="expertise-icon">📏</span>Precision Engineering</h3><p>12.7mm bore with h6 tolerance provides ±0.008mm precision fit, essential for measurement equipment and precision instrumentation applications.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">🔬</span>Material Science</h3><p>Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">⚙️</span>Performance Optimization</h3><p>C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">🔧</span>Professional Installation</h3><p>Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">📊</span>Performance Comparison</h3><p>Handles 3.77kN more load than typical 12mm bore bearings while maintaining similar dimensions. Superior Gcr15 steel vs. standard steel in competing products.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">💰</span>Value Engineering</h3><p>Best value in precision bearing category for 6.82kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.</p></div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Section -->
     <section class="section bg-light">
         <div class="container">
@@ -1061,87 +1162,6 @@
                         
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cross References & Alternatives -->
-    <section class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Compatible Models & Shaft Requirementss</h2>
-                <p>Find bearings with the same bore size and ensure proper shaft preparation</p>
-            </div>
-            
-            <div class="cross-ref-grid">
-                <div class="cross-ref-card">
-                    <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
-                    <div class="related-models">
-                        <a href="https://rhdbearings.com/specs/6200-series/6201/" class="model-link">6201</a>
-<a href="https://rhdbearings.com/specs/6200-series/6202/" class="model-link">6202</a>
-<a href="https://rhdbearings.com/specs/6200-series/6203/" class="model-link">6203</a>
-<a href="https://rhdbearings.com/specs/6200-series/6204/" class="model-link">6204</a>
-                    </div>
-                </div>
-                
-                <div class="cross-ref-card">
-                    <h3><span class="cross-ref-icon">🔧</span>Shaft Requirements</h3>
-                    <div class="alternatives-list">
-                        <div class="alternative-item">
-                            <strong>Nominal Diameter</strong>
-                            <span>12.7mm</span>
-                        </div>
-                        <div class="alternative-item">
-                            <strong>Tolerance Grade</strong>
-                            <span>h6</span>
-                        </div>
-                        <div class="alternative-item">
-                            <strong>Surface Finish</strong>
-                            <span>Ra 0.8μm max</span>
-                        </div>
-                        <div class="alternative-item">
-                            <strong>Runout Tolerance</strong>
-                            <span>0.01mm max</span>
-                        </div>
-                    </div>
-                </div>
-                                
-                <div class="cross-ref-card">
-                    <h3><span class="cross-ref-icon">🎯</span>Application-Specific Options</h3>
-                    <div class="application-options">
-                        <div class="option-item">
-                            <strong>High Temperature:</strong>
-                            <span>6201 12.7 with C3 clearance</span>
-                        </div>
-                        <div class="option-item">
-                            <strong>High Speed:</strong>
-                            <span>6201 12.7-Z for balanced performance</span>
-                        </div>
-                        <div class="option-item">
-                            <strong>Corrosive Environment:</strong>
-                            <span>6201 12.7-2RS for maximum protection</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise Signals -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Professional Expertise & Standards</h2>
-                <p>Technical insights from 20+ years of bearing engineering and manufacturing excellence</p>
-            </div>
-            
-            <div class="expertise-grid">
-                <div class="expertise-card"><h3><span class="expertise-icon">📏</span>Precision Engineering</h3><p>12.7mm bore with h6 tolerance provides ±0.008mm precision fit, essential for measurement equipment and precision instrumentation applications.</p></div>
-<div class="expertise-card"><h3><span class="expertise-icon">🔬</span>Material Science</h3><p>Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life.</p></div>
-<div class="expertise-card"><h3><span class="expertise-icon">⚙️</span>Performance Optimization</h3><p>C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance.</p></div>
-<div class="expertise-card"><h3><span class="expertise-icon">🔧</span>Professional Installation</h3><p>Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures.</p></div>
-<div class="expertise-card"><h3><span class="expertise-icon">📊</span>Performance Comparison</h3><p>Handles 3.77kN more load than typical 12mm bore bearings while maintaining similar dimensions. Superior Gcr15 steel vs. standard steel in competing products.</p></div>
-<div class="expertise-card"><h3><span class="expertise-icon">💰</span>Value Engineering</h3><p>Best value in precision bearing category for 6.82kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.</p></div>
             </div>
         </div>
     </section>
@@ -1407,6 +1427,31 @@
                 closeSealModal();
             }
         });
+
+        // Speed Limits Conditional Logic
+        function updateSpeedLimits() {
+            const bearingSeries = '6200-series';
+            const isMiniature = bearingSeries === 'miniature-series';
+            
+            const z2v2Element = document.getElementById('z2v2-speed');
+            const z3v3Element = document.getElementById('z3v3-speed');
+            const z4v4Element = document.getElementById('z4v4-speed');
+            
+            if (z2v2Element && z3v3Element && z4v4Element) {
+                if (isMiniature) {
+                    z2v2Element.textContent = '8000 RPM';
+                    z3v3Element.textContent = '15000 RPM';
+                    z4v4Element.textContent = '24000 RPM';
+                } else {
+                    z2v2Element.textContent = '1400 RPM';
+                    z3v3Element.textContent = '2880 RPM';
+                    z4v4Element.textContent = '4000+ RPM';
+                }
+            }
+        }
+
+        // Run speed limits update when page loads
+        document.addEventListener('DOMContentLoaded', updateSpeedLimits);
     </script>
 </body>
 </html>

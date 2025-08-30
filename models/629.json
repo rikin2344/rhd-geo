@@ -37,6 +37,7 @@
     ]
   },
   "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "miniature-series",
   "model_number": "629",
   "enhanced_description": "The 9mm champion - delivering big performance in a compact package that never backs down from a challenge.",
   "dimensions": {
@@ -90,7 +91,7 @@
         "excavation equipment",
         "bulldozer systems"
       ],
-      "requirements": "9mm shaft with 4.60kN dynamic load capacity, 22,000 RPM grease lubrication, robust 26\u00d78mm profile for heavy-duty applications"
+      "requirements": "9mm shaft with 4.60kN dynamic load capacity, 22,000 RPM grease lubrication, robust 26×8mm profile for heavy-duty applications"
     },
     "application2": {
       "title": "Precision Manufacturing",
@@ -215,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "629 Bearing 9\u00d726\u00d78mm Deep Groove Ball Bearing | RHD",
+    "title": "629 Bearing 9×26×8mm Deep Groove Ball Bearing | RHD",
     "meta_description": "629 deep groove ball bearing with 9mm bore, 26mm OD, 8mm width. 4.60kN dynamic load, 469kg capacity. Perfect for heavy-duty equipment, precision manufacturing, renewable energy.",
     "keywords": [
       "629 bearing",
@@ -247,7 +248,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/629/",
     "og_data": {
-      "title": "629 Deep Groove Ball Bearing - 9\u00d726\u00d78mm | RHD Bearings",
+      "title": "629 Deep Groove Ball Bearing - 9×26×8mm | RHD Bearings",
       "description": "Heavy-duty 629 miniature bearing with 4.60kN dynamic load capacity. Perfect for heavy equipment, precision manufacturing, and renewable energy.",
       "url": "https://rhdbearings.com/specs/miniature-series/629/",
       "type": "product",
@@ -301,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +332,7 @@
     "shaft_requirements": {
       "nominal_diameter": "9.000mm",
       "tolerance_grade": "h6 (8.991-9.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -345,7 +346,7 @@
       "Choose 629 for 9mm shafts requiring 4.60kN dynamic load capacity in heavy-duty equipment applications",
       "Select 629-ZZ for dust protection with 19,800 RPM capability and sealed-for-life lubrication",
       "Use 629-RS in moisture-prone environments requiring 17,600 RPM with rubber seal protection",
-      "Consider 629 for heavy equipment where 26\u00d78mm profile and 469kg load capacity optimize performance",
+      "Consider 629 for heavy equipment where 26×8mm profile and 469kg load capacity optimize performance",
       "Opt for 629 in precision manufacturing needing 0.3mm chamfer radius and stable positioning",
       "Deploy 629 in renewable energy requiring 22,000 RPM grease lubrication with robust design"
     ],
@@ -367,7 +368,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need high-performance bearing for 9mm shaft with substantial load capacity",
-        "solution": "629 bearing provides 4.60kN dynamic load in 26\u00d78mm profile"
+        "solution": "629 bearing provides 4.60kN dynamic load in 26×8mm profile"
       },
       {
         "problem": "Require dust protection in heavy-duty application",
@@ -380,32 +381,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "9mm bore with 4.60kN load capacity and 22,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in miniature bearing category for 4.60kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -430,7 +431,7 @@
         },
         {
           "question": "Can I replace a 629 bearing with a different size bearing?",
-          "direct_answer": "No, 629 bearings have unique 9\u00d726\u00d78mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 629 bearings have unique 9×26×8mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 629 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 629 bearings in stock to avoid production delays and ensure consistent quality."
