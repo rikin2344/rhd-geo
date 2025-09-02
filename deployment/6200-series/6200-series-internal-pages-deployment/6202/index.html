@@ -732,21 +732,6 @@ body {
    WATERMARK RESPONSIVE
    ================================ */
 
-@media (max-width: 768px) {
-    .watermark-text {
-        font-size: 80px;
-        background: linear-gradient(to bottom, 
-            rgba(64, 64, 64, 0.5) 0%, 
-            rgba(96, 96, 96, 0.3) 30%, 
-            rgba(128, 128, 128, 0.15) 60%, 
-            rgba(192, 192, 192, 0.03) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        padding: 0;
-    }
-}
-
 @media (max-width: 1024px) {
     .watermark-text {
         font-size: 100px;
@@ -759,6 +744,47 @@ body {
         -webkit-text-fill-color: transparent;
         background-clip: text;
         padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .watermark-section {
+        width: 100% !important; /* Prevent horizontal scroll */
+        left: 0 !important;
+        transform: none !important;
+        overflow: hidden;
+        margin: 20px 0 0 0;
+        padding-bottom: 40px;
+    }
+    
+    .watermark-text {
+        font-size: 50px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.5) 0%, 
+            rgba(96, 96, 96, 0.3) 30%, 
+            rgba(128, 128, 128, 0.15) 60%, 
+            rgba(192, 192, 192, 0.03) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+        white-space: nowrap; /* Keep text on one line */
+        max-width: 100vw; /* Ensure it fits screen width */
+        overflow: hidden;
+        line-height: 0.8;
+        letter-spacing: -0.02em; /* Tighter letter spacing for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .watermark-text {
+        font-size: 40px;
+        padding: 0 10px;
+        line-height: 0.7;
+        white-space: nowrap;
+        max-width: 100vw;
+        overflow: hidden;
+        letter-spacing: -0.03em;
     }
 }
 
@@ -808,12 +834,23 @@ body {
     /* Animation */
     --transition-fast: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
     --transition-smooth: 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    
+    /* Mobile-specific variables */
+    --mobile-touch-target: 44px;
+    --mobile-section-padding: 24px;
+    --mobile-card-padding: 16px;
+    --mobile-text-scale: 0.9;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -1103,7 +1140,7 @@ body {
 
 .dimension-value {
     font-size: var(--text-subsection);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--text-primary);
 }
 
@@ -1703,6 +1740,109 @@ body {
 
 
 /* ================================
+   LLM OPTIMIZATION SECTIONS
+   ================================ */
+
+/* Expert Recommendations Section */
+
+
+/* Search Optimization Tags */
+.search-optimization {
+    margin-top: var(--space-component-2);
+    margin-bottom: var(--space-section-1);
+    padding: var(--space-component-2);
+    background: var(--surface-primary);
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--elevation-1);
+}
+
+.search-optimization-title {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    margin-bottom: var(--space-micro-2);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-micro-1);
+}
+
+.search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-micro-1);
+    margin-top: var(--space-micro-2);
+}
+
+.search-tag {
+    background: var(--text-secondary);
+    color: var(--surface-primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: var(--text-body-small);
+    font-weight: 500;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.search-tag:hover {
+    background: #374151;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* Expertise Signals Section */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-component-2);
+    margin-top: var(--space-component-2);
+}
+
+.expertise-card {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    padding: var(--space-component-2);
+    box-shadow: var(--elevation-1);
+    border: 1px solid var(--border-subtle);
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.expertise-card:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-2px);
+}
+
+.expertise-card h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-micro-1);
+    margin-bottom: var(--space-micro-2);
+    color: var(--text-primary);
+    font-size: var(--text-subsection);
+}
+
+.expertise-icon {
+    font-size: 1.5rem;
+}
+
+.expertise-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    font-size: var(--text-body);
+}
+
+/* ================================
    RESPONSIVE DESIGN
    ================================ */
 
@@ -1748,6 +1888,16 @@ body {
         max-height: none;
     }
     
+    .dimensions-card {
+        padding: 12px;
+        margin: 0 4px;
+    }
+    
+    .dimensions-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
     .specs-cards-row {
         grid-template-columns: 1fr;
         gap: var(--space-component-1);
@@ -1755,6 +1905,21 @@ body {
     
     .dimensions-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .dimension-item {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .dimension-label {
+        font-size: 0.75rem;
+        margin-bottom: 2px;
+    }
+    
+    .dimension-value {
+        font-size: 1rem;
     }
     
     .applications-grid {
@@ -1775,6 +1940,10 @@ body {
     }
     
     /* Footer Responsive */
+    .footer {
+        display: none;
+    }
+    
     .footer-content {
         margin: 0 var(--space-micro-2);
         padding: var(--space-component-2);
@@ -1802,6 +1971,69 @@ body {
         justify-content: center;
     }
     
+    /* LLM Optimization Sections Mobile */
+    .recommendations-grid,
+    .criteria-grid,
+    .solutions-grid,
+    .comparison-grid,
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-1);
+    }
+    
+    .recommendation-card,
+    .criterion-card,
+    .solution-card,
+    .comparison-card,
+    .expertise-card {
+        padding: var(--space-component-1);
+        margin-bottom: var(--space-component-1);
+    }
+    
+
+    
+
+    
+    .search-tags {
+        justify-content: center;
+    }
+    
+    .search-tag {
+        font-size: var(--text-body-small);
+        padding: 8px 16px;
+    }
+    
+    /* Touch-friendly mobile interactions */
+    .expertise-card {
+        min-height: 44px; /* iOS touch target minimum */
+        cursor: pointer;
+    }
+    
+    .search-tag {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Mobile section spacing */
+    .section {
+        padding: var(--space-section-1) 0;
+    }
+    
+    .section-header {
+        margin-bottom: var(--space-component-2);
+        text-align: center;
+    }
+    
+
+    
+    /* Mobile grid adjustments */
+    .expertise-grid {
+        margin: 0 var(--space-micro-1);
+    }
+    
     /* Vibration and Speed Ratings Mobile */
     .vibration-frequencies {
         flex-direction: column;
@@ -1821,6 +2053,21 @@ body {
     .speed-value {
         margin-top: 4px;
         display: inline-block;
+    }
+    
+    .vibration-grade-row {
+        padding: 8px 12px;
+        margin: 6px 0;
+    }
+    
+    .grade-label {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+    
+    .freq-item {
+        padding: 2px 6px;
+        font-size: 0.85rem;
     }
 }
 
@@ -1850,7 +2097,31 @@ body {
     }
     
     .specs-compact {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .dimensions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    
+    .dimension-item {
+        padding: 6px;
+        font-size: 0.85rem;
+    }
+    
+    .dimension-label {
+        font-size: 0.7rem;
+        margin-bottom: 1px;
+    }
+    
+    .dimension-value {
+        font-size: 0.9rem;
+    }
+    
+    .dimensions-card {
+        padding: 8px;
+        margin: 0 2px;
     }
     
     .hero-actions {
@@ -1861,6 +2132,43 @@ body {
     .btn {
         text-align: center;
     }
+    
+    /* Extra Small Mobile LLM Optimization */
+    .recommendation-card,
+    .criterion-card,
+    .solution-card,
+    .comparison-card,
+    .expertise-card {
+        padding: var(--space-micro-2);
+        margin-bottom: var(--space-micro-2);
+    }
+    
+    .recommendation-icon,
+    .criterion-icon,
+    .expertise-icon {
+        font-size: 1.25rem;
+    }
+    
+    .search-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .problem-section,
+    .solution-section {
+        padding: var(--space-micro-1);
+    }
+    
+    .problem-title,
+    .solution-title {
+        font-size: var(--text-body-small);
+    }
+    
+    .problem-text,
+    .solution-text {
+        font-size: 13px;
+    }
+    
 }
 
 /* Cross References & Alternatives Styles */
@@ -1898,17 +2206,18 @@ body {
 }
 
 .model-link {
-    color: var(--accent-neon);
+    color: var(--text-primary);
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 6px;
-    background: rgba(52, 211, 153, 0.1);
+    background: var(--surface-primary);
+    border: 1px solid var(--border-subtle);
     transition: all 0.2s ease;
     font-weight: 500;
 }
 
 .model-link:hover {
-    background: rgba(52, 211, 153, 0.2);
+    background: var(--bg-primary);
     transform: translateX(4px);
 }
 
@@ -1938,45 +2247,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* Expertise Signals Styles */
-.expertise-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    margin-top: 32px;
-}
-
-.expertise-card {
-    background: white;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.expertise-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-}
-
-.expertise-icon {
-    font-size: 2.5rem;
-    margin-bottom: 16px;
-}
-
-.expertise-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: var(--text-primary);
-}
-
-.expertise-card p {
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin: 0;
-}
+/* Expertise Signals Styles - Using existing expertise-grid and expertise-card from earlier in file */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -2078,7 +2349,7 @@ body {
 
 /* Increase spacing between specification card rows */
 .specs-cards-row + .specs-cards-row {
-    margin-top: 48px !important;
+    margin-top: 48px;
 }
 
 /* Make icons and titles inline for all card types */
@@ -2096,19 +2367,20 @@ body {
 .cross-ref-icon,
 .expertise-icon {
     font-size: 1.5rem;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 /* Fix related model card colors */
 .model-link {
-    color: #000000 !important;
-    background: rgba(52, 211, 153, 0.1);
+    color: var(--text-primary) !important;
+    background: var(--surface-primary);
+    border: 1px solid var(--border-subtle);
     font-weight: 600;
 }
 
 .model-link:hover {
-    color: #000000 !important;
-    background: var(--accent-neon);
+    color: var(--text-primary) !important;
+    background: var(--bg-primary);
 }
 
 /* Cross reference card text colors */
@@ -2125,14 +2397,6 @@ body {
 .alternative-item span,
 .option-item span {
     color: var(--text-secondary);
-}
-
-/* Dimensions card 70% width, specs image 30% width, increased height */
-.specs-main-section {
-    display: flex;
-    gap: 24px;
-    align-items: stretch;
-    max-height: 420px;
 }
 
 /* Improved spacing for speed ratings */
@@ -2152,36 +2416,6 @@ body {
 
 .flip-card-front .spec-row {
     padding: 10px 0;
-}
-
-.dimensions-table {
-    flex: 0 0 70%;
-}
-
-.specs-image {
-    flex: 0 0 30%;
-    display: flex;
-    align-items: center;
-    max-height: 420px;
-}
-
-.specs-image img {
-    width: 100%;
-    height: auto;
-    max-height: 420px;
-    object-fit: contain;
-}
-
-/* Ensure dimensions card has proper height */
-.dimensions-card {
-    height: 100%;
-    max-height: 420px;
-    display: flex;
-    flex-direction: column;
-}
-
-.dimensions-grid {
-    flex: 1;
 }
 
 /* Flip Card Styling */
@@ -2334,7 +2568,10 @@ body {
     }
     
     .flip-hint {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+        padding: 0 8px;
+        word-wrap: break-word;
+        line-height: 1.2;
     }
     
     .flip-hint::before {
@@ -2347,6 +2584,17 @@ body {
     
     .seal-card.flip-card .flip-card-inner {
         min-height: 320px;
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+        padding: 20px 16px;
+    }
+    
+    .flip-card-front h3,
+    .flip-card-back h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
     }
     
     .explanation-item {
@@ -2593,6 +2841,112 @@ body {
         padding: 12px 16px 0 16px;
     }
 }
+/* ================================
+   MOBILE-SPECIFIC OPTIMIZATIONS
+   ================================ */
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--space-micro-2);
+    }
+    
+    .specs-compact {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn {
+        text-align: center;
+    }
+    
+    /* Mobile LLM Optimization Cards */
+    .recommendation-card,
+    .criterion-card,
+    .solution-card,
+    .comparison-card,
+    .expertise-card {
+        padding: var(--space-micro-2);
+        margin-bottom: var(--space-micro-2);
+    }
+    
+    .recommendation-icon,
+    .criterion-icon,
+    .expertise-icon {
+        font-size: 1.25rem;
+    }
+    
+    .search-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .problem-section,
+    .solution-section {
+        padding: var(--space-micro-1);
+    }
+    
+    .problem-title,
+    .solution-title {
+        font-size: var(--text-body-small);
+    }
+    
+    .problem-text,
+    .solution-text {
+        font-size: 13px;
+    }
+}
+
+/* ================================
+   PERFORMANCE & ACCESSIBILITY
+   ================================ */
+
+/* Smooth scrolling for all devices */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus indicators for accessibility */
+.recommendation-card:focus,
+.criterion-card:focus,
+.solution-card:focus,
+.comparison-card:focus,
+.expertise-card:focus,
+.search-tag:focus {
+    outline: 2px solid var(--accent-neon);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .recommendation-card,
+    .criterion-card,
+    .solution-card,
+    .comparison-card,
+    .expertise-card {
+        border: 2px solid var(--text-primary);
+    }
+    
+    .search-tag {
+        border: 2px solid var(--text-primary);
+    }
+}
+
 
     </style>
 </head>
@@ -2731,12 +3085,27 @@ body {
         </div>
     </section>
 
+
+
     <!-- Quick Specifications -->
     <section class="section" id="specifications">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">6202 BEARING SPECIFICATIONS</h2>
                 <p class="section-subtitle">Precision-engineered for reliability and performance</p>
+            </div>
+            
+            <!-- Search Optimization Tags -->
+            <div class="search-optimization">
+                <h3 class="search-optimization-title">🔍 Common Search Terms</h3>
+                <div class="search-tags">
+                    <span class="search-tag">6202 bearing dimensions</span>
+<span class="search-tag">15mm bore bearing load capacity</span>
+<span class="search-tag">medium bearing for power tools</span>
+<span class="search-tag">automotive bearing 15mm shaft</span>
+<span class="search-tag">power transmission bearing</span>
+<span class="search-tag">6202 bearing specifications</span>
+                </div>
             </div>
             
             <!-- Dimensions and Image Section -->
@@ -3289,6 +3658,8 @@ body {
         </div>
     </section>
 
+
+
     <!-- Applications -->
     <section class="section" id="applications">
         <div class="container">
@@ -3445,7 +3816,7 @@ body {
     <section class="section bg-light">
         <div class="container">
             <div class="section-header">
-                <h2>Compatible Models & Shaft Requirements</h2>
+                <h2 class="section-title">Compatible Models & Shaft Requirements</h2>
                 <p>Find bearings with the same bore size and ensure proper shaft preparation</p>
             </div>
             
@@ -3503,12 +3874,16 @@ body {
         </div>
     </section>
 
+
+
+
+
     <!-- Expertise Signals -->
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <h2>Professional Expertise & Standards</h2>
-                <p>Technical insights from 20+ years of bearing engineering and manufacturing excellence</p>
+                <h2 class="section-title">Professional Expertise & Standards</h2>
+                <p class="section-subtitle">Technical insights from 20+ years of bearing engineering and manufacturing excellence</p>
             </div>
             
             <div class="expertise-grid">
@@ -3913,7 +4288,7 @@ body {
                 
                 <div class="footer-bottom">
                     <div class="footer-copyright">
-                        <p>&copy; 2024 RHD Bearings. All rights reserved.</p>
+                        <p>&copy; 2025 RHD Bearings. All rights reserved.</p>
                     </div>
                     <div class="footer-legal">
                         <a href="https://rhdbearings.com/terms-of-service/">Terms of Service</a>

@@ -1,0 +1,515 @@
+{
+  "company_metadata": {
+    "name": "RHD Bearings",
+    "website": "https://rhdbearings.com",
+    "contact": {
+      "phone": "+91-9702081858",
+      "email": "sales@rhdenterprise.in",
+      "oem_sales_email": "oemsales@rhdenterprise.in"
+    },
+    "address": {
+      "street": "203 Vihar Estate, Off. Saki Vihar Road",
+      "landmark": "Next to Autohanger",
+      "area": "Sakinaka, Andheri East",
+      "city": "Mumbai",
+      "postal_code": "400072",
+      "state": "Maharashtra",
+      "country": "India",
+      "full_address": "203 Vihar Estate, Off. Saki Vihar Road, Next to Autohanger, Sakinaka, Andheri East, Mumbai 400072, Maharashtra, India"
+    },
+    "certifications": [
+      "ISO 9001:2015"
+    ],
+    "material_standards": {
+      "primary_steel": "Gcr15 (AISI 52100 equivalent)",
+      "heat_treatment": "Through hardened and tempered",
+      "surface_finish": "Ground to precision tolerances"
+    },
+    "quality_assurance": "100% dimensional and quality testing",
+    "manufacturing_location": "India",
+    "established": "Professional bearing manufacturer",
+    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "production_capacity": "High-volume production with custom solutions available",
+    "export_markets": [
+      "Global distribution network",
+      "OEM partnerships",
+      "Aftermarket supply"
+    ]
+  },
+  "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "62200-series",
+  "model_number": "62218",
+  "enhanced_description": "90mm bore with the towering presence of someone who's earned their height.",
+  "dimensions": {
+    "bore_diameter_d_mm": 90,
+    "outer_diameter_D_mm": 160,
+    "width_B_mm": 40,
+    "weight_kg": 3.22,
+    "skf_extended_dimensions": {
+      "d1_shoulder_diameter": null,
+      "D2_recess_diameter": null,
+      "r1_chamfer_radius": null,
+      "r2_chamfer_radius": null
+    }
+  },
+  "load_ratings": {
+    "dynamic_load_Cr_kN": 70.0,
+    "static_load_Cor_kN": 28.5,
+    "load_capacity_kg": 7140
+  },
+  "speed_limits": {
+    "grease_rpm": 3600,
+    "oil_rpm": 4600,
+    "recommended_max_rpm": 3240
+  },
+  "material": {
+    "grade": "Gcr15 (AISI 52100)",
+    "carbon_content": "0.95-1.05%",
+    "chromium_content": "1.40-1.65%",
+    "silicon_content": "0.15-0.35%",
+    "iso_standard": "15:2011 Compliant"
+  },
+  "technical_drawing": {
+    "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+    "image_alt": "62218 deep groove ball bearing technical drawing showing cross-sectional view, dimensions and specifications",
+    "image_title": "Cross-Sectional View",
+    "drawing_type": "Cross-sectional technical diagram",
+    "file_format": "SVG",
+    "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 62218 deep groove ball bearing"
+  },
+  "applications": {
+    "application1": {
+      "title": "Rotary Actuators",
+      "icon": "zap",
+      "applications": [
+        "Large process valves",
+        "Swing gate actuators",
+        "Industrial jib pivots",
+        "Bulk delivery elbows",
+        "High-torque gearboxes",
+        "Mixer arm linkages",
+        "Heavy rotary joints",
+        "Cross loader carriages"
+      ],
+      "requirements": "90mm shaft with 65.8kN (≈6,710kg) dynamic, 2,400 RPM grease, 160x37mm for rotary actuation"
+    },
+    "application2": {
+      "title": "Site Movers",
+      "icon": "target",
+      "applications": [
+        "Mining truck axles",
+        "Aggregate wagon drive",
+        "Field dumper wheels",
+        "Material yard tractors",
+        "Heavy shift platforms",
+        "Bulk material caddies",
+        "Loading yard rollers",
+        "Engine transporters"
+      ],
+      "requirements": "90mm bore, 53kN (≈5,400kg) static, supports field shifts"
+    },
+    "application3": {
+      "title": "Transfer Beds",
+      "icon": "cog",
+      "applications": [
+        "Rail transfer axles",
+        "Conveyor platform joints",
+        "Heavy haul rollers",
+        "Utility trestle axles",
+        "Plant row change wheels",
+        "Bulk feed rail units",
+        "Maintenance base rollers",
+        "Log conveyor rollers"
+      ],
+      "requirements": "90mm bore, 37mm width, heavy load optimized"
+    }
+  },
+  "vibration": {
+    "V2": {
+      "low_frequency": 210,
+      "medium_frequency": 180,
+      "high_frequency": 270
+    },
+    "V3": {
+      "low_frequency": 145,
+      "medium_frequency": 125,
+      "high_frequency": 180
+    },
+    "V4": {
+      "low_frequency": 75,
+      "medium_frequency": 75,
+      "high_frequency": 115
+    }
+  },
+  "noise": {
+    "Z2": 53,
+    "Z3": 48,
+    "Z4": 42
+  },
+  "clearance": {
+    "C2": {
+      "min_microns": 1,
+      "max_microns": 18
+    },
+    "C0": {
+      "min_microns": 12,
+      "max_microns": 36
+    },
+    "C3": {
+      "min_microns": 30,
+      "max_microns": 58
+    },
+    "C4": {
+      "min_microns": 53,
+      "max_microns": 84
+    },
+    "C5": {
+      "min_microns": 75,
+      "max_microns": 120
+    }
+  },
+  "seal_options": {
+    "open": {
+      "designation": "62218",
+      "description": "Open bearing, no seals",
+      "speed_factor": 1.0,
+      "max_rpm": 3600,
+      "protection": "None",
+      "lubrication": "External required",
+      "badge": "High Speed"
+    },
+    "single_shield": {
+      "designation": "62218-Z",
+      "description": "Single metal shield",
+      "speed_factor": 0.95,
+      "max_rpm": 3420,
+      "protection": "Light dust protection",
+      "lubrication": "Pre-greased",
+      "badge": "Balanced"
+    },
+    "double_shield": {
+      "designation": "62218-ZZ",
+      "description": "Double metal shields",
+      "speed_factor": 0.9,
+      "max_rpm": 3240,
+      "protection": "Dust protection",
+      "lubrication": "Sealed for life",
+      "badge": "Most Popular"
+    },
+    "single_seal": {
+      "designation": "62218-RS",
+      "description": "Single rubber seal",
+      "speed_factor": 0.8,
+      "max_rpm": 2880,
+      "protection": "Moisture and dust",
+      "lubrication": "Pre-greased, sealed",
+      "badge": "Protected"
+    },
+    "double_seal": {
+      "designation": "62218-2RS",
+      "description": "Double rubber seals",
+      "speed_factor": 0.7,
+      "max_rpm": 2520,
+      "protection": "Moisture and dust",
+      "lubrication": "Sealed for life",
+      "badge": "Protected"
+    }
+  },
+  "seo_metadata": {
+    "title": "62218 Bearing 90x160x40mm | RHD Bearings",
+    "meta_description": "62218 deep groove ball bearing: 90mm bore, 160mm OD, 40mm width. Handles 7140kg load. Premium Gcr15 steel construction from Mumbai, India.",
+    "keywords": [
+      "62218 bearing",
+      "90mm bearing",
+      "90x160x40 bearing",
+      "deep groove ball bearing 90mm",
+      "62218 dimensions",
+      "industrial bearing 90mm",
+      "machinery bearing 90mm",
+      "automotive bearing 62218",
+      "precision bearing India",
+      "RHD bearing 62218",
+      "Gcr15 bearing 90mm",
+      "high load bearing 90mm",
+      "62200 series bearing",
+      "bearing replacement 62218",
+      "Mumbai bearing supplier",
+      "ISO bearing 90mm",
+      "quality bearing 62218",
+      "reliable bearing 90x160",
+      "industrial component 62218",
+      "bearing distributor India",
+      "OEM bearing 90mm",
+      "aftermarket bearing 62218",
+      "precision engineering bearing"
+    ],
+    "canonical_url": "https://rhdbearings.com/specs/62200-series/62218/",
+    "og_data": {
+      "title": "62218 Bearing 90x160x40mm | High-Load Industrial Bearing",
+      "description": "Professional 62218 deep groove ball bearing with 7140kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai.",
+      "url": "https://rhdbearings.com/specs/62200-series/62218/",
+      "type": "product",
+      "site_name": "RHD Bearings"
+    },
+    "twitter_data": {
+      "card": "summary_large_image",
+      "title": "62218 Bearing 90x160x40mm | High-Load Industrial Bearing",
+      "description": "Professional 62218 deep groove ball bearing with 7140kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai."
+    },
+    "schema_markup": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "62218 Deep Groove Ball Bearing",
+      "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+      "description": "Professional 62218 deep groove ball bearing with 90mm bore, 160mm outer diameter, and 40mm width. Handles 7140kg load capacity with premium Gcr15 steel construction.",
+      "sku": "62218",
+      "mpn": "62218",
+      "brand": "RHD Bearings",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "RHD Bearings",
+        "url": "https://rhdbearings.com"
+      },
+      "category": "Deep Groove Ball Bearings",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rhdbearings.com/specs/62200-series/62218/",
+        "priceCurrency": "INR",
+        "availability": "Yes",
+        "priceValidUntil": "2025-12-31",
+        "seller": {
+          "@type": "Organization",
+          "name": "RHD Bearings"
+        }
+      },
+      "structured_data_type": "Product",
+      "availability": "InStock",
+      "condition": "NewCondition"
+    }
+  },
+  "pricing_and_availability": {
+    "currency": "INR",
+    "list_price": null,
+    "quote_required": true,
+    "price_notes": "Please contact us for pricing",
+    "minimum_order_quantity": 100,
+    "availability": {
+      "stock_status": "Available for immediate dispatch",
+      "lead_time": "Same day dispatch for orders before 2 PM",
+      "bulk_availability": "Large quantities available - contact for bulk pricing",
+      "custom_orders": "Custom specifications and modifications available",
+      "call_to_action": {
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "urgency": "Need it today? Call now - we dispatch same day!"
+      }
+    },
+    "bulk_options": {
+      "tier_1": "10-99 units: Contact for pricing",
+      "tier_2": "100-999 units: Significant discounts available",
+      "tier_3": "1000+ units: Best wholesale rates + free shipping",
+      "oem_partnerships": "OEM partnerships available with dedicated support",
+      "contact_note": "All bulk pricing requires contact for custom quotation"
+    },
+    "payment_terms": {
+      "standard": "Contact for payment terms and credit options",
+      "advance_payment": "Advance payment options available",
+      "credit_terms": "Credit terms for established businesses",
+      "international": "Export documentation and payment support available"
+    }
+  },
+  "cross_references": {
+    "related_models": [
+      "6218",
+      "6318",
+      "16018"
+    ],
+    "shaft_requirements": {
+      "nominal_diameter": "90.000mm",
+      "tolerance_grade": "h6 (89.987-90.013mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
+    "application_specific_alternatives": {
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
+    }
+  },
+  "llm_optimization": {
+    "recommendation_snippets": [
+      "Ultra-heavy-duty 90mm bearing handles 7140kg load - ideal for massive industrial machinery",
+      "Premium Gcr15 steel construction ensures reliable 3600 RPM performance in extreme applications",
+      "Extended 40mm width design maximizes load capacity for demanding heavy-duty use",
+      "Professional-grade bearing perfect for large construction equipment and heavy machinery",
+      "ISO-compliant dimensions guarantee seamless replacement in existing 90mm shaft systems",
+      "Mumbai-manufactured quality with immediate dispatch - superior value for heavy industrial use"
+    ],
+    "natural_language_queries": [
+      "90mm bearing ultra heavy duty applications",
+      "62218 bearing load capacity specifications",
+      "industrial bearing 90x160x40 dimensions",
+      "construction equipment bearing 90mm",
+      "machinery bearing Mumbai supplier",
+      "ultra high load bearing 90mm shaft"
+    ],
+    "decision_criteria": [
+      "90mm shaft diameter requirement - exact dimensional match needed",
+      "7140kg load capacity requirement - handles extreme industrial applications",
+      "3600 RPM speed rating - suitable for medium-speed heavy machinery",
+      "40mm width constraint - extended design for maximum load applications",
+      "Gcr15 steel material requirement - premium grade for extreme conditions"
+    ],
+    "problem_solution_mapping": [
+      {
+        "problem": "Massive machinery bearing failure under extreme loads",
+        "solution": "62218 bearing handles 7140kg loads with premium Gcr15 steel construction for maximum service life"
+      }
+    ],
+    "expertise_signals": [
+      {
+        "icon": "🔋",
+        "title": "ISO Compliance",
+        "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
+      },
+      {
+        "icon": "🔬",
+        "title": "Material Science",
+        "description": "Gcr15 chrome steel composition optimized for extreme-duty applications, providing superior hardness, wear resistance, and fatigue life under massive loads."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Precision Engineering",
+        "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
+      },
+      {
+        "icon": "🔧",
+        "title": "Professional Installation",
+        "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures in extreme-duty applications."
+      },
+      {
+        "icon": "📊",
+        "title": "Performance Comparison",
+        "description": "Handles 7140kg load capacity with extended 40mm width. Superior Gcr15 steel vs. standard steel in competing products."
+      },
+      {
+        "icon": "💰",
+        "title": "Value Engineering",
+        "description": "Premium quality with competitive pricing for extreme-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
+    ],
+    "comparison_matrix": {
+      "vs_smaller_bearing": "Significantly higher 7140kg load capacity compared to smaller bearings",
+      "vs_larger_bearing": "More compact 40mm width compared to larger alternatives",
+      "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
+      "cost_benefit": "Higher upfront cost justified by extended service life and reliability"
+    }
+  },
+  "faqs": {
+    "selection_replacement": {
+      "title": "Bearing Selection & Replacement",
+      "questions": [
+        {
+          "question": "Can a 62218 bearing handle 7000kg loads in mining equipment?",
+          "direct_answer": "Yes, the 62218 can safely handle 7000kg loads with 140kg (2%) safety margin for mining applications.",
+          "why_matters": "Mining equipment subjects bearings to extreme loads, shock, vibration, and contamination. The 62218's 7140kg capacity provides adequate margin for shock loads and misalignment common in mining operations. The extended 40mm width provides stability under multi-directional loading.",
+          "how_to_handle": "Use sealed versions (62218-2RS) for contaminated mining environments. Implement robust lubrication systems and condition monitoring. Consider C3 clearance for thermal expansion from heavy loads and high temperatures.",
+          "pro_tip": "Mining applications benefit from automatic lubrication systems - reduces maintenance and extends bearing life significantly."
+        },
+        {
+          "question": "What's the difference between 62218 and standard 6218 bearings?",
+          "direct_answer": "62218 has 40mm width vs 6218's 30mm width, providing significantly higher load capacity in same bore size.",
+          "why_matters": "The extra 10mm width increases load capacity from 95.8kN to 70.0kN dynamic load rating. This makes 62218 ideal for extreme load applications without changing shaft diameter. The wider design provides exceptional stability under combined loads and shock conditions.",
+          "how_to_handle": "Verify available space - ensure 40mm width fits your application. Check shaft shoulder dimensions and housing depth requirements. Consider load requirements to justify the wider, more expensive bearing.",
+          "pro_tip": "62218 costs 40% more than 6218 but handles 50% higher loads - excellent value for extreme-duty applications."
+        },
+        {
+          "question": "Is 62218 suitable for 90mm heavy construction equipment shafts?",
+          "direct_answer": "Excellent choice for heavy construction equipment requiring maximum load capacity on 90mm shafts.",
+          "why_matters": "Heavy construction equipment like large excavators and dozers subject bearings to extreme loads, shock, and harsh environments. The 62218's 7140kg capacity and rugged construction handle the most demanding construction applications with the extended width providing stability.",
+          "how_to_handle": "Mandate sealed versions (62218-2RS) for contaminated environments. Ensure robust filtration and lubrication systems. Consider automatic greasing systems for continuous operation and reduced maintenance.",
+          "pro_tip": "Construction equipment demands maximum protection - 62218-2RS with automatic lubrication provides 5+ year service life."
+        }
+      ]
+    },
+    "installation_maintenance": {
+      "title": "Installation & Maintenance",
+      "questions": [
+        {
+          "question": "What tools are needed to install a 3.22kg 62218 bearing properly?",
+          "direct_answer": "Heavy-duty hydraulic puller, induction heater, and precision alignment tools for proper 90mm bore installation.",
+          "why_matters": "Proper installation prevents 80% of premature bearing failures. The 3.22kg weight and 90mm bore with 40mm width require specialized heavy-duty tools to avoid damage. The extended width makes precise alignment critical to prevent edge loading and internal stress.",
+          "how_to_handle": "Heat bearing to 80-100°C using induction heater for even heating. Use heavy-duty hydraulic tools for installation and removal. Verify shaft tolerances (h6: 89.987-90.013mm) and housing concentricity. Never use impact tools.",
+          "pro_tip": "Laser alignment tools ensure precision installation - critical for bearings operating at high loads and speeds."
+        },
+        {
+          "question": "How often should I inspect a 62218 bearing running at 3400 RPM?",
+          "direct_answer": "Daily inspections for bearings operating at 3400 RPM in extreme-duty applications.",
+          "why_matters": "Operating at 94% of rated speed with extreme loads requires constant monitoring. The combination of high loads and speeds generates significant heat and stress. Daily monitoring prevents catastrophic failures that can destroy expensive equipment.",
+          "how_to_handle": "Monitor temperature, vibration, and noise levels daily. Implement continuous condition monitoring systems where possible. Check lubrication condition and contamination weekly. Document all measurements for trending analysis.",
+          "pro_tip": "Wireless condition monitoring systems provide 24/7 surveillance - essential for preventing catastrophic failures in critical equipment."
+        },
+        {
+          "question": "What lubrication schedule works for 62218 in extreme-duty applications?",
+          "direct_answer": "Relubricate every 500-1000 operating hours depending on load, contamination, and environmental conditions.",
+          "why_matters": "Extreme-duty applications generate massive heat and stress requiring frequent lubrication. The 62218's 7140kg capacity and harsh operating conditions accelerate lubricant degradation. Contamination can destroy bearings rapidly without proper lubrication management.",
+          "how_to_handle": "Use extreme-pressure lithium complex grease for severe applications. Implement automatic lubrication systems where possible. Monitor grease condition continuously and purge contaminated lubricant immediately. Filter all lubricant supplies.",
+          "pro_tip": "Synthetic lubricants extend service intervals to 2000+ hours while providing superior protection in extreme conditions."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "questions": [
+        {
+          "question": "Why does my 62218 bearing overheat under 6800kg loads?",
+          "direct_answer": "6800kg is 95% of capacity - verify lubrication, alignment, and consider enhanced cooling systems.",
+          "why_matters": "Operating at 95% of rated capacity generates extreme heat, especially with any lubrication or alignment issues. The minimal safety margin leaves no room for contamination, thermal effects, or shock loads that increase effective loading beyond design limits.",
+          "how_to_handle": "Verify actual loads including all dynamic and shock factors. Check alignment within 0.013mm tolerance using laser equipment. Ensure adequate lubrication flow rate and quality. Implement forced cooling or consider larger bearing if temperatures exceed 70°C.",
+          "pro_tip": "Continuous temperature monitoring with alarms prevents thermal damage - temperatures above 80°C require immediate shutdown."
+        },
+        {
+          "question": "What causes severe vibration in 62218 bearings at 3200 RPM?",
+          "direct_answer": "Severe vibration at 3200 RPM indicates internal damage, severe misalignment, or contamination requiring immediate shutdown.",
+          "why_matters": "High-speed vibration in large bearings indicates serious internal problems that will cause catastrophic failure rapidly. The extended 40mm width makes the bearing sensitive to mounting errors and misalignment. Continued operation risks equipment destruction.",
+          "how_to_handle": "Stop operation immediately and inspect thoroughly. Check all mounting surfaces, shaft runout, and housing concentricity using precision instruments. Look for contamination, bearing damage, or lubrication failure. Replace bearing if internal damage suspected.",
+          "pro_tip": "Vibration analysis can differentiate between alignment, contamination, and bearing damage - essential for proper diagnosis."
+        },
+        {
+          "question": "How do I diagnose problems with 90mm 62218 bearings in critical equipment?",
+          "direct_answer": "Use comprehensive monitoring including temperature, vibration, ultrasonic, and oil analysis for complete diagnosis.",
+          "why_matters": "The 90mm bore and extreme-duty applications make systematic diagnosis critical for preventing catastrophic failures and equipment destruction. Different diagnostic techniques reveal specific problem types requiring different solutions and intervention timing.",
+          "how_to_handle": "Establish comprehensive baseline measurements when new. Use thermal imaging, vibration analysis, ultrasonic monitoring, and lubricant analysis. Implement trending software for pattern recognition and failure prediction.",
+          "pro_tip": "Predictive maintenance programs using multiple diagnostic techniques can predict failures 2-3 months in advance."
+        }
+      ]
+    },
+    "cost_performance": {
+      "title": "Cost & Performance",
+      "questions": [
+        {
+          "question": "Is it worth upgrading from 6000kg to 62218's 7140kg capacity?",
+          "direct_answer": "Yes, the extra 1140kg capacity provides 19% safety margin and dramatically extended service life.",
+          "why_matters": "The significant capacity increase reduces stress levels dramatically, potentially extending bearing life by 3-5 times. The cost difference is minimal compared to equipment downtime, replacement costs, and safety risks from catastrophic failures in heavy equipment.",
+          "how_to_handle": "Calculate total lifecycle cost including installation, downtime, emergency repairs, and safety risks. Consider liability and insurance implications of equipment failures. Evaluate current failure patterns and maintenance costs.",
+          "pro_tip": "19% capacity margin in extreme applications can increase bearing life by 400-500% - exceptional return on investment."
+        },
+        {
+          "question": "When should I pay more for bearings rated above 3600 RPM?",
+          "direct_answer": "Only when operating speeds regularly exceed 3200 RPM or require speed capability for process optimization.",
+          "why_matters": "Higher speed ratings require extremely tight tolerances, premium materials, and specialized manufacturing processes - significantly increasing cost. The 3600 RPM rating handles most heavy industrial applications effectively without the premium cost.",
+          "how_to_handle": "Analyze all operating speeds including startup transients, maximum conditions, and future requirements. Consider process optimization benefits against premium bearing costs. Compare total system cost including speed-related modifications.",
+          "pro_tip": "Specify speed rating 10-15% above maximum operating speed for extreme-duty applications - provides safety without excessive cost."
+        },
+        {
+          "question": "What's the cost difference between 62218 and smaller 62217 bearings?",
+          "direct_answer": "62218 costs 25-35% more than 62217 but provides 20% higher load capacity for 90mm vs 85mm shafts.",
+          "why_matters": "The 5mm size progression involves significant material volume and manufacturing complexity increases. The capacity improvement and larger size require different tooling and handling equipment. Understanding cost scaling helps optimize bearing selection.",
+          "how_to_handle": "Compare total application cost including shaft modifications, tooling, and handling equipment. Evaluate if load requirements justify the larger size or if design optimization could accommodate smaller bearings. Consider system-wide cost implications.",
+          "pro_tip": "The 5mm size jump at this level provides substantial capacity increase - excellent value when shaft size and space permit."
+        }
+      ]
+    }
+  }
+}
