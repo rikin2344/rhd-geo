@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="../../../../shared/watermark.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body data-page="6000-series" data-model="6018">
+<body data-page="6000-series" data-model="6018" data-alternate-model="{{alternate_model_number}}">
     <!-- Navigation Header -->
     <div id="navbar-container"></div>
 
@@ -82,12 +82,12 @@
                         <span>6018 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title">6018 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">6018 Deep Groove Ball Bearing</h1>
                     <p class="hero-subtitle">
                         The executive class of bearings - 90mm bore of refined power that whispers instead of shouts.
                     </p>
                     <p class="hero-description">
-                        Meet the 6018: With 5916kg (58.0kN) of engineering excellence and 90mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
+                        Meet the 6018: With 5912kg (58.0kN) of engineering excellence and 90mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
                     </p>
                     
                     <div class="hero-specs">
@@ -109,7 +109,7 @@
                                 <div class="spec-label">Load Rating</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">5916 Kg</div>
+                                <div class="spec-value">5912 Kg</div>
                                 <div class="spec-label">Load Capacity</div>
                             </div>
                             <div class="spec-item">
@@ -228,7 +228,7 @@
                                 </div>
                                 <div class="spec-row">
                                     <span>Load Capacity (kg)</span>
-                                    <span>5916kg</span>
+                                    <span>5912kg</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -1352,6 +1352,63 @@
 
         // Run speed limits update when page loads
         document.addEventListener('DOMContentLoaded', updateSpeedLimits);
+
+        // Update hero title with alternate model number if available
+        function updateHeroTitle() {
+            const heroTitle = document.getElementById('hero-title');
+            if (heroTitle) {
+                // Check if alternate_model_number exists in the page data
+                const pageData = document.body.dataset;
+                const modelNumber = pageData.model;
+                const bearingSeries = pageData.page;
+                
+                // Try to get alternate model number from JSON data or page attributes
+                // This assumes the data is available in a script tag or data attribute
+                const alternateModelNumber = getAlternateModelNumber(modelNumber);
+                
+                if (alternateModelNumber) {
+                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
+                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                }
+            }
+        }
+
+        // Function to get alternate model number
+        function getAlternateModelNumber(modelNumber) {
+            // Check if we have the alternate model number in the page data
+            // This could be from a data attribute, script tag, or API call
+            const alternateModelAttr = document.querySelector('[data-alternate-model]');
+            if (alternateModelAttr) {
+                return alternateModelAttr.dataset.alternateModel;
+            }
+            
+            // Fallback: calculate based on the pattern (model + 55000)
+            if (modelNumber && modelNumber.startsWith('68')) {
+                const num = parseInt(modelNumber);
+                if (num >= 6800 && num <= 6820) {
+                    return (num + 55000).toString();
+                }
+            }
+            
+            return null;
+        }
+
+        // Run hero title update when page loads
+        document.addEventListener('DOMContentLoaded', updateHeroTitle);
+
+        // Handle alternate model number data attribute
+        function handleAlternateModelNumber() {
+            const body = document.body;
+            const alternateModelNumber = body.dataset.alternateModel;
+            
+            // If alternate model number is empty or undefined, remove the attribute
+            if (!alternateModelNumber || alternateModelNumber === 'undefined' || alternateModelNumber === '') {
+                body.removeAttribute('data-alternate-model');
+            }
+        }
+
+        // Run alternate model number handling when page loads
+        document.addEventListener('DOMContentLoaded', handleAlternateModelNumber);
     </script>
 </body>
 </html>

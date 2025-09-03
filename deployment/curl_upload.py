@@ -69,6 +69,10 @@ def get_local_file_path(page_type):
                     deployment_path = f'./deployment/6200-series/6200-series-internal-pages-deployment/{page_type}/index.html'
                 elif page_type.startswith('63'):
                     deployment_path = f'./deployment/6300-series/6300-series-internal-pages-deployment/{page_type}/index.html'
+                elif page_type.startswith('68'):
+                    deployment_path = f'./deployment/6800-series/6800-series-internal-pages-deployment/{page_type}/index.html'
+                elif page_type.startswith('69'):
+                    deployment_path = f'./deployment/6900-series/6900-series-internal-pages-deployment/{page_type}/index.html'
                 else:
                     return None
                     

@@ -2950,7 +2950,7 @@ html {
 
     </style>
 </head>
-<body>
+<body data-page="6200-series" data-model="6214" data-alternate-model="{{alternate_model_number}}">
 <!-- Navigation Header -->
     <!-- RHD Bearings Navigation Header -->
 <div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
@@ -3033,12 +3033,12 @@ html {
                         <span>6214 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title">6214 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">6214 Deep Groove Ball Bearing</h1>
                     <p class="hero-subtitle">
                         The industrial powerhouse - delivers maximum torque with precision and reliability.
                     </p>
                     <p class="hero-description">
-                        Meet the 6214: With 7959kg (78.0kN) of engineering excellence and 70mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
+                        Meet the 6214: With 6197kg (60.8kN) of engineering excellence and 70mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
                     </p>
                     
                     <div class="hero-specs">
@@ -3056,15 +3056,15 @@ html {
                                 <div class="spec-label">Width</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">78.0 kN</div>
+                                <div class="spec-value">60.8 kN</div>
                                 <div class="spec-label">Load Rating</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">7959 Kg</div>
+                                <div class="spec-value">6197 Kg</div>
                                 <div class="spec-label">Load Capacity</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">2.35 Kg</div>
+                                <div class="spec-value">1.084 Kg</div>
                                 <div class="spec-label">Weight</div>
                             </div>
                         </div>
@@ -3167,7 +3167,7 @@ html {
                             <div class="spec-details">
                                 <div class="spec-row">
                                     <span>Dynamic Load (Cr)</span>
-                                    <span>78.0kN</span>
+                                    <span>60.8kN</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Static Load (Cor)</span>
@@ -3175,11 +3175,11 @@ html {
                                 </div>
                                 <div class="spec-row">
                                     <span>Load Capacity (kN)</span>
-                                    <span>78.0kN</span>
+                                    <span>60.8kN</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Load Capacity (kg)</span>
-                                    <span>7959kg</span>
+                                    <span>6197kg</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -3189,7 +3189,7 @@ html {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Dynamic Load (78.0kN):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
+                                    <strong>Dynamic Load (60.8kN):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Static Load (45.0kN):</strong> Maximum force when stationary. Use 80% for safety.
@@ -3213,11 +3213,11 @@ html {
                             <div class="spec-details">
                                 <div class="spec-row">
                                     <span>Grease Lubrication</span>
-                                    <span>6500 RPM</span>
+                                    <span>4800 RPM</span>
                                 </div>
                                 <div class="spec-row">
                                     <span>Oil Lubrication</span>
-                                    <span>8000 RPM</span>
+                                    <span>6000 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z2v2">
                                     <span>RHD Z2V2 Bearings</span>
@@ -3239,13 +3239,13 @@ html {
                             <h3><span class="spec-icon">💡</span>What This Means</h3>
                             <div class="explanation-content">
                                 <div class="explanation-item">
-                                    <strong>Grease Limit (6500 RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
+                                    <strong>Grease Limit (4800 RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Oil Advantage (8000 RPM):</strong> Better heat dissipation allows higher speed. Required for high-speed spindles.
+                                    <strong>Oil Advantage (6000 RPM):</strong> Better heat dissipation allows higher speed. Required for high-speed spindles.
                                 </div>
                                 <div class="explanation-item">
-                                    <strong>Safe Operating Speed:</strong> Use 90% of limit (5850 RPM) for maximum L10 life of 10,000+ hours.
+                                    <strong>Safe Operating Speed:</strong> Use 90% of limit (4320 RPM) for maximum L10 life of 10,000+ hours.
                                 </div>
                                 <div class="explanation-item">
                                     <strong>Failure Mode:</strong> Exceeding speed causes cage failure, ball skidding, and catastrophic overheating within minutes.
@@ -4421,7 +4421,7 @@ html {
                                 <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Maximum speed potential (6500 RPM) and optimized lubrication for specific applications
+                                <strong>Achieves:</strong> Maximum speed potential (4800 RPM) and optimized lubrication for specific applications
                             </div>
                             <div class="explanation-item">
                                 <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
@@ -4516,6 +4516,63 @@ html {
 
         // Run speed limits update when page loads
         document.addEventListener('DOMContentLoaded', updateSpeedLimits);
+
+        // Update hero title with alternate model number if available
+        function updateHeroTitle() {
+            const heroTitle = document.getElementById('hero-title');
+            if (heroTitle) {
+                // Check if alternate_model_number exists in the page data
+                const pageData = document.body.dataset;
+                const modelNumber = pageData.model;
+                const bearingSeries = pageData.page;
+                
+                // Try to get alternate model number from JSON data or page attributes
+                // This assumes the data is available in a script tag or data attribute
+                const alternateModelNumber = getAlternateModelNumber(modelNumber);
+                
+                if (alternateModelNumber) {
+                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
+                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                }
+            }
+        }
+
+        // Function to get alternate model number
+        function getAlternateModelNumber(modelNumber) {
+            // Check if we have the alternate model number in the page data
+            // This could be from a data attribute, script tag, or API call
+            const alternateModelAttr = document.querySelector('[data-alternate-model]');
+            if (alternateModelAttr) {
+                return alternateModelAttr.dataset.alternateModel;
+            }
+            
+            // Fallback: calculate based on the pattern (model + 55000)
+            if (modelNumber && modelNumber.startsWith('68')) {
+                const num = parseInt(modelNumber);
+                if (num >= 6800 && num <= 6820) {
+                    return (num + 55000).toString();
+                }
+            }
+            
+            return null;
+        }
+
+        // Run hero title update when page loads
+        document.addEventListener('DOMContentLoaded', updateHeroTitle);
+
+        // Handle alternate model number data attribute
+        function handleAlternateModelNumber() {
+            const body = document.body;
+            const alternateModelNumber = body.dataset.alternateModel;
+            
+            // If alternate model number is empty or undefined, remove the attribute
+            if (!alternateModelNumber || alternateModelNumber === 'undefined' || alternateModelNumber === '') {
+                body.removeAttribute('data-alternate-model');
+            }
+        }
+
+        // Run alternate model number handling when page loads
+        document.addEventListener('DOMContentLoaded', handleAlternateModelNumber);
     </script>
 <script>
         // Load navbar
@@ -4620,7 +4677,7 @@ html {
                                 <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
                             </div>
                             <div class="explanation-item">
-                                <strong>Achieves:</strong> Maximum speed potential (6500 RPM) and optimized lubrication for specific applications
+                                <strong>Achieves:</strong> Maximum speed potential (4800 RPM) and optimized lubrication for specific applications
                             </div>
                             <div class="explanation-item">
                                 <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
@@ -4715,6 +4772,63 @@ html {
 
         // Run speed limits update when page loads
         document.addEventListener('DOMContentLoaded', updateSpeedLimits);
+
+        // Update hero title with alternate model number if available
+        function updateHeroTitle() {
+            const heroTitle = document.getElementById('hero-title');
+            if (heroTitle) {
+                // Check if alternate_model_number exists in the page data
+                const pageData = document.body.dataset;
+                const modelNumber = pageData.model;
+                const bearingSeries = pageData.page;
+                
+                // Try to get alternate model number from JSON data or page attributes
+                // This assumes the data is available in a script tag or data attribute
+                const alternateModelNumber = getAlternateModelNumber(modelNumber);
+                
+                if (alternateModelNumber) {
+                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
+                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                }
+            }
+        }
+
+        // Function to get alternate model number
+        function getAlternateModelNumber(modelNumber) {
+            // Check if we have the alternate model number in the page data
+            // This could be from a data attribute, script tag, or API call
+            const alternateModelAttr = document.querySelector('[data-alternate-model]');
+            if (alternateModelAttr) {
+                return alternateModelAttr.dataset.alternateModel;
+            }
+            
+            // Fallback: calculate based on the pattern (model + 55000)
+            if (modelNumber && modelNumber.startsWith('68')) {
+                const num = parseInt(modelNumber);
+                if (num >= 6800 && num <= 6820) {
+                    return (num + 55000).toString();
+                }
+            }
+            
+            return null;
+        }
+
+        // Run hero title update when page loads
+        document.addEventListener('DOMContentLoaded', updateHeroTitle);
+
+        // Handle alternate model number data attribute
+        function handleAlternateModelNumber() {
+            const body = document.body;
+            const alternateModelNumber = body.dataset.alternateModel;
+            
+            // If alternate model number is empty or undefined, remove the attribute
+            if (!alternateModelNumber || alternateModelNumber === 'undefined' || alternateModelNumber === '') {
+                body.removeAttribute('data-alternate-model');
+            }
+        }
+
+        // Run alternate model number handling when page loads
+        document.addEventListener('DOMContentLoaded', handleAlternateModelNumber);
     </script>
 
 </body>

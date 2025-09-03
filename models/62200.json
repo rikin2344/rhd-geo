@@ -55,7 +55,7 @@
   "load_ratings": {
     "dynamic_load_Cr_kN": 7.12,
     "static_load_Cor_kN": 1.58,
-    "load_capacity_kg": 726
+    "load_capacity_kg": 725
   },
   "speed_limits": {
     "grease_rpm": 25000,
@@ -91,7 +91,7 @@
         "Ticket printer spindles",
         "Desktop appliance fans"
       ],
-      "requirements": "10mm shaft with 5.07kN (\u2248517kg) dynamic load capacity, 16,200 RPM grease lubrication, 30x14mm profile for small drive systems"
+      "requirements": "10mm shaft with 5.07kN (≈517kg) dynamic load capacity, 16,200 RPM grease lubrication, 30x14mm profile for small drive systems"
     },
     "application2": {
       "title": "Control Devices",
@@ -106,7 +106,7 @@
         "Positioning system wheels",
         "Office automation rollers"
       ],
-      "requirements": "Precision 10mm bore, 2.4kN (\u2248245kg) static load rating for stable mounting, compact for small device controls"
+      "requirements": "Precision 10mm bore, 2.4kN (≈245kg) static load rating for stable mounting, compact for small device controls"
     },
     "application3": {
       "title": "Machinery Components",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "62200 Deep Groove Ball Bearing 10\u00d730\u00d714mm | RHD Bearings",
-    "meta_description": "62200 deep groove ball bearing with 10\u00d730\u00d714mm dimensions, 726kg load capacity, 25,000 RPM for slim-fit applications. Made in India.",
+    "title": "62200 Deep Groove Ball Bearing 10×30×14mm | RHD Bearings",
+    "meta_description": "62200 deep groove ball bearing with 10×30×14mm dimensions, 726kg load capacity, 25,000 RPM for slim-fit applications. Made in India.",
     "keywords": [
       "62200 bearing",
       "10mm bore bearing",
@@ -233,8 +233,8 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/62200-series/62200/",
     "og_data": {
-      "title": "62200 Deep Groove Ball Bearing 10\u00d730\u00d714mm",
-      "description": "Slim-fit 62200 bearing with 10\u00d730\u00d714mm dimensions for high-speed applications",
+      "title": "62200 Deep Groove Ball Bearing 10×30×14mm",
+      "description": "Slim-fit 62200 bearing with 10×30×14mm dimensions for high-speed applications",
       "url": "https://rhdbearings.com/specs/62200-series/62200/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -242,14 +242,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "62200 Deep Groove Ball Bearing",
-      "description": "10\u00d730\u00d714mm slim-fit bearing for high-speed applications"
+      "description": "10×30×14mm slim-fit bearing for high-speed applications"
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "62200 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "62200 deep groove ball bearing with 10\u00d730\u00d714mm dimensions for slim-fit applications",
+      "description": "62200 deep groove ball bearing with 10×30×14mm dimensions for slim-fit applications",
       "sku": "62200",
       "mpn": "62200",
       "brand": "RHD Bearings",
@@ -287,9 +287,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -317,7 +317,7 @@
     "shaft_requirements": {
       "nominal_diameter": "10.000mm",
       "tolerance_grade": "h6 (9.989-10.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -333,7 +333,7 @@
       "Use 62200-RS in moisture-prone environments requiring 20,000 RPM with rubber seal protection",
       "Consider 62200 for space-constrained applications where 14mm width optimizes mounting",
       "Opt for 62200 in high-speed applications needing 25,000 RPM grease lubrication",
-      "Deploy 62200 in slim-fit applications requiring 10\u00d730\u00d714mm profile with enhanced performance"
+      "Deploy 62200 in slim-fit applications requiring 10×30×14mm profile with enhanced performance"
     ],
     "natural_language_queries": [
       "62200 bearing dimensions",
@@ -352,7 +352,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need slim-fit bearing for 10mm shaft with high load capacity",
-        "solution": "62200 bearing provides 7.12kN dynamic load in 30\u00d714mm profile"
+        "solution": "62200 bearing provides 7.12kN dynamic load in 30×14mm profile"
       },
       {
         "problem": "Require dust protection in high-speed application",
@@ -365,32 +365,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for slim-fit bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Slim-fit 14mm width with 7.12kN load capacity. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in slim-fit bearing category for 7.12kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -415,7 +415,7 @@
         },
         {
           "question": "Can I replace a 62200 bearing with a different size bearing?",
-          "direct_answer": "No, 62200 bearings have unique 10\u00d730\u00d714mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 62200 bearings have unique 10×30×14mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 62200 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 62200 bearings in stock to avoid production delays and ensure consistent quality."

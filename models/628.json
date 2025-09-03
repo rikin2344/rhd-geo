@@ -44,7 +44,7 @@
     "bore_diameter_d_mm": 8,
     "outer_diameter_D_mm": 24,
     "width_B_mm": 8,
-    "weight_kg": 0.017,
+    "weight_kg": 0.016,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
       "D2_recess_diameter": null,
@@ -53,9 +53,9 @@
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 3.95,
-    "static_load_Cor_kN": 1.5,
-    "load_capacity_kg": 403
+    "dynamic_load_Cr_kN": 3.35,
+    "static_load_Cor_kN": 1.4,
+    "load_capacity_kg": 341
   },
   "speed_limits": {
     "grease_rpm": 24000,
@@ -91,7 +91,7 @@
         "quality control",
         "production monitoring"
       ],
-      "requirements": "8mm shaft with 3.95kN dynamic load capacity, 24,000 RPM grease lubrication, robust 24\u00d78mm profile for automation applications"
+      "requirements": "8mm shaft with 3.95kN dynamic load capacity, 24,000 RPM grease lubrication, robust 24×8mm profile for automation applications"
     },
     "application2": {
       "title": "Precision Machinery",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "628 Bearing 8\u00d724\u00d78mm Deep Groove Ball Bearing | RHD",
+    "title": "628 Bearing 8×24×8mm Deep Groove Ball Bearing | RHD",
     "meta_description": "628 deep groove ball bearing with 8mm bore, 24mm OD, 8mm width. 3.95kN dynamic load, 403kg capacity. Perfect for automation, precision machinery, electric vehicles.",
     "keywords": [
       "628 bearing",
@@ -249,7 +249,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/628/",
     "og_data": {
-      "title": "628 Deep Groove Ball Bearing - 8\u00d724\u00d78mm | RHD Bearings",
+      "title": "628 Deep Groove Ball Bearing - 8×24×8mm | RHD Bearings",
       "description": "Industrial automation 628 miniature bearing with 3.95kN dynamic load capacity. Perfect for automation, precision machinery, and electric vehicles.",
       "url": "https://rhdbearings.com/specs/miniature-series/628/",
       "type": "product",
@@ -303,9 +303,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -333,7 +333,7 @@
     "shaft_requirements": {
       "nominal_diameter": "8.000mm",
       "tolerance_grade": "h6 (7.991-8.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -347,7 +347,7 @@
       "Choose 628 for 8mm shafts requiring 3.95kN dynamic load capacity in industrial automation applications",
       "Select 628-ZZ for dust protection with 21,600 RPM capability and sealed-for-life lubrication",
       "Use 628-RS in moisture-prone environments requiring 19,200 RPM with rubber seal protection",
-      "Consider 628 for automation where 24\u00d78mm profile and 403kg load capacity optimize performance",
+      "Consider 628 for automation where 24×8mm profile and 403kg load capacity optimize performance",
       "Opt for 628 in precision machinery needing 0.3mm chamfer radius and stable positioning",
       "Deploy 628 in electric vehicles requiring 24,000 RPM grease lubrication with robust design"
     ],
@@ -369,7 +369,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need high-performance bearing for 8mm shaft with substantial load capacity",
-        "solution": "628 bearing provides 3.95kN dynamic load in 24\u00d78mm profile"
+        "solution": "628 bearing provides 3.95kN dynamic load in 24×8mm profile"
       },
       {
         "problem": "Require dust protection in automation application",
@@ -382,32 +382,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "8mm bore with 3.95kN load capacity and 24,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in miniature bearing category for 3.95kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -432,7 +432,7 @@
         },
         {
           "question": "Can I replace a 628 bearing with a different size bearing?",
-          "direct_answer": "No, 628 bearings have unique 8\u00d724\u00d78mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 628 bearings have unique 8×24×8mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 628 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 628 bearings in stock to avoid production delays and ensure consistent quality."

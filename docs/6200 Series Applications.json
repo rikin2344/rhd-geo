@@ -1,231 +1,231 @@
 {
-  "62300": {
+  "6800": {
     "applications": {
       "application1": {
-        "title": "Compact Motors",
+        "title": "Heavy Motors",
         "icon": "zap",
         "applications": [
-          "Electric fan motors",
-          "Small pump drives",
-          "Home appliance agitators",
-          "Handheld vacuum motors",
-          "Portable power tools",
-          "Desktop printer drives",
-          "Miniature robotic joints",
-          "Ticket printer spindles"
+          "Industrial pump motors",
+          "Electric vehicle drives",
+          "HVAC fan shafts",
+          "Mining equipment motors",
+          "Construction machine drives",
+          "Large compressor motors",
+          "Automotive engine shafts",
+          "Heavy-duty electric tools"
         ],
-        "requirements": "10mm shaft with 6.0kN (≈610kg) dynamic load capacity, 20,000 RPM grease lubrication, 35×17mm profile for compact motor applications"
+        "requirements": "10mm shaft with 1.38kN (≈140kg) dynamic load capacity, 28,000 RPM grease lubrication, 19×5mm profile for ultra-thin section applications"
       },
       "application2": {
         "title": "Precision Instruments",
         "icon": "target",
         "applications": [
-          "Optical scanner pivots",
-          "Measurement device bearings",
+          "Medical device rotors",
+          "Calibration instrument mounts",
+          "Measurement tool spindles",
+          "Optical sensor bearings",
           "Robotic actuator joints",
-          "Medical device spindles",
-          "Calibration tool shafts",
+          "Scientific equipment pivots",
           "Inspection camera mounts",
-          "Scientific stage rollers",
-          "Small actuator supports"
+          "Automated positioning devices"
         ],
-        "requirements": "Precision 10mm bore with 3.0kN (≈305kg) static load rating for stable positioning"
+        "requirements": "Precision 10mm bore with 585N (≈60kg) static load rating for accurate measurement"
       },
       "application3": {
-        "title": "Light Machinery",
+        "title": "Compact Drives",
         "icon": "cog",
         "applications": [
-          "Packaging machine shafts",
-          "Food processor drives",
-          "Hobby CNC router spindles",
-          "Small agricultural sensors",
-          "Fitness equipment joints",
-          "Portable fan motors",
-          "Handheld vacuum drives",
-          "Automated tool changers"
+          "Small manufacturing gearboxes",
+          "Home appliance motors",
+          "Portable power tool shafts",
+          "Robotic arm joints",
+          "Camera gimbal mounts",
+          "Miniature pump impellers",
+          "Electric fan spindles",
+          "Precision tool drives"
         ],
-        "requirements": "10mm bore, 17mm width for compact mounting, oil and grease lubrication compatible"
+        "requirements": "10mm bore, 5mm width optimized for compact mechanical systems"
       }
     }
   },
-  "62301": {
+  "6801": {
     "applications": {
       "application1": {
-        "title": "Small Motors",
+        "title": "Power Tools",
         "icon": "zap",
         "applications": [
-          "Electric toothbrush motors",
-          "Portable lawn mower motors",
-          "Miniature drone rotors",
-          "Electric screwdriver shafts",
-          "Cooling fan assemblies",
-          "Toy vehicle drives",
-          "Handheld blower motors",
-          "Medical device fans"
+          "Cordless drills",
+          "Electric saw spindles",
+          "Mixer motors",
+          "Grinding tool shafts",
+          "Polisher drives",
+          "Belt sander rollers",
+          "Rotary tool mounts",
+          "Handheld blower motors"
         ],
-        "requirements": "12mm shaft with 7.5kN (≈765kg) dynamic load capacity, 18,000 RPM grease lubrication, 35×18mm profile for small motor drives"
+        "requirements": "12mm shaft with 1.9kN (≈194kg) dynamic load capacity, 24,000 RPM grease lubrication, 21×5mm profile for power tool applications"
       },
       "application2": {
-        "title": "Robotic Controls",
-        "icon": "target",
-        "applications": [
-          "Robotic wrist joints",
-          "Automation positioning pivots",
-          "Inspection camera mounts",
-          "Sensor actuator shafts",
-          "Precision balance spindles",
-          "Telescope rotation supports",
-          "Instrument calibration shafts",
-          "Barcode scanner pivots"
-        ],
-        "requirements": "Precision 12mm bore with 3.5kN (≈360kg) static load rating for precise control"
-      },
-      "application3": {
-        "title": "Medical Devices",
-        "icon": "cog",
-        "applications": [
-          "Surgical tool drives",
-          "Automated diagnostic devices",
-          "Cardiac pump motors",
-          "Portable imaging actuator joints",
-          "Patient monitoring instruments",
-          "Robotic surgical arms",
-          "Lab sample handler shafts",
-          "Medical scanning spindles"
-        ],
-        "requirements": "12mm bore, 18mm width designed for precision and hygiene"
-      }
-    }
-  },
-  "62302": {
-    "applications": {
-      "application1": {
-        "title": "Fan Units",
-        "icon": "zap",
-        "applications": [
-          "HVAC blower shafts",
-          "Commercial cooling fan motors",
-          "Industrial exhaust fans",
-          "Refrigeration unit blowers",
-          "Air purifier fans",
-          "Greenhouse ventilation fans",
-          "Computer cooling fans",
-          "Electric heater fan shafts"
-        ],
-        "requirements": "15mm shaft with 9.0kN (≈920kg) dynamic load capacity, 15,000 RPM grease lubrication, 42×17mm profile suitable for fan units"
-      },
-      "application2": {
-        "title": "Precision Robotics",
+        "title": "Robotic Systems",
         "icon": "target",
         "applications": [
           "Robotic arm pivots",
-          "Automated inspection joints",
-          "CNC rotary table pivots",
-          "Optical device mounts",
-          "Medical diagnostic joints",
-          "Manufacturing robot wrists",
-          "Camera gimbal positioners",
-          "Robotic grippers"
+          "Automation actuator hubs",
+          "Inspection camera joints",
+          "Precision rotary tables",
+          "Material handling pivots",
+          "Medical device mounts",
+          "Optical instrument spindles",
+          "CNC machine part rotations"
         ],
-        "requirements": "Precision 15mm bore with 4.8kN (≈490kg) static load rating for stable robotic joints"
+        "requirements": "Precision 12mm bore with 430N (≈44kg) static load rating"
       },
       "application3": {
         "title": "Industrial Machines",
         "icon": "cog",
         "applications": [
           "Textile machinery spindles",
-          "Small compressor shafts",
-          "Packaging machine drives",
-          "Conveyor roller shafts",
-          "Food processing motor shafts",
-          "Small metalworking machine spindles",
-          "Agricultural equipment rollers",
-          "Workshop tool drives"
+          "Packaging conveyor rollers",
+          "Machine tool shafts",
+          "Food processing motors",
+          "Agricultural equipment drives",
+          "Workshop tool shafts",
+          "Small compressor spindles",
+          "Automated tool changers"
         ],
-        "requirements": "15mm bore, 17mm width suitable for various industrial applications"
+        "requirements": "12mm bore, 5mm width designed for industrial applications"
       }
     }
   },
-  "62303": {
+  "6802": {
     "applications": {
       "application1": {
-        "title": "Power Tools",
+        "title": "Cooling Fans",
         "icon": "zap",
         "applications": [
-          "Cordless drill spindles",
-          "Saw blade shafts",
-          "Rotary tool motors",
-          "Sander drives",
-          "Grinder spindles",
-          "Polisher shafts",
-          "Handheld mixer motors",
-          "Power screwdriver rotors"
+          "HVAC fan shafts",
+          "Industrial air blowers",
+          "Server room cooling fans",
+          "Refrigeration unit blowers",
+          "Greenhouse ventilation fans",
+          "Portable air purifier motors",
+          "Electric heater fans",
+          "Tunnel ventilation systems"
         ],
-        "requirements": "17mm shaft with 10.5kN (≈1,070kg) dynamic load capacity, 14,000 RPM grease lubrication, 47×19mm profile optimized for power tools"
+        "requirements": "15mm shaft with 2.38kN (≈243kg) dynamic load capacity, 22,000 RPM grease lubrication, 24×5mm profile for fan drives"
       },
       "application2": {
-        "title": "Automation Systems",
+        "title": "Precision Robotics",
         "icon": "target",
         "applications": [
-          "Robotic pick and place arms",
-          "Material handling joints",
-          "Automated welding robot pivots",
-          "Inspection camera mounts",
-          "CNC machine pivot joints",
-          "Assembly line robot wrists",
-          "Manufacturing robot pivots",
-          "Lab automation equipment"
+          "Robotic wrist joints",
+          "Pick and place robot arms",
+          "Sensor actuator pivots",
+          "Measurement device spindles",
+          "Optical scout cameras",
+          "Automation inspection arms",
+          "Medical robotic pivots",
+          "Camera gimbal supports"
         ],
-        "requirements": "Precision 17mm bore with 5.1kN (≈520kg) static load for precise automation"
+        "requirements": "Precision 15mm bore with 470N (≈48kg) static load rating"
       },
       "application3": {
-        "title": "Conveyor Units",
+        "title": "Light Equipment",
         "icon": "cog",
         "applications": [
-          "Automated conveyor shafts",
-          "Sorting line rollers",
-          "Packaging conveyor spindles",
-          "Warehouse material rollers",
-          "Assembly conveyor rollers",
-          "Belt conveyor shafts",
-          "Logistics sortation rollers",
-          "Industrial conveyor joints"
+          "Electric bike motors",
+          "Drone rotors",
+          "Portable pump shafts",
+          "Garden tool drives",
+          "Fitness minibike shafts",
+          "Handheld vacuum motors",
+          "Small agricultural devices",
+          "Workshop tool drives"
         ],
-        "requirements": "17mm bore, 19mm width catering to conveyor system requirements"
+        "requirements": "15mm bore, 5mm width for light equipment"
       }
     }
   },
-  "62304": {
+  "6803": {
+    "applications": {
+      "application1": {
+        "title": "Power Shovels",
+        "icon": "zap",
+        "applications": [
+          "Construction equipment joints",
+          "Excavator actuators",
+          "Loader pivot bearings",
+          "Mining machinery rollers",
+          "Heavy handler joints",
+          "Crane movement pivots",
+          "Industrial mixer arms",
+          "Tracked vehicle roll supports"
+        ],
+        "requirements": "17mm shaft with 2.38kN (≈243kg) dynamic load capacity, 20,000 RPM grease lubrication, 26×5mm profile for heavy duty"
+      },
+      "application2": {
+        "title": "Automation Units",
+        "icon": "target",
+        "applications": [
+          "Assembly line robotic arms",
+          "Material handling pivots",
+          "CNC rotary joints",
+          "Inspection robot mounts",
+          "Sensors actuation pivots",
+          "Medical device joints",
+          "Automated tool changers",
+          "Precision positioning shafts"
+        ],
+        "requirements": "Precision 17mm bore with 520N (≈53kg) static load rating"
+      },
+      "application3": {
+        "title": "Industrial Rollers",
+        "icon": "cog",
+        "applications": [
+          "Conveyor idler rollers",
+          "Packaging equipment shafts",
+          "Material feeder rollers",
+          "Printing press rollers",
+          "Textile machine rollers",
+          "Food processing roller shafts",
+          "Automated line rollers",
+          "Small crane wheels"
+        ],
+        "requirements": "17mm bore, 5mm width for industrial rollers"
+      }
+    }
+  },
+  "6804": {
     "applications": {
       "application1": {
         "title": "HVAC Motors",
         "icon": "zap",
         "applications": [
-          "Commercial HVAC blower shafts",
-          "Air handling unit fans",
-          "Refrigeration blowers",
-          "Ventilation exhaust motors",
-          "Heating unit fans",
-          "Portable fan motors",
-          "Roof ventilation fan drives",
-          "Cleanroom air circulators"
+          "Fan motor shafts",
+          "Air handling unit blowers",
+          "Refrigeration unit fans",
+          "Ventilation system motors",
+          "Heat exchanger blower shafts",
+          "Cooling tower fan drives",
+          "Portable air purifiers",
+          "Electric heater fans"
         ],
-        "requirements": "20mm shaft with 12.0kN (≈1,220kg) dynamic load capacity, 12,000 RPM grease lubrication, 52×21mm profile for HVAC applications"
+        "requirements": "20mm shaft with 3.18kN (≈324kg) dynamic load capacity, 17,000 RPM grease lubrication, 32×7mm profile"
       },
       "application2": {
         "title": "Measurement Tools",
         "icon": "target",
         "applications": [
           "Calibration device spindles",
-          "Precision rotary tables",
           "Laboratory instrument pivots",
-          "Micrometer spindles",
+          "Precision rotary tables",
+          "Micrometer shafts",
           "Scientific measurement arms",
-          "Test equipment pivots",
-          "Optical instrument movements",
+          "Test rig pivots",
+          "Optical instrument spindles",
           "Robotic arm precision joints"
         ],
-        "requirements": "Precision 20mm bore with 6.2kN (≈630kg) static load rating for accurate positioning"
+        "requirements": "Precision 20mm bore with 670N (≈68kg) static load rating"
       },
       "application3": {
         "title": "Assembly Machinery",
@@ -240,384 +240,384 @@
           "Material feeder shafts",
           "Small machine tool spindles"
         ],
-        "requirements": "20mm bore, 21mm width for assembly and manufacturing machinery"
+        "requirements": "20mm bore, 7mm width for assembly and manufacturing"
       }
     }
   },
-  "62305": {
+  "6805": {
     "applications": {
       "application1": {
-        "title": "Motor Shafts",
+        "title": "Electric Motors",
         "icon": "zap",
         "applications": [
-          "Industrial electric motor shafts",
-          "Water pump motors",
-          "Fan motor shafts",
-          "Agricultural equipment motors",
-          "Construction tool drives",
-          "Electric mower shaft",
-          "Industrial compressor motors",
-          "HVAC fan shaft drives"
+          "Industrial pump motors",
+          "Automotive blower motors",
+          "HVAC fan motors",
+          "Water circulation pumps",
+          "Power tool motors",
+          "Machine tool spindles",
+          "Electric vehicle motors",
+          "Refrigeration compressors"
         ],
-        "requirements": "25mm shaft with 15.0kN (≈1,530kg) dynamic load capacity, 10,000 RPM grease lubrication, 62×24mm profile for motor applications"
+        "requirements": "25mm shaft with 4.17kN (≈425kg) dynamic load capacity, 15,000 RPM grease lubrication, 37×7mm profile for motor applications"
       },
       "application2": {
-        "title": "Robotic Components",
+        "title": "Automation Arms",
         "icon": "target",
         "applications": [
-          "Robotic arm bases",
-          "Material handling joints",
-          "Automation pivot points",
-          "Camera rotation mounts",
-          "Inspection robot joints",
-          "Medical device pivots",
-          "CNC tool holder bearings",
-          "Precision actuator pivots"
+          "Robotic assembly joints",
+          "Material handling pivots",
+          "Positioning stage spindles",
+          "Automated welding arm joints",
+          "Inspection robot pivots",
+          "Sensor mount bearings",
+          "Precision actuator pivots",
+          "CNC rotary tables"
         ],
-        "requirements": "Precision 25mm bore with 7.0kN (≈715kg) static load rating for robotics applications"
-      },
-      "application3": {
-        "title": "Heavy Machinery",
-        "icon": "cog",
-        "applications": [
-          "Conveyor roller shafts",
-          "Industrial mixer shafts",
-          "Agricultural equipment spindles",
-          "Packaging machine components",
-          "Bulk material handling rollers",
-          "Mining machinery joints",
-          "Small construction machine axles",
-          "Workshop tool supports"
-        ],
-        "requirements": "25mm bore, 24mm width, built for heavy industrial use"
-      }
-    }
-  },
-  "62306": {
-    "applications": {
-      "application1": {
-        "title": "Pump Motors",
-        "icon": "zap",
-        "applications": [
-          "Chemical feed pumps",
-          "Water supply pump shafts",
-          "Cooling system pumps",
-          "Food industry mixers",
-          "Wastewater handling pumps",
-          "Industrial pump spindles",
-          "Agricultural irrigation pumps",
-          "Hydraulic fluid pumps"
-        ],
-        "requirements": "30mm shaft with 18.5kN (≈1,885kg) dynamic load capacity, 9,000 RPM grease lubrication, 72×24mm for pump transmissions"
-      },
-      "application2": {
-        "title": "Machine Tools",
-        "icon": "target",
-        "applications": [
-          "CNC machine spindles",
-          "Lathe spindle shafts",
-          "Milling machine rollers",
-          "Surface grinder shafts",
-          "Drill press shafts",
-          "Tool handling spindles",
-          "Metal cutting machine shafts",
-          "Precision machine guides"
-        ],
-        "requirements": "Precision 30mm bore with 9.2kN (≈940kg) static load rating for machining tools"
-      },
-      "application3": {
-        "title": "Conveyor Systems",
-        "icon": "cog",
-        "applications": [
-          "Warehouse conveyor rollers",
-          "Sortation system shafts",
-          "Industrial transport conveyors",
-          "Package handling rollers",
-          "Bulk goods conveyors",
-          "Assembly line drives",
-          "Material transfer spindles",
-          "Automated sorting rollers"
-        ],
-        "requirements": "30mm bore, 23mm width for conveyor applications"
-      }
-    }
-  },
-  "62307": {
-    "applications": {
-      "application1": {
-        "title": "Industrial Fans",
-        "icon": "zap",
-        "applications": [
-          "Ventilation system fans",
-          "Cooling tower blowers",
-          "Air handling fan shafts",
-          "Heat exchanger fans",
-          "Refrigeration unit blowers",
-          "Dust collector fans",
-          "Industrial exhaust motors",
-          "Greenhouse ventilation fans"
-        ],
-        "requirements": "35mm shaft with 21.0kN (≈2,140kg) dynamic load capacity, 8,500 RPM grease lubrication, 77×27mm suitable for fan drives"
-      },
-      "application2": {
-        "title": "Heavy Machinery",
-        "icon": "target",
-        "applications": [
-          "Mining equipment shafts",
-          "Construction machine pivots",
-          "Bulk material handlers",
-          "Industrial mixers",
-          "Agricultural machinery parts",
-          "Forestry machinery joints",
-          "Conveyor drive shafts",
-          "Heavy duty crushers"
-        ],
-        "requirements": "Precision 35mm bore with 12.7kN (≈1,295kg) static load rating for heavy tasks"
-      },
-      "application3": {
-        "title": "Machine Components",
-        "icon": "cog",
-        "applications": [
-          "Printing press rollers",
-          "Packaging machine spindles",
-          "Industrial agitators",
-          "Food processing rollers",
-          "Textile machinery shafts",
-          "Assembly line components",
-          "Material feeder rollers",
-          "Workshop tool shafts"
-        ],
-        "requirements": "35mm bore, 27mm width for durable machinery parts"
-      }
-    }
-  },
-  "62308": {
-    "applications": {
-      "application1": {
-        "title": "Gearbox Shafts",
-        "icon": "zap",
-        "applications": [
-          "Automotive transmissions",
-          "Industrial gear reducers",
-          "Construction equipment shafts",
-          "Mining machinery gearboxes",
-          "Heavy duty power transmissions",
-          "Agricultural machinery gears",
-          "Crane gearbox shafts",
-          "Elevator drive gears"
-        ],
-        "requirements": "40mm shaft with 24.0kN (≈2,450kg) dynamic load capacity, 8,000 RPM grease lubrication, 85×33mm for gearbox applications"
-      },
-      "application2": {
-        "title": "Robotic Arms",
-        "icon": "target",
-        "applications": [
-          "Assembly line robotic joints",
-          "Material handling arms",
-          "Inspection arms",
-          "Medical device pivots",
-          "Industrial robot wrists",
-          "Automated welding arm pivots",
-          "Precision actuator mounts",
-          "CNC machine tool pivots"
-        ],
-        "requirements": "Precision 40mm bore with 14.0kN (≈1,430kg) static load rating for robotic joints"
+        "requirements": "Precision 25mm bore with 890N (≈91kg) static load rating"
       },
       "application3": {
         "title": "Heavy Drives",
         "icon": "cog",
         "applications": [
           "Conveyor drive shafts",
-          "Pump motor drives",
-          "Industrial mixer shafts",
-          "Agricultural machinery drives",
-          "Packaging machine shafts",
-          "Mining equipment rollers",
-          "Process machinery shafts",
-          "Hydraulic motor drives"
+          "Industrial mixer spindles",
+          "Hydraulic pump drives",
+          "Agricultural equipment shafts",
+          "Packaging machine rollers",
+          "Small automotive gearboxes",
+          "Material handling rollers",
+          "Process machinery shafts"
         ],
-        "requirements": "40mm bore, 33mm width built for heavy duty drives"
+        "requirements": "25mm bore, 7mm width engineered for heavy drive applications"
       }
     }
   },
-  "62309": {
+  "6806": {
+    "applications": {
+      "application1": {
+        "title": "Pump Shafts",
+        "icon": "zap",
+        "applications": [
+          "Centrifugal pump shafts",
+          "Water transfer pumps",
+          "Chemical feed system drives",
+          "Irrigation motor spindles",
+          "Cooling system pump shafts",
+          "Oil transfer pump drives",
+          "Food processing pump shafts",
+          "Hydraulic pump shafts"
+        ],
+        "requirements": "30mm shaft with 4.7kN (≈480kg) dynamic load capacity, 12,000 RPM grease lubrication, 42×7mm profile for pump drives"
+      },
+      "application2": {
+        "title": "Machine Tools",
+        "icon": "target",
+        "applications": [
+          "Lathe spindles",
+          "Milling machine rollers",
+          "Grinding machine shafts",
+          "CNC tool holders",
+          "Precision rotary tables",
+          "Drill press shafts",
+          "Surface grinder spindles",
+          "Boring machine shafts"
+        ],
+        "requirements": "Precision 30mm bore with 1.9kN (≈195kg) static load rating for machining tasks"
+      },
+      "application3": {
+        "title": "Conveyor Systems",
+        "icon": "cog",
+        "applications": [
+          "Warehouse conveyor shafts",
+          "Packaging line spindles",
+          "Sorting machine rollers",
+          "Assembly line conveyors",
+          "Material handling rollers",
+          "Baggage conveyor shafts",
+          "Industrial belt rollers",
+          "Automated transport spindles"
+        ],
+        "requirements": "30mm bore, 7mm width for moderate load conveyors"
+      }
+    }
+  },
+  "6807": {
+    "applications": {
+      "application1": {
+        "title": "Industrial Fans",
+        "icon": "zap",
+        "applications": [
+          "Exhaust fan shafts",
+          "Ventilation blower drives",
+          "Heat exchanger fans",
+          "HVAC system blowers",
+          "Refrigeration fan motors",
+          "Dust exhaust fans",
+          "Tunnel ventilation fans",
+          "Greenhouse ventilation"
+        ],
+        "requirements": "35mm shaft with 4.9kN (≈500kg) dynamic load capacity, 11,000 RPM grease lubrication, 47×7mm profile for air moving equipment"
+      },
+      "application2": {
+        "title": "Heavy Machinery",
+        "icon": "target",
+        "applications": [
+          "Conveyor drive shafts",
+          "Bulk material handling",
+          "Mining equipment joints",
+          "Heavy duty mixers",
+          "Large pump shaft supports",
+          "Construction machinery",
+          "Forestry equipment drives",
+          "Agricultural machinery"
+        ],
+        "requirements": "Precision 35mm bore with 2.94kN (≈300kg) static load rating for heavy machinery"
+      },
+      "application3": {
+        "title": "Machine Components",
+        "icon": "cog",
+        "applications": [
+          "Printing press spindles",
+          "Packaging machinery rollers",
+          "Industrial agitators",
+          "Food processing joints",
+          "Material feeder shafts",
+          "Automated assembly line parts",
+          "Textile machine spindles",
+          "Machining center guides"
+        ],
+        "requirements": "35mm bore, 7mm width for heavy-duty component shafts"
+      }
+    }
+  },
+  "6808": {
+    "applications": {
+      "application1": {
+        "title": "Gearbox Shafts",
+        "icon": "zap",
+        "applications": [
+          "Automotive gearbox shafts",
+          "Transmission input shafts",
+          "Industrial gear reducers",
+          "Heavy machinery gear shafts",
+          "Excavator drive shafts",
+          "Crane gearbox shafts",
+          "Mining haul truck gears",
+          "Agricultural machinery shafts"
+        ],
+        "requirements": "40mm shaft with 5.1kN (≈520kg) dynamic load, 9,000 RPM grease lubrication, 52×10mm profile for gearboxes"
+      },
+      "application2": {
+        "title": "Robot Joints",
+        "icon": "target",
+        "applications": [
+          "Industrial robot elbows",
+          "Automated welding arms",
+          "Assembly line robot joints",
+          "Robotic grippers",
+          "Material handling robots",
+          "CNC machining robots",
+          "Inspection robotic arms",
+          "Medical robot joints"
+        ],
+        "requirements": "Precision 40mm bore with 3.8kN (≈390kg) static load for robotic arms"
+      },
+      "application3": {
+        "title": "Heavy Drives",
+        "icon": "cog",
+        "applications": [
+          "Packaging machine drives",
+          "Conveyor main shafts",
+          "Pump shafts",
+          "Hydraulic system shafts",
+          "Industrial mixer drives",
+          "Large fan motor shafts",
+          "Agricultural equipment",
+          "Mining conveyor shafts"
+        ],
+        "requirements": "40mm bore, 10mm width, durable and strong for heavy drives"
+      }
+    }
+  },
+  "6809": {
     "applications": {
       "application1": {
         "title": "Material Handling",
         "icon": "zap",
         "applications": [
           "Warehouse conveyor shafts",
-          "Automated sorting rollers",
-          "Load transfer conveyors",
-          "Bulk material conveyor spindles",
-          "Package handling rollers",
-          "Sorting system shafts",
-          "Industrial feeder rollers",
-          "Assembly line conveyor rollers"
+          "Loading dock rollers",
+          "Automated stock movers",
+          "Sortation system spindles",
+          "Assembly line transfer",
+          "Package transport shafts",
+          "Baggage handling conveyors",
+          "Industrial roller beds"
         ],
-        "requirements": "45mm shaft with 26.0kN (≈2,650kg) dynamic load capacity, 7,500 RPM grease lubrication, 90×36mm profile for material handling"
+        "requirements": "45mm shaft with 6.55kN (≈670kg) dynamic load, 8,000 RPM grease lubrication, 58×11mm profile for material handling"
       },
       "application2": {
-        "title": "Precision Machinery",
+        "title": "Precision Axes",
         "icon": "target",
         "applications": [
           "CNC rotary tables",
-          "Metrology instrument pivots",
-          "Robotic inspection arms",
-          "Precision positioning devices",
-          "Inspection camera mounts",
-          "Scientific instrument spindles",
-          "Optical device pivots",
-          "Automated assembly joints"
+          "Measurement instrument spindles",
+          "Metrology equipment shafts",
+          "Robotic precision joints",
+          "Automated inspection arms",
+          "Electronic device pivots",
+          "Camera rotation bearings",
+          "Optical instrument spindles"
         ],
-        "requirements": "Precision 45mm bore with 16.5kN (≈1,680kg) static load rating for precision applications"
+        "requirements": "Precision 45mm bore with 4.3kN (≈440kg) static load rating"
       },
       "application3": {
         "title": "Heavy Platforms",
         "icon": "cog",
         "applications": [
           "Industrial platform wheels",
-          "Transport cart axles",
-          "Forklift wheels",
-          "Mining equipment rollers",
-          "Construction site wheels",
-          "Warehouse dolly hubs",
-          "Material handling carts",
-          "Heavy duty roller bases"
+          "Heavy duty carts",
+          "Forklift part rollers",
+          "Construction machinery wheels",
+          "Mining transport carts",
+          "Industrial trailer joints",
+          "Large equipment wheeled bases",
+          "Bulk material carts"
         ],
-        "requirements": "45mm bore, 36mm width for heavy platform supports"
+        "requirements": "45mm bore, 11mm width for heavy platform supports"
       }
     }
   },
-  "62310": {
-    "applications": {
-      "application1": {
-        "title": "Drive Motors",
-        "icon": "zap",
-        "applications": [
-          "Industrial motor shafts",
-          "Water pump motors",
-          "HVAC fan drives",
-          "Electric vehicle motors",
-          "Agricultural machine motors",
-          "Construction equipment motors",
-          "Cooling tower motor shafts",
-          "Power tool drives"
-        ],
-        "requirements": "50mm shaft with 30.5kN (≈3,110kg) dynamic load capacity, 6,800 RPM grease lubrication, 100×40mm profile for motor applications"
-      },
-      "application2": {
-        "title": "Robotic Joints",
-        "icon": "target",
-        "applications": [
-          "Large robotic arm pivots",
-          "Automated assembly joints",
-          "Material handling robot pivots",
-          "Inspection robot arms",
-          "CNC machining robotic joints",
-          "Medical robot arms",
-          "Precision actuator pivots",
-          "Manufacturing robot wrists"
-        ],
-        "requirements": "Precision 50mm bore with 18kN (≈1,835kg) static load for robotic applications"
-      },
-      "application3": {
-        "title": "Manufacturing Drives",
-        "icon": "cog",
-        "applications": [
-          "Bulk material conveyor drives",
-          "Industrial machinery shafts",
-          "Pump motor drives",
-          "Packaging machine shafts",
-          "Agricultural drive shafts",
-          "Construction equipment drives",
-          "Mining machinery rollers",
-          "Material handling shafts"
-        ],
-        "requirements": "50mm bore, 40mm width for manufacturing and industrial drives"
-      }
-    }
-  },
-  "62311": {
-    "applications": {
-      "application1": {
-        "title": "Heavy Pumps",
-        "icon": "zap",
-        "applications": [
-          "Centrifugal pump shafts",
-          "Water transfer pumps",
-          "Chemical dosing pumps",
-          "Food processing pump shafts",
-          "Wastewater pump drives",
-          "Irrigation system pumps",
-          "Hydraulic pump shafts",
-          "Cooling tower pumps"
-        ],
-        "requirements": "55mm shaft with 34.0kN (≈3,460kg) dynamic load capacity, 6,200 RPM grease lubrication, 105×43mm profile for pump shaft applications"
-      },
-      "application2": {
-        "title": "Industrial Equipment",
-        "icon": "target",
-        "applications": [
-          "Mining equipment pivots",
-          "Conveyor roller shafts",
-          "Heavy machinery joints",
-          "Agricultural machinery shafts",
-          "Construction vehicle joints",
-          "Bulk material handling parts",
-          "Industrial press shafts",
-          "Manufacturing equipment supports"
-        ],
-        "requirements": "Precision 55mm bore with 20.0kN (≈2,040kg) static load for industrial equipment"
-      },
-      "application3": {
-        "title": "Material Wheels",
-        "icon": "cog",
-        "applications": [
-          "Warehouse dolly wheels",
-          "Forklift wheels",
-          "Mining equipment rollers",
-          "Transport cart wheels",
-          "Heavy duty trailers",
-          "Construction site carts",
-          "Bulk material carts",
-          "Industrial transport wheels"
-        ],
-        "requirements": "55mm bore, 43mm width for heavy material handling wheels"
-      }
-    }
-  },
-  "62312": {
+  "6810": {
     "applications": {
       "application1": {
         "title": "Motor Shafts",
         "icon": "zap",
         "applications": [
-          "Electric vehicle drive shafts",
+          "Electric vehicle motors",
           "Industrial pump motors",
-          "Fan motor shafts",
-          "Agricultural equipment motors",
-          "Hydraulic motor shafts",
+          "HVAC fan shaft drives",
+          "Portable electric tools",
+          "Agricultural machine motors",
+          "Water pump drives",
           "Construction tool motors",
-          "Power tool drive shafts",
-          "Packaging motor shafts"
+          "Cooling unit shaft drives"
         ],
-        "requirements": "60mm shaft with 38.5kN (≈3,925kg) dynamic load capacity, 5,600 RPM grease lubrication, 110×46mm profile for heavy motor drives"
+        "requirements": "50mm shaft with 7.50kN (≈765kg) dynamic load, 7,000 RPM grease lubrication, 65×15mm designed for motor drives"
       },
       "application2": {
-        "title": "Robotic Bases",
+        "title": "Robotic Arms",
         "icon": "target",
         "applications": [
-          "Large robotic arm pivots",
-          "Material handling joints",
-          "Assembly line robot bases",
-          "Inspection robot joints",
-          "Medical robot pivots",
-          "CNC machine arm pivots",
-          "Manufacturing robot bases",
-          "Automation system joints"
+          "Automated welding joints",
+          "Material handling arms",
+          "Assembly line robotics",
+          "Electronic component inserters",
+          "Precision load arms",
+          "Inspection robot mounts",
+          "Medical device joints",
+          "CNC machine wrists"
         ],
-        "requirements": "Precision 60mm bore with 23.5kN (≈2,395kg) static load for robotic bases"
+        "requirements": "Precision 50mm bore with 5.7kN (≈580kg) static load"
+      },
+      "application3": {
+        "title": "Industrial Drives",
+        "icon": "cog",
+        "applications": [
+          "Heavy duty conveyor shafts",
+          "Hydraulic motor drives",
+          "Large mixer shafts",
+          "Pump motor drives",
+          "Material handling drives",
+          "Automated packaging shafts",
+          "Agriculture machinery drives",
+          "Manufacturing machine shafts"
+        ],
+        "requirements": "50mm bore, 15mm width, suited for industrial drive applications"
+      }
+    }
+  },
+  "6811": {
+    "applications": {
+      "application1": {
+        "title": "Pump Drives",
+        "icon": "zap",
+        "applications": [
+          "Centrifugal pump shafts",
+          "Hydraulic pump drives",
+          "Water transfer pumps",
+          "Oil pump shafts",
+          "Industrial fluid pumps",
+          "Chemical dosing pumps",
+          "Food grade pump shafts",
+          "Cooling system pump drives"
+        ],
+        "requirements": "55mm shaft with 8.30kN (≈845kg) dynamic load, 6,700 RPM grease lubrication, 70×16mm for pump drives"
+      },
+      "application2": {
+        "title": "Heavy Machinery",
+        "icon": "target",
+        "applications": [
+          "Material handling equipment",
+          "Mining haul trucks",
+          "Construction vehicle pivots",
+          "Industrial press bearings",
+          "Aggregate crusher shafts",
+          "Farm equipment joints",
+          "Bulk material movers",
+          "Industrial mixers"
+        ],
+        "requirements": "Precision 55mm bore with 5.0kN (≈510kg) static load"
+      },
+      "application3": {
+        "title": "Conveyor Rollers",
+        "icon": "cog",
+        "applications": [
+          "Warehouse conveyor rollers",
+          "Sortation system pulleys",
+          "Assembly line conveyors",
+          "Mining belt rollers",
+          "Material transfer rollers",
+          "Bulk goods movers",
+          "Packaging conveyor spindles",
+          "Log transport rollers"
+        ],
+        "requirements": "55mm bore, 16mm width for high-load conveyor systems"
+      }
+    }
+  },
+  "6812": {
+    "applications": {
+      "application1": {
+        "title": "Electric Drives",
+        "icon": "zap",
+        "applications": [
+          "Electric vehicle drive shafts",
+          "Industrial motor drives",
+          "Water pump motors",
+          "HVAC blower shafts",
+          "Power tool shafts",
+          "Agricultural motor drives",
+          "Portable generator motors",
+          "Construction tool motors"
+        ],
+        "requirements": "60mm shaft with 9.15kN (≈930kg) dynamic load, 5,900 RPM grease lubrication, 75×20mm for heavy electric drives"
+      },
+      "application2": {
+        "title": "Robotic Units",
+        "icon": "target",
+        "applications": [
+          "Large robotic arm joints",
+          "Automated assembly pivots",
+          "CNC machining tool pivots",
+          "Inspection robot joints",
+          "Material handling robots",
+          "Precision actuator mounts",
+          "Medical robotics joints",
+          "Industrial automation pivots"
+        ],
+        "requirements": "Precision 60mm bore with 5.9kN (≈600kg) static load"
       },
       "application3": {
         "title": "Heavy Transport",
@@ -632,11 +632,11 @@
           "Utility vehicle hubs",
           "Automated guided vehicle wheels"
         ],
-        "requirements": "60mm bore, 46mm width, for heavy transport applications"
+        "requirements": "60mm bore, 20mm width for heavy transport applications"
       }
     }
   },
-  "62313": {
+  "6813": {
     "applications": {
       "application1": {
         "title": "Mixer Shafts",
@@ -647,11 +647,11 @@
           "Chemical agitator shafts",
           "Paint mixer drives",
           "Food processing mixers",
-          "Pharmaceutical mixer joints",
-          "Batch blending drums",
-          "Ceramic slurry mix shafts"
+          "Pharmaceutical mixers",
+          "Ceramic slurry agitators",
+          "Batch blending drums"
         ],
-        "requirements": "65mm shaft with 42.0kN (≈4,285kg) dynamic load capacity, 5,300 RPM grease lubrication, 120×45mm profile for mixer equipment"
+        "requirements": "65mm shaft with 10.2kN (≈1,040kg) dynamic load, 5,500 RPM grease lubrication, 80×22mm for mixing equipment"
       },
       "application2": {
         "title": "Heavy Rollers",
@@ -659,112 +659,112 @@
         "applications": [
           "Steel mill rollers",
           "Paper mill rollers",
-          "Rubber processing rollers",
-          "Textile calender rollers",
-          "Printing press rollers",
-          "Mining conveyor rollers",
+          "Rubber processing drums",
+          "Textile machine rollers",
           "Packaging machine rollers",
-          "Agricultural equipment rollers"
+          "Construction conveyor rollers",
+          "Printing press rollers",
+          "Aggregate crusher rollers"
         ],
-        "requirements": "Precision 65mm bore with 26.0kN (≈2,650kg) static load for roller bearings"
+        "requirements": "Precision 65mm bore with 6.0kN (≈610kg) static load"
       },
       "application3": {
         "title": "Industrial Carts",
         "icon": "cog",
         "applications": [
           "Material transfer carts",
-          "Mining trolley wheels",
+          "Forklift support wheels",
+          "Heavy duty platform carts",
+          "Rail transfer wagons",
+          "Mining transport carts",
           "Warehouse utility dollies",
-          "Heavy duty hand carts",
           "Construction site carts",
-          "Agricultural equipment carts",
-          "Railway transporter wheels",
-          "Bulk material handling carts"
+          "Agricultural tool carts"
         ],
-        "requirements": "65mm bore, 45mm width, rugged design for industrial carts"
+        "requirements": "65mm bore, 22mm width for industrial carts"
       }
     }
   },
-  "62314": {
+  "6814": {
     "applications": {
       "application1": {
         "title": "Agricultural Shafts",
         "icon": "zap",
         "applications": [
-          "Tractor drive shafts",
+          "Tractor PTO shafts",
           "Seeder drive shafts",
           "Combine harvester rollers",
-          "Plough frame pivots",
-          "Harvest mechanism shafts",
+          "Plough guide shafts",
+          "Harvesting machine pivots",
+          "Agricultural pumps",
           "Field sprayer motors",
-          "Agricultural pump shafts",
-          "Soil stabilizer drives"
+          "Soil stabilizer rotors"
         ],
-        "requirements": "70mm shaft with 46.0kN (≈4,690kg) dynamic load capacity, 5,000 RPM grease lubrication, 130×48mm profile for agricultural machinery"
+        "requirements": "70mm shaft with 11.5kN (≈1,175kg) dynamic load, 5,000 RPM grease lubrication, 85×24mm for agricultural machinery"
       },
       "application2": {
         "title": "Machine Mounts",
         "icon": "target",
         "applications": [
-          "Industrial machine bases",
+          "Heavy machinery bases",
           "CNC machine pivots",
           "Robotic actuator mounts",
           "Assembly line fixtures",
-          "Inspection device supports",
-          "Heavy equipment bases",
-          "Metrology instrument mounts",
-          "Test rig mounts"
+          "Inspection device mounts",
+          "Industrial press beds",
+          "Metrology instrument supports",
+          "Test rig fixtures"
         ],
-        "requirements": "Precision 70mm bore with 29.5kN (≈3,010kg) static load for machine mounts"
+        "requirements": "Precision 70mm bore with 7.0kN (≈715kg) static load"
       },
       "application3": {
         "title": "Heavy Equipment",
         "icon": "cog",
         "applications": [
-          "Construction machinery shafts",
-          "Mining vehicle axles",
-          "Forestry equipment joints",
-          "Industrial crane pivots",
-          "Heavy duty platform wheels",
-          "Earth moving machinery",
+          "Construction equipment pivots",
+          "Mining vehicle wheels",
+          "Forestry machinery shafts",
+          "Industrial crane joints",
+          "Heavy load platform wheels",
+          "Earthmoving equipment",
           "Utility vehicle axles",
           "Port cargo movers"
         ],
-        "requirements": "70mm bore, 48mm width, heavy-duty shafting for equipment"
+        "requirements": "70mm bore, 25mm width for heavy-duty equipment"
       }
     }
   },
-  "62315": {
+  "6815": {
     "applications": {
       "application1": {
         "title": "Power Transmission",
         "icon": "zap",
         "applications": [
-          "Industrial gearbox shafts",
-          "Wind turbine drives",
-          "Elevator drive shafts",
+          "Industrial drive shafts",
+          "Wind turbine shafts",
+          "Elevator drive wheels",
+          "Hydraulic motor shafts",
           "Mining haul truck drives",
           "Steel mill conveyors",
-          "Bulk material machinery",
-          "Hydraulic system shafts",
+          "Bulk material handlers",
           "Construction equipment drives"
         ],
-        "requirements": "75mm shaft with 49.0kN (≈5,000kg) dynamic load capacity, 4,700 RPM grease lubrication, 140×50mm profile for power transmission"
+        "requirements": "75mm shaft with 13.0kN (≈1,325kg) dynamic load, 4,700 RPM grease lubrication, 90×25mm for power transmission"
       },
       "application2": {
         "title": "Robotic Joints",
         "icon": "target",
         "applications": [
           "Large robotic arm pivots",
-          "Assembly line robotic joints",
+          "Automated assembly joints",
           "Material handling robot arms",
           "Inspection robot pivots",
           "Medical robotic arms",
           "CNC machine arm pivots",
-          "Automation system joints",
-          "Manufacturing robot wrists"
+          "Manufacturing robot bases",
+          "Precision actuator pivots"
         ],
-        "requirements": "Precision 75mm bore with 32.0kN (≈3,265kg) static load rating for robotic joints"
+        "requirements": "Precision 75mm bore with 8.0kN (≈815kg) static load"
       },
       "application3": {
         "title": "Heavy Rollers",
@@ -779,26 +779,26 @@
           "Agricultural roller shafts",
           "Industrial press rollers"
         ],
-        "requirements": "75mm bore, 50mm width, heavy load roller bearings"
+        "requirements": "75mm bore, 26mm width for heavy load rollers"
       }
     }
   },
-  "62316": {
+  "6816": {
     "applications": {
       "application1": {
         "title": "Industrial Pumps",
         "icon": "zap",
         "applications": [
-          "Large centrifugal pumps",
+          "Centrifugal pumps",
           "Chemical dosing pumps",
           "Water treatment pumps",
           "Food and beverage pumps",
-          "Cooling tower pump shafts",
+          "Cooling tower pumps",
           "Hydraulic fluid pumps",
           "Wastewater pumps",
           "Agricultural irrigation pumps"
         ],
-        "requirements": "80mm shaft with 52.5kN (≈5,350kg) dynamic load capacity, 4,400 RPM grease lubrication, 160×52mm profile for industrial pumps"
+        "requirements": "80mm shaft with 14.5kN (≈1,480kg) dynamic load, 4,400 RPM grease lubrication, 100×27mm profile for pump motors"
       },
       "application2": {
         "title": "Heavy Machinery",
@@ -813,7 +813,7 @@
           "Mining conveyor rollers",
           "Heavy duty mixers"
         ],
-        "requirements": "Precision 80mm bore with 35.0kN (≈3,570kg) static load for heavy machinery"
+        "requirements": "Precision 80mm bore with 9.0kN (≈920kg) static load"
       },
       "application3": {
         "title": "Material Transport",
@@ -828,11 +828,11 @@
           "Heavy load dollies",
           "Material handling wheels"
         ],
-        "requirements": "80mm bore, 52mm width, transport and load-bearing"
+        "requirements": "80mm bore, 28mm width designed for material transport"
       }
     }
   },
-  "62317": {
+  "6817": {
     "applications": {
       "application1": {
         "title": "Mixer Shafts",
@@ -847,7 +847,7 @@
           "Ceramic slurry mixers",
           "Resin mixer shafts"
         ],
-        "requirements": "85mm shaft with 55.0kN (≈5,610kg) dynamic load capacity, 4,000 RPM grease lubrication, 170×55mm profile for mixing equipment"
+        "requirements": "85mm shaft with 15.0kN (≈1,530kg) dynamic load, 4,000 RPM grease lubrication, 110×30mm profile for mixing equipment"
       },
       "application2": {
         "title": "Heavy Rollers",
@@ -862,7 +862,7 @@
           "Rubber processing rollers",
           "Agricultural equipment rollers"
         ],
-        "requirements": "Precision 85mm bore with 28.0kN (≈2,850kg) static load for roller bearings"
+        "requirements": "Precision 85mm bore with 10.0kN (≈1,020kg) static load rating"
       },
       "application3": {
         "title": "Industrial Vehicles",
@@ -877,11 +877,11 @@
           "Railcar transporter wheels",
           "Bulk material transport carts"
         ],
-        "requirements": "85mm bore, 60mm width for durable industrial vehicles"
+        "requirements": "85mm bore, 32mm width, rugged for industrial vehicle wheels"
       }
     }
   },
-  "62318": {
+  "6818": {
     "applications": {
       "application1": {
         "title": "Power Transmission",
@@ -891,12 +891,12 @@
           "Wind turbine main shafts",
           "Elevator drive shafts",
           "Mining haul truck drives",
-          "Steel mill conveyor shafts",
+          "Steel mill conveyors",
           "Bulk material machinery",
           "Hydraulic system shafts",
           "Construction equipment drives"
         ],
-        "requirements": "90mm shaft with 60.0kN (≈6,120kg) dynamic load capacity, 3,800 RPM grease lubrication, 180×60mm profile for power transmission"
+        "requirements": "90mm shaft with 16.0kN (≈1,630kg) dynamic load, 3,800 RPM grease lubrication, 120×38mm profile for power transmission"
       },
       "application2": {
         "title": "Robotic Joints",
@@ -911,7 +911,7 @@
           "Manufacturing robot bases",
           "Precision actuator pivots"
         ],
-        "requirements": "Precision 90mm bore with 38.0kN (≈3,875kg) static load for robotic applications"
+        "requirements": "Precision 90mm bore with 12.0kN (≈1,220kg) static load"
       },
       "application3": {
         "title": "Heavy Machinery",
@@ -926,11 +926,11 @@
           "Heavy-duty conveyor rollers",
           "Large equipment drives"
         ],
-        "requirements": "90mm bore, 60mm width for heavy machinery durability"
+        "requirements": "90mm bore, 36mm width built for heavy machinery"
       }
     }
   },
-  "62319": {
+  "6819": {
     "applications": {
       "application1": {
         "title": "Drive Shafts",
@@ -945,7 +945,7 @@
           "Steel mill power shafts",
           "Construction vehicle drive shafts"
         ],
-        "requirements": "95mm shaft with 65.0kN (≈6,630kg) dynamic load capacity, 3,500 RPM grease lubrication, 190×65mm profile for drive shafts"
+        "requirements": "95mm shaft with 18.0kN (≈1,835kg) dynamic load, 3,600 RPM grease lubrication, 140×38mm robust profile for drive shafts"
       },
       "application2": {
         "title": "Automation Pivots",
@@ -960,7 +960,7 @@
           "Precision equipment pivots",
           "Assembly line pivots"
         ],
-        "requirements": "Precision 95mm bore with 42.0kN (≈4,285kg) static load for precise automation"
+        "requirements": "Precision 95mm bore with 14.0kN (≈1,430kg) static load for robotic pivots"
       },
       "application3": {
         "title": "Material Handlers",
@@ -975,11 +975,11 @@
           "Factory assembly carts",
           "Large utility carts"
         ],
-        "requirements": "95mm bore, 65mm width built for heavy load and transport"
+        "requirements": "95mm bore, 40mm width for heavy load transport"
       }
     }
   },
-  "62320": {
+  "6820": {
     "applications": {
       "application1": {
         "title": "Industrial Drives",
@@ -994,7 +994,7 @@
           "Bulk material handling shafts",
           "Power generation equipment"
         ],
-        "requirements": "100mm shaft with 70.0kN (≈7,140kg) dynamic load capacity, 3,200 RPM grease lubrication, 215×65mm profile for heavy industrial drives"
+        "requirements": "100mm shaft with 20.0kN (≈2,040kg) dynamic load, 3,200 RPM grease lubrication, 150×40mm profile for heavy industrial drives"
       },
       "application2": {
         "title": "Robotic Arms",
@@ -1009,7 +1009,7 @@
           "Inspection robot joints",
           "Manufacturing robot bases"
         ],
-        "requirements": "Precision 100mm bore with 45.0kN (≈4,590kg) static load for robotic applications"
+        "requirements": "Precision 100mm bore with 15.0kN (≈1,530kg) static load for robotic applications"
       },
       "application3": {
         "title": "Heavy Equipment",
@@ -1024,7 +1024,7 @@
           "Heavy-duty roller shafts",
           "Large industrial equipment"
         ],
-        "requirements": "100mm bore, 65mm width, engineered for heavy and durable equipment"
+        "requirements": "100mm bore, 42mm width, engineered for heavy equipment"
       }
     }
   }

@@ -33,11 +33,15 @@ class SKFAPIBearingScraper:
     
     def get_bearing_data(self, designation, system='metric'):
         """Fetch bearing data from SKF API"""
-        # Try with -2RS1 suffix first
-        designation_with_suffix = f"{designation}-2RS1"
+        # For 16000 series, don't add -2RS1 suffix
+        if designation.startswith('16'):
+            designation_to_use = designation
+        else:
+            # For other series, try with -2RS1 suffix first
+            designation_to_use = f"{designation}-2RS1"
         
         params = {
-            'designation': designation_with_suffix,
+            'designation': designation_to_use,
             'language': 'en',
             'system': system,  # 'metric' or 'imperial'
             'searcher': 'details',
@@ -45,10 +49,10 @@ class SKFAPIBearingScraper:
         }
         
         try:
-            print(f"🔍 Fetching data for {designation_with_suffix} ({system})...")
+            print(f"🔍 Fetching data for {designation_to_use} ({system})...")
             
-            # Update referer for this specific bearing with -2RS1 suffix
-            self.session.headers['Referer'] = f'https://www.skf.com/my/products/rolling-bearings/ball-bearings/deep-groove-ball-bearings/productid-{designation_with_suffix}'
+            # Update referer for this specific bearing
+            self.session.headers['Referer'] = f'https://www.skf.com/in/products/rolling-bearings/ball-bearings/deep-groove-ball-bearings/productid-{designation_to_use}'
             
             response = self.session.get(self.api_base, params=params, timeout=10)
             response.raise_for_status()
@@ -56,10 +60,10 @@ class SKFAPIBearingScraper:
             data = response.json()
             
             if data and 'documentList' in data and 'documents' in data['documentList'] and len(data['documentList']['documents']) > 0:
-                print(f"✅ Successfully fetched data for {designation_with_suffix}")
+                print(f"✅ Successfully fetched data for {designation_to_use}")
                 return data['documentList']['documents'][0]  # First document should be exact match
             else:
-                print(f"❌ No data found for {designation_with_suffix}")
+                print(f"❌ No data found for {designation_to_use}")
                 return None
                 
         except requests.RequestException as e:
@@ -86,7 +90,7 @@ class SKFAPIBearingScraper:
             print(f"🔍 Fetching data for {designation} ({system}) without suffix...")
             
             # Update referer for this specific bearing without suffix
-            self.session.headers['Referer'] = f'https://www.skf.com/my/products/rolling-bearings/ball-bearings/deep-groove-ball-bearings/productid-{designation}'
+            self.session.headers['Referer'] = f'https://www.skf.com/in/products/rolling-bearings/ball-bearings/deep-groove-ball-bearings/productid-{designation}'
             
             response = self.session.get(self.api_base, params=params, timeout=10)
             response.raise_for_status()
@@ -174,19 +178,27 @@ class SKFAPIBearingScraper:
         print(f"\n🎯 Processing bearing: {designation}")
         print("=" * 50)
         
-        # Try with -2RS1 suffix first
-        bearing_data = self.get_bearing_data(designation, 'metric')
-        if not bearing_data:
-            print("🔄 Trying imperial system...")
-            bearing_data = self.get_bearing_data(designation, 'imperial')
-        
-        # If still no data, try without suffix
-        if not bearing_data:
-            print("🔄 Trying without -2RS1 suffix...")
+        # For 16000 series, try without suffix first
+        if designation.startswith('16'):
+            print("🔍 Trying 16000 series without suffix...")
             bearing_data = self.get_bearing_data_without_suffix(designation, 'metric')
             if not bearing_data:
-                print("🔄 Trying without suffix (imperial)...")
+                print("🔄 Trying imperial system...")
                 bearing_data = self.get_bearing_data_without_suffix(designation, 'imperial')
+        else:
+            # For other series, try with -2RS1 suffix first
+            bearing_data = self.get_bearing_data(designation, 'metric')
+            if not bearing_data:
+                print("🔄 Trying imperial system...")
+                bearing_data = self.get_bearing_data(designation, 'imperial')
+            
+            # If still no data, try without suffix
+            if not bearing_data:
+                print("🔄 Trying without -2RS1 suffix...")
+                bearing_data = self.get_bearing_data_without_suffix(designation, 'metric')
+                if not bearing_data:
+                    print("🔄 Trying without suffix (imperial)...")
+                    bearing_data = self.get_bearing_data_without_suffix(designation, 'imperial')
         
         if not bearing_data:
             return None
@@ -251,31 +263,55 @@ class SKFAPIBearingScraper:
 
 def main():
     """Main execution"""
-    print("🚀 SKF Bearing API Scraper")
+    print("🚀 SKF Bearing API Scraper - 6800 Series")
     print("=" * 60)
     print("Using SKF's internal API to extract bearing specifications")
+    print("Using alternate model numbers (61800-61820) for 6800 series")
     print("=" * 60)
     
     scraper = SKFAPIBearingScraper()
     
-    # 62300 series models (62301-62320)
-    test_models = [
-        '62301', '62302', '62303', '62304', '62305', '62306', '62307', '62308', '62309', '62310',
-        '62311', '62312', '62313', '62314', '62315', '62316', '62317', '62318', '62319', '62320'
-    ]
+    # 6800 series models with their alternate model numbers
+    # 6800 -> 61800, 6801 -> 61801, etc.
+    model_mapping = {}
+    for i in range(21):  # 6800 to 6820
+        if i < 10:
+            original_model = f"680{i}"
+        else:
+            original_model = f"68{i}"
+        
+        alternate_model = str(int(original_model) + 55000)
+        model_mapping[alternate_model] = original_model
     
-    results = scraper.scrape_multiple_bearings(test_models)
+    # Use alternate model numbers for API calls
+    alternate_models = list(model_mapping.keys())
+    alternate_models.sort()  # Sort numerically
+    
+    print(f"📋 Processing {len(alternate_models)} models:")
+    for alt, orig in model_mapping.items():
+        print(f"  {alt} -> {orig}")
+    
+    results = scraper.scrape_multiple_bearings(alternate_models)
     
     if results:
-        scraper.save_results(results)
-        scraper.save_dimensions_only(results)
+        # Update model numbers in results to use original model numbers
+        for result in results:
+            alt_model = result['model']
+            if alt_model in model_mapping:
+                result['original_model'] = model_mapping[alt_model]
+                result['alternate_model'] = alt_model
+                result['model'] = model_mapping[alt_model]  # Use original model as primary
+        
+        scraper.save_results(results, 'skf_6800_series_data.json')
+        scraper.save_dimensions_only(results, 'skf_6800_series_dimensions.json')
         
         print("\n📊 SUMMARY:")
         print("=" * 30)
         for result in results:
             model = result['model']
+            alt_model = result.get('alternate_model', 'N/A')
             dims = result.get('dimensions', {})
-            print(f"{model}: {len(dims)} dimensions - {list(dims.keys())}")
+            print(f"{model} (alt: {alt_model}): {len(dims)} dimensions - {list(dims.keys())}")
             
         print("\n🎯 Missing Dimensional Data Summary:")
         print("=" * 40)

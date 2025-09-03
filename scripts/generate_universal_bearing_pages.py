@@ -233,7 +233,9 @@ class UniversalBearingPageGenerator:
             # 12. Replace simple placeholders
             content = self._replace_simple_placeholders(content)
             
-            # 13. Sanitize HTML content for security
+
+            
+            # 14. Sanitize HTML content for security
             content = self._sanitize_html_content(content)
             
             # Create output directory if it doesn't exist
@@ -740,6 +742,8 @@ class UniversalBearingPageGenerator:
                     content = content.replace(old_placeholder, str(new_value))
         
         return content
+    
+
     
     def _sanitize_html_content(self, content: str) -> str:
         """Sanitize HTML content to prevent XSS and ensure valid HTML"""
@@ -1278,12 +1282,29 @@ body {{
 def create_standalone_model_page(model_name, model_dir, series):
     """Helper function for create_standalone_pages() - creates standalone individual model pages"""
     try:
-        # Read the generated HTML file
-        index_file = model_dir / "index.html"
-        if not index_file.exists():
-            print(f"            ❌ index.html not found in {model_dir}")
+        # Instead of reading the existing HTML file, regenerate it from the template
+        # to ensure all template processing (including alternate_model_number) is applied
+        json_file = Path(f"models/{model_name}.json")
+        template_file = Path("webpages/templates/index_new_claude.html")
+        
+        if not json_file.exists():
+            print(f"            ❌ JSON file not found: {json_file}")
             return False
         
+        if not template_file.exists():
+            print(f"            ❌ Template file not found: {template_file}")
+            return False
+        
+        # Generate HTML from template
+        generator = UniversalBearingPageGenerator(str(json_file), str(template_file), str(model_dir / "index.html"))
+        success = generator.generate_page()
+        
+        if not success:
+            print(f"            ❌ Failed to generate HTML from template")
+            return False
+        
+        # Now read the generated HTML file
+        index_file = model_dir / "index.html"
         with open(index_file, 'r', encoding='utf-8') as f:
             html_content = f.read()
         
@@ -1373,13 +1394,15 @@ def create_standalone_model_page(model_name, model_dir, series):
             print(f"            ❌ No <body> tag found in HTML")
             return False
         
-        body_start = body_start + html_content[body_start:].find('>') + 1
+        body_tag_end = body_start + html_content[body_start:].find('>') + 1
         body_end = html_content.find('</body>')
         if body_end == -1:
             print(f"            ❌ No </body> tag found in HTML")
             return False
         
-        body_content = html_content[body_start:body_end].strip()
+        # Extract the body tag with attributes and the body content
+        body_tag = html_content[body_start:body_tag_end]
+        body_content = html_content[body_tag_end:body_end].strip()
         
         # Extract script content
         script_content = ""
@@ -1465,7 +1488,7 @@ body {{
 {styles_css}
     </style>
 </head>
-<body>
+{body_tag}
 {body_content}
 {script_content}
 </body>

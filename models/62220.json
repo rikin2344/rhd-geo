@@ -55,7 +55,7 @@
   "load_ratings": {
     "dynamic_load_Cr_kN": 97.2,
     "static_load_Cor_kN": 40.5,
-    "load_capacity_kg": 9914
+    "load_capacity_kg": 9908
   },
   "speed_limits": {
     "grease_rpm": 3200,
@@ -91,7 +91,7 @@
         "Hydroturbine stages",
         "Mass flow stirrers"
       ],
-      "requirements": "100mm shaft with 81.2kN (\u22488,280kg) dynamic, 2,000 RPM grease, 180x41mm for extreme torque machines"
+      "requirements": "100mm shaft with 81.2kN (≈8,280kg) dynamic, 2,000 RPM grease, 180x41mm for extreme torque machines"
     },
     "application2": {
       "title": "Excavator Parts",
@@ -106,7 +106,7 @@
         "Dockside grabber bases",
         "Bridge pile rotators"
       ],
-      "requirements": "100mm bore, 70kN (\u22487,140kg) static, essential for mega-excavation"
+      "requirements": "100mm bore, 70kN (≈7,140kg) static, essential for mega-excavation"
     },
     "application3": {
       "title": "Industrial Movers",
@@ -300,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -329,7 +329,7 @@
     "shaft_requirements": {
       "nominal_diameter": "100.000mm",
       "tolerance_grade": "h6 (99.987-100.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,32 +370,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for ultimate-duty applications, providing superior hardness, wear resistance, and fatigue life under maximum loads."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures in ultimate-duty applications."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 9914kg load capacity with ultimate 46mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Premium quality with competitive pricing for ultimate-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -441,7 +441,7 @@
           "question": "What tools are needed to install a 5.00kg 62220 bearing properly?",
           "direct_answer": "Ultimate heavy-duty hydraulic systems, precision induction heater, and advanced laser alignment tools for proper 100mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 5.00kg weight and 100mm bore with maximum 46mm width require ultimate specialized tools to avoid damage. The maximum width makes ultra-precise alignment absolutely critical to prevent edge loading and stress concentration.",
-          "how_to_handle": "Heat bearing to 80-100\u00b0C using precision induction heater with uniform temperature control. Use ultimate heavy-duty hydraulic installation and removal systems. Verify shaft tolerances (h6: 99.987-100.013mm) using laser measurement systems. Professional installation teams essential.",
+          "how_to_handle": "Heat bearing to 80-100°C using precision induction heater with uniform temperature control. Use ultimate heavy-duty hydraulic installation and removal systems. Verify shaft tolerances (h6: 99.987-100.013mm) using laser measurement systems. Professional installation teams essential.",
           "pro_tip": "Certified installation specialists with ultimate tooling prevent 95% of installation-related failures - absolutely essential for maximum-duty bearings where failure is catastrophic."
         },
         {
@@ -467,8 +467,8 @@
           "question": "Why does my 62220 bearing overheat under 9500kg loads?",
           "direct_answer": "9500kg is 96% of capacity - verify all conditions and implement comprehensive cooling or upgrade to larger system.",
           "why_matters": "Operating at 96% of rated capacity in ultimate applications generates maximum heat with any system imperfections. The minimal safety margin provides no protection against contamination, misalignment, thermal effects, or shock loads that increase effective loading beyond ultimate design limits.",
-          "how_to_handle": "Verify actual loads including all dynamic, thermal, shock, and environmental factors using comprehensive load monitoring. Check alignment using laser systems within 0.003mm tolerance. Implement maximum lubrication flow rate with forced cooling systems. Consider system redesign if temperatures exceed 60\u00b0C.",
-          "pro_tip": "Continuous thermal monitoring with AI analysis and automatic shutdown prevents thermal damage - temperatures above 70\u00b0C in ultimate applications require immediate emergency intervention."
+          "how_to_handle": "Verify actual loads including all dynamic, thermal, shock, and environmental factors using comprehensive load monitoring. Check alignment using laser systems within 0.003mm tolerance. Implement maximum lubrication flow rate with forced cooling systems. Consider system redesign if temperatures exceed 60°C.",
+          "pro_tip": "Continuous thermal monitoring with AI analysis and automatic shutdown prevents thermal damage - temperatures above 70°C in ultimate applications require immediate emergency intervention."
         },
         {
           "question": "What causes ultimate vibration in 62220 bearings at 2900 RPM?",

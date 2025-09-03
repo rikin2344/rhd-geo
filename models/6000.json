@@ -55,7 +55,7 @@
   "load_ratings": {
     "dynamic_load_Cr_kN": 4.58,
     "static_load_Cor_kN": 1.98,
-    "load_capacity_kg": 467
+    "load_capacity_kg": 466
   },
   "speed_limits": {
     "grease_rpm": 22000,
@@ -91,7 +91,7 @@
         "Office equipment spindles",
         "Miniature pump assemblies"
       ],
-      "requirements": "10mm shaft with 5.10kN (\u2248520kg) dynamic load capacity, 20,000 RPM grease lubrication, 30\u00d79mm profile for medium-duty power transmission applications"
+      "requirements": "10mm shaft with 5.10kN (≈520kg) dynamic load capacity, 20,000 RPM grease lubrication, 30×9mm profile for medium-duty power transmission applications"
     },
     "application2": {
       "title": "Precision Tools",
@@ -106,7 +106,7 @@
         "Robotic arm pivots",
         "Small actuator bearings"
       ],
-      "requirements": "Precision 10mm bore with 0.6mm chamfer radius, 2.38kN (\u2248240kg) static load rating for stable positioning, 520kg load capacity for measurement accuracy"
+      "requirements": "Precision 10mm bore with 0.6mm chamfer radius, 2.38kN (≈240kg) static load rating for stable positioning, 520kg load capacity for measurement accuracy"
     },
     "application3": {
       "title": "Compact Drives",
@@ -329,7 +329,7 @@
     "shaft_requirements": {
       "nominal_diameter": "10.000mm",
       "tolerance_grade": "h6 (9.991-10.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,32 +370,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 467kg load capacity with compact 8mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for small bearing applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -441,7 +441,7 @@
           "question": "What tools are needed to install a 19g 6000 bearing properly?",
           "direct_answer": "Small bearing installation tools, heating plate, and precision measuring instruments for proper 10mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The lightweight 19g bearing and small 10mm bore require careful handling to avoid damage during installation. Small bearings are easily damaged by excessive force or improper heating.",
-          "how_to_handle": "Heat bearing to 80\u00b0C maximum for thermal expansion. Use small bearing installation tools or hydraulic press with proper support. Check shaft tolerances (h6: 9.991-10.009mm) carefully. Avoid excessive force or impact installation.",
+          "how_to_handle": "Heat bearing to 80°C maximum for thermal expansion. Use small bearing installation tools or hydraulic press with proper support. Check shaft tolerances (h6: 9.991-10.009mm) carefully. Avoid excessive force or impact installation.",
           "pro_tip": "Small bearings heat quickly - monitor temperature carefully to avoid overheating and metallurgical damage."
         },
         {
@@ -449,7 +449,7 @@
           "direct_answer": "Monthly inspections for bearings operating at 20000 RPM, well within the 22000 RPM rating.",
           "why_matters": "Operating at 91% of rated speed requires regular monitoring to detect early signs of wear, contamination, or lubrication issues. High-speed small bearings can fail rapidly once problems develop. Regular inspection prevents sudden failures in critical applications.",
           "how_to_handle": "Check temperature, noise, and vibration levels monthly. Monitor lubrication condition in open bearings or check sealed bearing performance. Look for unusual sounds, heat generation, or vibration changes indicating developing problems.",
-          "pro_tip": "Temperature monitoring is most effective for small high-speed bearings - temperatures above 60\u00b0C indicate problems."
+          "pro_tip": "Temperature monitoring is most effective for small high-speed bearings - temperatures above 60°C indicate problems."
         },
         {
           "question": "What lubrication schedule works for 6000 in electric motor applications?",

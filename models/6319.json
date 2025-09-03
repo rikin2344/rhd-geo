@@ -53,9 +53,9 @@
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 157.0,
-    "static_load_Cor_kN": 122.0,
-    "load_capacity_kg": 16020
+    "dynamic_load_Cr_kN": 157,
+    "static_load_Cor_kN": 122,
+    "load_capacity_kg": 16004
   },
   "speed_limits": {
     "grease_rpm": 3200,
@@ -91,7 +91,7 @@
         "Punch press coil supports",
         "Metal laminator beds"
       ],
-      "requirements": "95mm shaft with 153kN (\u224815,600kg) dynamic load, 3,200 RPM oil, 200\u00d745mm, thick-section for high forces"
+      "requirements": "95mm shaft with 153kN (≈15,600kg) dynamic load, 3,200 RPM oil, 200×45mm, thick-section for high forces"
     },
     "application2": {
       "title": "Winders",
@@ -106,7 +106,7 @@
         "Foil rolling machines",
         "Polymer tape rolling beds"
       ],
-      "requirements": "95mm bore, 118kN (\u224812,040kg) static load, for high-tension pull"
+      "requirements": "95mm bore, 118kN (≈12,040kg) static load, for high-tension pull"
     },
     "application3": {
       "title": "Earth Movers",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6319 Bearing 95\u00d7200\u00d745mm Deep Groove Ball Bearing | RHD",
+    "title": "6319 Bearing 95×200×45mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6319 deep groove ball bearing with 95mm bore, 200mm OD, 45mm width. 157.00kN dynamic load, 16020kg capacity. Perfect for heavy machinery, industrial equipment.",
     "keywords": [
       "6319 bearing",
@@ -242,7 +242,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6319/",
     "og_data": {
-      "title": "6319 Deep Groove Ball Bearing - 95\u00d7200\u00d745mm | RHD Bearings",
+      "title": "6319 Deep Groove Ball Bearing - 95×200×45mm | RHD Bearings",
       "description": "High-quality 6319 bearing with 157.00kN dynamic load capacity. Perfect for heavy machinery and industrial equipment applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6319/",
       "type": "product",
@@ -296,9 +296,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -326,7 +326,7 @@
     "shaft_requirements": {
       "nominal_diameter": "95.000mm",
       "tolerance_grade": "h6 (94.987-95.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.022mm max"
     },
     "application_specific_alternatives": {
@@ -342,7 +342,7 @@
       "Use 6319-RS in moisture-prone environments requiring 2,560 RPM with rubber seal protection",
       "Consider 6319 for heavy equipment where 45mm width and 5.740kg weight ensure robust design",
       "Opt for 6319 in industrial applications needing 95mm bore with 16020kg load capacity",
-      "Deploy 6319 in construction equipment requiring 3,200 RPM grease lubrication with 200\u00d745mm profile"
+      "Deploy 6319 in construction equipment requiring 3,200 RPM grease lubrication with 200×45mm profile"
     ],
     "natural_language_queries": [
       "6319 bearing dimensions",
@@ -362,7 +362,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need large bearing for 95mm shaft with high load capacity",
-        "solution": "6319 bearing provides 157.00kN dynamic load in 200\u00d745mm profile"
+        "solution": "6319 bearing provides 157.00kN dynamic load in 200×45mm profile"
       },
       {
         "problem": "Require dust protection in heavy machinery application",
@@ -375,38 +375,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for large bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 12.00kN higher dynamic load than 6318 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in large-bearing category for 157.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6319 provides 12.00kN higher dynamic load than 6318 while maintaining compact 200\u00d745mm profile",
+      "vs_smaller_bearing": "6319 provides 12.00kN higher dynamic load than 6318 while maintaining compact 200×45mm profile",
       "vs_larger_bearing": "6319 offers 16.00kN lower load than 6320 but with 15mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6319 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6319 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -425,7 +425,7 @@
         },
         {
           "question": "Can I replace a 6319 bearing with a different size bearing?",
-          "direct_answer": "No, 6319 bearings have unique 95\u00d7200\u00d745mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6319 bearings have unique 95×200×45mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6319 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6319 bearings in stock to avoid production delays and ensure consistent quality."

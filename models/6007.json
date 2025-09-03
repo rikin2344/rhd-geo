@@ -55,7 +55,7 @@
   "load_ratings": {
     "dynamic_load_Cr_kN": 16.2,
     "static_load_Cor_kN": 10.5,
-    "load_capacity_kg": 1652
+    "load_capacity_kg": 1651
   },
   "speed_limits": {
     "grease_rpm": 9500,
@@ -91,7 +91,7 @@
         "Tunnel ventilation fans",
         "Greenhouse ventilation"
       ],
-      "requirements": "35mm shaft with 14.00kN (\u22481,430kg) dynamic load capacity, 8,500 RPM grease lubrication, 72\u00d718mm profile for air moving equipment"
+      "requirements": "35mm shaft with 14.00kN (≈1,430kg) dynamic load capacity, 8,500 RPM grease lubrication, 72×18mm profile for air moving equipment"
     },
     "application2": {
       "title": "Heavy Machinery",
@@ -106,7 +106,7 @@
         "Forestry equipment drives",
         "Agricultural machinery"
       ],
-      "requirements": "Precision 35mm bore with 9.0kN (\u2248920kg) static load rating for heavy machinery"
+      "requirements": "Precision 35mm bore with 9.0kN (≈920kg) static load rating for heavy machinery"
     },
     "application3": {
       "title": "Machine Components",
@@ -329,7 +329,7 @@
     "shaft_requirements": {
       "nominal_diameter": "35.000mm",
       "tolerance_grade": "h6 (34.987-35.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,32 +370,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for industrial strength performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 1652kg load capacity with robust 14mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for industrial strength applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -441,7 +441,7 @@
           "question": "What tools are needed to install a 148g 6007 bearing properly?",
           "direct_answer": "Heavy-duty bearing installation tools, induction heater, and precision alignment equipment for proper 35mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 148g weight and 35mm bore require appropriate installation techniques to prevent internal damage. Large bearings benefit from thermal installation and precision alignment for maximum service life in industrial strength applications.",
-          "how_to_handle": "Heat bearing to 80-90\u00b0C using induction heater for even heating. Use heavy-duty hydraulic installation tools with proper adapters. Verify shaft tolerances (h6: 34.987-35.013mm) and housing concentricity using precision instruments. Never use impact methods.",
+          "how_to_handle": "Heat bearing to 80-90°C using induction heater for even heating. Use heavy-duty hydraulic installation tools with proper adapters. Verify shaft tolerances (h6: 34.987-35.013mm) and housing concentricity using precision instruments. Never use impact methods.",
           "pro_tip": "Induction heating provides uniform thermal expansion - critical for large bearings to prevent installation damage and ensure proper fit."
         },
         {

@@ -55,7 +55,7 @@
   "load_ratings": {
     "dynamic_load_Cr_kN": 58.2,
     "static_load_Cor_kN": 23.5,
-    "load_capacity_kg": 5936
+    "load_capacity_kg": 5932
   },
   "speed_limits": {
     "grease_rpm": 3900,
@@ -91,7 +91,7 @@
         "Fume vent drums",
         "Blower stage supports"
       ],
-      "requirements": "85mm shaft with 58.5kN (\u22485,970kg) dynamic, 2,600 RPM grease, 150x35mm for process plant usage"
+      "requirements": "85mm shaft with 58.5kN (≈5,970kg) dynamic, 2,600 RPM grease, 150x35mm for process plant usage"
     },
     "application2": {
       "title": "Bulk Lifters",
@@ -106,7 +106,7 @@
         "Line chain raise beds",
         "Industrial stacking lifts"
       ],
-      "requirements": "85mm bore, 46kN (\u22484,690kg) static, hefty for storage and lifting"
+      "requirements": "85mm bore, 46kN (≈4,690kg) static, hefty for storage and lifting"
     },
     "application3": {
       "title": "Platform Axles",
@@ -299,9 +299,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -328,7 +328,7 @@
     "shaft_requirements": {
       "nominal_diameter": "85.000mm",
       "tolerance_grade": "h6 (84.987-85.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -369,32 +369,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty applications, providing superior hardness, wear resistance, and fatigue life under extreme loads."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures in heavy-duty applications."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 5936kg load capacity with extended 36mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Premium quality with competitive pricing for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -440,7 +440,7 @@
           "question": "What tools are needed to install a 2.53kg 62217 bearing properly?",
           "direct_answer": "Hydraulic bearing puller, induction heater, and precision measuring tools for proper 85mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 2.53kg weight and 85mm bore require specialized tools to avoid damage during installation. The extended 36mm width makes alignment critical to prevent edge loading and internal stress.",
-          "how_to_handle": "Heat bearing to 80-100\u00b0C for thermal expansion. Use hydraulic tools for removal and installation. Verify shaft tolerances (h6: 84.987-85.013mm) and housing fit. Never hammer or force-fit the bearing.",
+          "how_to_handle": "Heat bearing to 80-100°C for thermal expansion. Use hydraulic tools for removal and installation. Verify shaft tolerances (h6: 84.987-85.013mm) and housing fit. Never hammer or force-fit the bearing.",
           "pro_tip": "Induction heaters provide even heating and prevent overheating - critical for maintaining bearing metallurgy."
         },
         {
@@ -466,7 +466,7 @@
           "question": "Why does my 62217 bearing overheat under 5500kg loads?",
           "direct_answer": "5500kg is 93% of capacity - check lubrication quality, alignment, and consider cooling improvements.",
           "why_matters": "Operating at 93% of rated capacity generates substantial heat, especially with inadequate lubrication or slight misalignment. The small safety margin leaves no room for contamination, temperature effects, or shock loads that increase effective loading.",
-          "how_to_handle": "Verify actual loads including dynamic and shock factors. Check alignment within 0.013mm tolerance. Ensure adequate lubrication flow and heat dissipation. Consider forced cooling or larger bearing if temperatures exceed 70\u00b0C consistently.",
+          "how_to_handle": "Verify actual loads including dynamic and shock factors. Check alignment within 0.013mm tolerance. Ensure adequate lubrication flow and heat dissipation. Consider forced cooling or larger bearing if temperatures exceed 70°C consistently.",
           "pro_tip": "Thermal imaging reveals hot spots indicating misalignment or inadequate lubrication - address immediately."
         },
         {

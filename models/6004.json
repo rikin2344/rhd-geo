@@ -91,7 +91,7 @@
         "Industrial exhaust systems",
         "Heat exchanger fans"
       ],
-      "requirements": "20mm shaft with 9.00kN (\u2248920kg) dynamic load capacity, 12,000 RPM grease lubrication, 47\u00d714mm profile for fan assemblies"
+      "requirements": "20mm shaft with 9.00kN (≈920kg) dynamic load capacity, 12,000 RPM grease lubrication, 47×14mm profile for fan assemblies"
     },
     "application2": {
       "title": "Precision Bearings",
@@ -106,7 +106,7 @@
         "Camera gimbal joints",
         "Inspection tool pivots"
       ],
-      "requirements": "Precision 20mm bore with 5.5kN (\u2248560kg) static load rating for precision applications"
+      "requirements": "Precision 20mm bore with 5.5kN (≈560kg) static load rating for precision applications"
     },
     "application3": {
       "title": "Light Machinery",
@@ -329,7 +329,7 @@
     "shaft_requirements": {
       "nominal_diameter": "20.000mm",
       "tolerance_grade": "h6 (19.987-20.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,32 +370,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for reliable performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 956kg load capacity with robust 12mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for medium-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -441,7 +441,7 @@
           "question": "What tools are needed to install a 68g 6004 bearing properly?",
           "direct_answer": "Standard bearing installation tools, heating equipment, and precision measuring instruments for proper 20mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 68g weight and 20mm bore require appropriate installation techniques to prevent internal damage. Medium-size bearings benefit from thermal installation while being substantial enough for standard installation procedures.",
-          "how_to_handle": "Heat bearing to 80-90\u00b0C for thermal expansion. Use bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 19.987-20.013mm) and housing concentricity. Avoid impact installation methods.",
+          "how_to_handle": "Heat bearing to 80-90°C for thermal expansion. Use bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 19.987-20.013mm) and housing concentricity. Avoid impact installation methods.",
           "pro_tip": "Thermal installation provides smooth, controlled installation - monitor temperature to prevent overheating and metallurgical damage."
         },
         {

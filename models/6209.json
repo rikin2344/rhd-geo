@@ -44,7 +44,7 @@
     "bore_diameter_d_mm": 45,
     "outer_diameter_D_mm": 85,
     "width_B_mm": 19,
-    "weight_kg": 0.68,
+    "weight_kg": 0.416,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": 57.6,
       "D2_recess_diameter": 75.19,
@@ -53,14 +53,14 @@
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 38.5,
-    "static_load_Cor_kN": 23.2,
-    "load_capacity_kg": 3929
+    "dynamic_load_Cr_kN": 31.5,
+    "static_load_Cor_kN": 20.5,
+    "load_capacity_kg": 3211
   },
   "speed_limits": {
-    "grease_rpm": 9000,
-    "oil_rpm": 11000,
-    "recommended_max_rpm": 8100
+    "grease_rpm": 7000,
+    "oil_rpm": 9000,
+    "recommended_max_rpm": 6300
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -91,7 +91,7 @@
         "Agricultural vehicle drives",
         "Armored vehicle components"
       ],
-      "requirements": "45mm shaft with 22.0kN (\u22482240kg) dynamic load capacity, 7,500 RPM grease lubrication, 85\u00d719mm robust profile"
+      "requirements": "45mm shaft with 22.0kN (≈2240kg) dynamic load capacity, 7,500 RPM grease lubrication, 85×19mm robust profile"
     },
     "application2": {
       "title": "Industrial Sensors",
@@ -106,7 +106,7 @@
         "Robotic end effector pivots",
         "Metrology equipment"
       ],
-      "requirements": "45mm bore with 1.7mm chamfer, 15kN (\u22481530kg) static load for reliable sensing, grease lubrication"
+      "requirements": "45mm bore with 1.7mm chamfer, 15kN (≈1530kg) static load for reliable sensing, grease lubrication"
     },
     "application3": {
       "title": "Agricultural Implements",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6209 Bearing 45\u00d785\u00d719mm Deep Groove Ball Bearing | RHD",
+    "title": "6209 Bearing 45×85×19mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6209 deep groove ball bearing with 45mm bore, 85mm OD, 19mm width. 38.50kN dynamic load, 3929kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6209 bearing",
@@ -251,7 +251,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6200-Series/6209/",
     "og_data": {
-      "title": "6209 Deep Groove Ball Bearing - 45\u00d785\u00d719mm | RHD Bearings",
+      "title": "6209 Deep Groove Ball Bearing - 45×85×19mm | RHD Bearings",
       "description": "High-quality 6209 bearing with 38.50kN dynamic load capacity. Perfect for heavy industrial power systems and precision applications.",
       "url": "https://rhdbearings.com/specs/6200-Series/6209/",
       "type": "product",
@@ -305,9 +305,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -335,7 +335,7 @@
     "shaft_requirements": {
       "nominal_diameter": "45.000mm",
       "tolerance_grade": "h6 (44.987-45.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -351,7 +351,7 @@
       "Use 6209-RS in moisture-prone environments requiring 7,200 RPM with rubber seal protection",
       "Consider 6209 for automotive components where 19mm width and 0.680kg weight ensure durability and reliability",
       "Opt for 6209 in precision applications needing 1.0mm chamfer radius and 3929kg load capacity",
-      "Deploy 6209 in power transmission systems requiring 9,000 RPM grease lubrication with 85\u00d719mm profile"
+      "Deploy 6209 in power transmission systems requiring 9,000 RPM grease lubrication with 85×19mm profile"
     ],
     "natural_language_queries": [
       "6209 bearing dimensions",
@@ -371,7 +371,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 45mm shaft with high load capacity",
-        "solution": "6209 bearing provides 38.50kN dynamic load in 85\u00d719mm profile"
+        "solution": "6209 bearing provides 38.50kN dynamic load in 85×19mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -384,38 +384,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 6.50kN higher dynamic load than 6208 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 38.50kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6209 provides 6.50kN higher dynamic load than 6208 while maintaining compact 85\u00d719mm profile",
+      "vs_smaller_bearing": "6209 provides 6.50kN higher dynamic load than 6208 while maintaining compact 85×19mm profile",
       "vs_larger_bearing": "6209 offers 6.50kN lower load than 6210 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6209 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6209 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -434,7 +434,7 @@
         },
         {
           "question": "Can I replace a 6209 bearing with a different size bearing?",
-          "direct_answer": "No, 6209 bearings have unique 45\u00d785\u00d719mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6209 bearings have unique 45×85×19mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6209 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6209 bearings in stock to avoid production delays and ensure consistent quality."

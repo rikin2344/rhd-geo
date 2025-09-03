@@ -55,7 +55,7 @@
   "load_ratings": {
     "dynamic_load_Cr_kN": 75.2,
     "static_load_Cor_kN": 23.5,
-    "load_capacity_kg": 7670
+    "load_capacity_kg": 7665
   },
   "speed_limits": {
     "grease_rpm": 5800,

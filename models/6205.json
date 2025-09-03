@@ -55,7 +55,7 @@
   "load_ratings": {
     "dynamic_load_Cr_kN": 14.0,
     "static_load_Cor_kN": 7.88,
-    "load_capacity_kg": 1429
+    "load_capacity_kg": 1427
   },
   "speed_limits": {
     "grease_rpm": 12000,
@@ -91,7 +91,7 @@
         "Differential shaft bearings",
         "Gear shifting mechanisms"
       ],
-      "requirements": "25mm shaft with 12.5kN (\u22481275kg) dynamic load capacity, 10,000 RPM grease lubrication, 52\u00d715mm profile for automotive loads"
+      "requirements": "25mm shaft with 12.5kN (≈1275kg) dynamic load capacity, 10,000 RPM grease lubrication, 52×15mm profile for automotive loads"
     },
     "application2": {
       "title": "Industrial Robotics",
@@ -106,7 +106,7 @@
         "High accuracy gearboxes",
         "Vision system mounts"
       ],
-      "requirements": "25mm bore with 1.2mm chamfer, 7.8kN (\u2248795kg) static load for accuracy, grease lubrication"
+      "requirements": "25mm bore with 1.2mm chamfer, 7.8kN (≈795kg) static load for accuracy, grease lubrication"
     },
     "application3": {
       "title": "Heavy Motors",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6205 Bearing 25\u00d752\u00d715mm Deep Groove Ball Bearing | RHD",
+    "title": "6205 Bearing 25×52×15mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6205 deep groove ball bearing with 25mm bore, 52mm OD, 15mm width. 14.00kN dynamic load, 1429kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6205 bearing",
@@ -249,7 +249,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6200-Series/6205/",
     "og_data": {
-      "title": "6205 Deep Groove Ball Bearing - 25\u00d752\u00d715mm | RHD Bearings",
+      "title": "6205 Deep Groove Ball Bearing - 25×52×15mm | RHD Bearings",
       "description": "High-quality 6205 bearing with 14.00kN dynamic load capacity. Perfect for heavy-duty power transmission and precision applications.",
       "url": "https://rhdbearings.com/specs/6200-Series/6205/",
       "type": "product",
@@ -303,9 +303,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -333,7 +333,7 @@
     "shaft_requirements": {
       "nominal_diameter": "25.000mm",
       "tolerance_grade": "h6 (24.987-25.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -349,7 +349,7 @@
       "Use 6205-RS in moisture-prone environments requiring 9,600 RPM with rubber seal protection",
       "Consider 6205 for automotive components where 15mm width and 0.127kg weight optimize space and efficiency",
       "Opt for 6205 in precision applications needing 1.0mm chamfer radius and 1429kg load capacity",
-      "Deploy 6205 in power transmission systems requiring 12,000 RPM grease lubrication with 52\u00d715mm profile"
+      "Deploy 6205 in power transmission systems requiring 12,000 RPM grease lubrication with 52×15mm profile"
     ],
     "natural_language_queries": [
       "6205 bearing dimensions",
@@ -369,7 +369,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 25mm shaft with high load capacity",
-        "solution": "6205 bearing provides 14.00kN dynamic load in 52\u00d715mm profile"
+        "solution": "6205 bearing provides 14.00kN dynamic load in 52×15mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -382,38 +382,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 1.20kN higher dynamic load than 6204 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 14.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6205 provides 1.20kN higher dynamic load than 6204 while maintaining compact 52\u00d715mm profile",
+      "vs_smaller_bearing": "6205 provides 1.20kN higher dynamic load than 6204 while maintaining compact 52×15mm profile",
       "vs_larger_bearing": "6205 offers 1.20kN lower load than 6206 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6205 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6205 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -432,7 +432,7 @@
         },
         {
           "question": "Can I replace a 6205 bearing with a different size bearing?",
-          "direct_answer": "No, 6205 bearings have unique 25\u00d752\u00d715mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6205 bearings have unique 25×52×15mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6205 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6205 bearings in stock to avoid production delays and ensure consistent quality."

@@ -44,7 +44,7 @@
     "bore_diameter_d_mm": 80,
     "outer_diameter_D_mm": 140,
     "width_B_mm": 26,
-    "weight_kg": 3.2,
+    "weight_kg": 1.448,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": 101.4,
       "D2_recess_diameter": 126.5,
@@ -53,14 +53,14 @@
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 94.0,
-    "static_load_Cor_kN": 55.0,
-    "load_capacity_kg": 9592
+    "dynamic_load_Cr_kN": 71.5,
+    "static_load_Cor_kN": 54.2,
+    "load_capacity_kg": 7288
   },
   "speed_limits": {
-    "grease_rpm": 5500,
-    "oil_rpm": 7000,
-    "recommended_max_rpm": 4950
+    "grease_rpm": 4300,
+    "oil_rpm": 5300,
+    "recommended_max_rpm": 3870
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -91,7 +91,7 @@
         "Heavy-duty winches",
         "Underground vehicle shafts"
       ],
-      "requirements": "80mm shaft with 43.0kN (\u22484380kg) dynamic load capacity, 4,500 RPM grease lubrication, 140\u00d726mm large bearing size"
+      "requirements": "80mm shaft with 43.0kN (≈4380kg) dynamic load capacity, 4,500 RPM grease lubrication, 140×26mm large bearing size"
     },
     "application2": {
       "title": "Industrial Robotics",
@@ -106,7 +106,7 @@
         "Precision rotary tables",
         "Medical robot arms"
       ],
-      "requirements": "80mm bore with 2.4mm chamfer, 30kN (\u22483060kg) static load capacity, grease lubrication"
+      "requirements": "80mm bore with 2.4mm chamfer, 30kN (≈3060kg) static load capacity, grease lubrication"
     },
     "application3": {
       "title": "Marine Drives",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6216 Bearing 80\u00d7140\u00d726mm Deep Groove Ball Bearing | RHD",
+    "title": "6216 Bearing 80×140×26mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6216 deep groove ball bearing with 80mm bore, 140mm OD, 26mm width. 94.00kN dynamic load, 9592kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6216 bearing",
@@ -251,7 +251,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6200-Series/6216/",
     "og_data": {
-      "title": "6216 Deep Groove Ball Bearing - 80\u00d7140\u00d726mm | RHD Bearings",
+      "title": "6216 Deep Groove Ball Bearing - 80×140×26mm | RHD Bearings",
       "description": "High-quality 6216 bearing with 94.00kN dynamic load capacity. Perfect for heavy machinery power transmission and precision applications.",
       "url": "https://rhdbearings.com/specs/6200-Series/6216/",
       "type": "product",
@@ -305,9 +305,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -335,7 +335,7 @@
     "shaft_requirements": {
       "nominal_diameter": "80.000mm",
       "tolerance_grade": "h6 (79.987-80.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -351,7 +351,7 @@
       "Use 6216-RS in moisture-prone environments requiring 4,400 RPM with rubber seal protection",
       "Consider 6216 for automotive components where 26mm width and 3.200kg weight ensure durability and reliability",
       "Opt for 6216 in precision applications needing 1.0mm chamfer radius and 9592kg load capacity",
-      "Deploy 6216 in power transmission systems requiring 5,500 RPM grease lubrication with 140\u00d726mm profile"
+      "Deploy 6216 in power transmission systems requiring 5,500 RPM grease lubrication with 140×26mm profile"
     ],
     "natural_language_queries": [
       "6216 bearing dimensions",
@@ -371,7 +371,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 80mm shaft with high load capacity",
-        "solution": "6216 bearing provides 94.00kN dynamic load in 140\u00d726mm profile"
+        "solution": "6216 bearing provides 94.00kN dynamic load in 140×26mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -384,38 +384,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 8.00kN higher dynamic load than 6215 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 94.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6216 provides 8.00kN higher dynamic load than 6215 while maintaining compact 140\u00d726mm profile",
+      "vs_smaller_bearing": "6216 provides 8.00kN higher dynamic load than 6215 while maintaining compact 140×26mm profile",
       "vs_larger_bearing": "6216 offers 8.00kN lower load than 6217 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6216 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6216 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -434,7 +434,7 @@
         },
         {
           "question": "Can I replace a 6216 bearing with a different size bearing?",
-          "direct_answer": "No, 6216 bearings have unique 80\u00d7140\u00d726mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6216 bearings have unique 80×140×26mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6216 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6216 bearings in stock to avoid production delays and ensure consistent quality."

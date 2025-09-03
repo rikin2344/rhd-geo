@@ -55,7 +55,7 @@
   "load_ratings": {
     "dynamic_load_Cr_kN": 140,
     "static_load_Cor_kN": 51.0,
-    "load_capacity_kg": 14280
+    "load_capacity_kg": 14271
   },
   "speed_limits": {
     "grease_rpm": 3800,
@@ -91,7 +91,7 @@
         "Ceramic slurry mixers",
         "Resin mixer shafts"
       ],
-      "requirements": "85mm shaft with 55.0kN (\u22485,610kg) dynamic load capacity, 4,000 RPM grease lubrication, 170\u00d755mm profile for mixing equipment"
+      "requirements": "85mm shaft with 55.0kN (≈5,610kg) dynamic load capacity, 4,000 RPM grease lubrication, 170×55mm profile for mixing equipment"
     },
     "application2": {
       "title": "Heavy Rollers",
@@ -106,7 +106,7 @@
         "Rubber processing rollers",
         "Agricultural equipment rollers"
       ],
-      "requirements": "Precision 85mm bore with 28.0kN (\u22482,850kg) static load for roller bearings"
+      "requirements": "Precision 85mm bore with 28.0kN (≈2,850kg) static load for roller bearings"
     },
     "application3": {
       "title": "Industrial Vehicles",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "85.000mm",
       "tolerance_grade": "h6 (84.987-85.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,32 +372,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 51.0kN more load than typical 85mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 140kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }

@@ -44,7 +44,7 @@
     "bore_diameter_d_mm": 60,
     "outer_diameter_D_mm": 130,
     "width_B_mm": 31,
-    "weight_kg": 2.45,
+    "weight_kg": 1.71,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": 81.86,
       "D2_recess_diameter": 112.2,
@@ -53,14 +53,14 @@
     }
   },
   "load_ratings": {
-    "dynamic_load_Cr_kN": 91.6,
-    "static_load_Cor_kN": 57.8,
-    "load_capacity_kg": 9342
+    "dynamic_load_Cr_kN": 81.8,
+    "static_load_Cor_kN": 51.8,
+    "load_capacity_kg": 8338
   },
   "speed_limits": {
-    "grease_rpm": 5500,
-    "oil_rpm": 7000,
-    "recommended_max_rpm": 4950
+    "grease_rpm": 5000,
+    "oil_rpm": 6000,
+    "recommended_max_rpm": 4500
   },
   "material": {
     "grade": "Gcr15 (AISI 52100)",
@@ -91,7 +91,7 @@
         "Rotary drum conditioner bearings",
         "Soil stabilizer mixers"
       ],
-      "requirements": "60mm shaft with 81.9kN (\u22488,350kg) dynamic load, 3,400 RPM grease, 130\u00d731mm for heavy blending"
+      "requirements": "60mm shaft with 81.9kN (≈8,350kg) dynamic load, 3,400 RPM grease, 130×31mm for heavy blending"
     },
     "application2": {
       "title": "Lifting Equipment",
@@ -106,7 +106,7 @@
         "Warehouse vertical lifts",
         "Power hoist gears"
       ],
-      "requirements": "60mm bore, 52kN (\u22485,300kg) static load, robust for weight bearing"
+      "requirements": "60mm bore, 52kN (≈5,300kg) static load, robust for weight bearing"
     },
     "application3": {
       "title": "Transport Carriages",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6312 Bearing 60\u00d7130\u00d731mm Deep Groove Ball Bearing | RHD",
+    "title": "6312 Bearing 60×130×31mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6312 deep groove ball bearing with 60mm bore, 130mm OD, 31mm width. 91.60kN dynamic load, 9342kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6312 bearing",
@@ -247,7 +247,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6312/",
     "og_data": {
-      "title": "6312 Deep Groove Ball Bearing - 60\u00d7130\u00d731mm | RHD Bearings",
+      "title": "6312 Deep Groove Ball Bearing - 60×130×31mm | RHD Bearings",
       "description": "High-quality 6312 bearing with 91.60kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6312/",
       "type": "product",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "60.000mm",
       "tolerance_grade": "h6 (59.987-60.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.019mm max"
     },
     "application_specific_alternatives": {
@@ -347,7 +347,7 @@
       "Use 6312-RS in moisture-prone environments requiring 4,400 RPM with rubber seal protection",
       "Consider 6312 for machinery where 31mm width and 2.45kg weight ensure robust design",
       "Opt for 6312 in industrial applications needing 60mm bore with 9342kg load capacity",
-      "Deploy 6312 in automation systems requiring 5,500 RPM grease lubrication with 130\u00d731mm profile"
+      "Deploy 6312 in automation systems requiring 5,500 RPM grease lubrication with 130×31mm profile"
     ],
     "natural_language_queries": [
       "6312 bearing dimensions",
@@ -367,7 +367,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 60mm shaft with high load capacity",
-        "solution": "6312 bearing provides 91.60kN dynamic load in 130\u00d731mm profile"
+        "solution": "6312 bearing provides 91.60kN dynamic load in 130×31mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
@@ -380,38 +380,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
         "description": "Handles 13.40kN higher dynamic load than 6311 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 91.60kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6312 provides 13.40kN higher dynamic load than 6311 while maintaining compact 130\u00d731mm profile",
+      "vs_smaller_bearing": "6312 provides 13.40kN higher dynamic load than 6311 while maintaining compact 130×31mm profile",
       "vs_larger_bearing": "6312 offers 13.40kN lower load than 6313 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6312 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6312 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -430,7 +430,7 @@
         },
         {
           "question": "Can I replace a 6312 bearing with a different size bearing?",
-          "direct_answer": "No, 6312 bearings have unique 60\u00d7130\u00d731mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6312 bearings have unique 60×130×31mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6312 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6312 bearings in stock to avoid production delays and ensure consistent quality."
