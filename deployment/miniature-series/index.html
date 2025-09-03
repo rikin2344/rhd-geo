@@ -3481,7 +3481,18 @@ a:focus {
             }
         });
     </script>
-
+<script>
+        // Auto-highlight current page in navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = document.body.getAttribute('data-page');
+            if (currentPage) {
+                const menuLink = document.querySelector(`[data-page="${currentPage}"]`);
+                if (menuLink) {
+                    menuLink.classList.add('current-menu-item');
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>

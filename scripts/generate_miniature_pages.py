@@ -1151,15 +1151,8 @@ def upload_pages():
         print(f"\n📤 Uploading {model_name}...")
         
         try:
-            # Change to deployment directory for curl_upload to work correctly
-            original_cwd = os.getcwd()
-            os.chdir("deployment")
-            
-            # Use the imported curl_upload function
+            # Use the imported curl_upload function (run from root directory)
             success = curl_upload(model_name)
-            
-            # Change back to original directory
-            os.chdir(original_cwd)
             
             if success:
                 print(f"   ✅ Successfully uploaded {model_name}")
@@ -1250,15 +1243,8 @@ def process_miniature_webpage():
     print(f"   🔧 Using deployment/curl_upload.py for reliable upload")
     
     try:
-        # Change to deployment directory for curl_upload to work correctly
-        original_cwd = os.getcwd()
-        os.chdir("deployment")
-        
-        # Use the imported curl_upload function for the main page
+        # Use the imported curl_upload function for the main page (run from root directory)
         success = curl_upload('miniature')
-        
-        # Change back to original directory
-        os.chdir(original_cwd)
         
         if success:
             print(f"   ✅ Successfully uploaded MiniatureBearingsWebPage")
