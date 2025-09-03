@@ -86,6 +86,52 @@ def get_model_upload_info(page_type):
         '6219': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6219'},
         '6220': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6220'},
         
+        # 6000 series (4-digit models starting with 60)
+        '6000': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6000'},
+        '6001': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6001'},
+        '6002': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6002'},
+        '6003': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6003'},
+        '6004': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6004'},
+        '6005': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6005'},
+        '6006': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6006'},
+        '6007': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6007'},
+        '6008': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6008'},
+        '6009': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6009'},
+        '6010': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6010'},
+        '6011': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6011'},
+        '6012': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6012'},
+        '6013': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6013'},
+        '6014': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6014'},
+        '6015': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6015'},
+        '6016': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6016'},
+        '6017': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6017'},
+        '6018': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6018'},
+        '6019': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6019'},
+        '6020': {'series': '6000-series/6000-series-internal-pages-deployment', 'model': '6020'},
+        
+        # 62200 series (5-digit models starting with 622)
+        '62200': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62200'},
+        '62201': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62201'},
+        '62202': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62202'},
+        '62203': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62203'},
+        '62204': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62204'},
+        '62205': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62205'},
+        '62206': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62206'},
+        '62207': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62207'},
+        '62208': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62208'},
+        '62209': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62209'},
+        '62210': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62210'},
+        '62211': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62211'},
+        '62212': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62212'},
+        '62213': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62213'},
+        '62214': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62214'},
+        '62215': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62215'},
+        '62216': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62216'},
+        '62217': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62217'},
+        '62218': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62218'},
+        '62219': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62219'},
+        '62220': {'series': '62200-series/62200-series-internal-pages-deployment', 'model': '62220'},
+        
         # Special 12.7mm bore variants and special models
         '6201 12.7': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6201 12.7'},
         '6202 12.7': {'series': '6200-series/6200-series-internal-pages-deployment', 'model': '6202 12.7'},
@@ -260,8 +306,8 @@ def curl_upload(page_type='miniature'):
 
 def main():
     parser = argparse.ArgumentParser(description='Upload bearing page via curl')
-    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6200', '6201', '6202', '6203', '6204', '6205', '6206', '6207', '6208', '6209', '6210', '6211', '6212', '6213', '6214', '6215', '6216', '6217', '6218', '6219', '6220', '62200', '62201', '62202', '62203', '62204', '62205', '62206', '62207', '62208', '62209', '62210', '62211', '62212', '62213', '62214', '62215', '62216', '62217', '62218', '62219', '62220'], 
-                       help='Which page to upload (miniature, series, or model pages like 604, 607, 608, 6200, 6201, 62200, 62201, etc.). If not specified, uploads all pages.')
+    parser.add_argument('--page', choices=['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6000', '6001', '6002', '6003', '6004', '6005', '6006', '6007', '6008', '6009', '6010', '6011', '6012', '6013', '6014', '6015', '6016', '6017', '6018', '6019', '6020', '6200', '6201', '6202', '6203', '6204', '6205', '6206', '6207', '6208', '6209', '6210', '6211', '6212', '6213', '6214', '6215', '6216', '6217', '6218', '6219', '6220', '62200', '62201', '62202', '62203', '62204', '62205', '62206', '62207', '62208', '62209', '62210', '62211', '62212', '62213', '62214', '62215', '62216', '62217', '62218', '62219', '62220'], 
+                       help='Which page to upload (miniature, series, or model pages like 604, 607, 608, 6000, 6001, 6200, 6201, 62200, 62201, etc.). If not specified, uploads all pages.')
     args = parser.parse_args()
     
     if args.page:
@@ -271,7 +317,7 @@ def main():
             exit(1)
     else:
         # Upload all pages
-        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '62200', '62201', '62202', '62203', '62204', '62205', '62206', '62207', '62208', '62209', '62210', '62211', '62212', '62213', '62214', '62215', '62216', '62217', '62218', '62219', '62220']
+        all_pages = ['miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900', 'specs', '604', '605', '606', '607', '608', '609', '623', '624', '625', '626', '627', '628', '629', '634', '635', '683', '684', '685', '686', '687', '688', '689', '693', '694', '695', '696', '697', '698', '699', '6000', '6001', '6002', '6003', '6004', '6005', '6006', '6007', '6008', '6009', '6010', '6011', '6012', '6013', '6014', '6015', '6016', '6017', '6018', '6019', '6020', '62200', '62201', '62202', '62203', '62204', '62205', '62206', '62207', '62208', '62209', '62210', '62211', '62212', '62213', '62214', '62215', '62216', '62217', '62218', '62219', '62220']
         print("🚀 No specific page specified. Uploading ALL pages...")
         print("=" * 60)
         

@@ -16,6 +16,7 @@ EXCLUDED SERIES:
 
 INCLUDED SERIES:
 ================
+- 6000 series (6000, 6001, 6002, 6003, 6004, 6005, 6006, 6007, 6008, 6009, 6010, 6011, 6012, 6013, 6014, 6015, 6016, 6017, 6018, 6019, 6020)
 - 6200 series (6200, 6201, 6202, 6203, 6204, 6205, 6206, 6207, 6208, 6209, 6210, 6211, 6212, 6213, 6214, 6215, 6216, 6217, 6218, 6219, 6220)
 - 6300 series (6300, 6301, 6302, 6303, 6304, 6305, 6306, 6307, 6308, 6309, 6310, 6311, 6312, 6313, 6314, 6315, 6316, 6317, 6318, 6319, 6320)
 - 16000 series (16000, 16001, 16002, 16003, 16004, 16005, 16006, 16007, 16008, 16009, 16010, 16011, 16012, 16013, 16014, 16015, 16016, 16017, 16018, 16019, 16020)
@@ -30,11 +31,13 @@ USAGE:
 python3 scripts/generate_universal_bearing_pages.py
 
 # Run specific series
+python3 scripts/generate_universal_bearing_pages.py --6000-series
 python3 scripts/generate_universal_bearing_pages.py --6200-series
 python3 scripts/generate_universal_bearing_pages.py --6300-series
 python3 scripts/generate_universal_bearing_pages.py --16000-series
 
 # Run multiple series
+python3 scripts/generate_universal_bearing_pages.py --6000-series --6200-series
 python3 scripts/generate_universal_bearing_pages.py --6200-series --6300-series
 
 REQUIREMENTS:

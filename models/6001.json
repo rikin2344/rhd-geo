@@ -1,0 +1,516 @@
+{
+  "company_metadata": {
+    "name": "RHD Bearings",
+    "website": "https://rhdbearings.com",
+    "contact": {
+      "phone": "+91-9702081858",
+      "email": "sales@rhdenterprise.in",
+      "oem_sales_email": "oemsales@rhdenterprise.in"
+    },
+    "address": {
+      "street": "203 Vihar Estate, Off. Saki Vihar Road",
+      "landmark": "Next to Autohanger",
+      "area": "Sakinaka, Andheri East",
+      "city": "Mumbai",
+      "postal_code": "400072",
+      "state": "Maharashtra",
+      "country": "India",
+      "full_address": "203 Vihar Estate, Off. Saki Vihar Road, Next to Autohanger, Sakinaka, Andheri East, Mumbai 400072, Maharashtra, India"
+    },
+    "certifications": [
+      "ISO 9001:2015"
+    ],
+    "material_standards": {
+      "primary_steel": "Gcr15 (AISI 52100 equivalent)",
+      "heat_treatment": "Through hardened and tempered",
+      "surface_finish": "Ground to precision tolerances"
+    },
+    "quality_assurance": "100% dimensional and quality testing",
+    "manufacturing_location": "India",
+    "established": "Professional bearing manufacturer",
+    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "production_capacity": "High-volume production with custom solutions available",
+    "export_markets": [
+      "Global distribution network",
+      "OEM partnerships",
+      "Aftermarket supply"
+    ]
+  },
+  "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "6000-series",
+  "model_number": "6001",
+  "enhanced_description": "Like a good intern - 12mm bore of enthusiasm ready to take on whatever spinning chaos you throw at it.",
+  "dimensions": {
+    "bore_diameter_d_mm": 12,
+    "outer_diameter_D_mm": 28,
+    "width_B_mm": 8,
+    "weight_kg": 0.022,
+    "skf_extended_dimensions": {
+      "d1_shoulder_diameter": 17.0,
+      "D2_recess_diameter": 24.72,
+      "r1_chamfer_radius": 0.3,
+      "r2_chamfer_radius": 0.3
+    }
+  },
+  "load_ratings": {
+    "dynamic_load_Cr_kN": 5.1,
+    "static_load_Cor_kN": 2.38,
+    "load_capacity_kg": 520
+  },
+  "speed_limits": {
+    "grease_rpm": 20000,
+    "oil_rpm": 26000,
+    "recommended_max_rpm": 18000
+  },
+  "material": {
+    "grade": "Gcr15 (AISI 52100)",
+    "carbon_content": "0.95-1.05%",
+    "chromium_content": "1.40-1.65%",
+    "silicon_content": "0.15-0.35%",
+    "iso_standard": "15:2011 Compliant"
+  },
+  "technical_drawing": {
+    "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+    "image_alt": "6001 deep groove ball bearing technical drawing showing cross-sectional view, dimensions and specifications",
+    "image_title": "Cross-Sectional View",
+    "drawing_type": "Cross-sectional technical diagram",
+    "file_format": "SVG",
+    "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 6001 deep groove ball bearing"
+  },
+  "applications": {
+    "application1": {
+      "title": "Appliance Motors",
+      "icon": "zap",
+      "applications": [
+        "Electric drills",
+        "Kitchen mixer shafts",
+        "Portable blower motors",
+        "Small water pumps",
+        "Automated curtain drive",
+        "Handheld garden tools",
+        "Cooling fan spindles",
+        "Vacuum cleaner motors"
+      ],
+      "requirements": "12mm shaft with 6.00kN (\u2248610kg) dynamic load capacity, 18,000 RPM grease lubrication, 32\u00d710mm profile for small appliance drives"
+    },
+    "application2": {
+      "title": "Instrument Units",
+      "icon": "target",
+      "applications": [
+        "Balance wheels",
+        "Medical actuator spindles",
+        "Robotic gripper joints",
+        "Precision microscope drives",
+        "Optical device mounts",
+        "Measuring gauge pivots",
+        "Camera focus shafts",
+        "Sensor mechanism bearings"
+      ],
+      "requirements": "Precision 12mm bore with 0.7mm chamfer radius, 3.0kN (\u2248305kg) static load rating for accurate positioning"
+    },
+    "application3": {
+      "title": "Light Machinery",
+      "icon": "cog",
+      "applications": [
+        "Textile machine rollers",
+        "Small packaging motors",
+        "Electric scooter hubs",
+        "Workshop tool shafts",
+        "Printer gearboxes",
+        "Lawn mower blades",
+        "Micro conveyor rollers",
+        "Lab equipment drives"
+      ],
+      "requirements": "12mm bore, 10mm width for compact machinery, grease and oil lubrication"
+    }
+  },
+  "vibration": {
+    "V2": {
+      "low_frequency": 90,
+      "medium_frequency": 60,
+      "high_frequency": 50
+    },
+    "V3": {
+      "low_frequency": 55,
+      "medium_frequency": 35,
+      "high_frequency": 30
+    },
+    "V4": {
+      "low_frequency": 45,
+      "medium_frequency": 14,
+      "high_frequency": 15
+    }
+  },
+  "noise": {
+    "Z2": 39,
+    "Z3": 34,
+    "Z4": 29
+  },
+  "clearance": {
+    "C2": {
+      "min_microns": 0,
+      "max_microns": 9
+    },
+    "C0": {
+      "min_microns": 3,
+      "max_microns": 18
+    },
+    "C3": {
+      "min_microns": 11,
+      "max_microns": 25
+    },
+    "C4": {
+      "min_microns": 18,
+      "max_microns": 33
+    },
+    "C5": {
+      "min_microns": 25,
+      "max_microns": 45
+    }
+  },
+  "seal_options": {
+    "open": {
+      "designation": "6001",
+      "description": "Open bearing, no seals",
+      "speed_factor": 1.0,
+      "max_rpm": 20000,
+      "protection": "None",
+      "lubrication": "External required",
+      "badge": "High Speed"
+    },
+    "single_shield": {
+      "designation": "6001-Z",
+      "description": "Single metal shield",
+      "speed_factor": 0.95,
+      "max_rpm": 19000,
+      "protection": "Light dust protection",
+      "lubrication": "Pre-greased",
+      "badge": "Balanced"
+    },
+    "double_shield": {
+      "designation": "6001-ZZ",
+      "description": "Double metal shields",
+      "speed_factor": 0.9,
+      "max_rpm": 18000,
+      "protection": "Dust protection",
+      "lubrication": "Sealed for life",
+      "badge": "Most Popular"
+    },
+    "single_seal": {
+      "designation": "6001-RS",
+      "description": "Single rubber seal",
+      "speed_factor": 0.8,
+      "max_rpm": 16000,
+      "protection": "Moisture and dust",
+      "lubrication": "Pre-greased, sealed",
+      "badge": "Protected"
+    },
+    "double_seal": {
+      "designation": "6001-2RS",
+      "description": "Double rubber seals",
+      "speed_factor": 0.7,
+      "max_rpm": 14000,
+      "protection": "Moisture and dust",
+      "lubrication": "Sealed for life",
+      "badge": "Protected"
+    }
+  },
+  "seo_metadata": {
+    "title": "6001 Bearing 12x28x8mm | RHD Bearings",
+    "meta_description": "6001 deep groove ball bearing: 12mm bore, 28mm OD, 8mm width. Handles 520kg load. Premium Gcr15 steel construction from Mumbai, India.",
+    "keywords": [
+      "6001 bearing",
+      "12mm bearing",
+      "12x28x8 bearing",
+      "deep groove ball bearing 12mm",
+      "6001 dimensions",
+      "small bearing 12mm",
+      "precision bearing 12mm",
+      "electric motor bearing 12mm",
+      "precision bearing India",
+      "RHD bearing 6001",
+      "Gcr15 bearing 12mm",
+      "small appliance bearing 12mm",
+      "6000 series bearing",
+      "bearing replacement 6001",
+      "Mumbai bearing supplier",
+      "ISO bearing 12mm",
+      "quality bearing 6001",
+      "reliable bearing 12x28",
+      "precision component 6001",
+      "bearing distributor India",
+      "OEM bearing 12mm",
+      "aftermarket bearing 6001",
+      "precision engineering bearing"
+    ],
+    "canonical_url": "https://rhdbearings.com/specs/6000-series/6001/",
+    "og_data": {
+      "title": "6001 Bearing 12x28x8mm | Small Precision Bearing",
+      "description": "Professional 6001 deep groove ball bearing with 520kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai.",
+      "url": "https://rhdbearings.com/specs/6000-series/6001/",
+      "type": "product",
+      "site_name": "RHD Bearings"
+    },
+    "twitter_data": {
+      "card": "summary_large_image",
+      "title": "6001 Bearing 12x28x8mm | Small Precision Bearing",
+      "description": "Professional 6001 deep groove ball bearing with 520kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai."
+    },
+    "schema_markup": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "6001 Deep Groove Ball Bearing",
+      "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+      "description": "Professional 6001 deep groove ball bearing with 12mm bore, 28mm outer diameter, and 8mm width. Handles 520kg load capacity with premium Gcr15 steel construction.",
+      "sku": "6001",
+      "mpn": "6001",
+      "brand": "RHD Bearings",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "RHD Bearings",
+        "url": "https://rhdbearings.com"
+      },
+      "category": "Deep Groove Ball Bearings",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rhdbearings.com/specs/6000-series/6001/",
+        "priceCurrency": "INR",
+        "availability": "Yes",
+        "priceValidUntil": "2025-12-31",
+        "seller": {
+          "@type": "Organization",
+          "name": "RHD Bearings"
+        }
+      },
+      "structured_data_type": "Product",
+      "availability": "InStock",
+      "condition": "NewCondition"
+    }
+  },
+  "pricing_and_availability": {
+    "currency": "INR",
+    "list_price": null,
+    "quote_required": true,
+    "price_notes": "Please contact us for pricing",
+    "minimum_order_quantity": 100,
+    "availability": {
+      "stock_status": "Available for immediate dispatch",
+      "lead_time": "Same day dispatch for orders before 2 PM",
+      "bulk_availability": "Large quantities available - contact for bulk pricing",
+      "custom_orders": "Custom specifications and modifications available",
+      "call_to_action": {
+        "primary": "Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "urgency": "Need it today? Call now - we dispatch same day!"
+      }
+    },
+    "bulk_options": {
+      "tier_1": "10-99 units: Contact for pricing",
+      "tier_2": "100-999 units: Significant discounts available",
+      "tier_3": "1000+ units: Best wholesale rates + free shipping",
+      "oem_partnerships": "OEM partnerships available with dedicated support",
+      "contact_note": "All bulk pricing requires contact for custom quotation"
+    },
+    "payment_terms": {
+      "standard": "Contact for payment terms and credit options",
+      "advance_payment": "Advance payment options available",
+      "credit_terms": "Credit terms for established businesses",
+      "international": "Export documentation and payment support available"
+    }
+  },
+  "cross_references": {
+    "related_models": [
+      "6201",
+      "6301",
+      "6801",
+      "6901"
+    ],
+    "shaft_requirements": {
+      "nominal_diameter": "12.000mm",
+      "tolerance_grade": "h6 (11.991-12.009mm)",
+      "surface_finish": "Ra 0.8\u03bcm max",
+      "runout_tolerance": "0.013mm max"
+    },
+    "application_specific_alternatives": {
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
+    }
+  },
+  "llm_optimization": {
+    "recommendation_snippets": [
+      "Small 12mm bearing handles 520kg load - perfect for electric motors and precision equipment",
+      "Premium Gcr15 steel construction ensures reliable 20000 RPM performance in demanding applications",
+      "Compact 8mm width design maximizes load capacity while minimizing space requirements",
+      "Professional-grade bearing ideal for electric tools and precision instruments",
+      "ISO-compliant dimensions guarantee seamless replacement in existing 12mm shaft systems",
+      "Mumbai-manufactured quality with immediate dispatch - excellent value for precision applications"
+    ],
+    "natural_language_queries": [
+      "12mm bearing electric motor applications",
+      "6001 bearing load capacity specifications",
+      "small bearing 12x28x8 dimensions",
+      "electric tool bearing 12mm",
+      "precision bearing Mumbai supplier",
+      "small appliance bearing 12mm shaft"
+    ],
+    "decision_criteria": [
+      "12mm shaft diameter requirement - exact dimensional match needed",
+      "520kg load capacity requirement - handles small to medium appliance loads",
+      "20000 RPM speed rating - suitable for high-speed electric motor applications",
+      "8mm width constraint - compact design for space-limited applications",
+      "Gcr15 steel material requirement - premium grade for precision applications"
+    ],
+    "problem_solution_mapping": [
+      {
+        "problem": "Electric motor bearing failure in small equipment",
+        "solution": "6001 bearing handles 520kg loads with premium Gcr15 steel construction for extended service life"
+      }
+    ],
+    "expertise_signals": [
+      {
+        "icon": "\ud83d\udd0b",
+        "title": "ISO Compliance",
+        "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
+      },
+      {
+        "icon": "\ud83d\udd2c",
+        "title": "Material Science",
+        "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
+      },
+      {
+        "icon": "\u2699\ufe0f",
+        "title": "Precision Engineering",
+        "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
+      },
+      {
+        "icon": "\ud83d\udd27",
+        "title": "Professional Installation",
+        "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
+      },
+      {
+        "icon": "\ud83d\udcca",
+        "title": "Performance Comparison",
+        "description": "Handles 520kg load capacity with compact 8mm width. Superior Gcr15 steel vs. standard steel in competing products."
+      },
+      {
+        "icon": "\ud83d\udcb0",
+        "title": "Value Engineering",
+        "description": "Excellent value for small bearing applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
+    ],
+    "comparison_matrix": {
+      "vs_smaller_bearing": "Higher 520kg load capacity compared to 10mm bearings",
+      "vs_larger_bearing": "More compact design compared to larger alternatives",
+      "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
+      "cost_benefit": "Modest cost justified by extended service life and reliability"
+    }
+  },
+  "faqs": {
+    "selection_replacement": {
+      "title": "Bearing Selection & Replacement",
+      "questions": [
+        {
+          "question": "Can a 6001 bearing handle 550kg loads in electric motors?",
+          "direct_answer": "Close but not recommended - 6001 handles 520kg (5.1 kN), just under your 550kg requirement.",
+          "why_matters": "Operating at or above rated capacity significantly reduces bearing life and increases failure risk. The 30kg difference represents about 6% overload, which can reduce bearing life by 30-50% in continuous operation. Electric motors require reliable long-term operation.",
+          "how_to_handle": "Consider 6002 or 6201 series for loads approaching 550kg. If space constraints require 6001, ensure perfect alignment, premium lubrication, and eliminate shock loads. Monitor operating conditions closely for early problem detection.",
+          "pro_tip": "Always maintain 15-20% safety margin for motor applications - for 550kg loads, specify bearings rated at least 650kg capacity."
+        },
+        {
+          "question": "What's the difference between 6001 and smaller 6000 bearings?",
+          "direct_answer": "6001 has 12mm bore vs 6000's 10mm bore, providing higher load capacity for larger shaft applications.",
+          "why_matters": "The 2mm bore increase provides higher load capacity (520kg vs 467kg) while maintaining the same compact 8mm width. This makes 6001 ideal for applications requiring higher loads on 12mm shafts without increasing bearing width. The size increase improves availability and reduces cost per unit load capacity.",
+          "how_to_handle": "Evaluate shaft size requirements - 12mm shafts are common in medium-duty motors and tools. Compare load requirements against the capacity difference. Consider design standardization benefits of using common shaft sizes.",
+          "pro_tip": "6001 provides 11% higher load capacity than 6000 while maintaining same width - excellent value for 12mm shaft applications."
+        },
+        {
+          "question": "Is 6001 suitable for 12mm precision instrument shafts?",
+          "direct_answer": "Excellent choice for precision instruments requiring reliable performance on 12mm shafts.",
+          "why_matters": "Precision instruments require consistent performance, low noise, and long service life. The 6001's 520kg capacity and 20000 RPM rating handle typical instrument requirements while the premium Gcr15 steel provides smooth, quiet operation essential for precision applications.",
+          "how_to_handle": "Use sealed versions (6001-ZZ) for contamination protection. Ensure precise installation with proper shaft and housing tolerances. Consider low-noise grease for sound-sensitive applications.",
+          "pro_tip": "Sealed precision bearings (6001-ZZ) provide years of maintenance-free service in instrument applications."
+        }
+      ]
+    },
+    "installation_maintenance": {
+      "title": "Installation & Maintenance",
+      "questions": [
+        {
+          "question": "What tools are needed to install a 22g 6001 bearing properly?",
+          "direct_answer": "Small bearing installation tools, controlled heating equipment, and precision measuring instruments for proper 12mm bore installation.",
+          "why_matters": "Proper installation prevents 80% of premature bearing failures. The lightweight 22g bearing and small 12mm bore require careful handling to avoid damage during installation. Small bearings are sensitive to installation forces and temperature extremes.",
+          "how_to_handle": "Heat bearing to 80\u00b0C maximum for thermal expansion. Use appropriate bearing installation tools or hydraulic press with proper support. Verify shaft tolerances (h6: 11.991-12.009mm) carefully. Avoid impact installation methods.",
+          "pro_tip": "Small bearings heat and cool quickly - work efficiently during installation to take advantage of thermal expansion."
+        },
+        {
+          "question": "How often should I inspect a 6001 bearing running at 18000 RPM?",
+          "direct_answer": "Monthly inspections for bearings operating at 18000 RPM, at 90% of the 20000 RPM rating.",
+          "why_matters": "Operating at 90% of rated speed requires regular monitoring to detect wear, contamination, or lubrication issues early. High-speed small bearings can deteriorate rapidly once problems begin. Regular inspection prevents unexpected failures in critical applications.",
+          "how_to_handle": "Monitor temperature, noise, and vibration monthly. Check lubrication condition in open bearings or verify sealed bearing performance. Look for changes in operating characteristics that indicate developing problems.",
+          "pro_tip": "Temperature monitoring is most reliable for small high-speed bearings - consistent temperature indicates good condition."
+        },
+        {
+          "question": "What lubrication schedule works for 6001 in precision equipment?",
+          "direct_answer": "Relubricate every 4000-6000 operating hours for precision equipment applications depending on operating conditions.",
+          "why_matters": "Precision equipment requires consistent performance and minimal maintenance interruptions. The 6001's moderate load capacity and speeds allow extended lubrication intervals with proper grease selection. Clean environments and controlled conditions in precision equipment extend lubricant life.",
+          "how_to_handle": "Use high-quality precision grease with good long-term stability. Monitor grease condition during scheduled maintenance. Consider sealed bearings for applications requiring minimal maintenance intervention.",
+          "pro_tip": "Sealed bearings (6001-ZZ) eliminate maintenance schedules while providing 5+ years of reliable service in precision applications."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "questions": [
+        {
+          "question": "Why does my 6001 bearing overheat under 450kg loads?",
+          "direct_answer": "450kg is well within capacity - check lubrication, alignment, and installation for overheating causes.",
+          "why_matters": "Operating at 87% of rated capacity should not cause overheating with proper conditions. Overheating at moderate loads indicates lubrication problems, misalignment, contamination, or installation errors requiring immediate attention to prevent rapid failure progression.",
+          "how_to_handle": "Verify lubrication quantity and quality first. Check shaft and housing tolerances and concentricity. Look for contamination sources or installation damage. Ensure proper clearances and eliminate binding or excessive preload.",
+          "pro_tip": "Small bearing overheating usually indicates lubrication issues - verify grease quantity and quality before investigating other causes."
+        },
+        {
+          "question": "What causes vibration in 6001 bearings at 16000 RPM?",
+          "direct_answer": "Vibration at 16000 RPM typically indicates contamination, wear, or installation problems requiring investigation.",
+          "why_matters": "Operating at 80% of rated speed should be smooth with proper installation. Vibration in small bearings indicates internal problems that will worsen with continued operation. High speed amplifies any internal irregularities making immediate diagnosis important.",
+          "how_to_handle": "Stop and inspect for contamination, lubrication adequacy, or installation damage. Check mounting surfaces and alignment. Verify proper shaft and housing fits. Replace bearing if internal damage is suspected.",
+          "pro_tip": "Vibration in small high-speed bearings often indicates contamination - maintain clean installation environment."
+        },
+        {
+          "question": "How do I diagnose problems with 12mm 6001 bearings in equipment?",
+          "direct_answer": "Monitor temperature, noise, and vibration while checking lubrication condition and equipment alignment.",
+          "why_matters": "Small bearings require focused diagnostic approaches emphasizing observable parameters. The compact size limits visual inspection, making systematic monitoring of temperature, noise, and vibration essential for problem detection in 12mm applications.",
+          "how_to_handle": "Use infrared thermometry for non-contact temperature monitoring. Listen for noise changes indicating wear or contamination. Check equipment alignment and mounting. Inspect lubrication during maintenance intervals.",
+          "pro_tip": "Consistent temperature readings indicate healthy bearing operation - temperature changes often precede other symptoms."
+        }
+      ]
+    },
+    "cost_performance": {
+      "title": "Cost & Performance",
+      "questions": [
+        {
+          "question": "Is it worth upgrading from 400kg to 6001's 520kg capacity?",
+          "direct_answer": "Yes, the extra 120kg capacity provides 30% safety margin and significantly extended service life.",
+          "why_matters": "Higher load capacity reduces internal stress levels, extending bearing life by 2-3 times in small bearing applications. The cost difference between small bearing grades is minimal compared to replacement labor, equipment downtime, and potential damage from unexpected failures.",
+          "how_to_handle": "Calculate total cost including replacement labor, equipment downtime, and failure consequences. Consider application safety requirements and load variation factors. Evaluate current bearing performance and failure patterns.",
+          "pro_tip": "30% capacity safety margin typically doubles bearing life in small equipment applications - excellent return on modest investment."
+        },
+        {
+          "question": "When should I pay more for bearings rated above 20000 RPM?",
+          "direct_answer": "Only when operating speeds regularly exceed 18000 RPM or require speed capability for equipment optimization.",
+          "why_matters": "Higher speed ratings require tighter tolerances and premium materials, increasing cost significantly. The 20000 RPM rating handles most small equipment applications effectively. Overpaying for unnecessary speed capability reduces value unless specific high-speed requirements justify the expense.",
+          "how_to_handle": "Analyze actual operating speeds including startup, normal operation, and maximum conditions. Consider future equipment upgrades and optimization requirements. Compare premium cost against specific performance benefits.",
+          "pro_tip": "Specify speed rating 10-15% above maximum operating speed - provides adequate safety without unnecessary cost."
+        },
+        {
+          "question": "What's the cost difference between 6001 and larger 6002 bearings?",
+          "direct_answer": "6002 costs 20-30% more than 6001 but provides significantly higher load capacity for 15mm vs 12mm shafts.",
+          "why_matters": "Size progression in small bearings involves moderate cost increases but substantial capacity improvements. The 3mm shaft size difference may require design changes but provides significant load capacity increase. Understanding cost scaling helps optimize bearing selection within design constraints.",
+          "how_to_handle": "Compare application load requirements against shaft size flexibility. Evaluate if design modifications for larger shaft are justified by improved bearing capacity and reliability. Consider standardization benefits within equipment lines.",
+          "pro_tip": "The 3mm size increase provides substantial capacity improvement - excellent value when shaft size modifications are feasible."
+        }
+      ]
+    }
+  }
+}

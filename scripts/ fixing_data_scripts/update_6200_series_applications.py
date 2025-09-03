@@ -5,23 +5,23 @@ import os
 from pathlib import Path
 
 def update_6200_series_applications():
-    """Update applications section in all 62200-62220 model JSON files"""
+    """Update applications section in all 6000-6020 model JSON files"""
     
     # Load the applications data from the reference file
     applications_file = Path('docs/6200 Series Applications.json')
     models_dir = Path('models/')
     
-    print('=== UPDATING 62200 SERIES APPLICATIONS ===\n')
+    print('=== UPDATING 6000 SERIES APPLICATIONS ===\n')
     
     # Read the applications data
     with open(applications_file, 'r', encoding='utf-8') as f:
         applications_data = json.load(f)
     
-    # Process each model from 62200 to 62220
+    # Process each model from 6000 to 6020
     updated_count = 0
     total_count = 0
     
-    for model_num in range(62200, 62221):
+    for model_num in range(6000, 6021):
         model_file = models_dir / f'{model_num}.json'
         
         if not model_file.exists():

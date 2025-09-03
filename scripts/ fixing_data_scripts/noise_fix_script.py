@@ -13,6 +13,8 @@ def get_bearing_series(model_number):
         return '6000_series'
     
     # For 4-digit models
+    if model.startswith('60'):
+        return '6000_series'
     if model.startswith('62'):
         return '6200_series'
     if model.startswith('63'):
