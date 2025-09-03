@@ -91,7 +91,7 @@
         "Cooling tower blowers",
         "Fume exhaust motors"
       ],
-      "requirements": "30mm shaft with 28.1kN (≈2,865kg) dynamic load, 6,300 RPM grease lubrication, 72×19mm designed for air movement machinery"
+      "requirements": "30mm shaft with 28.1kN (\u22482,865kg) dynamic load, 6,300 RPM grease lubrication, 72\u00d719mm designed for air movement machinery"
     },
     "application2": {
       "title": "Feed Rollers",
@@ -106,7 +106,7 @@
         "Rubber sheeting rollers",
         "Press delivery rolls"
       ],
-      "requirements": "Precision 30mm bore, 16kN (≈1,630kg) static load, for reliable linear movement"
+      "requirements": "Precision 30mm bore, 16kN (\u22481,630kg) static load, for reliable linear movement"
     },
     "application3": {
       "title": "Transport Movers",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6306 Bearing 30×72×19mm Deep Groove Ball Bearing | RHD",
+    "title": "6306 Bearing 30\u00d772\u00d719mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6306 deep groove ball bearing with 30mm bore, 72mm OD, 19mm width. 27.00kN dynamic load, 2754kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6306 bearing",
@@ -247,7 +247,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6306/",
     "og_data": {
-      "title": "6306 Deep Groove Ball Bearing - 30×72×19mm | RHD Bearings",
+      "title": "6306 Deep Groove Ball Bearing - 30\u00d772\u00d719mm | RHD Bearings",
       "description": "High-quality 6306 bearing with 27.00kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6306/",
       "type": "product",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "30.000mm",
       "tolerance_grade": "h6 (29.987-30.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -347,7 +347,7 @@
       "Use 6306-RS in moisture-prone environments requiring 7,200 RPM with rubber seal protection",
       "Consider 6306 for machinery where 19mm width and 0.349kg weight ensure robust design",
       "Opt for 6306 in industrial applications needing 30mm bore with 2754kg load capacity",
-      "Deploy 6306 in automation systems requiring 9,000 RPM grease lubrication with 72×19mm profile"
+      "Deploy 6306 in automation systems requiring 9,000 RPM grease lubrication with 72\u00d719mm profile"
     ],
     "natural_language_queries": [
       "6306 bearing dimensions",
@@ -367,7 +367,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 30mm shaft with high load capacity",
-        "solution": "6306 bearing provides 27.00kN dynamic load in 72×19mm profile"
+        "solution": "6306 bearing provides 27.00kN dynamic load in 72\u00d719mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
@@ -380,38 +380,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 4.80kN higher dynamic load than 6305 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 27.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6306 provides 4.80kN higher dynamic load than 6305 while maintaining compact 72×19mm profile",
+      "vs_smaller_bearing": "6306 provides 4.80kN higher dynamic load than 6305 while maintaining compact 72\u00d719mm profile",
       "vs_larger_bearing": "6306 offers 4.80kN lower load than 6307 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6306 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6306 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -430,7 +430,7 @@
         },
         {
           "question": "Can I replace a 6306 bearing with a different size bearing?",
-          "direct_answer": "No, 6306 bearings have unique 30×72×19mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6306 bearings have unique 30\u00d772\u00d719mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6306 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6306 bearings in stock to avoid production delays and ensure consistent quality."

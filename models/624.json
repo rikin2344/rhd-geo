@@ -91,7 +91,7 @@
         "optical systems",
         "measurement devices"
       ],
-      "requirements": "4mm shaft with 1.15kN dynamic load capacity, 36,000 RPM grease lubrication, precision 13×5mm profile for high-speed applications"
+      "requirements": "4mm shaft with 1.15kN dynamic load capacity, 36,000 RPM grease lubrication, precision 13\u00d75mm profile for high-speed applications"
     },
     "application2": {
       "title": "Compact Automation",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "624 Bearing 4×13×5mm Deep Groove Ball Bearing | RHD",
+    "title": "624 Bearing 4\u00d713\u00d75mm Deep Groove Ball Bearing | RHD",
     "meta_description": "624 deep groove ball bearing with 4mm bore, 13mm OD, 5mm width. 1.15kN dynamic load, 117kg capacity. Perfect for high-speed precision, automation, electronics.",
     "keywords": [
       "624 bearing",
@@ -246,7 +246,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/624/",
     "og_data": {
-      "title": "624 Deep Groove Ball Bearing - 4×13×5mm | RHD Bearings",
+      "title": "624 Deep Groove Ball Bearing - 4\u00d713\u00d75mm | RHD Bearings",
       "description": "High-speed precision 624 miniature bearing with 1.15kN dynamic load capacity. Perfect for precision systems, automation, and consumer electronics.",
       "url": "https://rhdbearings.com/specs/miniature-series/624/",
       "type": "product",
@@ -300,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -330,7 +330,7 @@
     "shaft_requirements": {
       "nominal_diameter": "4.000mm",
       "tolerance_grade": "h6 (3.991-4.009mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -344,7 +344,7 @@
       "Choose 624 for 4mm shafts requiring 1.15kN dynamic load capacity in high-speed precision applications",
       "Select 624-ZZ for dust protection with 32,400 RPM capability and sealed-for-life lubrication",
       "Use 624-RS in moisture-prone environments requiring 28,800 RPM with rubber seal protection",
-      "Consider 624 for high-speed motors where 13×5mm profile and 117kg load capacity optimize performance",
+      "Consider 624 for high-speed motors where 13\u00d75mm profile and 117kg load capacity optimize performance",
       "Opt for 624 in automation systems needing 0.2mm chamfer radius and stable positioning",
       "Deploy 624 in consumer electronics requiring 36,000 RPM grease lubrication with compact design"
     ],
@@ -366,7 +366,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need high-speed bearing for 4mm shaft with precision load capacity",
-        "solution": "624 bearing provides 1.15kN dynamic load in 13×5mm profile"
+        "solution": "624 bearing provides 1.15kN dynamic load in 13\u00d75mm profile"
       },
       {
         "problem": "Require dust protection in high-speed precision application",
@@ -379,32 +379,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "4mm bore with 1.15kN load capacity and 36,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in miniature bearing category for 1.15kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -429,7 +429,7 @@
         },
         {
           "question": "Can I replace a 624 bearing with a different size bearing?",
-          "direct_answer": "No, 624 bearings have unique 4×13×5mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 624 bearings have unique 4\u00d713\u00d75mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 624 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 624 bearings in stock to avoid production delays and ensure consistent quality."

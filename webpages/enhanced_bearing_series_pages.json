@@ -664,7 +664,7 @@
     "6000_series": {
       "series_name": "6000 Series Deep Groove Ball Bearings",
       "series_code": "6000-6020",
-      "url": "/6000-series",
+      "url": "/specs/6000-series",
       "total_models": 21,
       "bore_range": "10mm - 100mm",
       "model_range": "6000 to 6020",
@@ -1160,7 +1160,7 @@
     "6200_series": {
       "series_name": "6200 Series Deep Groove Ball Bearings",
       "series_code": "6200-6220",
-      "url": "/6200-series",
+      "url": "/specs/6200-series",
       "total_models": 21,
       "bore_range": "10mm - 100mm",
       "model_range": "6200 to 6220",
@@ -1655,7 +1655,7 @@
     "6300_series": {
       "series_name": "6300 Series Deep Groove Ball Bearings",
       "series_code": "6300-6320",
-      "url": "/6300-series",
+      "url": "/specs/6300-series",
       "total_models": 21,
       "bore_range": "10mm - 100mm",
       "model_range": "6300 to 6320",
@@ -2150,7 +2150,7 @@
     "62200_series": {
       "series_name": "62200 Series Wide Inner Ring Ball Bearings",
       "series_code": "62200-62220",
-      "url": "/62200-series",
+      "url": "/specs/62200-series",
       "total_models": 21,
       "bore_range": "10mm - 100mm",
       "model_range": "62200 to 62220",
@@ -2644,7 +2644,7 @@
     "62300_series": {
       "series_name": "62300 Series Extra Wide Inner Ring Ball Bearings",
       "series_code": "62301-62320",
-      "url": "/62300-series",
+      "url": "/specs/62300-series",
       "total_models": 20,
       "bore_range": "12mm - 100mm",
       "model_range": "62301 to 62320",
@@ -3124,7 +3124,7 @@
     "16000_series": {
       "series_name": "16000 Series Thin Section Ball Bearings",
       "series_code": "16001-16020",
-      "url": "/16000-series",
+      "url": "/specs/16000-series",
       "total_models": 20,
       "bore_range": "12mm - 100mm",
       "model_range": "16001 to 16020",
@@ -3600,7 +3600,7 @@
     "6800_series": {
       "series_name": "6800 Series Thin Section Light Ball Bearings",
       "series_code": "683-6820",
-      "url": "/6800-series",
+      "url": "/specs/6800-series",
       "total_models": 42,
       "bore_range": "3mm - 100mm",
       "model_range": "683 to 6820",
@@ -4176,7 +4176,7 @@
     "6900_series": {
       "series_name": "6900 Series Thin Section Medium Ball Bearings",
       "series_code": "6900-6920",
-      "url": "/6900-series",
+      "url": "/specs/6900-series",
       "total_models": 21,
       "bore_range": "10mm - 100mm",
       "model_range": "6900 to 6920",

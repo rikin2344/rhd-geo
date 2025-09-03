@@ -91,7 +91,7 @@
         "Loading dock equipment",
         "Industrial hoists"
       ],
-      "requirements": "60mm shaft with 30.0kN (≈3050kg) dynamic load capacity, 6,000 RPM grease lubrication, 110×22mm size for heavy materials"
+      "requirements": "60mm shaft with 30.0kN (\u22483050kg) dynamic load capacity, 6,000 RPM grease lubrication, 110\u00d722mm size for heavy materials"
     },
     "application2": {
       "title": "Scientific Gear",
@@ -106,7 +106,7 @@
         "High precision encoders",
         "Scientific instrument pivots"
       ],
-      "requirements": "60mm bore with 2.0mm chamfer, 20kN (≈2040kg) static load capacity, grease lubrication for precision"
+      "requirements": "60mm bore with 2.0mm chamfer, 20kN (\u22482040kg) static load capacity, grease lubrication for precision"
     },
     "application3": {
       "title": "Off-Road Vehicles",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6212 Bearing 60×110×22mm Deep Groove Ball Bearing | RHD",
+    "title": "6212 Bearing 60\u00d7110\u00d722mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6212 deep groove ball bearing with 60mm bore, 110mm OD, 22mm width. 61.00kN dynamic load, 6224kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6212 bearing",
@@ -251,7 +251,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6200-Series/6212/",
     "og_data": {
-      "title": "6212 Deep Groove Ball Bearing - 60×110×22mm | RHD Bearings",
+      "title": "6212 Deep Groove Ball Bearing - 60\u00d7110\u00d722mm | RHD Bearings",
       "description": "High-quality 6212 bearing with 61.00kN dynamic load capacity. Perfect for heavy machinery power transmission and precision applications.",
       "url": "https://rhdbearings.com/specs/6200-Series/6212/",
       "type": "product",
@@ -305,9 +305,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -335,7 +335,7 @@
     "shaft_requirements": {
       "nominal_diameter": "60.000mm",
       "tolerance_grade": "h6 (59.987-60.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -351,7 +351,7 @@
       "Use 6212-RS in moisture-prone environments requiring 6,000 RPM with rubber seal protection",
       "Consider 6212 for automotive components where 22mm width and 1.500kg weight ensure durability and reliability",
       "Opt for 6212 in precision applications needing 1.0mm chamfer radius and 6224kg load capacity",
-      "Deploy 6212 in power transmission systems requiring 7,500 RPM grease lubrication with 110×22mm profile"
+      "Deploy 6212 in power transmission systems requiring 7,500 RPM grease lubrication with 110\u00d722mm profile"
     ],
     "natural_language_queries": [
       "6212 bearing dimensions",
@@ -371,7 +371,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 60mm shaft with high load capacity",
-        "solution": "6212 bearing provides 61.00kN dynamic load in 110×22mm profile"
+        "solution": "6212 bearing provides 61.00kN dynamic load in 110\u00d722mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -384,38 +384,38 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 9.00kN higher dynamic load than 6211 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 61.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6212 provides 9.00kN higher dynamic load than 6211 while maintaining compact 110×22mm profile",
+      "vs_smaller_bearing": "6212 provides 9.00kN higher dynamic load than 6211 while maintaining compact 110\u00d722mm profile",
       "vs_larger_bearing": "6212 offers 9.00kN lower load than 6213 but with 3mm smaller diameter for space-constrained applications",
       "vs_competitors": "RHD 6212 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6212 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
@@ -434,7 +434,7 @@
         },
         {
           "question": "Can I replace a 6212 bearing with a different size bearing?",
-          "direct_answer": "No, 6212 bearings have unique 60×110×22mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6212 bearings have unique 60\u00d7110\u00d722mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6212 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6212 bearings in stock to avoid production delays and ensure consistent quality."

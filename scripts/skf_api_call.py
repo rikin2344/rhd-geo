@@ -33,6 +33,47 @@ class SKFAPIBearingScraper:
     
     def get_bearing_data(self, designation, system='metric'):
         """Fetch bearing data from SKF API"""
+        # Try with -2RS1 suffix first
+        designation_with_suffix = f"{designation}-2RS1"
+        
+        params = {
+            'designation': designation_with_suffix,
+            'language': 'en',
+            'system': system,  # 'metric' or 'imperial'
+            'searcher': 'details',
+            'site': '319'  # SKF Australia site
+        }
+        
+        try:
+            print(f"🔍 Fetching data for {designation_with_suffix} ({system})...")
+            
+            # Update referer for this specific bearing with -2RS1 suffix
+            self.session.headers['Referer'] = f'https://www.skf.com/my/products/rolling-bearings/ball-bearings/deep-groove-ball-bearings/productid-{designation_with_suffix}'
+            
+            response = self.session.get(self.api_base, params=params, timeout=10)
+            response.raise_for_status()
+            
+            data = response.json()
+            
+            if data and 'documentList' in data and 'documents' in data['documentList'] and len(data['documentList']['documents']) > 0:
+                print(f"✅ Successfully fetched data for {designation_with_suffix}")
+                return data['documentList']['documents'][0]  # First document should be exact match
+            else:
+                print(f"❌ No data found for {designation_with_suffix}")
+                return None
+                
+        except requests.RequestException as e:
+            print(f"❌ API request failed for {designation}: {e}")
+            return None
+        except json.JSONDecodeError as e:
+            print(f"❌ Invalid JSON response for {designation}: {e}")
+            return None
+        except Exception as e:
+            print(f"❌ Unexpected error for {designation}: {e}")
+            return None
+    
+    def get_bearing_data_without_suffix(self, designation, system='metric'):
+        """Fetch bearing data from SKF API without -2RS1 suffix"""
         params = {
             'designation': designation,
             'language': 'en',
@@ -42,10 +83,10 @@ class SKFAPIBearingScraper:
         }
         
         try:
-            print(f"🔍 Fetching data for {designation} ({system})...")
+            print(f"🔍 Fetching data for {designation} ({system}) without suffix...")
             
-            # Update referer for this specific bearing
-            self.session.headers['Referer'] = f'https://www.skf.com/au/products/rolling-bearings/ball-bearings/deep-groove-ball-bearings/productid-{designation}'
+            # Update referer for this specific bearing without suffix
+            self.session.headers['Referer'] = f'https://www.skf.com/my/products/rolling-bearings/ball-bearings/deep-groove-ball-bearings/productid-{designation}'
             
             response = self.session.get(self.api_base, params=params, timeout=10)
             response.raise_for_status()
@@ -133,11 +174,19 @@ class SKFAPIBearingScraper:
         print(f"\n🎯 Processing bearing: {designation}")
         print("=" * 50)
         
-        # Try both metric and imperial (sometimes different data available)
+        # Try with -2RS1 suffix first
         bearing_data = self.get_bearing_data(designation, 'metric')
         if not bearing_data:
             print("🔄 Trying imperial system...")
             bearing_data = self.get_bearing_data(designation, 'imperial')
+        
+        # If still no data, try without suffix
+        if not bearing_data:
+            print("🔄 Trying without -2RS1 suffix...")
+            bearing_data = self.get_bearing_data_without_suffix(designation, 'metric')
+            if not bearing_data:
+                print("🔄 Trying without suffix (imperial)...")
+                bearing_data = self.get_bearing_data_without_suffix(designation, 'imperial')
         
         if not bearing_data:
             return None
@@ -209,26 +258,10 @@ def main():
     
     scraper = SKFAPIBearingScraper()
     
-    # All bearing models from bearing_database.json
+    # 62300 series models (62301-62320)
     test_models = [
-    # Original models
-    '604', '605', '606', '607', '608', '609', 
-    '623', '624', '625', '626', '627', '628', '629', 
-    '634', '635', 
-    '683', '684', '685', '686', '687', '688', '689', 
-    '693', '694', '695', '696', '697', '698', '699',
-    
-    # 6000 series (6000-6020)
-    '6000', '6001', '6002', '6003', '6004', '6005', '6006', '6007', '6008', '6009', '6010',
-    '6011', '6012', '6013', '6014', '6015', '6016', '6017', '6018', '6019', '6020',
-    
-    # 6200 series (6200-6220)
-    '6200', '6201', '6202', '6203', '6204', '6205', '6206', '6207', '6208', '6209', '6210',
-    '6211', '6212', '6213', '6214', '6215', '6216', '6217', '6218', '6219', '6220',
-    
-    # 6300 series (6300-6320)
-    '6300', '6301', '6302', '6303', '6304', '6305', '6306', '6307', '6308', '6309', '6310',
-    '6311', '6312', '6313', '6314', '6315', '6316', '6317', '6318', '6319', '6320'
+        '62301', '62302', '62303', '62304', '62305', '62306', '62307', '62308', '62309', '62310',
+        '62311', '62312', '62313', '62314', '62315', '62316', '62317', '62318', '62319', '62320'
     ]
     
     results = scraper.scrape_multiple_bearings(test_models)

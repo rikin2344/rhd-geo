@@ -41,7 +41,7 @@ class Config:
     
     # URL structure
     URL_STRUCTURE = {
-        "base_url": "https://rhdbearings.com",
+        "base_url": "https://rhdbearings.com/specs",
         "series_pattern": "/{series}",
         "bearing_pattern": "/{series}/{model}"
     }
@@ -83,9 +83,11 @@ class Config:
         elif model.startswith('6220') or model.startswith('6221') or model.startswith('6222'):
             return "62200-series"
         
-        # 4-digit series
-        elif model.startswith('1600'):
+        # 5-digit series (16000 series)
+        elif model.startswith('16') and len(model) == 5:
             return "16000-series"
+        
+        # 4-digit series
         elif model.startswith('600') and len(model) == 4:
             return "6000-series"
         elif model.startswith('620') or model.startswith('621') or model.startswith('622'):

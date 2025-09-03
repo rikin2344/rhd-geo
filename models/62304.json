@@ -1,0 +1,518 @@
+{
+  "company_metadata": {
+    "name": "RHD Bearings",
+    "website": "https://rhdbearings.com",
+    "contact": {
+      "phone": "+91-9702081858",
+      "email": "sales@rhdenterprise.in",
+      "oem_sales_email": "oemsales@rhdenterprise.in"
+    },
+    "address": {
+      "street": "203 Vihar Estate, Off. Saki Vihar Road",
+      "landmark": "Next to Autohanger",
+      "area": "Sakinaka, Andheri East",
+      "city": "Mumbai",
+      "postal_code": "400072",
+      "state": "Maharashtra",
+      "country": "India",
+      "full_address": "203 Vihar Estate, Off. Saki Vihar Road, Next to Autohanger, Sakinaka, Andheri East, Mumbai 400072, Maharashtra, India"
+    },
+    "certifications": [
+      "ISO 9001:2015"
+    ],
+    "material_standards": {
+      "primary_steel": "Gcr15 (AISI 52100 equivalent)",
+      "heat_treatment": "Through hardened and tempered",
+      "surface_finish": "Ground to precision tolerances"
+    },
+    "quality_assurance": "100% dimensional and quality testing",
+    "manufacturing_location": "India",
+    "established": "Professional bearing manufacturer",
+    "specialization": "Deep groove ball bearings for automotive, industrial, and precision applications",
+    "production_capacity": "High-volume production with custom solutions available",
+    "export_markets": [
+      "Global distribution network",
+      "OEM partnerships",
+      "Aftermarket supply"
+    ]
+  },
+  "bearing_type": "Deep Groove Ball Bearing",
+  "bearing_series_name": "62300-series",
+  "model_number": "62304",
+  "enhanced_description": "Twenty millimeter bore with the robust build of a linebacker who also does poetry.",
+  "dimensions": {
+    "bore_diameter_d_mm": 20,
+    "outer_diameter_D_mm": 52,
+    "width_B_mm": 21,
+    "weight_kg": 0.22,
+    "skf_extended_dimensions": {
+      "d1_shoulder_diameter": 30.35,
+      "D2_recess_diameter": 44.71,
+      "r1_chamfer_radius": 1.1,
+      "r2_chamfer_radius": 1.1
+    }
+  },
+  "load_ratings": {
+    "dynamic_load_Cr_kN": 17.8,
+    "static_load_Cor_kN": 4.75,
+    "load_capacity_kg": 1816
+  },
+  "speed_limits": {
+    "grease_rpm": 14000,
+    "oil_rpm": 17000,
+    "recommended_max_rpm": 12600
+  },
+  "material": {
+    "grade": "Gcr15 (AISI 52100)",
+    "carbon_content": "0.95-1.05%",
+    "chromium_content": "1.40-1.65%",
+    "silicon_content": "0.15-0.35%",
+    "iso_standard": "15:2011 Compliant"
+  },
+  "technical_drawing": {
+    "image_url": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+    "image_alt": "62304 Bearing Cross-Sectional View",
+    "image_title": "Cross-Sectional View",
+    "drawing_type": "Cross-sectional technical diagram",
+    "file_format": "SVG",
+    "description": "Detailed technical drawing showing cross-sectional view, dimensions, and specifications for 62304 deep groove ball bearing"
+  },
+  "applications": {
+    "application1": {
+      "title": "HVAC Motors",
+      "icon": "zap",
+      "applications": [
+        "Commercial HVAC blower shafts",
+        "Air handling unit fans",
+        "Refrigeration blowers",
+        "Ventilation exhaust motors",
+        "Heating unit fans",
+        "Portable fan motors",
+        "Roof ventilation fan drives",
+        "Cleanroom air circulators"
+      ],
+      "requirements": "20mm shaft with 12.0kN (≈1,220kg) dynamic load capacity, 12,000 RPM grease lubrication, 52×21mm profile for HVAC applications"
+    },
+    "application2": {
+      "title": "Measurement Tools",
+      "icon": "target",
+      "applications": [
+        "Calibration device spindles",
+        "Precision rotary tables",
+        "Laboratory instrument pivots",
+        "Micrometer spindles",
+        "Scientific measurement arms",
+        "Test equipment pivots",
+        "Optical instrument movements",
+        "Robotic arm precision joints"
+      ],
+      "requirements": "Precision 20mm bore with 6.2kN (≈630kg) static load rating for accurate positioning"
+    },
+    "application3": {
+      "title": "Assembly Machinery",
+      "icon": "cog",
+      "applications": [
+        "Automated assembly line spindles",
+        "Packaging equipment rollers",
+        "Material handling arms",
+        "Textile machinery rollers",
+        "Food processing line spindles",
+        "Printer drive shafts",
+        "Material feeder shafts",
+        "Small machine tool spindles"
+      ],
+      "requirements": "20mm bore, 21mm width for assembly and manufacturing machinery"
+    }
+  },
+  "vibration": {
+    "V2": {
+      "low_frequency": 130,
+      "medium_frequency": 100,
+      "high_frequency": 75
+    },
+    "V3": {
+      "low_frequency": 80,
+      "medium_frequency": 60,
+      "high_frequency": 45
+    },
+    "V4": {
+      "low_frequency": 60,
+      "medium_frequency": 25,
+      "high_frequency": 25
+    }
+  },
+  "noise": {
+    "Z2": 42,
+    "Z3": 38,
+    "Z4": 33
+  },
+  "clearance": {
+    "C2": {
+      "min_microns": 0,
+      "max_microns": 10
+    },
+    "C0": {
+      "min_microns": 5,
+      "max_microns": 20
+    },
+    "C3": {
+      "min_microns": 13,
+      "max_microns": 28
+    },
+    "C4": {
+      "min_microns": 20,
+      "max_microns": 36
+    },
+    "C5": {
+      "min_microns": 28,
+      "max_microns": 48
+    }
+  },
+  "seal_options": {
+    "open": {
+      "designation": "62304",
+      "description": "Open bearing, no seals",
+      "speed_factor": 1.0,
+      "max_rpm": 14000,
+      "protection": "None",
+      "lubrication": "External required",
+      "badge": "High Speed"
+    },
+    "single_shield": {
+      "designation": "62304-Z",
+      "description": "Single metal shield",
+      "speed_factor": 0.95,
+      "max_rpm": 13300,
+      "protection": "Light dust protection",
+      "lubrication": "Pre-greased",
+      "badge": "Balanced"
+    },
+    "double_shield": {
+      "designation": "62304-ZZ",
+      "description": "Double metal shields",
+      "speed_factor": 0.9,
+      "max_rpm": 12600,
+      "protection": "Dust protection",
+      "lubrication": "Sealed for life",
+      "badge": "Most Popular"
+    },
+    "single_seal": {
+      "designation": "62304-RS",
+      "description": "Single rubber seal",
+      "speed_factor": 0.8,
+      "max_rpm": 11200,
+      "protection": "Moisture and dust",
+      "lubrication": "Pre-greased, sealed",
+      "badge": "Protected"
+    },
+    "double_seal": {
+      "designation": "62304-2RS",
+      "description": "Double rubber seals",
+      "speed_factor": 0.7,
+      "max_rpm": 9800,
+      "protection": "Moisture and dust",
+      "lubrication": "Sealed for life",
+      "badge": "Protected"
+    }
+  },
+  "seo_metadata": {
+    "title": "62304 Bearing 20x52x21mm | RHD Bearings",
+    "meta_description": "62304 deep groove ball bearing: 20x52x21mm, 1816kg load capacity, 14,000 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "keywords": [
+      "62304 bearing",
+      "20mm bore bearing",
+      "52mm outer diameter bearing",
+      "21mm width bearing",
+      "deep groove ball bearing",
+      "62304 dimensions",
+      "62304 specifications",
+      "62304 load rating",
+      "62304 speed rating",
+      "62304 weight",
+      "62304 seal options",
+      "62304 clearance",
+      "62304 vibration",
+      "62304 noise",
+      "62304 applications",
+      "62304 replacement",
+      "62304 cross reference",
+      "62304 shaft requirements",
+      "62304 installation",
+      "62304 maintenance",
+      "62304 troubleshooting",
+      "62304 price",
+      "62304 availability",
+      "RHD bearings 62304",
+      "Mumbai bearing manufacturer"
+    ],
+    "canonical_url": "https://rhdbearings.com/specs/62300-series/62304/",
+    "og_data": {
+      "title": "62304 Bearing 20x52x21mm | RHD Bearings",
+      "description": "62304 deep groove ball bearing: 20x52x21mm, 1816kg load capacity, 14,000 RPM. Professional grade Gcr15 steel.",
+      "url": "https://rhdbearings.com/specs/62300-series/62304/",
+      "type": "product",
+      "site_name": "RHD Bearings"
+    },
+    "twitter_data": {
+      "card": "summary_large_image",
+      "title": "62304 Bearing 20x52x21mm | RHD Bearings",
+      "description": "62304 deep groove ball bearing: 20x52x21mm, 1816kg load capacity, 14,000 RPM. Professional grade Gcr15 steel."
+    },
+    "schema_markup": {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "62304 Deep Groove Ball Bearing",
+      "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
+      "description": "62304 deep groove ball bearing: 20x52x21mm, 1816kg load capacity, 14,000 RPM. Professional grade Gcr15 steel.",
+      "sku": "62304",
+      "mpn": "62304",
+      "brand": "RHD Bearings",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "RHD Bearings",
+        "url": "https://rhdbearings.com"
+      },
+      "category": "Deep Groove Ball Bearings",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://rhdbearings.com/specs/62300-series/62304/",
+        "priceCurrency": "INR",
+        "availability": "Yes",
+        "priceValidUntil": "2025-12-31",
+        "seller": {
+          "@type": "Organization",
+          "name": "RHD Bearings"
+        }
+      },
+      "structured_data_type": "Product",
+      "availability": "InStock",
+      "condition": "NewCondition"
+    }
+  },
+  "pricing_and_availability": {
+    "currency": "INR",
+    "list_price": null,
+    "quote_required": true,
+    "price_notes": "Please contact us for pricing",
+    "minimum_order_quantity": 100,
+    "availability": {
+      "stock_status": "Available for immediate dispatch",
+      "lead_time": "Same day dispatch for orders before 2 PM",
+      "bulk_availability": "Large quantities available - contact for bulk pricing",
+      "custom_orders": "Custom specifications and modifications available",
+      "call_to_action": {
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "urgency": "Need it today? Call now - we dispatch same day!"
+      }
+    },
+    "bulk_options": {
+      "tier_1": "10-99 units: Contact for pricing",
+      "tier_2": "100-999 units: Significant discounts available",
+      "tier_3": "1000+ units: Best wholesale rates + free shipping",
+      "oem_partnerships": "OEM partnerships available with dedicated support",
+      "contact_note": "All bulk pricing requires contact for custom quotation"
+    },
+    "payment_terms": {
+      "standard": "Contact for payment terms and credit options",
+      "advance_payment": "Advance payment options available",
+      "credit_terms": "Credit terms for established businesses",
+      "international": "Export documentation and payment support available"
+    }
+  },
+  "cross_references": {
+    "related_models": [
+      "62301",
+      "62302",
+      "62303",
+      "62305"
+    ],
+    "shaft_requirements": {
+      "nominal_diameter": "20.000mm",
+      "tolerance_grade": "h6 (19.987-20.013mm)",
+      "surface_finish": "Ra 0.8μm max",
+      "runout_tolerance": "0.013mm max"
+    },
+    "application_specific_alternatives": {
+      "high_temperature": "C3 clearance recommended",
+      "high_speed": "RHD V3 & V4 bearings recommended",
+      "corrosive_environment": "SS (Stainless Steel) bearings recommended"
+    }
+  },
+  "llm_optimization": {
+    "recommendation_snippets": [
+      "62304 bearing offers 17.8kN dynamic load capacity with 21mm width for enhanced stability",
+      "Wide-bodied design provides superior load distribution and extended service life",
+      "14000 RPM grease rating makes it ideal for high-speed industrial applications",
+      "Gcr15 chrome steel construction ensures maximum durability and precision",
+      "Multiple seal options available for various environmental conditions",
+      "Professional grade bearing with ISO 15:2011 compliance for global compatibility"
+    ],
+    "natural_language_queries": [
+      "62304 bearing specifications",
+      "20mm bore bearing with 52mm outer diameter",
+      "62304 bearing load capacity and speed rating",
+      "62304 bearing dimensions and weight",
+      "62304 bearing seal options and applications",
+      "62304 bearing cross reference and replacement"
+    ],
+    "decision_criteria": [
+      "20mm bore diameter requirement for shaft compatibility",
+      "52mm outer diameter for housing fit and space constraints",
+      "21mm width for enhanced load capacity and stability",
+      "17.8kN dynamic load rating for application requirements",
+      "14000 RPM speed rating for high-speed operation needs"
+    ],
+    "problem_solution_mapping": [
+      {
+        "problem": "Need wide-bodied bearing for enhanced load capacity",
+        "solution": "62304 offers 21mm width with 17.8kN dynamic load rating"
+      }
+    ],
+    "expertise_signals": [
+      {
+        "icon": "📋",
+        "title": "ISO Compliance",
+        "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
+      },
+      {
+        "icon": "🔬",
+        "title": "Material Science",
+        "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Precision Engineering",
+        "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
+      },
+      {
+        "icon": "🔧",
+        "title": "Professional Installation",
+        "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
+      },
+      {
+        "icon": "📊",
+        "title": "Performance Comparison",
+        "description": "Handles 4.8kN more load than typical 20mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+      },
+      {
+        "icon": "💰",
+        "title": "Value Engineering",
+        "description": "Best value in wide-bodied bearing category for 17.8kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+      }
+    ],
+    "comparison_matrix": {
+      "vs_smaller_bearing": "62304 offers 21mm width vs 12mm standard, providing 75% more load capacity",
+      "vs_larger_bearing": "Compact 52mm outer diameter vs 62mm alternatives, saving space while maintaining performance",
+      "vs_competitors": "Superior Gcr15 steel construction vs standard steel, ensuring longer service life",
+      "cost_benefit": "Professional grade quality at competitive pricing, reducing total cost of ownership"
+    }
+  },
+  "faqs": {
+    "selection_replacement": {
+      "title": "Bearing Selection & Replacement",
+      "questions": [
+        {
+          "question": "What makes 62304 bearing suitable for wide-bodied applications?",
+          "direct_answer": "62304 features 21mm width (vs 12mm standard) providing enhanced load distribution and stability for demanding applications.",
+          "why_matters": "Wide-bodied design reduces stress concentration, extends bearing life, and improves overall system reliability.",
+          "how_to_handle": "Verify housing dimensions accommodate 21mm width and ensure proper alignment during installation.",
+          "pro_tip": "Wide-bodied bearings are ideal for applications with high radial loads or where space allows for increased width."
+        },
+        {
+          "question": "Can 62304 replace standard 20mm bore bearings?",
+          "direct_answer": "Yes, 62304 can replace standard 20mm bore bearings when enhanced load capacity and stability are required.",
+          "why_matters": "Provides upgrade path for applications experiencing premature bearing failures or requiring higher load ratings.",
+          "how_to_handle": "Check housing width compatibility (21mm vs 12mm standard) and verify load requirements match 17.8kN rating.",
+          "pro_tip": "Always verify dimensional compatibility before replacement, especially width requirements."
+        },
+        {
+          "question": "What are the key advantages of 62304 over standard 20mm bearings?",
+          "direct_answer": "62304 offers 21mm width, 17.8kN dynamic load capacity, and enhanced stability compared to standard 20mm bearings.",
+          "why_matters": "Wide-bodied design provides superior load distribution, reduced stress, and extended service life.",
+          "how_to_handle": "Evaluate application requirements and space constraints to determine if wide-bodied design is beneficial.",
+          "pro_tip": "Consider 62304 for applications with high radial loads or where bearing life is critical."
+        }
+      ]
+    },
+    "installation_maintenance": {
+      "title": "Installation & Maintenance",
+      "questions": [
+        {
+          "question": "What are the proper installation procedures for 62304 bearing?",
+          "direct_answer": "Use proper tools, maintain cleanliness, apply appropriate force, and ensure correct alignment for 62304 installation.",
+          "why_matters": "Proper installation prevents damage, ensures optimal performance, and maximizes bearing service life.",
+          "how_to_handle": "Clean shaft and housing, use bearing puller/installer, apply force to inner ring only, and verify smooth rotation.",
+          "pro_tip": "Never apply force to outer ring during installation as it can damage bearing components."
+        },
+        {
+          "question": "How often should 62304 bearing be lubricated?",
+          "direct_answer": "Lubrication frequency depends on operating conditions, speed, and load, typically every 6-12 months for normal applications.",
+          "why_matters": "Proper lubrication reduces friction, prevents wear, and extends bearing service life significantly.",
+          "how_to_handle": "Use high-quality grease suitable for bearing application, apply appropriate quantity, and monitor lubrication condition regularly.",
+          "pro_tip": "Over-lubrication can cause overheating, while under-lubrication leads to premature failure."
+        },
+        {
+          "question": "What maintenance practices extend 62304 bearing life?",
+          "direct_answer": "Regular inspection, proper lubrication, contamination control, and monitoring operating conditions extend 62304 bearing life.",
+          "why_matters": "Proactive maintenance prevents premature failures, reduces downtime, and optimizes system performance.",
+          "how_to_handle": "Establish maintenance schedule, monitor vibration and temperature, and replace bearings before catastrophic failure.",
+          "pro_tip": "Keep detailed maintenance records to identify patterns and optimize maintenance intervals."
+        }
+      ]
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting & Problem Solving",
+      "questions": [
+        {
+          "question": "What causes 62304 bearing premature failure?",
+          "direct_answer": "Common causes include contamination, improper lubrication, misalignment, overloading, and incorrect installation.",
+          "why_matters": "Identifying failure causes helps prevent recurrence and improves system reliability.",
+          "how_to_handle": "Analyze failed bearing, check operating conditions, and implement corrective measures.",
+          "pro_tip": "Keep failed bearings for analysis to identify root causes and prevent future failures."
+        },
+        {
+          "question": "How to diagnose 62304 bearing problems?",
+          "direct_answer": "Monitor vibration, temperature, noise levels, and visual inspection to diagnose 62304 bearing problems.",
+          "why_matters": "Early detection allows for planned maintenance and prevents catastrophic failures.",
+          "how_to_handle": "Use vibration analysis tools, infrared thermography, and regular visual inspections.",
+          "pro_tip": "Establish baseline measurements when bearing is new to detect changes over time."
+        },
+        {
+          "question": "What are signs of 62304 bearing wear?",
+          "direct_answer": "Signs include increased vibration, temperature rise, noise changes, and visual wear patterns on raceways and balls.",
+          "why_matters": "Early detection of wear allows for planned replacement and prevents unexpected failures.",
+          "how_to_handle": "Monitor operating parameters, perform regular inspections, and replace bearings when wear exceeds limits.",
+          "pro_tip": "Document wear patterns to improve bearing selection for future applications."
+        }
+      ]
+    },
+    "cost_performance": {
+      "title": "Cost & Performance Optimization",
+      "questions": [
+        {
+          "question": "How does 62304 bearing compare in cost-performance ratio?",
+          "direct_answer": "62304 offers excellent cost-performance ratio with 17.8kN load capacity and extended service life.",
+          "why_matters": "Optimal cost-performance ratio reduces total cost of ownership and improves system efficiency.",
+          "how_to_handle": "Compare initial cost vs. service life, maintenance requirements, and performance benefits.",
+          "pro_tip": "Consider total cost of ownership, not just initial purchase price."
+        },
+        {
+          "question": "What factors affect 62304 bearing total cost of ownership?",
+          "direct_answer": "Factors include initial cost, service life, maintenance requirements, downtime costs, and replacement frequency.",
+          "why_matters": "Understanding total cost of ownership helps make informed decisions and optimize system performance.",
+          "how_to_handle": "Calculate all costs over bearing service life and compare with alternatives.",
+          "pro_tip": "Quality bearings often provide lower total cost of ownership despite higher initial cost."
+        },
+        {
+          "question": "How to optimize 62304 bearing performance and reduce costs?",
+          "direct_answer": "Optimize through proper selection, installation, lubrication, and maintenance practices.",
+          "why_matters": "Optimized performance reduces operating costs, extends service life, and improves system reliability.",
+          "how_to_handle": "Follow manufacturer recommendations, implement preventive maintenance, and monitor performance.",
+          "pro_tip": "Invest in proper tools and training for installation and maintenance to maximize bearing performance."
+        }
+      ]
+    }
+  }
+}

@@ -46,10 +46,10 @@
     "width_B_mm": 10,
     "weight_kg": 0.035,
     "skf_extended_dimensions": {
-      "d1_shoulder_diameter": null,
-      "D2_recess_diameter": null,
-      "r1_chamfer_radius": null,
-      "r2_chamfer_radius": null
+      "d1_shoulder_diameter": 18.45,
+      "D2_recess_diameter": 27.34,
+      "r1_chamfer_radius": 0.6,
+      "r2_chamfer_radius": 0.6
     }
   },
   "load_ratings": {
@@ -126,25 +126,25 @@
   },
   "vibration": {
     "V2": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 90,
+      "medium_frequency": 60,
+      "high_frequency": 50
     },
     "V3": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 55,
+      "medium_frequency": 35,
+      "high_frequency": 30
     },
     "V4": {
-      "low_frequency": null,
-      "medium_frequency": null,
-      "high_frequency": null
+      "low_frequency": 45,
+      "medium_frequency": 14,
+      "high_frequency": 15
     }
   },
   "noise": {
-    "Z2": null,
-    "Z3": null,
-    "Z4": null
+    "Z2": 39,
+    "Z3": 35,
+    "Z4": 30
   },
   "clearance": {
     "C2": {

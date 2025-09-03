@@ -91,7 +91,7 @@
         "printing presses",
         "woodworking tools"
       ],
-      "requirements": "6mm shaft with 1.38kN dynamic load capacity, 35,000 RPM grease lubrication, industrial precision 15×5mm profile for demanding applications"
+      "requirements": "6mm shaft with 1.38kN dynamic load capacity, 35,000 RPM grease lubrication, industrial precision 15\u00d75mm profile for demanding applications"
     },
     "application2": {
       "title": "High-Speed Systems",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "696 Deep Groove Ball Bearing 6×15×5mm | RHD Bearings",
-    "meta_description": "696 industrial precision deep groove ball bearing with 6×15×5mm dimensions, 141kg load capacity, 35,000 RPM for industrial precision and high-speed systems. Made in India.",
+    "title": "696 Deep Groove Ball Bearing 6\u00d715\u00d75mm | RHD Bearings",
+    "meta_description": "696 industrial precision deep groove ball bearing with 6\u00d715\u00d75mm dimensions, 141kg load capacity, 35,000 RPM for industrial precision and high-speed systems. Made in India.",
     "keywords": [
       "696 bearing",
       "6mm bore bearing",
@@ -244,7 +244,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/696/",
     "og_data": {
-      "title": "696 Deep Groove Ball Bearing 6×15×5mm",
+      "title": "696 Deep Groove Ball Bearing 6\u00d715\u00d75mm",
       "description": "Industrial precision 696 bearing for industrial precision and high-speed systems. 141kg load, 35,000 RPM operation.",
       "url": "https://rhdbearings.com/specs/miniature-series/696/",
       "type": "product",
@@ -253,14 +253,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "696 Industrial Precision Deep Groove Ball Bearing",
-      "description": "6×15×5mm industrial precision bearing for industrial precision and high-speed applications"
+      "description": "6\u00d715\u00d75mm industrial precision bearing for industrial precision and high-speed applications"
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "696 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Industrial precision 696 deep groove ball bearing with 6×15×5mm dimensions for industrial precision and high-speed systems applications",
+      "description": "Industrial precision 696 deep groove ball bearing with 6\u00d715\u00d75mm dimensions for industrial precision and high-speed systems applications",
       "sku": "696-DGBB",
       "mpn": "696",
       "brand": "RHD Bearings",
@@ -298,9 +298,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -328,7 +328,7 @@
     "shaft_requirements": {
       "nominal_diameter": "6.000mm",
       "tolerance_grade": "h6 (5.991-6.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -340,7 +340,7 @@
   "llm_optimization": {
     "recommendation_snippets": [
       "696 bearing excels in industrial precision applications requiring 6mm shaft precision and 35,000 RPM operation",
-      "Industrial precision 15×5mm profile makes 696 ideal for demanding industrial and high-speed applications",
+      "Industrial precision 15\u00d75mm profile makes 696 ideal for demanding industrial and high-speed applications",
       "141kg load capacity and 1.38kN dynamic rating perfect for industrial precision and power applications",
       "Gcr15 chrome steel construction ensures long service life in demanding industrial applications",
       "4g weight optimized for applications where robustness and industrial precision design are critical",
@@ -356,7 +356,7 @@
     ],
     "decision_criteria": [
       "6mm shaft diameter requirement",
-      "Industrial precision 15×5mm envelope",
+      "Industrial precision 15\u00d75mm envelope",
       "1.38kN dynamic load capacity",
       "35,000 RPM grease lubrication",
       "Industrial precision applications"
@@ -364,7 +364,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need industrial precision bearing for 6mm shaft in demanding applications",
-        "solution": "696 bearing provides 15×5mm profile with 35,000 RPM capability"
+        "solution": "696 bearing provides 15\u00d75mm profile with 35,000 RPM capability"
       },
       {
         "problem": "Require robust bearing for high-speed systems with 6mm shaft",
@@ -373,39 +373,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for industrial precision bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
-        "description": "Handles same load as 695 bearings while providing larger 15×5mm profile. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Handles same load as 695 bearings while providing larger 15\u00d75mm profile. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in industrial precision bearing category for 1.38kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
       "vs_smaller_bearing": "696 provides 1.38kN dynamic load vs. 695 with 1.38kN, offering same capacity in larger industrial profile",
-      "vs_larger_bearing": "696 maintains industrial precision 15×5mm profile while providing sufficient load capacity for industrial applications",
+      "vs_larger_bearing": "696 maintains industrial precision 15\u00d75mm profile while providing sufficient load capacity for industrial applications",
       "vs_competitors": "RHD 696 offers superior Gcr15 steel quality and precision manufacturing compared to generic industrial precision bearings",
       "cost_benefit": "696 delivers optimal performance-to-size ratio for industrial precision applications, reducing system costs through robust engineering"
     }
@@ -416,21 +416,21 @@
       "questions": [
         {
           "question": "When should I choose 696 bearing over 695 alternatives?",
-          "direct_answer": "Choose 696 when you need 6mm shaft diameter with 1.38kN dynamic load capacity for industrial precision, high-speed systems, or applications requiring larger 15×5mm profile than 695 bearings can provide.",
+          "direct_answer": "Choose 696 when you need 6mm shaft diameter with 1.38kN dynamic load capacity for industrial precision, high-speed systems, or applications requiring larger 15\u00d75mm profile than 695 bearings can provide.",
           "why_matters": "Selecting the right bearing size prevents system redesign, reduces costs, and ensures optimal performance for your specific application requirements.",
-          "how_to_handle": "Measure your shaft diameter (must be exactly 6mm), verify load requirements (≤1.38kN dynamic), and confirm space constraints allow 15×5mm envelope.",
+          "how_to_handle": "Measure your shaft diameter (must be exactly 6mm), verify load requirements (\u22641.38kN dynamic), and confirm space constraints allow 15\u00d75mm envelope.",
           "pro_tip": "696 is ideal for industrial precision, high-speed systems, and applications where 6mm shaft and robust design are required."
         },
         {
           "question": "Can 696 bearing replace other 6mm bore bearings?",
-          "direct_answer": "Yes, 696 can replace other 6mm bore bearings if they have compatible outer diameter (≤15mm) and width (≤5mm) requirements, and load capacity needs (≤1.38kN dynamic).",
+          "direct_answer": "Yes, 696 can replace other 6mm bore bearings if they have compatible outer diameter (\u226415mm) and width (\u22645mm) requirements, and load capacity needs (\u22641.38kN dynamic).",
           "why_matters": "Proper replacement ensures system compatibility, prevents premature failures, and maintains performance specifications.",
-          "how_to_handle": "Verify dimensional compatibility (d×D×B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
+          "how_to_handle": "Verify dimensional compatibility (d\u00d7D\u00d7B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
           "pro_tip": "Always check both dimensional and performance compatibility before replacement to avoid system issues."
         },
         {
           "question": "What applications are 696 bearings NOT suitable for?",
-          "direct_answer": "696 bearings are NOT suitable for applications requiring dynamic loads >1.38kN, speeds >35,000 RPM, operating temperatures >120°C, or environments with heavy contamination.",
+          "direct_answer": "696 bearings are NOT suitable for applications requiring dynamic loads >1.38kN, speeds >35,000 RPM, operating temperatures >120\u00b0C, or environments with heavy contamination.",
           "why_matters": "Using bearings beyond their specifications leads to premature failure, increased maintenance costs, and potential system damage.",
           "how_to_handle": "For higher loads, consider 697 or 698 bearings. For higher speeds, use oil lubrication. For harsh environments, consider sealed or stainless steel alternatives.",
           "pro_tip": "Always verify application requirements against bearing specifications to ensure long service life."
@@ -442,9 +442,9 @@
       "questions": [
         {
           "question": "What tools are needed for proper 696 bearing installation?",
-          "direct_answer": "For 696 bearing installation, you need precision tools: 6mm bore gauge, micrometer for shaft measurement, bearing heater (80-100°C), clean gloves, and appropriate mounting tools for the 15mm outer diameter.",
+          "direct_answer": "For 696 bearing installation, you need precision tools: 6mm bore gauge, micrometer for shaft measurement, bearing heater (80-100\u00b0C), clean gloves, and appropriate mounting tools for the 15mm outer diameter.",
           "why_matters": "Proper tools ensure accurate installation, prevent bearing damage, and maximize service life while maintaining precision requirements.",
-          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (5.991-6.000mm), heat bearing to 80-100°C, and use proper mounting techniques to avoid damage.",
+          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (5.991-6.000mm), heat bearing to 80-100\u00b0C, and use proper mounting techniques to avoid damage.",
           "pro_tip": "Never force-fit 696 bearings - the 6mm bore requires precise shaft tolerances for optimal performance."
         },
         {
@@ -482,7 +482,7 @@
         },
         {
           "question": "How do I diagnose 696 bearing vibration issues?",
-          "direct_answer": "Diagnose 696 bearing vibration by checking shaft runout (≤0.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 6mm bore bearings.",
+          "direct_answer": "Diagnose 696 bearing vibration by checking shaft runout (\u22640.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 6mm bore bearings.",
           "why_matters": "Excessive vibration reduces precision, increases wear, and can damage connected equipment in industrial precision applications.",
           "how_to_handle": "Use vibration analysis tools, check shaft specifications, verify bearing installation, and replace bearing if vibration exceeds acceptable limits.",
           "pro_tip": "696 bearings require higher precision in shaft preparation due to their size and sensitivity to imperfections."
@@ -501,7 +501,7 @@
         },
         {
           "question": "What factors affect 696 bearing service life?",
-          "direct_answer": "696 bearing service life is affected by load conditions (≤1.38kN), operating speed (≤35,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
+          "direct_answer": "696 bearing service life is affected by load conditions (\u22641.38kN), operating speed (\u226435,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
           "why_matters": "Understanding service life factors helps optimize maintenance schedules, reduce costs, and ensure reliable operation in critical industrial precision applications.",
           "how_to_handle": "Monitor operating parameters, maintain clean environment, use quality lubricants, implement preventive maintenance, and replace bearings based on performance degradation.",
           "pro_tip": "696 bearings can achieve 50,000+ hours service life when operated within specifications and properly maintained."

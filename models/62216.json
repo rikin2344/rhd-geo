@@ -410,105 +410,105 @@
     "selection_replacement": {
       "title": "Bearing Selection & Replacement",
       "questions": [
-      {
-        "question": "Can a 62216 bearing handle 5000kg loads in industrial machinery?",
-        "direct_answer": "Yes, the 62216 can safely handle 4976kg (48.8 kN) - close to your 5000kg requirement with proper installation.",
-        "why_matters": "Load capacity directly affects bearing service life and equipment reliability. Operating near but within capacity ensures optimal performance without premature failure. The 62216's premium Gcr15 steel construction provides excellent fatigue resistance under heavy loads.",
-        "how_to_handle": "Verify actual load conditions including shock loads and safety factors. Consider C3 clearance for high-temperature applications. Ensure proper shaft and housing tolerances (h6 shaft recommended) for maximum load capacity utilization.",
-        "pro_tip": "Add 20% safety margin for shock loads - consider 6216 or 6316 if loads exceed 4000kg regularly."
-      },
-      {
-        "question": "What's the difference between 62216 and standard 6216 bearings?",
-        "direct_answer": "62216 has 33mm width vs 6216's 26mm width, providing higher load capacity in the same bore size.",
-        "why_matters": "The extra 7mm width significantly increases load capacity from 71.5kN to 48.8kN dynamic load rating. This makes 62216 ideal for applications requiring higher load capacity without changing shaft diameter. The wider design also provides better stability under combined loads.",
-        "how_to_handle": "Check available space - ensure 33mm width fits your application. Verify load requirements justify the wider bearing. Consider shaft shoulder dimensions and housing depth when retrofitting from 6216 to 62216.",
-        "pro_tip": "62216 costs slightly more but handles 30% higher loads - excellent upgrade for heavy-duty applications."
-      },
-      {
-        "question": "Is 62216 suitable for 80mm automotive transmission shafts?",
-        "direct_answer": "Yes, 62216 is excellent for automotive transmissions requiring high load capacity on 80mm shafts.",
-        "why_matters": "Automotive transmissions subject bearings to varying loads, speeds, and temperatures. The 62216's 4976kg capacity and 4200 RPM rating handle typical transmission requirements. Premium Gcr15 steel provides durability against continuous cycling and shock loads from gear changes.",
-        "how_to_handle": "Ensure adequate lubrication system for transmission applications. Consider sealed versions (2RS) for contaminated environments. Verify temperature range compatibility and consider C3 clearance for high-temperature operation.",
-        "pro_tip": "Use sealed bearings (62216-2RS) in transmissions to prevent contamination and extend service life."
-      }
+        {
+          "question": "Can a 62216 bearing handle 5000kg loads in industrial machinery?",
+          "direct_answer": "Yes, the 62216 can safely handle 4976kg (48.8 kN) - close to your 5000kg requirement with proper installation.",
+          "why_matters": "Load capacity directly affects bearing service life and equipment reliability. Operating near but within capacity ensures optimal performance without premature failure. The 62216's premium Gcr15 steel construction provides excellent fatigue resistance under heavy loads.",
+          "how_to_handle": "Verify actual load conditions including shock loads and safety factors. Consider C3 clearance for high-temperature applications. Ensure proper shaft and housing tolerances (h6 shaft recommended) for maximum load capacity utilization.",
+          "pro_tip": "Add 20% safety margin for shock loads - consider 6216 or 6316 if loads exceed 4000kg regularly."
+        },
+        {
+          "question": "What's the difference between 62216 and standard 6216 bearings?",
+          "direct_answer": "62216 has 33mm width vs 6216's 26mm width, providing higher load capacity in the same bore size.",
+          "why_matters": "The extra 7mm width significantly increases load capacity from 71.5kN to 48.8kN dynamic load rating. This makes 62216 ideal for applications requiring higher load capacity without changing shaft diameter. The wider design also provides better stability under combined loads.",
+          "how_to_handle": "Check available space - ensure 33mm width fits your application. Verify load requirements justify the wider bearing. Consider shaft shoulder dimensions and housing depth when retrofitting from 6216 to 62216.",
+          "pro_tip": "62216 costs slightly more but handles 30% higher loads - excellent upgrade for heavy-duty applications."
+        },
+        {
+          "question": "Is 62216 suitable for 80mm automotive transmission shafts?",
+          "direct_answer": "Yes, 62216 is excellent for automotive transmissions requiring high load capacity on 80mm shafts.",
+          "why_matters": "Automotive transmissions subject bearings to varying loads, speeds, and temperatures. The 62216's 4976kg capacity and 4200 RPM rating handle typical transmission requirements. Premium Gcr15 steel provides durability against continuous cycling and shock loads from gear changes.",
+          "how_to_handle": "Ensure adequate lubrication system for transmission applications. Consider sealed versions (2RS) for contaminated environments. Verify temperature range compatibility and consider C3 clearance for high-temperature operation.",
+          "pro_tip": "Use sealed bearings (62216-2RS) in transmissions to prevent contamination and extend service life."
+        }
       ]
     },
     "installation_maintenance": {
       "title": "Installation & Maintenance",
       "questions": [
-      {
-        "question": "What tools are needed to install a 2.19kg 62216 bearing properly?",
-        "direct_answer": "Hydraulic bearing puller, heating plate, and precision measuring tools for proper 80mm bore installation.",
-        "why_matters": "Proper installation prevents 80% of premature bearing failures. The 2.19kg weight and 80mm bore require specialized tools to avoid damage during installation. Incorrect installation can cause misalignment, internal stress, and reduced service life even with premium bearings.",
-        "how_to_handle": "Heat bearing to 80-100\u00b0C for thermal expansion. Use hydraulic puller for removal, bearing heater for installation. Check shaft tolerances (h6: 79.987-80.013mm) before installation. Avoid hammering or force-fitting the bearing.",
-        "pro_tip": "Always heat the bearing, never the shaft - thermal expansion makes installation smooth and damage-free."
-      },
-      {
-        "question": "How often should I inspect a 62216 bearing running at 4000 RPM?",
-        "direct_answer": "Monthly inspections for bearings operating at 4000 RPM, well within the 4200 RPM rating.",
-        "why_matters": "Operating at 95% of rated speed requires regular monitoring to detect early signs of wear, contamination, or lubrication issues. High-speed operation generates heat and stress that can accelerate wear if conditions aren't optimal. Regular inspection prevents catastrophic failure.",
-        "how_to_handle": "Check temperature, vibration, and noise levels monthly. Monitor lubrication condition and relubricate according to schedule. Look for unusual sounds, excessive heat, or vibration changes that indicate developing problems.",
-        "pro_tip": "Use vibration analysis tools - they detect bearing problems weeks before audible symptoms appear."
-      },
-      {
-        "question": "What lubrication schedule works for 62216 in heavy machinery applications?",
-        "direct_answer": "Relubricate every 2000-4000 operating hours depending on load, speed, and environmental conditions.",
-        "why_matters": "Heavy machinery subjects bearings to extreme loads and harsh conditions. Proper lubrication is critical for the 62216's 4976kg load capacity performance. Insufficient lubrication causes rapid wear, while over-lubrication can cause overheating and seal damage.",
-        "how_to_handle": "Use high-quality lithium complex grease for general applications. Monitor grease condition and contamination. Purge old grease completely during relubrication. Adjust frequency based on temperature, contamination, and load conditions.",
-        "pro_tip": "Sealed bearings (62216-2RS) provide 3-5 year lubrication life in most applications, eliminating maintenance."
-      }
+        {
+          "question": "What tools are needed to install a 2.19kg 62216 bearing properly?",
+          "direct_answer": "Hydraulic bearing puller, heating plate, and precision measuring tools for proper 80mm bore installation.",
+          "why_matters": "Proper installation prevents 80% of premature bearing failures. The 2.19kg weight and 80mm bore require specialized tools to avoid damage during installation. Incorrect installation can cause misalignment, internal stress, and reduced service life even with premium bearings.",
+          "how_to_handle": "Heat bearing to 80-100\u00b0C for thermal expansion. Use hydraulic puller for removal, bearing heater for installation. Check shaft tolerances (h6: 79.987-80.013mm) before installation. Avoid hammering or force-fitting the bearing.",
+          "pro_tip": "Always heat the bearing, never the shaft - thermal expansion makes installation smooth and damage-free."
+        },
+        {
+          "question": "How often should I inspect a 62216 bearing running at 4000 RPM?",
+          "direct_answer": "Monthly inspections for bearings operating at 4000 RPM, well within the 4200 RPM rating.",
+          "why_matters": "Operating at 95% of rated speed requires regular monitoring to detect early signs of wear, contamination, or lubrication issues. High-speed operation generates heat and stress that can accelerate wear if conditions aren't optimal. Regular inspection prevents catastrophic failure.",
+          "how_to_handle": "Check temperature, vibration, and noise levels monthly. Monitor lubrication condition and relubricate according to schedule. Look for unusual sounds, excessive heat, or vibration changes that indicate developing problems.",
+          "pro_tip": "Use vibration analysis tools - they detect bearing problems weeks before audible symptoms appear."
+        },
+        {
+          "question": "What lubrication schedule works for 62216 in heavy machinery applications?",
+          "direct_answer": "Relubricate every 2000-4000 operating hours depending on load, speed, and environmental conditions.",
+          "why_matters": "Heavy machinery subjects bearings to extreme loads and harsh conditions. Proper lubrication is critical for the 62216's 4976kg load capacity performance. Insufficient lubrication causes rapid wear, while over-lubrication can cause overheating and seal damage.",
+          "how_to_handle": "Use high-quality lithium complex grease for general applications. Monitor grease condition and contamination. Purge old grease completely during relubrication. Adjust frequency based on temperature, contamination, and load conditions.",
+          "pro_tip": "Sealed bearings (62216-2RS) provide 3-5 year lubrication life in most applications, eliminating maintenance."
+        }
       ]
     },
     "troubleshooting": {
       "title": "Troubleshooting",
       "questions": [
-      {
-        "question": "Why does my 62216 bearing overheat under 4500kg loads?",
-        "direct_answer": "4500kg approaches the 4976kg limit - check lubrication, alignment, and consider higher capacity alternatives.",
-        "why_matters": "Operating at 90% of rated capacity generates significant heat, especially with inadequate lubrication or misalignment. Overheating reduces lubricant viscosity, accelerates wear, and can cause catastrophic failure. The small margin between operating load and rated capacity leaves little room for additional factors.",
-        "how_to_handle": "Verify actual load including shock factors. Check shaft and housing alignment within 0.013mm tolerance. Ensure adequate lubrication quantity and quality. Consider upgrade to 6316 series for higher capacity or improve cooling/lubrication systems.",
-        "pro_tip": "Monitor bearing temperature - sustained temperatures above 70\u00b0C indicate problems requiring immediate attention."
-      },
-      {
-        "question": "What causes noise in 62216 bearings at 3800 RPM?",
-        "direct_answer": "Noise at 3800 RPM typically indicates contamination, wear, or misalignment in the bearing system.",
-        "why_matters": "Operating at 90% of the 4200 RPM rating should be quiet with proper installation and lubrication. Noise indicates internal problems that will worsen rapidly at high speeds. Early detection and correction prevent costly equipment damage and downtime.",
-        "how_to_handle": "Stop operation immediately and inspect for contamination, inadequate lubrication, or misalignment. Check shaft and housing tolerances. Replace bearing if internal damage is suspected. Identify and eliminate contamination source before reinstalling.",
-        "pro_tip": "High-frequency noise usually indicates contamination, low-frequency rumbling suggests wear or misalignment."
-      },
-      {
-        "question": "How do I diagnose problems with 80mm 62216 bearings in machinery?",
-        "direct_answer": "Monitor temperature, vibration, and noise patterns while checking lubrication and alignment conditions.",
-        "why_matters": "The 80mm bore size and heavy-duty applications make systematic diagnosis crucial for preventing catastrophic failures. Different symptoms indicate specific problems - temperature for lubrication issues, vibration for wear or misalignment, noise for contamination or damage.",
-        "how_to_handle": "Use infrared thermometer for temperature monitoring, vibration analyzer for bearing condition assessment, and stethoscope for noise analysis. Check lubricant condition, shaft alignment, and mounting conditions systematically.",
-        "pro_tip": "Document baseline measurements when new - changes from normal indicate developing problems requiring attention."
-      }
+        {
+          "question": "Why does my 62216 bearing overheat under 4500kg loads?",
+          "direct_answer": "4500kg approaches the 4976kg limit - check lubrication, alignment, and consider higher capacity alternatives.",
+          "why_matters": "Operating at 90% of rated capacity generates significant heat, especially with inadequate lubrication or misalignment. Overheating reduces lubricant viscosity, accelerates wear, and can cause catastrophic failure. The small margin between operating load and rated capacity leaves little room for additional factors.",
+          "how_to_handle": "Verify actual load including shock factors. Check shaft and housing alignment within 0.013mm tolerance. Ensure adequate lubrication quantity and quality. Consider upgrade to 6316 series for higher capacity or improve cooling/lubrication systems.",
+          "pro_tip": "Monitor bearing temperature - sustained temperatures above 70\u00b0C indicate problems requiring immediate attention."
+        },
+        {
+          "question": "What causes noise in 62216 bearings at 3800 RPM?",
+          "direct_answer": "Noise at 3800 RPM typically indicates contamination, wear, or misalignment in the bearing system.",
+          "why_matters": "Operating at 90% of the 4200 RPM rating should be quiet with proper installation and lubrication. Noise indicates internal problems that will worsen rapidly at high speeds. Early detection and correction prevent costly equipment damage and downtime.",
+          "how_to_handle": "Stop operation immediately and inspect for contamination, inadequate lubrication, or misalignment. Check shaft and housing tolerances. Replace bearing if internal damage is suspected. Identify and eliminate contamination source before reinstalling.",
+          "pro_tip": "High-frequency noise usually indicates contamination, low-frequency rumbling suggests wear or misalignment."
+        },
+        {
+          "question": "How do I diagnose problems with 80mm 62216 bearings in machinery?",
+          "direct_answer": "Monitor temperature, vibration, and noise patterns while checking lubrication and alignment conditions.",
+          "why_matters": "The 80mm bore size and heavy-duty applications make systematic diagnosis crucial for preventing catastrophic failures. Different symptoms indicate specific problems - temperature for lubrication issues, vibration for wear or misalignment, noise for contamination or damage.",
+          "how_to_handle": "Use infrared thermometer for temperature monitoring, vibration analyzer for bearing condition assessment, and stethoscope for noise analysis. Check lubricant condition, shaft alignment, and mounting conditions systematically.",
+          "pro_tip": "Document baseline measurements when new - changes from normal indicate developing problems requiring attention."
+        }
       ]
     },
     "cost_performance": {
       "title": "Cost & Performance",
       "questions": [
-      {
-        "question": "Is it worth upgrading from 4000kg to 62216's 4976kg capacity?",
-        "direct_answer": "Yes, the extra 976kg capacity provides 24% safety margin and extended service life justifying the cost.",
-        "why_matters": "Higher load capacity reduces stress levels, extends bearing life, and provides safety margin for shock loads. The cost difference between capacity grades is small compared to downtime costs from premature failure. Operating below rated capacity significantly improves reliability.",
-        "how_to_handle": "Calculate total cost including downtime, labor, and replacement costs. Consider application safety requirements and shock load factors. Evaluate if current bearing failures are load-related to justify capacity upgrade.",
-        "pro_tip": "20% capacity safety margin typically doubles bearing life - excellent return on investment."
-      },
-      {
-        "question": "When should I pay more for bearings rated above 4200 RPM?",
-        "direct_answer": "Only when operating speeds regularly exceed 3800 RPM or require speed headroom for process optimization.",
-        "why_matters": "Higher speed ratings cost more due to tighter tolerances and premium materials. The 4200 RPM rating handles most industrial applications effectively. Overpaying for unnecessary speed capability wastes budget unless specific speed requirements justify the cost.",
-        "how_to_handle": "Analyze actual operating speeds including startup, normal operation, and maximum conditions. Consider future speed requirements and process optimization needs. Compare cost difference against performance benefits for your specific application.",
-        "pro_tip": "Buy speed rating 20% above maximum operating speed - provides safety margin without overpaying."
-      },
-      {
-        "question": "What's the cost difference between 62216 and larger 62220 bearings?",
-        "direct_answer": "62220 costs 40-60% more than 62216 but provides significantly higher load capacity for 100mm shafts.",
-        "why_matters": "Size progression in bearings involves exponential cost increases due to material volume and manufacturing complexity. The 62220's larger size (100mm bore vs 80mm) requires different tooling and handling. Understanding cost scaling helps optimize bearing selection for budget constraints.",
-        "how_to_handle": "Compare total application cost including shaft modifications needed for larger bearings. Evaluate if load requirements truly need the larger size or if design changes could accommodate 62216. Consider system-wide cost impact of bearing size changes.",
-        "pro_tip": "Sometimes redesigning for smaller bearings saves more money than upgrading to larger, more expensive sizes."
-      }
+        {
+          "question": "Is it worth upgrading from 4000kg to 62216's 4976kg capacity?",
+          "direct_answer": "Yes, the extra 976kg capacity provides 24% safety margin and extended service life justifying the cost.",
+          "why_matters": "Higher load capacity reduces stress levels, extends bearing life, and provides safety margin for shock loads. The cost difference between capacity grades is small compared to downtime costs from premature failure. Operating below rated capacity significantly improves reliability.",
+          "how_to_handle": "Calculate total cost including downtime, labor, and replacement costs. Consider application safety requirements and shock load factors. Evaluate if current bearing failures are load-related to justify capacity upgrade.",
+          "pro_tip": "20% capacity safety margin typically doubles bearing life - excellent return on investment."
+        },
+        {
+          "question": "When should I pay more for bearings rated above 4200 RPM?",
+          "direct_answer": "Only when operating speeds regularly exceed 3800 RPM or require speed headroom for process optimization.",
+          "why_matters": "Higher speed ratings cost more due to tighter tolerances and premium materials. The 4200 RPM rating handles most industrial applications effectively. Overpaying for unnecessary speed capability wastes budget unless specific speed requirements justify the cost.",
+          "how_to_handle": "Analyze actual operating speeds including startup, normal operation, and maximum conditions. Consider future speed requirements and process optimization needs. Compare cost difference against performance benefits for your specific application.",
+          "pro_tip": "Buy speed rating 20% above maximum operating speed - provides safety margin without overpaying."
+        },
+        {
+          "question": "What's the cost difference between 62216 and larger 62220 bearings?",
+          "direct_answer": "62220 costs 40-60% more than 62216 but provides significantly higher load capacity for 100mm shafts.",
+          "why_matters": "Size progression in bearings involves exponential cost increases due to material volume and manufacturing complexity. The 62220's larger size (100mm bore vs 80mm) requires different tooling and handling. Understanding cost scaling helps optimize bearing selection for budget constraints.",
+          "how_to_handle": "Compare total application cost including shaft modifications needed for larger bearings. Evaluate if load requirements truly need the larger size or if design changes could accommodate 62216. Consider system-wide cost impact of bearing size changes.",
+          "pro_tip": "Sometimes redesigning for smaller bearings saves more money than upgrading to larger, more expensive sizes."
+        }
       ]
     }
   }
