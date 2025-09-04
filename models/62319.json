@@ -91,7 +91,7 @@
         "Steel mill power shafts",
         "Construction vehicle drive shafts"
       ],
-      "requirements": "95mm shaft with 65.0kN (≈6,630kg) dynamic load capacity, 3,500 RPM grease lubrication, 190×65mm profile for drive shafts"
+      "requirements": "95mm shaft with 65.0kN (\u22486,630kg) dynamic load capacity, 3,500 RPM grease lubrication, 190\u00d765mm profile for drive shafts"
     },
     "application2": {
       "title": "Automation Pivots",
@@ -106,7 +106,7 @@
         "Precision equipment pivots",
         "Assembly line pivots"
       ],
-      "requirements": "Precision 95mm bore with 42.0kN (≈4,285kg) static load for precise automation"
+      "requirements": "Precision 95mm bore with 42.0kN (\u22484,285kg) static load for precise automation"
     },
     "application3": {
       "title": "Material Handlers",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "95.000mm",
       "tolerance_grade": "h6 (94.987-95.013mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,32 +372,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 64.2kN more load than typical 95mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 162kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }

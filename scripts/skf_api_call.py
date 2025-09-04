@@ -263,55 +263,36 @@ class SKFAPIBearingScraper:
 
 def main():
     """Main execution"""
-    print("🚀 SKF Bearing API Scraper - 6800 Series")
+    print("🚀 SKF Bearing API Scraper - 16000 Series")
     print("=" * 60)
     print("Using SKF's internal API to extract bearing specifications")
-    print("Using alternate model numbers (61800-61820) for 6800 series")
+    print("Using original model numbers (16001-16020) for 16000 series")
     print("=" * 60)
     
     scraper = SKFAPIBearingScraper()
     
-    # 6800 series models with their alternate model numbers
-    # 6800 -> 61800, 6801 -> 61801, etc.
-    model_mapping = {}
-    for i in range(21):  # 6800 to 6820
-        if i < 10:
-            original_model = f"680{i}"
-        else:
-            original_model = f"68{i}"
-        
-        alternate_model = str(int(original_model) + 55000)
-        model_mapping[alternate_model] = original_model
+    # 16000 series models - use original model numbers directly
+    models = []
+    for i in range(1, 21):  # 16001 to 16020
+        model = f"160{i:02d}"
+        models.append(model)
     
-    # Use alternate model numbers for API calls
-    alternate_models = list(model_mapping.keys())
-    alternate_models.sort()  # Sort numerically
+    print(f"📋 Processing {len(models)} models:")
+    for model in models:
+        print(f"  {model}")
     
-    print(f"📋 Processing {len(alternate_models)} models:")
-    for alt, orig in model_mapping.items():
-        print(f"  {alt} -> {orig}")
-    
-    results = scraper.scrape_multiple_bearings(alternate_models)
+    results = scraper.scrape_multiple_bearings(models)
     
     if results:
-        # Update model numbers in results to use original model numbers
-        for result in results:
-            alt_model = result['model']
-            if alt_model in model_mapping:
-                result['original_model'] = model_mapping[alt_model]
-                result['alternate_model'] = alt_model
-                result['model'] = model_mapping[alt_model]  # Use original model as primary
-        
-        scraper.save_results(results, 'skf_6800_series_data.json')
-        scraper.save_dimensions_only(results, 'skf_6800_series_dimensions.json')
+        scraper.save_results(results, 'skf_16000_series_data.json')
+        scraper.save_dimensions_only(results, 'skf_16000_series_dimensions.json')
         
         print("\n📊 SUMMARY:")
         print("=" * 30)
         for result in results:
             model = result['model']
-            alt_model = result.get('alternate_model', 'N/A')
             dims = result.get('dimensions', {})
-            print(f"{model} (alt: {alt_model}): {len(dims)} dimensions - {list(dims.keys())}")
+            print(f"{model}: {len(dims)} dimensions - {list(dims.keys())}")
             
         print("\n🎯 Missing Dimensional Data Summary:")
         print("=" * 40)

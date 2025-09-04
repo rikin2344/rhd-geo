@@ -421,6 +421,10 @@ class MiniaturePageGenerator:
                 keywords_string = ', '.join(keywords)
                 content = content.replace('{{seo_metadata.keywords_string}}', keywords_string)
         
+        # Handle alternate_model_number placeholder - remove it if it doesn't exist in data
+        if 'alternate_model_number' not in self.data:
+            content = content.replace('{{alternate_model_number}}', '')
+        
         # Create a mapping for old field names to new field names
         field_mapping = {
             'd': 'bore_diameter_d_mm',

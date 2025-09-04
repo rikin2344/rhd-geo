@@ -91,7 +91,7 @@
         "boring spindles",
         "reaming spindles"
       ],
-      "requirements": "5mm shaft with 1.88kN dynamic load capacity, 32,000 RPM grease lubrication, robust 19×6mm profile for high-speed spindle applications"
+      "requirements": "5mm shaft with 1.88kN dynamic load capacity, 32,000 RPM grease lubrication, robust 19\u00d76mm profile for high-speed spindle applications"
     },
     "application2": {
       "title": "Optical Systems",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "635 Bearing 5×19×6mm Deep Groove Ball Bearing | RHD",
+    "title": "635 Bearing 5\u00d719\u00d76mm Deep Groove Ball Bearing | RHD",
     "meta_description": "635 deep groove ball bearing with 5mm bore, 19mm OD, 6mm width. 1.88kN dynamic load, 192kg capacity. Perfect for high-speed spindles, optical systems, semiconductor equipment.",
     "keywords": [
       "635 bearing",
@@ -248,7 +248,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/635/",
     "og_data": {
-      "title": "635 Deep Groove Ball Bearing - 5×19×6mm | RHD Bearings",
+      "title": "635 Deep Groove Ball Bearing - 5\u00d719\u00d76mm | RHD Bearings",
       "description": "High-speed spindle 635 miniature bearing with 1.88kN dynamic load capacity. Perfect for spindles, optical systems, and semiconductor equipment.",
       "url": "https://rhdbearings.com/specs/miniature-series/635/",
       "type": "product",
@@ -302,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -332,7 +332,7 @@
     "shaft_requirements": {
       "nominal_diameter": "5.000mm",
       "tolerance_grade": "h6 (4.991-5.009mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -346,7 +346,7 @@
       "Choose 635 for 5mm shafts requiring 1.88kN dynamic load capacity in high-speed spindle applications",
       "Select 635-ZZ for dust protection with 28,800 RPM capability and sealed-for-life lubrication",
       "Use 635-RS in moisture-prone environments requiring 25,600 RPM with rubber seal protection",
-      "Consider 635 for spindles where 19×6mm profile and 192kg load capacity optimize performance",
+      "Consider 635 for spindles where 19\u00d76mm profile and 192kg load capacity optimize performance",
       "Opt for 635 in optical systems needing 0.3mm chamfer radius and stable positioning",
       "Deploy 635 in semiconductor equipment requiring 32,000 RPM grease lubrication with precision design"
     ],
@@ -368,7 +368,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need high-performance bearing for 5mm shaft with substantial load capacity",
-        "solution": "635 bearing provides 1.88kN dynamic load in 19×6mm profile"
+        "solution": "635 bearing provides 1.88kN dynamic load in 19\u00d76mm profile"
       },
       {
         "problem": "Require dust protection in spindle application",
@@ -381,32 +381,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "5mm bore with 1.88kN load capacity and 32,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in miniature bearing category for 1.88kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -431,7 +431,7 @@
         },
         {
           "question": "Can I replace a 635 bearing with a different size bearing?",
-          "direct_answer": "No, 635 bearings have unique 5×19×6mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 635 bearings have unique 5\u00d719\u00d76mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 635 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 635 bearings in stock to avoid production delays and ensure consistent quality."

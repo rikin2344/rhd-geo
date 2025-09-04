@@ -1,0 +1,205 @@
+/* ================================
+   RHD BEARINGS NAVIGATION HEADER
+   ================================ */
+
+:root {
+    --nav-height: 85px;
+    --nav-padding: 24px;
+    --menu-gap: 50px;
+    --menu-font: "Bai Jamjuree", sans-serif;
+    --menu-color: #212121;
+    --menu-hover-color: #000000;
+    --ui-radius: 16px;
+    --ui-radius-sm: 8px;
+}
+
+/* Wrapper */
+#wrapper-navbar {
+    margin: 10px auto;
+    max-width: calc(1200px + 20px);
+    padding: 0 10px;
+}
+
+/* Header Wrapper */
+.uicore-header-wrapper {
+    margin-top: 35px;
+    background: #EBEBEB;
+    box-shadow: 0 0 0 1px #D1D1D1;
+    position: relative;
+    border-radius: 22px;
+    height: var(--nav-height, 100%);
+    overflow: visible;
+}
+
+/* Container */
+.uicore.uicore-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--nav-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Logo */
+.uicore-branding {
+    height: 100%;
+    padding: 10px 0;
+}
+
+.uicore-branding a {
+    height: 100%;
+    display: block;
+}
+
+.uicore-logo {
+    height: 100%;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.uicore-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Menu */
+.uicore-nav-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--menu-gap);
+}
+
+.uicore-menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.uicore-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--menu-gap);
+}
+
+/* Menu Items */
+.menu-item {
+    color: var(--menu-color);
+    font-family: var(--menu-font);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Flip Animation */
+.ui-flip-anim-wrapp {
+    position: relative;
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.ui-flip-anim-wrapp span {
+    display: block;
+    position: relative;
+    padding: 0;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+}
+
+.ui-flip-anim-wrapp span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(-90deg);
+}
+
+.menu-item:hover .ui-flip-anim-wrapp span:first-child {
+    transform: rotateX(90deg);
+}
+
+.menu-item:hover .ui-flip-anim-wrapp span:nth-child(2) {
+    transform: rotateX(0deg);
+}
+
+/* Submenu */
+.has-submenu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: var(--ui-radius-sm);
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.has-submenu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.sub-menu a:hover {
+    color: var(--menu-hover-color);
+    background: rgba(0,0,0,0.05);
+}
+
+/* Contact Button */
+.uicore-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-family: var(--menu-font);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.uicore-btn.uicore-inverted {
+    color: var(--menu-color);
+    border: 1px solid var(--menu-color);
+}
+
+.uicore-btn.uicore-inverted:hover {
+    background: var(--menu-color);
+    color: #ffffff;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .uicore-nav-menu,
+    .uicore-extra {
+        display: none;
+    }
+
+    .uicore-mobile-menu {
+        display: block;
+    }
+}

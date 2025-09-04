@@ -19,6 +19,10 @@ def get_bearing_series(model_number):
         return '6200_series'
     if model.startswith('63'):
         return '6300_series'
+    if model.startswith('69'):
+        return '6000_series'  # 6900 series uses 6000 series noise data
+    if model.startswith('16'):
+        return '6000_series'  # 16000 series uses 6000 series noise data
     
     # Default fallback
     return '6200_series'

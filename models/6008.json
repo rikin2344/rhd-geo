@@ -91,7 +91,7 @@
         "Mining haul truck gears",
         "Agricultural machinery shafts"
       ],
-      "requirements": "40mm shaft with 15.80kN (≈1,610kg) dynamic load, 8,000 RPM grease lubrication, 80×20mm profile for gearboxes"
+      "requirements": "40mm shaft with 15.80kN (\u22481,610kg) dynamic load, 8,000 RPM grease lubrication, 80\u00d720mm profile for gearboxes"
     },
     "application2": {
       "title": "Robot Joints",
@@ -106,7 +106,7 @@
         "Inspection robotic arms",
         "Medical robot joints"
       ],
-      "requirements": "Precision 40mm bore with 10kN (≈1,020kg) static load for robotic arms"
+      "requirements": "Precision 40mm bore with 10kN (\u22481,020kg) static load for robotic arms"
     },
     "application3": {
       "title": "Heavy Drives",
@@ -329,7 +329,7 @@
     "shaft_requirements": {
       "nominal_diameter": "40.000mm",
       "tolerance_grade": "h6 (39.987-40.013mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,32 +370,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "🔋",
+        "icon": "\ud83d\udd0b",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for continuous heavy-duty performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 1734kg load capacity with robust 15mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Excellent value for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -441,7 +441,7 @@
           "question": "What tools are needed to install a 185g 6008 bearing properly?",
           "direct_answer": "Heavy-duty installation tools, induction heater, and precision alignment equipment for proper 40mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 185g weight and 40mm bore require appropriate techniques to prevent damage. Large bearings benefit from thermal installation and precision alignment for maximum service life in workhorse applications.",
-          "how_to_handle": "Heat bearing to 80-90°C using induction heater for uniform heating. Use heavy-duty hydraulic tools with proper adapters. Verify shaft tolerances (h6: 39.987-40.013mm) and housing concentricity. Never use impact methods.",
+          "how_to_handle": "Heat bearing to 80-90\u00b0C using induction heater for uniform heating. Use heavy-duty hydraulic tools with proper adapters. Verify shaft tolerances (h6: 39.987-40.013mm) and housing concentricity. Never use impact methods.",
           "pro_tip": "Large bearings require controlled thermal installation - induction heating provides uniform expansion preventing installation damage."
         },
         {

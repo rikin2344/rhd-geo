@@ -1,0 +1,4859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6909 Deep Groove Ball Bearing | RHD Bearings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background: #F8F9FA;
+}
+
+/* Navbar CSS */
+/* ================================
+   RHD BEARINGS NAVIGATION HEADER
+   ================================ */
+
+:root {
+    --nav-height: 85px;
+    --nav-padding: 24px;
+    --menu-gap: 50px;
+    --menu-font: "Bai Jamjuree", sans-serif;
+    --menu-color: #212121;
+    --menu-hover-color: #000000;
+    --ui-radius: 16px;
+    --ui-radius-sm: 8px;
+}
+
+/* Wrapper */
+#wrapper-navbar {
+    margin: 10px auto;
+    max-width: calc(1200px + 20px);
+    padding: 0 10px;
+}
+
+/* Header Wrapper */
+.uicore-header-wrapper {
+    margin-top: 35px;
+    background: #EBEBEB;
+    box-shadow: 0 0 0 1px #D1D1D1;
+    position: relative;
+    border-radius: 22px;
+    height: var(--nav-height, 100%);
+    overflow: visible;
+}
+
+/* Container */
+.uicore.uicore-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--nav-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Logo */
+.uicore-branding {
+    height: 100%;
+    padding: 10px 0;
+}
+
+.uicore-branding a {
+    height: 100%;
+    display: block;
+}
+
+.uicore-logo {
+    height: 100%;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.uicore-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Menu */
+.uicore-nav-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--menu-gap);
+}
+
+.uicore-menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.uicore-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--menu-gap);
+}
+
+/* Menu Items */
+.menu-item {
+    color: var(--menu-color);
+    font-family: var(--menu-font);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Flip Animation */
+.ui-flip-anim-wrapp {
+    position: relative;
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.ui-flip-anim-wrapp span {
+    display: block;
+    position: relative;
+    padding: 0;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    transform-origin: 50% 0%;
+}
+
+.ui-flip-anim-wrapp span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateX(-90deg);
+}
+
+.menu-item:hover .ui-flip-anim-wrapp span:first-child {
+    transform: rotateX(90deg);
+}
+
+.menu-item:hover .ui-flip-anim-wrapp span:nth-child(2) {
+    transform: rotateX(0deg);
+}
+
+/* Submenu */
+.has-submenu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: var(--ui-radius-sm);
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.has-submenu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.sub-menu a:hover {
+    color: var(--menu-hover-color);
+    background: rgba(0,0,0,0.05);
+}
+
+/* Contact Button */
+.uicore-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-family: var(--menu-font);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.uicore-btn.uicore-inverted {
+    color: var(--menu-color);
+    border: 1px solid var(--menu-color);
+}
+
+.uicore-btn.uicore-inverted:hover {
+    background: var(--menu-color);
+    color: #ffffff;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .uicore-nav-menu,
+    .uicore-extra {
+        display: none;
+    }
+
+    .uicore-mobile-menu {
+        display: block;
+    }
+}
+
+/* Footer CSS */
+/* ================================
+   FOOTER
+   ================================ */
+
+.footer {
+    background: transparent;
+    padding: var(--space-section-2) 0;
+}
+
+.footer-content {
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 0 32px;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-section-1);
+    margin-bottom: var(--space-section-1);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: var(--space-component-1);
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6B7280;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-2);
+}
+
+.footer-column-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-micro-2);
+}
+
+.footer-links a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #000000;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    color: #6B7280;
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: var(--space-component-1);
+}
+
+.footer-legal a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #000000;
+}
+
+/* ================================
+   FOOTER RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-micro-2);
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        margin: 0 var(--space-component-1);
+        padding: var(--space-section-1);
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* CTA CSS */
+/* ================================
+   MODEL CTA SECTION
+   ================================ */
+
+.cta-section {
+    background: linear-gradient(135deg, #000000 100%, #2d2d2d 0%);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(210, 255, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(210, 255, 55, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* CTA Header */
+.cta-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-badge {
+    display: inline-block;
+    background: var(--accent-neon, #D2FF37);
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.cta-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cta-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.model-number {
+    color: var(--accent-neon, #D2FF37);
+    font-weight: 700;
+}
+
+/* CTA Main */
+.cta-main {
+    margin-bottom: 40px;
+}
+
+.cta-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.feature-icon {
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-neon, #D2FF37);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.feature-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.feature-content p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* CTA Actions */
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-actions .btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 200px;
+    text-align: left;
+}
+
+.cta-actions .btn-primary {
+    background: var(--accent-neon, #D2FF37);
+    color: #000000;
+}
+
+.cta-actions .btn-primary:hover {
+    background: #b8e63f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(210, 255, 55, 0.3);
+}
+
+.cta-actions .btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta-actions .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-neon, #D2FF37);
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.btn-text strong {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.btn-text small {
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+/* CTA Footer */
+.cta-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.company-info {
+    text-align: left;
+}
+
+.company-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.company-brand strong {
+    font-size: 18px;
+    color: var(--accent-neon, #D2FF37);
+}
+
+.company-tagline {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.company-location {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.business-info {
+    text-align: right;
+}
+
+.business-item {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.business-label {
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.business-value {
+    color: var(--accent-neon, #D2FF37);
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-header h2 {
+        font-size: 32px;
+    }
+    
+    .cta-subtitle {
+        font-size: 16px;
+    }
+    
+    .cta-features {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .feature-item {
+        padding: 16px;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-actions .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .cta-footer {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+    
+    .business-info {
+        text-align: center;
+    }
+    
+    .business-item {
+        justify-content: center;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+
+/* Watermark CSS */
+/* ================================
+   WATERMARK SECTION
+   ================================ */
+
+.watermark-section {
+    width: 100vw;
+    background: transparent;
+    margin: 40px 0 0 0;
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.watermark-text {
+    text-align: center;
+    font-size: 300px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, 
+        rgba(64, 64, 64, 0.6) 0%, 
+        rgba(96, 96, 96, 0.4) 30%, 
+        rgba(128, 128, 128, 0.2) 60%, 
+        rgba(192, 192, 192, 0.05) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* ================================
+   WATERMARK RESPONSIVE
+   ================================ */
+
+@media (max-width: 1024px) {
+    .watermark-text {
+        font-size: 100px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.55) 0%, 
+            rgba(96, 96, 96, 0.35) 30%, 
+            rgba(128, 128, 128, 0.18) 60%, 
+            rgba(192, 192, 192, 0.04) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .watermark-section {
+        width: 100% !important; /* Prevent horizontal scroll */
+        left: 0 !important;
+        transform: none !important;
+        overflow: hidden;
+        margin: 20px 0 0 0;
+        padding-bottom: 40px;
+    }
+    
+    .watermark-text {
+        font-size: 50px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.5) 0%, 
+            rgba(96, 96, 96, 0.3) 30%, 
+            rgba(128, 128, 128, 0.15) 60%, 
+            rgba(192, 192, 192, 0.03) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+        white-space: nowrap; /* Keep text on one line */
+        max-width: 100vw; /* Ensure it fits screen width */
+        overflow: hidden;
+        line-height: 0.8;
+        letter-spacing: -0.02em; /* Tighter letter spacing for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .watermark-text {
+        font-size: 40px;
+        padding: 0 10px;
+        line-height: 0.7;
+        white-space: nowrap;
+        max-width: 100vw;
+        overflow: hidden;
+        letter-spacing: -0.03em;
+    }
+}
+
+
+/* Main Page Styles */
+/* ================================
+   CSS VARIABLES & BASE STYLES
+   ================================ */
+
+:root {
+    /* Color System */
+    --bg-primary: #F8F9FA;
+    --surface-primary: #FFFFFF;
+    --text-primary: #000000;
+    --text-secondary: #4A5568;
+    --accent-neon: rgb(210, 255, 55);
+    --border-subtle: #E2E8F0;
+    --glass-overlay: rgba(255,255,255,0.1);
+    
+    /* Typography Scale */
+    --font-family: 'Bai Jamjuree', sans-serif;
+    --text-branding: clamp(48px, 8vw, 72px);
+    --text-hero: clamp(36px, 6vw, 56px);
+    --text-section: clamp(28px, 4vw, 42px);
+    --text-subsection: clamp(20px, 3vw, 28px);
+    --text-body-large: 18px;
+    --text-body: 16px;
+    --text-body-small: 14px;
+    --text-technical: 15px;
+    
+    /* Spacing System (8px base) */
+    --space-micro-1: 8px;
+    --space-micro-2: 16px;
+    --space-component-1: 24px;
+    --space-component-2: 32px;
+    --space-section-1: 32px;
+    --space-section-2: 48px;
+    --space-page-1: 80px;
+    --space-page-2: 120px;
+    
+    /* Elevation System */
+    --elevation-1: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.12);
+    --elevation-2: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.12);
+    --elevation-3: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.12);
+    --elevation-4: 0 20px 25px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.12);
+    
+    /* Animation */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    --transition-smooth: 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    
+    /* Mobile-specific variables */
+    --mobile-touch-target: 44px;
+    --mobile-section-padding: 24px;
+    --mobile-card-padding: 16px;
+    --mobile-text-scale: 0.9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-component-1);
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.hero {
+    /* background: var(--surface-primary); */
+    padding: var(--space-page-1) 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: var(--space-section-2);
+    align-items: center;
+}
+
+.breadcrumb {
+    font-size: var(--text-body-small);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-micro-2);
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--text-primary);
+}
+
+.hero-title {
+    font-size: var(--text-hero);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: var(--space-micro-2);
+}
+
+.hero-subtitle {
+    font-size: var(--text-body-large);
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-micro-2);
+}
+
+.hero-description {
+    font-size: var(--text-body);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-component-1);
+    line-height: 1.7;
+}
+
+.hero-specs {
+    margin-bottom: var(--space-component-2);
+}
+
+.specs-compact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-1);
+}
+
+.spec-item {
+    text-align: center;
+    padding: var(--space-micro-2);
+    background: white;
+    border-radius: 8px;
+}
+
+.spec-value {
+    font-size: var(--text-subsection);
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.spec-label {
+    font-size: var(--text-body-small);
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: var(--space-micro-2);
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(var(--elevation-2));
+}
+
+/* ================================
+   BUTTONS
+   ================================ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--text-body);
+    transition: var(--transition-fast);
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--text-primary);
+    color: var(--surface-primary);
+}
+
+.btn-primary:hover {
+    background: var(--text-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--elevation-2);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border-color: var(--border-subtle);
+}
+
+.btn-secondary:hover {
+    background: var(--bg-primary);
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background: var(--accent-neon);
+    color: var(--text-primary);
+}
+
+.btn-accent:hover {
+    background: var(--accent-neon);
+    transform: translateY(-2px);
+    box-shadow: var(--elevation-2);
+    filter: brightness(1.1);
+}
+
+/* ================================
+   SECTIONS
+   ================================ */
+
+.section {
+    padding: var(--space-section-2) 0;
+}
+
+.section.bg-light {
+    background: var(--bg-primary);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-section-1);
+}
+
+.section-title {
+    font-size: var(--text-section);
+    font-weight: 700;
+    margin-bottom: var(--space-micro-2);
+}
+
+.section-subtitle {
+    font-size: var(--text-body-large);
+    color: var(--text-secondary);
+}
+
+/* ================================
+   SPECIFICATIONS LAYOUT
+   ================================ */
+
+.specs-main-section {
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+    max-height: 420px;
+    margin-bottom: var(--space-section-1);
+}
+
+.dimensions-table {
+    flex: 0 0 70%;
+}
+
+.specs-image {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center;
+    max-height: 420px;
+}
+
+.specs-image img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+}
+
+/* Ensure dimensions card has proper height */
+.dimensions-card {
+    height: 100%;
+    max-height: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dimensions-grid {
+    flex: 1;
+}
+
+.dimensions-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.dimensions-card {
+    width: 100%;
+}
+
+.dimensions-grid {
+    display: grid;
+    gap: var(--space-micro-2);
+    margin-bottom: var(--space-micro-2);
+}
+
+/* Default 3x1 grid (when no SKF data) */
+.dimensions-grid-3x1 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 3x2 grid (when SKF data is available) */
+.dimensions-grid-3x2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.dimension-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-micro-2);
+    background: var(--bg-primary);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.dimension-label {
+    font-size: var(--text-body-small);
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.dimension-label::first-letter {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 1.1em;
+}
+
+.dimension-value {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.dimension-summary {
+    text-align: center;
+    padding: var(--space-micro-2);
+    background: var(--accent-neon);
+    border-radius: 8px;
+    font-size: var(--text-body-large);
+}
+
+.specs-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-component-1);
+    /* background: var(--surface-primary);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1); */
+}
+
+.specs-image-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 25px 0;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.specs-image img {
+    max-width: 78%;
+    height: auto;
+    filter: drop-shadow(var(--elevation-1));
+}
+
+.specs-cards-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-1);
+}
+
+.spec-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-1);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+    transition: var(--transition-smooth);
+}
+
+.spec-card:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-4px);
+}
+
+.spec-icon {
+    font-size: 2rem;
+    margin-bottom: var(--space-micro-2);
+}
+
+.spec-card h3 {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    margin-bottom: var(--space-micro-2);
+}
+
+.spec-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-micro-1);
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-micro-1) 0;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-row span:first-child {
+    color: var(--text-secondary);
+    font-size: var(--text-body-small);
+}
+
+.spec-row span:last-child {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Speed Ratings Styling */
+.speed-rating-row {
+    background: rgba(210, 255, 55, 0.05);
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin: 6px 0;
+    border-left: 3px solid var(--accent-neon);
+}
+
+/* V2 Speed Rating - Blue border */
+.speed-z2v2 {
+    border-left-color: #007bff !important;
+}
+
+/* V3 Speed Rating - Keep default neon border */
+.speed-z3v3 {
+    border-left-color: var(--accent-neon) !important;
+}
+
+/* V4 Speed Rating - Red border */
+.speed-z4v4 {
+    border-left-color: #dc3545 !important;
+}
+
+.speed-value {
+    font-weight: 600;
+    color: var(--text-primary);
+    background: rgba(210, 255, 55, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Add padding before RHD text in speed rating labels */
+.speed-rating-row span:first-child {
+    padding-left: 12px;
+}
+
+/* Vibration Display Improvements */
+.vibration-grade-row {
+    background: rgba(52, 211, 153, 0.03);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 8px 0;
+}
+
+.grade-label {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.vibration-frequencies {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.freq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.freq-type {
+    color: var(--text-secondary);
+    font-weight: 500;
+    min-width: 45px;
+}
+
+.freq-value {
+    color: var(--text-primary);
+    font-weight: 600;
+    text-align: right;
+}
+
+/* ================================
+   SEAL OPTIONS
+   ================================ */
+
+.seal-options-popular {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-component-1);
+    margin-bottom: var(--space-component-1);
+}
+
+.seal-options-others {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-1);
+}
+
+.seal-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-1);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+    transition: var(--transition-smooth);
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.seal-card:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-4px);
+}
+
+.seal-card.featured {
+    border: 2px solid var(--accent-neon);
+}
+
+.seal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-micro-2);
+}
+
+.seal-header h3 {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+}
+
+.seal-badge {
+    position: absolute;
+    top: -8px;
+    right: 16px;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: var(--elevation-1);
+}
+
+.seal-badge.popular {
+    background: var(--accent-neon);
+    color: #000000;
+}
+
+.seal-description {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-micro-2);
+}
+
+.seal-specs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-micro-1);
+}
+
+.seal-spec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--text-body-small);
+}
+
+.seal-spec span:first-child {
+    color: var(--text-secondary);
+}
+
+.seal-spec span:last-child {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* ================================
+   APPLICATIONS
+   ================================ */
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-component-2);
+}
+
+.application-card {
+    background: var(--surface-primary);
+    padding: var(--space-component-2);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.application-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-micro-2);
+    margin-bottom: var(--space-component-1);
+}
+
+.application-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--accent-neon);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.application-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.application-list {
+    list-style: none;
+    margin-bottom: var(--space-component-1);
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.application-list li {
+    padding: 2px 0;
+    padding-left: var(--space-micro-2);
+    position: relative;
+    line-height: 1.4;
+    color: var(--text-secondary);
+}
+
+.application-list li::before {
+    content: '•';
+    color: #000000;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.application-requirements {
+    font-size: 12px;
+    color: var(--text-secondary);
+    background: var(--bg-primary);
+    padding: var(--space-micro-1);
+    border-radius: 6px;
+    margin-top: auto;
+}
+
+/* ================================
+   FAQ SECTION
+   ================================ */
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-category {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    margin-bottom: var(--space-component-1);
+    box-shadow: var(--elevation-1);
+    overflow: hidden;
+}
+
+.faq-category-header {
+    padding: var(--space-component-1) var(--space-component-1);
+    background: var(--surface-primary);
+    border-left: 2px solid var(--accent-neon);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all var(--transition-fast);
+}
+
+.faq-category-header:hover {
+    background: rgba(210, 255, 55, 0.02);
+}
+
+.faq-chevron {
+    transition: transform var(--transition-smooth);
+    font-size: 20px;
+    color: #000000;
+}
+
+.faq-category.active .faq-chevron {
+    transform: rotate(180deg);
+}
+
+.faq-questions {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-smooth);
+    counter-reset: faq-counter;
+}
+
+.faq-category.active .faq-questions {
+    max-height: 2000px;
+}
+
+.faq-question {
+    padding: var(--space-component-2);
+    border-top: 1px solid var(--border-subtle);
+    margin-bottom: var(--space-component-1);
+    background: rgba(248, 249, 250, 0.3);
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-neon);
+    position: relative;
+    counter-increment: faq-counter;
+}
+
+.faq-question::before {
+    content: "#" counter(faq-counter);
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.faq-question-title {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: var(--space-micro-2);
+    color: var(--text-primary);
+}
+
+.faq-direct-answer {
+    background: rgba(210, 255, 55, 0.1);
+    padding: var(--space-micro-2);
+    border-radius: 8px;
+    margin-bottom: var(--space-micro-2);
+    font-weight: 500;
+    border-left: 3px solid var(--accent-neon);
+}
+
+.faq-section {
+    margin-bottom: var(--space-component-1);
+    padding-top: var(--space-micro-2);
+}
+
+.faq-section-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    font-size: var(--text-body-small);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.faq-section-content {
+    color: var(--text-secondary);
+    font-size: var(--text-body-small);
+    line-height: 1.5;
+}
+
+.faq-pro-tip {
+    background: var(--surface-primary);
+    border: 1px solid var(--accent-neon);
+    padding: var(--space-micro-2);
+    border-radius: 8px;
+    margin-top: var(--space-component-1);
+    font-style: italic;
+    color: var(--text-primary);
+    box-shadow: var(--elevation-1);
+}
+
+.faq-pro-tip::before {
+    content: '💡 Pro Tip: ';
+    font-weight: 600;
+    color: #000000;
+}
+
+/* CTA section styling is now handled by shared/cta-model.css */
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.footer {
+    background: transparent;
+    padding: var(--space-section-2) 0;
+}
+
+.footer-content {
+    background: var(--surface-primary);
+    border-radius: 24px;
+    margin: 0 var(--space-component-2);
+    padding: var(--space-section-2);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--elevation-2);
+    border: 1px solid var(--border-subtle);
+}
+
+
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-section-1);
+    margin-bottom: var(--space-section-1);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: var(--space-component-1);
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-description {
+    font-size: var(--text-body-small);
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-2);
+}
+
+.footer-column-title {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    margin-bottom: var(--space-component-1);
+    color: var(--text-primary);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-micro-2);
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-body-small);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-component-1);
+    border-top: 1px solid var(--border-subtle);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-copyright p {
+    font-size: var(--text-body-small);
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: var(--space-component-1);
+}
+
+.footer-legal a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-body-small);
+    transition: color var(--transition-fast);
+}
+
+.footer-legal a:hover {
+    color: var(--text-primary);
+}
+
+
+
+/* ================================
+   LLM OPTIMIZATION SECTIONS
+   ================================ */
+
+/* Expert Recommendations Section */
+
+
+/* Search Optimization Tags */
+.search-optimization {
+    margin-top: var(--space-component-2);
+    margin-bottom: var(--space-section-1);
+    padding: var(--space-component-2);
+    background: var(--surface-primary);
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--elevation-1);
+}
+
+.search-optimization-title {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    margin-bottom: var(--space-micro-2);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-micro-1);
+}
+
+.search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-micro-1);
+    margin-top: var(--space-micro-2);
+}
+
+.search-tag {
+    background: var(--text-secondary);
+    color: var(--surface-primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: var(--text-body-small);
+    font-weight: 500;
+    transition: var(--transition-fast);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.search-tag:hover {
+    background: #374151;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* Expertise Signals Section */
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-component-2);
+    margin-top: var(--space-component-2);
+}
+
+.expertise-card {
+    background: var(--surface-primary);
+    border-radius: 12px;
+    padding: var(--space-component-2);
+    box-shadow: var(--elevation-1);
+    border: 1px solid var(--border-subtle);
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.expertise-card:hover {
+    box-shadow: var(--elevation-2);
+    transform: translateY(-2px);
+}
+
+.expertise-card h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-micro-1);
+    margin-bottom: var(--space-micro-2);
+    color: var(--text-primary);
+    font-size: var(--text-subsection);
+}
+
+.expertise-icon {
+    font-size: 1.5rem;
+}
+
+.expertise-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    font-size: var(--text-body);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-1);
+        text-align: center;
+    }
+    
+    .hero-image {
+        order: -1;
+    }
+    
+    .specs-compact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-actions {
+        justify-content: center;
+    }
+    
+    .specs-main-section {
+        flex-direction: column;
+        gap: var(--space-component-1);
+        max-height: none;
+    }
+    
+    .dimensions-table {
+        flex: none;
+        width: 100%;
+    }
+    
+    .specs-image {
+        flex: none;
+        width: 100%;
+        order: -1;
+        max-height: none;
+    }
+    
+    .specs-image img {
+        max-width: 60%;
+        max-height: none;
+    }
+    
+    .dimensions-card {
+        padding: 12px;
+        margin: 0 4px;
+    }
+    
+    .dimensions-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .specs-cards-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-1);
+    }
+    
+    .dimensions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .dimension-item {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .dimension-label {
+        font-size: 0.75rem;
+        margin-bottom: 2px;
+    }
+    
+    .dimension-value {
+        font-size: 1rem;
+    }
+    
+    .applications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .seal-options-popular {
+        grid-template-columns: 1fr;
+    }
+    
+    .seal-options-others {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer Responsive */
+    .footer {
+        display: none;
+    }
+    
+    .footer-content {
+        margin: 0 var(--space-micro-2);
+        padding: var(--space-component-2);
+        border-radius: 16px;
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: 1fr;
+    }
+    
+
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-micro-2);
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+    }
+    
+    /* LLM Optimization Sections Mobile */
+    .recommendations-grid,
+    .criteria-grid,
+    .solutions-grid,
+    .comparison-grid,
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-1);
+    }
+    
+    .recommendation-card,
+    .criterion-card,
+    .solution-card,
+    .comparison-card,
+    .expertise-card {
+        padding: var(--space-component-1);
+        margin-bottom: var(--space-component-1);
+    }
+    
+
+    
+
+    
+    .search-tags {
+        justify-content: center;
+    }
+    
+    .search-tag {
+        font-size: var(--text-body-small);
+        padding: 8px 16px;
+    }
+    
+    /* Touch-friendly mobile interactions */
+    .expertise-card {
+        min-height: 44px; /* iOS touch target minimum */
+        cursor: pointer;
+    }
+    
+    .search-tag {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Mobile section spacing */
+    .section {
+        padding: var(--space-section-1) 0;
+    }
+    
+    .section-header {
+        margin-bottom: var(--space-component-2);
+        text-align: center;
+    }
+    
+
+    
+    /* Mobile grid adjustments */
+    .expertise-grid {
+        margin: 0 var(--space-micro-1);
+    }
+    
+    /* Vibration and Speed Ratings Mobile */
+    .vibration-frequencies {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .freq-item {
+        justify-content: space-between;
+        width: 100%;
+        padding: 2px 6px;
+    }
+    
+    .speed-rating-row {
+        padding: 12px 12px;
+    }
+    
+    .speed-value {
+        margin-top: 4px;
+        display: inline-block;
+    }
+    
+    .vibration-grade-row {
+        padding: 8px 12px;
+        margin: 6px 0;
+    }
+    
+    .grade-label {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+    
+    .freq-item {
+        padding: 2px 6px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        margin: 0 var(--space-component-1);
+        padding: var(--space-section-1);
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
+    
+
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--space-micro-2);
+    }
+    
+    .specs-compact {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .dimensions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    
+    .dimension-item {
+        padding: 6px;
+        font-size: 0.85rem;
+    }
+    
+    .dimension-label {
+        font-size: 0.7rem;
+        margin-bottom: 1px;
+    }
+    
+    .dimension-value {
+        font-size: 0.9rem;
+    }
+    
+    .dimensions-card {
+        padding: 8px;
+        margin: 0 2px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn {
+        text-align: center;
+    }
+    
+    /* Extra Small Mobile LLM Optimization */
+    .recommendation-card,
+    .criterion-card,
+    .solution-card,
+    .comparison-card,
+    .expertise-card {
+        padding: var(--space-micro-2);
+        margin-bottom: var(--space-micro-2);
+    }
+    
+    .recommendation-icon,
+    .criterion-icon,
+    .expertise-icon {
+        font-size: 1.25rem;
+    }
+    
+    .search-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .problem-section,
+    .solution-section {
+        padding: var(--space-micro-1);
+    }
+    
+    .problem-title,
+    .solution-title {
+        font-size: var(--text-body-small);
+    }
+    
+    .problem-text,
+    .solution-text {
+        font-size: 13px;
+    }
+    
+}
+
+/* Cross References & Alternatives Styles */
+.cross-ref-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.cross-ref-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cross-ref-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.cross-ref-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.related-models {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.model-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: var(--surface-primary);
+    border: 1px solid var(--border-subtle);
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.model-link:hover {
+    background: var(--bg-primary);
+    transform: translateX(4px);
+}
+
+.alternatives-list,
+.application-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.alternative-item,
+.option-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.alternative-item strong,
+.option-item strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.alternative-item span,
+.option-item span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Expertise Signals Styles - Using existing expertise-grid and expertise-card from earlier in file */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cross-ref-grid,
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .cross-ref-card,
+    .expertise-card {
+        padding: 20px;
+    }
+}
+
+/* LLM Optimization: Decision Helper Styles */
+.decision-helper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.recommendations,
+.decision-criteria {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.recommendations h3,
+.decision-criteria h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.recommendation-list,
+.criteria-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.recommendation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.rec-icon {
+    font-size: 1.25rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.recommendation-item p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.criteria-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.criteria-check {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.criteria-item span {
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.criteria-item strong {
+    color: var(--text-primary);
+}
+
+/* Responsive design for decision helper */
+@media (max-width: 768px) {
+    .decision-helper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .recommendations,
+    .decision-criteria {
+        padding: 20px;
+    }
+}
+
+/* Increase spacing between specification card rows */
+.specs-cards-row + .specs-cards-row {
+    margin-top: 48px;
+}
+
+/* Make icons and titles inline for all card types */
+.spec-card h3,
+.cross-ref-card h3,
+.expertise-card h3,
+.dimensions-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.spec-icon,
+.cross-ref-icon,
+.expertise-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* Fix related model card colors */
+.model-link {
+    color: var(--text-primary) !important;
+    background: var(--surface-primary);
+    border: 1px solid var(--border-subtle);
+    font-weight: 600;
+}
+
+.model-link:hover {
+    color: var(--text-primary) !important;
+    background: var(--bg-primary);
+}
+
+/* Cross reference card text colors */
+.cross-ref-card {
+    color: var(--text-primary);
+}
+
+.alternative-item strong,
+.option-item strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.alternative-item span,
+.option-item span {
+    color: var(--text-secondary);
+}
+
+/* Improved spacing for speed ratings */
+.spec-row:has(.speed-rating) {
+    padding: 12px 0;
+}
+
+/* Better vibration display spacing */
+.vibration-grade .spec-row {
+    padding: 8px 0;
+}
+
+/* Ensure consistent spacing in flip cards */
+.flip-card-front .spec-details {
+    gap: 12px;
+}
+
+.flip-card-front .spec-row {
+    padding: 10px 0;
+}
+
+/* Flip Card Styling */
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    position: relative;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    min-height: 520px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.flip-card-front {
+    background: #ffffff;
+    color: var(--text-primary);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.flip-card-back {
+    background: var(--accent-neon);
+    color: #000000;
+    transform: rotateY(180deg);
+    border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.flip-card-front h3,
+.flip-card-back h3 {
+    margin: 0 0 16px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.flip-card-back h3 {
+    color: #000000;
+}
+
+.flip-card-front .spec-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flip-card-front .spec-row {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.flip-card-front .spec-row:last-child {
+    border-bottom: none;
+}
+
+.flip-card-back .explanation-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: visible;
+}
+
+/* Enhanced styling for new speed ratings and vibration display */
+.flip-card-front .spec-details .spec-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    transition: background-color 0.2s ease;
+}
+
+.flip-card-front .spec-details .spec-row:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Enhanced styling for speed and vibration rows */
+.speed-rating-row:hover {
+    background: rgba(210, 255, 55, 0.08);
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+}
+
+.vibration-grade-row:hover {
+    background: rgba(52, 211, 153, 0.06);
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+}
+
+.explanation-item {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 14px;
+    border-radius: 6px;
+    border-left: 3px solid rgba(0, 0, 0, 0.3);
+    font-size: 0.875rem;
+    line-height: 1.3;
+    color: #000000;
+}
+
+.explanation-item strong {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Seal-specific flip cards (shorter than specs cards) */
+.seal-card.flip-card .flip-card-inner {
+    min-height: 360px;
+}
+
+.flip-hint {
+    margin-top: auto;
+    padding-top: 16px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: center;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Mobile Touch Support */
+@media (max-width: 768px) {
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
+    
+    .flip-card.flipped .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-hint {
+        font-size: 0.7rem;
+        padding: 0 8px;
+        word-wrap: break-word;
+        line-height: 1.2;
+    }
+    
+    .flip-hint::before {
+        content: "Tap for explanation";
+    }
+    
+    .flip-card-inner {
+        min-height: 450px;
+    }
+    
+    .seal-card.flip-card .flip-card-inner {
+        min-height: 320px;
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+        padding: 20px 16px;
+    }
+    
+    .flip-card-front h3,
+    .flip-card-back h3 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .explanation-item {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}
+
+/* Desktop hover hint */
+@media (min-width: 769px) {
+    .flip-hint::before {
+        content: "Hover for explanation";
+    }
+}
+
+/* ================================
+   SEAL HOVER EXPLANATIONS
+   ================================ */
+
+.seal-hover-card {
+    position: relative;
+    overflow: visible;
+}
+
+.seal-explanation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--accent-neon);
+    color: #000000;
+    padding: var(--space-component-1);
+    border-radius: 12px;
+    box-shadow: var(--elevation-3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-smooth);
+    z-index: 10;
+    margin-top: 8px;
+    border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.seal-hover-card:hover .seal-explanation {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.seal-explanation h4 {
+    font-size: var(--text-subsection);
+    font-weight: 600;
+    margin-bottom: var(--space-micro-2);
+    color: #000000;
+    text-align: center;
+}
+
+.explanation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-micro-2);
+}
+
+.seal-explanation .explanation-item {
+    background: rgba(0, 0, 0, 0.1);
+    padding: var(--space-micro-2);
+    border-radius: 6px;
+    border-left: 3px solid rgba(0, 0, 0, 0.3);
+    font-size: var(--text-body-small);
+    line-height: 1.4;
+}
+
+.seal-explanation .explanation-item strong {
+    color: #000000;
+    font-weight: 600;
+}
+
+.seal-hover-hint {
+    margin-top: auto;
+    padding-top: var(--space-micro-2);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-align: center;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Responsive seal explanations */
+@media (max-width: 768px) {
+    .seal-explanation {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        margin-top: 0;
+        padding: 0;
+        transform: none;
+        transition: max-height var(--transition-smooth), padding var(--transition-smooth);
+    }
+    
+    .seal-hover-card.active .seal-explanation {
+        opacity: 1;
+        visibility: visible;
+        max-height: 300px;
+        padding: var(--space-component-1);
+        margin-top: var(--space-micro-2);
+    }
+    
+    .seal-hover-hint::before {
+        content: "Tap for details";
+    }
+}
+
+/* ================================
+   SEAL MODAL SYSTEM
+   ================================ */
+
+.seal-info-btn {
+    background: var(--accent-neon);
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-smooth);
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+}
+
+.seal-info-btn:hover {
+    background: #22c55e;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(52, 211, 153, 0.3);
+}
+
+.seal-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.seal-modal-dialog {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: var(--elevation-4);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.seal-modal-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 20px 0 20px;
+}
+
+.seal-modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #6B7280;
+    padding: 4px;
+    line-height: 1;
+    transition: color var(--transition-smooth);
+}
+
+.seal-modal-close:hover {
+    color: #374151;
+}
+
+.seal-modal-body {
+    padding: 0 20px 24px 20px;
+}
+
+.seal-modal-body h3 {
+    color: #111827;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.seal-modal .explanation-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.seal-modal .explanation-item {
+    background: #f8fafc;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-neon);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.seal-modal .explanation-item strong {
+    color: #111827;
+    font-weight: 600;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .seal-modal-dialog {
+        margin: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .seal-modal-body {
+        padding: 0 16px 20px 16px;
+    }
+    
+    .seal-modal-header {
+        padding: 12px 16px 0 16px;
+    }
+}
+/* ================================
+   MOBILE-SPECIFIC OPTIMIZATIONS
+   ================================ */
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--space-micro-2);
+    }
+    
+    .specs-compact {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn {
+        text-align: center;
+    }
+    
+    /* Mobile LLM Optimization Cards */
+    .recommendation-card,
+    .criterion-card,
+    .solution-card,
+    .comparison-card,
+    .expertise-card {
+        padding: var(--space-micro-2);
+        margin-bottom: var(--space-micro-2);
+    }
+    
+    .recommendation-icon,
+    .criterion-icon,
+    .expertise-icon {
+        font-size: 1.25rem;
+    }
+    
+    .search-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .problem-section,
+    .solution-section {
+        padding: var(--space-micro-1);
+    }
+    
+    .problem-title,
+    .solution-title {
+        font-size: var(--text-body-small);
+    }
+    
+    .problem-text,
+    .solution-text {
+        font-size: 13px;
+    }
+}
+
+/* ================================
+   PERFORMANCE & ACCESSIBILITY
+   ================================ */
+
+/* Smooth scrolling for all devices */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus indicators for accessibility */
+.recommendation-card:focus,
+.criterion-card:focus,
+.solution-card:focus,
+.comparison-card:focus,
+.expertise-card:focus,
+.search-tag:focus {
+    outline: 2px solid var(--accent-neon);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .recommendation-card,
+    .criterion-card,
+    .solution-card,
+    .comparison-card,
+    .expertise-card {
+        border: 2px solid var(--text-primary);
+    }
+    
+    .search-tag {
+        border: 2px solid var(--text-primary);
+    }
+}
+
+
+    </style>
+</head>
+<body data-page="6900-series" data-model="6909" data-alternate-model="61909">
+<!-- Navigation Header -->
+    <!-- RHD Bearings Navigation Header -->
+<div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
+    <div class="uicore-header-wrapper">
+        <nav class="uicore uicore-container">
+            <!-- Logo -->
+            <div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
+                <a href="https://rhdbearings.com/">
+                    <img class="uicore-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <div class="uicore-nav-menu">
+                <div class="uicore-menu-container">
+                    <div class="uicore-menu">
+                        <a href="https://rhdbearings.com/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Home</span>
+                                <span class="ui-menu-item-wrapper">Home</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/about-us/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">About Us</span>
+                                <span class="ui-menu-item-wrapper">About Us</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/products/" class="menu-item has-submenu ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Products</span>
+                                <span class="ui-menu-item-wrapper">Products</span>
+                            </div>
+                            <div class="sub-menu">
+                                <a href="https://rhdbearings.com/specs/miniature-series.html" data-page="miniature">Miniature Bearings</a>
+                                <a href="https://rhdbearings.com/specs/6000-series.html" data-page="6000">6000 Series</a>
+                                <a href="https://rhdbearings.com/specs/6200-series.html" data-page="6200">6200 Series</a>
+                                <a href="https://rhdbearings.com/specs/6300-series.html" data-page="6300">6300 Series</a>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/industries/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Industries</span>
+                                <span class="ui-menu-item-wrapper">Industries</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/bearing-size-chart/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                            </div>
+                        </a>
+                        <a href="https://rhdbearings.com/shop/" class="menu-item ui-anim-flip">
+                            <div class="ui-flip-anim-wrapp">
+                                <span class="ui-menu-item-wrapper">Shop</span>
+                                <span class="ui-menu-item-wrapper">Shop</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Button -->
+            <div class="uicore-extra">
+                <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <!-- Main Content (60%) -->
+                <div class="hero-main">
+                    <div class="breadcrumb">
+                        <a href="https://rhdbearings.com/">Home</a> > 
+                        <a href="https://rhdbearings.com/specs/{{bearing_series}}.html">6900-series</a> > 
+                        <span>6909 Bearing</span>
+                    </div>
+                    
+                    <h1 class="hero-title" id="hero-title">6909 Deep Groove Ball Bearing</h1>
+                    <p class="hero-subtitle">
+                        Forty-five millimeter bore that's middle-aged but moves like it's still twenty-five.
+                    </p>
+                    <p class="hero-description">
+                        Meet the 6909: With 1437kg (14.1kN) of engineering excellence and 45mm precision, this bearing delivers the perfect blend of personality and performance for your critical applications. The most widely used bearing in electronics, small motors, and precision instruments.
+                    </p>
+                    
+                    <div class="hero-specs">
+                        <div class="specs-compact">
+                            <div class="spec-item">
+                                <div class="spec-value">45mm</div>
+                                <div class="spec-label">Bore Diameter</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">68mm</div>
+                                <div class="spec-label">Outer Diameter</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">12mm</div>
+                                <div class="spec-label">Width</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">14.1 kN</div>
+                                <div class="spec-label">Load Rating</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">1437 Kg</div>
+                                <div class="spec-label">Load Capacity</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-value">0.12 Kg</div>
+                                <div class="spec-label">Weight</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#specifications" class="btn btn-primary">Technical Specifications</a>
+                        <a href="#applications" class="btn btn-secondary">Applications</a>
+                        <a href="tel:+91-9702081858" class="btn btn-accent">📞 Call +91-9702081858</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="hero-image">
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/08/DGBB.png" alt="6909 Deep Groove Ball Bearing - RHD Bearings" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Quick Specifications -->
+    <section class="section" id="specifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">6909 BEARING SPECIFICATIONS</h2>
+                <p class="section-subtitle">Precision-engineered for reliability and performance</p>
+            </div>
+            
+            <!-- Search Optimization Tags -->
+            <div class="search-optimization">
+                <h3 class="search-optimization-title">🔍 Common Search Terms</h3>
+                <div class="search-tags">
+                    <span class="search-tag">6909 bearing specifications</span>
+<span class="search-tag">45x68x12 bearing dimensions</span>
+<span class="search-tag">6909 bearing load rating</span>
+<span class="search-tag">6909 bearing speed limit</span>
+<span class="search-tag">6909 bearing price</span>
+<span class="search-tag">6909 bearing cross reference</span>
+                </div>
+            </div>
+            
+            <!-- Dimensions and Image Section -->
+            <div class="specs-main-section">
+                <div class="dimensions-table">
+                    <div class="spec-card dimensions-card">
+                        <h3><span class="spec-icon">📏</span>Dimensions</h3>
+                        <div class="dimensions-grid dimensions-grid-3x2">
+                            <div class="dimension-item">
+                                <div class="dimension-label">d - ID (Bore Diameter)</div>
+                                <div class="dimension-value">45mm</div>
+                            </div>
+                            <div class="dimension-item">
+                                <div class="dimension-label">D - OD (Outer Diameter)</div>
+                                <div class="dimension-value">68mm</div>
+                            </div>
+                            <div class="dimension-item">
+                                <div class="dimension-label">B - Width</div>
+                                <div class="dimension-value">12mm</div>
+                            </div>
+                            
+                            <div class="dimension-item">
+                                <div class="dimension-label">d₁ - Shoulder Diameter</div>
+                                <div class="dimension-value">≈52.4mm</div>
+                            </div>
+                            
+                            
+                            <div class="dimension-item">
+                                <div class="dimension-label">D₂ - Recess Diameter</div>
+                                <div class="dimension-value">≈62.8mm</div>
+                            </div>
+                            
+                            
+                            <div class="dimension-item">
+                                <div class="dimension-label">r₁,₂ - Chamfer Radius</div>
+                                <div class="dimension-value">min. 0.6mm</div>
+                            </div>
+                            
+                        </div>
+                        <div class="dimension-summary">
+                            <strong>6909 Bearing: 45 × 68 × 12mm</strong>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specs-image">
+                    <h3 class="specs-image-title">Cross-Sectional View</h3>
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg" alt="6909 Bearing Cross-Sectional View" />
+                </div>
+            </div>
+
+            <!-- Three Cards Section -->
+            <div class="specs-cards-row">
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">⚡</span>Load Ratings</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>Dynamic Load (Cr)</span>
+                                    <span>14.1kN</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Static Load (Cor)</span>
+                                    <span>10.9kN</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Load Capacity (kN)</span>
+                                    <span>14.1kN</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Load Capacity (kg)</span>
+                                    <span>1437kg</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Dynamic Load (14.1kN):</strong> Maximum force while rotating. Exceeding this causes rapid wear and failure within hours.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Static Load (10.9kN):</strong> Maximum force when stationary. Use 80% for safety.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Calculate Your Load:</strong> Measure shaft forces, belt tensions, or gear loads. Include shock/vibration factors.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Failure Warning:</strong> Overloading causes bearing raceways to crack and balls to flatten permanently.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">🔄</span>Speed Limits</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>Grease Lubrication</span>
+                                    <span>6000 RPM</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Oil Lubrication</span>
+                                    <span>10000 RPM</span>
+                                </div>
+                                <div class="spec-row speed-rating-row speed-z2v2">
+                                    <span>RHD Z2V2 Bearings</span>
+                                    <span class="speed-value" id="z2v2-speed">1400 RPM</span>
+                                </div>
+                                <div class="spec-row speed-rating-row speed-z3v3">
+                                    <span>RHD Z3V3 Bearings</span>
+                                    <span class="speed-value" id="z3v3-speed">2880 RPM</span>
+                                </div>
+                                <div class="spec-row speed-rating-row speed-z4v4">
+                                    <span>RHD Z4V4 Bearings</span>
+                                    <span class="speed-value" id="z4v4-speed">4000+ RPM</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Grease Limit (6000 RPM):</strong> Heat generation increases exponentially above this. Grease breaks down, causing seizure.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Oil Advantage (10000 RPM):</strong> Better heat dissipation allows higher speed. Required for high-speed spindles.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Safe Operating Speed:</strong> Use 90% of limit (5400 RPM) for maximum L10 life of 10,000+ hours.
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Failure Mode:</strong> Exceeding speed causes cage failure, ball skidding, and catastrophic overheating within minutes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">🔧</span>Material & Quality</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>Steel Grade</span>
+                                    <span>SAE52100</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Ball Grade</span>
+                                    <span>G10</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Carbon Content</span>
+                                    <span>0.95-1.05%</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Chromium Content</span>
+                                    <span>1.40-1.65%</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>ISO Standard</span>
+                                    <span>15:2011 Compliant</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>SAE52100 Chrome Steel:</strong> Premium bearing steel - harder than tool steel
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>G10 Balls:</strong> Ultra-precision balls with ±0.25µm tolerance
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>High Carbon:</strong> Superior hardness and wear resistance
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Chromium:</strong> Adds corrosion resistance and toughness
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>ISO Standard:</strong> Fits any 6909 application worldwide
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Technical Data Row -->
+            <div class="specs-cards-row">
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">📊</span>Vibration Classes</h3>
+                            <div class="spec-details">
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V2 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">180</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">150</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">130</span> μm/s</div>
+                                    </div>
+                                </div>
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V3 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">110</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">90</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">80</span> μm/s</div>
+                                    </div>
+                                </div>
+                                <div class="spec-row vibration-grade-row">
+                                    <span class="grade-label">V4 Grade</span>
+                                    <div class="vibration-frequencies">
+                                        <div class="freq-item"><span class="freq-type">Low:</span> <span class="freq-value">82</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">Med:</span> <span class="freq-value">60</span> μm/s</div>
+                                        <div class="freq-item"><span class="freq-type">High:</span> <span class="freq-value">60</span> μm/s</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>V2 Grade:</strong> Standard grade - good for general applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>V3 Grade:</strong> Low vibration - like a smooth car engine
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>V4 Grade:</strong> Ultra-smooth - for precision instruments
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Frequency Bands:</strong> Measured across different rotation speeds
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">🔇</span>Noise Levels</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>Z2 Grade</span>
+                                    <span>&lt; 48 dB</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Z3 Grade</span>
+                                    <span>&lt; 45 dB</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Z4 Grade (Quiet)</span>
+                                    <span>&lt; 45 dB</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>Application</span>
+                                    <span>Precision Equipment</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Z2 Grade:</strong> Quiet as a library - good for most applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Z3 Grade:</strong> Very quiet - like a whisper (40 dB = normal whisper)
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Z4 Grade:</strong> Ultra-quiet - perfect for bedroom fans, medical equipment
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Application:</strong> Ideal for sensitive environments
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spec-card flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <h3><span class="spec-icon">⚙️</span>Internal Clearance</h3>
+                            <div class="spec-details">
+                                <div class="spec-row">
+                                    <span>C2 (Tight)</span>
+                                    <span>1-11 μm</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>C0 (Normal)</span>
+                                    <span>6-23 μm</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span>C3 (Loose)</span>
+                                    <span>18-36 μm</span>
+                                </div>
+                                
+                                <div class="spec-row">
+                                    <span>C4 (High Temp)</span>
+                                    <span>30-51 μm</span>
+                                </div>
+                                
+                                
+                                <div class="spec-row">
+                                    <span>C5 (Extra High Temp)</span>
+                                    <span>45-73 μm</span>
+                                </div>
+                                
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Explanations) -->
+                        <div class="flip-card-back">
+                            <h3><span class="spec-icon">💡</span>What This Means</h3>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>C2 (Tight):</strong> Precision applications - less play, more accurate
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>C0 (Normal):</strong> Standard choice - works for most applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>C3 (Loose):</strong> Better for hot environments - allows thermal expansion
+                                </div>
+                                
+                                <div class="explanation-item">
+                                    <strong>C4 (Exta Loose):</strong> Hot or tight-fit setups — extra room for thermal expansion.
+                                </div>
+                                
+                                
+                                <div class="explanation-item">
+                                    <strong>C5 (Max Loose):</strong> Extreme heat/tight fits or near-limit speeds — maximum expansion allowance
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seal Options -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">SEAL OPTIONS</h2>
+                <p class="section-subtitle">Choose the right protection for your application</p>
+            </div>
+            
+            <!-- Most Popular Seals - Top Row -->
+            <div class="seal-options-popular">
+                <div class="seal-card featured flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <div class="seal-header">
+                                <h3>6909-ZZ</h3>
+                                <div class="seal-badge popular">Most Popular</div>
+                            </div>
+                            <p class="seal-description">Double metal shields</p>
+                            <div class="seal-specs">
+                                <div class="seal-spec">
+                                    <span>Speed Factor:</span>
+                                    <span>0.9 (5400 RPM)</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Protection:</span>
+                                    <span>Dust protection</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Lubrication:</span>
+                                    <span>Sealed for life</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Usage Guide) -->
+                        <div class="flip-card-back">
+                            <h4>When to Use 6909-ZZ</h4>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Best For:</strong> Electronics, small motors, skateboards, general machinery
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Conditions:</strong> Dry environments, moderate dust, precision applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Achieves:</strong> Excellent balance of speed and protection for most applications
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Avoid When:</strong> Heavy water exposure, chemical environments, food processing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seal-card featured flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Front Side (Technical Specs) -->
+                        <div class="flip-card-front">
+                            <div class="seal-header">
+                                <h3>6909-2RS</h3>
+                                <div class="seal-badge popular">Protected</div>
+                            </div>
+                            <p class="seal-description">Double rubber seals</p>
+                            <div class="seal-specs">
+                                <div class="seal-spec">
+                                    <span>Speed Factor:</span>
+                                    <span>0.7 (4200 RPM)</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Protection:</span>
+                                    <span>Moisture and dust</span>
+                                </div>
+                                <div class="seal-spec">
+                                    <span>Lubrication:</span>
+                                    <span>Sealed for life</span>
+                                </div>
+                            </div>
+                            <div class="flip-hint"></div>
+                        </div>
+                        <!-- Back Side (Usage Guide) -->
+                        <div class="flip-card-back">
+                            <h4>When to Use 6909-2RS</h4>
+                            <div class="explanation-content">
+                                <div class="explanation-item">
+                                    <strong>Best For:</strong> Outdoor applications, appliances, automotive systems, dirty environments
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Conditions:</strong> Moisture, dust, contamination, washdown areas, food processing
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Achieves:</strong> Maximum protection and zero maintenance requirements
+                                </div>
+                                <div class="explanation-item">
+                                    <strong>Trade-off:</strong> Lower speed limit but superior environmental protection
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Seal Options - Bottom Row -->
+            <div class="seal-options-others">
+                <div class="seal-card" data-seal-type="6909-open">
+                    <div class="seal-header">
+                        <h3>6909</h3>
+                        <div class="seal-badge">High Speed</div>
+                    </div>
+                    <p class="seal-description">Open bearing, no seals</p>
+                    <div class="seal-specs">
+                        <div class="seal-spec">
+                            <span>Speed Factor:</span>
+                            <span>1.0 (6000 RPM)</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Protection:</span>
+                            <span>None</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Lubrication:</span>
+                            <span>External required</span>
+                        </div>
+                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('6909-open')">
+                        ℹ️ Usage Guide
+                    </button>
+                </div>
+
+                <div class="seal-card" data-seal-type="6909-z">
+                    <div class="seal-header">
+                        <h3>6909-Z</h3>
+                        <div class="seal-badge">Balanced</div>
+                    </div>
+                    <p class="seal-description">Single metal shield</p>
+                    <div class="seal-specs">
+                        <div class="seal-spec">
+                            <span>Speed Factor:</span>
+                            <span>0.95 (5700 RPM)</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Protection:</span>
+                            <span>Light dust protection</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Lubrication:</span>
+                            <span>Pre-greased</span>
+                        </div>
+                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('6909-z')">
+                        ℹ️ Usage Guide
+                    </button>
+                </div>
+
+                <div class="seal-card" data-seal-type="6909-rs">
+                    <div class="seal-header">
+                        <h3>6909-RS</h3>
+                        <div class="seal-badge">Protected</div>
+                    </div>
+                    <p class="seal-description">Single rubber seal</p>
+                    <div class="seal-specs">
+                        <div class="seal-spec">
+                            <span>Speed Factor:</span>
+                            <span>0.8 (4800 RPM)</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Protection:</span>
+                            <span>Moisture and dust</span>
+                        </div>
+                        <div class="seal-spec">
+                            <span>Lubrication:</span>
+                            <span>Pre-greased, sealed</span>
+                        </div>
+                    </div>
+                    <button class="seal-info-btn" onclick="openSealModal('6909-rs')">
+                        ℹ️ Usage Guide
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Applications -->
+    <section class="section" id="applications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">APPLICATIONS</h2>
+                <p class="section-subtitle">Precision performance across industries</p>
+            </div>
+            
+            <div class="applications-grid">
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Factory building main -->
+                                <rect x="4" y="16" width="24" height="12" fill="#6B7280" stroke="#000" stroke-width="0.8"/>
+                                <!-- Factory roof -->
+                                <path d="M2 16h28l-2-2H4l-2 2z" fill="#4B5563" stroke="#000" stroke-width="0.8"/>
+                                <!-- Smokestacks -->
+                                <rect x="8" y="6" width="3" height="12" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <rect x="14" y="4" width="3" height="14" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <rect x="20" y="8" width="3" height="10" fill="#374151" stroke="#000" stroke-width="0.8"/>
+                                <!-- Smoke -->
+                                <ellipse cx="9.5" cy="4" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <ellipse cx="15.5" cy="2" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <ellipse cx="21.5" cy="6" rx="1.5" ry="1" fill="#9CA3AF" opacity="0.7"/>
+                                <!-- Windows -->
+                                <rect x="6" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="10" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="14" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="18" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="22" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <rect x="26" y="18" width="2" height="3" fill="#FEF3C7"/>
+                                <!-- Large entrance -->
+                                <rect x="12" y="22" width="8" height="6" fill="#1F2937" stroke="#000" stroke-width="0.5"/>
+                                <!-- Factory details -->
+                                <rect x="6" y="22" width="4" height="2" fill="#4B5563"/>
+                                <rect x="22" y="22" width="4" height="2" fill="#4B5563"/>
+                                <!-- Ground line -->
+                                <line x1="0" y1="28" x2="32" y2="28" stroke="#000" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">Material Handling</h3>
+                    </div>
+                    <ul class="application-list">
+                        <li>Warehouse conveyor shafts</li>
+<li>Packaging conveyor rollers</li>
+<li>Industrial transport conveyors</li>
+<li>Assembly line conveyor shafts</li>
+<li>Bulk goods handling rollers</li>
+<li>Sorting system rollers</li>
+<li>Logistics conveyor rollers</li>
+<li>Automated material feeders</li>
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> 45mm shaft with 17.0kN (≈1,730kg) dynamic load capacity, 8,000 RPM grease lubrication, 55×13mm profile
+                    </p>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Car body main -->
+                                <path d="M4 20h24c0-1 0-2-1-3l-3-5H8l-3 5c-1 1-1 2-1 3z" fill="#2563EB" stroke="#000" stroke-width="0.8"/>
+                                <!-- Hood and trunk -->
+                                <path d="M6 20h20v3H6v-3z" fill="#1D4ED8" stroke="#000" stroke-width="0.8"/>
+                                <!-- Windshield and windows -->
+                                <path d="M8 12h16l-2 8H10l-2-8z" fill="#374151" stroke="#000" stroke-width="0.5"/>
+                                <path d="M9 13h14l-1.5 6H10.5l-1.5-6z" fill="#1F2937"/>
+                                <!-- Grille -->
+                                <rect x="4" y="18" width="2" height="3" fill="#374151"/>
+                                <rect x="26" y="18" width="2" height="3" fill="#374151"/>
+                                <!-- Headlights -->
+                                <ellipse cx="5" cy="17" rx="1" ry="1.5" fill="#F9FAFB"/>
+                                <ellipse cx="27" cy="17" rx="1" ry="1.5" fill="#F9FAFB"/>
+                                <!-- Wheels -->
+                                <circle cx="9" cy="25" r="3.5" fill="#111827" stroke="#000" stroke-width="0.8"/>
+                                <circle cx="23" cy="25" r="3.5" fill="#111827" stroke="#000" stroke-width="0.8"/>
+                                <!-- Rims -->
+                                <circle cx="9" cy="25" r="2" fill="#6B7280"/>
+                                <circle cx="23" cy="25" r="2" fill="#6B7280"/>
+                                <circle cx="9" cy="25" r="1" fill="#9CA3AF"/>
+                                <circle cx="23" cy="25" r="1" fill="#9CA3AF"/>
+                                <!-- Side mirrors -->
+                                <rect x="7" y="15" width="1" height="1" fill="#374151"/>
+                                <rect x="24" y="15" width="1" height="1" fill="#374151"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">Precision Machinery</h3>
+                    </div>
+                    <ul class="application-list">
+                        <li>CNC rotary tables</li>
+<li>Metrology instrument pivots</li>
+<li>Robotic inspection arms</li>
+<li>Precision positioning devices</li>
+<li>Inspection camera mounts</li>
+<li>Scientific instrument spindles</li>
+<li>Optical device pivots</li>
+<li>Automated assembly joints</li>
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> Precision 45mm bore with 12.0kN (≈1,220kg) static load rating
+                    </p>
+                </div>
+                
+                <div class="application-card">
+                    <div class="application-header">
+                        <div class="application-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <!-- Washing machine -->
+                                <rect x="2" y="8" width="12" height="16" rx="1" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
+                                <!-- Door -->
+                                <circle cx="8" cy="16" r="5" fill="#E2E8F0" stroke="#000" stroke-width="1"/>
+                                <circle cx="8" cy="16" r="3" fill="#CBD5E0"/>
+                                <!-- Control panel -->
+                                <rect x="3" y="9" width="10" height="2" fill="#E2E8F0"/>
+                                <circle cx="5" cy="10" r="0.5" fill="#4A5568"/>
+                                <circle cx="7" cy="10" r="0.5" fill="#4A5568"/>
+                                <rect x="9" y="9.5" width="3" height="1" fill="#4A5568"/>
+                                
+                                <!-- Refrigerator -->
+                                <rect x="16" y="4" width="14" height="24" rx="1" fill="#F7FAFC" stroke="#000" stroke-width="1"/>
+                                <!-- Fridge door line -->
+                                <line x1="16" y1="16" x2="30" y2="16" stroke="#CBD5E0" stroke-width="1"/>
+                                <!-- Handles -->
+                                <rect x="28" y="10" width="1" height="4" fill="#4A5568"/>
+                                <rect x="28" y="18" width="1" height="4" fill="#4A5568"/>
+                                <!-- Details -->
+                                <rect x="18" y="6" width="2" height="1" fill="#E2E8F0"/>
+                                <circle cx="20" cy="8" r="0.5" fill="#48BB78"/>
+                            </svg>
+                        </div>
+                        <h3 class="application-title">Heavy Platforms</h3>
+                    </div>
+                    <ul class="application-list">
+                        <li>Industrial platform wheels</li>
+<li>Transport cart axles</li>
+<li>Forklift wheels</li>
+<li>Mining equipment rollers</li>
+<li>Construction site wheels</li>
+<li>Warehouse dolly hubs</li>
+<li>Material handling carts</li>
+<li>Heavy duty roller bases</li>
+                    </ul>
+                    <p class="application-requirements">
+                        <strong>Key Requirements:</strong> 45mm bore, 15mm width for loading platforms
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross References & Alternatives -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compatible Models & Shaft Requirements</h2>
+                <p>Find bearings with the same bore size and ensure proper shaft preparation</p>
+            </div>
+            
+            <div class="cross-ref-grid">
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
+                    <div class="related-models">
+                        <a href="https://rhdbearings.com/specs/6000-series/6009/" class="model-link">6009</a>
+<a href="https://rhdbearings.com/specs/6200-series/6209/" class="model-link">6209</a>
+<a href="https://rhdbearings.com/specs/6300-series/6309/" class="model-link">6309</a>
+<a href="https://rhdbearings.com/specs/6800-series/6809/" class="model-link">6809</a>
+                    </div>
+                </div>
+                
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🔧</span>Shaft Requirements</h3>
+                    <div class="alternatives-list">
+                        <div class="alternative-item">
+                            <strong>Nominal Diameter</strong>
+                            <span>45.000mm</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Tolerance Grade</strong>
+                            <span>h6 (44.987-45.013mm)</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Surface Finish</strong>
+                            <span>Ra 0.8μm max</span>
+                        </div>
+                        <div class="alternative-item">
+                            <strong>Runout Tolerance</strong>
+                            <span>0.013mm max</span>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="cross-ref-card">
+                    <h3><span class="cross-ref-icon">🎯</span>Application-Specific Options</h3>
+                    <div class="application-options">
+                        <div class="option-item">
+                            <strong>High Temperature:</strong>
+                            <span>C3 clearance recommended</span>
+                        </div>
+                        <div class="option-item">
+                            <strong>High Speed:</strong>
+                            <span>RHD V3 & V4 bearings recommended</span>
+                        </div>
+                        <div class="option-item">
+                            <strong>Corrosive Environment:</strong>
+                            <span>SS (Stainless Steel) bearings recommended</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Expertise Signals -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Expertise & Standards</h2>
+                <p class="section-subtitle">Technical insights from 20+ years of bearing engineering and manufacturing excellence</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card"><h3><span class="expertise-icon">📋</span>ISO Compliance</h3><p>ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">🔬</span>Material Science</h3><p>Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">⚙️</span>Precision Engineering</h3><p>C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">🔧</span>Professional Installation</h3><p>Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">📊</span>Performance Comparison</h3><p>Handles 10.9kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products.</p></div>
+<div class="expertise-card"><h3><span class="expertise-icon">💰</span>Value Engineering</h3><p>Best value in small-bearing category for 14.10kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+                <p class="section-subtitle">Expert guidance for 6909 bearing applications</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>Bearing Selection & Replacement</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What makes the 6909 bearing suitable for high-speed applications?</h4>
+                            <div class="faq-direct-answer">The 6909 bearing is designed for high-speed applications with a grease RPM rating of 6,000 and oil RPM of 10,000, making it ideal for precision machinery and high-speed equipment.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">High-speed capability ensures reliable performance in demanding applications without premature failure or excessive heat generation.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Select 6909 bearing for applications requiring speeds up to 6,000 RPM with proper lubrication and mounting practices.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">For maximum speed performance, use oil lubrication and ensure proper shaft and housing tolerances (h6 shaft tolerance recommended).</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">Can I replace a 6909 bearing with other series bearings?</h4>
+                            <div class="faq-direct-answer">The 6909 bearing can be cross-referenced with 6009, 6209, 6309, and 6809 series bearings that share the same 45mm bore diameter, though load capacities and dimensions may vary.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Proper cross-referencing ensures compatibility while allowing flexibility in bearing selection based on specific application requirements.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Verify outer diameter (68mm) and width (12mm) compatibility before replacement, and consider load requirements when selecting alternatives.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Always check the specific application requirements and consult technical specifications before making cross-series replacements.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What is the load capacity of the 6909 bearing?</h4>
+                            <div class="faq-direct-answer">The 6909 bearing has a dynamic load rating of 1438.2kg (14.10kN) (1438kg) and static load rating of 10.90kN (1112kg), making it suitable for moderate to high-load applications.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Understanding load capacity is crucial for proper bearing selection and preventing premature failure due to overloading.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Calculate your application's equivalent dynamic load and ensure it doesn't exceed 1438.2kg (14.10kN) for optimal bearing life.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">For applications with high static loads, ensure the static load rating of 1111.8kg (10.90kN) is not exceeded to prevent permanent deformation.</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>Installation & Maintenance</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What shaft tolerance is recommended for the 6909 bearing?</h4>
+                            <div class="faq-direct-answer">The 6909 bearing requires an h6 shaft tolerance with a nominal diameter of 45.000mm and tolerance range of 44.987-45.013mm for optimal performance.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Proper shaft tolerance ensures correct fit and prevents issues like excessive clearance or interference that can lead to premature failure.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Machine the shaft to h6 tolerance (44.987-45.013mm) with a surface finish of Ra 0.8μm maximum and runout tolerance of 0.013mm maximum.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Use precision measuring tools to verify shaft dimensions before installation, as even small deviations can significantly impact bearing performance.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How should I lubricate the 6909 bearing?</h4>
+                            <div class="faq-direct-answer">The 6909 bearing can be lubricated with grease (up to 6,000 RPM) or oil (up to 10,000 RPM), with the choice depending on speed requirements and application conditions.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Proper lubrication is essential for bearing performance, reducing friction, preventing wear, and extending service life.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">For high-speed applications, use oil lubrication. For general applications, use high-quality bearing grease with appropriate viscosity.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Avoid over-lubrication as it can cause excessive heat generation and reduce bearing efficiency, especially in high-speed applications.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What is the recommended installation method for the 6909 bearing?</h4>
+                            <div class="faq-direct-answer">The 6909 bearing should be installed using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to the bearing components.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Proper installation prevents bearing damage, ensures correct fit, and maximizes service life while maintaining performance characteristics.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Use bearing installation tools or sleeves to apply pressure evenly on the inner ring, never apply force directly to the outer ring or balls.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Heat the bearing to 80-100°C before installation to expand the inner ring, making installation easier and reducing the risk of damage.</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>Troubleshooting</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">Why is my 6909 bearing running hot?</h4>
+                            <div class="faq-direct-answer">A hot-running 6909 bearing is typically caused by over-lubrication, excessive load, misalignment, or insufficient clearance, requiring immediate investigation and correction.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Excessive heat can lead to premature bearing failure, lubricant breakdown, and potential damage to surrounding components.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Check lubrication levels, verify load conditions, inspect for misalignment, and ensure proper clearance. Reduce speed if necessary and monitor temperature.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80°C indicate potential problems requiring attention.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What causes excessive noise in the 6909 bearing?</h4>
+                            <div class="faq-direct-answer">Excessive noise in the 6909 bearing is usually caused by contamination, insufficient lubrication, bearing damage, or improper installation, each requiring specific corrective actions.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Unusual noise often indicates bearing problems that, if left unaddressed, can lead to catastrophic failure and equipment damage.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Inspect for contamination, check lubrication levels, examine bearing surfaces for damage, and verify proper installation and alignment.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Use vibration analysis tools to detect bearing problems early, as noise often precedes visible damage and can be caught before failure occurs.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How do I identify if my 6909 bearing needs replacement?</h4>
+                            <div class="faq-direct-answer">Signs that your 6909 bearing needs replacement include excessive noise, vibration, heat generation, increased friction, or visible damage to bearing components.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Timely bearing replacement prevents catastrophic failure, reduces downtime, and protects other equipment components from damage.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Monitor bearing performance regularly, conduct vibration analysis, and inspect for visual signs of wear or damage during maintenance intervals.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Establish a preventive maintenance schedule based on operating conditions - high-speed applications may require more frequent inspection and replacement.</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="faq-category">
+                    <div class="faq-category-header" onclick="toggleFaqCategory(this)">
+                        <span>Cost & Performance</span>
+                        <span class="faq-chevron">▼</span>
+                    </div>
+                    <div class="faq-questions">
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What is the cost-benefit of choosing the 6909 bearing over alternatives?</h4>
+                            <div class="faq-direct-answer">The 6909 bearing offers excellent value with 1438.2kg (14.10kN) load capacity in a compact 45x68x12mm design, providing 3-10x longer service life than cheap alternatives.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Quality bearings reduce total cost of ownership through longer service life, reduced maintenance, and fewer unplanned failures.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Calculate total cost of ownership including initial cost, maintenance, and downtime costs when comparing bearing options.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Consider the cost of equipment downtime and replacement labor when evaluating bearing options - quality bearings often pay for themselves through reduced maintenance costs.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">How can I optimize the performance of my 6909 bearing?</h4>
+                            <div class="faq-direct-answer">Optimize 6909 bearing performance by ensuring proper installation, correct lubrication, appropriate load conditions, and regular maintenance according to manufacturer specifications.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Optimized performance extends bearing life, reduces maintenance costs, and ensures reliable operation in demanding applications.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Follow manufacturer guidelines for installation, use recommended lubricants, monitor operating conditions, and establish regular maintenance schedules.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Implement condition monitoring systems to track bearing performance and identify optimization opportunities before problems occur.</div>
+                        </div>
+                        
+                        <div class="faq-question">
+                            <h4 class="faq-question-title">What factors affect the service life of the 6909 bearing?</h4>
+                            <div class="faq-direct-answer">The service life of the 6909 bearing is affected by load conditions, speed, lubrication quality, operating temperature, contamination levels, and installation practices.</div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">Why This Matters</div>
+                                <div class="faq-section-content">Understanding factors that affect service life helps optimize operating conditions and maximize bearing performance and longevity.</div>
+                            </div>
+                            
+                            <div class="faq-section">
+                                <div class="faq-section-title">How To Handle It</div>
+                                <div class="faq-section-content">Control operating conditions within recommended limits, maintain proper lubrication, prevent contamination, and ensure correct installation and alignment.</div>
+                            </div>
+                            
+                            <div class="faq-pro-tip">Keep detailed records of operating conditions and maintenance activities to identify patterns and optimize bearing service life over time.</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA (Dynamic Component) -->
+    <!-- Contact CTA -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <div class="cta-header">
+                <div class="cta-badge">🔥 FAST DELIVERY</div>
+                <h2>Need <span class="model-number">6909</span> Bearings Today?</h2>
+                <p class="cta-subtitle">Get instant pricing and availability for premium <span class="model-number">6909</span> bearings. Same-day dispatch available for orders before 2 PM.</p>
+            </div>
+            
+            <div class="cta-main">
+                <div class="cta-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-content">
+                            <h4>Instant Quote</h4>
+                            <p>Real-time pricing & availability</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <div class="feature-content">
+                            <h4>Same Day Dispatch</h4>
+                            <p>Orders before 2 PM ship today</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🏆</div>
+                        <div class="feature-content">
+                            <h4>Premium Quality</h4>
+                            <p>ISO certified, 20+ years expertise</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-actions">
+                    <a href="tel:+91-9702081858" class="btn btn-primary">
+                        <span class="btn-icon">📞</span>
+                        <span class="btn-text">
+                            <strong>Call Now</strong>
+                            <small>+91-9702081858</small>
+                        </span>
+                    </a>
+                    <a href="mailto:sales@rhdenterprise.in" class="btn btn-secondary">
+                        <span class="btn-icon">📧</span>
+                        <span class="btn-text">
+                            <strong>Email Quote</strong>
+                            <small>Instant Response</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cta-footer">
+                <div class="company-info">
+                    <div class="company-brand">
+                        <strong>RHD Bearings</strong>
+                        <span class="company-tagline">Your Trusted Bearing Partner</span>
+                    </div>
+                    <div class="company-location">
+                        📍 203 Vihar Estate, Sakinaka, Andheri East, Mumbai 400072
+                    </div>
+                </div>
+                <div class="business-info">
+                    <div class="business-item">
+                        <span class="business-label">OEM Sales:</span>
+                        <span class="business-value">oemsales@rhdenterprise.in</span>
+                    </div>
+                    <div class="business-item">
+                        <span class="business-label">Bulk Orders:</span>
+                        <span class="business-value">Significant discounts available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings" class="footer-logo-img">
+                        </div>
+                        <p class="footer-description">
+                            RHD Bearings specializes in high-quality ball bearings for industrial, automotive, and precision applications. With over 20 years of experience, we provide reliable bearing solutions worldwide.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-nav">
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Product</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/specs/miniature-series.html">Miniature Bearings</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6000-series.html">6000 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6200-series.html">6200 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6300-series.html">6300 Series</a></li>
+                                <li><a href="https://rhdbearings.com/bearing-size-chart/">Size Chart</a></li>
+                                <li><a href="https://rhdbearings.com/shop/">Shop Online</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Resources</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/bearing-installation-guide/">Installation Guide</a></li>
+                                <li><a href="https://rhdbearings.com/bearing-maintenance/">Maintenance Tips</a></li>
+                                <li><a href="https://rhdbearings.com/technical-specifications/">Technical Specs</a></li>
+                                <li><a href="https://rhdbearings.com/industries/">Industry Applications</a></li>
+                                <li><a href="https://rhdbearings.com/faqs/">FAQs</a></li>
+                                <li><a href="https://rhdbearings.com/support/">Support Center</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h3 class="footer-column-title">Company</h3>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/about-us/">About Us</a></li>
+                                <li><a href="https://rhdbearings.com/quality-assurance/">Quality Assurance</a></li>
+                                <li><a href="https://rhdbearings.com/careers/">Careers</a></li>
+                                <li><a href="https://rhdbearings.com/contact-us/">Contact</a></li>
+                                <li><a href="https://rhdbearings.com/news/">News & Updates</a></li>
+                                <li><a href="https://rhdbearings.com/partnerships/">Partnerships</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 RHD Bearings. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="https://rhdbearings.com/terms-of-service/">Terms of Service</a>
+                        <a href="https://rhdbearings.com/privacy-policy/">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Watermark Section -->
+    <section class="watermark-section">
+        <div class="watermark-text">BEARINGS</div>
+    </section>
+
+    <!-- Seal Usage Modal -->
+    <div id="seal-modal" class="seal-modal">
+        <div class="seal-modal-dialog">
+            <div class="seal-modal-header">
+                <button class="seal-modal-close" onclick="closeSealModal()">&times;</button>
+            </div>
+            <div id="seal-modal-content" class="seal-modal-body">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- External script removed -->
+    <script>
+        // Load navbar
+        // fetch call removed - component already embedded
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load CTA component
+        document.addEventListener('DOMContentLoaded', function() {
+            loadModelCTA('6909', 'cta-container');
+        });
+
+        // Mobile flip card touch support
+        document.addEventListener('DOMContentLoaded', function() {
+            const flipCards = document.querySelectorAll('.flip-card');
+            
+            flipCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Only on mobile devices
+                    if (window.innerWidth <= 768) {
+                        this.classList.toggle('flipped');
+                    }
+                });
+            });
+        });
+
+        // Mobile seal card touch support
+        document.addEventListener('DOMContentLoaded', function() {
+            const sealCards = document.querySelectorAll('.seal-hover-card');
+            
+            sealCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Only on mobile devices
+                    if (window.innerWidth <= 768) {
+                        // Close all other seal explanations
+                        sealCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.classList.remove('active');
+                            }
+                        });
+                        // Toggle this seal explanation
+                        this.classList.toggle('active');
+                    }
+                });
+            });
+        });
+
+        // FAQ Toggle functionality
+        function toggleFaqCategory(header) {
+            const category = header.parentElement;
+            const isActive = category.classList.contains('active');
+            
+            // Close all categories
+            document.querySelectorAll('.faq-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Open clicked category if it wasn't active
+            if (!isActive) {
+                category.classList.add('active');
+            }
+        }
+
+        // Initialize FAQ - all categories collapsed by default
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ sections start collapsed by default
+            // Users can click headers to expand
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Seal Modal Functions
+        function openSealModal(sealType) {
+            const modal = document.getElementById('seal-modal');
+            const content = document.getElementById('seal-modal-content');
+            
+            let modalContent = '';
+            
+            switch(sealType) {
+                case '6909-open':
+                    modalContent = `
+                        <h3>When to Use 6909 Open</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication optimization
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Maximum speed potential (6000 RPM) and optimized lubrication for specific applications
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '6909-z':
+                    modalContent = `
+                        <h3>When to Use 6909-Z</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Semi-clean environments needing re-lubrication access with moderate protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (5700 RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '6909-rs':
+                    modalContent = `
+                        <h3>When to Use 6909-RS</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Moderate contamination with maintenance access needs and environmental protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (4800 RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications
+                            </div>
+                        </div>
+                    `;
+                    break;
+            }
+            
+            content.innerHTML = modalContent;
+            modal.style.display = 'flex';
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeSealModal();
+                }
+            });
+        }
+        
+        function closeSealModal() {
+            const modal = document.getElementById('seal-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSealModal();
+            }
+        });
+
+        // Speed Limits Conditional Logic
+        function updateSpeedLimits() {
+            const bearingSeries = '6900-series';
+            const isMiniature = bearingSeries === 'miniature-series';
+            
+            const z2v2Element = document.getElementById('z2v2-speed');
+            const z3v3Element = document.getElementById('z3v3-speed');
+            const z4v4Element = document.getElementById('z4v4-speed');
+            
+            if (z2v2Element && z3v3Element && z4v4Element) {
+                if (isMiniature) {
+                    z2v2Element.textContent = '8000 RPM';
+                    z3v3Element.textContent = '15000 RPM';
+                    z4v4Element.textContent = '24000 RPM';
+                } else {
+                    z2v2Element.textContent = '1400 RPM';
+                    z3v3Element.textContent = '2880 RPM';
+                    z4v4Element.textContent = '4000+ RPM';
+                }
+            }
+        }
+
+        // Run speed limits update when page loads
+        document.addEventListener('DOMContentLoaded', updateSpeedLimits);
+
+        // Update hero title with alternate model number if available
+        function updateHeroTitle() {
+            const heroTitle = document.getElementById('hero-title');
+            if (heroTitle) {
+                // Check if alternate_model_number exists in the page data
+                const pageData = document.body.dataset;
+                const modelNumber = pageData.model;
+                const bearingSeries = pageData.page;
+                
+                // Try to get alternate model number from JSON data or page attributes
+                // This assumes the data is available in a script tag or data attribute
+                const alternateModelNumber = getAlternateModelNumber(modelNumber);
+                
+                if (alternateModelNumber) {
+                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
+                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                }
+            }
+        }
+
+        // Function to get alternate model number
+        function getAlternateModelNumber(modelNumber) {
+            // Check if we have the alternate model number in the page data
+            // This could be from a data attribute, script tag, or API call
+            const alternateModelAttr = document.querySelector('[data-alternate-model]');
+            if (alternateModelAttr) {
+                const alternateModel = alternateModelAttr.dataset.alternateModel;
+                // Only return if the alternate model number is meaningful (not empty, undefined, or placeholder)
+                if (alternateModel && 
+                    alternateModel !== 'undefined' && 
+                    alternateModel !== '' && 
+                    !alternateModel.includes('{{') && 
+                    !alternateModel.includes('}}')) {
+                    return alternateModel;
+                }
+            }
+            
+            // Fallback: calculate based on the pattern (model + 55000)
+            if (modelNumber && modelNumber.startsWith('68')) {
+                const num = parseInt(modelNumber);
+                if (num >= 6800 && num <= 6820) {
+                    return (num + 55000).toString();
+                }
+            }
+            
+            return null;
+        }
+
+        // Run hero title update when page loads
+        document.addEventListener('DOMContentLoaded', updateHeroTitle);
+
+        // Handle alternate model number data attribute
+        function handleAlternateModelNumber() {
+            const body = document.body;
+            const alternateModelNumber = body.dataset.alternateModel;
+            
+            // If alternate model number is empty, undefined, or contains placeholder text, remove the attribute
+            if (!alternateModelNumber || 
+                alternateModelNumber === 'undefined' || 
+                alternateModelNumber === '' || 
+                alternateModelNumber.includes('{{') || 
+                alternateModelNumber.includes('}}')) {
+                body.removeAttribute('data-alternate-model');
+            }
+        }
+
+        // Run alternate model number handling when page loads
+        document.addEventListener('DOMContentLoaded', handleAlternateModelNumber);
+    </script>
+<script>
+        // Load navbar
+        fetch('../../../../shared/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load CTA component
+        document.addEventListener('DOMContentLoaded', function() {
+            loadModelCTA('6909', 'cta-container');
+        });
+
+        // Mobile flip card touch support
+        document.addEventListener('DOMContentLoaded', function() {
+            const flipCards = document.querySelectorAll('.flip-card');
+            
+            flipCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Only on mobile devices
+                    if (window.innerWidth <= 768) {
+                        this.classList.toggle('flipped');
+                    }
+                });
+            });
+        });
+
+        // Mobile seal card touch support
+        document.addEventListener('DOMContentLoaded', function() {
+            const sealCards = document.querySelectorAll('.seal-hover-card');
+            
+            sealCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Only on mobile devices
+                    if (window.innerWidth <= 768) {
+                        // Close all other seal explanations
+                        sealCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.classList.remove('active');
+                            }
+                        });
+                        // Toggle this seal explanation
+                        this.classList.toggle('active');
+                    }
+                });
+            });
+        });
+
+        // FAQ Toggle functionality
+        function toggleFaqCategory(header) {
+            const category = header.parentElement;
+            const isActive = category.classList.contains('active');
+            
+            // Close all categories
+            document.querySelectorAll('.faq-category').forEach(cat => {
+                cat.classList.remove('active');
+            });
+            
+            // Open clicked category if it wasn't active
+            if (!isActive) {
+                category.classList.add('active');
+            }
+        }
+
+        // Initialize FAQ - all categories collapsed by default
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ sections start collapsed by default
+            // Users can click headers to expand
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Seal Modal Functions
+        function openSealModal(sealType) {
+            const modal = document.getElementById('seal-modal');
+            const content = document.getElementById('seal-modal-content');
+            
+            let modalContent = '';
+            
+            switch(sealType) {
+                case '6909-open':
+                    modalContent = `
+                        <h3>When to Use 6909 Open</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> High-speed applications, controlled clean environments, custom lubrication optimization
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Clean rooms, precision machinery, spindles, specialized equipment with dedicated maintenance
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Maximum speed potential (6000 RPM) and optimized lubrication for specific applications
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Requires:</strong> External protection system and regular maintenance schedule to prevent contamination
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '6909-z':
+                    modalContent = `
+                        <h3>When to Use 6909-Z</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Semi-clean environments needing re-lubrication access with moderate protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Equipment requiring periodic maintenance, moderate dust, accessible mounting locations
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Balance between protection and serviceability with good speed performance (5700 RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Note:</strong> One side accessible for lubrication, one side protected - ideal for maintenance flexibility
+                            </div>
+                        </div>
+                    `;
+                    break;
+                case '6909-rs':
+                    modalContent = `
+                        <h3>When to Use 6909-RS</h3>
+                        <div class="explanation-grid">
+                            <div class="explanation-item">
+                                <strong>Best For:</strong> Moderate contamination with maintenance access needs and environmental protection
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Conditions:</strong> Light moisture exposure, serviceable locations where one-sided access is sufficient
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Achieves:</strong> Good protection while maintaining lubrication access for long-term service (4800 RPM)
+                            </div>
+                            <div class="explanation-item">
+                                <strong>Ideal When:</strong> You need environmental protection but want maintenance flexibility for critical applications
+                            </div>
+                        </div>
+                    `;
+                    break;
+            }
+            
+            content.innerHTML = modalContent;
+            modal.style.display = 'flex';
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeSealModal();
+                }
+            });
+        }
+        
+        function closeSealModal() {
+            const modal = document.getElementById('seal-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeSealModal();
+            }
+        });
+
+        // Speed Limits Conditional Logic
+        function updateSpeedLimits() {
+            const bearingSeries = '6900-series';
+            const isMiniature = bearingSeries === 'miniature-series';
+            
+            const z2v2Element = document.getElementById('z2v2-speed');
+            const z3v3Element = document.getElementById('z3v3-speed');
+            const z4v4Element = document.getElementById('z4v4-speed');
+            
+            if (z2v2Element && z3v3Element && z4v4Element) {
+                if (isMiniature) {
+                    z2v2Element.textContent = '8000 RPM';
+                    z3v3Element.textContent = '15000 RPM';
+                    z4v4Element.textContent = '24000 RPM';
+                } else {
+                    z2v2Element.textContent = '1400 RPM';
+                    z3v3Element.textContent = '2880 RPM';
+                    z4v4Element.textContent = '4000+ RPM';
+                }
+            }
+        }
+
+        // Run speed limits update when page loads
+        document.addEventListener('DOMContentLoaded', updateSpeedLimits);
+
+        // Update hero title with alternate model number if available
+        function updateHeroTitle() {
+            const heroTitle = document.getElementById('hero-title');
+            if (heroTitle) {
+                // Check if alternate_model_number exists in the page data
+                const pageData = document.body.dataset;
+                const modelNumber = pageData.model;
+                const bearingSeries = pageData.page;
+                
+                // Try to get alternate model number from JSON data or page attributes
+                // This assumes the data is available in a script tag or data attribute
+                const alternateModelNumber = getAlternateModelNumber(modelNumber);
+                
+                if (alternateModelNumber) {
+                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
+                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                }
+            }
+        }
+
+        // Function to get alternate model number
+        function getAlternateModelNumber(modelNumber) {
+            // Check if we have the alternate model number in the page data
+            // This could be from a data attribute, script tag, or API call
+            const alternateModelAttr = document.querySelector('[data-alternate-model]');
+            if (alternateModelAttr) {
+                const alternateModel = alternateModelAttr.dataset.alternateModel;
+                // Only return if the alternate model number is meaningful (not empty, undefined, or placeholder)
+                if (alternateModel && 
+                    alternateModel !== 'undefined' && 
+                    alternateModel !== '' && 
+                    !alternateModel.includes('{{') && 
+                    !alternateModel.includes('}}')) {
+                    return alternateModel;
+                }
+            }
+            
+            // Fallback: calculate based on the pattern (model + 55000)
+            if (modelNumber && modelNumber.startsWith('68')) {
+                const num = parseInt(modelNumber);
+                if (num >= 6800 && num <= 6820) {
+                    return (num + 55000).toString();
+                }
+            }
+            
+            return null;
+        }
+
+        // Run hero title update when page loads
+        document.addEventListener('DOMContentLoaded', updateHeroTitle);
+
+        // Handle alternate model number data attribute
+        function handleAlternateModelNumber() {
+            const body = document.body;
+            const alternateModelNumber = body.dataset.alternateModel;
+            
+            // If alternate model number is empty, undefined, or contains placeholder text, remove the attribute
+            if (!alternateModelNumber || 
+                alternateModelNumber === 'undefined' || 
+                alternateModelNumber === '' || 
+                alternateModelNumber.includes('{{') || 
+                alternateModelNumber.includes('}}')) {
+                body.removeAttribute('data-alternate-model');
+            }
+        }
+
+        // Run alternate model number handling when page loads
+        document.addEventListener('DOMContentLoaded', handleAlternateModelNumber);
+    </script>
+
+</body>
+</html>

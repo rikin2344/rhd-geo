@@ -91,7 +91,7 @@
         "Electric vehicle motors",
         "Refrigeration compressors"
       ],
-      "requirements": "25mm shaft with 11.00kN (≈1,120kg) dynamic load capacity, 10,000 RPM grease lubrication, 52×15mm profile for motor applications"
+      "requirements": "25mm shaft with 11.00kN (\u22481,120kg) dynamic load capacity, 10,000 RPM grease lubrication, 52\u00d715mm profile for motor applications"
     },
     "application2": {
       "title": "Automation Arms",
@@ -106,7 +106,7 @@
         "Precision actuator pivots",
         "CNC rotary tables"
       ],
-      "requirements": "Precision 25mm bore with 6.8kN (≈695kg) static load rating for automated tasks"
+      "requirements": "Precision 25mm bore with 6.8kN (\u2248695kg) static load rating for automated tasks"
     },
     "application3": {
       "title": "Heavy Drives",
@@ -329,7 +329,7 @@
     "shaft_requirements": {
       "nominal_diameter": "25.000mm",
       "tolerance_grade": "h6 (24.987-25.013mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,32 +370,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "🔋",
+        "icon": "\ud83d\udd0b",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 1020kg load capacity with robust 12mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Excellent value for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -441,7 +441,7 @@
           "question": "What tools are needed to install a 78g 6005 bearing properly?",
           "direct_answer": "Standard bearing installation tools, controlled heating equipment, and precision measuring instruments for proper 25mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 78g weight and 25mm bore require appropriate installation techniques to prevent internal damage. Medium-size bearings benefit from thermal installation while being substantial enough for standard procedures.",
-          "how_to_handle": "Heat bearing to 80-90°C for thermal expansion. Use bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 24.987-25.013mm) and housing concentricity. Avoid impact installation methods that can damage components.",
+          "how_to_handle": "Heat bearing to 80-90\u00b0C for thermal expansion. Use bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 24.987-25.013mm) and housing concentricity. Avoid impact installation methods that can damage components.",
           "pro_tip": "Thermal installation provides controlled, damage-free installation - maintain consistent temperature for optimal expansion."
         },
         {

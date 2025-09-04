@@ -92,7 +92,7 @@
         "Industrial mixer arms",
         "Tracked vehicle roll supports"
       ],
-      "requirements": "17mm shaft with 2.38kN (≈243kg) dynamic load capacity, 20,000 RPM grease lubrication, 26×5mm profile for heavy duty"
+      "requirements": "17mm shaft with 2.38kN (\u2248243kg) dynamic load capacity, 20,000 RPM grease lubrication, 26\u00d75mm profile for heavy duty"
     },
     "application2": {
       "title": "Automation Units",
@@ -107,7 +107,7 @@
         "Automated tool changers",
         "Precision positioning shafts"
       ],
-      "requirements": "Precision 17mm bore with 520N (≈53kg) static load rating"
+      "requirements": "Precision 17mm bore with 520N (\u224853kg) static load rating"
     },
     "application3": {
       "title": "Industrial Rollers",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "17.000mm",
       "tolerance_grade": "h6 (16.991-17.009mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,32 +372,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 2.2kN load while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in compact bearing category for 2.2kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -443,7 +443,7 @@
           "question": "What shaft tolerance is recommended for 6803 bearing installation?",
           "direct_answer": "h6 tolerance (16.991-17.009mm) is recommended for optimal fit and performance with the 17mm bore.",
           "why_matters": "Proper shaft tolerance ensures correct interference fit, prevents slippage, and maximizes bearing life.",
-          "how_to_handle": "Machine shaft to h6 tolerance range and ensure surface finish of Ra 0.8μm maximum.",
+          "how_to_handle": "Machine shaft to h6 tolerance range and ensure surface finish of Ra 0.8\u03bcm maximum.",
           "pro_tip": "Use proper installation tools to avoid damaging the bearing during press-fit installation."
         },
         {
@@ -455,10 +455,10 @@
         },
         {
           "question": "What's the maximum operating temperature for 6803 bearings?",
-          "direct_answer": "Standard 6803 bearings operate up to 120°C, with C3 clearance versions suitable for higher temperatures up to 150°C.",
+          "direct_answer": "Standard 6803 bearings operate up to 120\u00b0C, with C3 clearance versions suitable for higher temperatures up to 150\u00b0C.",
           "why_matters": "Exceeding temperature limits causes lubricant breakdown, dimensional changes, and premature failure.",
           "how_to_handle": "Monitor operating temperature and consider C3 clearance for high-temperature applications.",
-          "pro_tip": "Use high-temperature grease for applications above 80°C to maintain proper lubrication."
+          "pro_tip": "Use high-temperature grease for applications above 80\u00b0C to maintain proper lubrication."
         }
       ]
     },
@@ -470,7 +470,7 @@
           "direct_answer": "Common causes include over-lubrication, insufficient lubrication, misalignment, excessive load, or contamination.",
           "why_matters": "Overheating leads to lubricant breakdown, dimensional changes, and catastrophic bearing failure.",
           "how_to_handle": "Check lubrication levels, verify load capacity (max 2.2kN), ensure proper alignment, and inspect for contamination.",
-          "pro_tip": "Use infrared thermometer to monitor bearing temperature - should not exceed 80°C under normal operation."
+          "pro_tip": "Use infrared thermometer to monitor bearing temperature - should not exceed 80\u00b0C under normal operation."
         },
         {
           "question": "What causes excessive noise in 6803 bearings?",

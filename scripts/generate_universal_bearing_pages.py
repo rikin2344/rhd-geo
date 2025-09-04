@@ -452,7 +452,8 @@ class UniversalBearingPageGenerator:
             else:
                 # Generate default canonical URL
                 model_number = self.data.get('model_number', 'bearing')
-                content = content.replace('{{seo_metadata.canonical_url}}', f"https://rhdbearings.com/specs/{model_number}/")
+                series_name = self.get_series_from_model(model_number)
+                content = content.replace('{{seo_metadata.canonical_url}}', f"https://rhdbearings.com/specs/{series_name}/{model_number}/")
             
             # Open Graph data
             og_data = seo_data.get('og_data', {})
@@ -701,6 +702,10 @@ class UniversalBearingPageGenerator:
             if isinstance(keywords, list):
                 keywords_string = ', '.join(keywords)
                 content = content.replace('{{seo_metadata.keywords_string}}', keywords_string)
+        
+        # Handle alternate_model_number placeholder - remove it if it doesn't exist in data
+        if 'alternate_model_number' not in self.data:
+            content = content.replace('{{alternate_model_number}}', '')
         
         # Create a mapping for old field names to new field names
         field_mapping = {

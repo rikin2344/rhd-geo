@@ -2950,7 +2950,7 @@ html {
 
     </style>
 </head>
-<body data-page="6300-series" data-model="6310" data-alternate-model="{{alternate_model_number}}">
+<body data-page="6300-series" data-model="6310" data-alternate-model="">
 <!-- Navigation Header -->
     <!-- RHD Bearings Navigation Header -->
 <div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
@@ -4543,7 +4543,15 @@ html {
             // This could be from a data attribute, script tag, or API call
             const alternateModelAttr = document.querySelector('[data-alternate-model]');
             if (alternateModelAttr) {
-                return alternateModelAttr.dataset.alternateModel;
+                const alternateModel = alternateModelAttr.dataset.alternateModel;
+                // Only return if the alternate model number is meaningful (not empty, undefined, or placeholder)
+                if (alternateModel && 
+                    alternateModel !== 'undefined' && 
+                    alternateModel !== '' && 
+                    !alternateModel.includes('{{') && 
+                    !alternateModel.includes('}}')) {
+                    return alternateModel;
+                }
             }
             
             // Fallback: calculate based on the pattern (model + 55000)
@@ -4565,8 +4573,12 @@ html {
             const body = document.body;
             const alternateModelNumber = body.dataset.alternateModel;
             
-            // If alternate model number is empty or undefined, remove the attribute
-            if (!alternateModelNumber || alternateModelNumber === 'undefined' || alternateModelNumber === '') {
+            // If alternate model number is empty, undefined, or contains placeholder text, remove the attribute
+            if (!alternateModelNumber || 
+                alternateModelNumber === 'undefined' || 
+                alternateModelNumber === '' || 
+                alternateModelNumber.includes('{{') || 
+                alternateModelNumber.includes('}}')) {
                 body.removeAttribute('data-alternate-model');
             }
         }
@@ -4799,7 +4811,15 @@ html {
             // This could be from a data attribute, script tag, or API call
             const alternateModelAttr = document.querySelector('[data-alternate-model]');
             if (alternateModelAttr) {
-                return alternateModelAttr.dataset.alternateModel;
+                const alternateModel = alternateModelAttr.dataset.alternateModel;
+                // Only return if the alternate model number is meaningful (not empty, undefined, or placeholder)
+                if (alternateModel && 
+                    alternateModel !== 'undefined' && 
+                    alternateModel !== '' && 
+                    !alternateModel.includes('{{') && 
+                    !alternateModel.includes('}}')) {
+                    return alternateModel;
+                }
             }
             
             // Fallback: calculate based on the pattern (model + 55000)
@@ -4821,8 +4841,12 @@ html {
             const body = document.body;
             const alternateModelNumber = body.dataset.alternateModel;
             
-            // If alternate model number is empty or undefined, remove the attribute
-            if (!alternateModelNumber || alternateModelNumber === 'undefined' || alternateModelNumber === '') {
+            // If alternate model number is empty, undefined, or contains placeholder text, remove the attribute
+            if (!alternateModelNumber || 
+                alternateModelNumber === 'undefined' || 
+                alternateModelNumber === '' || 
+                alternateModelNumber.includes('{{') || 
+                alternateModelNumber.includes('}}')) {
                 body.removeAttribute('data-alternate-model');
             }
         }

@@ -34,7 +34,9 @@ def is_model_page(page_type):
             return False  # This is a series main page
         
         # Check if the page contains single model data (indicates internal model page)
-        if 'model": "' + page_type + '"' in content or f'model": "{page_type}"' in content:
+        if ('model": "' + page_type + '"' in content or 
+            f'model": "{page_type}"' in content or
+            f'data-model="{page_type}"' in content):
             return True  # This is an internal model page
         
         # If we can't determine from content, fall back to pattern matching
@@ -46,56 +48,60 @@ def is_model_page(page_type):
 
 def get_local_file_path(page_type):
     """Get the local file path for a given page type"""
-    # Try to determine the file path based on page type
-    if page_type in {'miniature', '6000', '6200', '6300', '62200', '62300', '16000', '6800', '6900'}:
-        # Only use deployment directory for standalone pages
-        deployment_path = f'./deployment/{page_type}-series/index.html'
-        return deployment_path
-            
-    elif page_type == 'specs':
+    # Handle special cases first
+    if page_type == 'specs':
         return './webpages/SpecsHubPage/index.html'
-    else:
-        # For model pages, try to determine the series and path
-        if page_type.isdigit():
-            if len(page_type) == 3:
-                # Miniature series - only use deployment directory
-                deployment_path = f'./deployment/miniature-series-internal-pages/{page_type}/index.html'
-                return deployment_path
-                    
-            elif len(page_type) == 4:
-                if page_type.startswith('60'):
-                    deployment_path = f'./deployment/6000-series/6000-series-internal-pages-deployment/{page_type}/index.html'
-                elif page_type.startswith('62'):
-                    deployment_path = f'./deployment/6200-series/6200-series-internal-pages-deployment/{page_type}/index.html'
-                elif page_type.startswith('63'):
-                    deployment_path = f'./deployment/6300-series/6300-series-internal-pages-deployment/{page_type}/index.html'
-                elif page_type.startswith('68'):
-                    deployment_path = f'./deployment/6800-series/6800-series-internal-pages-deployment/{page_type}/index.html'
-                elif page_type.startswith('69'):
-                    deployment_path = f'./deployment/6900-series/6900-series-internal-pages-deployment/{page_type}/index.html'
-                else:
-                    return None
-                    
-                return deployment_path
-                    
-            elif len(page_type) == 5:
-                if page_type.startswith('622'):
-                    deployment_path = f'./deployment/62200-series/62200-series-internal-pages-deployment/{page_type}/index.html'
-                elif page_type.startswith('623'):
-                    deployment_path = f'./deployment/62300-series/62300-series-internal-pages-deployment/{page_type}/index.html'
-                else:
-                    return None
-                    
-                return deployment_path
-        else:
-            # Handle special model names with spaces or special characters
-            # These are typically in the 6200 series
-            if ' ' in page_type or 'A' in page_type:
-                # Special models like "6203 12.7" or "6203A42"
+    
+    # First, check if this is a series main page by checking the series directory
+    if page_type in {'miniature', '6000', '6200', '6300', '6800', '62200', '62300', '16000', '6900'}:
+        # Check if main series page exists first
+        series_path = f'./deployment/{page_type}-series/index.html'
+        if os.path.exists(series_path):
+            return series_path
+    
+    # If not a series page or series page doesn't exist, try to determine if this is a model page
+    if page_type.isdigit():
+        if len(page_type) == 3:
+            # Miniature series - only use deployment directory
+            deployment_path = f'./deployment/miniature-series-internal-pages/{page_type}/index.html'
+            return deployment_path
+                
+        elif len(page_type) == 4:
+            if page_type.startswith('60'):
+                deployment_path = f'./deployment/6000-series/6000-series-internal-pages-deployment/{page_type}/index.html'
+            elif page_type.startswith('62'):
                 deployment_path = f'./deployment/6200-series/6200-series-internal-pages-deployment/{page_type}/index.html'
-                return deployment_path
+            elif page_type.startswith('63'):
+                deployment_path = f'./deployment/6300-series/6300-series-internal-pages-deployment/{page_type}/index.html'
+            elif page_type.startswith('68'):
+                deployment_path = f'./deployment/6800-series/6800-series-internal-pages-deployment/{page_type}/index.html'
+            elif page_type.startswith('69'):
+                deployment_path = f'./deployment/6900-series/6900-series-internal-pages-deployment/{page_type}/index.html'
             else:
                 return None
+                
+            return deployment_path
+                
+        elif len(page_type) == 5:
+            if page_type.startswith('622'):
+                deployment_path = f'./deployment/62200-series/62200-series-internal-pages-deployment/{page_type}/index.html'
+            elif page_type.startswith('623'):
+                deployment_path = f'./deployment/62300-series/62300-series-internal-pages-deployment/{page_type}/index.html'
+            elif page_type.startswith('160'):
+                deployment_path = f'./deployment/16000-series/16000-series-internal-pages-deployment/{page_type}/index.html'
+            else:
+                return None
+                
+            return deployment_path
+    else:
+        # Handle special model names with spaces or special characters
+        # These are typically in the 6200 series
+        if ' ' in page_type or 'A' in page_type:
+            # Special models like "6203 12.7" or "6203A42"
+            deployment_path = f'./deployment/6200-series/6200-series-internal-pages-deployment/{page_type}/index.html'
+            return deployment_path
+    
+    
     return None
 
 def fallback_model_check(page_type):
@@ -213,8 +219,11 @@ def get_series_name_from_model(page_type):
         prefix = page_type[:2]  # Get first 2 digits
         return f'{prefix}00-series'
     elif len(page_type) == 5:
-        prefix = page_type[:3]  # Get first 3 digits
-        return f'{prefix}00-series'  # Fixed: should be 62300-series, not 6230-series
+        if page_type.startswith('160'):
+            return '16000-series'
+        else:
+            prefix = page_type[:3]  # Get first 3 digits
+            return f'{prefix}00-series'  # Fixed: should be 62300-series, not 6230-series
     
     return 'miniature-series'
 

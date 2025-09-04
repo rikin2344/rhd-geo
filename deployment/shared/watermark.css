@@ -1,0 +1,100 @@
+/* ================================
+   WATERMARK SECTION
+   ================================ */
+
+.watermark-section {
+    width: 100vw;
+    background: transparent;
+    margin: 40px 0 0 0;
+    padding: 0;
+    overflow: visible;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.watermark-text {
+    text-align: center;
+    font-size: 300px;
+    font-weight: 900;
+    background: linear-gradient(to bottom, 
+        rgba(64, 64, 64, 0.6) 0%, 
+        rgba(96, 96, 96, 0.4) 30%, 
+        rgba(128, 128, 128, 0.2) 60%, 
+        rgba(192, 192, 192, 0.05) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* ================================
+   WATERMARK RESPONSIVE
+   ================================ */
+
+@media (max-width: 1024px) {
+    .watermark-text {
+        font-size: 100px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.55) 0%, 
+            rgba(96, 96, 96, 0.35) 30%, 
+            rgba(128, 128, 128, 0.18) 60%, 
+            rgba(192, 192, 192, 0.04) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .watermark-section {
+        width: 100% !important; /* Prevent horizontal scroll */
+        left: 0 !important;
+        transform: none !important;
+        overflow: hidden;
+        margin: 20px 0 0 0;
+        padding-bottom: 40px;
+    }
+    
+    .watermark-text {
+        font-size: 50px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.5) 0%, 
+            rgba(96, 96, 96, 0.3) 30%, 
+            rgba(128, 128, 128, 0.15) 60%, 
+            rgba(192, 192, 192, 0.03) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+        white-space: nowrap; /* Keep text on one line */
+        max-width: 100vw; /* Ensure it fits screen width */
+        overflow: hidden;
+        line-height: 0.8;
+        letter-spacing: -0.02em; /* Tighter letter spacing for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .watermark-text {
+        font-size: 40px;
+        padding: 0 10px;
+        line-height: 0.7;
+        white-space: nowrap;
+        max-width: 100vw;
+        overflow: hidden;
+        letter-spacing: -0.03em;
+    }
+}

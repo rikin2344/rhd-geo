@@ -91,7 +91,7 @@
         "Food processing pump shafts",
         "Hydraulic pump shafts"
       ],
-      "requirements": "30mm shaft with 12.50kN (≈1,275kg) dynamic load capacity, 9,000 RPM grease lubrication, 62×16mm profile for pump drives"
+      "requirements": "30mm shaft with 12.50kN (\u22481,275kg) dynamic load capacity, 9,000 RPM grease lubrication, 62\u00d716mm profile for pump drives"
     },
     "application2": {
       "title": "Machine Tools",
@@ -106,7 +106,7 @@
         "Surface grinder spindles",
         "Boring machine shafts"
       ],
-      "requirements": "Precision 30mm bore with 8.0kN (≈815kg) static load rating for machining tasks"
+      "requirements": "Precision 30mm bore with 8.0kN (\u2248815kg) static load rating for machining tasks"
     },
     "application3": {
       "title": "Conveyor Systems",
@@ -329,7 +329,7 @@
     "shaft_requirements": {
       "nominal_diameter": "30.000mm",
       "tolerance_grade": "h6 (29.987-30.013mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,32 +370,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "🔋",
+        "icon": "\ud83d\udd0b",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 1346kg load capacity with robust 13mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Excellent value for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -441,7 +441,7 @@
           "question": "What tools are needed to install a 113g 6006 bearing properly?",
           "direct_answer": "Heavy-duty bearing installation tools, controlled heating equipment, and precision measuring instruments for proper 30mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 113g weight and 30mm bore require appropriate installation techniques to prevent internal damage. Medium-large bearings benefit from thermal installation while being substantial enough for standard heavy-duty procedures.",
-          "how_to_handle": "Heat bearing to 80-90°C for thermal expansion. Use heavy-duty bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 29.987-30.013mm) and housing concentricity carefully. Avoid impact installation methods.",
+          "how_to_handle": "Heat bearing to 80-90\u00b0C for thermal expansion. Use heavy-duty bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 29.987-30.013mm) and housing concentricity carefully. Avoid impact installation methods.",
           "pro_tip": "Thermal installation provides controlled, damage-free installation - maintain consistent temperature for optimal thermal expansion."
         },
         {

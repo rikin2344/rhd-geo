@@ -91,7 +91,7 @@
         "Handheld mixer motors",
         "Power screwdriver rotors"
       ],
-      "requirements": "17mm shaft with 10.5kN (≈1,070kg) dynamic load capacity, 14,000 RPM grease lubrication, 47×19mm profile optimized for power tools"
+      "requirements": "17mm shaft with 10.5kN (\u22481,070kg) dynamic load capacity, 14,000 RPM grease lubrication, 47\u00d719mm profile optimized for power tools"
     },
     "application2": {
       "title": "Automation Systems",
@@ -106,7 +106,7 @@
         "Manufacturing robot pivots",
         "Lab automation equipment"
       ],
-      "requirements": "Precision 17mm bore with 5.1kN (≈520kg) static load for precise automation"
+      "requirements": "Precision 17mm bore with 5.1kN (\u2248520kg) static load for precise automation"
     },
     "application3": {
       "title": "Conveyor Units",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "17.000mm",
       "tolerance_grade": "h6 (16.989-17.011mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,32 +372,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 3.6kN more load than typical 17mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 14.5kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }

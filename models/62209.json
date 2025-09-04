@@ -91,7 +91,7 @@
         "Rotary powder feeders",
         "Automated magazine trays"
       ],
-      "requirements": "45mm shaft with 22.5kN (≈2,290kg) dynamic, 4,700 RPM grease, 85x23mm continuous feed profile"
+      "requirements": "45mm shaft with 22.5kN (\u22482,290kg) dynamic, 4,700 RPM grease, 85x23mm continuous feed profile"
     },
     "application2": {
       "title": "Support Rotors",
@@ -106,7 +106,7 @@
         "Spool holder pivots",
         "Transfer bed rollers"
       ],
-      "requirements": "45mm bore, 15.6kN (≈1,590kg) static, stable axial/radial support"
+      "requirements": "45mm bore, 15.6kN (\u22481,590kg) static, stable axial/radial support"
     },
     "application3": {
       "title": "Strong Wheels",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -331,7 +331,7 @@
     "shaft_requirements": {
       "nominal_diameter": "45.000mm",
       "tolerance_grade": "h6 (44.987-45.000mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,32 +372,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📋",
+        "icon": "\ud83d\udccb",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 23.2kN load capacity in compact 45x85x23mm design. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in 45mm bore category for 23.2kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -443,7 +443,7 @@
           "question": "What's the proper installation procedure for 62209 bearing?",
           "direct_answer": "Use proper bearing installation tools, apply force to outer ring only, and ensure shaft and housing are clean and properly sized.",
           "why_matters": "Correct installation prevents bearing damage, ensures optimal performance, and maximizes service life.",
-          "how_to_handle": "Heat housing to 80-100°C for interference fits, use installation sleeves, and avoid hammering directly on bearing.",
+          "how_to_handle": "Heat housing to 80-100\u00b0C for interference fits, use installation sleeves, and avoid hammering directly on bearing.",
           "pro_tip": "Professional installation can extend bearing life by 50% compared to improper methods."
         },
         {
@@ -451,7 +451,7 @@
           "direct_answer": "Open bearings require regular lubrication every 3-6 months; sealed bearings are lubricated for life and don't require maintenance.",
           "why_matters": "Proper lubrication prevents wear, reduces friction, and maintains optimal operating temperature.",
           "how_to_handle": "Use high-quality grease suitable for bearing speed and temperature conditions.",
-          "pro_tip": "Monitor bearing temperature - increase of 15°C above ambient indicates lubrication issues."
+          "pro_tip": "Monitor bearing temperature - increase of 15\u00b0C above ambient indicates lubrication issues."
         },
         {
           "question": "What's the expected service life of 62209 bearing?",
@@ -470,7 +470,7 @@
           "direct_answer": "Overheating usually indicates insufficient lubrication, excessive load, or misalignment issues.",
           "why_matters": "High temperature accelerates wear and can lead to premature bearing failure.",
           "how_to_handle": "Check lubrication levels, verify load ratings, and inspect for misalignment or contamination.",
-          "pro_tip": "Temperature increase of 15°C above ambient requires immediate attention."
+          "pro_tip": "Temperature increase of 15\u00b0C above ambient requires immediate attention."
         },
         {
           "question": "What causes excessive noise in 62209 bearing?",

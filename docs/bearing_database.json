@@ -227,6 +227,7 @@
     {"model": "6916", "d": 80, "D": 110, "B": 16, "Cr": 24.90, "Cor": 23.90, "grease_rpm": 2400, "oil_rpm": 3800, "weight": 0.375},
     {"model": "6917", "d": 85, "D": 120, "B": 18, "Cr": 31.90, "Cor": 29.70, "grease_rpm": 2200, "oil_rpm": 3600, "weight": 0.507},
     {"model": "6918", "d": 90, "D": 125, "B": 18, "Cr": 32.80, "Cor": 31.50, "grease_rpm": 2000, "oil_rpm": 3400, "weight": 0.533},
-    {"model": "6919", "d": 95, "D": 130, "B": 18, "Cr": 33.70, "Cor": 33.30, "grease_rpm": 1800, "oil_rpm": 3200, "weight": 0.56}
+    {"model": "6919", "d": 95, "D": 130, "B": 18, "Cr": 33.70, "Cor": 33.30, "grease_rpm": 1800, "oil_rpm": 3200, "weight": 0.56},
+    {"model": "6920", "d": 100, "D": 140, "B": 20, "Cr": 45.50, "Cor": 39.50, "grease_rpm": 1600, "oil_rpm": 3000, "weight": 0.785}
   ]
 }

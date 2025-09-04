@@ -91,7 +91,7 @@
         "Adhesive dispersion tanks",
         "Powder agitator axles"
       ],
-      "requirements": "80mm shaft with 52kN (≈5,300kg) dynamic, 2,800 RPM grease, 140x33mm for blending tasks"
+      "requirements": "80mm shaft with 52kN (\u22485,300kg) dynamic, 2,800 RPM grease, 140x33mm for blending tasks"
     },
     "application2": {
       "title": "Stack Loaders",
@@ -106,7 +106,7 @@
         "AGV loader trays",
         "Package shift rails"
       ],
-      "requirements": "80mm bore, 41kN (≈4,180kg) static, supports shifted or loaded stacking"
+      "requirements": "80mm bore, 41kN (\u22484,180kg) static, supports shifted or loaded stacking"
     },
     "application3": {
       "title": "Hopper Axles",
@@ -299,9 +299,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -328,7 +328,7 @@
     "shaft_requirements": {
       "nominal_diameter": "80.000mm",
       "tolerance_grade": "h6 (79.987-80.013mm)",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -369,32 +369,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "🔋",
+        "icon": "\ud83d\udd0b",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty applications, providing superior hardness, wear resistance, and fatigue life under high loads."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures in heavy-duty applications."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 4976kg load capacity while maintaining compact 33mm width. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Premium quality with competitive pricing for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -440,7 +440,7 @@
           "question": "What tools are needed to install a 2.19kg 62216 bearing properly?",
           "direct_answer": "Hydraulic bearing puller, heating plate, and precision measuring tools for proper 80mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 2.19kg weight and 80mm bore require specialized tools to avoid damage during installation. Incorrect installation can cause misalignment, internal stress, and reduced service life even with premium bearings.",
-          "how_to_handle": "Heat bearing to 80-100°C for thermal expansion. Use hydraulic puller for removal, bearing heater for installation. Check shaft tolerances (h6: 79.987-80.013mm) before installation. Avoid hammering or force-fitting the bearing.",
+          "how_to_handle": "Heat bearing to 80-100\u00b0C for thermal expansion. Use hydraulic puller for removal, bearing heater for installation. Check shaft tolerances (h6: 79.987-80.013mm) before installation. Avoid hammering or force-fitting the bearing.",
           "pro_tip": "Always heat the bearing, never the shaft - thermal expansion makes installation smooth and damage-free."
         },
         {
@@ -467,7 +467,7 @@
           "direct_answer": "4500kg approaches the 4976kg limit - check lubrication, alignment, and consider higher capacity alternatives.",
           "why_matters": "Operating at 90% of rated capacity generates significant heat, especially with inadequate lubrication or misalignment. Overheating reduces lubricant viscosity, accelerates wear, and can cause catastrophic failure. The small margin between operating load and rated capacity leaves little room for additional factors.",
           "how_to_handle": "Verify actual load including shock factors. Check shaft and housing alignment within 0.013mm tolerance. Ensure adequate lubrication quantity and quality. Consider upgrade to 6316 series for higher capacity or improve cooling/lubrication systems.",
-          "pro_tip": "Monitor bearing temperature - sustained temperatures above 70°C indicate problems requiring immediate attention."
+          "pro_tip": "Monitor bearing temperature - sustained temperatures above 70\u00b0C indicate problems requiring immediate attention."
         },
         {
           "question": "What causes noise in 62216 bearings at 3800 RPM?",

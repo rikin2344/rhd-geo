@@ -39,7 +39,7 @@
   "bearing_type": "Deep Groove Ball Bearing",
   "bearing_series_name": "6200-series",
   "model_number": "6201 12.7",
-  "enhanced_description": "The 6201 12.7 is a precision-engineered deep groove ball bearing that bridges the gap between standard 12mm and 15mm bore offerings. With its unique 12.7mm bore diameter, this bearing provides the perfect fit for applications requiring precise shaft tolerances while maintaining the robust load capacity of the 6200 series. Its compact 32×10mm profile makes it ideal for space-constrained designs where every millimeter counts.",
+  "enhanced_description": "The 6201 12.7 is a precision-engineered deep groove ball bearing that bridges the gap between standard 12mm and 15mm bore offerings. With its unique 12.7mm bore diameter, this bearing provides the perfect fit for applications requiring precise shaft tolerances while maintaining the robust load capacity of the 6200 series. Its compact 32\u00d710mm profile makes it ideal for space-constrained designs where every millimeter counts.",
   "dimensions": {
     "bore_diameter_d_mm": 12.7,
     "outer_diameter_D_mm": 32,
@@ -106,7 +106,7 @@
         "Steering angle sensors",
         "Transmission sensors"
       ],
-      "requirements": "Must withstand automotive temperature ranges (-40°C to +120°C), vibration, and maintain precision under varying load conditions."
+      "requirements": "Must withstand automotive temperature ranges (-40\u00b0C to +120\u00b0C), vibration, and maintain precision under varying load conditions."
     },
     "application3": {
       "title": "Compact Industrial Automation",
@@ -216,7 +216,7 @@
     }
   },
   "seo_metadata": {
-    "title": "6201 12.7 Bearing 12.7×32×10mm Deep Groove Ball Bearing | RHD",
+    "title": "6201 12.7 Bearing 12.7\u00d732\u00d710mm Deep Groove Ball Bearing | RHD",
     "meta_description": "6201 12.7 deep groove ball bearing with 12.7mm bore, 32mm OD, 10mm width. 6.82kN dynamic load, 695kg capacity. Perfect for precision instrumentation and automotive applications.",
     "keywords": [
       "6201 12.7 bearing",
@@ -239,7 +239,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6200-Series/6201 12.7/",
     "og_data": {
-      "title": "6201 12.7 Deep Groove Ball Bearing - 12.7×32×10mm | RHD Bearings",
+      "title": "6201 12.7 Deep Groove Ball Bearing - 12.7\u00d732\u00d710mm | RHD Bearings",
       "description": "High-quality 6201 12.7 bearing with 6.82kN dynamic load capacity. Perfect for precision instrumentation and specialized automotive applications.",
       "url": "https://rhdbearings.com/specs/6200-Series/6201 12.7/",
       "type": "product",
@@ -293,9 +293,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,7 +323,7 @@
     "shaft_requirements": {
       "nominal_diameter": "12.7mm",
       "tolerance_grade": "h6",
-      "surface_finish": "Ra 0.8μm max",
+      "surface_finish": "Ra 0.8\u03bcm max",
       "runout_tolerance": "0.01mm max"
     },
     "application_specific_alternatives": {
@@ -348,7 +348,7 @@
       "Which seal type is best for dusty industrial environments?"
     ],
     "decision_criteria": [
-      "Bore diameter tolerance requirements (12.7mm ±0.008mm)",
+      "Bore diameter tolerance requirements (12.7mm \u00b10.008mm)",
       "Load capacity needs (6.82kN dynamic, 3.05kN static)",
       "Speed requirements (up to 19,000 RPM grease, 24,000 RPM oil)",
       "Environmental protection needs (open, shielded, or sealed)",
@@ -357,7 +357,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need precise fit for 12.7mm shaft in measurement equipment",
-        "solution": "6201 12.7 with h6 shaft tolerance provides ±0.008mm precision fit"
+        "solution": "6201 12.7 with h6 shaft tolerance provides \u00b10.008mm precision fit"
       },
       {
         "problem": "Require dust protection in automotive sensor applications",
@@ -370,32 +370,32 @@
     ],
     "expertise_signals": [
       {
-        "icon": "📏",
+        "icon": "\ud83d\udccf",
         "title": "Precision Engineering",
-        "description": "12.7mm bore with h6 tolerance provides ±0.008mm precision fit, essential for measurement equipment and precision instrumentation applications."
+        "description": "12.7mm bore with h6 tolerance provides \u00b10.008mm precision fit, essential for measurement equipment and precision instrumentation applications."
       },
       {
-        "icon": "🔬",
+        "icon": "\ud83d\udd2c",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "⚙️",
+        "icon": "\u2699\ufe0f",
         "title": "Performance Optimization",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "🔧",
+        "icon": "\ud83d\udd27",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "📊",
+        "icon": "\ud83d\udcca",
         "title": "Performance Comparison",
         "description": "Handles 3.77kN more load than typical 12mm bore bearings while maintaining similar dimensions. Superior Gcr15 steel vs. standard steel in competing products."
       },
       {
-        "icon": "💰",
+        "icon": "\ud83d\udcb0",
         "title": "Value Engineering",
         "description": "Best value in precision bearing category for 6.82kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
@@ -441,7 +441,7 @@
           "question": "What shaft tolerance is recommended for the 6201 12.7?",
           "direct_answer": "An h6 tolerance grade is recommended for the shaft, which provides a precision fit with the 12.7mm bore.",
           "why_matters": "Proper shaft tolerance ensures optimal bearing performance, reduces vibration, and extends bearing life.",
-          "how_to_handle": "Machine your shaft to 12.7mm with h6 tolerance (±0.008mm) for the best fit.",
+          "how_to_handle": "Machine your shaft to 12.7mm with h6 tolerance (\u00b10.008mm) for the best fit.",
           "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation."
         },
         {
@@ -468,7 +468,7 @@
           "direct_answer": "High temperatures usually indicate insufficient lubrication, excessive load, or speed beyond the bearing's capabilities.",
           "why_matters": "Overheating can cause premature bearing failure and damage to surrounding components.",
           "how_to_handle": "Check lubrication levels, verify load doesn't exceed capacity, and ensure speed is within limits.",
-          "pro_tip": "Monitor bearing temperature during operation - it should remain stable and not exceed 80°C."
+          "pro_tip": "Monitor bearing temperature during operation - it should remain stable and not exceed 80\u00b0C."
         },
         {
           "question": "What causes excessive vibration in the 6201 12.7?",
