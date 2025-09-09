@@ -839,7 +839,11 @@ def create_standalone_model_page(model_name, model_dir):
         # Remove all fetch calls and problematic patterns
         import re
         
-        # Remove fetch calls to shared components
+        # Remove complete fetch blocks for shared components (fetch + .then() chains)
+        # This handles multi-line fetch blocks with various formatting
+        body_content = re.sub(r'fetch\([\'"][^\'"]*\.\./shared/[^\'"]*[\'"]\)[\s\S]*?\.then\([^{]*\{[\s\S]*?\}\);', '// Component loading removed - HTML already embedded', body_content)
+        
+         # Remove fetch calls to shared components
         body_content = re.sub(r'fetch\([\'"][^\'"]*\.\./shared/[^\'"]*[\'"]\)', '// fetch call removed - component already embedded', body_content)
         
         # Remove script blocks that load shared components
@@ -1047,6 +1051,10 @@ def create_standalone_miniature_webpage():
         
         # Remove all fetch calls and problematic patterns
         import re
+        
+        # Remove complete fetch blocks for shared components (fetch + .then() chains)
+        # This handles multi-line fetch blocks with various formatting
+        body_content = re.sub(r'fetch\([\'"][^\'"]*\.\./shared/[^\'"]*[\'"]\)[\s\S]*?\.then\([^{]*\{[\s\S]*?\}\);', '// Component loading removed - HTML already embedded', body_content)
         
         # Remove fetch calls to shared components
         body_content = re.sub(r'fetch\([\'"][^\'"]*\.\./shared/[^\'"]*[\'"]\)', '// fetch call removed - component already embedded', body_content)
