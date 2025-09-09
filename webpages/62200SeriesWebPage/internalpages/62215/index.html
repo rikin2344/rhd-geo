@@ -78,7 +78,7 @@
                 <div class="hero-main">
                     <div class="breadcrumb">
                         <a href="https://rhdbearings.com/">Home</a> > 
-                        <a href="https://rhdbearings.com/specs/{{bearing_series}}.html">62200-series</a> > 
+                        <a href="https://rhdbearings.com/specs/{{bearing_series}}/">62200-series</a> > 
                         <span>62215 Bearing</span>
                     </div>
                     
@@ -254,7 +254,7 @@
                                     <span>5500 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z2v2">
-                                    <span>RHD Z2V2 Bearings</span>
+                                    <span>Z2V2 Bearings</span>
                                     <span class="speed-value" id="z2v2-speed">1400 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z3v3">
@@ -263,7 +263,7 @@
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z4v4">
                                     <span>RHD Z4V4 Bearings</span>
-                                    <span class="speed-value" id="z4v4-speed">4000+ RPM</span>
+                                    <span class="speed-value" id="z4v4-speed">6000+ RPM</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -1190,71 +1190,8 @@
     <!-- Contact CTA (Dynamic Component) -->
     <div id="cta-container"></div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-brand">
-                        <div class="footer-logo">
-                            <img src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings" class="footer-logo-img">
-                        </div>
-                        <p class="footer-description">
-                            RHD Bearings specializes in high-quality ball bearings for industrial, automotive, and precision applications. With over 20 years of experience, we provide reliable bearing solutions worldwide.
-                        </p>
-                    </div>
-                    
-                    <div class="footer-nav">
-                        <div class="footer-column">
-                            <h3 class="footer-column-title">Product</h3>
-                            <ul class="footer-links">
-                                <li><a href="https://rhdbearings.com/specs/miniature-series.html">Miniature Bearings</a></li>
-                                <li><a href="https://rhdbearings.com/specs/6000-series.html">6000 Series</a></li>
-                                <li><a href="https://rhdbearings.com/specs/6200-series.html">6200 Series</a></li>
-                                <li><a href="https://rhdbearings.com/specs/6300-series.html">6300 Series</a></li>
-                                <li><a href="https://rhdbearings.com/bearing-size-chart/">Size Chart</a></li>
-                                <li><a href="https://rhdbearings.com/shop/">Shop Online</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer-column">
-                            <h3 class="footer-column-title">Resources</h3>
-                            <ul class="footer-links">
-                                <li><a href="https://rhdbearings.com/bearing-installation-guide/">Installation Guide</a></li>
-                                <li><a href="https://rhdbearings.com/bearing-maintenance/">Maintenance Tips</a></li>
-                                <li><a href="https://rhdbearings.com/technical-specifications/">Technical Specs</a></li>
-                                <li><a href="https://rhdbearings.com/industries/">Industry Applications</a></li>
-                                <li><a href="https://rhdbearings.com/faqs/">FAQs</a></li>
-                                <li><a href="https://rhdbearings.com/support/">Support Center</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer-column">
-                            <h3 class="footer-column-title">Company</h3>
-                            <ul class="footer-links">
-                                <li><a href="https://rhdbearings.com/about-us/">About Us</a></li>
-                                <li><a href="https://rhdbearings.com/quality-assurance/">Quality Assurance</a></li>
-                                <li><a href="https://rhdbearings.com/careers/">Careers</a></li>
-                                <li><a href="https://rhdbearings.com/contact-us/">Contact</a></li>
-                                <li><a href="https://rhdbearings.com/news/">News & Updates</a></li>
-                                <li><a href="https://rhdbearings.com/partnerships/">Partnerships</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer-bottom">
-                    <div class="footer-copyright">
-                        <p>&copy; 2025 RHD Bearings. All rights reserved.</p>
-                    </div>
-                    <div class="footer-legal">
-                        <a href="https://rhdbearings.com/terms-of-service/">Terms of Service</a>
-                        <a href="https://rhdbearings.com/privacy-policy/">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer (Dynamic Component) -->
+    <div id="footer-container"></div>
 
     <!-- Watermark Section -->
     <section class="watermark-section">
@@ -1281,6 +1218,13 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('../../../../shared/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
             });
 
         // Load CTA component
@@ -1466,7 +1410,7 @@
                 } else {
                     z2v2Element.textContent = '1400 RPM';
                     z3v3Element.textContent = '2880 RPM';
-                    z4v4Element.textContent = '4000+ RPM';
+                    z4v4Element.textContent = '6000+ RPM';
                 }
             }
         }

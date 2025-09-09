@@ -652,8 +652,8 @@ body {
 
 .footer-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-component-2);
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-section-1);
 }
 
 .footer-column-title {
@@ -746,7 +746,8 @@ body {
     }
     
     .footer-nav {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
     }
 }
 

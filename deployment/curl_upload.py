@@ -12,39 +12,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def is_model_page(page_type):
-    """Check if this is a model-specific page (vs series page) by examining file content"""
+    """Check if this is a model-specific page (vs series page) using fast pattern matching"""
     
     # Special cases that are always series pages
     if page_type in {'specs'}:
         return False
     
-    # Get the local file path to check content
-    local_file = get_local_file_path(page_type)
-    
-    if not local_file or not os.path.exists(local_file):
-        # If file doesn't exist, fall back to pattern matching
-        return fallback_model_check(page_type)
-    
-    try:
-        with open(local_file, 'r', encoding='utf-8') as f:
-            content = f.read()
-        
-        # Check if the page contains bearingsData array (indicates series main page)
-        if 'const bearingsData = [' in content or 'bearingsData = [' in content:
-            return False  # This is a series main page
-        
-        # Check if the page contains single model data (indicates internal model page)
-        if ('model": "' + page_type + '"' in content or 
-            f'model": "{page_type}"' in content or
-            f'data-model="{page_type}"' in content):
-            return True  # This is an internal model page
-        
-        # If we can't determine from content, fall back to pattern matching
-        return fallback_model_check(page_type)
-        
-    except Exception as e:
-        print(f"⚠️  Warning: Could not read file {local_file}: {e}")
-        return fallback_model_check(page_type)
+    # Use fast pattern matching instead of slow file reading
+    return fallback_model_check(page_type)
 
 def get_local_file_path(page_type):
     """Get the local file path for a given page type"""

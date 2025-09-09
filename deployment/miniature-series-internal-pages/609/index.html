@@ -229,6 +229,33 @@ body {
 
 /* Footer CSS */
 /* ================================
+   CSS VARIABLES FOR FOOTER
+   ================================ */
+
+:root {
+    /* Spacing System (8px base) */
+    --space-micro-1: 8px;
+    --space-micro-2: 16px;
+    --space-component-1: 24px;
+    --space-component-2: 32px;
+    --space-section-1: 32px;
+    --space-section-2: 48px;
+    
+    /* Colors */
+    --surface-primary: #FFFFFF;
+    --text-primary: #000000;
+    --text-secondary: #4A5568;
+    --border-subtle: #E2E8F0;
+    
+    /* Elevation */
+    --elevation-1: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.12);
+    --elevation-2: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.12);
+    
+    /* Animation */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* ================================
    FOOTER
    ================================ */
 
@@ -238,19 +265,19 @@ body {
 }
 
 .footer-content {
-    background: #FFFFFF;
+    background: var(--surface-primary);
     border-radius: 24px;
-    margin: 0 32px;
-    padding: 48px;
+    margin: 0 var(--space-component-2);
+    padding: var(--space-section-2);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: var(--elevation-2);
+    border: 1px solid var(--border-subtle);
 }
 
 .footer-main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     gap: var(--space-section-1);
     margin-bottom: var(--space-section-1);
     position: relative;
@@ -273,20 +300,20 @@ body {
 .footer-description {
     font-size: 14px;
     line-height: 1.6;
-    color: #6B7280;
+    color: var(--text-secondary);
 }
 
 .footer-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-component-2);
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-section-1);
 }
 
 .footer-column-title {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 16px;
-    color: #000000;
+    margin-bottom: var(--space-micro-2);
+    color: var(--text-primary);
 }
 
 .footer-links {
@@ -300,29 +327,29 @@ body {
 }
 
 .footer-links a {
-    color: #6B7280;
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.2s ease;
+    transition: color var(--transition-fast);
 }
 
 .footer-links a:hover {
-    color: #000000;
+    color: var(--text-primary);
 }
 
 .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: var(--space-micro-2);
+    border-top: 1px solid var(--border-subtle);
     position: relative;
     z-index: 2;
 }
 
 .footer-copyright p {
     font-size: 14px;
-    color: #6B7280;
+    color: var(--text-secondary);
     margin: 0;
 }
 
@@ -332,14 +359,23 @@ body {
 }
 
 .footer-legal a {
-    color: #6B7280;
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.2s ease;
+    transition: color var(--transition-fast);
 }
 
 .footer-legal a:hover {
-    color: #000000;
+    color: var(--text-primary);
+}
+
+.footer-links-columns {
+    display: flex;
+    gap: var(--space-component-2);
+}
+
+.footer-links-columns .footer-links {
+    flex: 1;
 }
 
 /* ================================
@@ -365,6 +401,10 @@ body {
     .footer-legal {
         justify-content: center;
     }
+    
+    .footer-links-columns {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -379,7 +419,8 @@ body {
     }
     
     .footer-nav {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
     }
 }
 
@@ -1621,121 +1662,7 @@ body {
 
 /* CTA section styling is now handled by shared/cta-model.css */
 
-/* ================================
-   FOOTER
-   ================================ */
-
-.footer {
-    background: transparent;
-    padding: var(--space-section-2) 0;
-}
-
-.footer-content {
-    background: var(--surface-primary);
-    border-radius: 24px;
-    margin: 0 var(--space-component-2);
-    padding: var(--space-section-2);
-    position: relative;
-    overflow: hidden;
-    box-shadow: var(--elevation-2);
-    border: 1px solid var(--border-subtle);
-}
-
-
-
-.footer-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--space-section-1);
-    margin-bottom: var(--space-section-1);
-    position: relative;
-    z-index: 2;
-}
-
-.footer-brand {
-    max-width: 400px;
-}
-
-.footer-logo {
-    margin-bottom: var(--space-component-1);
-}
-
-.footer-logo-img {
-    height: 60px;
-    width: auto;
-}
-
-.footer-description {
-    font-size: var(--text-body-small);
-    line-height: 1.6;
-    color: var(--text-secondary);
-}
-
-.footer-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-component-2);
-}
-
-.footer-column-title {
-    font-size: var(--text-subsection);
-    font-weight: 600;
-    margin-bottom: var(--space-component-1);
-    color: var(--text-primary);
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li {
-    margin-bottom: var(--space-micro-2);
-}
-
-.footer-links a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: var(--text-body-small);
-    transition: color var(--transition-fast);
-}
-
-.footer-links a:hover {
-    color: var(--text-primary);
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: var(--space-component-1);
-    border-top: 1px solid var(--border-subtle);
-    position: relative;
-    z-index: 2;
-}
-
-.footer-copyright p {
-    font-size: var(--text-body-small);
-    color: var(--text-secondary);
-    margin: 0;
-}
-
-.footer-legal {
-    display: flex;
-    gap: var(--space-component-1);
-}
-
-.footer-legal a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: var(--text-body-small);
-    transition: color var(--transition-fast);
-}
-
-.footer-legal a:hover {
-    color: var(--text-primary);
-}
+/* Footer styles are now handled by shared/footer.css */
 
 
 
@@ -1939,37 +1866,7 @@ body {
         grid-template-columns: 1fr;
     }
     
-    /* Footer Responsive */
-    .footer {
-        display: none;
-    }
-    
-    .footer-content {
-        margin: 0 var(--space-micro-2);
-        padding: var(--space-component-2);
-        border-radius: 16px;
-    }
-    
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: var(--space-component-2);
-    }
-    
-    .footer-nav {
-        grid-template-columns: 1fr;
-    }
-    
-
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: var(--space-micro-2);
-        text-align: center;
-    }
-    
-    .footer-legal {
-        justify-content: center;
-    }
+    /* Footer responsive styles are now handled by shared/footer.css */
     
     /* LLM Optimization Sections Mobile */
     .recommendations-grid,
@@ -2072,23 +1969,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .footer-content {
-        margin: 0 var(--space-component-1);
-        padding: var(--space-section-1);
-    }
-    
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: var(--space-component-2);
-    }
-    
-    .footer-nav {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-
-    
-
+    /* Footer responsive styles are now handled by shared/footer.css */
 }
 
 @media (max-width: 480px) {
@@ -2985,10 +2866,10 @@ html {
                                 <span class="ui-menu-item-wrapper">Products</span>
                             </div>
                             <div class="sub-menu">
-                                <a href="https://rhdbearings.com/specs/miniature-series.html" data-page="miniature">Miniature Bearings</a>
-                                <a href="https://rhdbearings.com/specs/6000-series.html" data-page="6000">6000 Series</a>
-                                <a href="https://rhdbearings.com/specs/6200-series.html" data-page="6200">6200 Series</a>
-                                <a href="https://rhdbearings.com/specs/6300-series.html" data-page="6300">6300 Series</a>
+                                <a href="https://rhdbearings.com/specs/miniature-series/" data-page="miniature">Miniature Bearings</a>
+                                <a href="https://rhdbearings.com/specs/6000-series/" data-page="6000">6000 Series</a>
+                                <a href="https://rhdbearings.com/specs/6200-series/" data-page="6200">6200 Series</a>
+                                <a href="https://rhdbearings.com/specs/6300-series/" data-page="6300">6300 Series</a>
                             </div>
                         </a>
                         <a href="https://rhdbearings.com/industries/" class="menu-item ui-anim-flip">
@@ -3029,7 +2910,7 @@ html {
                 <div class="hero-main">
                     <div class="breadcrumb">
                         <a href="https://rhdbearings.com/">Home</a> > 
-                        <a href="https://rhdbearings.com/specs/{{bearing_series}}.html">miniature-series</a> > 
+                        <a href="https://rhdbearings.com/specs/{{bearing_series}}/">miniature-series</a> > 
                         <span>609 Bearing</span>
                     </div>
                     
@@ -3220,7 +3101,7 @@ html {
                                     <span>30000 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z2v2">
-                                    <span>RHD Z2V2 Bearings</span>
+                                    <span>Z2V2 Bearings</span>
                                     <span class="speed-value" id="z2v2-speed">1400 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z3v3">
@@ -3229,7 +3110,7 @@ html {
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z4v4">
                                     <span>RHD Z4V4 Bearings</span>
-                                    <span class="speed-value" id="z4v4-speed">4000+ RPM</span>
+                                    <span class="speed-value" id="z4v4-speed">6000+ RPM</span>
                                 </div>
                             </div>
                             <div class="flip-hint"></div>
@@ -4233,71 +4114,66 @@ html {
 </section>
 
 
+    <!-- Footer (Dynamic Component) -->
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-brand">
-                        <div class="footer-logo">
-                            <img src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings" class="footer-logo-img">
-                        </div>
-                        <p class="footer-description">
-                            RHD Bearings specializes in high-quality ball bearings for industrial, automotive, and precision applications. With over 20 years of experience, we provide reliable bearing solutions worldwide.
-                        </p>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings" class="footer-logo-img">
                     </div>
-                    
-                    <div class="footer-nav">
-                        <div class="footer-column">
-                            <h3 class="footer-column-title">Product</h3>
-                            <ul class="footer-links">
-                                <li><a href="https://rhdbearings.com/specs/miniature-series.html">Miniature Bearings</a></li>
-                                <li><a href="https://rhdbearings.com/specs/6000-series.html">6000 Series</a></li>
-                                <li><a href="https://rhdbearings.com/specs/6200-series.html">6200 Series</a></li>
-                                <li><a href="https://rhdbearings.com/specs/6300-series.html">6300 Series</a></li>
-                                <li><a href="https://rhdbearings.com/bearing-size-chart/">Size Chart</a></li>
-                                <li><a href="https://rhdbearings.com/shop/">Shop Online</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer-column">
-                            <h3 class="footer-column-title">Resources</h3>
-                            <ul class="footer-links">
-                                <li><a href="https://rhdbearings.com/bearing-installation-guide/">Installation Guide</a></li>
-                                <li><a href="https://rhdbearings.com/bearing-maintenance/">Maintenance Tips</a></li>
-                                <li><a href="https://rhdbearings.com/technical-specifications/">Technical Specs</a></li>
-                                <li><a href="https://rhdbearings.com/industries/">Industry Applications</a></li>
-                                <li><a href="https://rhdbearings.com/faqs/">FAQs</a></li>
-                                <li><a href="https://rhdbearings.com/support/">Support Center</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer-column">
-                            <h3 class="footer-column-title">Company</h3>
-                            <ul class="footer-links">
-                                <li><a href="https://rhdbearings.com/about-us/">About Us</a></li>
-                                <li><a href="https://rhdbearings.com/quality-assurance/">Quality Assurance</a></li>
-                                <li><a href="https://rhdbearings.com/careers/">Careers</a></li>
-                                <li><a href="https://rhdbearings.com/contact-us/">Contact</a></li>
-                                <li><a href="https://rhdbearings.com/news/">News & Updates</a></li>
-                                <li><a href="https://rhdbearings.com/partnerships/">Partnerships</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <p class="footer-description">
+                        RHD Bearings specializes in high-quality ball bearings for industrial, automotive, and precision applications. With over 20 years of experience, we provide reliable bearing solutions worldwide.
+                    </p>
                 </div>
                 
-                <div class="footer-bottom">
-                    <div class="footer-copyright">
-                        <p>&copy; 2025 RHD Bearings. All rights reserved.</p>
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h3 class="footer-column-title">Product</h3>
+                        <div class="footer-links-columns">
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/specs/miniature-series/">Miniature Bearings</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6000-series/">6000 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6200-series/">6200 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6300-series/">6300 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/16000-series/">16000 Series</a></li>
+                            </ul>
+                            <ul class="footer-links">
+                                <li><a href="https://rhdbearings.com/specs/62200-series/">62200 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/62300-series/">62300 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6800-series/">6800 Series</a></li>
+                                <li><a href="https://rhdbearings.com/specs/6900-series/">6900 Series</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer-legal">
-                        <a href="https://rhdbearings.com/terms-of-service/">Terms of Service</a>
-                        <a href="https://rhdbearings.com/privacy-policy/">Privacy Policy</a>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-column-title">Company</h3>
+                        <ul class="footer-links">
+                            <li><a href="https://rhdbearings.com/about-us/">About Us</a></li>
+                            <li><a href="https://rhdbearings.com/products/">Products</a></li>
+                            <li><a href="https://rhdbearings.com/industries/">Industries</a></li>
+                            <li><a href="https://rhdbearings.com/bearing-size-chart/">Bearings Size Chart</a></li>
+                            <li><a href="https://rhdbearings.com/contact-us/">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 RHD Bearings. All rights reserved.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="https://rhdbearings.com/privacy-policy/">Privacy Policy</a>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <!-- Watermark Section -->
     <section class="watermark-section">
@@ -4324,6 +4200,13 @@ html {
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load footer
+        // fetch call removed - component already embedded
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
             });
 
         // Load CTA component
@@ -4509,7 +4392,7 @@ html {
                 } else {
                     z2v2Element.textContent = '1400 RPM';
                     z3v3Element.textContent = '2880 RPM';
-                    z4v4Element.textContent = '4000+ RPM';
+                    z4v4Element.textContent = '6000+ RPM';
                 }
             }
         }
@@ -4594,6 +4477,13 @@ html {
                 document.getElementById('navbar-container').innerHTML = data;
             });
 
+        // Load footer
+        fetch('../../../../shared/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+
         // Load CTA component
         document.addEventListener('DOMContentLoaded', function() {
             loadModelCTA('609', 'cta-container');
@@ -4777,7 +4667,7 @@ html {
                 } else {
                     z2v2Element.textContent = '1400 RPM';
                     z3v3Element.textContent = '2880 RPM';
-                    z4v4Element.textContent = '4000+ RPM';
+                    z4v4Element.textContent = '6000+ RPM';
                 }
             }
         }

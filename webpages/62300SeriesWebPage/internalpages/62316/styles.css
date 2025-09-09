@@ -829,121 +829,7 @@ body {
 
 /* CTA section styling is now handled by shared/cta-model.css */
 
-/* ================================
-   FOOTER
-   ================================ */
-
-.footer {
-    background: transparent;
-    padding: var(--space-section-2) 0;
-}
-
-.footer-content {
-    background: var(--surface-primary);
-    border-radius: 24px;
-    margin: 0 var(--space-component-2);
-    padding: var(--space-section-2);
-    position: relative;
-    overflow: hidden;
-    box-shadow: var(--elevation-2);
-    border: 1px solid var(--border-subtle);
-}
-
-
-
-.footer-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: var(--space-section-1);
-    margin-bottom: var(--space-section-1);
-    position: relative;
-    z-index: 2;
-}
-
-.footer-brand {
-    max-width: 400px;
-}
-
-.footer-logo {
-    margin-bottom: var(--space-component-1);
-}
-
-.footer-logo-img {
-    height: 60px;
-    width: auto;
-}
-
-.footer-description {
-    font-size: var(--text-body-small);
-    line-height: 1.6;
-    color: var(--text-secondary);
-}
-
-.footer-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-component-2);
-}
-
-.footer-column-title {
-    font-size: var(--text-subsection);
-    font-weight: 600;
-    margin-bottom: var(--space-component-1);
-    color: var(--text-primary);
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li {
-    margin-bottom: var(--space-micro-2);
-}
-
-.footer-links a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: var(--text-body-small);
-    transition: color var(--transition-fast);
-}
-
-.footer-links a:hover {
-    color: var(--text-primary);
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: var(--space-component-1);
-    border-top: 1px solid var(--border-subtle);
-    position: relative;
-    z-index: 2;
-}
-
-.footer-copyright p {
-    font-size: var(--text-body-small);
-    color: var(--text-secondary);
-    margin: 0;
-}
-
-.footer-legal {
-    display: flex;
-    gap: var(--space-component-1);
-}
-
-.footer-legal a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: var(--text-body-small);
-    transition: color var(--transition-fast);
-}
-
-.footer-legal a:hover {
-    color: var(--text-primary);
-}
+/* Footer styles are now handled by shared/footer.css */
 
 
 
@@ -1147,37 +1033,7 @@ body {
         grid-template-columns: 1fr;
     }
     
-    /* Footer Responsive */
-    .footer {
-        display: none;
-    }
-    
-    .footer-content {
-        margin: 0 var(--space-micro-2);
-        padding: var(--space-component-2);
-        border-radius: 16px;
-    }
-    
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: var(--space-component-2);
-    }
-    
-    .footer-nav {
-        grid-template-columns: 1fr;
-    }
-    
-
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: var(--space-micro-2);
-        text-align: center;
-    }
-    
-    .footer-legal {
-        justify-content: center;
-    }
+    /* Footer responsive styles are now handled by shared/footer.css */
     
     /* LLM Optimization Sections Mobile */
     .recommendations-grid,
@@ -1280,23 +1136,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .footer-content {
-        margin: 0 var(--space-component-1);
-        padding: var(--space-section-1);
-    }
-    
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: var(--space-component-2);
-    }
-    
-    .footer-nav {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-
-    
-
+    /* Footer responsive styles are now handled by shared/footer.css */
 }
 
 @media (max-width: 480px) {
