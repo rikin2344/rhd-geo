@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bearing Specifications & Technical Data | RHD Bearings</title>
+    <title>Bearing Specifications Hub | Technical Data & Performance Grades | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-/* Reset everything */
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -228,9 +228,462 @@ body {
 }
 
 /* Footer CSS */
+/* ================================
+   FOOTER
+   ================================ */
+
+.footer {
+    background: transparent;
+    padding: var(--space-section-2) 0;
+}
+
+.footer-content {
+    background: #FFFFFF;
+    border-radius: 24px;
+    margin: 0 32px;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-section-1);
+    margin-bottom: var(--space-section-1);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: var(--space-component-1);
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6B7280;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-component-2);
+}
+
+.footer-column-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #000000;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: var(--space-micro-2);
+}
+
+.footer-links a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #000000;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    color: #6B7280;
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: var(--space-component-1);
+}
+
+.footer-legal a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #000000;
+}
+
+/* ================================
+   FOOTER RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-micro-2);
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        margin: 0 var(--space-component-1);
+        padding: var(--space-section-1);
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: var(--space-component-2);
+    }
+    
+    .footer-nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
 /* CTA CSS */
+/* ================================
+   MODEL CTA SECTION
+   ================================ */
+
+.cta-section {
+    background: linear-gradient(135deg, #000000 100%, #2d2d2d 0%);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(210, 255, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(210, 255, 55, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* CTA Header */
+.cta-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-badge {
+    display: inline-block;
+    background: var(--accent-neon, #D2FF37);
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.cta-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cta-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.model-number {
+    color: var(--accent-neon, #D2FF37);
+    font-weight: 700;
+}
+
+/* CTA Main */
+.cta-main {
+    margin-bottom: 40px;
+}
+
+.cta-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.feature-icon {
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-neon, #D2FF37);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.feature-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.feature-content p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* CTA Actions */
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-actions .btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    min-width: 200px;
+    text-align: left;
+}
+
+.cta-actions .btn-primary {
+    background: var(--accent-neon, #D2FF37);
+    color: #000000;
+}
+
+.cta-actions .btn-primary:hover {
+    background: #b8e63f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(210, 255, 55, 0.3);
+}
+
+.cta-actions .btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta-actions .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-neon, #D2FF37);
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.btn-text strong {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.btn-text small {
+    font-size: 12px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+/* CTA Footer */
+.cta-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.company-info {
+    text-align: left;
+}
+
+.company-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.company-brand strong {
+    font-size: 18px;
+    color: var(--accent-neon, #D2FF37);
+}
+
+.company-tagline {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.company-location {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.business-info {
+    text-align: right;
+}
+
+.business-item {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.business-label {
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+.business-value {
+    color: var(--accent-neon, #D2FF37);
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-header h2 {
+        font-size: 32px;
+    }
+    
+    .cta-subtitle {
+        font-size: 16px;
+    }
+    
+    .cta-features {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .feature-item {
+        padding: 16px;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-actions .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .cta-footer {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+    
+    .business-info {
+        text-align: center;
+    }
+    
+    .business-item {
+        justify-content: center;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
 
 
 /* Watermark CSS */
@@ -279,21 +732,6 @@ body {
    WATERMARK RESPONSIVE
    ================================ */
 
-@media (max-width: 768px) {
-    .watermark-text {
-        font-size: 80px;
-        background: linear-gradient(to bottom, 
-            rgba(64, 64, 64, 0.5) 0%, 
-            rgba(96, 96, 96, 0.3) 30%, 
-            rgba(128, 128, 128, 0.15) 60%, 
-            rgba(192, 192, 192, 0.03) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        padding: 0;
-    }
-}
-
 @media (max-width: 1024px) {
     .watermark-text {
         font-size: 100px;
@@ -309,8 +747,49 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .watermark-section {
+        width: 100% !important; /* Prevent horizontal scroll */
+        left: 0 !important;
+        transform: none !important;
+        overflow: hidden;
+        margin: 20px 0 0 0;
+        padding-bottom: 40px;
+    }
+    
+    .watermark-text {
+        font-size: 50px;
+        background: linear-gradient(to bottom, 
+            rgba(64, 64, 64, 0.5) 0%, 
+            rgba(96, 96, 96, 0.3) 30%, 
+            rgba(128, 128, 128, 0.15) 60%, 
+            rgba(192, 192, 192, 0.03) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding: 0;
+        white-space: nowrap; /* Keep text on one line */
+        max-width: 100vw; /* Ensure it fits screen width */
+        overflow: hidden;
+        line-height: 0.8;
+        letter-spacing: -0.02em; /* Tighter letter spacing for mobile */
+    }
+}
 
-/* Page CSS */
+@media (max-width: 480px) {
+    .watermark-text {
+        font-size: 40px;
+        padding: 0 10px;
+        line-height: 0.7;
+        white-space: nowrap;
+        max-width: 100vw;
+        overflow: hidden;
+        letter-spacing: -0.03em;
+    }
+}
+
+
+/* SpecsHubPage Styles */
 /* ================================
    CSS VARIABLES & BASE STYLES
    ================================ */
@@ -597,8 +1076,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(210, 255, 55, 0.1);
+    background: var(--accent-neon);
     border-radius: 16px;
+}
+
+.excellence-icon .icon-emoji {
+    font-size: 32px;
+    line-height: 1;
+    color: #000;
 }
 
 .excellence-title {
@@ -827,9 +1312,9 @@ body {
 }
 
 .comparison-table th {
-    background: rgba(248, 249, 250, 0.8);
+    background: var(--accent-neon);
     font-weight: 600;
-    color: var(--text-primary);
+    color: #000000;
     font-size: 14px;
     position: sticky;
     top: 0;
@@ -886,8 +1371,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(210, 255, 55, 0.1);
+    background: var(--accent-neon);
     border-radius: 16px;
+}
+
+.support-icon .icon-emoji {
+    font-size: 32px;
+    line-height: 1;
+    color: #000;
 }
 
 .support-title {
@@ -1129,6 +1620,11 @@ body {
         padding: 8px;
     }
     
+    /* Hide technical comparison table on small devices */
+    .comparison-container {
+        display: none;
+    }
+    
     /* Footer Responsive */
     .footer-content {
         margin: 0 var(--space-micro-2);
@@ -1248,10 +1744,10 @@ a:focus {
                                 <span class="ui-menu-item-wrapper">Industries</span>
                             </div>
                         </a>
-                        <a href="https://rhdbearings.com/bearing-size-chart/" class="menu-item ui-anim-flip">
+                        <a href="https://rhdbearings.com/specs/" class="menu-item ui-anim-flip">
                             <div class="ui-flip-anim-wrapp">
-                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
-                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                <span class="ui-menu-item-wrapper">Specifications</span>
+                                <span class="ui-menu-item-wrapper">Specifications</span>
                             </div>
                         </a>
                         <a href="https://rhdbearings.com/shop/" class="menu-item ui-anim-flip">
@@ -1278,7 +1774,7 @@ a:focus {
             <div class="hero-container">
                 <!-- Main Content -->
                 <div class="hero-main">
-                    <h1 class="hero-title">Bearing Specifications</h1>
+                    <h1 class="hero-title">Ball Bearing Specifications</h1>
                     <p class="hero-subtitle">
                         Complete technical data for precision engineering
                     </p>
@@ -1291,20 +1787,20 @@ a:focus {
                     <div class="hero-specs">
                         <div class="specs-compact">
                             <div class="spec-item">
-                                <div class="spec-value">8</div>
-                                <div class="spec-label">Bearing Series</div>
+                                <div class="spec-value">9</div>
+                            <div class="spec-label">Bearing Series</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">154</div>
-                                <div class="spec-label">Total Models</div>
+                                <div class="spec-value">195</div>
+                            <div class="spec-label">Total Models</div>
                             </div>
                             <div class="spec-item">
                                 <div class="spec-value">3-100mm</div>
                                 <div class="spec-label">Bore Range</div>
                             </div>
                             <div class="spec-item">
-                                <div class="spec-value">192kN</div>
-                                <div class="spec-label">Max Load</div>
+                                <div class="spec-value">192.0kN</div>
+                            <div class="spec-label">Max Load</div>
                             </div>
                         </div>
                     </div>
@@ -1334,14 +1830,7 @@ a:focus {
             <div class="excellence-grid">
                 <div class="excellence-card">
                     <div class="excellence-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <!-- Precision measurement tool -->
-                            <rect x="8" y="20" width="32" height="4" fill="#2563EB" stroke="#000" stroke-width="1"/>
-                            <rect x="8" y="16" width="2" height="12" fill="#374151"/>
-                            <rect x="38" y="16" width="2" height="12" fill="#374151"/>
-                            <circle cx="24" cy="22" r="3" fill="#D2FF37"/>
-                            <text x="24" y="26" text-anchor="middle" font-size="8" fill="#000">μm</text>
-                        </svg>
+                        <span class="icon-emoji">🔧</span>
                     </div>
                     <h3 class="excellence-title">Precision Manufacturing</h3>
                     <p class="excellence-description">State-of-the-art CNC machinery and quality control systems ensure tolerances down to micron levels, meeting ISO 15:2011 and ISO 281:2007 standards.</p>
@@ -1349,16 +1838,7 @@ a:focus {
                 
                 <div class="excellence-card">
                     <div class="excellence-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <!-- Quality certification -->
-                            <rect x="10" y="8" width="28" height="32" rx="2" fill="#F7FAFC" stroke="#2563EB" stroke-width="2"/>
-                            <rect x="14" y="12" width="20" height="3" fill="#D2FF37"/>
-                            <rect x="14" y="18" width="15" height="2" fill="#374151"/>
-                            <rect x="14" y="22" width="18" height="2" fill="#374151"/>
-                            <rect x="14" y="26" width="12" height="2" fill="#374151"/>
-                            <circle cx="32" cy="32" r="6" fill="#10B981"/>
-                            <path d="M29 32l2 2 4-4" stroke="#fff" stroke-width="2" fill="none"/>
-                        </svg>
+                        <span class="icon-emoji">🏭</span>
                     </div>
                     <h3 class="excellence-title">Global Standards</h3>
                     <p class="excellence-description">All bearings manufactured to international standards with comprehensive quality documentation and traceability for critical applications.</p>
@@ -1366,15 +1846,7 @@ a:focus {
                 
                 <div class="excellence-card">
                     <div class="excellence-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <!-- Technical support -->
-                            <circle cx="24" cy="18" r="8" fill="#2563EB"/>
-                            <rect x="20" y="26" width="8" height="14" fill="#374151"/>
-                            <rect x="16" y="22" width="16" height="6" fill="#D2FF37"/>
-                            <rect x="18" y="24" width="3" height="2" fill="#000"/>
-                            <rect x="27" y="24" width="3" height="2" fill="#000"/>
-                            <rect x="22" y="28" width="4" height="1" fill="#000"/>
-                        </svg>
+                        <span class="icon-emoji">⚙️</span>
                     </div>
                     <h3 class="excellence-title">Technical Support</h3>
                     <p class="excellence-description">Expert engineering support for bearing selection, application analysis, and performance optimization from our Mumbai-based technical team.</p>
@@ -1394,7 +1866,7 @@ a:focus {
             <div class="series-grid">
                 <!-- Miniature Bearings Card -->
                 <div class="series-card featured">
-                    <div class="series-badge">Ultra Precision</div>
+                    <div class="series-badge">Compact Precision</div>
                     <div class="series-header">
                         <div class="series-icon miniature">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1410,13 +1882,13 @@ a:focus {
                             </svg>
                         </div>
                         <h3 class="series-title">Miniature Ball Bearings</h3>
-                        <div class="series-code">600 Series (3-digit)</div>
+                        <div class="series-code">600 Series</div>
                     </div>
                     
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">3mm - 9mm</span>
+                            <span class="spec-value">3-9mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1435,30 +1907,20 @@ a:focus {
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>Electronics & Medical Devices</li>
-                            <li>Precision Instruments</li>
-                            <li>High-Speed Motors</li>
-                            <li>Aerospace Components</li>
+                            <li>Power Tools</li>
+                            <li>Medical devices</li>
+                            <li>Robotics</li>
+                            <li>Precision instruments</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">15,000 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Max:</span>
-                            <span class="grade-value">24,000 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/miniature-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/miniature-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
 
                 <!-- 6000 Series Card -->
                 <div class="series-card">
-                    <div class="series-badge">Most Popular</div>
+                    <div class="series-badge">Light Duty</div>
                     <div class="series-header">
                         <div class="series-icon standard">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1480,7 +1942,7 @@ a:focus {
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">10mm - 100mm</span>
+                            <span class="spec-value">10-100mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1499,30 +1961,20 @@ a:focus {
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>General Industrial Motors</li>
-                            <li>Automotive Components</li>
-                            <li>Home Appliances</li>
-                            <li>HVAC Systems</li>
+                            <li>Automotive</li>
+                            <li>Electric motors</li>
+                            <li>Power tools</li>
+                            <li>Household appliances</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">2,880 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Max:</span>
-                            <span class="grade-value">24,000 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/6000-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/6000-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
 
                 <!-- 6200 Series Card -->
                 <div class="series-card">
-                    <div class="series-badge">Heavy Duty</div>
+                    <div class="series-badge">Medium Duty</div>
                     <div class="series-header">
                         <div class="series-icon heavy">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1544,7 +1996,7 @@ a:focus {
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">10mm - 100mm</span>
+                            <span class="spec-value">10-100mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1563,30 +2015,20 @@ a:focus {
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>Heavy Industrial Equipment</li>
-                            <li>Steel Mill Machinery</li>
-                            <li>Mining Equipment</li>
-                            <li>Large Motor Applications</li>
+                            <li>Industrial machinery</li>
+                            <li>Agricultural equipment</li>
+                            <li>Material handling</li>
+                            <li>Automotive transmissions</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">2,880 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Max:</span>
-                            <span class="grade-value">2,400 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/6200-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/6200-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
 
                 <!-- 6300 Series Card -->
                 <div class="series-card">
-                    <div class="series-badge">Maximum Load</div>
+                    <div class="series-badge">Heavy Duty</div>
                     <div class="series-header">
                         <div class="series-icon maximum">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1608,7 +2050,7 @@ a:focus {
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">10mm - 100mm</span>
+                            <span class="spec-value">10-100mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1627,30 +2069,20 @@ a:focus {
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>Power Generation</li>
-                            <li>Critical Process Equipment</li>
-                            <li>Maximum Load Applications</li>
-                            <li>Mission-Critical Systems</li>
+                            <li>Heavy industry</li>
+                            <li>Mining</li>
+                            <li>Construction machinery</li>
+                            <li>Large conveyors</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">2,400 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Supreme:</span>
-                            <span class="grade-value">2,000 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/6300-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/6300-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
 
                 <!-- 62200 Series Card -->
                 <div class="series-card">
-                    <div class="series-badge">Wide Inner Ring</div>
+                    <div class="series-badge">Heavy Industrial</div>
                     <div class="series-header">
                         <div class="series-icon heavy">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1672,7 +2104,7 @@ a:focus {
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">10mm - 100mm</span>
+                            <span class="spec-value">10-100mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1691,30 +2123,20 @@ a:focus {
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>Industrial Motors</li>
-                            <li>Heavy-Duty Automation</li>
-                            <li>Steel Processing</li>
-                            <li>Marine Equipment</li>
+                            <li>Heavy machinery</li>
+                            <li>Mining equipment</li>
+                            <li>Pumps and compressors</li>
+                            <li>Construction equipment</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">2,400 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Max:</span>
-                            <span class="grade-value">2,000 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/62200-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/62200-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
 
                 <!-- 62300 Series Card -->
                 <div class="series-card">
-                    <div class="series-badge">Ultra Precision</div>
+                    <div class="series-badge">Wide Section Heavy</div>
                     <div class="series-header">
                         <div class="series-icon maximum">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1736,7 +2158,7 @@ a:focus {
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">12mm - 100mm</span>
+                            <span class="spec-value">12-100mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1755,30 +2177,20 @@ a:focus {
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>Ultra-Precision Machine Tools</li>
-                            <li>Coordinate Measuring Machines</li>
-                            <li>Semiconductor Equipment</li>
-                            <li>Research Instruments</li>
+                            <li>Heavy-duty conveyors</li>
+                            <li>Power generation</li>
+                            <li>Large electric motors</li>
+                            <li>Industrial gearboxes</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">2,880 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Max:</span>
-                            <span class="grade-value">16,000 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/62300-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/62300-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
 
                 <!-- 16000 Series Card -->
                 <div class="series-card">
-                    <div class="series-badge">Thin Section</div>
+                    <div class="series-badge">Precision Industrial</div>
                     <div class="series-header">
                         <div class="series-icon miniature">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1800,7 +2212,7 @@ a:focus {
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">12mm - 100mm</span>
+                            <span class="spec-value">12-100mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1819,30 +2231,20 @@ a:focus {
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>Space-Constrained Equipment</li>
-                            <li>Lightweight Robotics</li>
-                            <li>Aerospace Components</li>
-                            <li>Compact Motors</li>
+                            <li>CNC machinery</li>
+                            <li>Robotics</li>
+                            <li>Aerospace control systems</li>
+                            <li>Precision measurement</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">2,880 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Max:</span>
-                            <span class="grade-value">24,000 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/16000-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/16000-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
 
                 <!-- 6800 Series Card -->
                 <div class="series-card">
-                    <div class="series-badge">Ultra Lightweight</div>
+                    <div class="series-badge">Ultra Thin Section</div>
                     <div class="series-header">
                         <div class="series-icon miniature">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1864,7 +2266,7 @@ a:focus {
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">10mm - 100mm</span>
+                            <span class="spec-value">10-100mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1872,41 +2274,31 @@ a:focus {
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Max Speed:</span>
-                            <span class="spec-value">68,000 RPM</span>
+                            <span class="spec-value">36,000 RPM</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Max Load:</span>
-                            <span class="spec-value">29.2kN</span>
+                            <span class="spec-value">20.1kN</span>
                         </div>
                     </div>
                     
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>Consumer Electronics</li>
-                            <li>Micro Robotics</li>
-                            <li>Precision Instruments</li>
-                            <li>Drone Systems</li>
+                            <li>Aerospace</li>
+                            <li>Medical tools</li>
+                            <li>Robotics</li>
+                            <li>Compact electric motors</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">15,000 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Max:</span>
-                            <span class="grade-value">58,000 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/6800-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/6800-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
 
                 <!-- 6900 Series Card -->
                 <div class="series-card">
-                    <div class="series-badge">Balanced Performance</div>
+                    <div class="series-badge">Super Thin Section</div>
                     <div class="series-header">
                         <div class="series-icon standard">
                             <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
@@ -1928,7 +2320,7 @@ a:focus {
                     <div class="series-specs">
                         <div class="spec-row">
                             <span class="spec-label">Bore Range:</span>
-                            <span class="spec-value">10mm - 100mm</span>
+                            <span class="spec-value">10-100mm</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Models:</span>
@@ -1936,36 +2328,26 @@ a:focus {
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Max Speed:</span>
-                            <span class="spec-value">52,000 RPM</span>
+                            <span class="spec-value">32,000 RPM</span>
                         </div>
                         <div class="spec-row">
                             <span class="spec-label">Max Load:</span>
-                            <span class="spec-value">42.5kN</span>
+                            <span class="spec-value">45.5kN</span>
                         </div>
                     </div>
                     
                     <div class="series-applications">
                         <h4>Key Applications</h4>
                         <ul>
-                            <li>Medium-Duty Compact Equipment</li>
-                            <li>Automation Systems</li>
-                            <li>Packaging Machinery</li>
-                            <li>Compact Motors</li>
+                            <li>Small electronics</li>
+                            <li>Precision instruments</li>
+                            <li>Drones</li>
+                            <li>Portable power tools</li>
                         </ul>
                     </div>
                     
-                    <div class="series-performance">
-                        <div class="performance-grade">
-                            <span class="grade-label">V3 Ultra:</span>
-                            <span class="grade-value">15,000 RPM</span>
-                        </div>
-                        <div class="performance-grade">
-                            <span class="grade-label">V4 Max:</span>
-                            <span class="grade-value">44,000 RPM</span>
-                        </div>
-                    </div>
                     
-                    <a href="https://rhdbearings.com/specs/6900-series/" class="btn btn-primary series-btn">View Complete Specifications</a>
+                    <a href="https://rhdbearings.com/specs/6900-series/" class="btn btn-primary series-btn">View Specification</a>
                 </div>
             </div>
         </div>
@@ -2023,15 +2405,15 @@ a:focus {
                             </tr>
                             <tr>
                                 <td><strong>Max Load Capacity</strong></td>
-                                <td>4.45kN</td>
-                                <td>64.5kN</td>
-                                <td>122kN</td>
-                                <td>173kN</td>
-                                <td>97.2kN</td>
-                                <td>192kN</td>
-                                <td>43.8kN</td>
-                                <td>29.2kN</td>
-                                <td>42.5kN</td>
+                                <td>4.45kN<br>454kg</td>
+                                <td>64.5kN<br>6,580kg</td>
+                                <td>122kN<br>12,440kg</td>
+                                <td>173kN<br>17,650kg</td>
+                                <td>97.2kN<br>9,910kg</td>
+                                <td>192kN<br>19,580kg</td>
+                                <td>43.8kN<br>4,470kg</td>
+                                <td>20.1kN<br>2,050kg</td>
+                                <td>45.5kN<br>4,640kg</td>
                             </tr>
                             <tr>
                                 <td><strong>Max Speed (Oil)</strong></td>
@@ -2042,32 +2424,20 @@ a:focus {
                                 <td>30,000 RPM</td>
                                 <td>24,000 RPM</td>
                                 <td>30,000 RPM</td>
-                                <td>68,000 RPM</td>
-                                <td>52,000 RPM</td>
+                                <td>36,000 RPM</td>
+                                <td>32,000 RPM</td>
                             </tr>
                             <tr>
                                 <td><strong>Primary Applications</strong></td>
-                                <td>Electronics, Medical</td>
-                                <td>General Industrial</td>
-                                <td>Heavy Industrial</td>
-                                <td>Critical Systems</td>
-                                <td>Industrial Motors</td>
-                                <td>Ultra-Precision</td>
-                                <td>Space-Constrained</td>
-                                <td>Consumer Electronics</td>
-                                <td>Medium-Duty Compact</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Precision Grades</strong></td>
-                                <td>P0, P6, P5, P4</td>
-                                <td>P0, P6</td>
-                                <td>P0, P6, P5</td>
-                                <td>P0, P6, P5</td>
-                                <td>P0, P6, P5</td>
-                                <td>P0, P6, P5, P4, P2</td>
-                                <td>P0, P6</td>
-                                <td>P0, P6, P5, P4</td>
-                                <td>P0, P6, P5</td>
+                                <td>Power Tools</td>
+                                <td>Automotive</td>
+                                <td>Industrial machinery</td>
+                                <td>Heavy industry</td>
+                                <td>Heavy machinery</td>
+                                <td>Heavy-duty conveyors</td>
+                                <td>CNC machinery</td>
+                                <td>Aerospace</td>
+                                <td>Small electronics</td>
                             </tr>
                             <tr>
                                 <td><strong>Weight Range</strong></td>
@@ -2099,14 +2469,7 @@ a:focus {
             <div class="support-grid">
                 <div class="support-card">
                     <div class="support-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="12" width="32" height="24" rx="2" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
-                            <rect x="12" y="16" width="24" height="2" fill="#D2FF37"/>
-                            <rect x="12" y="20" width="18" height="1.5" fill="#6B7280"/>
-                            <rect x="12" y="24" width="20" height="1.5" fill="#6B7280"/>
-                            <rect x="12" y="28" width="15" height="1.5" fill="#6B7280"/>
-                            <rect x="12" y="32" width="22" height="1.5" fill="#6B7280"/>
-                        </svg>
+                        <span class="icon-emoji">📊</span>
                     </div>
                     <h3 class="support-title">Application Analysis</h3>
                     <p class="support-description">Detailed load calculations, speed analysis, and environmental considerations for optimal bearing selection.</p>
@@ -2114,10 +2477,7 @@ a:focus {
                 
                 <div class="support-card">
                     <div class="support-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <circle cx="24" cy="24" r="16" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
-                            <path d="M16 24l6 6 12-12" stroke="#D2FF37" stroke-width="3" fill="none"/>
-                        </svg>
+                        <span class="icon-emoji">🎯</span>
                     </div>
                     <h3 class="support-title">Quality Assurance</h3>
                     <p class="support-description">Comprehensive testing and documentation ensuring consistent quality and performance standards.</p>
@@ -2125,13 +2485,7 @@ a:focus {
                 
                 <div class="support-card">
                     <div class="support-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="12" y="8" width="24" height="32" rx="2" fill="#F3F4F6" stroke="#374151" stroke-width="2"/>
-                            <circle cx="24" cy="18" r="4" fill="#D2FF37"/>
-                            <rect x="18" y="26" width="12" height="2" fill="#6B7280"/>
-                            <rect x="18" y="30" width="8" height="2" fill="#6B7280"/>
-                            <rect x="18" y="34" width="10" height="2" fill="#6B7280"/>
-                        </svg>
+                        <span class="icon-emoji">📋</span>
                     </div>
                     <h3 class="support-title">Technical Documentation</h3>
                     <p class="support-description">Complete CAD drawings, installation guides, and maintenance specifications for all bearing series.</p>
@@ -2246,20 +2600,50 @@ a:focus {
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Load navbar
-            // fetch call removed - navbar already embedded
+            // fetch call removed - component already embedded
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
                 })
-                .catch(error => console.error('Error loading navbar:', error));
+                .catch(error => // error logging removed);
 
 
         });
     </script>
 <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Card hover effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.series-card, .excellence-card, .support-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+<script>
         document.addEventListener('DOMContentLoaded', function() {
             // Load navbar
-            // problematic pattern removednavbar.html')
+            fetch('../shared/navbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
@@ -2269,7 +2653,6 @@ a:focus {
 
         });
     </script>
-
 
 </body>
 </html>

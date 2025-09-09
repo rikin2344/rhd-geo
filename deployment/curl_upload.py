@@ -50,7 +50,7 @@ def get_local_file_path(page_type):
     """Get the local file path for a given page type"""
     # Handle special cases first
     if page_type == 'specs':
-        return './webpages/SpecsHubPage/index.html'
+        return './deployment/specs/index.html'
     
     # First, check if this is a series main page by checking the series directory
     if page_type in {'miniature', '6000', '6200', '6300', '6800', '62200', '62300', '16000', '6900'}:

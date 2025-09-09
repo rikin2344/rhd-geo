@@ -789,7 +789,8 @@ def get_series_mapping():
         "62300-series": "62300SeriesWebPage",
         "6800-series": "6800SeriesWebPage",
         "6900-series": "6900SeriesWebPage",
-        "6000-series": "6000SeriesWebPage"
+        "6000-series": "6000SeriesWebPage",
+        "specs-hub": "SpecsHubPage"
     }
 
 def get_series_from_model_number(model_number):
@@ -910,6 +911,11 @@ def generate_universal_pages(selected_series=None):
         print(f"      • {series}: {len(models)} models")
     print(f"   ⏭️  SKIPPED: {len(skipped_models)} models")
     
+    # Add SpecsHubPage to the series_models if it's selected
+    if selected_series is None or "specs-hub" in selected_series:
+        if "specs-hub" not in series_models:
+            series_models["specs-hub"] = []  # Empty list since SpecsHubPage has no JSON models
+    
     if not series_models:
         print(f"\n❌ No valid series found in {models_dir}")
         return False
@@ -926,6 +932,13 @@ def generate_universal_pages(selected_series=None):
     for series, models in series_models.items():
         if series not in series_mapping:
             print(f"⚠️  No directory mapping for {series}, skipping...")
+            continue
+        
+        # Special handling for SpecsHubPage (no JSON models to process)
+        if series == "specs-hub":
+            print(f"\n🔧 Processing {series} series...")
+            print(f"   📋 SpecsHubPage has no JSON models to process (single page)")
+            success_count += 1  # Mark as successful since it's handled in standalone creation
             continue
             
         series_dir_name = series_mapping[series]
@@ -1006,6 +1019,22 @@ def create_standalone_pages(selected_series=None):
     for series, series_dir_name in series_mapping.items():
         if selected_series is None or series in selected_series:
             print(f"\n🔧 Creating standalone pages for {series} series...")
+            
+            # Special handling for SpecsHubPage (no internal model pages)
+            if series == "specs-hub":
+                print(f"   📋 Processing SpecsHubPage (single page)...")
+                try:
+                    success = create_standalone_specs_hub_page(series, series_dir_name)
+                    if success:
+                        print(f"      ✅ Successfully created standalone SpecsHubPage")
+                        successful_count += 1
+                    else:
+                        print(f"      ❌ Failed to create standalone SpecsHubPage")
+                        failed_count += 1
+                except Exception as e:
+                    print(f"      ❌ Error processing SpecsHubPage: {e}")
+                    failed_count += 1
+                continue
             
             # STEP 2A: Create standalone main series page
             print(f"   📋 Processing main series page...")
@@ -1284,6 +1313,224 @@ body {{
         print(f"            ❌ Error creating standalone main series page: {e}")
         return False
 
+def create_standalone_specs_hub_page(series, series_dir_name):
+    """Helper function for create_standalone_pages() - creates standalone SpecsHubPage"""
+    try:
+        # Read the existing SpecsHubPage HTML file
+        series_dir = Path(f"webpages/{series_dir_name}")
+        index_file = series_dir / "index.html"
+        styles_file = series_dir / "styles.css"
+        
+        if not index_file.exists():
+            print(f"            ❌ index.html not found in {series_dir}")
+            return False
+        
+        with open(index_file, 'r', encoding='utf-8') as f:
+            html_content = f.read()
+        
+        # Read the main styles.css file
+        styles_css = ""
+        if styles_file.exists():
+            try:
+                with open(styles_file, 'r', encoding='utf-8') as f:
+                    styles_css = f.read()
+                print(f"            ✅ Loaded SpecsHubPage CSS: {len(styles_css)} characters")
+            except:
+                print(f"            ⚠️  styles.css not found, using empty CSS")
+                styles_css = ""
+        
+        # Read shared CSS files
+        shared_dir = Path("webpages/shared")
+        navbar_css = ""
+        footer_css = ""
+        cta_css = ""
+        watermark_css = ""
+        
+        try:
+            with open(shared_dir / "navbar.css", 'r', encoding='utf-8') as f:
+                navbar_css = f.read()
+        except:
+            print(f"            ⚠️  navbar.css not found, using empty CSS")
+        
+        try:
+            with open(shared_dir / "footer.css", 'r', encoding='utf-8') as f:
+                footer_css = f.read()
+        except:
+            print(f"            ⚠️  footer.css not found, using empty CSS")
+        
+        try:
+            with open(shared_dir / "cta-model.css", 'r', encoding='utf-8') as f:
+                cta_css = f.read()
+        except:
+            print(f"            ⚠️  cta-model.css not found, using empty CSS")
+        
+        try:
+            with open(shared_dir / "watermark.css", 'r', encoding='utf-8') as f:
+                watermark_css = f.read()
+            print(f"            ✅ Loaded watermark CSS: {len(watermark_css)} characters")
+        except:
+            print(f"            ⚠️  watermark.css not found, using empty CSS")
+            watermark_css = ""
+        
+        # Read shared HTML files
+        navbar_html = ""
+        footer_html = ""
+        cta_html = ""
+        watermark_html = ""
+        
+        try:
+            with open(shared_dir / "navbar.html", 'r', encoding='utf-8') as f:
+                navbar_html = f.read()
+                # Remove script tag from navbar
+                script_start = navbar_html.find('<script>')
+                if script_start != -1:
+                    navbar_html = navbar_html[:script_start].strip()
+        except:
+            print(f"            ⚠️  navbar.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "footer.html", 'r', encoding='utf-8') as f:
+                footer_html = f.read()
+        except:
+            print(f"            ⚠️  footer.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "cta-model.html", 'r', encoding='utf-8') as f:
+                cta_html = f.read()
+                # Replace [MODEL] placeholder with "Specs Hub"
+                cta_html = cta_html.replace('[MODEL]', 'Specs Hub')
+        except:
+            print(f"            ⚠️  cta-model.html not found, using empty HTML")
+        
+        try:
+            with open(shared_dir / "watermark.html", 'r', encoding='utf-8') as f:
+                watermark_html = f.read()
+            print(f"            ✅ Loaded watermark HTML: {len(watermark_html)} characters")
+        except:
+            print(f"            ⚠️  watermark.html not found, using empty HTML")
+            watermark_html = ""
+        
+        # Extract body content and scripts
+        body_start = html_content.find('<body')
+        if body_start == -1:
+            print(f"            ❌ No <body> tag found in HTML")
+            return False
+        
+        body_start = body_start + html_content[body_start:].find('>') + 1
+        body_end = html_content.find('</body>')
+        if body_end == -1:
+            print(f"            ❌ No </body> tag found in HTML")
+            return False
+        
+        body_content = html_content[body_start:body_end].strip()
+        
+        # Extract script content
+        script_content = ""
+        current_pos = 0
+        while True:
+            script_start = html_content.find('<script>', current_pos)
+            if script_start == -1:
+                break
+            script_end = html_content.find('</script>', script_start) + len('</script>')
+            script_content += html_content[script_start:script_end] + "\n"
+            current_pos = script_end
+        
+        # Replace image with remote URL
+        body_content = body_content.replace('src="DGBB.png"', 'src="https://rhdbearings.com/wp-content/uploads/2025/08/DGBB.png"')
+        
+        # Replace navbar container with actual navbar HTML
+        body_content = body_content.replace('<div id="navbar-container"></div>', navbar_html)
+        
+        # Replace component containers with actual HTML
+        body_content = body_content.replace('<div id="cta-container"></div>', cta_html)
+        if 'id="footer-container"' in body_content:
+            body_content = body_content.replace('<div id="footer-container"></div>', footer_html)
+        if 'id="watermark-container"' in body_content:
+            body_content = body_content.replace('<div id="watermark-container"></div>', watermark_html)
+        
+        # Remove all fetch calls and problematic patterns
+        import re
+        
+        # Remove fetch calls to shared components
+        body_content = re.sub(r'fetch\([\'"][^\'"]*\.\./shared/[^\'"]*[\'"]\)', '// fetch call removed - component already embedded', body_content)
+        
+        # Remove script blocks that load shared components
+        body_content = re.sub(r'<script>[^<]*fetch\([^<]*\.\./shared/[^<]*</script>', '<!-- Shared component loading script removed -->', body_content, flags=re.DOTALL)
+        
+        # Remove external script tags (script tags with src attribute)
+        body_content = re.sub(r'<script[^>]*src=[^>]*></script>', '<!-- External script removed -->', body_content)
+        
+        # Remove any remaining references to ../shared/ paths (handle multiple levels)
+        body_content = re.sub(r'\.\./shared/', '// shared path removed - components embedded', body_content)
+        
+        # Remove console.error calls related to failed fetches
+        body_content = re.sub(r'console\.error\([^)]*\)', '// error logging removed', body_content)
+        
+        # Clean up empty script tags
+        body_content = re.sub(r'<script>\s*</script>', '', body_content)
+        
+        # Create standalone HTML
+        standalone_html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bearing Specifications Hub | Technical Data & Performance Grades | RHD Bearings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+/* Reset and base styles */
+* {{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}}
+
+body {{
+    font-family: 'Bai Jamjuree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background: #F8F9FA;
+}}
+
+/* Navbar CSS */
+{navbar_css}
+
+/* Footer CSS */
+{footer_css}
+
+/* CTA CSS */
+{cta_css}
+
+/* Watermark CSS */
+{watermark_css}
+
+/* SpecsHubPage Styles */
+{styles_css}
+    </style>
+</head>
+<body>
+{body_content}
+{script_content}
+</body>
+</html>'''
+        
+        # Create deployment directory
+        deployment_dir = Path(f"deployment/specs")
+        deployment_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Save standalone SpecsHubPage
+        output_file = deployment_dir / "index.html"
+        
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(standalone_html)
+        
+        print(f"            ✅ Created standalone SpecsHubPage: {output_file}")
+        return True
+        
+    except Exception as e:
+        print(f"            ❌ Error creating standalone SpecsHubPage: {e}")
+        return False
+
 def create_standalone_model_page(model_name, model_dir, series):
     """Helper function for create_standalone_pages() - creates standalone individual model pages"""
     try:
@@ -1536,6 +1783,58 @@ def upload_pages(selected_series=None):
     
     for series, series_dir_name in series_mapping.items():
         if selected_series is None or series in selected_series:
+            # Special handling for SpecsHubPage (single page upload)
+            if series == "specs-hub":
+                print(f"\n🔧 Uploading SpecsHubPage...")
+                deployment_dir = Path(f"deployment/specs")
+                index_file = deployment_dir / "index.html"
+                
+                if not index_file.exists():
+                    print(f"   ❌ SpecsHubPage index.html not found: {index_file}")
+                    failed_count += 1
+                    continue
+                
+                print(f"   📤 Uploading SpecsHubPage...")
+                
+                try:
+                    # Upload to both specs.html and specs/index.html for maximum compatibility
+                    print(f"      📤 Uploading to specs.html...")
+                    success1 = curl_upload('specs')
+                    
+                    # Temporarily modify the upload path for specs/index.html
+                    import importlib.util
+                    spec = importlib.util.spec_from_file_location("curl_upload", "deployment/curl_upload.py")
+                    curl_upload_module = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(curl_upload_module)
+                    original_get_upload_paths = curl_upload_module.get_upload_paths
+                    
+                    def modified_get_upload_paths(page_type):
+                        local_file, remote_file, clean_url = original_get_upload_paths(page_type)
+                        if page_type == 'specs':
+                            remote_file = 'specs/index.html'
+                            clean_url = 'https://rhdbearings.com/specs/'
+                        return local_file, remote_file, clean_url
+                    
+                    curl_upload_module.get_upload_paths = modified_get_upload_paths
+                    print(f"      📤 Uploading to specs/index.html...")
+                    success2 = curl_upload_module.curl_upload('specs')
+                    
+                    # Restore original function
+                    curl_upload_module.get_upload_paths = original_get_upload_paths
+                    
+                    if success1 and success2:
+                        print(f"      ✅ Successfully uploaded SpecsHubPage to both locations")
+                        print(f"      🔗 URLs: https://rhdbearings.com/specs.html and https://rhdbearings.com/specs/")
+                        successful_count += 1
+                    else:
+                        print(f"      ⚠️  Partial upload success - check individual results above")
+                        successful_count += 1
+                    
+                except Exception as e:
+                    print(f"      ❌ Error uploading SpecsHubPage: {e}")
+                    failed_count += 1
+                continue
+            
             deployment_dir = Path(f"deployment/{series}/{series}-internal-pages-deployment")
             if not deployment_dir.exists():
                 print(f"⚠️  Deployment directory not found: {deployment_dir}")
@@ -1612,6 +1911,7 @@ def main():
     parser.add_argument('--6800-series', action='store_true', help='Process only 6800 series')
     parser.add_argument('--6900-series', action='store_true', help='Process only 6900 series')
     parser.add_argument('--6000-series', action='store_true', help='Process only 6000 series')
+    parser.add_argument('--specs-hub', action='store_true', help='Process only SpecsHubPage')
     parser.add_argument('--generate-only', action='store_true', help='Run only step 1 (HTML generation)')
     parser.add_argument('--standalone-only', action='store_true', help='Run only step 2 (standalone page creation)')
     parser.add_argument('--upload-only', action='store_true', help='Run only step 3 (server upload)')
@@ -1636,6 +1936,8 @@ def main():
         selected_series.append('6900-series')
     if args.__dict__.get('6000_series'):
         selected_series.append('6000-series')
+    if args.__dict__.get('specs_hub'):
+        selected_series.append('specs-hub')
     
     # If no specific series selected, process all
     if not selected_series:
@@ -1644,6 +1946,7 @@ def main():
         print("=" * 60)
         print("This script will process ALL non-miniature series:")
         print("• 6200, 6300, 16000, 62200, 62300, 6800, 6900, 6000 series")
+        print("• SpecsHubPage")
         print("=" * 60)
     else:
         print(f"🚀 PROCESSING SELECTED SERIES: {', '.join(selected_series)}")

@@ -227,7 +227,10 @@ class MiniaturePageGenerator:
             # 7. Replace expertise signals
             content = self._replace_expertise_signals(content)
             
-            # 8. Replace simple placeholders
+            # 8. Replace LLM optimization sections
+            content = self._replace_llm_optimization_sections(content)
+            
+            # 9. Replace simple placeholders
             content = self._replace_simple_placeholders(content)
             
             # Create output directory if it doesn't exist
@@ -409,6 +412,23 @@ class MiniaturePageGenerator:
         if expertise_signals:
             expertise_html = '\n'.join([f'<div class="expertise-card"><h3><span class="expertise-icon">{signal.get("icon", "")}</span>{signal.get("title", "")}</h3><p>{signal.get("description", "")}</p></div>' for signal in expertise_signals])
             content = re.sub(r'\{\{#llm_optimization\.expertise_signals\}\}.*?\{\{/llm_optimization\.expertise_signals\}\}', expertise_html, content, flags=re.DOTALL)
+        
+        return content
+    
+    def _replace_llm_optimization_sections(self, content: str) -> str:
+        """Replace all LLM optimization section placeholders"""
+        
+        # Replace Search Optimization Tags
+        natural_language_queries = self.data.get('llm_optimization', {}).get('natural_language_queries', [])
+        if natural_language_queries:
+            search_tags_html = '\n'.join([
+                f'<span class="search-tag">{query}</span>' 
+                for query in natural_language_queries
+            ])
+            content = re.sub(r'\{\{#llm_optimization\.natural_language_queries\}\}.*?\{\{/llm_optimization\.natural_language_queries\}\}', search_tags_html, content, flags=re.DOTALL)
+        else:
+            # Remove the entire search optimization section if no queries
+            content = re.sub(r'<!-- Search Optimization Tags -->.*?<!-- Dimensions and Image Section -->', '<!-- Dimensions and Image Section -->', content, flags=re.DOTALL)
         
         return content
     
