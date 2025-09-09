@@ -27,7 +27,7 @@ INCLUDED SERIES:
 
 USAGE:
 ======
-# Run ALL non-miniature series
+# Run ALL non-miniature series (complete 3-step workflow)
 python3 scripts/generate_universal_bearing_pages.py
 
 # Run specific series
@@ -39,6 +39,13 @@ python3 scripts/generate_universal_bearing_pages.py --16000-series
 # Run multiple series
 python3 scripts/generate_universal_bearing_pages.py --6000-series --6200-series
 python3 scripts/generate_universal_bearing_pages.py --6200-series --6300-series
+
+# Run individual steps
+python3 scripts/generate_universal_bearing_pages.py --generate-only
+python3 scripts/generate_universal_bearing_pages.py --standalone-only
+python3 scripts/generate_universal_bearing_pages.py --upload-only
+python3 scripts/generate_universal_bearing_pages.py --standalone-main-only  # Create standalone main pages only (fast!)
+python3 scripts/generate_universal_bearing_pages.py --upload-main-only      # Upload only main series pages (fast!)
 
 REQUIREMENTS:
 =============
@@ -1893,6 +1900,185 @@ def upload_pages(selected_series=None):
         print(f"\n⚠️  {failed_count} page(s) failed to upload!")
         return False
 
+def upload_main_pages_only(selected_series=None):
+    """
+    Upload only main series pages (not individual model pages)
+    
+    This function:
+    1. Uploads only the main series pages to the server
+    2. Skips all individual model pages
+    3. Much faster than full upload when you only need to update main pages
+    """
+    print(f"\n🚀 UPLOADING MAIN SERIES PAGES ONLY")
+    print(f"==================================================")
+    
+    series_mapping = get_series_mapping()
+    failed_count = 0
+    successful_count = 0
+    
+    for series, series_dir_name in series_mapping.items():
+        if selected_series is None or series in selected_series:
+            print(f"\n🔧 Uploading {series} main page...")
+            
+            # Special handling for SpecsHubPage
+            if series == "specs-hub":
+                deployment_dir = Path(f"deployment/specs")
+                index_file = deployment_dir / "index.html"
+                
+                if not index_file.exists():
+                    print(f"   ❌ SpecsHubPage index.html not found: {index_file}")
+                    failed_count += 1
+                    continue
+                
+                print(f"   📤 Uploading SpecsHubPage...")
+                
+                try:
+                    # Upload to both specs.html and specs/index.html for maximum compatibility
+                    print(f"      📤 Uploading to specs.html...")
+                    success1 = curl_upload('specs')
+                    
+                    # Temporarily modify the upload path for specs/index.html
+                    import importlib.util
+                    spec = importlib.util.spec_from_file_location("curl_upload", "deployment/curl_upload.py")
+                    curl_upload_module = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(curl_upload_module)
+                    original_get_upload_paths = curl_upload_module.get_upload_paths
+                    
+                    def modified_get_upload_paths(page_type):
+                        local_file, remote_file, clean_url = original_get_upload_paths(page_type)
+                        if page_type == 'specs':
+                            remote_file = 'specs/index.html'
+                            clean_url = 'https://rhdbearings.com/specs/'
+                        return local_file, remote_file, clean_url
+                    
+                    curl_upload_module.get_upload_paths = modified_get_upload_paths
+                    print(f"      📤 Uploading to specs/index.html...")
+                    success2 = curl_upload_module.curl_upload('specs')
+                    
+                    # Restore original function
+                    curl_upload_module.get_upload_paths = original_get_upload_paths
+                    
+                    if success1 and success2:
+                        print(f"      ✅ Successfully uploaded SpecsHubPage to both locations")
+                        print(f"      🔗 URLs: https://rhdbearings.com/specs.html and https://rhdbearings.com/specs/")
+                        successful_count += 1
+                    else:
+                        print(f"      ⚠️  Partial upload success - check individual results above")
+                        successful_count += 1
+                    
+                except Exception as e:
+                    print(f"      ❌ Error uploading SpecsHubPage: {e}")
+                    failed_count += 1
+                continue
+            
+            # Upload main series page
+            deployment_dir = Path(f"deployment/{series}")
+            index_file = deployment_dir / "index.html"
+            
+            if not index_file.exists():
+                print(f"   ❌ Main series page not found: {index_file}")
+                failed_count += 1
+                continue
+            
+            try:
+                # Extract the series number for curl_upload (e.g., "6200-series" -> "6200")
+                series_number = series.replace('-series', '')
+                
+                # Use the series number to upload main page
+                success = curl_upload(series_number)
+                
+                if success:
+                    print(f"   ✅ Successfully uploaded {series} main page")
+                    print(f"   🔗 URL: https://rhdbearings.com/specs/{series}.html")
+                    successful_count += 1
+                else:
+                    print(f"   ❌ Failed to upload {series} main page")
+                    failed_count += 1
+                    
+            except Exception as e:
+                print(f"   ❌ Error uploading {series} main page: {e}")
+                failed_count += 1
+    
+    print(f"\n==================================================")
+    print(f"📊 MAIN PAGES UPLOAD SUMMARY")
+    print(f"==================================================")
+    print(f"✅ Successfully uploaded: {successful_count}")
+    print(f"❌ Failed: {failed_count}")
+    print(f"🎯 Total: {successful_count + failed_count}")
+    
+    if failed_count == 0:
+        print(f"\n🎉 All {successful_count} main pages uploaded successfully!")
+        print(f"✅ Main series pages are updated!")
+        return True
+    else:
+        print(f"\n⚠️  {failed_count} main page(s) failed to upload!")
+        return False
+
+def create_standalone_main_pages_only(selected_series=None):
+    """
+    Create standalone pages for main series pages only (not individual model pages)
+    
+    This function:
+    1. Creates standalone main series pages only (from existing HTML/CSS)
+    2. Skips all individual model pages
+    3. Much faster than full standalone creation when you only need main pages
+    4. Outputs to deployment/{series}-series/
+    """
+    print(f"\n🚀 CREATING STANDALONE MAIN PAGES ONLY")
+    print(f"==================================================")
+    
+    series_mapping = get_series_mapping()
+    failed_count = 0
+    successful_count = 0
+    
+    for series, series_dir_name in series_mapping.items():
+        if selected_series is None or series in selected_series:
+            print(f"\n🔧 Creating standalone main page for {series} series...")
+            
+            # Special handling for SpecsHubPage (single page)
+            if series == "specs-hub":
+                print(f"   📋 Processing SpecsHubPage (single page)...")
+                try:
+                    success = create_standalone_specs_hub_page(series, series_dir_name)
+                    if success:
+                        print(f"      ✅ Successfully created standalone SpecsHubPage")
+                        successful_count += 1
+                    else:
+                        print(f"      ❌ Failed to create standalone SpecsHubPage")
+                        failed_count += 1
+                except Exception as e:
+                    print(f"      ❌ Error processing SpecsHubPage: {e}")
+                    failed_count += 1
+                continue
+            
+            # Create standalone main series page only (skip individual models)
+            print(f"   📋 Processing main series page only...")
+            try:
+                success = create_standalone_main_series_page(series, series_dir_name)
+                if success:
+                    print(f"      ✅ Successfully created standalone main series page")
+                    successful_count += 1
+                else:
+                    print(f"      ❌ Failed to create standalone main series page")
+                    failed_count += 1
+            except Exception as e:
+                print(f"      ❌ Error processing main series page: {e}")
+                failed_count += 1
+    
+    print(f"\n==================================================")
+    print(f"📊 STANDALONE MAIN PAGES CREATION SUMMARY")
+    print(f"==================================================")
+    print(f"✅ Successfully created: {successful_count}")
+    print(f"❌ Failed: {failed_count}")
+    print(f"🎯 Total: {successful_count + failed_count}")
+    
+    if failed_count == 0:
+        print(f"\n🎉 All {successful_count} standalone main pages created successfully!")
+        return True
+    else:
+        print(f"\n⚠️  {failed_count} main page(s) failed to create. Check the errors above.")
+        return False
+
 def main():
     """
     Main function - Complete workflow execution
@@ -1915,6 +2101,8 @@ def main():
     parser.add_argument('--generate-only', action='store_true', help='Run only step 1 (HTML generation)')
     parser.add_argument('--standalone-only', action='store_true', help='Run only step 2 (standalone page creation)')
     parser.add_argument('--upload-only', action='store_true', help='Run only step 3 (server upload)')
+    parser.add_argument('--upload-main-only', action='store_true', help='Upload only main series pages (not individual model pages)')
+    parser.add_argument('--standalone-main-only', action='store_true', help='Create standalone pages for main series pages only (not individual model pages)')
     
     args = parser.parse_args()
     
@@ -1976,6 +2164,18 @@ def main():
         print("\n📝 RUNNING UPLOAD STEP ONLY")
         print("-" * 40)
         success = upload_pages(selected_series)
+        sys.exit(0 if success else 1)
+        
+    elif args.upload_main_only:
+        print("\n📝 UPLOADING MAIN SERIES PAGES ONLY")
+        print("-" * 40)
+        success = upload_main_pages_only(selected_series)
+        sys.exit(0 if success else 1)
+        
+    elif args.standalone_main_only:
+        print("\n📝 CREATING STANDALONE MAIN PAGES ONLY")
+        print("-" * 40)
+        success = create_standalone_main_pages_only(selected_series)
         sys.exit(0 if success else 1)
     
     # Step 1: Generate HTML pages
