@@ -1,112 +1,157 @@
 #!/usr/bin/env python3
 """
-Upload shared assets (CSS, HTML, JS) to server for RHD Bearings
-This script uploads the shared footer.css, footer.html, navbar.css, etc. to the server
+Upload shared assets (navbar, footer, CTA, etc.) to the server using curl
 """
 
-import subprocess
 import os
-from pathlib import Path
+import subprocess
+import glob
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 
-def upload_shared_assets():
-    """Upload all shared assets using curl"""
+def curl_upload_file(local_file, remote_file):
+    """Upload a single file using curl"""
     
-    username = os.getenv('FTP_USERNAME', 'rikin@rhdbearings.com')
+    username = os.getenv('FTP_USERNAME', 'rhdbearings')
     password = os.getenv('FTP_PASSWORD')
     host = os.getenv('FTP_HOST', 'ftp.rhdbearings.com')
     
+    # Check if password is available
     if not password:
         print("❌ FTP_PASSWORD environment variable not found!")
         print("💡 Make sure you have a .env file with FTP_PASSWORD=your_password")
         return False
     
-    # Define shared assets to upload (from deployment/shared directory)
-    shared_assets = [
-        ('shared/footer.css', 'shared/footer.css'),
-        ('shared/footer.html', 'shared/footer.html'),
-        ('shared/navbar.css', 'shared/navbar.css'),
-        ('shared/navbar.html', 'shared/navbar.html'),
-        ('shared/cta-model.css', 'shared/cta-model.css'),
-        ('shared/cta-model.html', 'shared/cta-model.html'),
-        ('shared/cta-model.js', 'shared/cta-model.js'),
-        ('shared/watermark.css', 'shared/watermark.css'),
-        ('shared/watermark.html', 'shared/watermark.html'),
-    ]
+    # Check if the local file exists
+    if not os.path.exists(local_file):
+        print(f"⚠️  Warning: Local file {local_file} not found!")
+        return False
     
-    print("🚀 UPLOADING SHARED ASSETS TO SERVER")
+    try:
+        # Build curl command with directory creation
+        cmd = [
+            'curl',
+            '--ftp-create-dirs',
+            '-T', local_file,
+            '-u', f"{username}:{password}",
+            f"ftp://{host}/public_html/{remote_file}"
+        ]
+        
+        print(f"📤 Uploading {os.path.basename(local_file)}...")
+        
+        # Execute curl
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        
+        if result.returncode == 0:
+            print(f"   ✅ Success: {remote_file}")
+            return True
+        else:
+            print(f"   ❌ Failed: {result.stderr}")
+            return False
+            
+    except Exception as e:
+        print(f"   ❌ Error: {e}")
+        return False
+
+def upload_shared_assets():
+    """Upload all shared assets from deployment/shared/ to server"""
+    
+    shared_dir = './deployment/shared'
+    
+    if not os.path.exists(shared_dir):
+        print(f"❌ Shared assets directory not found: {shared_dir}")
+        print("💡 Make sure you've copied files from webpages/shared/ to deployment/shared/")
+        return False
+    
+    print("🚀 Uploading shared assets...")
     print("=" * 50)
+    
+    # Get all files in the shared directory
+    shared_files = glob.glob(f'{shared_dir}/*')
+    shared_files = [f for f in shared_files if os.path.isfile(f)]  # Only files, not directories
+    
+    if not shared_files:
+        print("⚠️  No shared assets found to upload!")
+        return False
     
     successful_uploads = []
     failed_uploads = []
     
-    for local_file, remote_file in shared_assets:
-        local_path = Path(local_file)
+    # Upload each shared asset
+    for local_file in shared_files:
+        filename = os.path.basename(local_file)
+        remote_file = f'shared/{filename}'  # Upload to /shared/ directory on server
         
-        if not local_path.exists():
-            print(f"⚠️  Skipping {local_file} - file not found")
-            continue
-            
-        print(f"📤 Uploading {local_file}...")
+        success = curl_upload_file(local_file, remote_file)
         
-        try:
-            cmd = [
-                'curl',
-                '--ftp-create-dirs',
-                '-T', str(local_path),
-                '-u', f"{username}:{password}",
-                f"ftp://{host}/public_html/{remote_file}"
-            ]
-            
-            result = subprocess.run(cmd, capture_output=True, text=True)
-            
-            if result.returncode == 0:
-                print(f"✅ Successfully uploaded {local_file}")
-                successful_uploads.append(local_file)
-            else:
-                print(f"❌ Failed to upload {local_file}: {result.stderr}")
-                failed_uploads.append(local_file)
-                
-        except Exception as e:
-            print(f"❌ Error uploading {local_file}: {e}")
-            failed_uploads.append(local_file)
+        if success:
+            successful_uploads.append(filename)
+        else:
+            failed_uploads.append(filename)
     
-    print("=" * 50)
+    print("\n" + "=" * 50)
     print("📊 UPLOAD SUMMARY")
     print("=" * 50)
-    print(f"✅ Successfully uploaded: {len(successful_uploads)}")
-    print(f"❌ Failed: {len(failed_uploads)}")
     
     if successful_uploads:
-        print("\n✅ Successful uploads:")
-        for file in successful_uploads:
-            print(f"   • {file}")
+        print(f"✅ Successfully uploaded ({len(successful_uploads)}):")
+        for filename in successful_uploads:
+            print(f"   • {filename}")
     
     if failed_uploads:
-        print("\n❌ Failed uploads:")
-        for file in failed_uploads:
-            print(f"   • {file}")
-    
-    return len(failed_uploads) == 0
+        print(f"\n❌ Failed uploads ({len(failed_uploads)}):")
+        for filename in failed_uploads:
+            print(f"   • {filename}")
+        print(f"\n⚠️  {len(failed_uploads)} file(s) failed to upload!")
+        return False
+    else:
+        print(f"\n🎉 All {len(successful_uploads)} shared assets uploaded successfully!")
+        print("🔗 Shared assets are now available at: https://rhdbearings.com/shared/")
+        print("✅ Pages using dynamic loading will now have updated components!")
+        return True
 
-def main():
-    """Main function"""
-    print("🌐 RHD Bearings - Shared Assets Upload")
+def upload_specific_asset(asset_name):
+    """Upload a specific shared asset by name"""
+    
+    shared_dir = './deployment/shared'
+    local_file = os.path.join(shared_dir, asset_name)
+    
+    if not os.path.exists(local_file):
+        print(f"❌ Asset not found: {local_file}")
+        return False
+    
+    remote_file = f'shared/{asset_name}'
+    print(f"🚀 Uploading specific asset: {asset_name}")
     print("=" * 50)
     
-    success = upload_shared_assets()
+    success = curl_upload_file(local_file, remote_file)
     
     if success:
-        print("\n🎉 All shared assets uploaded successfully!")
-        print("🔗 Your pages should now have working dynamic footers and navbars!")
-    else:
-        print("\n⚠️  Some uploads failed. Check the errors above.")
-        return 1
+        print(f"\n🎉 {asset_name} uploaded successfully!")
+        print(f"🔗 Available at: https://rhdbearings.com/shared/{asset_name}")
     
-    return 0
+    return success
+
+def main():
+    """Main function with command line argument support"""
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Upload shared assets to server')
+    parser.add_argument('--asset', 
+                       help='Upload specific asset (e.g., navbar.html, navbar.css, footer.html)')
+    
+    args = parser.parse_args()
+    
+    if args.asset:
+        # Upload specific asset
+        success = upload_specific_asset(args.asset)
+    else:
+        # Upload all shared assets
+        success = upload_shared_assets()
+    
+    if not success:
+        exit(1)
 
 if __name__ == "__main__":
-    exit(main())
+    main()

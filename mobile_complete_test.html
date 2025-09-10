@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Features Test - Hamburger Menu + Flip Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+        
+        /* Include the navbar CSS */
+        :root {
+            --nav-height: 85px;
+            --nav-padding: 24px;
+            --menu-gap: 50px;
+            --menu-font: "Arial", sans-serif;
+            --menu-color: #212121;
+            --menu-hover-color: #000000;
+            --ui-radius: 16px;
+            --ui-radius-sm: 8px;
+        }
+
+        /* Wrapper */
+        #wrapper-navbar {
+            margin: 10px auto;
+            max-width: calc(1200px + 20px);
+            padding: 0 10px;
+        }
+
+        /* Header Wrapper */
+        .uicore-header-wrapper {
+            margin-top: 35px;
+            background: #EBEBEB;
+            box-shadow: 0 0 0 1px #D1D1D1;
+            position: relative;
+            border-radius: 22px;
+            height: var(--nav-height, 100%);
+            overflow: visible;
+        }
+
+        /* Container */
+        .uicore.uicore-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--nav-padding);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        /* Logo */
+        .uicore-branding {
+            height: 100%;
+            padding: 10px 0;
+        }
+
+        .uicore-branding a {
+            height: 100%;
+            display: block;
+        }
+
+        .uicore-logo {
+            height: 100%;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+
+        /* Navigation Menu */
+        .uicore-nav-menu {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 var(--menu-gap);
+        }
+
+        .uicore-menu-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .uicore-menu {
+            display: flex;
+            align-items: center;
+            gap: var(--menu-gap);
+        }
+
+        /* Menu Items */
+        .menu-item {
+            color: var(--menu-color);
+            font-family: var(--menu-font);
+            font-size: 16px;
+            font-weight: 200;
+            text-decoration: none;
+            padding: 8px 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Contact Button */
+        .uicore-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: 100px;
+            font-family: var(--menu-font);
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .uicore-btn.uicore-inverted {
+            color: var(--menu-color);
+            border: 1px solid var(--menu-color);
+        }
+
+        /* Mobile Menu Styles */
+        .uicore-mobile-menu {
+            display: none;
+        }
+
+        .hamburger-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger-line {
+            width: 24px;
+            height: 2px;
+            background: var(--menu-color);
+            margin: 2px 0;
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .hamburger-btn.active .hamburger-line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger-btn.active .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-btn.active .hamburger-line:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-menu-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background: #ffffff;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .mobile-menu-overlay.active .mobile-menu-content {
+            transform: translateX(0);
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            background: #f8f8f8;
+        }
+
+        .mobile-logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .mobile-close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--menu-color);
+            padding: 5px;
+            line-height: 1;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-nav {
+            padding: 20px 0;
+        }
+
+        .mobile-menu-item {
+            display: block;
+            padding: 15px 20px;
+            color: var(--menu-color);
+            text-decoration: none;
+            font-family: var(--menu-font);
+            font-size: 16px;
+            font-weight: 300;
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-item:hover {
+            background: #f8f8f8;
+            color: var(--menu-hover-color);
+        }
+
+        .mobile-contact-btn {
+            background: var(--menu-color);
+            color: #ffffff !important;
+            margin: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Mobile Submenu */
+        .mobile-menu-item.has-submenu {
+            padding: 0;
+        }
+
+        .mobile-menu-toggle {
+            display: block;
+            padding: 15px 20px;
+            cursor: pointer;
+            color: var(--menu-color);
+            font-family: var(--menu-font);
+            font-size: 16px;
+            font-weight: 300;
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .mobile-menu-toggle:hover {
+            background: #f8f8f8;
+            color: var(--menu-hover-color);
+        }
+
+        .mobile-arrow {
+            float: right;
+            transition: transform 0.3s ease;
+            font-size: 12px;
+        }
+
+        .mobile-submenu {
+            max-height: 0;
+            overflow: hidden;
+            background: #f8f8f8;
+            transition: max-height 0.3s ease;
+        }
+
+        .mobile-submenu.open {
+            max-height: 300px;
+        }
+
+        .mobile-submenu-item {
+            display: block;
+            padding: 12px 40px;
+            color: var(--menu-color);
+            text-decoration: none;
+            font-family: var(--menu-font);
+            font-size: 14px;
+            font-weight: 300;
+            border-bottom: 1px solid #e8e8e8;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-submenu-item:hover {
+            background: #eeeeee;
+            color: var(--menu-hover-color);
+        }
+
+        /* Flip Card Styles */
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            perspective: 1000px;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flip-card-front {
+            background: #ffffff;
+            color: #333;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .flip-card-back {
+            background: #34d399;
+            color: #000000;
+            transform: rotateY(180deg);
+            border: 1px solid rgba(52, 211, 153, 0.3);
+        }
+
+        .flip-hint {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .uicore-nav-menu,
+            .uicore-extra {
+                display: none;
+            }
+
+            .uicore-mobile-menu {
+                display: block;
+            }
+
+            .mobile-menu-content {
+                width: 280px;
+            }
+
+            /* Mobile flip cards */
+            .flip-card:hover .flip-card-inner {
+                transform: none;
+            }
+
+            .flip-hint::before {
+                content: "Tap for explanation";
+            }
+
+            .flip-card {
+                width: 100%;
+                max-width: 350px;
+                margin: 10px auto;
+                display: block;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .flip-hint::before {
+                content: "Hover for explanation";
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mobile-menu-content {
+                width: 100%;
+            }
+        }
+
+        .debug {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug" id="debug">
+        Screen: <span id="width"></span>px | 
+        Features: <span id="features"></span>
+    </div>
+
+    <!-- Navbar -->
+    <div id="wrapper-navbar" class="uicore uicore-navbar uicore-section uicore-box uicore-h-classic uicore-sticky">
+        <div class="uicore-header-wrapper">
+            <nav class="uicore uicore-container">
+                <!-- Logo -->
+                <div class="uicore-branding">
+                    <a href="https://rhdbearings.com/">
+                        <img class="uicore-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                    </a>
+                </div>
+
+                <!-- Navigation Menu -->
+                <div class="uicore-nav-menu">
+                    <div class="uicore-menu-container">
+                        <div class="uicore-menu">
+                            <a href="https://rhdbearings.com/" class="menu-item">Home</a>
+                            <a href="https://rhdbearings.com/about-us/" class="menu-item">About Us</a>
+                            <a href="https://rhdbearings.com/products/" class="menu-item">Products</a>
+                            <a href="https://rhdbearings.com/industries/" class="menu-item">Industries</a>
+                            <a href="https://rhdbearings.com/specs/" class="menu-item">Specifications</a>
+                            <a href="https://rhdbearings.com/shop/" class="menu-item">Shop</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Button -->
+                <div class="uicore-extra">
+                    <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
+                </div>
+
+                <!-- Mobile Hamburger Menu -->
+                <div class="uicore-mobile-menu">
+                    <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                <div class="mobile-menu-content">
+                    <div class="mobile-menu-header">
+                        <img class="mobile-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                        <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close mobile menu">&times;</button>
+                    </div>
+                    <nav class="mobile-nav">
+                        <a href="https://rhdbearings.com/" class="mobile-menu-item">Home</a>
+                        <a href="https://rhdbearings.com/about-us/" class="mobile-menu-item">About Us</a>
+                        <div class="mobile-menu-item has-submenu">
+                            <span class="mobile-menu-toggle">Products <span class="mobile-arrow">▼</span></span>
+                            <div class="mobile-submenu">
+                                <a href="https://rhdbearings.com/specs/miniature-series/" class="mobile-submenu-item">Miniature Bearings</a>
+                                <a href="https://rhdbearings.com/specs/6000-series/" class="mobile-submenu-item">6000 Series</a>
+                                <a href="https://rhdbearings.com/specs/6200-series/" class="mobile-submenu-item">6200 Series</a>
+                                <a href="https://rhdbearings.com/specs/6300-series/" class="mobile-submenu-item">6300 Series</a>
+                            </div>
+                        </div>
+                        <a href="https://rhdbearings.com/industries/" class="mobile-menu-item">Industries</a>
+                        <a href="https://rhdbearings.com/specs/" class="mobile-menu-item">Specifications</a>
+                        <a href="https://rhdbearings.com/shop/" class="mobile-menu-item">Shop</a>
+                        <a href="https://rhdbearings.com/contact-us/" class="mobile-menu-item mobile-contact-btn">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Mobile Features Test</h1>
+        <p>This page tests both the hamburger menu and flip card functionality.</p>
+        
+        <h2>Test Instructions:</h2>
+        <ul>
+            <li><strong>Desktop (>768px):</strong> Hover cards to flip, use regular navigation</li>
+            <li><strong>Mobile (≤768px):</strong> Tap hamburger menu, tap cards to flip</li>
+        </ul>
+
+        <!-- Flip Cards -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Load Ratings</h3>
+                    <p>Technical specifications</p>
+                    <div class="flip-hint"></div>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Explanation</h3>
+                    <p>This shows the detailed explanation of load ratings and their importance in bearing selection.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Speed Limits</h3>
+                    <p>RPM specifications</p>
+                    <div class="flip-hint"></div>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Explanation</h3>
+                    <p>Speed limits determine the maximum safe operating RPM for different lubrication types.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>Material Quality</h3>
+                    <p>Steel grade & standards</p>
+                    <div class="flip-hint"></div>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Explanation</h3>
+                    <p>Material quality affects durability, precision, and performance characteristics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Debug info
+        function updateDebug() {
+            document.getElementById('width').textContent = window.innerWidth;
+            const isMobile = window.innerWidth <= 768;
+            document.getElementById('features').textContent = isMobile ? 'Mobile (Hamburger + Tap)' : 'Desktop (Hover)';
+        }
+        updateDebug();
+        window.addEventListener('resize', updateDebug);
+
+        // Mobile menu functionality - JAVASCRIPT POWERED
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const mobileCloseBtn = document.getElementById('mobile-close-btn');
+            const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+            const body = document.body;
+
+            function openMobileMenu() {
+                console.log('Opening mobile menu');
+                mobileMenuOverlay.classList.add('active');
+                hamburgerBtn.classList.add('active');
+                body.style.overflow = 'hidden';
+            }
+
+            function closeMobileMenu() {
+                console.log('Closing mobile menu');
+                mobileMenuOverlay.classList.remove('active');
+                hamburgerBtn.classList.remove('active');
+                body.style.overflow = '';
+            }
+
+            if (hamburgerBtn) {
+                hamburgerBtn.addEventListener('click', openMobileMenu);
+            }
+
+            if (mobileCloseBtn) {
+                mobileCloseBtn.addEventListener('click', closeMobileMenu);
+            }
+
+            if (mobileMenuOverlay) {
+                mobileMenuOverlay.addEventListener('click', function(e) {
+                    if (e.target === mobileMenuOverlay) {
+                        closeMobileMenu();
+                    }
+                });
+            }
+
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    closeMobileMenu();
+                }
+            });
+
+            // Mobile submenu toggle functionality
+            const mobileMenuToggles = document.querySelectorAll('.mobile-menu-toggle');
+            mobileMenuToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    console.log('Mobile submenu toggle clicked');
+                    const submenu = this.nextElementSibling;
+                    const arrow = this.querySelector('.mobile-arrow');
+                    const isOpen = submenu.classList.contains('open');
+
+                    // Close all other submenus
+                    document.querySelectorAll('.mobile-submenu').forEach(sub => {
+                        sub.classList.remove('open');
+                    });
+                    document.querySelectorAll('.mobile-arrow').forEach(arr => {
+                        arr.textContent = '▼';
+                    });
+
+                    // Toggle current submenu
+                    if (!isOpen) {
+                        submenu.classList.add('open');
+                        arrow.textContent = '▲';
+                        console.log('Submenu opened');
+                    } else {
+                        console.log('Submenu closed');
+                    }
+                });
+            });
+
+            // Mobile flip card functionality - JAVASCRIPT POWERED
+            setTimeout(function() {
+                const flipCards = document.querySelectorAll('.flip-card');
+                console.log('Found flip cards:', flipCards.length);
+                
+                flipCards.forEach((card, index) => {
+                    const cardInner = card.querySelector('.flip-card-inner');
+                    if (!cardInner) return;
+                    
+                    let isFlipped = false;
+                    
+                    function flipCard() {
+                        console.log('Flipping card', index, 'current state:', isFlipped);
+                        
+                        // Close all other cards
+                        flipCards.forEach((otherCard, otherIndex) => {
+                            if (otherCard !== card) {
+                                const otherInner = otherCard.querySelector('.flip-card-inner');
+                                if (otherInner) {
+                                    otherInner.style.transform = 'rotateY(0deg)';
+                                    otherCard.style.border = '';
+                                }
+                            }
+                        });
+                        
+                        // Toggle this card
+                        if (isFlipped) {
+                            cardInner.style.transform = 'rotateY(0deg)';
+                            card.style.border = '';
+                            isFlipped = false;
+                            console.log('Card', index, 'flipped to FRONT');
+                        } else {
+                            cardInner.style.transform = 'rotateY(180deg)';
+                            card.style.border = '3px solid #ef4444';
+                            isFlipped = true;
+                            console.log('Card', index, 'flipped to BACK');
+                        }
+                    }
+                    
+                    card.addEventListener('click', function(e) {
+                        if (window.innerWidth <= 768) {
+                            console.log('Mobile tap detected on card', index);
+                            e.preventDefault();
+                            e.stopPropagation();
+                            flipCard();
+                        }
+                    });
+
+                    card.addEventListener('touchend', function(e) {
+                        if (window.innerWidth <= 768) {
+                            console.log('Touch end on card', index);
+                            e.preventDefault();
+                            e.stopPropagation();
+                            flipCard();
+                        }
+                    });
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>

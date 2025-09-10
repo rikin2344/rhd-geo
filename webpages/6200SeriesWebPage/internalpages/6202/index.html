@@ -269,7 +269,7 @@
                                     <span>22000 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z2v2">
-                                    <span>Z2V2 Bearings</span>
+                                    <span>RHD Z2V2 Bearings</span>
                                     <span class="speed-value" id="z2v2-speed">1400 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z3v3">
@@ -1247,18 +1247,93 @@
             loadModelCTA('6202', 'cta-container');
         });
 
-        // Mobile flip card touch support
+        // Mobile flip card touch support - DIRECT CSS MANIPULATION
         document.addEventListener('DOMContentLoaded', function() {
-            const flipCards = document.querySelectorAll('.flip-card');
+            console.log('Mobile flip card script loading...');
             
-            flipCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    // Only on mobile devices
-                    if (window.innerWidth <= 768) {
-                        this.classList.toggle('flipped');
+            // Wait a bit more for all elements to be ready
+            setTimeout(function() {
+                const flipCards = document.querySelectorAll('.flip-card');
+                console.log('Found flip cards:', flipCards.length);
+                
+                flipCards.forEach((card, index) => {
+                    console.log('Setting up card', index, card);
+                    
+                    // Get the inner element that needs to be transformed
+                    const cardInner = card.querySelector('.flip-card-inner');
+                    if (!cardInner) {
+                        console.log('No .flip-card-inner found in card', index);
+                        return;
                     }
+                    
+                    // Track flip state
+                    let isFlipped = false;
+                    
+                    // Add visual indicator that it's clickable
+                    card.style.cursor = 'pointer';
+                    
+                    function flipCard() {
+                        console.log('Flipping card', index, 'current state:', isFlipped);
+                        
+                        // Close all other cards first
+                        flipCards.forEach((otherCard, otherIndex) => {
+                            if (otherCard !== card) {
+                                const otherInner = otherCard.querySelector('.flip-card-inner');
+                                if (otherInner) {
+                                    otherInner.style.transform = 'rotateY(0deg)';
+                                    otherCard.style.border = '';
+                                    console.log('Closed card', otherIndex);
+                                }
+                            }
+                        });
+                        
+                        // Toggle this card
+                        if (isFlipped) {
+                            // Flip back to front
+                            cardInner.style.transform = 'rotateY(0deg)';
+                            card.style.border = '';
+                            isFlipped = false;
+                            console.log('Card', index, 'flipped to FRONT');
+                        } else {
+                            // Flip to back
+                            cardInner.style.transform = 'rotateY(180deg)';
+                            card.style.border = '3px solid #ef4444';
+                            isFlipped = true;
+                            console.log('Card', index, 'flipped to BACK');
+                        }
+                    }
+                    
+                    card.addEventListener('click', function(e) {
+                        console.log('Click event on card', index, 'window width:', window.innerWidth);
+                        
+                        // Only on mobile devices
+                        if (window.innerWidth <= 768) {
+                            console.log('Mobile detected, processing flip');
+                            e.preventDefault();
+                            e.stopPropagation();
+                            flipCard();
+                        }
+                    });
+
+                    card.addEventListener('touchstart', function(e) {
+                        if (window.innerWidth <= 768) {
+                            console.log('Touch start on card', index);
+                            this.style.opacity = '0.8';
+                        }
+                    });
+                    
+                    card.addEventListener('touchend', function(e) {
+                        if (window.innerWidth <= 768) {
+                            console.log('Touch end on card', index);
+                            this.style.opacity = '1';
+                            
+                            e.preventDefault();
+                            e.stopPropagation();
+                            flipCard();
+                        }
+                    });
                 });
-            });
+            }, 500);
         });
 
         // Mobile seal card touch support
@@ -1266,9 +1341,26 @@
             const sealCards = document.querySelectorAll('.seal-hover-card');
             
             sealCards.forEach(card => {
-                card.addEventListener('click', function() {
+                card.addEventListener('click', function(e) {
                     // Only on mobile devices
                     if (window.innerWidth <= 768) {
+                        e.preventDefault(); // Prevent any default behavior
+                        // Close all other seal explanations
+                        sealCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.classList.remove('active');
+                            }
+                        });
+                        // Toggle this seal explanation
+                        this.classList.toggle('active');
+                    }
+                });
+
+                // Also add touch event support for better mobile responsiveness
+                card.addEventListener('touchend', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
                         // Close all other seal explanations
                         sealCards.forEach(otherCard => {
                             if (otherCard !== this) {

@@ -31,10 +31,10 @@
                                 <span class="ui-menu-item-wrapper">Products</span>
                             </div>
                             <div class="sub-menu">
-                                <a href="https://rhdbearings.com/specs/miniature-series.html" data-page="miniature">Miniature Bearings</a>
-                                <a href="https://rhdbearings.com/specs/6000-series.html" data-page="6000">6000 Series</a>
-                                <a href="https://rhdbearings.com/specs/6200-series.html" data-page="6200">6200 Series</a>
-                                <a href="https://rhdbearings.com/specs/6300-series.html" data-page="6300">6300 Series</a>
+                                <a href="https://rhdbearings.com/specs/miniature-series/" data-page="miniature">Miniature Bearings</a>
+                                <a href="https://rhdbearings.com/specs/6000-series/" data-page="6000">6000 Series</a>
+                                <a href="https://rhdbearings.com/specs/6200-series/" data-page="6200">6200 Series</a>
+                                <a href="https://rhdbearings.com/specs/6300-series/" data-page="6300">6300 Series</a>
                             </div>
                         </a>
                         <a href="https://rhdbearings.com/industries/" class="menu-item ui-anim-flip">
@@ -43,10 +43,10 @@
                                 <span class="ui-menu-item-wrapper">Industries</span>
                             </div>
                         </a>
-                        <a href="https://rhdbearings.com/bearing-size-chart/" class="menu-item ui-anim-flip">
+                        <a href="https://rhdbearings.com/specs/" class="menu-item ui-anim-flip">
                             <div class="ui-flip-anim-wrapp">
-                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
-                                <span class="ui-menu-item-wrapper">Bearings Size Chart</span>
+                                <span class="ui-menu-item-wrapper">Specifications</span>
+                                <span class="ui-menu-item-wrapper">Specifications</span>
                             </div>
                         </a>
                         <a href="https://rhdbearings.com/shop/" class="menu-item ui-anim-flip">
@@ -63,7 +63,43 @@
             <div class="uicore-extra">
                 <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
             </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="uicore-mobile-menu">
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
         </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <img class="mobile-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                    <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close mobile menu">&times;</button>
+                </div>
+                <nav class="mobile-nav">
+                    <a href="https://rhdbearings.com/" class="mobile-menu-item">Home</a>
+                    <a href="https://rhdbearings.com/about-us/" class="mobile-menu-item">About Us</a>
+                    <div class="mobile-menu-item has-submenu">
+                        <span class="mobile-menu-toggle">Products <span class="mobile-arrow">▼</span></span>
+                        <div class="mobile-submenu">
+                            <a href="https://rhdbearings.com/specs/miniature-series/" class="mobile-submenu-item">Miniature Bearings</a>
+                            <a href="https://rhdbearings.com/specs/6000-series/" class="mobile-submenu-item">6000 Series</a>
+                            <a href="https://rhdbearings.com/specs/6200-series/" class="mobile-submenu-item">6200 Series</a>
+                            <a href="https://rhdbearings.com/specs/6300-series/" class="mobile-submenu-item">6300 Series</a>
+                        </div>
+                    </div>
+                    <a href="https://rhdbearings.com/industries/" class="mobile-menu-item">Industries</a>
+                    <a href="https://rhdbearings.com/specs/" class="mobile-menu-item">Specifications</a>
+                    <a href="https://rhdbearings.com/shop/" class="mobile-menu-item">Shop</a>
+                    <a href="https://rhdbearings.com/contact-us/" class="mobile-menu-item mobile-contact-btn">Contact Us</a>
+                </nav>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -77,5 +113,74 @@ document.addEventListener('DOMContentLoaded', function() {
             menuLink.classList.add('current-menu-item');
         }
     }
+
+    // Mobile menu functionality
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileCloseBtn = document.getElementById('mobile-close-btn');
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    const body = document.body;
+
+    // Open mobile menu
+    function openMobileMenu() {
+        mobileMenuOverlay.classList.add('active');
+        hamburgerBtn.classList.add('active');
+        body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    // Close mobile menu
+    function closeMobileMenu() {
+        mobileMenuOverlay.classList.remove('active');
+        hamburgerBtn.classList.remove('active');
+        body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Event listeners
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', openMobileMenu);
+    }
+
+    if (mobileCloseBtn) {
+        mobileCloseBtn.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close menu when clicking overlay background
+    if (mobileMenuOverlay) {
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                closeMobileMenu();
+            }
+        });
+    }
+
+    // Mobile submenu toggle
+    const mobileMenuToggles = document.querySelectorAll('.mobile-menu-toggle');
+    mobileMenuToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+            const submenu = this.nextElementSibling;
+            const arrow = this.querySelector('.mobile-arrow');
+            const isOpen = submenu.classList.contains('open');
+
+            // Close all other submenus
+            document.querySelectorAll('.mobile-submenu').forEach(sub => {
+                sub.classList.remove('open');
+            });
+            document.querySelectorAll('.mobile-arrow').forEach(arr => {
+                arr.textContent = '▼';
+            });
+
+            // Toggle current submenu
+            if (!isOpen) {
+                submenu.classList.add('open');
+                arrow.textContent = '▲';
+            }
+        });
+    });
+
+    // Close mobile menu on window resize to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            closeMobileMenu();
+        }
+    });
 });
 </script>

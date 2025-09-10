@@ -216,6 +216,207 @@ body {
 }
 
 /* Mobile Menu */
+.uicore-mobile-menu {
+    display: none;
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-line {
+    width: 24px;
+    height: 2px;
+    background: var(--menu-color);
+    margin: 2px 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Hamburger Animation */
+.hamburger-btn.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Menu Content */
+.mobile-menu-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu-overlay.active .mobile-menu-content {
+    transform: translateX(0);
+}
+
+/* Mobile Menu Header */
+.mobile-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background: #f8f8f8;
+}
+
+.mobile-logo {
+    height: 40px;
+    width: auto;
+}
+
+.mobile-close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--menu-color);
+    padding: 5px;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.mobile-close-btn:hover {
+    color: var(--menu-hover-color);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    padding: 20px 0;
+}
+
+.mobile-menu-item {
+    display: block;
+    padding: 15px 20px;
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-item:hover {
+    background: #f8f8f8;
+    color: var(--menu-hover-color);
+}
+
+/* Mobile Submenu */
+.mobile-menu-item.has-submenu {
+    padding: 0;
+}
+
+.mobile-menu-toggle {
+    display: block;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: var(--menu-color);
+    font-family: var(--menu-font);
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.mobile-menu-toggle:hover {
+    background: #f8f8f8;
+    color: var(--menu-hover-color);
+}
+
+.mobile-arrow {
+    float: right;
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+.mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    background: #f8f8f8;
+    transition: max-height 0.3s ease;
+}
+
+.mobile-submenu.open {
+    max-height: 300px;
+}
+
+.mobile-submenu-item {
+    display: block;
+    padding: 12px 40px;
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 14px;
+    font-weight: 300;
+    border-bottom: 1px solid #e8e8e8;
+    transition: all 0.3s ease;
+}
+
+.mobile-submenu-item:hover {
+    background: #eeeeee;
+    color: var(--menu-hover-color);
+}
+
+/* Mobile Contact Button */
+.mobile-contact-btn {
+    background: var(--menu-color);
+    color: #ffffff !important;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mobile-contact-btn:hover {
+    background: var(--menu-hover-color);
+}
+
 @media (max-width: 768px) {
     .uicore-nav-menu,
     .uicore-extra {
@@ -224,6 +425,17 @@ body {
 
     .uicore-mobile-menu {
         display: block;
+    }
+
+    /* Adjust mobile menu width for smaller screens */
+    .mobile-menu-content {
+        width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu-content {
+        width: 100%;
     }
 }
 
@@ -2448,6 +2660,24 @@ body {
         transform: rotateY(180deg);
     }
     
+    /* Debug: Add a visible indicator when flipped */
+    .flip-card.flipped {
+        border: 2px solid #34d399 !important;
+    }
+    
+    /* Improve touch target for mobile */
+    .flip-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(52, 211, 153, 0.1);
+        tap-highlight-color: rgba(52, 211, 153, 0.1);
+    }
+    
+    /* Add visual feedback for touch */
+    .flip-card:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+    
     .flip-hint {
         font-size: 0.7rem;
         padding: 0 8px;
@@ -2898,7 +3128,43 @@ html {
             <div class="uicore-extra">
                 <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
             </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="uicore-mobile-menu">
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
         </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <img class="mobile-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                    <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close mobile menu">&times;</button>
+                </div>
+                <nav class="mobile-nav">
+                    <a href="https://rhdbearings.com/" class="mobile-menu-item">Home</a>
+                    <a href="https://rhdbearings.com/about-us/" class="mobile-menu-item">About Us</a>
+                    <div class="mobile-menu-item has-submenu">
+                        <span class="mobile-menu-toggle">Products <span class="mobile-arrow">▼</span></span>
+                        <div class="mobile-submenu">
+                            <a href="https://rhdbearings.com/specs/miniature-series/" class="mobile-submenu-item">Miniature Bearings</a>
+                            <a href="https://rhdbearings.com/specs/6000-series/" class="mobile-submenu-item">6000 Series</a>
+                            <a href="https://rhdbearings.com/specs/6200-series/" class="mobile-submenu-item">6200 Series</a>
+                            <a href="https://rhdbearings.com/specs/6300-series/" class="mobile-submenu-item">6300 Series</a>
+                        </div>
+                    </div>
+                    <a href="https://rhdbearings.com/industries/" class="mobile-menu-item">Industries</a>
+                    <a href="https://rhdbearings.com/specs/" class="mobile-menu-item">Specifications</a>
+                    <a href="https://rhdbearings.com/shop/" class="mobile-menu-item">Shop</a>
+                    <a href="https://rhdbearings.com/contact-us/" class="mobile-menu-item mobile-contact-btn">Contact Us</a>
+                </nav>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -3086,7 +3352,7 @@ html {
                                     <span>5000 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z2v2">
-                                    <span>Z2V2 Bearings</span>
+                                    <span>RHD Z2V2 Bearings</span>
                                     <span class="speed-value" id="z2v2-speed">1400 RPM</span>
                                 </div>
                                 <div class="spec-row speed-rating-row speed-z3v3">
@@ -4063,18 +4329,93 @@ html {
             loadModelCTA('6019', 'cta-container');
         });
 
-        // Mobile flip card touch support
+        // Mobile flip card touch support - DIRECT CSS MANIPULATION
         document.addEventListener('DOMContentLoaded', function() {
-            const flipCards = document.querySelectorAll('.flip-card');
+            console.log('Mobile flip card script loading...');
             
-            flipCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    // Only on mobile devices
-                    if (window.innerWidth <= 768) {
-                        this.classList.toggle('flipped');
+            // Wait a bit more for all elements to be ready
+            setTimeout(function() {
+                const flipCards = document.querySelectorAll('.flip-card');
+                console.log('Found flip cards:', flipCards.length);
+                
+                flipCards.forEach((card, index) => {
+                    console.log('Setting up card', index, card);
+                    
+                    // Get the inner element that needs to be transformed
+                    const cardInner = card.querySelector('.flip-card-inner');
+                    if (!cardInner) {
+                        console.log('No .flip-card-inner found in card', index);
+                        return;
                     }
+                    
+                    // Track flip state
+                    let isFlipped = false;
+                    
+                    // Add visual indicator that it's clickable
+                    card.style.cursor = 'pointer';
+                    
+                    function flipCard() {
+                        console.log('Flipping card', index, 'current state:', isFlipped);
+                        
+                        // Close all other cards first
+                        flipCards.forEach((otherCard, otherIndex) => {
+                            if (otherCard !== card) {
+                                const otherInner = otherCard.querySelector('.flip-card-inner');
+                                if (otherInner) {
+                                    otherInner.style.transform = 'rotateY(0deg)';
+                                    otherCard.style.border = '';
+                                    console.log('Closed card', otherIndex);
+                                }
+                            }
+                        });
+                        
+                        // Toggle this card
+                        if (isFlipped) {
+                            // Flip back to front
+                            cardInner.style.transform = 'rotateY(0deg)';
+                            card.style.border = '';
+                            isFlipped = false;
+                            console.log('Card', index, 'flipped to FRONT');
+                        } else {
+                            // Flip to back
+                            cardInner.style.transform = 'rotateY(180deg)';
+                            card.style.border = '3px solid #ef4444';
+                            isFlipped = true;
+                            console.log('Card', index, 'flipped to BACK');
+                        }
+                    }
+                    
+                    card.addEventListener('click', function(e) {
+                        console.log('Click event on card', index, 'window width:', window.innerWidth);
+                        
+                        // Only on mobile devices
+                        if (window.innerWidth <= 768) {
+                            console.log('Mobile detected, processing flip');
+                            e.preventDefault();
+                            e.stopPropagation();
+                            flipCard();
+                        }
+                    });
+
+                    card.addEventListener('touchstart', function(e) {
+                        if (window.innerWidth <= 768) {
+                            console.log('Touch start on card', index);
+                            this.style.opacity = '0.8';
+                        }
+                    });
+                    
+                    card.addEventListener('touchend', function(e) {
+                        if (window.innerWidth <= 768) {
+                            console.log('Touch end on card', index);
+                            this.style.opacity = '1';
+                            
+                            e.preventDefault();
+                            e.stopPropagation();
+                            flipCard();
+                        }
+                    });
                 });
-            });
+            }, 500);
         });
 
         // Mobile seal card touch support
@@ -4082,9 +4423,26 @@ html {
             const sealCards = document.querySelectorAll('.seal-hover-card');
             
             sealCards.forEach(card => {
-                card.addEventListener('click', function() {
+                card.addEventListener('click', function(e) {
                     // Only on mobile devices
                     if (window.innerWidth <= 768) {
+                        e.preventDefault(); // Prevent any default behavior
+                        // Close all other seal explanations
+                        sealCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.classList.remove('active');
+                            }
+                        });
+                        // Toggle this seal explanation
+                        this.classList.toggle('active');
+                    }
+                });
+
+                // Also add touch event support for better mobile responsiveness
+                card.addEventListener('touchend', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
                         // Close all other seal explanations
                         sealCards.forEach(otherCard => {
                             if (otherCard !== this) {
@@ -4338,18 +4696,93 @@ html {
             loadModelCTA('6019', 'cta-container');
         });
 
-        // Mobile flip card touch support
+        // Mobile flip card touch support - DIRECT CSS MANIPULATION
         document.addEventListener('DOMContentLoaded', function() {
-            const flipCards = document.querySelectorAll('.flip-card');
+            console.log('Mobile flip card script loading...');
             
-            flipCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    // Only on mobile devices
-                    if (window.innerWidth <= 768) {
-                        this.classList.toggle('flipped');
+            // Wait a bit more for all elements to be ready
+            setTimeout(function() {
+                const flipCards = document.querySelectorAll('.flip-card');
+                console.log('Found flip cards:', flipCards.length);
+                
+                flipCards.forEach((card, index) => {
+                    console.log('Setting up card', index, card);
+                    
+                    // Get the inner element that needs to be transformed
+                    const cardInner = card.querySelector('.flip-card-inner');
+                    if (!cardInner) {
+                        console.log('No .flip-card-inner found in card', index);
+                        return;
                     }
+                    
+                    // Track flip state
+                    let isFlipped = false;
+                    
+                    // Add visual indicator that it's clickable
+                    card.style.cursor = 'pointer';
+                    
+                    function flipCard() {
+                        console.log('Flipping card', index, 'current state:', isFlipped);
+                        
+                        // Close all other cards first
+                        flipCards.forEach((otherCard, otherIndex) => {
+                            if (otherCard !== card) {
+                                const otherInner = otherCard.querySelector('.flip-card-inner');
+                                if (otherInner) {
+                                    otherInner.style.transform = 'rotateY(0deg)';
+                                    otherCard.style.border = '';
+                                    console.log('Closed card', otherIndex);
+                                }
+                            }
+                        });
+                        
+                        // Toggle this card
+                        if (isFlipped) {
+                            // Flip back to front
+                            cardInner.style.transform = 'rotateY(0deg)';
+                            card.style.border = '';
+                            isFlipped = false;
+                            console.log('Card', index, 'flipped to FRONT');
+                        } else {
+                            // Flip to back
+                            cardInner.style.transform = 'rotateY(180deg)';
+                            card.style.border = '3px solid #ef4444';
+                            isFlipped = true;
+                            console.log('Card', index, 'flipped to BACK');
+                        }
+                    }
+                    
+                    card.addEventListener('click', function(e) {
+                        console.log('Click event on card', index, 'window width:', window.innerWidth);
+                        
+                        // Only on mobile devices
+                        if (window.innerWidth <= 768) {
+                            console.log('Mobile detected, processing flip');
+                            e.preventDefault();
+                            e.stopPropagation();
+                            flipCard();
+                        }
+                    });
+
+                    card.addEventListener('touchstart', function(e) {
+                        if (window.innerWidth <= 768) {
+                            console.log('Touch start on card', index);
+                            this.style.opacity = '0.8';
+                        }
+                    });
+                    
+                    card.addEventListener('touchend', function(e) {
+                        if (window.innerWidth <= 768) {
+                            console.log('Touch end on card', index);
+                            this.style.opacity = '1';
+                            
+                            e.preventDefault();
+                            e.stopPropagation();
+                            flipCard();
+                        }
+                    });
                 });
-            });
+            }, 500);
         });
 
         // Mobile seal card touch support
@@ -4357,9 +4790,26 @@ html {
             const sealCards = document.querySelectorAll('.seal-hover-card');
             
             sealCards.forEach(card => {
-                card.addEventListener('click', function() {
+                card.addEventListener('click', function(e) {
                     // Only on mobile devices
                     if (window.innerWidth <= 768) {
+                        e.preventDefault(); // Prevent any default behavior
+                        // Close all other seal explanations
+                        sealCards.forEach(otherCard => {
+                            if (otherCard !== this) {
+                                otherCard.classList.remove('active');
+                            }
+                        });
+                        // Toggle this seal explanation
+                        this.classList.toggle('active');
+                    }
+                });
+
+                // Also add touch event support for better mobile responsiveness
+                card.addEventListener('touchend', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        e.stopPropagation();
                         // Close all other seal explanations
                         sealCards.forEach(otherCard => {
                             if (otherCard !== this) {
