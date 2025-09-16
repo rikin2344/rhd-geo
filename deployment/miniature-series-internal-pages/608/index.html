@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>608 Deep Groove Ball Bearing | RHD Bearings</title>
+    <title>608 Bearing 8×22×7mm | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */
@@ -216,6 +216,207 @@ body {
 }
 
 /* Mobile Menu */
+.uicore-mobile-menu {
+    display: none;
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-line {
+    width: 24px;
+    height: 2px;
+    background: var(--menu-color);
+    margin: 2px 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Hamburger Animation */
+.hamburger-btn.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Menu Content */
+.mobile-menu-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu-overlay.active .mobile-menu-content {
+    transform: translateX(0);
+}
+
+/* Mobile Menu Header */
+.mobile-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    background: #f8f8f8;
+}
+
+.mobile-logo {
+    height: 40px;
+    width: auto;
+}
+
+.mobile-close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--menu-color);
+    padding: 5px;
+    line-height: 1;
+    transition: color 0.3s ease;
+}
+
+.mobile-close-btn:hover {
+    color: var(--menu-hover-color);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    padding: 20px 0;
+}
+
+.mobile-menu-item {
+    display: block;
+    padding: 15px 20px;
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-item:hover {
+    background: #f8f8f8;
+    color: var(--menu-hover-color);
+}
+
+/* Mobile Submenu */
+.mobile-menu-item.has-submenu {
+    padding: 0;
+}
+
+.mobile-menu-toggle {
+    display: block;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: var(--menu-color);
+    font-family: var(--menu-font);
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.mobile-menu-toggle:hover {
+    background: #f8f8f8;
+    color: var(--menu-hover-color);
+}
+
+.mobile-arrow {
+    float: right;
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+.mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    background: #f8f8f8;
+    transition: max-height 0.3s ease;
+}
+
+.mobile-submenu.open {
+    max-height: 300px;
+}
+
+.mobile-submenu-item {
+    display: block;
+    padding: 12px 40px;
+    color: var(--menu-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 14px;
+    font-weight: 300;
+    border-bottom: 1px solid #e8e8e8;
+    transition: all 0.3s ease;
+}
+
+.mobile-submenu-item:hover {
+    background: #eeeeee;
+    color: var(--menu-hover-color);
+}
+
+/* Mobile Contact Button */
+.mobile-contact-btn {
+    background: var(--menu-color);
+    color: #ffffff !important;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mobile-contact-btn:hover {
+    background: var(--menu-hover-color);
+}
+
 @media (max-width: 768px) {
     .uicore-nav-menu,
     .uicore-extra {
@@ -224,6 +425,17 @@ body {
 
     .uicore-mobile-menu {
         display: block;
+    }
+
+    /* Adjust mobile menu width for smaller screens */
+    .mobile-menu-content {
+        width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-menu-content {
+        width: 100%;
     }
 }
 
@@ -2916,7 +3128,43 @@ html {
             <div class="uicore-extra">
                 <a href="https://rhdbearings.com/contact-us/" class="uicore-btn uicore-inverted">Contact Us</a>
             </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="uicore-mobile-menu">
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
         </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <img class="mobile-logo" src="https://test.rhdbearings.com/wp-content/uploads/2024/03/6204-2RS-RHD-v2-2.png" alt="RHD Bearings">
+                    <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close mobile menu">&times;</button>
+                </div>
+                <nav class="mobile-nav">
+                    <a href="https://rhdbearings.com/" class="mobile-menu-item">Home</a>
+                    <a href="https://rhdbearings.com/about-us/" class="mobile-menu-item">About Us</a>
+                    <div class="mobile-menu-item has-submenu">
+                        <span class="mobile-menu-toggle">Products <span class="mobile-arrow">▼</span></span>
+                        <div class="mobile-submenu">
+                            <a href="https://rhdbearings.com/specs/miniature-series/" class="mobile-submenu-item">Miniature Bearings</a>
+                            <a href="https://rhdbearings.com/specs/6000-series/" class="mobile-submenu-item">6000 Series</a>
+                            <a href="https://rhdbearings.com/specs/6200-series/" class="mobile-submenu-item">6200 Series</a>
+                            <a href="https://rhdbearings.com/specs/6300-series/" class="mobile-submenu-item">6300 Series</a>
+                        </div>
+                    </div>
+                    <a href="https://rhdbearings.com/industries/" class="mobile-menu-item">Industries</a>
+                    <a href="https://rhdbearings.com/specs/" class="mobile-menu-item">Specifications</a>
+                    <a href="https://rhdbearings.com/shop/" class="mobile-menu-item">Shop</a>
+                    <a href="https://rhdbearings.com/contact-us/" class="mobile-menu-item mobile-contact-btn">Contact Us</a>
+                </nav>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -2932,7 +3180,7 @@ html {
                         <span>608 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title" id="hero-title">608 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">608 Bearing 8×22×7mm Deep Groove Ball Bearing | RHD</h1>
                     <p class="hero-subtitle">
                         The popular kid everyone knows - if bearings had social media, this one would have a million followers.
                     </p>
@@ -2978,7 +3226,7 @@ html {
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="608 Deep Groove Ball Bearing - RHD Bearings" />
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="608 Bearing 8×22×7mm - RHD Bearings" />
                 </div>
             </div>
         </div>
@@ -3723,10 +3971,10 @@ html {
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="https://rhdbearings.com/specs/miniature-series/628/" class="model-link">628</a>
-<a href="https://rhdbearings.com/specs/miniature-series/638/" class="model-link">638</a>
-<a href="https://rhdbearings.com/specs/miniature-series/688/" class="model-link">688</a>
-<a href="https://rhdbearings.com/specs/miniature-series/698/" class="model-link">698</a>
+                        <a href="https://rhdbearings.com/specs/miniature-series/628/" class="model-link">628 (8×24×8mm)</a>
+<a href="https://rhdbearings.com/specs/miniature-series/638/" class="model-link">638 (dimensions)</a>
+<a href="https://rhdbearings.com/specs/miniature-series/688/" class="model-link">688 (8×16×4mm)</a>
+<a href="https://rhdbearings.com/specs/miniature-series/698/" class="model-link">698 (8×19×6mm)</a>
                     </div>
                 </div>
                 
@@ -4509,15 +4757,16 @@ html {
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }
@@ -4876,15 +5125,16 @@ html {
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }

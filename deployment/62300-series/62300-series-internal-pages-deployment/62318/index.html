@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>62318 Deep Groove Ball Bearing | RHD Bearings</title>
+    <title>62318 Bearing 90×190×64mm | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */
@@ -3180,7 +3180,7 @@ html {
                         <span>62318 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title" id="hero-title">62318 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">62318 Bearing 90x190x64mm | RHD Bearings</h1>
                     <p class="hero-subtitle">
                         Ninety millimeter bore with the substantial confidence of someone who's earned their place.
                     </p>
@@ -3226,7 +3226,7 @@ html {
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="62318 Deep Groove Ball Bearing - RHD Bearings" />
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="62318 Bearing 90×190×64mm - RHD Bearings" />
                 </div>
             </div>
         </div>
@@ -3956,10 +3956,10 @@ html {
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="https://rhdbearings.com/specs/62300-series/62301/" class="model-link">62301</a>
-<a href="https://rhdbearings.com/specs/62300-series/62302/" class="model-link">62302</a>
-<a href="https://rhdbearings.com/specs/62300-series/62303/" class="model-link">62303</a>
-<a href="https://rhdbearings.com/specs/62300-series/62304/" class="model-link">62304</a>
+                        <a href="https://rhdbearings.com/specs/62300-series/62301/" class="model-link">62301 (12×37×17mm)</a>
+<a href="https://rhdbearings.com/specs/62300-series/62302/" class="model-link">62302 (15×42×17mm)</a>
+<a href="https://rhdbearings.com/specs/62300-series/62303/" class="model-link">62303 (17×47×19mm)</a>
+<a href="https://rhdbearings.com/specs/62300-series/62304/" class="model-link">62304 (20×52×21mm)</a>
                     </div>
                 </div>
                 
@@ -4750,15 +4750,16 @@ html {
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }
@@ -5117,15 +5118,16 @@ html {
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }

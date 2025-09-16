@@ -135,7 +135,7 @@ class SpecsSitemapGenerator:
                     'url': f"{self.base_url}/specs/miniature-series.html",
                     'priority': info['priority'],
                     'changefreq': 'monthly',
-                    'title': f"{info['name']} Deep Groove Ball Bearings"
+                    'title': f"{info['name']} Ball Bearings"
                 })
             else:
                 # Check if deployment directory exists for this series
@@ -145,7 +145,7 @@ class SpecsSitemapGenerator:
                         'url': f"{self.base_url}/specs/{series}/",
                         'priority': info['priority'],
                         'changefreq': 'monthly',
-                        'title': f"{info['name']} Deep Groove Ball Bearings"
+                        'title': f"{info['name']} Ball Bearings"
                     })
         
         # 3. Add individual model pages
@@ -171,7 +171,7 @@ class SpecsSitemapGenerator:
                         'url': url,
                         'priority': priority,
                         'changefreq': 'monthly',
-                        'title': f"{model_number} Deep Groove Ball Bearing Specifications"
+                        'title': f"{model_number} Bearing Specifications"
                     })
                     
                     print(f"   ✅ Added: {model_number} ({series})")

@@ -303,11 +303,11 @@ class BearingPageGenerator:
         """Replace cross references placeholders"""
         cross_refs = self.data.get('cross_references', {})
         
-        # Related models - generate proper URLs based on series detection
+        # Related models - generate proper URLs with dimensions loaded from JSON files
         related_models = cross_refs.get('related_models', [])
         if related_models:
             models_html = '\n'.join([
-                f'<a href="https://rhdbearings.com/specs/{self.get_series_from_model(model)}/{model}/" class="model-link">{model}</a>' 
+                f'<a href="https://rhdbearings.com/specs/{self.get_series_from_model(model)}/{model}/" class="model-link">{model} ({self._get_model_dimensions(model)})</a>' 
                 for model in related_models
             ])
             content = re.sub(r'\{\{#cross_references\.related_models\}\}.*?\{\{/cross_references\.related_models\}\}', models_html, content, flags=re.DOTALL)
@@ -390,6 +390,30 @@ class BearingPageGenerator:
                     content = content.replace(old_placeholder, str(new_value))
         
         return content
+    
+    def _get_model_dimensions(self, model_number: str) -> str:
+        """Get dimensions for a related model by loading its JSON file"""
+        try:
+            # Construct the path to the model's JSON file
+            json_file = Path(self.json_file).parent / f"{model_number}.json"
+            
+            if json_file.exists():
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    model_data = json.load(f)
+                
+                dimensions = model_data.get('dimensions', {})
+                bore = dimensions.get('bore_diameter_d_mm', 'N/A')
+                outer = dimensions.get('outer_diameter_D_mm', 'N/A')
+                width = dimensions.get('width_B_mm', 'N/A')
+                
+                return f"{bore}×{outer}×{width}mm"
+            else:
+                # Fallback to placeholder if JSON file doesn't exist
+                return "dimensions"
+                
+        except Exception as e:
+            print(f"⚠️ Warning: Could not load dimensions for model {model_number}: {e}")
+            return "dimensions"
     
     def _flatten_dict(self, d: dict, parent_key: str = '', sep: str = '.') -> dict:
         """Flatten nested dictionary for easier placeholder replacement"""

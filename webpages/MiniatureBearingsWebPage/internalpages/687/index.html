@@ -25,7 +25,7 @@
     {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "687 Deep Groove Ball Bearing",
+      "name": "687 Bearing 7×22×7mm Deep Groove Ball Bearing | RHD",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
       "description": "687 deep groove ball bearing with 7mm bore, 22mm outer diameter, 7mm width. 5.1kN dynamic load capacity, 520kg load capacity.",
       "sku": "687",
@@ -82,7 +82,7 @@
                         <span>687 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title" id="hero-title">687 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">687 Bearing 7×22×7mm Deep Groove Ball Bearing | RHD</h1>
                     <p class="hero-subtitle">
                         The 7mm micro marvel - delivering exceptional performance in a compact package for precision engineering applications.
                     </p>
@@ -128,7 +128,7 @@
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="687 Deep Groove Ball Bearing - RHD Bearings" />
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="687 Bearing 7×14×3.5mm - RHD Bearings" />
                 </div>
             </div>
         </div>
@@ -858,10 +858,10 @@
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="https://rhdbearings.com/specs/miniature-series/607/" class="model-link">607</a>
-<a href="https://rhdbearings.com/specs/miniature-series/627/" class="model-link">627</a>
-<a href="https://rhdbearings.com/specs/miniature-series/647/" class="model-link">647</a>
-<a href="https://rhdbearings.com/specs/miniature-series/657/" class="model-link">657</a>
+                        <a href="https://rhdbearings.com/specs/miniature-series/607/" class="model-link">607 (7×19×6mm)</a>
+<a href="https://rhdbearings.com/specs/miniature-series/627/" class="model-link">627 (7×22×7mm)</a>
+<a href="https://rhdbearings.com/specs/miniature-series/647/" class="model-link">647 (dimensions)</a>
+<a href="https://rhdbearings.com/specs/miniature-series/657/" class="model-link">657 (dimensions)</a>
                     </div>
                 </div>
                 
@@ -1517,15 +1517,16 @@
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }

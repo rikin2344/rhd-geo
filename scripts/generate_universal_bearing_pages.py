@@ -389,11 +389,11 @@ class UniversalBearingPageGenerator:
         """Replace cross references placeholders"""
         cross_refs = self.data.get('cross_references', {})
         
-        # Related models - generate proper URLs based on series detection
+        # Related models - generate proper URLs with dimensions loaded from JSON files
         related_models = cross_refs.get('related_models', [])
         if related_models:
             models_html = '\n'.join([
-                f'<a href="https://rhdbearings.com/specs/{self.get_series_from_model(model)}/{model}/" class="model-link">{model}</a>' 
+                f'<a href="https://rhdbearings.com/specs/{self.get_series_from_model(model)}/{model}/" class="model-link">{model} ({self._get_model_dimensions(model)})</a>' 
                 for model in related_models
             ])
             content = re.sub(r'\{\{#cross_references\.related_models\}\}.*?\{\{/cross_references\.related_models\}\}', models_html, content, flags=re.DOTALL)
@@ -429,7 +429,18 @@ class UniversalBearingPageGenerator:
             else:
                 # Generate default title from model number
                 model_number = self.data.get('model_number', 'Bearing')
-                content = content.replace('{{seo_metadata.title}}', f"{model_number} Deep Groove Ball Bearing | RHD Bearings")
+                # Create title with dimensions if available
+                dimensions = self.data.get('dimensions', {})
+                bore = dimensions.get('bore_diameter_d_mm', 'N/A')
+                outer = dimensions.get('outer_diameter_D_mm', 'N/A') 
+                width = dimensions.get('width_B_mm', 'N/A')
+                
+                if bore != 'N/A' and outer != 'N/A' and width != 'N/A':
+                    title = f"{model_number} Bearing {bore}×{outer}×{width}mm | RHD Bearings"
+                else:
+                    title = f"{model_number} Bearing | RHD Bearings"
+                
+                content = content.replace('{{seo_metadata.title}}', title)
             
             # Meta description
             if seo_data.get('meta_description'):
@@ -437,7 +448,18 @@ class UniversalBearingPageGenerator:
             else:
                 # Generate default description
                 model_number = self.data.get('model_number', 'Bearing')
-                content = content.replace('{{seo_metadata.meta_description}}', f"High-quality {model_number} deep groove ball bearing. Technical specifications, dimensions, load ratings, and applications. ISO compliant, precision engineered.")
+                # Create description with dimensions if available
+                dimensions = self.data.get('dimensions', {})
+                bore = dimensions.get('bore_diameter_d_mm', 'N/A')
+                outer = dimensions.get('outer_diameter_D_mm', 'N/A') 
+                width = dimensions.get('width_B_mm', 'N/A')
+                
+                if bore != 'N/A' and outer != 'N/A' and width != 'N/A':
+                    description = f"{model_number} bearing: {bore}mm bore, {outer}mm OD, {width}mm width. Technical specifications, load ratings, and applications. ISO compliant, precision engineered."
+                else:
+                    description = f"High-quality {model_number} bearing. Technical specifications, dimensions, load ratings, and applications. ISO compliant, precision engineered."
+                
+                content = content.replace('{{seo_metadata.meta_description}}', description)
             
             # Keywords
             if seo_data.get('keywords'):
@@ -450,7 +472,7 @@ class UniversalBearingPageGenerator:
             else:
                 # Generate default keywords
                 model_number = self.data.get('model_number', 'Bearing')
-                default_keywords = f"{model_number}, deep groove ball bearing, ball bearing, industrial bearing, precision bearing, ISO compliant"
+                default_keywords = f"{model_number}, ball bearing, industrial bearing, precision bearing, ISO compliant, bearing dimensions"
                 content = content.replace('{{seo_metadata.keywords_string}}', default_keywords)
             
             # Canonical URL
@@ -525,7 +547,19 @@ class UniversalBearingPageGenerator:
                 if schema_data.get('name'):
                     content = content.replace('{{seo_metadata.schema_markup.name}}', str(schema_data['name']))
                 else:
-                    content = content.replace('{{seo_metadata.schema_markup.name}}', '{{model_number}} Deep Groove Ball Bearing')
+                    # Use the same logic as title generation for consistency
+                    model_number = self.data.get('model_number', 'Bearing')
+                    dimensions = self.data.get('dimensions', {})
+                    bore = dimensions.get('bore_diameter_d_mm', 'N/A')
+                    outer = dimensions.get('outer_diameter_D_mm', 'N/A') 
+                    width = dimensions.get('width_B_mm', 'N/A')
+                    
+                    if bore != 'N/A' and outer != 'N/A' and width != 'N/A':
+                        schema_name = f"{model_number} Bearing {bore}×{outer}×{width}mm"
+                    else:
+                        schema_name = f"{model_number} Bearing"
+                    
+                    content = content.replace('{{seo_metadata.schema_markup.name}}', schema_name)
                 
                 if schema_data.get('description'):
                     content = content.replace('{{seo_metadata.schema_markup.description}}', str(schema_data['description']))
@@ -545,7 +579,7 @@ class UniversalBearingPageGenerator:
                 if schema_data.get('category'):
                     content = content.replace('{{seo_metadata.schema_markup.category}}', str(schema_data['category']))
                 else:
-                    content = content.replace('{{seo_metadata.schema_markup.category}}', 'Deep Groove Ball Bearings')
+                    content = content.replace('{{seo_metadata.schema_markup.category}}', 'Ball Bearings')
         
         return content
     
@@ -774,6 +808,30 @@ class UniversalBearingPageGenerator:
         # The content is already sanitized when generated in the specific methods
         
         return content
+    
+    def _get_model_dimensions(self, model_number: str) -> str:
+        """Get dimensions for a related model by loading its JSON file"""
+        try:
+            # Construct the path to the model's JSON file
+            json_file = Path(self.json_file).parent / f"{model_number}.json"
+            
+            if json_file.exists():
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    model_data = json.load(f)
+                
+                dimensions = model_data.get('dimensions', {})
+                bore = dimensions.get('bore_diameter_d_mm', 'N/A')
+                outer = dimensions.get('outer_diameter_D_mm', 'N/A')
+                width = dimensions.get('width_B_mm', 'N/A')
+                
+                return f"{bore}×{outer}×{width}mm"
+            else:
+                # Fallback to placeholder if JSON file doesn't exist
+                return "dimensions"
+                
+        except Exception as e:
+            print(f"⚠️ Warning: Could not load dimensions for model {model_number}: {e}")
+            return "dimensions"
     
     def _flatten_dict(self, d: dict, parent_key: str = '', sep: str = '.') -> dict:
         """Flatten nested dictionary for easier placeholder replacement"""
@@ -1264,7 +1322,7 @@ def create_standalone_main_series_page(series, series_dir_name):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{series.replace('-series', '').upper()} Series Deep Groove Ball Bearings | RHD Bearings</title>
+    <title>{series.replace('-series', '').upper()} Series Ball Bearings | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */
@@ -1541,9 +1599,28 @@ body {{
 def create_standalone_model_page(model_name, model_dir, series):
     """Helper function for create_standalone_pages() - creates standalone individual model pages"""
     try:
+        # Load model dimensions for proper title
+        model_title = f"{model_name} Bearing Dimensions"
+        try:
+            json_file = Path(f"models/{model_name}.json")
+            if json_file.exists():
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    model_data = json.load(f)
+                
+                dimensions = model_data.get('dimensions', {})
+                bore = dimensions.get('bore_diameter_d_mm', 'N/A')
+                outer = dimensions.get('outer_diameter_D_mm', 'N/A')
+                width = dimensions.get('width_B_mm', 'N/A')
+                
+                if bore != 'N/A' and outer != 'N/A' and width != 'N/A':
+                    model_title = f"{model_name} Bearing {bore}×{outer}×{width}mm"
+                else:
+                    model_title = f"{model_name} Bearing"
+        except:
+            pass  # Use fallback if dimensions can't be loaded
+            
         # Instead of reading the existing HTML file, regenerate it from the template
         # to ensure all template processing (including alternate_model_number) is applied
-        json_file = Path(f"models/{model_name}.json")
         template_file = Path("webpages/templates/index_new_claude.html")
         
         if not json_file.exists():
@@ -1714,7 +1791,7 @@ def create_standalone_model_page(model_name, model_dir, series):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{model_name} Deep Groove Ball Bearing | RHD Bearings</title>
+    <title>{model_title} | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */

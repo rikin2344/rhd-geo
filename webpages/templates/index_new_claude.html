@@ -25,7 +25,7 @@
     {
       "@context": "https://schema.org/",
       "@type": "{{seo_metadata.schema_markup.@type}}",
-      "name": "{{seo_metadata.schema_markup.name}}",
+      "name": "{{seo_metadata.title}}",
       "image": "{{technical_drawing.image_url}}",
       "description": "{{seo_metadata.schema_markup.description}}",
       "sku": "{{seo_metadata.schema_markup.sku}}",
@@ -82,7 +82,7 @@
                         <span>{{model_number}} Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title" id="hero-title">{{model_number}} {{bearing_type}}</h1>
+                    <h1 class="hero-title" id="hero-title">{{seo_metadata.title}}</h1>
                     <p class="hero-subtitle">
                         {{enhanced_description}}
                     </p>
@@ -128,7 +128,7 @@
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="{{model_number}} {{bearing_type}} - {{company_metadata.name}}" />
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="{{model_number}} Bearing {{dimensions.bore_diameter_d_mm}}×{{dimensions.outer_diameter_D_mm}}×{{dimensions.width_B_mm}}mm - {{company_metadata.name}}" />
                 </div>
             </div>
         </div>
@@ -856,7 +856,7 @@
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
                         {{#cross_references.related_models}}
-                        <a href="{{seo_metadata.canonical_url}}" class="model-link">{{.}} ({{#if (eq . "604")}}4×12×4mm{{else if (eq . "605")}}5×14×5mm{{else if (eq . "606")}}6×17×6mm{{else if (eq . "607")}}7×19×6mm{{else if (eq . "608")}}8×22×7mm{{else if (eq . "609")}}9×24×7mm{{else if (eq . "623")}}3×10×4mm{{else if (eq . "624")}}4×13×5mm{{else if (eq . "625")}}5×16×5mm{{else if (eq . "626")}}6×19×6mm{{else if (eq . "627")}}7×22×7mm{{else if (eq . "628")}}8×24×8mm{{else if (eq . "629")}}9×26×8mm{{else if (eq . "634")}}4×16×5mm{{else if (eq . "635")}}5×19×6mm{{else if (eq . "683")}}3×7×2mm{{else if (eq . "684")}}4×9×2.5mm{{else if (eq . "685")}}5×11×3mm{{else if (eq . "686")}}6×13×3.5mm{{else if (eq . "687")}}7×14×3.5mm{{else if (eq . "688")}}8×16×4mm{{else if (eq . "689")}}9×17×4mm{{else if (eq . "693")}}3×8×3mm{{else if (eq . "694")}}4×11×4mm{{else if (eq . "695")}}5×13×4mm{{else if (eq . "696")}}6×15×5mm{{else if (eq . "697")}}7×17×5mm{{else if (eq . "698")}}8×19×6mm{{else if (eq . "699")}}9×20×6mm{{else}}dimensions{{/if}})</a>
+                        <!-- Dimensions will be dynamically loaded by the Python script -->
                         {{/cross_references.related_models}}
                     </div>
                 </div>
@@ -1377,15 +1377,16 @@
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }

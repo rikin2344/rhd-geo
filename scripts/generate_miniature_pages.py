@@ -377,11 +377,11 @@ class MiniaturePageGenerator:
         """Replace cross references placeholders"""
         cross_refs = self.data.get('cross_references', {})
         
-        # Related models - generate proper URLs based on series detection
+        # Related models - generate proper URLs with dimensions loaded from JSON files
         related_models = cross_refs.get('related_models', [])
         if related_models:
             models_html = '\n'.join([
-                f'<a href="https://rhdbearings.com/specs/{self.get_series_from_model(model)}/{model}/" class="model-link">{model}</a>' 
+                f'<a href="https://rhdbearings.com/specs/{self.get_series_from_model(model)}/{model}/" class="model-link">{model} ({self._get_model_dimensions(model)})</a>' 
                 for model in related_models
             ])
             content = re.sub(r'\{\{#cross_references\.related_models\}\}.*?\{\{/cross_references\.related_models\}\}', models_html, content, flags=re.DOTALL)
@@ -485,6 +485,30 @@ class MiniaturePageGenerator:
                     content = content.replace(old_placeholder, str(new_value))
         
         return content
+    
+    def _get_model_dimensions(self, model_number: str) -> str:
+        """Get dimensions for a related model by loading its JSON file"""
+        try:
+            # Construct the path to the model's JSON file
+            json_file = Path(self.json_file).parent / f"{model_number}.json"
+            
+            if json_file.exists():
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    model_data = json.load(f)
+                
+                dimensions = model_data.get('dimensions', {})
+                bore = dimensions.get('bore_diameter_d_mm', 'N/A')
+                outer = dimensions.get('outer_diameter_D_mm', 'N/A')
+                width = dimensions.get('width_B_mm', 'N/A')
+                
+                return f"{bore}×{outer}×{width}mm"
+            else:
+                # Fallback to placeholder if JSON file doesn't exist
+                return "dimensions"
+                
+        except Exception as e:
+            print(f"⚠️ Warning: Could not load dimensions for model {model_number}: {e}")
+            return "dimensions"
     
     def _flatten_dict(self, d: dict, parent_key: str = '', sep: str = '.') -> dict:
         """Flatten nested dictionary for easier placeholder replacement"""
@@ -713,6 +737,23 @@ def create_standalone_model_page(model_name, model_dir):
     Output: deployment/miniature-series-internal-pages/[model]/index.html (standalone)
     """
     try:
+        # Load model dimensions for proper title
+        model_dimensions = "Bearing"
+        try:
+            json_file = Path("models") / f"{model_name}.json"
+            if json_file.exists():
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    model_data = json.load(f)
+                
+                dimensions = model_data.get('dimensions', {})
+                bore = dimensions.get('bore_diameter_d_mm', 'N/A')
+                outer = dimensions.get('outer_diameter_D_mm', 'N/A')
+                width = dimensions.get('width_B_mm', 'N/A')
+                
+                if bore != 'N/A' and outer != 'N/A' and width != 'N/A':
+                    model_dimensions = f"Bearing {bore}×{outer}×{width}mm"
+        except:
+            pass  # Use fallback if dimensions can't be loaded
         # Read the generated HTML file
         index_file = model_dir / "index.html"
         if not index_file.exists():
@@ -864,7 +905,7 @@ def create_standalone_model_page(model_name, model_dir):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{model_name} Deep Groove Ball Bearing | RHD Bearings</title>
+    <title>{model_name} {model_dimensions} | RHD Bearings</title>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */

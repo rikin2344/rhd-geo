@@ -25,7 +25,7 @@
     {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "6012 Deep Groove Ball Bearing",
+      "name": "6012 Bearing 60x95x18mm 31.5kN Load | RHD Bearings",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
       "description": "6012 deep groove ball bearing: 60x95x18mm, 31.5kN (3213kg) load capacity. Professional grade Gcr15 steel.",
       "sku": "6012",
@@ -82,7 +82,7 @@
                         <span>6012 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title" id="hero-title">6012 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">6012 Bearing 60x95x18mm 31.5kN Load | RHD Bearings</h1>
                     <p class="hero-subtitle">
                         The linebacker of bearings - built solid, runs clean, and tackles whatever you throw at it.
                     </p>
@@ -128,7 +128,7 @@
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="6012 Deep Groove Ball Bearing - RHD Bearings" />
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="6012 Bearing 60×95×18mm - RHD Bearings" />
                 </div>
             </div>
         </div>
@@ -873,10 +873,10 @@
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="https://rhdbearings.com/specs/6200-series/6212/" class="model-link">6212</a>
-<a href="https://rhdbearings.com/specs/6300-series/6312/" class="model-link">6312</a>
-<a href="https://rhdbearings.com/specs/6800-series/6812/" class="model-link">6812</a>
-<a href="https://rhdbearings.com/specs/6900-series/6912/" class="model-link">6912</a>
+                        <a href="https://rhdbearings.com/specs/6200-series/6212/" class="model-link">6212 (60×110×22mm)</a>
+<a href="https://rhdbearings.com/specs/6300-series/6312/" class="model-link">6312 (60×130×31mm)</a>
+<a href="https://rhdbearings.com/specs/6800-series/6812/" class="model-link">6812 (60×78×10mm)</a>
+<a href="https://rhdbearings.com/specs/6900-series/6912/" class="model-link">6912 (60×85×13mm)</a>
                     </div>
                 </div>
                 
@@ -1396,15 +1396,16 @@
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }

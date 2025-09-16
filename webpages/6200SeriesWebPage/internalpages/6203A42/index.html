@@ -25,7 +25,7 @@
     {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "6203A/42 Deep Groove Ball Bearing",
+      "name": "6203A/42 Bearing 17×42×12mm Deep Groove Ball Bearing | RHD",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
       "description": "6203A/42 deep groove ball bearing with 17mm bore, 42mm outer diameter, 12mm width. 9.58kN dynamic load capacity, 977kg load capacity.",
       "sku": "6203A/42",
@@ -82,7 +82,7 @@
                         <span>6203A/42 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title" id="hero-title">6203A/42 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">6203A/42 Bearing 17×42×12mm Deep Groove Ball Bearing | RHD</h1>
                     <p class="hero-subtitle">
                         The 6203A/42 represents a specialized variant designed for applications requiring a 17mm bore with enhanced load handling capabilities. This bearing combines the precision engineering of the 6200 series with the unique dimensional requirements of specialized machinery and equipment. Its 42×12mm profile provides the perfect balance between compact design and robust performance, making it ideal for applications where standard bearing dimensions don't meet specific design requirements.
                     </p>
@@ -128,7 +128,7 @@
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="6203A/42 Deep Groove Ball Bearing - RHD Bearings" />
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="6203A/42 Bearing 17×42×12mm - RHD Bearings" />
                 </div>
             </div>
         </div>
@@ -858,10 +858,10 @@
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="https://rhdbearings.com/specs/6200-series/6201 12.7/" class="model-link">6201 12.7</a>
-<a href="https://rhdbearings.com/specs/6200-series/6202 12.7/" class="model-link">6202 12.7</a>
-<a href="https://rhdbearings.com/specs/6200-series/6203 12.7/" class="model-link">6203 12.7</a>
-<a href="https://rhdbearings.com/specs/universal-series/6204/22/" class="model-link">6204/22</a>
+                        <a href="https://rhdbearings.com/specs/6200-series/6201 12.7/" class="model-link">6201 12.7 (12.7×32×10mm)</a>
+<a href="https://rhdbearings.com/specs/6200-series/6202 12.7/" class="model-link">6202 12.7 (12.7×35×11mm)</a>
+<a href="https://rhdbearings.com/specs/6200-series/6203 12.7/" class="model-link">6203 12.7 (12.7×40×12mm)</a>
+<a href="https://rhdbearings.com/specs/universal-series/6204/22/" class="model-link">6204/22 (dimensions)</a>
                     </div>
                 </div>
                 
@@ -1517,15 +1517,16 @@
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }

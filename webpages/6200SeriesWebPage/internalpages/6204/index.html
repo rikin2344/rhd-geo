@@ -25,7 +25,7 @@
     {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "6204 Deep Groove Ball Bearing",
+      "name": "6204 Bearing 20×47×14mm Deep Groove Ball Bearing | RHD",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
       "description": "6204 deep groove ball bearing with 20mm bore, 47mm outer diameter, 14mm width. 12.80kN dynamic load capacity, 1306kg load capacity.",
       "sku": "6204",
@@ -82,7 +82,7 @@
                         <span>6204 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title" id="hero-title">6204 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">6204 Bearing 20×47×14mm Deep Groove Ball Bearing | RHD</h1>
                     <p class="hero-subtitle">
                         20mm bore with 47mm dreams - big goals, bigger performance.
                     </p>
@@ -128,7 +128,7 @@
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="6204 Deep Groove Ball Bearing - RHD Bearings" />
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="6204 Bearing 20×47×14mm - RHD Bearings" />
                 </div>
             </div>
         </div>
@@ -873,10 +873,10 @@
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="https://rhdbearings.com/specs/6000-series/6004/" class="model-link">6004</a>
-<a href="https://rhdbearings.com/specs/6300-series/6304/" class="model-link">6304</a>
-<a href="https://rhdbearings.com/specs/6800-series/6804/" class="model-link">6804</a>
-<a href="https://rhdbearings.com/specs/6900-series/6904/" class="model-link">6904</a>
+                        <a href="https://rhdbearings.com/specs/6000-series/6004/" class="model-link">6004 (20×42×12mm)</a>
+<a href="https://rhdbearings.com/specs/6300-series/6304/" class="model-link">6304 (20×52×15mm)</a>
+<a href="https://rhdbearings.com/specs/6800-series/6804/" class="model-link">6804 (20×32×7mm)</a>
+<a href="https://rhdbearings.com/specs/6900-series/6904/" class="model-link">6904 (20×37×9mm)</a>
                     </div>
                 </div>
                 
@@ -1532,15 +1532,16 @@
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }

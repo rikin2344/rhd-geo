@@ -25,7 +25,7 @@
     {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "62301 Deep Groove Ball Bearing",
+      "name": "62301 Bearing 12x37x17mm | RHD Bearings",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
       "description": "62301 deep groove ball bearing: 12x37x17mm, 1285kg load capacity, 20,000 RPM. Professional grade Gcr15 steel.",
       "sku": "62301",
@@ -82,7 +82,7 @@
                         <span>62301 Bearing</span>
                     </div>
                     
-                    <h1 class="hero-title" id="hero-title">62301 Deep Groove Ball Bearing</h1>
+                    <h1 class="hero-title" id="hero-title">62301 Bearing 12x37x17mm | RHD Bearings</h1>
                     <p class="hero-subtitle">
                         The wide-bodied version - like economy class got an upgrade to business without the extra cost.
                     </p>
@@ -128,7 +128,7 @@
                 
                 <!-- Hero Image -->
                 <div class="hero-image">
-                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="62301 Deep Groove Ball Bearing - RHD Bearings" />
+                    <img src="https://rhdbearings.com/wp-content/uploads/2025/09/photo-1.png" alt="62301 Bearing 12×37×17mm - RHD Bearings" />
                 </div>
             </div>
         </div>
@@ -873,10 +873,10 @@
                 <div class="cross-ref-card">
                     <h3><span class="cross-ref-icon">🔄</span>Related Models</h3>
                     <div class="related-models">
-                        <a href="https://rhdbearings.com/specs/62300-series/62302/" class="model-link">62302</a>
-<a href="https://rhdbearings.com/specs/62300-series/62303/" class="model-link">62303</a>
-<a href="https://rhdbearings.com/specs/62300-series/62304/" class="model-link">62304</a>
-<a href="https://rhdbearings.com/specs/62300-series/62305/" class="model-link">62305</a>
+                        <a href="https://rhdbearings.com/specs/62300-series/62302/" class="model-link">62302 (15×42×17mm)</a>
+<a href="https://rhdbearings.com/specs/62300-series/62303/" class="model-link">62303 (17×47×19mm)</a>
+<a href="https://rhdbearings.com/specs/62300-series/62304/" class="model-link">62304 (20×52×21mm)</a>
+<a href="https://rhdbearings.com/specs/62300-series/62305/" class="model-link">62305 (25×62×24mm)</a>
                     </div>
                 </div>
                 
@@ -1532,15 +1532,16 @@
                 // Check if alternate_model_number exists in the page data
                 const pageData = document.body.dataset;
                 const modelNumber = pageData.model;
-                const bearingSeries = pageData.page;
                 
                 // Try to get alternate model number from JSON data or page attributes
-                // This assumes the data is available in a script tag or data attribute
                 const alternateModelNumber = getAlternateModelNumber(modelNumber);
                 
                 if (alternateModelNumber) {
-                    const bearingType = heroTitle.textContent.split(' ').slice(1).join(' '); // Get everything after the model number
-                    heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) ${bearingType}`;
+                    // Only add alternate model number if title doesn't already contain dimensions or brand
+                    const currentTitle = heroTitle.textContent;
+                    if (!currentTitle.includes('×') && !currentTitle.includes('mm') && !currentTitle.includes('|')) {
+                        heroTitle.textContent = `${modelNumber} (${alternateModelNumber}) Bearing`;
+                    }
                 }
             }
         }

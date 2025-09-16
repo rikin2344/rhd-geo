@@ -506,7 +506,7 @@ class SeriesPageGenerator:
                     title = f"{series_num} Series Heavy Duty Ball Bearings | Enhanced Load Capacity | RHD Bearings Mumbai"
                     meta_desc = f"{series_num} series heavy-duty deep groove ball bearings for industrial, automotive, and commercial applications. Enhanced load capacity. Made in India."
                 else:
-                    title = f"{series_num} Series Deep Groove Ball Bearings | Industrial Applications | RHD Bearings Mumbai"
+                    title = f"{series_num} Series Ball Bearings | Industrial Applications | RHD Bearings Mumbai"
                     meta_desc = f"{series_num} series deep groove ball bearings for industrial, automotive, and commercial applications. Standard dimensions. Made in India."
             else:
                 title = f"{series_name} | RHD Bearings Mumbai"
