@@ -91,7 +91,7 @@
         "Ceramic slurry mixers",
         "Batch blender shafts"
       ],
-      "requirements": "90mm shaft with 53.50kN (\u22485,460kg) dynamic load, 3,800 RPM grease lubrication, 170\u00d742mm for mixer equipment"
+      "requirements": "90mm shaft with 58.00kN (≈5912kg) dynamic load, 4,300 RPM grease lubrication, 140×24mm for mixer equipment"
     },
     "application2": {
       "title": "Heavy Machinery",
@@ -106,7 +106,7 @@
         "Aggregate crusher shafts",
         "Farm equipment pivots"
       ],
-      "requirements": "Precision 90mm bore with 36kN (\u22483,670kg) static load, for heavy use"
+      "requirements": "Precision 90mm bore with 49.80kN (≈5078kg) static load, for heavy use"
     },
     "application3": {
       "title": "Heavy Rollers",
@@ -121,7 +121,7 @@
         "Packaging roller ends",
         "Agricultural roller shafts"
       ],
-      "requirements": "90mm bore, 42mm width, designed for durability under heavy loads"
+      "requirements": "90mm bore, 24mm width, designed for durability under heavy loads"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "6018 Bearing 90x140x24mm 58kN Load | RHD Bearings",
-    "meta_description": "6018 deep groove ball bearing: 90x140x24mm, 58kN (5916kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "6018 deep groove ball bearing: 90x140x24mm, 58.00kN (≈5912kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "6018 bearing",
       "90mm bore bearing",
@@ -247,7 +247,7 @@
     "canonical_url": "https://rhdbearings.com/specs/6000-series/6018/",
     "og_data": {
       "title": "6018 Bearing 90x140x24mm 58kN Load | RHD Bearings",
-      "description": "6018 deep groove ball bearing: 90x140x24mm, 58kN (5916kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
+      "description": "6018 deep groove ball bearing: 90x140x24mm, 58.00kN (≈5912kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
       "url": "https://rhdbearings.com/specs/6000-series/6018/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -255,14 +255,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6018 Bearing 90x140x24mm 58kN Load | RHD Bearings",
-      "description": "6018 deep groove ball bearing: 90x140x24mm, 58kN (5916kg) load capacity. Professional grade Gcr15 steel."
+      "description": "6018 deep groove ball bearing: 90x140x24mm, 58.00kN (≈5912kg) load capacity. Professional grade Gcr15 steel."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6018 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6018 deep groove ball bearing: 90x140x24mm, 58kN (5916kg) load capacity. Professional grade Gcr15 steel.",
+      "description": "6018 deep groove ball bearing: 90x140x24mm, 58.00kN (≈5912kg) load capacity. Professional grade Gcr15 steel.",
       "sku": "6018",
       "mpn": "6018",
       "brand": "RHD Bearings",
@@ -300,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -322,15 +322,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6818",
+      "6918",
+      "16018",
+      "62218",
       "6218",
       "6318",
-      "6818",
-      "6918"
+      "62318"
     ],
     "shaft_requirements": {
       "nominal_diameter": "90.000mm",
-      "tolerance_grade": "h6 (89.987-90.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (89.978-90.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -371,39 +374,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 7.2kN more load than 6017 while maintaining same width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 6018 is rated 58.00kN dynamic / 49.80kN static at 140mm OD — more capacity than the 6918 (32.80kN) and less than the heavier-duty 62218 (70.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in 90mm bearing category for 58kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6018 provides 7.2kN more load capacity than 6017 while maintaining same width",
-      "vs_larger_bearing": "More compact than 6019 while delivering 100% of its load capacity",
+      "vs_smaller_bearing": "Same 90mm bore as the 6918 but in a larger 140mm OD body — the 6018 delivers 58.00kN dynamic vs 32.80kN for the 6918, the higher-capacity option when the shaft stays 90mm.",
+      "vs_larger_bearing": "Need more load on the same 90mm shaft? The 62218 (160mm OD, 70.00kN) is the heavier-duty same-bore alternative to the 6018 (58.00kN) — choose the 6018 to save radial space.",
       "vs_competitors": "Superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "Premium quality at competitive pricing with 3-10x longer service life"
     }

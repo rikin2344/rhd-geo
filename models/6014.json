@@ -91,7 +91,7 @@
         "Field sprayer motors",
         "Soil stabilizer rotors"
       ],
-      "requirements": "70mm shaft with 37.50kN (\u22483,820kg) dynamic load, 5,000 RPM grease lubrication, 130\u00d732mm for agricultural machinery"
+      "requirements": "70mm shaft with 38.50kN (≈3924kg) dynamic load, 5,000 RPM grease lubrication, 110×20mm for agricultural machinery"
     },
     "application2": {
       "title": "Machine Bases",
@@ -106,7 +106,7 @@
         "Metrology instrument beds",
         "Inspection device mounts"
       ],
-      "requirements": "70mm bore with 22kN (\u22482,245kg) static load, stable support for machine bases"
+      "requirements": "70mm bore with 30.50kN (≈3110kg) static load, stable support for machine bases"
     },
     "application3": {
       "title": "Heavy Equipment",
@@ -121,7 +121,7 @@
         "Utility vehicle axles",
         "Port cargo movers"
       ],
-      "requirements": "70mm bore, 35mm width, strong bearing for heavy equipment"
+      "requirements": "70mm bore, 20mm width, strong bearing for heavy equipment"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "6014 Bearing 70x110x20mm 38.5kN Load | RHD Bearings",
-    "meta_description": "6014 deep groove ball bearing: 70x110x20mm, 38.5kN (3927kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "6014 deep groove ball bearing: 70x110x20mm, 38.50kN (≈3924kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "6014 bearing",
       "70mm bore bearing",
@@ -247,7 +247,7 @@
     "canonical_url": "https://rhdbearings.com/specs/6000-series/6014/",
     "og_data": {
       "title": "6014 Bearing 70x110x20mm 38.5kN Load | RHD Bearings",
-      "description": "6014 deep groove ball bearing: 70x110x20mm, 38.5kN (3927kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
+      "description": "6014 deep groove ball bearing: 70x110x20mm, 38.50kN (≈3924kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
       "url": "https://rhdbearings.com/specs/6000-series/6014/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -255,14 +255,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6014 Bearing 70x110x20mm 38.5kN Load | RHD Bearings",
-      "description": "6014 deep groove ball bearing: 70x110x20mm, 38.5kN (3927kg) load capacity. Professional grade Gcr15 steel."
+      "description": "6014 deep groove ball bearing: 70x110x20mm, 38.50kN (≈3924kg) load capacity. Professional grade Gcr15 steel."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6014 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6014 deep groove ball bearing: 70x110x20mm, 38.5kN (3927kg) load capacity. Professional grade Gcr15 steel.",
+      "description": "6014 deep groove ball bearing: 70x110x20mm, 38.50kN (≈3924kg) load capacity. Professional grade Gcr15 steel.",
       "sku": "6014",
       "mpn": "6014",
       "brand": "RHD Bearings",
@@ -300,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -322,15 +322,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6814",
+      "6914",
+      "16014",
+      "62214",
       "6214",
       "6314",
-      "6814",
-      "6914"
+      "62314"
     ],
     "shaft_requirements": {
       "nominal_diameter": "70.000mm",
-      "tolerance_grade": "h6 (69.987-70.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (69.981-70.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -371,39 +374,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 6.5kN more load than 6013 while maintaining same width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 6014 is rated 38.50kN dynamic / 30.50kN static at 110mm OD — more capacity than the 6914 (23.70kN) and less than the heavier-duty 62214 (44.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in 70mm bearing category for 38.5kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6014 provides 6.5kN more load capacity than 6013 while maintaining same width",
-      "vs_larger_bearing": "More compact than 6015 while delivering 96% of its load capacity",
+      "vs_smaller_bearing": "Same 70mm bore as the 6914 but in a larger 110mm OD body — the 6014 delivers 38.50kN dynamic vs 23.70kN for the 6914, the higher-capacity option when the shaft stays 70mm.",
+      "vs_larger_bearing": "Need more load on the same 70mm shaft? The 62214 (125mm OD, 44.00kN) is the heavier-duty same-bore alternative to the 6014 (38.50kN) — choose the 6014 to save radial space.",
       "vs_competitors": "Superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "Premium quality at competitive pricing with 3-10x longer service life"
     }

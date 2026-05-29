@@ -91,7 +91,7 @@
         "Mining haul truck gears",
         "Agricultural machinery shafts"
       ],
-      "requirements": "40mm shaft with 15.80kN (\u22481,610kg) dynamic load, 8,000 RPM grease lubrication, 80\u00d720mm profile for gearboxes"
+      "requirements": "40mm shaft with 17.00kN (≈1732kg) dynamic load, 9,000 RPM grease lubrication, 68×15mm profile for gearboxes"
     },
     "application2": {
       "title": "Robot Joints",
@@ -106,7 +106,7 @@
         "Inspection robotic arms",
         "Medical robot joints"
       ],
-      "requirements": "Precision 40mm bore with 10kN (\u22481,020kg) static load for robotic arms"
+      "requirements": "Precision 40mm bore with 11.80kN (≈1203kg) static load for robotic arms"
     },
     "application3": {
       "title": "Heavy Drives",
@@ -121,7 +121,7 @@
         "Agricultural equipments",
         "Mining conveyor shafts"
       ],
-      "requirements": "40mm bore, 22mm width, durable and strong for heavy drive applications"
+      "requirements": "40mm bore, 15mm width, durable and strong for heavy drive applications"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "6008 Bearing 40x68x15mm | RHD Bearings",
-    "meta_description": "6008 deep groove ball bearing: 40mm bore, 68mm OD, 15mm width. Handles 1734kg load. Premium Gcr15 steel construction from Mumbai, India.",
+    "meta_description": "6008 deep groove ball bearing: 40mm bore, 68mm OD, 15mm width. Handles 1732kg load. Premium Gcr15 steel construction from Mumbai, India.",
     "keywords": [
       "6008 bearing",
       "40mm bearing",
@@ -246,7 +246,7 @@
     "canonical_url": "https://rhdbearings.com/specs/6000-series/6008/",
     "og_data": {
       "title": "6008 Bearing 40x68x15mm | Heavy-Duty Workhorse Bearing",
-      "description": "Professional 6008 deep groove ball bearing with 1734kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai.",
+      "description": "Professional 6008 deep groove ball bearing with 1732kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai.",
       "url": "https://rhdbearings.com/specs/6000-series/6008/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -254,14 +254,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6008 Bearing 40x68x15mm | Heavy-Duty Workhorse Bearing",
-      "description": "Professional 6008 deep groove ball bearing with 1734kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai."
+      "description": "Professional 6008 deep groove ball bearing with 1732kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6008 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Professional 6008 deep groove ball bearing with 40mm bore, 68mm outer diameter, and 15mm width. Handles 1734kg load capacity with premium Gcr15 steel construction.",
+      "description": "Professional 6008 deep groove ball bearing with 40mm bore, 68mm outer diameter, and 15mm width. Handles 1732kg load capacity with premium Gcr15 steel construction.",
       "sku": "6008",
       "mpn": "6008",
       "brand": "RHD Bearings",
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6808",
+      "6908",
+      "16008",
+      "62208",
       "6208",
       "6308",
-      "6808",
-      "6908"
+      "62308"
     ],
     "shaft_requirements": {
       "nominal_diameter": "40.000mm",
-      "tolerance_grade": "h6 (39.987-40.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (39.984-40.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -340,7 +343,7 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Heavy-duty 40mm workhorse handles 1734kg load - perfect for demanding industrial applications",
+      "Heavy-duty 40mm workhorse handles 1732kg load - perfect for demanding industrial applications",
       "Premium Gcr15 steel construction ensures reliable 9000 RPM performance in continuous operation",
       "Robust 15mm width design provides excellent load capacity for heavy machinery",
       "Professional-grade bearing ideal for construction and heavy automotive applications",
@@ -357,7 +360,7 @@
     ],
     "decision_criteria": [
       "40mm shaft diameter requirement - exact dimensional match needed",
-      "1734kg load capacity requirement - handles heavy industrial loads effectively",
+      "1732kg load capacity requirement - handles heavy industrial loads effectively",
       "9000 RPM speed rating - suitable for medium-speed heavy-duty applications",
       "15mm width constraint - robust design for heavy industrial applications",
       "Gcr15 steel material requirement - premium grade for continuous service"
@@ -365,44 +368,44 @@
     "problem_solution_mapping": [
       {
         "problem": "Heavy industrial equipment bearing failure in continuous operation applications",
-        "solution": "6008 bearing handles 1734kg loads with premium Gcr15 steel construction for reliable workhorse service"
+        "solution": "6008 bearing handles 1732kg loads with premium Gcr15 steel construction for reliable workhorse service"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for continuous heavy-duty performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 1734kg load capacity with robust 15mm width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 40mm bore (ID) with 6808, 6908, 16008, so it can be considered where the shaft is fixed at 40mm. The 6008 is rated 17.00kN dynamic / 11.80kN static at 68mm OD — more capacity than the 6908 (13.70kN) and less than the heavier-duty 62208 (22.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "Higher 1734kg load capacity compared to 35mm bearings",
-      "vs_larger_bearing": "More compact design compared to larger alternatives",
+      "vs_smaller_bearing": "Same 40mm bore as the 6908 but in a larger 68mm OD body — the 6008 delivers 17.00kN dynamic vs 13.70kN for the 6908, the higher-capacity option when the shaft stays 40mm.",
+      "vs_larger_bearing": "Need more load on the same 40mm shaft? The 62208 (80mm OD, 22.50kN) is the heavier-duty same-bore alternative to the 6008 (17.00kN) — choose the 6008 to save radial space.",
       "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
       "cost_benefit": "Moderate cost justified by workhorse capacity and reliable performance"
     }
@@ -441,7 +444,7 @@
           "question": "What tools are needed to install a 185g 6008 bearing properly?",
           "direct_answer": "Heavy-duty installation tools, induction heater, and precision alignment equipment for proper 40mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 185g weight and 40mm bore require appropriate techniques to prevent damage. Large bearings benefit from thermal installation and precision alignment for maximum service life in workhorse applications.",
-          "how_to_handle": "Heat bearing to 80-90\u00b0C using induction heater for uniform heating. Use heavy-duty hydraulic tools with proper adapters. Verify shaft tolerances (h6: 39.987-40.013mm) and housing concentricity. Never use impact methods.",
+          "how_to_handle": "Heat bearing to 80-90°C using induction heater for uniform heating. Use heavy-duty hydraulic tools with proper adapters. Verify shaft tolerances (h6: 39.987-40.013mm) and housing concentricity. Never use impact methods.",
           "pro_tip": "Large bearings require controlled thermal installation - induction heating provides uniform expansion preventing installation damage."
         },
         {

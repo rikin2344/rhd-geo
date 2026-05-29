@@ -92,7 +92,7 @@
         "Bulk material machinery",
         "Construction equipment drives"
       ],
-      "requirements": "75mm shaft with 36.0kN (\u22483,670kg) dynamic load, 4,500 RPM grease lubrication, 80\u00d725mm profile for gear transmissions"
+      "requirements": "75mm shaft with 24.30kN (≈2477kg) dynamic load, 2,600 RPM grease lubrication, 105×16mm profile for gear transmissions"
     },
     "application2": {
       "title": "Robotic Joints",
@@ -107,7 +107,7 @@
         "Manufacturing robot bases",
         "Precision actuator pivots"
       ],
-      "requirements": "Precision 75mm bore with 29kN (\u22482,958kg) static load rating"
+      "requirements": "Precision 75mm bore with 22.50kN (≈2294kg) static load rating"
     },
     "application3": {
       "title": "Heavy Rollers",
@@ -122,7 +122,7 @@
         "Agricultural equipment rollers",
         "Industrial press rollers"
       ],
-      "requirements": "75mm bore, 30mm width designed for roller bearings"
+      "requirements": "75mm bore, 16mm width designed for roller bearings"
     }
   },
   "vibration": {
@@ -217,8 +217,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6915 Bearing 75x100x13mm - RHD Bearings",
-    "meta_description": "6915 deep groove ball bearing 75x100x13mm, 1857kg load capacity. High-speed 2,600 RPM. ISO compliant. Mumbai manufacturer.",
+    "title": "6915 Bearing 75×105×16mm - RHD Bearings",
+    "meta_description": "6915 deep groove ball bearing 75×105×16mm, 2477kg load capacity. High-speed 2,600 RPM. ISO compliant. Mumbai manufacturer.",
     "keywords": [
       "6915 bearing",
       "75x100x13 bearing",
@@ -245,23 +245,23 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6900-series/6915/",
     "og_data": {
-      "title": "6915 Bearing 75x100x13mm - RHD Bearings",
-      "description": "6915 deep groove ball bearing 75x100x13mm, 1857kg load capacity. High-speed 2,600 RPM. ISO compliant.",
+      "title": "6915 Bearing 75×105×16mm - RHD Bearings",
+      "description": "6915 deep groove ball bearing 75×105×16mm, 2477kg load capacity. High-speed 2,600 RPM. ISO compliant.",
       "url": "https://rhdbearings.com/specs/6900-series/6915/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "6915 Bearing 75x100x13mm - RHD Bearings",
-      "description": "6915 deep groove ball bearing 75x100x13mm, 1857kg load capacity. High-speed 2,600 RPM."
+      "title": "6915 Bearing 75×105×16mm - RHD Bearings",
+      "description": "6915 deep groove ball bearing 75×105×16mm, 2477kg load capacity. High-speed 2,600 RPM."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6915 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6915 deep groove ball bearing 75x100x13mm with 1857kg load capacity and 2,600 RPM speed rating",
+      "description": "6915 deep groove ball bearing 75×105×16mm with 2477kg load capacity and 2,600 RPM speed rating",
       "sku": "6915",
       "mpn": "6915",
       "brand": "RHD Bearings",
@@ -299,9 +299,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6815",
+      "16015",
       "6015",
+      "62215",
       "6215",
       "6315",
-      "6815"
+      "62315"
     ],
     "shaft_requirements": {
       "nominal_diameter": "75.000mm",
-      "tolerance_grade": "h6 (74.987-75.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (74.981-75.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -340,11 +343,11 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "6915 bearing delivers 1857kg load capacity in compact 75x100x13mm design",
+      "6915 bearing delivers 2477kg load capacity in compact 75×105×16mm design",
       "High-speed 2,600 RPM rating makes 6915 ideal for precision applications",
       "6915 series offers excellent value with ISO 15:2011 compliance",
       "Compact 6915 bearing fits tight spaces while maintaining performance",
-      "6915 bearing's 18.20kN dynamic rating handles demanding applications",
+      "6915 bearing's 24.30kN dynamic rating handles demanding applications",
       "6915 series provides reliable performance in miniature bearing category"
     ],
     "natural_language_queries": [
@@ -357,52 +360,52 @@
     ],
     "decision_criteria": [
       "75mm bore diameter requirement for shaft compatibility",
-      "100mm outer diameter constraint for housing fit",
-      "13mm width limitation for space-constrained applications",
-      "1857kg load capacity for application requirements",
+      "105mm OD constraint for housing fit",
+      "16mm width limitation for space-constrained applications",
+      "2477kg load capacity for application requirements",
       "2,600 RPM speed rating for high-speed operations"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need compact bearing for tight spaces",
-        "solution": "6915 bearing's 75x100x13mm dimensions provide maximum performance in minimal space"
+        "solution": "6915 bearing's 75×105×16mm dimensions provide maximum performance in minimal space"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 17.2kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 75mm bore (ID) with 6815, 16015, 6015, so it can be considered where the shaft is fixed at 75mm. The 6915 is rated 24.30kN dynamic / 22.50kN static at 105mm OD — more capacity than the 6815 (12.50kN) and less than the heavier-duty 16015 (28.70kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in small-bearing category for 18.20kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in small-bearing category for 24.30kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6915 provides 17.2kN more load capacity than 6815 series while maintaining compact design",
-      "vs_larger_bearing": "6915 offers space savings over 6015 series with 90% of the load capacity",
+      "vs_smaller_bearing": "Same 75mm bore as the 6815 but in a larger 105mm OD body — the 6915 delivers 24.30kN dynamic vs 12.50kN for the 6815, the higher-capacity option when the shaft stays 75mm.",
+      "vs_larger_bearing": "Need more load on the same 75mm shaft? The 16015 (115mm OD, 28.70kN) is the heavier-duty same-bore alternative to the 6915 (24.30kN) — choose the 6915 to save radial space.",
       "vs_competitors": "6915 delivers superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "6915 provides best value in miniature bearing category with 3-10x longer service life than cheap alternatives"
     }
@@ -441,7 +444,7 @@
           "question": "What shaft tolerance is recommended for the 6915 bearing?",
           "direct_answer": "The 6915 bearing requires an h6 shaft tolerance with a nominal diameter of 75.000mm and tolerance range of 74.987-75.013mm for optimal performance.",
           "why_matters": "Proper shaft tolerance ensures correct fit and prevents issues like excessive clearance or interference that can lead to premature failure.",
-          "how_to_handle": "Machine the shaft to h6 tolerance (74.987-75.013mm) with a surface finish of Ra 0.8\u03bcm maximum and runout tolerance of 0.013mm maximum.",
+          "how_to_handle": "Machine the shaft to h6 tolerance (74.987-75.013mm) with a surface finish of Ra 0.8μm maximum and runout tolerance of 0.013mm maximum.",
           "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation, as even small deviations can significantly impact bearing performance."
         },
         {
@@ -456,7 +459,7 @@
           "direct_answer": "The 6915 bearing should be installed using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to the bearing components.",
           "why_matters": "Proper installation prevents bearing damage, ensures correct fit, and maximizes service life while maintaining performance characteristics.",
           "how_to_handle": "Use bearing installation tools or sleeves to apply pressure evenly on the inner ring, never apply force directly to the outer ring or balls.",
-          "pro_tip": "Heat the bearing to 80-100\u00b0C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
+          "pro_tip": "Heat the bearing to 80-100°C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
         }
       ]
     },
@@ -468,7 +471,7 @@
           "direct_answer": "A hot-running 6915 bearing is typically caused by over-lubrication, excessive load, misalignment, or insufficient clearance, requiring immediate investigation and correction.",
           "why_matters": "Excessive heat can lead to premature bearing failure, lubricant breakdown, and potential damage to surrounding components.",
           "how_to_handle": "Check lubrication levels, verify load conditions, inspect for misalignment, and ensure proper clearance. Reduce speed if necessary and monitor temperature.",
-          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80\u00b0C indicate potential problems requiring attention."
+          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80°C indicate potential problems requiring attention."
         },
         {
           "question": "What causes excessive noise in the 6915 bearing?",
@@ -491,7 +494,7 @@
       "questions": [
         {
           "question": "What is the cost-benefit of choosing the 6915 bearing over alternatives?",
-          "direct_answer": "The 6915 bearing offers excellent value with 18.20kN load capacity in a compact 75x100x13mm design, providing 3-10x longer service life than cheap alternatives.",
+          "direct_answer": "The 6915 bearing offers excellent value with 18.20kN load capacity in a compact 75x105x16mm design, providing 3-10x longer service life than cheap alternatives.",
           "why_matters": "Quality bearings reduce total cost of ownership through longer service life, reduced maintenance, and fewer unplanned failures.",
           "how_to_handle": "Calculate total cost of ownership including initial cost, maintenance, and downtime costs when comparing bearing options.",
           "pro_tip": "Consider the cost of equipment downtime and replacement labor when evaluating bearing options - quality bearings often pay for themselves through reduced maintenance costs."

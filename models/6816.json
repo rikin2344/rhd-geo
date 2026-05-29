@@ -92,7 +92,7 @@
         "Wastewater pumps",
         "Agricultural irrigation pumps"
       ],
-      "requirements": "80mm shaft with 14.5kN (\u22481,480kg) dynamic load, 4,400 RPM grease lubrication, 100\u00d727mm profile for pump motors"
+      "requirements": "80mm shaft with 12.70kN (≈1294kg) dynamic load, 5,000 RPM grease lubrication, 100×10mm profile for pump motors"
     },
     "application2": {
       "title": "Heavy Machinery",
@@ -107,7 +107,7 @@
         "Mining conveyor rollers",
         "Heavy duty mixers"
       ],
-      "requirements": "Precision 80mm bore with 9.0kN (\u2248920kg) static load"
+      "requirements": "Precision 80mm bore with 13.30kN (≈1356kg) static load"
     },
     "application3": {
       "title": "Material Transport",
@@ -122,7 +122,7 @@
         "Heavy load dollies",
         "Material handling wheels"
       ],
-      "requirements": "80mm bore, 28mm width designed for material transport"
+      "requirements": "80mm bore, 10mm width designed for material transport"
     }
   },
   "vibration": {
@@ -217,8 +217,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6816 Bearing 80x100x10mm | 13.7kN Load | RHD Bearings",
-    "meta_description": "6816 deep groove ball bearing: 80x100x10mm, 13.7kN dynamic load (1397kg), 5,300 RPM. ISO compliant, precision ground. Mumbai manufacturer.",
+    "title": "6816 Bearing 80x100x10mm | 12.70kN Load | RHD Bearings",
+    "meta_description": "6816 deep groove ball bearing: 80x100x10mm, 12.70kN dynamic load (1294kg), 5,000 RPM. ISO compliant, precision ground. Mumbai manufacturer.",
     "keywords": [
       "6816 bearing",
       "80mm bore bearing",
@@ -247,23 +247,23 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6800-series/6816/",
     "og_data": {
-      "title": "6816 Bearing 80x100x10mm | 13.7kN Load | RHD Bearings",
-      "description": "6816 deep groove ball bearing: 80x100x10mm, 13.7kN dynamic load (1397kg), 5,300 RPM. ISO compliant, precision ground.",
+      "title": "6816 Bearing 80x100x10mm | 12.70kN Load | RHD Bearings",
+      "description": "6816 deep groove ball bearing: 80x100x10mm, 12.70kN dynamic load (1294kg), 5,000 RPM. ISO compliant, precision ground.",
       "url": "https://rhdbearings.com/specs/6800-series/6816/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "6816 Bearing 80x100x10mm | 13.7kN Load | RHD Bearings",
-      "description": "6816 deep groove ball bearing: 80x100x10mm, 13.7kN dynamic load (1397kg), 5,300 RPM. ISO compliant, precision ground."
+      "title": "6816 Bearing 80x100x10mm | 12.70kN Load | RHD Bearings",
+      "description": "6816 deep groove ball bearing: 80x100x10mm, 12.70kN dynamic load (1294kg), 5,000 RPM. ISO compliant, precision ground."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6816 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6816 deep groove ball bearing: 80x100x10mm, 13.7kN dynamic load (1397kg), 5,300 RPM. ISO compliant, precision ground.",
+      "description": "6816 deep groove ball bearing: 80x100x10mm, 12.70kN dynamic load (1294kg), 5,000 RPM. ISO compliant, precision ground.",
       "sku": "6816",
       "mpn": "6816",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6800",
-      "6801",
-      "6802",
-      "6803"
+      "6916",
+      "6016",
+      "16016",
+      "6216",
+      "62216",
+      "62316",
+      "6316"
     ],
     "shaft_requirements": {
       "nominal_diameter": "80.000mm",
-      "tolerance_grade": "h6 (79.991-80.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (79.981-80.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -342,12 +345,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "6816 bearing: 80mm bore, 13.7kN load capacity, perfect for compact applications requiring high precision",
-      "Ultra-compact 6816 bearing with 5,300 RPM capability - ideal for miniature machinery and precision instruments",
-      "13.7kN dynamic load rating makes 6816 bearing suitable for small motors, fans, and precision equipment",
+      "6816 bearing: 80mm bore, 12.70kN load capacity, perfect for compact applications requiring high precision",
+      "Ultra-compact 6816 bearing with 5,000 RPM capability - ideal for miniature machinery and precision instruments",
+      "12.70kN dynamic load rating makes 6816 bearing suitable for small motors, fans, and precision equipment",
       "6816 bearing offers excellent value with ISO 15:2011 compliance and Gcr15 steel construction",
-      "Compact 10mm width 6816 bearing saves space while delivering reliable 13.7kN performance",
-      "High-speed 6816 bearing: 5,300 RPM grease, 6,600 RPM oil - perfect for demanding applications"
+      "Compact 10mm width 6816 bearing saves space while delivering reliable 12.70kN performance",
+      "High-speed 6816 bearing: 6,500 RPM grease, 6,500 RPM oil - perfect for demanding applications"
     ],
     "natural_language_queries": [
       "80mm bore bearing",
@@ -359,52 +362,52 @@
     ],
     "decision_criteria": [
       "Bore diameter: 80mm for shaft compatibility",
-      "Load capacity: 13.7kN dynamic, 13.0kN static",
-      "Speed rating: 5,300 RPM grease, 6,600 RPM oil",
+      "Load capacity: 13.30kN dynamic, 13.30kN static",
+      "Speed rating: 6,500 RPM grease, 6,500 RPM oil",
       "Dimensions: 80x100x10mm for space-constrained applications",
       "Material: Gcr15 steel with ISO 15:2011 compliance"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need compact bearing for small motor",
-        "solution": "6816 bearing: 80x100x10mm with 13.7kN capacity"
+        "solution": "6816 bearing: 80x100x10mm with 12.70kN capacity"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 13.7kN load while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 80mm bore (ID) with 6916, 6016, 16016, so it can be considered where the shaft is fixed at 80mm. The 6816 is rated 12.70kN dynamic / 13.30kN static at 100mm OD — the most compact 80mm-bore option, below the 6916 (24.90kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in compact bearing category for 13.7kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in compact bearing category for 12.70kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6816 offers 13.7kN vs smaller bearings' 0.5-13.1kN capacity",
-      "vs_larger_bearing": "6816 saves space vs larger bearings while maintaining adequate load capacity",
+      "vs_smaller_bearing": "The 6816 is the most compact 80mm-bore bearing in this family (100mm OD, 12.70kN); the 6916 adds load capacity on the same 80mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 80mm shaft? The 6916 (110mm OD, 24.90kN) is the heavier-duty same-bore alternative to the 6816 (12.70kN) — choose the 6816 to save radial space.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel in competing products",
       "cost_benefit": "Premium quality at competitive pricing with 3-10x longer service life"
     }
@@ -443,7 +446,7 @@
           "question": "What shaft tolerance is recommended for 6816 bearing installation?",
           "direct_answer": "h6 tolerance (79.991-80.009mm) is recommended for optimal fit and performance with the 80mm bore.",
           "why_matters": "Proper shaft tolerance ensures correct interference fit, prevents slippage, and maximizes bearing life.",
-          "how_to_handle": "Machine shaft to h6 tolerance range and ensure surface finish of Ra 0.8\u03bcm maximum.",
+          "how_to_handle": "Machine shaft to h6 tolerance range and ensure surface finish of Ra 0.8μm maximum.",
           "pro_tip": "Use proper installation tools to avoid damaging the bearing during press-fit installation."
         },
         {
@@ -455,10 +458,10 @@
         },
         {
           "question": "What's the maximum operating temperature for 6816 bearings?",
-          "direct_answer": "Standard 6816 bearings operate up to 120\u00b0C, with C3 clearance versions suitable for higher temperatures up to 150\u00b0C.",
+          "direct_answer": "Standard 6816 bearings operate up to 120°C, with C3 clearance versions suitable for higher temperatures up to 150°C.",
           "why_matters": "Exceeding temperature limits causes lubricant breakdown, dimensional changes, and premature failure.",
           "how_to_handle": "Monitor operating temperature and consider C3 clearance for high-temperature applications.",
-          "pro_tip": "Use high-temperature grease for applications above 80\u00b0C to maintain proper lubrication."
+          "pro_tip": "Use high-temperature grease for applications above 80°C to maintain proper lubrication."
         }
       ]
     },
@@ -470,7 +473,7 @@
           "direct_answer": "Common causes include over-lubrication, insufficient lubrication, misalignment, excessive load, or contamination.",
           "why_matters": "Overheating leads to lubricant breakdown, dimensional changes, and catastrophic bearing failure.",
           "how_to_handle": "Check lubrication levels, verify load capacity (max 13.7kN), ensure proper alignment, and inspect for contamination.",
-          "pro_tip": "Use infrared thermometer to monitor bearing temperature - should not exceed 80\u00b0C under normal operation."
+          "pro_tip": "Use infrared thermometer to monitor bearing temperature - should not exceed 80°C under normal operation."
         },
         {
           "question": "What causes excessive noise in 6816 bearings?",

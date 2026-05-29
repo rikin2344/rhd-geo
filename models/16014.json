@@ -91,7 +91,7 @@
         "Field sprayer motors",
         "Soil stabilizer drives"
       ],
-      "requirements": "70mm shaft with 33.0kN (\u22483,360kg) dynamic load capacity, 4,700 RPM grease lubrication, 85\u00d724mm profile for farm machinery"
+      "requirements": "70mm shaft with 27.90kN (≈2844kg) dynamic load capacity, 5,600 RPM grease lubrication, 110×13mm profile for farm machinery"
     },
     "application2": {
       "title": "Machine Bases",
@@ -106,7 +106,7 @@
         "Metrology mounts",
         "Test rig mounts"
       ],
-      "requirements": "Precision 70mm bore with 23.0kN (\u22482,345kg) static load"
+      "requirements": "Precision 70mm bore with 25.00kN (≈2549kg) static load"
     },
     "application3": {
       "title": "Heavy Equipment",
@@ -121,7 +121,7 @@
         "Utility vehicle axles",
         "Port cargo movers"
       ],
-      "requirements": "70mm bore, 25mm width designed for heavy equipment"
+      "requirements": "70mm bore, 13mm width designed for heavy equipment"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "16014 Bearing 70x110x13mm - RHD Bearings",
-    "meta_description": "16014 deep groove ball bearing 70x110x13mm, 1423kg load capacity. High-speed 5,600 RPM. ISO compliant. Mumbai manufacturer.",
+    "meta_description": "16014 deep groove ball bearing 70x110x13mm, 2844kg load capacity. High-speed 5,600 RPM. ISO compliant. Mumbai manufacturer.",
     "keywords": [
       "16014 bearing",
       "70x110x13 bearing",
@@ -245,7 +245,7 @@
     "canonical_url": "https://rhdbearings.com/specs/16000-series/16014/",
     "og_data": {
       "title": "16014 Bearing 70x110x13mm - RHD Bearings",
-      "description": "16014 deep groove ball bearing 70x110x13mm, 1423kg load capacity. High-speed 5,600 RPM. ISO compliant.",
+      "description": "16014 deep groove ball bearing 70x110x13mm, 2844kg load capacity. High-speed 5,600 RPM. ISO compliant.",
       "url": "https://rhdbearings.com/specs/16000-series/16014/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -253,14 +253,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "16014 Bearing 70x110x13mm - RHD Bearings",
-      "description": "16014 deep groove ball bearing 70x110x13mm, 1423kg load capacity. High-speed 5,600 RPM."
+      "description": "16014 deep groove ball bearing 70x110x13mm, 2844kg load capacity. High-speed 5,600 RPM."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "16014 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "16014 deep groove ball bearing 70x110x13mm with 1423kg load capacity and 5,600 RPM speed rating",
+      "description": "16014 deep groove ball bearing 70x110x13mm with 2844kg load capacity and 5,600 RPM speed rating",
       "sku": "16014",
       "mpn": "16014",
       "brand": "RHD Bearings",
@@ -298,9 +298,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -320,15 +320,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6814",
+      "6914",
       "6014",
+      "62214",
       "6214",
       "6314",
-      "6814"
+      "62314"
     ],
     "shaft_requirements": {
       "nominal_diameter": "70.000mm",
-      "tolerance_grade": "h6 (69.987-70.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (69.981-70.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -339,7 +342,7 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "16014 bearing delivers 1423kg load capacity in ultra-thin 70x110x13mm design",
+      "16014 bearing delivers 2844kg load capacity in ultra-thin 70x110x13mm design",
       "High-speed 5,600 RPM rating makes 16014 ideal for precision applications",
       "16014 series offers excellent value with ISO 15:2011 compliance",
       "Ultra-thin 16014 bearing fits tight spaces while maintaining performance",
@@ -358,7 +361,7 @@
       "70mm bore diameter requirement for shaft compatibility",
       "110mm outer diameter constraint for housing fit",
       "13mm width limitation for space-constrained applications",
-      "1423kg load capacity for application requirements",
+      "2844kg load capacity for application requirements",
       "5,600 RPM speed rating for high-speed operations"
     ],
     "problem_solution_mapping": [
@@ -369,39 +372,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for thin section bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 25.0kN more load than typical smaller bearings while maintaining ultra-thin design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 70mm bore (ID) with 6814, 6914, 6014, so it can be considered where the shaft is fixed at 70mm. The 16014 is rated 27.90kN dynamic / 25.00kN static at 110mm OD — more capacity than the 6914 (23.70kN) and less than the heavier-duty 62214 (44.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in thin section bearing category for 27.90kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "16014 provides 25.0kN more load capacity than 6814 series while maintaining ultra-thin design",
-      "vs_larger_bearing": "16014 offers space savings over 6014 series with 90% of the load capacity",
+      "vs_smaller_bearing": "Same 70mm bore as the 6914 but in a larger 110mm OD body — the 16014 delivers 27.90kN dynamic vs 23.70kN for the 6914, the higher-capacity option when the shaft stays 70mm.",
+      "vs_larger_bearing": "Need more load on the same 70mm shaft? The 62214 (125mm OD, 44.00kN) is the heavier-duty same-bore alternative to the 16014 (27.90kN) — choose the 16014 to save radial space.",
       "vs_competitors": "16014 delivers superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "16014 provides best value in thin section bearing category with 3-10x longer service life than cheap alternatives"
     }
@@ -440,7 +443,7 @@
           "question": "What shaft tolerance is recommended for the 16014 bearing?",
           "direct_answer": "The 16014 bearing requires an h6 shaft tolerance with a nominal diameter of 70.000mm and tolerance range of 69.987-70.013mm for optimal performance.",
           "why_matters": "Proper shaft tolerance ensures correct fit and prevents issues like excessive clearance or interference that can lead to premature failure.",
-          "how_to_handle": "Machine the shaft to h6 tolerance (69.987-70.013mm) with a surface finish of Ra 0.8\u03bcm maximum and runout tolerance of 0.013mm maximum.",
+          "how_to_handle": "Machine the shaft to h6 tolerance (69.987-70.013mm) with a surface finish of Ra 0.8μm maximum and runout tolerance of 0.013mm maximum.",
           "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation, as even small deviations can significantly impact bearing performance."
         },
         {
@@ -455,7 +458,7 @@
           "direct_answer": "The 16014 bearing should be installed using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to the bearing components.",
           "why_matters": "Proper installation prevents bearing damage, ensures correct fit, and maximizes service life while maintaining performance characteristics.",
           "how_to_handle": "Use bearing installation tools or sleeves to apply pressure evenly on the inner ring, never apply force directly to the outer ring or balls.",
-          "pro_tip": "Heat the bearing to 80-100\u00b0C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
+          "pro_tip": "Heat the bearing to 80-100°C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
         }
       ]
     },
@@ -467,7 +470,7 @@
           "direct_answer": "A hot-running 16014 bearing is typically caused by over-lubrication, excessive load, misalignment, or insufficient clearance, requiring immediate investigation and correction.",
           "why_matters": "Excessive heat can lead to premature bearing failure, lubricant breakdown, and potential damage to surrounding components.",
           "how_to_handle": "Check lubrication levels, verify load conditions, inspect for misalignment, and ensure proper clearance. Reduce speed if necessary and monitor temperature.",
-          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80\u00b0C indicate potential problems requiring attention."
+          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80°C indicate potential problems requiring attention."
         },
         {
           "question": "What causes excessive noise in the 16014 bearing?",

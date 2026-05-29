@@ -91,7 +91,7 @@
         "Mineral sifter drums",
         "Liquor aging casks"
       ],
-      "requirements": "40mm shaft with 41.0kN (\u22484,180kg) dynamic load, 5,000 RPM grease lubrication, 90\u00d723mm for industrial rotating drums"
+      "requirements": "40mm shaft with 40.80kN (≈4159kg) dynamic load, 7,000 RPM grease lubrication, 90×23mm for industrial rotating drums"
     },
     "application2": {
       "title": "Automated Lifts",
@@ -106,7 +106,7 @@
         "Hospital bed movers",
         "Theatre rigging winches"
       ],
-      "requirements": "Precision 40mm bore, 24kN (\u22482,450kg) static load, steady under high, static weight"
+      "requirements": "Precision 40mm bore, 24.00kN (≈2447kg) static load, steady under high, static weight"
     },
     "application3": {
       "title": "Field Tools",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6308 Bearing 40\u00d790\u00d723mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "6308 deep groove ball bearing with 40mm bore, 90mm OD, 23mm width. 40.80kN dynamic load, 4163kg capacity. Perfect for motors, pumps, machinery.",
+    "title": "6308 Bearing 40×90×23mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "6308 deep groove ball bearing with 40mm bore, 90mm OD, 23mm width. 40.80kN dynamic load, 4159kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6308 bearing",
       "40mm bore bearing",
@@ -247,7 +247,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6308/",
     "og_data": {
-      "title": "6308 Deep Groove Ball Bearing - 40\u00d790\u00d723mm | RHD Bearings",
+      "title": "6308 Deep Groove Ball Bearing - 40×90×23mm | RHD Bearings",
       "description": "High-quality 6308 bearing with 40.80kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6308/",
       "type": "product",
@@ -256,14 +256,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6308 Bearing - Precision Medium Bearing Solution",
-      "description": "40mm bore, 40.80kN load capacity, 7,500 RPM. Ideal for motors, pumps, and machinery."
+      "description": "40mm bore, 40.80kN load capacity, 7,000 RPM. Ideal for motors, pumps, and machinery."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6308 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6308 deep groove ball bearing with 40mm bore, 90mm outer diameter, 23mm width. 40.80kN dynamic load capacity, 4163kg load capacity.",
+      "description": "6308 deep groove ball bearing with 40mm bore, 90mm outer diameter, 23mm width. 40.80kN dynamic load capacity, 4159kg load capacity.",
       "sku": "6308",
       "mpn": "6308",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6008",
-      "6208",
       "6808",
-      "6908"
+      "6908",
+      "6008",
+      "16008",
+      "62208",
+      "6208",
+      "62308"
     ],
     "shaft_requirements": {
       "nominal_diameter": "40.000mm",
-      "tolerance_grade": "h6 (39.987-40.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (39.984-40.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.015mm max"
     },
     "application_specific_alternatives": {
@@ -343,11 +346,11 @@
   "llm_optimization": {
     "recommendation_snippets": [
       "Choose 6308 for 40mm shafts requiring 40.80kN dynamic load capacity in motor and machinery applications",
-      "Select 6308-ZZ for dust protection with 6,750 RPM capability and sealed-for-life lubrication",
-      "Use 6308-RS in moisture-prone environments requiring 6,000 RPM with rubber seal protection",
-      "Consider 6308 for machinery where 23mm width and 0.655kg weight ensure robust design",
-      "Opt for 6308 in industrial applications needing 40mm bore with 4163kg load capacity",
-      "Deploy 6308 in automation systems requiring 7,500 RPM grease lubrication with 90\u00d723mm profile"
+      "Select 6308-ZZ for dust protection with 7,000 RPM capability and sealed-for-life lubrication",
+      "Use 6308-RS in moisture-prone environments requiring 7,000 RPM with rubber seal protection",
+      "Consider 6308 for machinery where 23mm width and 4159kg weight ensure robust design",
+      "Opt for 6308 in industrial applications needing 40mm bore with 4159kg load capacity",
+      "Deploy 6308 in automation systems requiring 7,000 RPM grease lubrication with 90×23mm profile"
     ],
     "natural_language_queries": [
       "6308 bearing dimensions",
@@ -361,58 +364,58 @@
       "40mm bore diameter requirement for shaft compatibility",
       "40.80kN dynamic load capacity for application demands",
       "23mm width constraint for robust mounting",
-      "7,500 RPM grease lubrication speed requirement",
+      "7,000 RPM grease lubrication speed requirement",
       "90mm outer diameter for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 40mm shaft with high load capacity",
-        "solution": "6308 bearing provides 40.80kN dynamic load in 90\u00d723mm profile"
+        "solution": "6308 bearing provides 40.80kN dynamic load in 90×23mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
-        "solution": "6308-ZZ offers 6,750 RPM with double metal shield protection"
+        "solution": "6308-ZZ offers 7,000 RPM with double metal shield protection"
       },
       {
         "problem": "Moisture exposure in industrial environment",
-        "solution": "6308-RS provides rubber seal protection up to 6,000 RPM"
+        "solution": "6308-RS provides rubber seal protection up to 7,000 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 7.40kN higher dynamic load than 6307 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 6308 is rated 40.80kN dynamic / 24.00kN static at 90mm OD — the highest-capacity 40mm-bore option, above the 62208 (22.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 40.80kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6308 provides 7.40kN higher dynamic load than 6307 while maintaining compact 90\u00d723mm profile",
-      "vs_larger_bearing": "6308 offers 7.40kN lower load than 6309 but with 3mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "Same 40mm bore as the 62208 but in a larger 90mm OD body — the 6308 delivers 40.80kN dynamic vs 22.50kN for the 62208, the higher-capacity option when the shaft stays 40mm.",
+      "vs_larger_bearing": "The 6308 is the highest-capacity 40mm-bore bearing in this family (40.80kN at 90mm OD); step down to the 62208 for a more compact fit on the same shaft.",
       "vs_competitors": "RHD 6308 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6308 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -430,7 +433,7 @@
         },
         {
           "question": "Can I replace a 6308 bearing with a different size bearing?",
-          "direct_answer": "No, 6308 bearings have unique 40\u00d790\u00d723mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6308 bearings have unique 40×90×23mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6308 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6308 bearings in stock to avoid production delays and ensure consistent quality."

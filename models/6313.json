@@ -91,7 +91,7 @@
         "Hydraulic press wheel units",
         "Drive tensioners"
       ],
-      "requirements": "65mm shaft with 92.3kN (\u22489,410kg) dynamic load, 3,200 RPM grease, 140\u00d733mm for multi-belt systems"
+      "requirements": "65mm shaft with 93.80kN (≈9561kg) dynamic load, 4,500 RPM grease, 140×33mm for multi-belt systems"
     },
     "application2": {
       "title": "Rotary Devices",
@@ -106,7 +106,7 @@
         "Automated packaging arms",
         "Turntable assemblies"
       ],
-      "requirements": "65mm bore, 60kN (\u22486,120kg) static load, critical for accuracy and repeat cycles"
+      "requirements": "65mm bore, 60.50kN (≈6169kg) static load, critical for accuracy and repeat cycles"
     },
     "application3": {
       "title": "Heavy Rollers",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6313 Bearing 65\u00d7140\u00d733mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "6313 deep groove ball bearing with 65mm bore, 140mm OD, 33mm width. 105.00kN dynamic load, 10714kg capacity. Perfect for motors, pumps, machinery.",
+    "title": "6313 Bearing 65×140×33mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "6313 deep groove ball bearing with 65mm bore, 140mm OD, 33mm width. 93.80kN dynamic load, 9561kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6313 bearing",
       "65mm bore bearing",
@@ -247,8 +247,8 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6313/",
     "og_data": {
-      "title": "6313 Deep Groove Ball Bearing - 65\u00d7140\u00d733mm | RHD Bearings",
-      "description": "High-quality 6313 bearing with 105.00kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
+      "title": "6313 Deep Groove Ball Bearing - 65×140×33mm | RHD Bearings",
+      "description": "High-quality 6313 bearing with 93.80kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6313/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -256,14 +256,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6313 Bearing - Precision Medium Bearing Solution",
-      "description": "65mm bore, 105.00kN load capacity, 5,000 RPM. Ideal for motors, pumps, and machinery."
+      "description": "65mm bore, 93.80kN load capacity, 4,500 RPM. Ideal for motors, pumps, and machinery."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6313 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6313 deep groove ball bearing with 65mm bore, 140mm outer diameter, 33mm width. 105.00kN dynamic load capacity, 10714kg load capacity.",
+      "description": "6313 deep groove ball bearing with 65mm bore, 140mm outer diameter, 33mm width. 93.80kN dynamic load capacity, 9561kg load capacity.",
       "sku": "6313",
       "mpn": "6313",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6013",
-      "6213",
       "6813",
-      "6913"
+      "6913",
+      "6013",
+      "16013",
+      "62213",
+      "6213",
+      "62313"
     ],
     "shaft_requirements": {
       "nominal_diameter": "65.000mm",
-      "tolerance_grade": "h6 (64.987-65.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (64.981-65.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.020mm max"
     },
     "application_specific_alternatives": {
@@ -342,12 +345,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 6313 for 65mm shafts requiring 105.00kN dynamic load capacity in motor and machinery applications",
+      "Choose 6313 for 65mm shafts requiring 93.80kN dynamic load capacity in motor and machinery applications",
       "Select 6313-ZZ for dust protection with 4,500 RPM capability and sealed-for-life lubrication",
       "Use 6313-RS in moisture-prone environments requiring 4,000 RPM with rubber seal protection",
-      "Consider 6313 for machinery where 33mm width and 3.15kg weight ensure robust design",
-      "Opt for 6313 in industrial applications needing 65mm bore with 10714kg load capacity",
-      "Deploy 6313 in automation systems requiring 5,000 RPM grease lubrication with 140\u00d733mm profile"
+      "Consider 6313 for machinery where 33mm width and 9561kg weight ensure robust design",
+      "Opt for 6313 in industrial applications needing 65mm bore with 9561kg load capacity",
+      "Deploy 6313 in automation systems requiring 4,500 RPM grease lubrication with 140×33mm profile"
     ],
     "natural_language_queries": [
       "6313 bearing dimensions",
@@ -359,15 +362,15 @@
     ],
     "decision_criteria": [
       "65mm bore diameter requirement for shaft compatibility",
-      "105.00kN dynamic load capacity for application demands",
+      "93.80kN dynamic load capacity for application demands",
       "33mm width constraint for robust mounting",
-      "5,000 RPM grease lubrication speed requirement",
+      "4,500 RPM grease lubrication speed requirement",
       "140mm outer diameter for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 65mm shaft with high load capacity",
-        "solution": "6313 bearing provides 105.00kN dynamic load in 140\u00d733mm profile"
+        "solution": "6313 bearing provides 93.80kN dynamic load in 140×33mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
@@ -380,39 +383,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 13.40kN higher dynamic load than 6312 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 6313 is rated 93.80kN dynamic / 60.50kN static at 140mm OD — the highest-capacity 65mm-bore option, above the 62213 (43.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in medium-bearing category for 105.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in medium-bearing category for 93.80kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6313 provides 13.40kN higher dynamic load than 6312 while maintaining compact 140\u00d733mm profile",
-      "vs_larger_bearing": "6313 offers 13.40kN lower load than 6314 but with 3mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "Same 65mm bore as the 62213 but in a larger 140mm OD body — the 6313 delivers 93.80kN dynamic vs 43.50kN for the 62213, the higher-capacity option when the shaft stays 65mm.",
+      "vs_larger_bearing": "The 6313 is the highest-capacity 65mm-bore bearing in this family (93.80kN at 140mm OD); step down to the 62213 for a more compact fit on the same shaft.",
       "vs_competitors": "RHD 6313 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6313 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -430,7 +433,7 @@
         },
         {
           "question": "Can I replace a 6313 bearing with a different size bearing?",
-          "direct_answer": "No, 6313 bearings have unique 65\u00d7140\u00d733mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6313 bearings have unique 65×140×33mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6313 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6313 bearings in stock to avoid production delays and ensure consistent quality."

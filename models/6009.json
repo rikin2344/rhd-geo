@@ -91,7 +91,7 @@
         "Baggage handling conveyors",
         "Industrial roller beds"
       ],
-      "requirements": "45mm shaft with 18.00kN (\u22481,835kg) dynamic load, 7,500 RPM grease lubrication, 85\u00d722mm profile for material handling"
+      "requirements": "45mm shaft with 21.00kN (≈2140kg) dynamic load, 8,000 RPM grease lubrication, 75×16mm profile for material handling"
     },
     "application2": {
       "title": "Precision Axes",
@@ -106,7 +106,7 @@
         "Camera rotation bearings",
         "Optical instrument spindles"
       ],
-      "requirements": "Precision 45mm bore with 12.5kN (\u22481,275kg) static load rating for precise positioning"
+      "requirements": "Precision 45mm bore with 14.80kN (≈1509kg) static load rating for precise positioning"
     },
     "application3": {
       "title": "Heavy Platforms",
@@ -121,7 +121,7 @@
         "Large equipment wheeled bases",
         "Bulk material carts"
       ],
-      "requirements": "45mm bore, 22mm width, supports heavy loads on mobile platforms"
+      "requirements": "45mm bore, 16mm width, supports heavy loads on mobile platforms"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "6009 Bearing 45x75x16mm 21kN Load | RHD Bearings",
-    "meta_description": "6009 deep groove ball bearing: 45x75x16mm, 21kN (2142kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "6009 deep groove ball bearing: 45x75x16mm, 21.00kN (≈2140kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "6009 bearing",
       "45mm bore bearing",
@@ -247,7 +247,7 @@
     "canonical_url": "https://rhdbearings.com/specs/6000-series/6009/",
     "og_data": {
       "title": "6009 Bearing 45x75x16mm 21kN Load | RHD Bearings",
-      "description": "6009 deep groove ball bearing: 45x75x16mm, 21kN (2142kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
+      "description": "6009 deep groove ball bearing: 45x75x16mm, 21.00kN (≈2140kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
       "url": "https://rhdbearings.com/specs/6000-series/6009/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -255,14 +255,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6009 Bearing 45x75x16mm 21kN Load | RHD Bearings",
-      "description": "6009 deep groove ball bearing: 45x75x16mm, 21kN (2142kg) load capacity. Professional grade Gcr15 steel."
+      "description": "6009 deep groove ball bearing: 45x75x16mm, 21.00kN (≈2140kg) load capacity. Professional grade Gcr15 steel."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6009 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6009 deep groove ball bearing: 45x75x16mm, 21kN (2142kg) load capacity. Professional grade Gcr15 steel.",
+      "description": "6009 deep groove ball bearing: 45x75x16mm, 21.00kN (≈2140kg) load capacity. Professional grade Gcr15 steel.",
       "sku": "6009",
       "mpn": "6009",
       "brand": "RHD Bearings",
@@ -300,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -322,15 +322,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6809",
+      "6909",
+      "16009",
+      "62209",
       "6209",
       "6309",
-      "6809",
-      "6909"
+      "62309"
     ],
     "shaft_requirements": {
       "nominal_diameter": "45.000mm",
-      "tolerance_grade": "h6 (44.987-45.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (44.984-45.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -371,39 +374,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 1kN more load than 6008 while maintaining same width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 45mm bore (ID) with 6809, 6909, 16009, so it can be considered where the shaft is fixed at 45mm. The 6009 is rated 21.00kN dynamic / 14.80kN static at 75mm OD — more capacity than the 6909 (14.10kN) and less than the heavier-duty 62209 (23.20kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in 45mm bearing category for 21kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6009 provides 1kN more load capacity than 6008 while maintaining same width",
-      "vs_larger_bearing": "More compact than 6010 while delivering 95% of its load capacity",
+      "vs_smaller_bearing": "Same 45mm bore as the 6909 but in a larger 75mm OD body — the 6009 delivers 21.00kN dynamic vs 14.10kN for the 6909, the higher-capacity option when the shaft stays 45mm.",
+      "vs_larger_bearing": "Need more load on the same 45mm shaft? The 62209 (85mm OD, 23.20kN) is the heavier-duty same-bore alternative to the 6009 (21.00kN) — choose the 6009 to save radial space.",
       "vs_competitors": "Superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "Premium quality at competitive pricing with 3-10x longer service life"
     }

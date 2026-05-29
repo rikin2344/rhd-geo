@@ -91,7 +91,7 @@
         "Cement mixer pump drives",
         "Chemical dispensing motors"
       ],
-      "requirements": "50mm shaft with 24.5kN (\u22482,500kg) dynamic, 4,300 RPM grease, 90x23mm for pump and transmission drives"
+      "requirements": "50mm shaft with 23.20kN (≈2364kg) dynamic, 7,100 RPM grease, 90x23mm for pump and transmission drives"
     },
     "application2": {
       "title": "Bearing Supports",
@@ -106,7 +106,7 @@
         "Bending machine supports",
         "Precision load rotators"
       ],
-      "requirements": "50mm bore, 18.1kN (\u22481,845kg) static, engineered for secure support"
+      "requirements": "50mm bore, 8.45kN (≈862kg) static, engineered for secure support"
     },
     "application3": {
       "title": "Machinery Movers",
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "62210 Bearing 50x90x23mm | RHD Bearings",
-    "meta_description": "62210 deep groove ball bearing: 50x90x23mm, 2366kg load capacity, 7,100 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "62210 deep groove ball bearing: 50x90x23mm, 2364kg load capacity, 7,100 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "62210 bearing",
       "50mm bore bearing",
@@ -248,7 +248,7 @@
     "canonical_url": "https://rhdbearings.com/specs/62200-series/62210/",
     "og_data": {
       "title": "62210 Bearing 50x90x23mm | RHD Bearings",
-      "description": "Professional 62210 deep groove ball bearing with 50x90x23mm dimensions and 2366kg load capacity. Gcr15 steel construction.",
+      "description": "Professional 62210 deep groove ball bearing with 50x90x23mm dimensions and 2364kg load capacity. Gcr15 steel construction.",
       "url": "https://rhdbearings.com/specs/62200-series/62210/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -256,14 +256,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "62210 Bearing 50x90x23mm | RHD Bearings",
-      "description": "Professional 62210 deep groove ball bearing with 50x90x23mm dimensions and 2366kg load capacity."
+      "description": "Professional 62210 deep groove ball bearing with 50x90x23mm dimensions and 2364kg load capacity."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "62210 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Professional 62210 deep groove ball bearing with 50x90x23mm dimensions, 2366kg load capacity, and Gcr15 steel construction.",
+      "description": "Professional 62210 deep groove ball bearing with 50x90x23mm dimensions, 2364kg load capacity, and Gcr15 steel construction.",
       "sku": "62210",
       "mpn": "62210",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6210",
-      "6310",
       "6810",
-      "6910"
+      "6910",
+      "16010",
+      "6010",
+      "6210",
+      "62310",
+      "6310"
     ],
     "shaft_requirements": {
       "nominal_diameter": "50.000mm",
-      "tolerance_grade": "h6 (49.987-50.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (49.984-50.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,39 +375,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 23.2kN load capacity in compact 50x90x23mm design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 62210 is rated 23.20kN dynamic / 8.45kN static at 90mm OD — more capacity than the 16010 (16.10kN) and less than the heavier-duty 62310 (64.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in 50mm bore category for 23.2kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "62210 provides 23.2kN load capacity vs 22kN in smaller 50mm bearings",
-      "vs_larger_bearing": "Compact 50x90x23mm design saves space vs larger alternatives",
+      "vs_smaller_bearing": "Same 50mm bore as the 16010 but in a larger 90mm OD body — the 62210 delivers 23.20kN dynamic vs 16.10kN for the 16010, the higher-capacity option when the shaft stays 50mm.",
+      "vs_larger_bearing": "Need more load on the same 50mm shaft? The 62310 (110mm OD, 64.50kN) is the heavier-duty same-bore alternative to the 62210 (23.20kN) — choose the 62210 to save radial space.",
       "vs_competitors": "RHD Gcr15 steel construction outperforms standard steel bearings",
       "cost_benefit": "Professional quality at competitive pricing with 3-10x longer service life"
     }
@@ -443,7 +446,7 @@
           "question": "What's the proper installation procedure for 62210 bearing?",
           "direct_answer": "Use proper bearing installation tools, apply force to outer ring only, and ensure shaft and housing are clean and properly sized.",
           "why_matters": "Correct installation prevents bearing damage, ensures optimal performance, and maximizes service life.",
-          "how_to_handle": "Heat housing to 80-100\u00b0C for interference fits, use installation sleeves, and avoid hammering directly on bearing.",
+          "how_to_handle": "Heat housing to 80-100°C for interference fits, use installation sleeves, and avoid hammering directly on bearing.",
           "pro_tip": "Professional installation can extend bearing life by 50% compared to improper methods."
         },
         {
@@ -451,7 +454,7 @@
           "direct_answer": "Open bearings require regular lubrication every 3-6 months; sealed bearings are lubricated for life and don't require maintenance.",
           "why_matters": "Proper lubrication prevents wear, reduces friction, and maintains optimal operating temperature.",
           "how_to_handle": "Use high-quality grease suitable for bearing speed and temperature conditions.",
-          "pro_tip": "Monitor bearing temperature - increase of 15\u00b0C above ambient indicates lubrication issues."
+          "pro_tip": "Monitor bearing temperature - increase of 15°C above ambient indicates lubrication issues."
         },
         {
           "question": "What's the expected service life of 62210 bearing?",
@@ -470,7 +473,7 @@
           "direct_answer": "Overheating usually indicates insufficient lubrication, excessive load, or misalignment issues.",
           "why_matters": "High temperature accelerates wear and can lead to premature bearing failure.",
           "how_to_handle": "Check lubrication levels, verify load ratings, and inspect for misalignment or contamination.",
-          "pro_tip": "Temperature increase of 15\u00b0C above ambient requires immediate attention."
+          "pro_tip": "Temperature increase of 15°C above ambient requires immediate attention."
         },
         {
           "question": "What causes excessive noise in 62210 bearing?",

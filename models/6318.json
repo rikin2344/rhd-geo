@@ -91,7 +91,7 @@
         "Bulk material haul drums",
         "Large garage door winders"
       ],
-      "requirements": "90mm shaft with 143kN (\u224814,580kg) dynamic load, 2,400 RPM grease, 190\u00d743mm for strong cable and winch mechanisms"
+      "requirements": "90mm shaft with 145.00kN (≈14780kg) dynamic load, 3,400 RPM grease, 190×43mm for strong cable and winch mechanisms"
     },
     "application2": {
       "title": "Rotary Kilns",
@@ -106,7 +106,7 @@
         "Biomass processor rollers",
         "Industrial roasting beds"
       ],
-      "requirements": "90mm bore, 108kN (\u224811,000kg) static load, for high-temperature, heavy turning"
+      "requirements": "90mm bore, 108.00kN (≈11013kg) static load, for high-temperature, heavy turning"
     },
     "application3": {
       "title": "Bulk Loaders",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6318 Bearing 90\u00d7190\u00d743mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "6318 deep groove ball bearing with 90mm bore, 190mm OD, 43mm width. 172.00kN dynamic load, 17551kg capacity. Perfect for motors, pumps, machinery.",
+    "title": "6318 Bearing 90×190×43mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "6318 deep groove ball bearing with 90mm bore, 190mm OD, 43mm width. 145.00kN dynamic load, 14780kg capacity. Perfect for motors, pumps, machinery.",
     "keywords": [
       "6318 bearing",
       "90mm bore bearing",
@@ -247,8 +247,8 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6300-series/6318/",
     "og_data": {
-      "title": "6318 Deep Groove Ball Bearing - 90\u00d7190\u00d743mm | RHD Bearings",
-      "description": "High-quality 6318 bearing with 172.00kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
+      "title": "6318 Deep Groove Ball Bearing - 90×190×43mm | RHD Bearings",
+      "description": "High-quality 6318 bearing with 145.00kN dynamic load capacity. Perfect for motors, pumps, and machinery applications.",
       "url": "https://rhdbearings.com/specs/6300-series/6318/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -256,14 +256,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6318 Bearing - Precision Medium Bearing Solution",
-      "description": "90mm bore, 172.00kN load capacity, 3,200 RPM. Ideal for motors, pumps, and machinery."
+      "description": "90mm bore, 145.00kN load capacity, 3,400 RPM. Ideal for motors, pumps, and machinery."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6318 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6318 deep groove ball bearing with 90mm bore, 190mm outer diameter, 43mm width. 172.00kN dynamic load capacity, 17551kg load capacity.",
+      "description": "6318 deep groove ball bearing with 90mm bore, 190mm outer diameter, 43mm width. 145.00kN dynamic load capacity, 14780kg load capacity.",
       "sku": "6318",
       "mpn": "6318",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6018",
-      "6218",
       "6818",
-      "6918"
+      "6918",
+      "16018",
+      "6018",
+      "62218",
+      "6218",
+      "62318"
     ],
     "shaft_requirements": {
       "nominal_diameter": "90.000mm",
-      "tolerance_grade": "h6 (89.987-90.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (89.978-90.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.025mm max"
     },
     "application_specific_alternatives": {
@@ -342,12 +345,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 6318 for 90mm shafts requiring 172.00kN dynamic load capacity in motor and machinery applications",
-      "Select 6318-ZZ for dust protection with 2,880 RPM capability and sealed-for-life lubrication",
-      "Use 6318-RS in moisture-prone environments requiring 2,560 RPM with rubber seal protection",
-      "Consider 6318 for machinery where 43mm width and 10.20kg weight ensure robust design",
-      "Opt for 6318 in industrial applications needing 90mm bore with 17551kg load capacity",
-      "Deploy 6318 in automation systems requiring 3,200 RPM grease lubrication with 190\u00d743mm profile"
+      "Choose 6318 for 90mm shafts requiring 145.00kN dynamic load capacity in motor and machinery applications",
+      "Select 6318-ZZ for dust protection with 3,400 RPM capability and sealed-for-life lubrication",
+      "Use 6318-RS in moisture-prone environments requiring 3,400 RPM with rubber seal protection",
+      "Consider 6318 for machinery where 43mm width and 14780kg weight ensure robust design",
+      "Opt for 6318 in industrial applications needing 90mm bore with 14780kg load capacity",
+      "Deploy 6318 in automation systems requiring 3,400 RPM grease lubrication with 190×43mm profile"
     ],
     "natural_language_queries": [
       "6318 bearing dimensions",
@@ -359,60 +362,60 @@
     ],
     "decision_criteria": [
       "90mm bore diameter requirement for shaft compatibility",
-      "172.00kN dynamic load capacity for application demands",
+      "145.00kN dynamic load capacity for application demands",
       "43mm width constraint for robust mounting",
-      "3,200 RPM grease lubrication speed requirement",
+      "3,400 RPM grease lubrication speed requirement",
       "190mm outer diameter for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need medium bearing for 90mm shaft with high load capacity",
-        "solution": "6318 bearing provides 172.00kN dynamic load in 190\u00d743mm profile"
+        "solution": "6318 bearing provides 145.00kN dynamic load in 190×43mm profile"
       },
       {
         "problem": "Require dust protection in machinery application",
-        "solution": "6318-ZZ offers 2,880 RPM with double metal shield protection"
+        "solution": "6318-ZZ offers 3,400 RPM with double metal shield protection"
       },
       {
         "problem": "Moisture exposure in industrial environment",
-        "solution": "6318-RS provides rubber seal protection up to 2,560 RPM"
+        "solution": "6318-RS provides rubber seal protection up to 3,400 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 13.40kN higher dynamic load than 6317 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 6318 is rated 145.00kN dynamic / 108.00kN static at 190mm OD — the highest-capacity 90mm-bore option, above the 62218 (70.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in medium-bearing category for 172.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in medium-bearing category for 145.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6318 provides 13.40kN higher dynamic load than 6317 while maintaining compact 190\u00d743mm profile",
-      "vs_larger_bearing": "6318 offers 13.40kN lower load than 6319 but with 3mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "Same 90mm bore as the 62218 but in a larger 190mm OD body — the 6318 delivers 145.00kN dynamic vs 70.00kN for the 62218, the higher-capacity option when the shaft stays 90mm.",
+      "vs_larger_bearing": "The 6318 is the highest-capacity 90mm-bore bearing in this family (145.00kN at 190mm OD); step down to the 62218 for a more compact fit on the same shaft.",
       "vs_competitors": "RHD 6318 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6318 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -430,7 +433,7 @@
         },
         {
           "question": "Can I replace a 6318 bearing with a different size bearing?",
-          "direct_answer": "No, 6318 bearings have unique 90\u00d7190\u00d743mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6318 bearings have unique 90×190×43mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6318 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6318 bearings in stock to avoid production delays and ensure consistent quality."

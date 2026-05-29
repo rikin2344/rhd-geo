@@ -43,7 +43,7 @@
   "dimensions": {
     "bore_diameter_d_mm": 6,
     "outer_diameter_D_mm": 13,
-    "width_B_mm": 3.5,
+    "width_B_mm": 5,
     "weight_kg": 0.0021,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
@@ -91,7 +91,7 @@
         "optical testing systems",
         "wavefront sensors"
       ],
-      "requirements": "6mm shaft with 3.15kN dynamic load capacity, 28,000 RPM grease lubrication, precision 19\u00d76mm profile for optical system stability"
+      "requirements": "6mm shaft with 0.72kN dynamic load capacity, 39,000 RPM grease lubrication, precision 13×5mm profile for optical system stability"
     },
     "application2": {
       "title": "Advanced Robotics",
@@ -106,7 +106,7 @@
         "robotic joints",
         "automation systems"
       ],
-      "requirements": "Precision 6mm bore with 0.3mm chamfer radius, 1.15kN static load rating for robotic stability, 321kg load capacity for precise movement"
+      "requirements": "Precision 6mm bore with 0.3mm chamfer radius, 0.40kN static load rating for robotic stability, 41kg load capacity for precise movement"
     },
     "application3": {
       "title": "Precision Manufacturing",
@@ -121,7 +121,7 @@
         "assembly equipment",
         "testing systems"
       ],
-      "requirements": "6mm bore fits manufacturing shafts, 6mm width for robust mounting, 0.008kg weight for efficiency, 36,000 RPM oil lubrication capability"
+      "requirements": "6mm bore fits manufacturing shafts, 5mm width for robust mounting, 73kg weight for efficiency, 46,000 RPM oil lubrication capability"
     }
   },
   "vibration": {
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "686 Bearing 6\u00d719\u00d76mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "686 deep groove ball bearing with 6mm bore, 19mm OD, 6mm width. 3.15kN dynamic load, 321kg capacity. Perfect for precision optical systems, advanced robotics, precision manufacturing.",
+    "title": "686 Bearing 6×13×5mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "686 deep groove ball bearing with 6mm bore, 13mm OD, 5mm width. 0.72kN dynamic load, 73kg capacity. Perfect for precision optical systems, advanced robotics, precision manufacturing.",
     "keywords": [
       "686 bearing",
       "6mm bore bearing",
@@ -248,8 +248,8 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/686/",
     "og_data": {
-      "title": "686 Deep Groove Ball Bearing - 6\u00d719\u00d76mm | RHD Bearings",
-      "description": "Precision optical system 686 miniature bearing with 3.15kN dynamic load capacity. Perfect for optical systems, robotics, and precision manufacturing.",
+      "title": "686 Deep Groove Ball Bearing - 6×13×5mm | RHD Bearings",
+      "description": "Precision optical system 686 miniature bearing with 0.72kN dynamic load capacity. Perfect for optical systems, robotics, and precision manufacturing.",
       "url": "https://rhdbearings.com/specs/miniature-series/686/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -257,14 +257,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "686 Bearing - Precision Optical System Solution",
-      "description": "6mm bore, 3.15kN load capacity, 28,000 RPM. Ideal for precision optical systems, advanced robotics, and precision manufacturing."
+      "description": "6mm bore, 0.72kN load capacity, 39,000 RPM. Ideal for precision optical systems, advanced robotics, and precision manufacturing."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "686 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "686 deep groove ball bearing with 6mm bore, 19mm outer diameter, 6mm width. 3.15kN dynamic load capacity, 321kg load capacity.",
+      "description": "686 deep groove ball bearing with 6mm bore, 13mm OD, 5mm width. 0.72kN dynamic load capacity, 73kg load capacity.",
       "sku": "686",
       "mpn": "686",
       "brand": "RHD Bearings",
@@ -302,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -324,15 +324,14 @@
   },
   "cross_references": {
     "related_models": [
+      "696",
       "606",
-      "626",
-      "646",
-      "656"
+      "626"
     ],
     "shaft_requirements": {
       "nominal_diameter": "6.000mm",
-      "tolerance_grade": "h6 (5.991-6.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (5.992-6.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -343,12 +342,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 686 for 6mm shafts requiring 3.15kN dynamic load capacity in precision optical system applications",
-      "Select 686-ZZ for dust protection with 25,200 RPM capability and sealed-for-life lubrication",
-      "Use 686-RS in moisture-prone environments requiring 22,400 RPM with rubber seal protection",
-      "Consider 686 for optical systems where 19\u00d76mm profile and 321kg load capacity optimize performance",
+      "Choose 686 for 6mm shafts requiring 0.72kN dynamic load capacity in precision optical system applications",
+      "Select 686-ZZ for dust protection with 39,000 RPM capability and sealed-for-life lubrication",
+      "Use 686-RS in moisture-prone environments requiring 39,000 RPM with rubber seal protection",
+      "Consider 686 for optical systems where 13×5mm profile and 73kg load capacity optimize performance",
       "Opt for 686 in robotics needing 0.3mm chamfer radius and stable positioning",
-      "Deploy 686 in manufacturing requiring 28,000 RPM grease lubrication with precision design"
+      "Deploy 686 in manufacturing requiring 39,000 RPM grease lubrication with precision design"
     ],
     "natural_language_queries": [
       "686 bearing dimensions",
@@ -360,60 +359,60 @@
     ],
     "decision_criteria": [
       "6mm bore diameter requirement for shaft compatibility",
-      "3.15kN dynamic load capacity for application demands",
-      "6mm width constraint for robust mounting",
-      "28,000 RPM grease lubrication speed requirement",
-      "19mm outer diameter for housing fit"
+      "0.72kN dynamic load capacity for application demands",
+      "5mm width constraint for robust mounting",
+      "39,000 RPM grease lubrication speed requirement",
+      "13mm OD for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need precision bearing for 6mm shaft with substantial load capacity",
-        "solution": "686 bearing provides 3.15kN dynamic load in 19\u00d76mm profile"
+        "solution": "686 bearing provides 0.72kN dynamic load in 13×5mm profile"
       },
       {
         "problem": "Require dust protection in optical application",
-        "solution": "686-ZZ offers 25,200 RPM with double metal shield protection"
+        "solution": "686-ZZ offers 39,000 RPM with double metal shield protection"
       },
       {
         "problem": "Moisture exposure in manufacturing environment",
-        "solution": "686-RS provides rubber seal protection up to 22,400 RPM"
+        "solution": "686-RS provides rubber seal protection up to 39,000 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "6mm bore with 3.15kN load capacity and 28,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 6mm bore (ID) with 696, 606, 626, so it can be considered where the shaft is fixed at 6mm. The 686 is rated 0.72kN dynamic / 0.40kN static at 13mm OD — the most compact 6mm-bore option, below the 696 (1.48kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in miniature bearing category for 3.15kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in miniature bearing category for 0.72kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "686 provides 1.27kN higher dynamic load than 685 with 1mm larger bore for enhanced optical system performance",
-      "vs_larger_bearing": "686 offers 0.85kN lower load than 627 but with 1mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "The 686 is the most compact 6mm-bore bearing in this family (13mm OD, 0.72kN); the 696 adds load capacity on the same 6mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 6mm shaft? The 696 (15mm OD, 1.48kN) is the heavier-duty same-bore alternative to the 686 (0.72kN) — choose the 686 to save radial space.",
       "vs_competitors": "RHD 686 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "686 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -431,7 +430,7 @@
         },
         {
           "question": "Can I replace a 686 bearing with a different size bearing?",
-          "direct_answer": "No, 686 bearings have unique 6\u00d719\u00d76mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 686 bearings have unique 6x13x5mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 686 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 686 bearings in stock to avoid production delays and ensure consistent quality."

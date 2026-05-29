@@ -91,7 +91,7 @@
         "Fume vent drums",
         "Blower stage supports"
       ],
-      "requirements": "85mm shaft with 58.5kN (\u22485,970kg) dynamic, 2,600 RPM grease, 150x35mm for process plant usage"
+      "requirements": "85mm shaft with 58.20kN (≈5932kg) dynamic, 3,900 RPM grease, 150×36mm for process plant usage"
     },
     "application2": {
       "title": "Bulk Lifters",
@@ -106,7 +106,7 @@
         "Line chain raise beds",
         "Industrial stacking lifts"
       ],
-      "requirements": "85mm bore, 46kN (\u22484,690kg) static, hefty for storage and lifting"
+      "requirements": "85mm bore, 23.50kN (≈2396kg) static, hefty for storage and lifting"
     },
     "application3": {
       "title": "Platform Axles",
@@ -121,7 +121,7 @@
         "High capacity move trays",
         "Slab carrier axles"
       ],
-      "requirements": "85mm bore, 35mm width, vital for platform shift roles"
+      "requirements": "85mm bore, 36mm width, vital for platform shift roles"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "62217 Bearing 85x150x36mm | RHD Bearings",
-    "meta_description": "62217 deep groove ball bearing: 85mm bore, 150mm OD, 36mm width. Handles 5936kg load. Premium Gcr15 steel construction from Mumbai, India.",
+    "meta_description": "62217 deep groove ball bearing: 85mm bore, 150mm OD, 36mm width. Handles 5932kg load. Premium Gcr15 steel construction from Mumbai, India.",
     "keywords": [
       "62217 bearing",
       "85mm bearing",
@@ -246,7 +246,7 @@
     "canonical_url": "https://rhdbearings.com/specs/62200-series/62217/",
     "og_data": {
       "title": "62217 Bearing 85x150x36mm | High-Load Industrial Bearing",
-      "description": "Professional 62217 deep groove ball bearing with 5936kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai.",
+      "description": "Professional 62217 deep groove ball bearing with 5932kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai.",
       "url": "https://rhdbearings.com/specs/62200-series/62217/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -254,14 +254,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "62217 Bearing 85x150x36mm | High-Load Industrial Bearing",
-      "description": "Professional 62217 deep groove ball bearing with 5936kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai."
+      "description": "Professional 62217 deep groove ball bearing with 5932kg capacity. Premium Gcr15 steel construction. Immediate availability from Mumbai."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "62217 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Professional 62217 deep groove ball bearing with 85mm bore, 150mm outer diameter, and 36mm width. Handles 5936kg load capacity with premium Gcr15 steel construction.",
+      "description": "Professional 62217 deep groove ball bearing with 85mm bore, 150mm outer diameter, and 36mm width. Handles 5932kg load capacity with premium Gcr15 steel construction.",
       "sku": "62217",
       "mpn": "62217",
       "brand": "RHD Bearings",
@@ -299,9 +299,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -321,14 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6817",
+      "6917",
+      "6017",
+      "16017",
       "6217",
-      "6317",
-      "16017"
+      "62317",
+      "6317"
     ],
     "shaft_requirements": {
       "nominal_diameter": "85.000mm",
-      "tolerance_grade": "h6 (84.987-85.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (84.978-85.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -339,7 +343,7 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Heavy-duty 85mm bearing handles 5936kg load - perfect for large industrial machinery",
+      "Heavy-duty 85mm bearing handles 5932kg load - perfect for large industrial machinery",
       "Premium Gcr15 steel construction ensures reliable 3900 RPM performance in demanding applications",
       "Extended 36mm width design maximizes load capacity while maintaining compact profile",
       "Professional-grade bearing ideal for heavy equipment and automotive applications",
@@ -356,7 +360,7 @@
     ],
     "decision_criteria": [
       "85mm shaft diameter requirement - exact dimensional match needed",
-      "5936kg load capacity requirement - handles heavy industrial applications",
+      "5932kg load capacity requirement - handles heavy industrial applications",
       "3900 RPM speed rating - suitable for medium-speed machinery operations",
       "36mm width constraint - extended design for space-available applications",
       "Gcr15 steel material requirement - premium grade for demanding conditions"
@@ -364,44 +368,44 @@
     "problem_solution_mapping": [
       {
         "problem": "Heavy machinery bearing failure under extreme loads",
-        "solution": "62217 bearing handles 5936kg loads with premium Gcr15 steel construction for extended service life"
+        "solution": "62217 bearing handles 5932kg loads with premium Gcr15 steel construction for extended service life"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty applications, providing superior hardness, wear resistance, and fatigue life under extreme loads."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures in heavy-duty applications."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 5936kg load capacity with extended 36mm width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 62217 is rated 58.20kN dynamic / 23.50kN static at 150mm OD — more capacity than the 6017 (50.80kN) and less than the heavier-duty 62317 (140.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Premium quality with competitive pricing for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "Significantly higher 5936kg load capacity compared to smaller bearings",
-      "vs_larger_bearing": "More compact 36mm width compared to larger alternatives",
+      "vs_smaller_bearing": "Same 85mm bore as the 6017 but in a larger 150mm OD body — the 62217 delivers 58.20kN dynamic vs 50.80kN for the 6017, the higher-capacity option when the shaft stays 85mm.",
+      "vs_larger_bearing": "Need more load on the same 85mm shaft? The 62317 (180mm OD, 140.00kN) is the heavier-duty same-bore alternative to the 62217 (58.20kN) — choose the 62217 to save radial space.",
       "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
       "cost_benefit": "Higher upfront cost justified by extended service life and reliability"
     }
@@ -440,7 +444,7 @@
           "question": "What tools are needed to install a 2.53kg 62217 bearing properly?",
           "direct_answer": "Hydraulic bearing puller, induction heater, and precision measuring tools for proper 85mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 2.53kg weight and 85mm bore require specialized tools to avoid damage during installation. The extended 36mm width makes alignment critical to prevent edge loading and internal stress.",
-          "how_to_handle": "Heat bearing to 80-100\u00b0C for thermal expansion. Use hydraulic tools for removal and installation. Verify shaft tolerances (h6: 84.987-85.013mm) and housing fit. Never hammer or force-fit the bearing.",
+          "how_to_handle": "Heat bearing to 80-100°C for thermal expansion. Use hydraulic tools for removal and installation. Verify shaft tolerances (h6: 84.987-85.013mm) and housing fit. Never hammer or force-fit the bearing.",
           "pro_tip": "Induction heaters provide even heating and prevent overheating - critical for maintaining bearing metallurgy."
         },
         {
@@ -466,7 +470,7 @@
           "question": "Why does my 62217 bearing overheat under 5500kg loads?",
           "direct_answer": "5500kg is 93% of capacity - check lubrication quality, alignment, and consider cooling improvements.",
           "why_matters": "Operating at 93% of rated capacity generates substantial heat, especially with inadequate lubrication or slight misalignment. The small safety margin leaves no room for contamination, temperature effects, or shock loads that increase effective loading.",
-          "how_to_handle": "Verify actual loads including dynamic and shock factors. Check alignment within 0.013mm tolerance. Ensure adequate lubrication flow and heat dissipation. Consider forced cooling or larger bearing if temperatures exceed 70\u00b0C consistently.",
+          "how_to_handle": "Verify actual loads including dynamic and shock factors. Check alignment within 0.013mm tolerance. Ensure adequate lubrication flow and heat dissipation. Consider forced cooling or larger bearing if temperatures exceed 70°C consistently.",
           "pro_tip": "Thermal imaging reveals hot spots indicating misalignment or inadequate lubrication - address immediately."
         },
         {

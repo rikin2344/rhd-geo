@@ -43,7 +43,7 @@
   "dimensions": {
     "bore_diameter_d_mm": 4,
     "outer_diameter_D_mm": 9,
-    "width_B_mm": 2.5,
+    "width_B_mm": 4,
     "weight_kg": 0.0008,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
@@ -91,7 +91,7 @@
         "quality control systems",
         "inspection equipment"
       ],
-      "requirements": "4mm shaft with 1.15kN dynamic load capacity, 36,000 RPM grease lubrication, precision 13\u00d75mm profile for ultra-precision measurement applications"
+      "requirements": "4mm shaft with 0.35kN dynamic load capacity, 49,000 RPM grease lubrication, precision 9×4mm profile for ultra-precision measurement applications"
     },
     "application2": {
       "title": "Advanced Optics",
@@ -106,7 +106,7 @@
         "optical testing systems",
         "spectroscopic instruments"
       ],
-      "requirements": "Precision 4mm bore with 0.3mm chamfer radius, 0.42kN static load rating for stable operation, 117kg load capacity for optical accuracy"
+      "requirements": "Precision 4mm bore with 0.3mm chamfer radius, 0.40kN static load rating for stable operation, 41kg load capacity for optical accuracy"
     },
     "application3": {
       "title": "Micro-Manufacturing",
@@ -121,7 +121,7 @@
         "micro-assembly systems",
         "precision fixtures"
       ],
-      "requirements": "4mm bore fits micro-manufacturing shafts, 5mm width for compact mounting, 0.002kg weight for efficiency, 45,000 RPM oil lubrication capability"
+      "requirements": "4mm bore fits micro-manufacturing shafts, 4mm width for compact mounting, 35kg weight for efficiency, 57,000 RPM oil lubrication capability"
     }
   },
   "vibration": {
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "684 Bearing 4\u00d713\u00d75mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "684 deep groove ball bearing with 4mm bore, 13mm OD, 5mm width. 1.15kN dynamic load, 117kg capacity. Perfect for ultra-precision measurement, advanced optics, micro-manufacturing.",
+    "title": "684 Bearing 4×9×4mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "684 deep groove ball bearing with 4mm bore, 9mm OD, 4mm width. 0.35kN dynamic load, 35kg capacity. Perfect for ultra-precision measurement, advanced optics, micro-manufacturing.",
     "keywords": [
       "684 bearing",
       "4mm bore bearing",
@@ -248,8 +248,8 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/684/",
     "og_data": {
-      "title": "684 Deep Groove Ball Bearing - 4\u00d713\u00d75mm | RHD Bearings",
-      "description": "Ultra-precision measurement 684 miniature bearing with 1.15kN dynamic load capacity. Perfect for measurement, optics, and micro-manufacturing.",
+      "title": "684 Deep Groove Ball Bearing - 4×9×4mm | RHD Bearings",
+      "description": "Ultra-precision measurement 684 miniature bearing with 0.35kN dynamic load capacity. Perfect for measurement, optics, and micro-manufacturing.",
       "url": "https://rhdbearings.com/specs/miniature-series/684/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -257,14 +257,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "684 Bearing - Ultra-Precision Measurement Solution",
-      "description": "4mm bore, 1.15kN load capacity, 36,000 RPM. Ideal for ultra-precision measurement, advanced optics, and micro-manufacturing."
+      "description": "4mm bore, 0.35kN load capacity, 49,000 RPM. Ideal for ultra-precision measurement, advanced optics, and micro-manufacturing."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "684 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "684 deep groove ball bearing with 4mm bore, 13mm outer diameter, 5mm width. 1.15kN dynamic load capacity, 117kg load capacity.",
+      "description": "684 deep groove ball bearing with 4mm bore, 9mm OD, 4mm width. 0.35kN dynamic load capacity, 35kg load capacity.",
       "sku": "684",
       "mpn": "684",
       "brand": "RHD Bearings",
@@ -302,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -324,15 +324,15 @@
   },
   "cross_references": {
     "related_models": [
+      "694",
       "604",
       "624",
-      "644",
-      "654"
+      "634"
     ],
     "shaft_requirements": {
       "nominal_diameter": "4.000mm",
-      "tolerance_grade": "h6 (3.991-4.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (3.992-4.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -343,12 +343,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 684 for 4mm shafts requiring 1.15kN dynamic load capacity in ultra-precision measurement applications",
-      "Select 684-ZZ for dust protection with 32,400 RPM capability and sealed-for-life lubrication",
-      "Use 684-RS in moisture-prone environments requiring 28,800 RPM with rubber seal protection",
-      "Consider 684 for measurement systems where 13\u00d75mm profile and 117kg load capacity optimize performance",
+      "Choose 684 for 4mm shafts requiring 0.35kN dynamic load capacity in ultra-precision measurement applications",
+      "Select 684-ZZ for dust protection with 49,000 RPM capability and sealed-for-life lubrication",
+      "Use 684-RS in moisture-prone environments requiring 49,000 RPM with rubber seal protection",
+      "Consider 684 for measurement systems where 9×4mm profile and 35kg load capacity optimize performance",
       "Opt for 684 in advanced optics needing 0.3mm chamfer radius and stable positioning",
-      "Deploy 684 in micro-manufacturing requiring 36,000 RPM grease lubrication with precision design"
+      "Deploy 684 in micro-manufacturing requiring 49,000 RPM grease lubrication with precision design"
     ],
     "natural_language_queries": [
       "684 bearing dimensions",
@@ -360,60 +360,60 @@
     ],
     "decision_criteria": [
       "4mm bore diameter requirement for shaft compatibility",
-      "1.15kN dynamic load capacity for application demands",
-      "5mm width constraint for compact mounting",
-      "36,000 RPM grease lubrication speed requirement",
-      "13mm outer diameter for housing fit"
+      "0.35kN dynamic load capacity for application demands",
+      "4mm width constraint for compact mounting",
+      "49,000 RPM grease lubrication speed requirement",
+      "9mm OD for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need ultra-precision bearing for 4mm shaft with substantial load capacity",
-        "solution": "684 bearing provides 1.15kN dynamic load in 13\u00d75mm profile"
+        "solution": "684 bearing provides 0.35kN dynamic load in 9×4mm profile"
       },
       {
         "problem": "Require dust protection in measurement application",
-        "solution": "684-ZZ offers 32,400 RPM with double metal shield protection"
+        "solution": "684-ZZ offers 49,000 RPM with double metal shield protection"
       },
       {
         "problem": "Moisture exposure in laboratory environment",
-        "solution": "684-RS provides rubber seal protection up to 28,800 RPM"
+        "solution": "684-RS provides rubber seal protection up to 49,000 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "4mm bore with 1.15kN load capacity and 36,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 4mm bore (ID) with 694, 604, 624, so it can be considered where the shaft is fixed at 4mm. The 684 is rated 0.35kN dynamic / 0.40kN static at 9mm OD — the most compact 4mm-bore option, below the 694 (0.95kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in miniature bearing category for 1.15kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in miniature bearing category for 0.35kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "684 provides 0.50kN higher dynamic load than 683 with 1mm larger bore for enhanced measurement performance",
-      "vs_larger_bearing": "684 offers 0.73kN lower load than 625 but with 1mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "The 684 is the most compact 4mm-bore bearing in this family (9mm OD, 0.35kN); the 694 adds load capacity on the same 4mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 4mm shaft? The 694 (11mm OD, 0.95kN) is the heavier-duty same-bore alternative to the 684 (0.35kN) — choose the 684 to save radial space.",
       "vs_competitors": "RHD 684 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "684 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -431,7 +431,7 @@
         },
         {
           "question": "Can I replace a 684 bearing with a different size bearing?",
-          "direct_answer": "No, 684 bearings have unique 4\u00d713\u00d75mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 684 bearings have unique 4x9x4mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 684 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 684 bearings in stock to avoid production delays and ensure consistent quality."

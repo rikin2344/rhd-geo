@@ -43,7 +43,7 @@
   "dimensions": {
     "bore_diameter_d_mm": 3,
     "outer_diameter_D_mm": 7,
-    "width_B_mm": 2,
+    "width_B_mm": 3,
     "weight_kg": 0.00075,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
@@ -91,7 +91,7 @@
         "nano-manipulators",
         "quantum microscopes"
       ],
-      "requirements": "3mm shaft with 0.65kN dynamic load capacity, 40,000 RPM grease lubrication, precision 10\u00d74mm profile for nano-precision applications"
+      "requirements": "3mm shaft with 0.31kN dynamic load capacity, 58,000 RPM grease lubrication, precision 7×3mm profile for nano-precision applications"
     },
     "application2": {
       "title": "Micro-Fluidics",
@@ -106,7 +106,7 @@
         "micro-reactors",
         "bio-sensors"
       ],
-      "requirements": "Precision 3mm bore with 0.3mm chamfer radius, 0.24kN static load rating for stable operation, 66kg load capacity for micro-fluidic accuracy"
+      "requirements": "Precision 3mm bore with 0.3mm chamfer radius, 0.11kN static load rating for stable operation, 11kg load capacity for micro-fluidic accuracy"
     },
     "application3": {
       "title": "Quantum Computing",
@@ -121,7 +121,7 @@
         "quantum networks",
         "quantum repeaters"
       ],
-      "requirements": "3mm bore fits quantum shafts, 4mm width for compact mounting, 0.001kg weight for efficiency, 50,000 RPM oil lubrication capability"
+      "requirements": "3mm bore fits quantum shafts, 3mm width for compact mounting, 31kg weight for efficiency, 68,000 RPM oil lubrication capability"
     }
   },
   "vibration": {
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "683 Bearing 3\u00d710\u00d74mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "683 deep groove ball bearing with 3mm bore, 10mm OD, 4mm width. 0.65kN dynamic load, 66kg capacity. Perfect for nano-precision instruments, micro-fluidics, quantum computing.",
+    "title": "683 Bearing 3×7×3mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "683 deep groove ball bearing with 3mm bore, 7mm OD, 3mm width. 0.31kN dynamic load, 31kg capacity. Perfect for nano-precision instruments, micro-fluidics, quantum computing.",
     "keywords": [
       "683 bearing",
       "3mm bore bearing",
@@ -248,8 +248,8 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/683/",
     "og_data": {
-      "title": "683 Deep Groove Ball Bearing - 3\u00d710\u00d74mm | RHD Bearings",
-      "description": "Nano-precision 683 miniature bearing with 0.65kN dynamic load capacity. Perfect for nano-precision instruments, micro-fluidics, and quantum computing.",
+      "title": "683 Deep Groove Ball Bearing - 3×7×3mm | RHD Bearings",
+      "description": "Nano-precision 683 miniature bearing with 0.31kN dynamic load capacity. Perfect for nano-precision instruments, micro-fluidics, and quantum computing.",
       "url": "https://rhdbearings.com/specs/miniature-series/683/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -257,14 +257,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "683 Bearing - Nano-Precision Instrument Solution",
-      "description": "3mm bore, 0.65kN load capacity, 40,000 RPM. Ideal for nano-precision instruments, micro-fluidics, and quantum computing."
+      "description": "3mm bore, 0.31kN load capacity, 58,000 RPM. Ideal for nano-precision instruments, micro-fluidics, and quantum computing."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "683 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "683 deep groove ball bearing with 3mm bore, 10mm outer diameter, 4mm width. 0.65kN dynamic load capacity, 66kg load capacity.",
+      "description": "683 deep groove ball bearing with 3mm bore, 7mm OD, 3mm width. 0.31kN dynamic load capacity, 31kg load capacity.",
       "sku": "683",
       "mpn": "683",
       "brand": "RHD Bearings",
@@ -302,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -324,15 +324,13 @@
   },
   "cross_references": {
     "related_models": [
-      "603",
-      "623",
-      "643",
-      "653"
+      "693",
+      "623"
     ],
     "shaft_requirements": {
       "nominal_diameter": "3.000mm",
-      "tolerance_grade": "h6 (2.991-3.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (2.994-3.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -343,12 +341,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 683 for 3mm shafts requiring 0.65kN dynamic load capacity in nano-precision instrument applications",
-      "Select 683-ZZ for dust protection with 36,000 RPM capability and sealed-for-life lubrication",
-      "Use 683-RS in moisture-prone environments requiring 32,000 RPM with rubber seal protection",
-      "Consider 683 for nano-precision instruments where 10\u00d74mm profile and 66kg load capacity optimize performance",
+      "Choose 683 for 3mm shafts requiring 0.31kN dynamic load capacity in nano-precision instrument applications",
+      "Select 683-ZZ for dust protection with 58,000 RPM capability and sealed-for-life lubrication",
+      "Use 683-RS in moisture-prone environments requiring 58,000 RPM with rubber seal protection",
+      "Consider 683 for nano-precision instruments where 7×3mm profile and 31kg load capacity optimize performance",
       "Opt for 683 in micro-fluidics needing 0.3mm chamfer radius and stable positioning",
-      "Deploy 683 in quantum computing requiring 40,000 RPM grease lubrication with nano-precision design"
+      "Deploy 683 in quantum computing requiring 58,000 RPM grease lubrication with nano-precision design"
     ],
     "natural_language_queries": [
       "683 bearing dimensions",
@@ -360,60 +358,60 @@
     ],
     "decision_criteria": [
       "3mm bore diameter requirement for shaft compatibility",
-      "0.65kN dynamic load capacity for application demands",
-      "4mm width constraint for compact mounting",
-      "40,000 RPM grease lubrication speed requirement",
-      "10mm outer diameter for housing fit"
+      "0.31kN dynamic load capacity for application demands",
+      "3mm width constraint for compact mounting",
+      "58,000 RPM grease lubrication speed requirement",
+      "7mm OD for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need nano-precision bearing for 3mm shaft with substantial load capacity",
-        "solution": "683 bearing provides 0.65kN dynamic load in 10\u00d74mm profile"
+        "solution": "683 bearing provides 0.31kN dynamic load in 7×3mm profile"
       },
       {
         "problem": "Require dust protection in nano-precision application",
-        "solution": "683-ZZ offers 36,000 RPM with double metal shield protection"
+        "solution": "683-ZZ offers 58,000 RPM with double metal shield protection"
       },
       {
         "problem": "Moisture exposure in laboratory environment",
-        "solution": "683-RS provides rubber seal protection up to 32,000 RPM"
+        "solution": "683-RS provides rubber seal protection up to 58,000 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "3mm bore with 0.65kN load capacity and 40,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 3mm bore (ID) with 693, 623, so it can be considered where the shaft is fixed at 3mm. The 683 is rated 0.31kN dynamic / 0.11kN static at 7mm OD — the most compact 3mm-bore option, below the 693 (0.45kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in miniature bearing category for 0.65kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in miniature bearing category for 0.31kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "683 provides 0.65kN dynamic load with 3mm bore for enhanced nano-precision performance",
-      "vs_larger_bearing": "683 offers 0.50kN lower load than 623 but with 1mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "The 683 is the most compact 3mm-bore bearing in this family (7mm OD, 0.31kN); the 693 adds load capacity on the same 3mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 3mm shaft? The 693 (8mm OD, 0.45kN) is the heavier-duty same-bore alternative to the 683 (0.31kN) — choose the 683 to save radial space.",
       "vs_competitors": "RHD 683 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "683 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -431,7 +429,7 @@
         },
         {
           "question": "Can I replace a 683 bearing with a different size bearing?",
-          "direct_answer": "No, 683 bearings have unique 3\u00d710\u00d74mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 683 bearings have unique 3x7x3mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 683 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 683 bearings in stock to avoid production delays and ensure consistent quality."

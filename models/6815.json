@@ -92,7 +92,7 @@
         "Bulk material handlers",
         "Construction equipment drives"
       ],
-      "requirements": "75mm shaft with 13.0kN (\u22481,325kg) dynamic load, 4,700 RPM grease lubrication, 90\u00d725mm for power transmission"
+      "requirements": "75mm shaft with 12.50kN (≈1274kg) dynamic load, 5,500 RPM grease lubrication, 95×10mm for power transmission"
     },
     "application2": {
       "title": "Robotic Joints",
@@ -107,7 +107,7 @@
         "Manufacturing robot bases",
         "Precision actuator pivots"
       ],
-      "requirements": "Precision 75mm bore with 8.0kN (\u2248815kg) static load"
+      "requirements": "Precision 75mm bore with 12.80kN (≈1305kg) static load"
     },
     "application3": {
       "title": "Heavy Rollers",
@@ -122,7 +122,7 @@
         "Agricultural roller shafts",
         "Industrial press rollers"
       ],
-      "requirements": "75mm bore, 26mm width for heavy load rollers"
+      "requirements": "75mm bore, 10mm width for heavy load rollers"
     }
   },
   "vibration": {
@@ -217,8 +217,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6815 Bearing 75x95x10mm | 13.1kN Load | RHD Bearings",
-    "meta_description": "6815 deep groove ball bearing: 75x95x10mm, 13.1kN dynamic load (1336kg), 5,600 RPM. ISO compliant, precision ground. Mumbai manufacturer.",
+    "title": "6815 Bearing 75x95x10mm | 12.50kN Load | RHD Bearings",
+    "meta_description": "6815 deep groove ball bearing: 75x95x10mm, 12.50kN dynamic load (1274kg), 5,500 RPM. ISO compliant, precision ground. Mumbai manufacturer.",
     "keywords": [
       "6815 bearing",
       "75mm bore bearing",
@@ -247,23 +247,23 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6800-series/6815/",
     "og_data": {
-      "title": "6815 Bearing 75x95x10mm | 13.1kN Load | RHD Bearings",
-      "description": "6815 deep groove ball bearing: 75x95x10mm, 13.1kN dynamic load (1336kg), 5,600 RPM. ISO compliant, precision ground.",
+      "title": "6815 Bearing 75x95x10mm | 12.50kN Load | RHD Bearings",
+      "description": "6815 deep groove ball bearing: 75x95x10mm, 12.50kN dynamic load (1274kg), 5,500 RPM. ISO compliant, precision ground.",
       "url": "https://rhdbearings.com/specs/6800-series/6815/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "6815 Bearing 75x95x10mm | 13.1kN Load | RHD Bearings",
-      "description": "6815 deep groove ball bearing: 75x95x10mm, 13.1kN dynamic load (1336kg), 5,600 RPM. ISO compliant, precision ground."
+      "title": "6815 Bearing 75x95x10mm | 12.50kN Load | RHD Bearings",
+      "description": "6815 deep groove ball bearing: 75x95x10mm, 12.50kN dynamic load (1274kg), 5,500 RPM. ISO compliant, precision ground."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6815 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6815 deep groove ball bearing: 75x95x10mm, 13.1kN dynamic load (1336kg), 5,600 RPM. ISO compliant, precision ground.",
+      "description": "6815 deep groove ball bearing: 75x95x10mm, 12.50kN dynamic load (1274kg), 5,500 RPM. ISO compliant, precision ground.",
       "sku": "6815",
       "mpn": "6815",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6800",
-      "6801",
-      "6802",
-      "6803"
+      "6915",
+      "16015",
+      "6015",
+      "62215",
+      "6215",
+      "6315",
+      "62315"
     ],
     "shaft_requirements": {
       "nominal_diameter": "75.000mm",
-      "tolerance_grade": "h6 (74.991-75.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (74.981-75.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -342,12 +345,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "6815 bearing: 75mm bore, 13.1kN load capacity, perfect for compact applications requiring high precision",
-      "Ultra-compact 6815 bearing with 5,600 RPM capability - ideal for miniature machinery and precision instruments",
-      "13.1kN dynamic load rating makes 6815 bearing suitable for small motors, fans, and precision equipment",
+      "6815 bearing: 75mm bore, 12.50kN load capacity, perfect for compact applications requiring high precision",
+      "Ultra-compact 6815 bearing with 5,500 RPM capability - ideal for miniature machinery and precision instruments",
+      "12.50kN dynamic load rating makes 6815 bearing suitable for small motors, fans, and precision equipment",
       "6815 bearing offers excellent value with ISO 15:2011 compliance and Gcr15 steel construction",
-      "Compact 10mm width 6815 bearing saves space while delivering reliable 13.1kN performance",
-      "High-speed 6815 bearing: 5,600 RPM grease, 7,000 RPM oil - perfect for demanding applications"
+      "Compact 10mm width 6815 bearing saves space while delivering reliable 12.50kN performance",
+      "High-speed 6815 bearing: 7,000 RPM grease, 7,000 RPM oil - perfect for demanding applications"
     ],
     "natural_language_queries": [
       "75mm bore bearing",
@@ -359,52 +362,52 @@
     ],
     "decision_criteria": [
       "Bore diameter: 75mm for shaft compatibility",
-      "Load capacity: 13.1kN dynamic, 12.5kN static",
-      "Speed rating: 5,600 RPM grease, 7,000 RPM oil",
+      "Load capacity: 12.80kN dynamic, 12.5kN static",
+      "Speed rating: 7,000 RPM grease, 7,000 RPM oil",
       "Dimensions: 75x95x10mm for space-constrained applications",
       "Material: Gcr15 steel with ISO 15:2011 compliance"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need compact bearing for small motor",
-        "solution": "6815 bearing: 75x95x10mm with 13.1kN capacity"
+        "solution": "6815 bearing: 75x95x10mm with 12.50kN capacity"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 13.1kN load while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 75mm bore (ID) with 6915, 16015, 6015, so it can be considered where the shaft is fixed at 75mm. The 6815 is rated 12.50kN dynamic / 12.80kN static at 95mm OD — the most compact 75mm-bore option, below the 6915 (24.30kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in compact bearing category for 13.1kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in compact bearing category for 12.50kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6815 offers 13.1kN vs smaller bearings' 0.5-12.5kN capacity",
-      "vs_larger_bearing": "6815 saves space vs larger bearings while maintaining adequate load capacity",
+      "vs_smaller_bearing": "The 6815 is the most compact 75mm-bore bearing in this family (95mm OD, 12.50kN); the 6915 adds load capacity on the same 75mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 75mm shaft? The 6915 (105mm OD, 24.30kN) is the heavier-duty same-bore alternative to the 6815 (12.50kN) — choose the 6815 to save radial space.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel in competing products",
       "cost_benefit": "Premium quality at competitive pricing with 3-10x longer service life"
     }
@@ -443,7 +446,7 @@
           "question": "What shaft tolerance is recommended for 6815 bearing installation?",
           "direct_answer": "h6 tolerance (74.991-75.009mm) is recommended for optimal fit and performance with the 75mm bore.",
           "why_matters": "Proper shaft tolerance ensures correct interference fit, prevents slippage, and maximizes bearing life.",
-          "how_to_handle": "Machine shaft to h6 tolerance range and ensure surface finish of Ra 0.8\u03bcm maximum.",
+          "how_to_handle": "Machine shaft to h6 tolerance range and ensure surface finish of Ra 0.8μm maximum.",
           "pro_tip": "Use proper installation tools to avoid damaging the bearing during press-fit installation."
         },
         {
@@ -455,10 +458,10 @@
         },
         {
           "question": "What's the maximum operating temperature for 6815 bearings?",
-          "direct_answer": "Standard 6815 bearings operate up to 120\u00b0C, with C3 clearance versions suitable for higher temperatures up to 150\u00b0C.",
+          "direct_answer": "Standard 6815 bearings operate up to 120°C, with C3 clearance versions suitable for higher temperatures up to 150°C.",
           "why_matters": "Exceeding temperature limits causes lubricant breakdown, dimensional changes, and premature failure.",
           "how_to_handle": "Monitor operating temperature and consider C3 clearance for high-temperature applications.",
-          "pro_tip": "Use high-temperature grease for applications above 80\u00b0C to maintain proper lubrication."
+          "pro_tip": "Use high-temperature grease for applications above 80°C to maintain proper lubrication."
         }
       ]
     },
@@ -470,7 +473,7 @@
           "direct_answer": "Common causes include over-lubrication, insufficient lubrication, misalignment, excessive load, or contamination.",
           "why_matters": "Overheating leads to lubricant breakdown, dimensional changes, and catastrophic bearing failure.",
           "how_to_handle": "Check lubrication levels, verify load capacity (max 13.1kN), ensure proper alignment, and inspect for contamination.",
-          "pro_tip": "Use infrared thermometer to monitor bearing temperature - should not exceed 80\u00b0C under normal operation."
+          "pro_tip": "Use infrared thermometer to monitor bearing temperature - should not exceed 80°C under normal operation."
         },
         {
           "question": "What causes excessive noise in 6815 bearings?",

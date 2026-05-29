@@ -92,7 +92,7 @@
         "Ceramic slurry mixers",
         "Resin mixer shafts"
       ],
-      "requirements": "85mm shaft with 15.0kN (\u22481,530kg) dynamic load, 4,000 RPM grease lubrication, 110\u00d730mm profile for mixing equipment"
+      "requirements": "85mm shaft with 19.20kN (≈1957kg) dynamic load, 4,000 RPM grease lubrication, 110×13mm profile for mixing equipment"
     },
     "application2": {
       "title": "Heavy Rollers",
@@ -107,7 +107,7 @@
         "Rubber processing rollers",
         "Agricultural equipment rollers"
       ],
-      "requirements": "Precision 85mm bore with 10.0kN (\u22481,020kg) static load rating"
+      "requirements": "Precision 85mm bore with 19.80kN (≈2019kg) static load rating"
     },
     "application3": {
       "title": "Industrial Vehicles",
@@ -122,7 +122,7 @@
         "Railcar transporter wheels",
         "Bulk material transport carts"
       ],
-      "requirements": "85mm bore, 32mm width, rugged for industrial vehicle wheels"
+      "requirements": "85mm bore, 13mm width, rugged for industrial vehicle wheels"
     }
   },
   "vibration": {
@@ -217,8 +217,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6817 Bearing 85x110x13mm | 16.2kN Load | RHD Bearings",
-    "meta_description": "6817 deep groove ball bearing: 85x110x13mm, 16.2kN dynamic load (1652kg), 4,800 RPM. ISO compliant, precision ground. Mumbai manufacturer.",
+    "title": "6817 Bearing 85x110x13mm | 19.20kN Load | RHD Bearings",
+    "meta_description": "6817 deep groove ball bearing: 85x110x13mm, 19.20kN dynamic load (1957kg), 4,500 RPM. ISO compliant, precision ground. Mumbai manufacturer.",
     "keywords": [
       "6817 bearing",
       "85mm bore bearing",
@@ -247,23 +247,23 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6800-series/6817/",
     "og_data": {
-      "title": "6817 Bearing 85x110x13mm | 16.2kN Load | RHD Bearings",
-      "description": "6817 deep groove ball bearing: 85x110x13mm, 16.2kN dynamic load (1652kg), 4,800 RPM. ISO compliant, precision ground.",
+      "title": "6817 Bearing 85x110x13mm | 19.20kN Load | RHD Bearings",
+      "description": "6817 deep groove ball bearing: 85x110x13mm, 19.20kN dynamic load (1957kg), 4,500 RPM. ISO compliant, precision ground.",
       "url": "https://rhdbearings.com/specs/6800-series/6817/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "6817 Bearing 85x110x13mm | 16.2kN Load | RHD Bearings",
-      "description": "6817 deep groove ball bearing: 85x110x13mm, 16.2kN dynamic load (1652kg), 4,800 RPM. ISO compliant, precision ground."
+      "title": "6817 Bearing 85x110x13mm | 19.20kN Load | RHD Bearings",
+      "description": "6817 deep groove ball bearing: 85x110x13mm, 19.20kN dynamic load (1957kg), 4,500 RPM. ISO compliant, precision ground."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6817 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6817 deep groove ball bearing: 85x110x13mm, 16.2kN dynamic load (1652kg), 4,800 RPM. ISO compliant, precision ground.",
+      "description": "6817 deep groove ball bearing: 85x110x13mm, 19.20kN dynamic load (1957kg), 4,500 RPM. ISO compliant, precision ground.",
       "sku": "6817",
       "mpn": "6817",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6800",
-      "6801",
-      "6802",
-      "6803"
+      "6917",
+      "6017",
+      "16017",
+      "6217",
+      "62217",
+      "62317",
+      "6317"
     ],
     "shaft_requirements": {
       "nominal_diameter": "85.000mm",
-      "tolerance_grade": "h6 (84.991-85.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (84.978-85.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -342,12 +345,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "6817 bearing: 85mm bore, 16.2kN load capacity, perfect for compact applications requiring high precision",
-      "Ultra-compact 6817 bearing with 4,800 RPM capability - ideal for miniature machinery and precision instruments",
-      "16.2kN dynamic load rating makes 6817 bearing suitable for small motors, fans, and precision equipment",
+      "6817 bearing: 85mm bore, 19.20kN load capacity, perfect for compact applications requiring high precision",
+      "Ultra-compact 6817 bearing with 4,500 RPM capability - ideal for miniature machinery and precision instruments",
+      "19.20kN dynamic load rating makes 6817 bearing suitable for small motors, fans, and precision equipment",
       "6817 bearing offers excellent value with ISO 15:2011 compliance and Gcr15 steel construction",
-      "Compact 13mm width 6817 bearing saves space while delivering reliable 16.2kN performance",
-      "High-speed 6817 bearing: 4,800 RPM grease, 6,000 RPM oil - perfect for demanding applications"
+      "Compact 13mm width 6817 bearing saves space while delivering reliable 19.20kN performance",
+      "High-speed 6817 bearing: 6,000 RPM grease, 6,000 RPM oil - perfect for demanding applications"
     ],
     "natural_language_queries": [
       "85mm bore bearing",
@@ -359,52 +362,52 @@
     ],
     "decision_criteria": [
       "Bore diameter: 85mm for shaft compatibility",
-      "Load capacity: 16.2kN dynamic, 15.5kN static",
-      "Speed rating: 4,800 RPM grease, 6,000 RPM oil",
+      "Load capacity: 19.80kN dynamic, 19.80kN static",
+      "Speed rating: 6,000 RPM grease, 6,000 RPM oil",
       "Dimensions: 85x110x13mm for space-constrained applications",
       "Material: Gcr15 steel with ISO 15:2011 compliance"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need compact bearing for small motor",
-        "solution": "6817 bearing: 85x110x13mm with 16.2kN capacity"
+        "solution": "6817 bearing: 85x110x13mm with 19.20kN capacity"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 16.2kN load while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 85mm bore (ID) with 6917, 6017, 16017, so it can be considered where the shaft is fixed at 85mm. The 6817 is rated 19.20kN dynamic / 19.80kN static at 110mm OD — the most compact 85mm-bore option, below the 6917 (31.90kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in compact bearing category for 16.2kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in compact bearing category for 19.20kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6817 offers 16.2kN vs smaller bearings' 0.5-13.7kN capacity",
-      "vs_larger_bearing": "6817 saves space vs larger bearings while maintaining adequate load capacity",
+      "vs_smaller_bearing": "The 6817 is the most compact 85mm-bore bearing in this family (110mm OD, 19.20kN); the 6917 adds load capacity on the same 85mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 85mm shaft? The 6917 (120mm OD, 31.90kN) is the heavier-duty same-bore alternative to the 6817 (19.20kN) — choose the 6817 to save radial space.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel in competing products",
       "cost_benefit": "Premium quality at competitive pricing with 3-10x longer service life"
     }
@@ -443,7 +446,7 @@
           "question": "What shaft tolerance is recommended for 6817 bearing installation?",
           "direct_answer": "h6 tolerance (84.991-85.009mm) is recommended for optimal fit and performance with the 85mm bore.",
           "why_matters": "Proper shaft tolerance ensures correct interference fit, prevents slippage, and maximizes bearing life.",
-          "how_to_handle": "Machine shaft to h6 tolerance range and ensure surface finish of Ra 0.8\u03bcm maximum.",
+          "how_to_handle": "Machine shaft to h6 tolerance range and ensure surface finish of Ra 0.8μm maximum.",
           "pro_tip": "Use proper installation tools to avoid damaging the bearing during press-fit installation."
         },
         {
@@ -455,10 +458,10 @@
         },
         {
           "question": "What's the maximum operating temperature for 6817 bearings?",
-          "direct_answer": "Standard 6817 bearings operate up to 120\u00b0C, with C3 clearance versions suitable for higher temperatures up to 150\u00b0C.",
+          "direct_answer": "Standard 6817 bearings operate up to 120°C, with C3 clearance versions suitable for higher temperatures up to 150°C.",
           "why_matters": "Exceeding temperature limits causes lubricant breakdown, dimensional changes, and premature failure.",
           "how_to_handle": "Monitor operating temperature and consider C3 clearance for high-temperature applications.",
-          "pro_tip": "Use high-temperature grease for applications above 80\u00b0C to maintain proper lubrication."
+          "pro_tip": "Use high-temperature grease for applications above 80°C to maintain proper lubrication."
         }
       ]
     },
@@ -470,7 +473,7 @@
           "direct_answer": "Common causes include over-lubrication, insufficient lubrication, misalignment, excessive load, or contamination.",
           "why_matters": "Overheating leads to lubricant breakdown, dimensional changes, and catastrophic bearing failure.",
           "how_to_handle": "Check lubrication levels, verify load capacity (max 16.2kN), ensure proper alignment, and inspect for contamination.",
-          "pro_tip": "Use infrared thermometer to monitor bearing temperature - should not exceed 80\u00b0C under normal operation."
+          "pro_tip": "Use infrared thermometer to monitor bearing temperature - should not exceed 80°C under normal operation."
         },
         {
           "question": "What causes excessive noise in 6817 bearings?",

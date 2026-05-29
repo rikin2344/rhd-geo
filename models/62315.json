@@ -91,7 +91,7 @@
         "Hydraulic system shafts",
         "Construction equipment drives"
       ],
-      "requirements": "75mm shaft with 49.0kN (\u22485,000kg) dynamic load capacity, 4,700 RPM grease lubrication, 140\u00d750mm profile for power transmission"
+      "requirements": "75mm shaft with 122.00kN (≈12436kg) dynamic load capacity, 4,300 RPM grease lubrication, 160×55mm profile for power transmission"
     },
     "application2": {
       "title": "Robotic Joints",
@@ -106,7 +106,7 @@
         "Automation system joints",
         "Manufacturing robot wrists"
       ],
-      "requirements": "Precision 75mm bore with 32.0kN (\u22483,265kg) static load rating for robotic joints"
+      "requirements": "Precision 75mm bore with 42.80kN (≈4364kg) static load rating for robotic joints"
     },
     "application3": {
       "title": "Heavy Rollers",
@@ -121,7 +121,7 @@
         "Agricultural roller shafts",
         "Industrial press rollers"
       ],
-      "requirements": "75mm bore, 50mm width, heavy load roller bearings"
+      "requirements": "75mm bore, 55mm width, heavy load roller bearings"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "62315 Bearing 75x160x55mm | RHD Bearings",
-    "meta_description": "62315 deep groove ball bearing: 75x160x55mm, 12444kg load capacity, 4,300 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "62315 deep groove ball bearing: 75x160x55mm, 12436kg load capacity, 4,300 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "62315 bearing",
       "75mm bore bearing",
@@ -248,7 +248,7 @@
     "canonical_url": "https://rhdbearings.com/specs/62300-series/62315/",
     "og_data": {
       "title": "62315 Bearing 75x160x55mm | RHD Bearings",
-      "description": "62315 deep groove ball bearing: 75x160x55mm, 12444kg load capacity, 4,300 RPM. Professional grade Gcr15 steel.",
+      "description": "62315 deep groove ball bearing: 75x160x55mm, 12436kg load capacity, 4,300 RPM. Professional grade Gcr15 steel.",
       "url": "https://rhdbearings.com/specs/62300-series/62315/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -256,14 +256,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "62315 Bearing 75x160x55mm | RHD Bearings",
-      "description": "62315 deep groove ball bearing: 75x160x55mm, 12444kg load capacity, 4,300 RPM. Professional grade Gcr15 steel."
+      "description": "62315 deep groove ball bearing: 75x160x55mm, 12436kg load capacity, 4,300 RPM. Professional grade Gcr15 steel."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "62315 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "62315 deep groove ball bearing: 75x160x55mm, 12444kg load capacity, 4,300 RPM. Professional grade Gcr15 steel.",
+      "description": "62315 deep groove ball bearing: 75x160x55mm, 12436kg load capacity, 4,300 RPM. Professional grade Gcr15 steel.",
       "sku": "62315",
       "mpn": "62315",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "62301",
-      "62302",
-      "62303",
-      "62304"
+      "6815",
+      "6915",
+      "16015",
+      "6015",
+      "62215",
+      "6215",
+      "6315"
     ],
     "shaft_requirements": {
       "nominal_diameter": "75.000mm",
-      "tolerance_grade": "h6 (74.987-75.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (74.981-75.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,39 +375,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 42.8kN more load than typical 75mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 62315 is rated 122.00kN dynamic / 42.80kN static at 160mm OD — the highest-capacity 75mm-bore option, above the 62215 (44.20kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 122kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "62315 offers 55mm width vs 12mm standard, providing 358% more load capacity",
-      "vs_larger_bearing": "Compact 160mm outer diameter vs 170mm alternatives, saving space while maintaining performance",
+      "vs_smaller_bearing": "Same 75mm bore as the 62215 but in a larger 160mm OD body — the 62315 delivers 122.00kN dynamic vs 44.20kN for the 62215, the higher-capacity option when the shaft stays 75mm.",
+      "vs_larger_bearing": "The 62315 is the highest-capacity 75mm-bore bearing in this family (122.00kN at 160mm OD); step down to the 62215 for a more compact fit on the same shaft.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel, ensuring longer service life",
       "cost_benefit": "Professional grade quality at competitive pricing, reducing total cost of ownership"
     }

@@ -39,20 +39,10 @@
         "name": "{{company_metadata.name}}",
         "url": "{{company_metadata.website}}"
       },
-      "category": "{{seo_metadata.schema_markup.category}}",
-      "offers": {
-        "@type": "Offer",
-        "url": "{{seo_metadata.canonical_url}}",
-        "priceCurrency": "{{pricing_and_availability.currency}}",
-        "availability": "https://schema.org/InStock",
-        "priceValidUntil": "2025-12-31",
-        "seller": {
-          "@type": "Organization",
-          "name": "{{company_metadata.name}}"
-        }
-      }
+      "category": "{{seo_metadata.schema_markup.category}}"
     }
     </script>
+    {{ADDITIONAL_JSONLD}}
     
     <!-- External fonts first -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

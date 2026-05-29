@@ -91,7 +91,7 @@
         "Handheld blower motors",
         "Medical device fans"
       ],
-      "requirements": "12mm shaft with 7.5kN (\u2248765kg) dynamic load capacity, 18,000 RPM grease lubrication, 35\u00d718mm profile for small motor drives"
+      "requirements": "12mm shaft with 12.60kN (≈1284kg) dynamic load capacity, 18,000 RPM grease lubrication, 37×17mm profile for small motor drives"
     },
     "application2": {
       "title": "Robotic Controls",
@@ -106,7 +106,7 @@
         "Instrument calibration shafts",
         "Barcode scanner pivots"
       ],
-      "requirements": "Precision 12mm bore with 3.5kN (\u2248360kg) static load rating for precise control"
+      "requirements": "Precision 12mm bore with 2.72kN (≈277kg) static load rating for precise control"
     },
     "application3": {
       "title": "Medical Devices",
@@ -121,7 +121,7 @@
         "Lab sample handler shafts",
         "Medical scanning spindles"
       ],
-      "requirements": "12mm bore, 18mm width designed for precision and hygiene"
+      "requirements": "12mm bore, 17mm width designed for precision and hygiene"
     }
   },
   "vibration": {
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "62302",
-      "62303",
-      "62304",
-      "62305"
+      "6801",
+      "6901",
+      "6001",
+      "16001",
+      "6201",
+      "62201",
+      "6301"
     ],
     "shaft_requirements": {
       "nominal_diameter": "12.000mm",
-      "tolerance_grade": "h6 (11.991-12.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (11.989-12.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,39 +375,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 2.7kN more load than typical 12mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 62301 is rated 12.60kN dynamic / 2.72kN static at 37mm OD — the highest-capacity 12mm-bore option, above the 6201 (6.82kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 12.6kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "62301 offers 17mm width vs 12mm standard, providing 40% more load capacity",
-      "vs_larger_bearing": "Compact 37mm outer diameter vs 47mm alternatives, saving space while maintaining performance",
+      "vs_smaller_bearing": "Same 12mm bore as the 6201 but in a larger 37mm OD body — the 62301 delivers 12.60kN dynamic vs 6.82kN for the 6201, the higher-capacity option when the shaft stays 12mm.",
+      "vs_larger_bearing": "The 62301 is the highest-capacity 12mm-bore bearing in this family (12.60kN at 37mm OD); step down to the 6201 for a more compact fit on the same shaft.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel, ensuring longer service life",
       "cost_benefit": "Professional grade quality at competitive pricing, reducing total cost of ownership"
     }

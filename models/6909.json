@@ -92,7 +92,7 @@
         "Logistics conveyor rollers",
         "Automated material feeders"
       ],
-      "requirements": "45mm shaft with 17.0kN (\u22481,730kg) dynamic load capacity, 8,000 RPM grease lubrication, 55\u00d713mm profile"
+      "requirements": "45mm shaft with 14.10kN (≈1437kg) dynamic load capacity, 6,000 RPM grease lubrication, 68×12mm profile"
     },
     "application2": {
       "title": "Precision Machinery",
@@ -107,7 +107,7 @@
         "Optical device pivots",
         "Automated assembly joints"
       ],
-      "requirements": "Precision 45mm bore with 12.0kN (\u22481,220kg) static load rating"
+      "requirements": "Precision 45mm bore with 10.90kN (≈1111kg) static load rating"
     },
     "application3": {
       "title": "Heavy Platforms",
@@ -122,7 +122,7 @@
         "Material handling carts",
         "Heavy duty roller bases"
       ],
-      "requirements": "45mm bore, 15mm width for loading platforms"
+      "requirements": "45mm bore, 12mm width for loading platforms"
     }
   },
   "vibration": {
@@ -299,9 +299,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6809",
       "6009",
+      "16009",
+      "62209",
       "6209",
       "6309",
-      "6809"
+      "62309"
     ],
     "shaft_requirements": {
       "nominal_diameter": "45.000mm",
-      "tolerance_grade": "h6 (44.987-45.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (44.984-45.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,39 +373,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 10.9kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 45mm bore (ID) with 6809, 6009, 16009, so it can be considered where the shaft is fixed at 45mm. The 6909 is rated 14.10kN dynamic / 10.90kN static at 68mm OD — more capacity than the 6809 (6.40kN) and less than the heavier-duty 6009 (21.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in small-bearing category for 14.10kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6909 provides 10.9kN more load capacity than 6809 series while maintaining compact design",
-      "vs_larger_bearing": "6909 offers space savings over 6009 series with 90% of the load capacity",
+      "vs_smaller_bearing": "Same 45mm bore as the 6809 but in a larger 68mm OD body — the 6909 delivers 14.10kN dynamic vs 6.40kN for the 6809, the higher-capacity option when the shaft stays 45mm.",
+      "vs_larger_bearing": "Need more load on the same 45mm shaft? The 6009 (75mm OD, 21.00kN) is the heavier-duty same-bore alternative to the 6909 (14.10kN) — choose the 6909 to save radial space.",
       "vs_competitors": "6909 delivers superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "6909 provides best value in miniature bearing category with 3-10x longer service life than cheap alternatives"
     }
@@ -441,7 +444,7 @@
           "question": "What shaft tolerance is recommended for the 6909 bearing?",
           "direct_answer": "The 6909 bearing requires an h6 shaft tolerance with a nominal diameter of 45.000mm and tolerance range of 44.987-45.013mm for optimal performance.",
           "why_matters": "Proper shaft tolerance ensures correct fit and prevents issues like excessive clearance or interference that can lead to premature failure.",
-          "how_to_handle": "Machine the shaft to h6 tolerance (44.987-45.013mm) with a surface finish of Ra 0.8\u03bcm maximum and runout tolerance of 0.013mm maximum.",
+          "how_to_handle": "Machine the shaft to h6 tolerance (44.987-45.013mm) with a surface finish of Ra 0.8μm maximum and runout tolerance of 0.013mm maximum.",
           "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation, as even small deviations can significantly impact bearing performance."
         },
         {
@@ -456,7 +459,7 @@
           "direct_answer": "The 6909 bearing should be installed using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to the bearing components.",
           "why_matters": "Proper installation prevents bearing damage, ensures correct fit, and maximizes service life while maintaining performance characteristics.",
           "how_to_handle": "Use bearing installation tools or sleeves to apply pressure evenly on the inner ring, never apply force directly to the outer ring or balls.",
-          "pro_tip": "Heat the bearing to 80-100\u00b0C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
+          "pro_tip": "Heat the bearing to 80-100°C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
         }
       ]
     },
@@ -468,7 +471,7 @@
           "direct_answer": "A hot-running 6909 bearing is typically caused by over-lubrication, excessive load, misalignment, or insufficient clearance, requiring immediate investigation and correction.",
           "why_matters": "Excessive heat can lead to premature bearing failure, lubricant breakdown, and potential damage to surrounding components.",
           "how_to_handle": "Check lubrication levels, verify load conditions, inspect for misalignment, and ensure proper clearance. Reduce speed if necessary and monitor temperature.",
-          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80\u00b0C indicate potential problems requiring attention."
+          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80°C indicate potential problems requiring attention."
         },
         {
           "question": "What causes excessive noise in the 6909 bearing?",

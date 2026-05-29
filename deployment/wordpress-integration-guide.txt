@@ -1,0 +1,34 @@
+
+🔧 WORDPRESS & RANKMATH INTEGRATION GUIDE
+========================================
+
+Your sitemap-specs.xml has been created and uploaded. Here's how to integrate it:
+
+1. RANKMATH SITEMAP INTEGRATION:
+   - Go to RankMath → Sitemap Settings
+   - Navigate to "Sitemap Index" 
+   - Add custom sitemap: https://rhdbearings.com/sitemap-specs.xml
+   - Or add this to your sitemap index manually
+
+2. ROBOTS.TXT UPDATE:
+   - Add this line to your WordPress robots.txt:
+   Sitemap: https://rhdbearings.com/sitemap-specs.xml
+
+3. GOOGLE SEARCH CONSOLE:
+   - Submit the new sitemap: https://rhdbearings.com/sitemap-specs.xml
+   - This will help Google discover your specification pages
+
+4. WORDPRESS SITEMAP INDEX:
+   If you have a sitemap index (sitemap.xml), add this entry:
+   <sitemap>
+       <loc>https://rhdbearings.com/sitemap-specs.xml</loc>
+       <lastmod>2026-05-29</lastmod>
+   </sitemap>
+
+📊 SITEMAP STATISTICS:
+- Total specification pages: 210
+- Main hub pages: 2
+- Series pages: 9  
+- Individual model pages: 199
+
+🔗 LIVE SITEMAP: https://rhdbearings.com/sitemap-specs.xml

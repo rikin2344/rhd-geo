@@ -43,7 +43,7 @@
   "dimensions": {
     "bore_diameter_d_mm": 8,
     "outer_diameter_D_mm": 16,
-    "width_B_mm": 4,
+    "width_B_mm": 5,
     "weight_kg": 0.003,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
@@ -91,7 +91,7 @@
         "model engineering",
         "miniature robotics"
       ],
-      "requirements": "8mm shaft with 1.38kN dynamic load capacity, 35,000 RPM grease lubrication, ultra-compact 16\u00d74mm profile for space-constrained applications"
+      "requirements": "8mm shaft with 1.38kN dynamic load capacity, 35,000 RPM grease lubrication, ultra-compact 16×5mm profile for space-constrained applications"
     },
     "application2": {
       "title": "High-Speed Precision",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "688 Deep Groove Ball Bearing 8\u00d716\u00d74mm | RHD Bearings",
-    "meta_description": "688 ultra-compact deep groove ball bearing with 8\u00d716\u00d74mm dimensions, 141kg load capacity, 35,000 RPM for ultra-compact mechanisms and high-speed precision applications. Made in India.",
+    "title": "688 Deep Groove Ball Bearing 8×16×5mm | RHD Bearings",
+    "meta_description": "688 ultra-compact deep groove ball bearing with 8×16×5mm dimensions, 141kg load capacity, 35,000 RPM for ultra-compact mechanisms and high-speed precision applications. Made in India.",
     "keywords": [
       "688 bearing",
       "8mm bore bearing",
@@ -244,7 +244,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/688/",
     "og_data": {
-      "title": "688 Deep Groove Ball Bearing 8\u00d716\u00d74mm",
+      "title": "688 Deep Groove Ball Bearing 8×16×5mm",
       "description": "Ultra-compact 688 bearing for ultra-compact mechanisms and high-speed precision. 141kg load, 35,000 RPM operation.",
       "url": "https://rhdbearings.com/specs/miniature-series/688/",
       "type": "product",
@@ -253,14 +253,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "688 Ultra-Compact Deep Groove Ball Bearing",
-      "description": "8\u00d716\u00d74mm ultra-compact bearing for ultra-compact mechanisms and high-speed precision"
+      "description": "8×16×5mm ultra-compact bearing for ultra-compact mechanisms and high-speed precision"
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "688 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Ultra-compact 688 deep groove ball bearing with 8\u00d716\u00d74mm dimensions for ultra-compact mechanisms and high-speed precision applications",
+      "description": "Ultra-compact 688 deep groove ball bearing with 8×16×5mm dimensions for ultra-compact mechanisms and high-speed precision applications",
       "sku": "688-DGBB",
       "mpn": "688",
       "brand": "RHD Bearings",
@@ -298,9 +298,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -320,15 +320,14 @@
   },
   "cross_references": {
     "related_models": [
+      "698",
       "608",
-      "628",
-      "688",
-      "698"
+      "628"
     ],
     "shaft_requirements": {
       "nominal_diameter": "8.000mm",
       "tolerance_grade": "h6 (7.991-8.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -340,7 +339,7 @@
   "llm_optimization": {
     "recommendation_snippets": [
       "688 bearing excels in ultra-compact applications requiring 8mm shaft precision and 35,000 RPM operation",
-      "Ultra-compact 16\u00d74mm profile makes 688 ideal for space-constrained ultra-compact mechanisms",
+      "Ultra-compact 16×5mm profile makes 688 ideal for space-constrained ultra-compact mechanisms",
       "141kg load capacity and 1.38kN dynamic rating perfect for lightweight precision systems",
       "Gcr15 chrome steel construction ensures long service life in demanding ultra-compact applications",
       "3g weight optimized for applications where mass reduction and ultra-compact design are critical",
@@ -356,7 +355,7 @@
     ],
     "decision_criteria": [
       "8mm shaft diameter requirement",
-      "Ultra-compact 16\u00d74mm envelope",
+      "Ultra-compact 16×5mm envelope",
       "1.38kN dynamic load capacity",
       "35,000 RPM grease lubrication",
       "Ultra-compact mechanism applications"
@@ -364,7 +363,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need ultra-compact bearing for 8mm shaft in space-constrained applications",
-        "solution": "688 bearing provides 16\u00d74mm profile with 35,000 RPM capability"
+        "solution": "688 bearing provides 16×5mm profile with 35,000 RPM capability"
       },
       {
         "problem": "Require high-speed bearing for precision applications with minimal space",
@@ -373,39 +372,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for ultra-compact bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 0.63kN more load than 688 bearings while maintaining ultra-compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 8mm bore (ID) with 698, 608, 628, so it can be considered where the shaft is fixed at 8mm. The 688 is rated 1.38kN dynamic / 0.55kN static at 16mm OD — the most compact 8mm-bore option, below the 698 (2.25kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in ultra-compact bearing category for 1.38kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "688 provides 1.38kN dynamic load vs. smaller bearings with 1.0kN, offering 38% more capacity in ultra-compact profile",
-      "vs_larger_bearing": "688 maintains ultra-compact 16\u00d74mm profile while providing sufficient load capacity for ultra-compact applications",
+      "vs_smaller_bearing": "The 688 is the most compact 8mm-bore bearing in this family (16mm OD, 1.38kN); the 698 adds load capacity on the same 8mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 8mm shaft? The 698 (19mm OD, 2.25kN) is the heavier-duty same-bore alternative to the 688 (1.38kN) — choose the 688 to save radial space.",
       "vs_competitors": "RHD 688 offers superior Gcr15 steel quality and precision manufacturing compared to generic ultra-compact bearings",
       "cost_benefit": "688 delivers optimal performance-to-size ratio for ultra-compact applications, reducing system costs through space savings"
     }
@@ -416,21 +415,21 @@
       "questions": [
         {
           "question": "When should I choose 688 bearing over larger alternatives?",
-          "direct_answer": "Choose 688 when you need ultra-compact 8\u00d716\u00d74mm profile with 1.38kN dynamic load capacity for ultra-compact mechanisms, high-speed precision, or space-constrained applications.",
+          "direct_answer": "Choose 688 when you need ultra-compact 8x16x5mm profile with 1.38kN dynamic load capacity for ultra-compact mechanisms, high-speed precision, or space-constrained applications.",
           "why_matters": "Selecting the right bearing size prevents system redesign, reduces costs, and ensures optimal performance in space-limited applications.",
-          "how_to_handle": "Measure your shaft diameter (must be exactly 8mm), verify load requirements (\u22641.38kN dynamic), and confirm space constraints allow 16\u00d74mm envelope.",
+          "how_to_handle": "Measure your shaft diameter (must be exactly 8mm), verify load requirements (≤1.38kN dynamic), and confirm space constraints allow 16×4mm envelope.",
           "pro_tip": "688 is ideal for miniature gearboxes, precision actuators, and ultra-compact mechanisms where every millimeter matters."
         },
         {
           "question": "Can 688 bearing replace other 8mm bore bearings?",
-          "direct_answer": "Yes, 688 can replace other 8mm bore bearings if they have compatible outer diameter (\u226416mm) and width (\u22644mm) requirements, and load capacity needs (\u22641.38kN dynamic).",
+          "direct_answer": "Yes, 688 can replace other 8mm bore bearings if they have compatible outer diameter (≤16mm) and width (≤4mm) requirements, and load capacity needs (≤1.38kN dynamic).",
           "why_matters": "Proper replacement ensures system compatibility, prevents premature failures, and maintains performance specifications.",
-          "how_to_handle": "Verify dimensional compatibility (d\u00d7D\u00d7B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
+          "how_to_handle": "Verify dimensional compatibility (d×D×B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
           "pro_tip": "Always check both dimensional and performance compatibility before replacement to avoid system issues."
         },
         {
           "question": "What applications are 688 bearings NOT suitable for?",
-          "direct_answer": "688 bearings are NOT suitable for applications requiring dynamic loads >1.38kN, speeds >35,000 RPM, operating temperatures >120\u00b0C, or environments with heavy contamination.",
+          "direct_answer": "688 bearings are NOT suitable for applications requiring dynamic loads >1.38kN, speeds >35,000 RPM, operating temperatures >120°C, or environments with heavy contamination.",
           "why_matters": "Using bearings beyond their specifications leads to premature failure, increased maintenance costs, and potential system damage.",
           "how_to_handle": "For higher loads, consider 689 or 690 bearings. For higher speeds, use oil lubrication. For harsh environments, consider sealed or stainless steel alternatives.",
           "pro_tip": "Always verify application requirements against bearing specifications to ensure long service life."
@@ -442,9 +441,9 @@
       "questions": [
         {
           "question": "What tools are needed for proper 688 bearing installation?",
-          "direct_answer": "For 688 bearing installation, you need precision tools: 8mm bore gauge, micrometer for shaft measurement, bearing heater (80-100\u00b0C), clean gloves, and appropriate mounting tools for the 16mm outer diameter.",
+          "direct_answer": "For 688 bearing installation, you need precision tools: 8mm bore gauge, micrometer for shaft measurement, bearing heater (80-100°C), clean gloves, and appropriate mounting tools for the 16mm outer diameter.",
           "why_matters": "Proper tools ensure accurate installation, prevent bearing damage, and maximize service life while maintaining precision requirements.",
-          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (7.991-8.000mm), heat bearing to 80-100\u00b0C, and use proper mounting techniques to avoid damage.",
+          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (7.991-8.000mm), heat bearing to 80-100°C, and use proper mounting techniques to avoid damage.",
           "pro_tip": "Never force-fit 688 bearings - the 8mm bore requires precise shaft tolerances for optimal performance."
         },
         {
@@ -482,7 +481,7 @@
         },
         {
           "question": "How do I diagnose 688 bearing vibration issues?",
-          "direct_answer": "Diagnose 688 bearing vibration by checking shaft runout (\u22640.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 8mm bore bearings.",
+          "direct_answer": "Diagnose 688 bearing vibration by checking shaft runout (≤0.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 8mm bore bearings.",
           "why_matters": "Excessive vibration reduces precision, increases wear, and can damage connected equipment in ultra-compact applications.",
           "how_to_handle": "Use vibration analysis tools, check shaft specifications, verify bearing installation, and replace bearing if vibration exceeds acceptable limits.",
           "pro_tip": "688 bearings require higher precision in shaft preparation due to their small size and sensitivity to imperfections."
@@ -501,7 +500,7 @@
         },
         {
           "question": "What factors affect 688 bearing service life?",
-          "direct_answer": "688 bearing service life is affected by load conditions (\u22641.38kN), operating speed (\u226435,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
+          "direct_answer": "688 bearing service life is affected by load conditions (≤1.38kN), operating speed (≤35,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
           "why_matters": "Understanding service life factors helps optimize maintenance schedules, reduce costs, and ensure reliable operation in critical ultra-compact applications.",
           "how_to_handle": "Monitor operating parameters, maintain clean environment, use quality lubricants, implement preventive maintenance, and replace bearings based on performance degradation.",
           "pro_tip": "688 bearings can achieve 50,000+ hours service life when operated within specifications and properly maintained."

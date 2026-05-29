@@ -91,7 +91,7 @@
         "Greenhouse air spindles",
         "Workshop extractor fans"
       ],
-      "requirements": "15mm shaft with 7.50kN (\u2248765kg) dynamic load capacity, 16,000 RPM grease lubrication, 35\u00d711mm profile for moderate load fans"
+      "requirements": "15mm shaft with 5.58kN (≈568kg) dynamic load capacity, 19,000 RPM grease lubrication, 32×9mm profile for moderate load fans"
     },
     "application2": {
       "title": "Precision Controls",
@@ -106,7 +106,7 @@
         "CNC tool holders",
         "Positioning mechanism bearings"
       ],
-      "requirements": "Precision 15mm bore with 4.5kN (\u2248460kg) static load rating for precise control"
+      "requirements": "Precision 15mm bore with 2.85kN (≈291kg) static load rating for precise control"
     },
     "application3": {
       "title": "Compact Equipment",
@@ -121,7 +121,7 @@
         "Fitness equipment spindles",
         "Robot navigation wheels"
       ],
-      "requirements": "15mm bore, 11mm width, optimized for compact equipment"
+      "requirements": "15mm bore, 9mm width, optimized for compact equipment"
     }
   },
   "vibration": {
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6802",
+      "6902",
+      "16002",
+      "62202",
       "6202",
       "6302",
-      "6802",
-      "6902"
+      "62302"
     ],
     "shaft_requirements": {
       "nominal_diameter": "15.000mm",
-      "tolerance_grade": "h6 (14.991-15.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (14.989-15.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,39 +373,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium-duty applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 569kg load capacity with 9mm width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 6002 is rated 5.58kN dynamic / 2.85kN static at 32mm OD — more capacity than the 6902 (4.30kN) and less than the heavier-duty 62202 (7.65kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for medium-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "Higher 569kg load capacity compared to 12mm bearings",
-      "vs_larger_bearing": "More compact design compared to larger alternatives",
+      "vs_smaller_bearing": "Same 15mm bore as the 6902 but in a larger 32mm OD body — the 6002 delivers 5.58kN dynamic vs 4.30kN for the 6902, the higher-capacity option when the shaft stays 15mm.",
+      "vs_larger_bearing": "Need more load on the same 15mm shaft? The 62202 (35mm OD, 7.65kN) is the heavier-duty same-bore alternative to the 6002 (5.58kN) — choose the 6002 to save radial space.",
       "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
       "cost_benefit": "Reasonable cost justified by extended service life and reliability"
     }
@@ -441,7 +444,7 @@
           "question": "What tools are needed to install a 31g 6002 bearing properly?",
           "direct_answer": "Standard bearing installation tools, controlled heating equipment, and precision gauges for proper 15mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 31g weight and 15mm bore require appropriate tools to avoid installation damage. Medium-size bearings need careful handling to prevent internal damage while being robust enough for standard installation techniques.",
-          "how_to_handle": "Heat bearing to 80-90\u00b0C for thermal expansion. Use bearing installation tools or hydraulic press with appropriate adapters. Verify shaft tolerances (h6: 14.991-15.009mm) and housing fit. Avoid impact installation methods that can damage internal components.",
+          "how_to_handle": "Heat bearing to 80-90°C for thermal expansion. Use bearing installation tools or hydraulic press with appropriate adapters. Verify shaft tolerances (h6: 14.991-15.009mm) and housing fit. Avoid impact installation methods that can damage internal components.",
           "pro_tip": "Medium bearings respond well to thermal installation - heating provides adequate expansion for smooth installation."
         },
         {

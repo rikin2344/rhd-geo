@@ -91,7 +91,7 @@
         "Food processing pump shafts",
         "Hydraulic pump shafts"
       ],
-      "requirements": "30mm shaft with 12.50kN (\u22481,275kg) dynamic load capacity, 9,000 RPM grease lubrication, 62\u00d716mm profile for pump drives"
+      "requirements": "30mm shaft with 13.20kN (≈1345kg) dynamic load capacity, 11,000 RPM grease lubrication, 55×13mm profile for pump drives"
     },
     "application2": {
       "title": "Machine Tools",
@@ -106,7 +106,7 @@
         "Surface grinder spindles",
         "Boring machine shafts"
       ],
-      "requirements": "Precision 30mm bore with 8.0kN (\u2248815kg) static load rating for machining tasks"
+      "requirements": "Precision 30mm bore with 8.30kN (≈846kg) static load rating for machining tasks"
     },
     "application3": {
       "title": "Conveyor Systems",
@@ -121,7 +121,7 @@
         "Industrial belt rollers",
         "Automated transport spindles"
       ],
-      "requirements": "30mm bore, 18mm width, suitable for moderate load conveyors"
+      "requirements": "30mm bore, 13mm width, suitable for moderate load conveyors"
     }
   },
   "vibration": {
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6206",
-      "6306",
       "6806",
-      "6906"
+      "6906",
+      "16006",
+      "6206",
+      "62206",
+      "62306",
+      "6306"
     ],
     "shaft_requirements": {
       "nominal_diameter": "30.000mm",
-      "tolerance_grade": "h6 (29.987-30.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (29.987-30.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,39 +373,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 1346kg load capacity with robust 13mm width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 6006 is rated 13.20kN dynamic / 8.30kN static at 55mm OD — more capacity than the 6906 (7.20kN) and less than the heavier-duty 6206 (19.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "Significantly higher 1346kg load capacity compared to 25mm bearings",
-      "vs_larger_bearing": "More compact design compared to larger alternatives",
+      "vs_smaller_bearing": "Same 30mm bore as the 6906 but in a larger 55mm OD body — the 6006 delivers 13.20kN dynamic vs 7.20kN for the 6906, the higher-capacity option when the shaft stays 30mm.",
+      "vs_larger_bearing": "Need more load on the same 30mm shaft? The 6206 (62mm OD, 19.50kN) is the heavier-duty same-bore alternative to the 6006 (13.20kN) — choose the 6006 to save radial space.",
       "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
       "cost_benefit": "Moderate cost justified by high capacity and robust performance"
     }
@@ -441,7 +444,7 @@
           "question": "What tools are needed to install a 113g 6006 bearing properly?",
           "direct_answer": "Heavy-duty bearing installation tools, controlled heating equipment, and precision measuring instruments for proper 30mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 113g weight and 30mm bore require appropriate installation techniques to prevent internal damage. Medium-large bearings benefit from thermal installation while being substantial enough for standard heavy-duty procedures.",
-          "how_to_handle": "Heat bearing to 80-90\u00b0C for thermal expansion. Use heavy-duty bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 29.987-30.013mm) and housing concentricity carefully. Avoid impact installation methods.",
+          "how_to_handle": "Heat bearing to 80-90°C for thermal expansion. Use heavy-duty bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 29.987-30.013mm) and housing concentricity carefully. Avoid impact installation methods.",
           "pro_tip": "Thermal installation provides controlled, damage-free installation - maintain consistent temperature for optimal thermal expansion."
         },
         {

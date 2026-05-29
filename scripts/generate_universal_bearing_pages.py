@@ -239,9 +239,13 @@ class UniversalBearingPageGenerator:
             
             # 12. Replace simple placeholders
             content = self._replace_simple_placeholders(content)
-            
 
-            
+            # 12b. Fix broken breadcrumb series slug
+            content = self._fix_breadcrumb_series(content)
+
+            # 13. Inject BreadcrumbList + FAQPage structured data
+            content = self._inject_structured_data(content)
+
             # 14. Sanitize HTML content for security
             content = self._sanitize_html_content(content)
             
@@ -788,9 +792,92 @@ class UniversalBearingPageGenerator:
                     content = content.replace(old_placeholder, str(new_value))
         
         return content
-    
 
-    
+    def _series_slug(self) -> str:
+        """Resolve the series URL slug, preferring the canonical URL (source of
+        truth), falling back to bearing_series_name."""
+        canonical = self.data.get('seo_metadata', {}).get('canonical_url', '') or ''
+        if '/specs/' in canonical:
+            slug = canonical.split('/specs/')[1].split('/')[0]
+            if slug:
+                return slug
+        return str(self.data.get('bearing_series_name') or 'specs')
+
+    def _fix_breadcrumb_series(self, content: str) -> str:
+        """The {{bearing_series}} placeholder has no backing data field, leaving a
+        broken /specs/{{bearing_series}}/ link. Resolve it from the canonical slug."""
+        return content.replace('{{bearing_series}}', self._series_slug())
+
+    def _inject_structured_data(self, content: str) -> str:
+        """Build BreadcrumbList + FAQPage JSON-LD and inject at {{ADDITIONAL_JSONLD}}.
+        FAQ answers mirror the visible page text (same kN->kg conversion)."""
+        import json as _json
+        website = self.data.get('company_metadata', {}).get('website', 'https://rhdbearings.com')
+        slug = self._series_slug()
+        series_name = str(self.data.get('bearing_series_name') or slug)
+        model = str(self.data.get('model_number', ''))
+        canonical = self.data.get('seo_metadata', {}).get('canonical_url', '') \
+            or f"{website}/specs/{slug}/{model}/"
+
+        blocks = []
+
+        breadcrumb = {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{website}/"},
+                {"@type": "ListItem", "position": 2, "name": series_name,
+                 "item": f"{website}/specs/{slug}/"},
+                {"@type": "ListItem", "position": 3, "name": f"{model} Bearing",
+                 "item": canonical},
+            ],
+        }
+        blocks.append(breadcrumb)
+
+        faqs = self.data.get('faqs', {})
+        faq_entities = []
+        for category_key, category_data in faqs.items():
+            if category_key not in ['selection_replacement', 'installation_maintenance',
+                                    'troubleshooting', 'cost_performance']:
+                continue
+            for q in category_data.get('questions', []):
+                question = q.get('question', '')
+                if not question:
+                    continue
+                parts = []
+                da = self.convert_kn_to_kg(q.get('direct_answer', ''), f"faqs.{category_key}.questions.direct_answer")
+                wm = self.convert_kn_to_kg(q.get('why_matters', ''), f"faqs.{category_key}.questions.why_matters")
+                hh = self.convert_kn_to_kg(q.get('how_to_handle', ''), f"faqs.{category_key}.questions.how_to_handle")
+                pt = self.convert_kn_to_kg(q.get('pro_tip', ''), f"faqs.{category_key}.questions.pro_tip")
+                if da:
+                    parts.append(da)
+                if wm:
+                    parts.append(wm)
+                if hh:
+                    parts.append(hh)
+                if pt:
+                    parts.append(f"Pro tip: {pt}")
+                answer = ' '.join(p.strip() for p in parts if p).strip()
+                if not answer:
+                    continue
+                faq_entities.append({
+                    "@type": "Question",
+                    "name": question,
+                    "acceptedAnswer": {"@type": "Answer", "text": answer},
+                })
+        if faq_entities:
+            blocks.append({
+                "@context": "https://schema.org/",
+                "@type": "FAQPage",
+                "mainEntity": faq_entities,
+            })
+
+        scripts = '\n'.join(
+            f'<script type="application/ld+json">\n{_json.dumps(b, ensure_ascii=False, indent=2)}\n</script>'
+            for b in blocks
+        )
+        return content.replace('{{ADDITIONAL_JSONLD}}', scripts)
+
     def _sanitize_html_content(self, content: str) -> str:
         """Sanitize HTML content to prevent XSS and ensure valid HTML"""
         import html
@@ -843,6 +930,41 @@ class UniversalBearingPageGenerator:
             else:
                 items.append((new_key, v))
         return dict(items)
+
+def extract_seo_head_tags(html_content: str) -> str:
+    """Extract SEO / structured-data tags from a generated page's <head>.
+
+    Returns an indented string containing the meta description/keywords/robots,
+    canonical link, Open Graph + Twitter meta tags and any JSON-LD <script>
+    blocks found in the source <head>. Used to carry these tags over when the
+    standalone deployment page is assembled (otherwise they get dropped).
+    """
+    import re as _re
+
+    head_match = _re.search(r'<head[^>]*>(.*?)</head>', html_content,
+                            _re.DOTALL | _re.IGNORECASE)
+    if not head_match:
+        return ""
+
+    head_inner = head_match.group(1)
+    parts = []
+    parts += _re.findall(
+        r'<meta\s+name=["\'](?:description|keywords|robots)["\'][^>]*>',
+        head_inner, _re.IGNORECASE)
+    parts += _re.findall(r'<link\s+rel=["\']canonical["\'][^>]*>',
+                         head_inner, _re.IGNORECASE)
+    parts += _re.findall(r'<meta\s+property=["\']og:[^"\']*["\'][^>]*>',
+                         head_inner, _re.IGNORECASE)
+    parts += _re.findall(r'<meta\s+name=["\']twitter:[^"\']*["\'][^>]*>',
+                         head_inner, _re.IGNORECASE)
+    parts += _re.findall(
+        r'<script\s+type=["\']application/ld\+json["\'][^>]*>.*?</script>',
+        head_inner, _re.DOTALL | _re.IGNORECASE)
+
+    if not parts:
+        return ""
+    return "    " + "\n    ".join(tag.strip() for tag in parts)
+
 
 def get_series_mapping():
     """Get mapping of series to their directory names"""
@@ -1316,6 +1438,9 @@ def create_standalone_main_series_page(series, series_dir_name):
         # Clean up empty script tags
         body_content = re.sub(r'<script>\s*</script>', '', body_content)
         
+        # Preserve SEO / structured-data tags from the generated <head>.
+        seo_head = extract_seo_head_tags(html_content)
+
         # Create standalone HTML
         standalone_html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -1323,6 +1448,7 @@ def create_standalone_main_series_page(series, series_dir_name):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{series.replace('-series', '').upper()} Series Ball Bearings | RHD Bearings</title>
+{seo_head}
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */
@@ -1534,6 +1660,9 @@ def create_standalone_specs_hub_page(series, series_dir_name):
         # Clean up empty script tags
         body_content = re.sub(r'<script>\s*</script>', '', body_content)
         
+        # Preserve SEO / structured-data tags from the generated <head>.
+        seo_head = extract_seo_head_tags(html_content)
+
         # Create standalone HTML
         standalone_html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -1541,6 +1670,7 @@ def create_standalone_specs_hub_page(series, series_dir_name):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bearing Specifications Hub | Technical Data & Performance Grades | RHD Bearings</title>
+{seo_head}
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */
@@ -1785,6 +1915,13 @@ def create_standalone_model_page(model_name, model_dir, series):
         # Clean up empty script tags
         body_content = re.sub(r'<script>\s*</script>', '', body_content)
         
+        # Preserve SEO / structured-data tags from the generated <head>.
+        # The template (index_new_claude.html) injects meta description, keywords,
+        # canonical, Open Graph, Twitter cards and JSON-LD Product schema. Rebuilding
+        # the standalone <head> below would otherwise drop all of them, which is why
+        # the live pages had no machine-readable data for search engines / LLMs.
+        seo_head = extract_seo_head_tags(html_content)
+        
         # Create standalone HTML
         standalone_html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -1792,6 +1929,7 @@ def create_standalone_model_page(model_name, model_dir, series):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{model_title} | RHD Bearings</title>
+{seo_head}
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */

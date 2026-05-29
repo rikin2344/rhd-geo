@@ -232,7 +232,13 @@ class MiniaturePageGenerator:
             
             # 9. Replace simple placeholders
             content = self._replace_simple_placeholders(content)
-            
+
+            # 9b. Fix broken breadcrumb series slug
+            content = self._fix_breadcrumb_series(content)
+
+            # 10. Inject BreadcrumbList + FAQPage structured data
+            content = self._inject_structured_data(content)
+
             # Create output directory if it doesn't exist
             output_path = Path(self.output_file)
             output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -521,6 +527,84 @@ class MiniaturePageGenerator:
                 items.append((new_key, v))
         return dict(items)
 
+    def _series_slug(self) -> str:
+        """Resolve the series URL slug from the canonical URL (source of truth)."""
+        canonical = self.data.get('seo_metadata', {}).get('canonical_url', '') or ''
+        if '/specs/' in canonical:
+            slug = canonical.split('/specs/')[1].split('/')[0]
+            if slug:
+                return slug
+        return str(self.data.get('bearing_series_name') or 'miniature-series')
+
+    def _fix_breadcrumb_series(self, content: str) -> str:
+        """Resolve the {{bearing_series}} placeholder (otherwise a broken link)."""
+        return content.replace('{{bearing_series}}', self._series_slug())
+
+    def _inject_structured_data(self, content: str) -> str:
+        """Build BreadcrumbList + FAQPage JSON-LD and inject at {{ADDITIONAL_JSONLD}}."""
+        import json as _json
+        website = self.data.get('company_metadata', {}).get('website', 'https://rhdbearings.com')
+        slug = self._series_slug()
+        series_name = str(self.data.get('bearing_series_name') or slug)
+        model = str(self.data.get('model_number', ''))
+        canonical = self.data.get('seo_metadata', {}).get('canonical_url', '') \
+            or f"{website}/specs/{slug}/{model}/"
+
+        blocks = [{
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{website}/"},
+                {"@type": "ListItem", "position": 2, "name": series_name,
+                 "item": f"{website}/specs/{slug}/"},
+                {"@type": "ListItem", "position": 3, "name": f"{model} Bearing",
+                 "item": canonical},
+            ],
+        }]
+
+        faq_entities = []
+        for category_key, category_data in self.data.get('faqs', {}).items():
+            if category_key not in ['selection_replacement', 'installation_maintenance',
+                                    'troubleshooting', 'cost_performance']:
+                continue
+            for q in category_data.get('questions', []):
+                question = q.get('question', '')
+                if not question:
+                    continue
+                parts = []
+                da = self.convert_kn_to_kg(q.get('direct_answer', ''), f"faqs.{category_key}.questions.direct_answer")
+                wm = self.convert_kn_to_kg(q.get('why_matters', ''), f"faqs.{category_key}.questions.why_matters")
+                hh = self.convert_kn_to_kg(q.get('how_to_handle', ''), f"faqs.{category_key}.questions.how_to_handle")
+                pt = self.convert_kn_to_kg(q.get('pro_tip', ''), f"faqs.{category_key}.questions.pro_tip")
+                if da:
+                    parts.append(da)
+                if wm:
+                    parts.append(wm)
+                if hh:
+                    parts.append(hh)
+                if pt:
+                    parts.append(f"Pro tip: {pt}")
+                answer = ' '.join(p.strip() for p in parts if p).strip()
+                if not answer:
+                    continue
+                faq_entities.append({
+                    "@type": "Question",
+                    "name": question,
+                    "acceptedAnswer": {"@type": "Answer", "text": answer},
+                })
+        if faq_entities:
+            blocks.append({
+                "@context": "https://schema.org/",
+                "@type": "FAQPage",
+                "mainEntity": faq_entities,
+            })
+
+        scripts = '\n'.join(
+            f'<script type="application/ld+json">\n{_json.dumps(b, ensure_ascii=False, indent=2)}\n</script>'
+            for b in blocks
+        )
+        return content.replace('{{ADDITIONAL_JSONLD}}', scripts)
+
 def generate_miniature_pages():
     """
     STEP 1: Generate HTML pages from JSON files
@@ -722,6 +806,34 @@ def create_standalone_pages():
         print(f"\n⚠️  {failed_count} page(s) failed to create. Check the errors above.")
         return False
 
+def extract_seo_head_tags(html_content: str) -> str:
+    """Extract SEO / structured-data tags (meta description/keywords/robots,
+    canonical, Open Graph, Twitter, and all JSON-LD scripts) from a generated
+    page's <head>, so they can be carried over to the standalone deploy page."""
+    import re as _re
+    head_match = _re.search(r'<head[^>]*>(.*?)</head>', html_content,
+                            _re.DOTALL | _re.IGNORECASE)
+    if not head_match:
+        return ""
+    head_inner = head_match.group(1)
+    parts = []
+    parts += _re.findall(
+        r'<meta\s+name=["\'](?:description|keywords|robots)["\'][^>]*>',
+        head_inner, _re.IGNORECASE)
+    parts += _re.findall(r'<link\s+rel=["\']canonical["\'][^>]*>',
+                         head_inner, _re.IGNORECASE)
+    parts += _re.findall(r'<meta\s+property=["\']og:[^"\']*["\'][^>]*>',
+                         head_inner, _re.IGNORECASE)
+    parts += _re.findall(r'<meta\s+name=["\']twitter:[^"\']*["\'][^>]*>',
+                         head_inner, _re.IGNORECASE)
+    parts += _re.findall(
+        r'<script\s+type=["\']application/ld\+json["\'][^>]*>.*?</script>',
+        head_inner, _re.DOTALL | _re.IGNORECASE)
+    if not parts:
+        return ""
+    return "    " + "\n    ".join(tag.strip() for tag in parts)
+
+
 def create_standalone_model_page(model_name, model_dir):
     """
     Helper function for create_standalone_pages()
@@ -762,6 +874,9 @@ def create_standalone_model_page(model_name, model_dir):
         
         with open(index_file, 'r', encoding='utf-8') as f:
             html_content = f.read()
+
+        # Carry SEO/structured-data tags from the generated head into the standalone page
+        seo_head = extract_seo_head_tags(html_content)
         
         # Read shared CSS files
         shared_dir = Path("webpages/shared")
@@ -906,6 +1021,7 @@ def create_standalone_model_page(model_name, model_dir):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{model_name} {model_dimensions} | RHD Bearings</title>
+{seo_head}
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
 /* Reset and base styles */

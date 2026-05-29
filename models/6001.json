@@ -91,7 +91,7 @@
         "Cooling fan spindles",
         "Vacuum cleaner motors"
       ],
-      "requirements": "12mm shaft with 6.00kN (\u2248610kg) dynamic load capacity, 18,000 RPM grease lubrication, 32\u00d710mm profile for small appliance drives"
+      "requirements": "12mm shaft with 5.10kN (≈519kg) dynamic load capacity, 18,000 RPM grease lubrication, 28×8mm profile for small appliance drives"
     },
     "application2": {
       "title": "Instrument Units",
@@ -106,7 +106,7 @@
         "Camera focus shafts",
         "Sensor mechanism bearings"
       ],
-      "requirements": "Precision 12mm bore with 0.7mm chamfer radius, 3.0kN (\u2248305kg) static load rating for accurate positioning"
+      "requirements": "Precision 12mm bore with 0.7mm chamfer radius, 2.38kN (≈243kg) static load rating for accurate positioning"
     },
     "application3": {
       "title": "Light Machinery",
@@ -121,7 +121,7 @@
         "Micro conveyor rollers",
         "Lab equipment drives"
       ],
-      "requirements": "12mm bore, 10mm width for compact machinery, grease and oil lubrication"
+      "requirements": "12mm bore, 8mm width for compact machinery, grease and oil lubrication"
     }
   },
   "vibration": {
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6201",
-      "6301",
       "6801",
-      "6901"
+      "6901",
+      "16001",
+      "6201",
+      "62201",
+      "62301",
+      "6301"
     ],
     "shaft_requirements": {
       "nominal_diameter": "12.000mm",
-      "tolerance_grade": "h6 (11.991-12.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (11.989-12.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,39 +373,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 520kg load capacity with compact 8mm width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 12mm bore (ID) with 6801, 6901, 16001, so it can be considered where the shaft is fixed at 12mm. The 6001 is rated 5.10kN dynamic / 2.38kN static at 28mm OD — more capacity than the 6901 (2.80kN) and less than the heavier-duty 6201 (6.82kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for small bearing applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "Higher 520kg load capacity compared to 10mm bearings",
-      "vs_larger_bearing": "More compact design compared to larger alternatives",
+      "vs_smaller_bearing": "Same 12mm bore as the 6901 but in a larger 28mm OD body — the 6001 delivers 5.10kN dynamic vs 2.80kN for the 6901, the higher-capacity option when the shaft stays 12mm.",
+      "vs_larger_bearing": "Need more load on the same 12mm shaft? The 6201 (32mm OD, 6.82kN) is the heavier-duty same-bore alternative to the 6001 (5.10kN) — choose the 6001 to save radial space.",
       "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
       "cost_benefit": "Modest cost justified by extended service life and reliability"
     }
@@ -441,7 +444,7 @@
           "question": "What tools are needed to install a 22g 6001 bearing properly?",
           "direct_answer": "Small bearing installation tools, controlled heating equipment, and precision measuring instruments for proper 12mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The lightweight 22g bearing and small 12mm bore require careful handling to avoid damage during installation. Small bearings are sensitive to installation forces and temperature extremes.",
-          "how_to_handle": "Heat bearing to 80\u00b0C maximum for thermal expansion. Use appropriate bearing installation tools or hydraulic press with proper support. Verify shaft tolerances (h6: 11.991-12.009mm) carefully. Avoid impact installation methods.",
+          "how_to_handle": "Heat bearing to 80°C maximum for thermal expansion. Use appropriate bearing installation tools or hydraulic press with proper support. Verify shaft tolerances (h6: 11.991-12.009mm) carefully. Avoid impact installation methods.",
           "pro_tip": "Small bearings heat and cool quickly - work efficiently during installation to take advantage of thermal expansion."
         },
         {

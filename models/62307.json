@@ -91,7 +91,7 @@
         "Industrial exhaust motors",
         "Greenhouse ventilation fans"
       ],
-      "requirements": "35mm shaft with 21.0kN (\u22482,140kg) dynamic load capacity, 8,500 RPM grease lubrication, 77\u00d727mm suitable for fan drives"
+      "requirements": "35mm shaft with 39.20kN (≈3995kg) dynamic load capacity, 8,800 RPM grease lubrication, 80×31mm suitable for fan drives"
     },
     "application2": {
       "title": "Heavy Machinery",
@@ -106,7 +106,7 @@
         "Conveyor drive shafts",
         "Heavy duty crushers"
       ],
-      "requirements": "Precision 35mm bore with 12.7kN (\u22481,295kg) static load rating for heavy tasks"
+      "requirements": "Precision 35mm bore with 11.00kN (≈1122kg) static load rating for heavy tasks"
     },
     "application3": {
       "title": "Machine Components",
@@ -121,7 +121,7 @@
         "Material feeder rollers",
         "Workshop tool shafts"
       ],
-      "requirements": "35mm bore, 27mm width for durable machinery parts"
+      "requirements": "35mm bore, 31mm width for durable machinery parts"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "62307 Bearing 35x80x31mm | RHD Bearings",
-    "meta_description": "62307 deep groove ball bearing: 35x80x31mm, 3998kg load capacity, 8,800 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "62307 deep groove ball bearing: 35x80x31mm, 3995kg load capacity, 8,800 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "62307 bearing",
       "35mm bore bearing",
@@ -248,7 +248,7 @@
     "canonical_url": "https://rhdbearings.com/specs/62300-series/62307/",
     "og_data": {
       "title": "62307 Bearing 35x80x31mm | RHD Bearings",
-      "description": "62307 deep groove ball bearing: 35x80x31mm, 3998kg load capacity, 8,800 RPM. Professional grade Gcr15 steel.",
+      "description": "62307 deep groove ball bearing: 35x80x31mm, 3995kg load capacity, 8,800 RPM. Professional grade Gcr15 steel.",
       "url": "https://rhdbearings.com/specs/62300-series/62307/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -256,14 +256,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "62307 Bearing 35x80x31mm | RHD Bearings",
-      "description": "62307 deep groove ball bearing: 35x80x31mm, 3998kg load capacity, 8,800 RPM. Professional grade Gcr15 steel."
+      "description": "62307 deep groove ball bearing: 35x80x31mm, 3995kg load capacity, 8,800 RPM. Professional grade Gcr15 steel."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "62307 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "62307 deep groove ball bearing: 35x80x31mm, 3998kg load capacity, 8,800 RPM. Professional grade Gcr15 steel.",
+      "description": "62307 deep groove ball bearing: 35x80x31mm, 3995kg load capacity, 8,800 RPM. Professional grade Gcr15 steel.",
       "sku": "62307",
       "mpn": "62307",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "62301",
-      "62302",
-      "62303",
-      "62304"
+      "6807",
+      "6907",
+      "16007",
+      "6007",
+      "6207",
+      "62207",
+      "6307"
     ],
     "shaft_requirements": {
       "nominal_diameter": "35.000mm",
-      "tolerance_grade": "h6 (34.987-35.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (34.984-35.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,39 +375,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 11.0kN more load than typical 35mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 62307 is rated 39.20kN dynamic / 11.00kN static at 80mm OD — the highest-capacity 35mm-bore option, above the 6207 (25.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 39.2kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "62307 offers 31mm width vs 12mm standard, providing 158% more load capacity",
-      "vs_larger_bearing": "Compact 80mm outer diameter vs 90mm alternatives, saving space while maintaining performance",
+      "vs_smaller_bearing": "Same 35mm bore as the 6207 but in a larger 80mm OD body — the 62307 delivers 39.20kN dynamic vs 25.50kN for the 6207, the higher-capacity option when the shaft stays 35mm.",
+      "vs_larger_bearing": "The 62307 is the highest-capacity 35mm-bore bearing in this family (39.20kN at 80mm OD); step down to the 6207 for a more compact fit on the same shaft.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel, ensuring longer service life",
       "cost_benefit": "Professional grade quality at competitive pricing, reducing total cost of ownership"
     }

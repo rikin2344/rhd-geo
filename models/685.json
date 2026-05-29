@@ -43,7 +43,7 @@
   "dimensions": {
     "bore_diameter_d_mm": 5,
     "outer_diameter_D_mm": 11,
-    "width_B_mm": 3,
+    "width_B_mm": 5,
     "weight_kg": 0.002,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
@@ -91,7 +91,7 @@
         "diagnostic equipment",
         "therapeutic devices"
       ],
-      "requirements": "5mm shaft with 1.88kN dynamic load capacity, 32,000 RPM grease lubrication, precision 16\u00d75mm profile for medical device applications"
+      "requirements": "5mm shaft with 0.57kN dynamic load capacity, 43,000 RPM grease lubrication, precision 11×5mm profile for medical device applications"
     },
     "application2": {
       "title": "High-Speed Micro-Drives",
@@ -106,7 +106,7 @@
         "micro-spindles",
         "precision stages"
       ],
-      "requirements": "Precision 5mm bore with 0.3mm chamfer radius, 0.68kN static load rating for stable operation, 192kg load capacity for drive accuracy"
+      "requirements": "Precision 5mm bore with 0.3mm chamfer radius, 0.25kN static load rating for stable operation, 25kg load capacity for drive accuracy"
     },
     "application3": {
       "title": "Advanced Research Equipment",
@@ -121,7 +121,7 @@
         "testing equipment",
         "calibration systems"
       ],
-      "requirements": "5mm bore fits research shafts, 5mm width for compact mounting, 0.004kg weight for efficiency, 40,000 RPM oil lubrication capability"
+      "requirements": "5mm bore fits research shafts, 5mm width for compact mounting, 58kg weight for efficiency, 51,000 RPM oil lubrication capability"
     }
   },
   "vibration": {
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "685 Bearing 5\u00d716\u00d75mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "685 deep groove ball bearing with 5mm bore, 16mm OD, 5mm width. 1.88kN dynamic load, 192kg capacity. Perfect for precision medical devices, micro-drives, research equipment.",
+    "title": "685 Bearing 5×11×5mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "685 deep groove ball bearing with 5mm bore, 11mm OD, 5mm width. 0.57kN dynamic load, 58kg capacity. Perfect for precision medical devices, micro-drives, research equipment.",
     "keywords": [
       "685 bearing",
       "5mm bore bearing",
@@ -248,8 +248,8 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/685/",
     "og_data": {
-      "title": "685 Deep Groove Ball Bearing - 5\u00d716\u00d75mm | RHD Bearings",
-      "description": "Precision medical device 685 miniature bearing with 1.88kN dynamic load capacity. Perfect for medical devices, micro-drives, and research equipment.",
+      "title": "685 Deep Groove Ball Bearing - 5×11×5mm | RHD Bearings",
+      "description": "Precision medical device 685 miniature bearing with 0.57kN dynamic load capacity. Perfect for medical devices, micro-drives, and research equipment.",
       "url": "https://rhdbearings.com/specs/miniature-series/685/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -257,14 +257,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "685 Bearing - Precision Medical Device Solution",
-      "description": "5mm bore, 1.88kN load capacity, 32,000 RPM. Ideal for precision medical devices, micro-drives, and research equipment."
+      "description": "5mm bore, 0.57kN load capacity, 43,000 RPM. Ideal for precision medical devices, micro-drives, and research equipment."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "685 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "685 deep groove ball bearing with 5mm bore, 16mm outer diameter, 5mm width. 1.88kN dynamic load capacity, 192kg load capacity.",
+      "description": "685 deep groove ball bearing with 5mm bore, 11mm OD, 5mm width. 0.57kN dynamic load capacity, 58kg load capacity.",
       "sku": "685",
       "mpn": "685",
       "brand": "RHD Bearings",
@@ -302,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -324,15 +324,15 @@
   },
   "cross_references": {
     "related_models": [
+      "695",
       "605",
       "625",
-      "645",
-      "655"
+      "635"
     ],
     "shaft_requirements": {
       "nominal_diameter": "5.000mm",
-      "tolerance_grade": "h6 (4.991-5.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (4.992-5.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -343,12 +343,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 685 for 5mm shafts requiring 1.88kN dynamic load capacity in precision medical device applications",
-      "Select 685-ZZ for dust protection with 28,800 RPM capability and sealed-for-life lubrication",
-      "Use 685-RS in moisture-prone environments requiring 25,600 RPM with rubber seal protection",
-      "Consider 685 for medical devices where 16\u00d75mm profile and 192kg load capacity optimize performance",
+      "Choose 685 for 5mm shafts requiring 0.57kN dynamic load capacity in precision medical device applications",
+      "Select 685-ZZ for dust protection with 43,000 RPM capability and sealed-for-life lubrication",
+      "Use 685-RS in moisture-prone environments requiring 43,000 RPM with rubber seal protection",
+      "Consider 685 for medical devices where 11×5mm profile and 58kg load capacity optimize performance",
       "Opt for 685 in micro-drives needing 0.3mm chamfer radius and stable positioning",
-      "Deploy 685 in research equipment requiring 32,000 RPM grease lubrication with precision design"
+      "Deploy 685 in research equipment requiring 43,000 RPM grease lubrication with precision design"
     ],
     "natural_language_queries": [
       "685 bearing dimensions",
@@ -360,60 +360,60 @@
     ],
     "decision_criteria": [
       "5mm bore diameter requirement for shaft compatibility",
-      "1.88kN dynamic load capacity for application demands",
+      "0.57kN dynamic load capacity for application demands",
       "5mm width constraint for compact mounting",
-      "32,000 RPM grease lubrication speed requirement",
-      "16mm outer diameter for housing fit"
+      "43,000 RPM grease lubrication speed requirement",
+      "11mm OD for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need precision bearing for 5mm shaft with substantial load capacity",
-        "solution": "685 bearing provides 1.88kN dynamic load in 16\u00d75mm profile"
+        "solution": "685 bearing provides 0.57kN dynamic load in 11×5mm profile"
       },
       {
         "problem": "Require dust protection in medical application",
-        "solution": "685-ZZ offers 28,800 RPM with double metal shield protection"
+        "solution": "685-ZZ offers 43,000 RPM with double metal shield protection"
       },
       {
         "problem": "Moisture exposure in medical environment",
-        "solution": "685-RS provides rubber seal protection up to 25,600 RPM"
+        "solution": "685-RS provides rubber seal protection up to 43,000 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "5mm bore with 1.88kN load capacity and 32,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 5mm bore (ID) with 695, 605, 625, so it can be considered where the shaft is fixed at 5mm. The 685 is rated 0.57kN dynamic / 0.25kN static at 11mm OD — the most compact 5mm-bore option, below the 695 (1.08kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in miniature bearing category for 1.88kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in miniature bearing category for 0.57kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "685 provides 0.73kN higher dynamic load than 684 with 1mm larger bore for enhanced medical device performance",
-      "vs_larger_bearing": "685 offers 0.92kN lower load than 626 but with 1mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "The 685 is the most compact 5mm-bore bearing in this family (11mm OD, 0.57kN); the 695 adds load capacity on the same 5mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 5mm shaft? The 695 (13mm OD, 1.08kN) is the heavier-duty same-bore alternative to the 685 (0.57kN) — choose the 685 to save radial space.",
       "vs_competitors": "RHD 685 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "685 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -431,7 +431,7 @@
         },
         {
           "question": "Can I replace a 685 bearing with a different size bearing?",
-          "direct_answer": "No, 685 bearings have unique 5\u00d716\u00d75mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 685 bearings have unique 5x11x5mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 685 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 685 bearings in stock to avoid production delays and ensure consistent quality."

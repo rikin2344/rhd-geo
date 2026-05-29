@@ -43,7 +43,7 @@
   "dimensions": {
     "bore_diameter_d_mm": 7,
     "outer_diameter_D_mm": 14,
-    "width_B_mm": 3.5,
+    "width_B_mm": 5,
     "weight_kg": 0.0025,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
@@ -91,7 +91,7 @@
         "communication systems",
         "safety equipment"
       ],
-      "requirements": "7mm shaft with 5.1kN dynamic load capacity, 24,000 RPM grease lubrication, precision 22\u00d77mm profile for aerospace system reliability"
+      "requirements": "7mm shaft with 0.90kN dynamic load capacity, 37,000 RPM grease lubrication, precision 14×5mm profile for aerospace system reliability"
     },
     "application2": {
       "title": "High-Precision Instrumentation",
@@ -106,7 +106,7 @@
         "research equipment",
         "laboratory instruments"
       ],
-      "requirements": "Precision 7mm bore with 0.3mm chamfer radius, 1.85kN static load rating for instrument stability, 520kg load capacity for accurate measurements"
+      "requirements": "Precision 7mm bore with 0.3mm chamfer radius, 0.46kN static load rating for instrument stability, 47kg load capacity for accurate measurements"
     },
     "application3": {
       "title": "Advanced Automation Systems",
@@ -121,7 +121,7 @@
         "production monitoring",
         "material handling"
       ],
-      "requirements": "7mm bore fits automation shafts, 7mm width for robust mounting, 0.015kg weight for efficiency, 32,000 RPM oil lubrication capability"
+      "requirements": "7mm bore fits automation shafts, 5mm width for robust mounting, 91kg weight for efficiency, 44,000 RPM oil lubrication capability"
     }
   },
   "vibration": {
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "687 Bearing 7\u00d722\u00d77mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "687 deep groove ball bearing with 7mm bore, 22mm OD, 7mm width. 5.1kN dynamic load, 520kg capacity. Perfect for precision aerospace systems, high-precision instrumentation, advanced automation.",
+    "title": "687 Bearing 7×14×5mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "687 deep groove ball bearing with 7mm bore, 14mm OD, 5mm width. 0.90kN dynamic load, 91kg capacity. Perfect for precision aerospace systems, high-precision instrumentation, advanced automation.",
     "keywords": [
       "687 bearing",
       "7mm bore bearing",
@@ -248,8 +248,8 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/687/",
     "og_data": {
-      "title": "687 Deep Groove Ball Bearing - 7\u00d722\u00d77mm | RHD Bearings",
-      "description": "Precision aerospace system 687 miniature bearing with 5.1kN dynamic load capacity. Perfect for aerospace systems, instrumentation, and automation.",
+      "title": "687 Deep Groove Ball Bearing - 7×14×5mm | RHD Bearings",
+      "description": "Precision aerospace system 687 miniature bearing with 0.90kN dynamic load capacity. Perfect for aerospace systems, instrumentation, and automation.",
       "url": "https://rhdbearings.com/specs/miniature-series/687/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -257,14 +257,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "687 Bearing - Precision Aerospace System Solution",
-      "description": "7mm bore, 5.1kN load capacity, 24,000 RPM. Ideal for precision aerospace systems, high-precision instrumentation, and advanced automation."
+      "description": "7mm bore, 0.90kN load capacity, 37,000 RPM. Ideal for precision aerospace systems, high-precision instrumentation, and advanced automation."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "687 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "687 deep groove ball bearing with 7mm bore, 22mm outer diameter, 7mm width. 5.1kN dynamic load capacity, 520kg load capacity.",
+      "description": "687 deep groove ball bearing with 7mm bore, 14mm OD, 5mm width. 0.90kN dynamic load capacity, 91kg load capacity.",
       "sku": "687",
       "mpn": "687",
       "brand": "RHD Bearings",
@@ -302,9 +302,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -324,15 +324,14 @@
   },
   "cross_references": {
     "related_models": [
+      "697",
       "607",
-      "627",
-      "647",
-      "657"
+      "627"
     ],
     "shaft_requirements": {
       "nominal_diameter": "7.000mm",
-      "tolerance_grade": "h6 (6.991-7.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (6.991-7.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -343,12 +342,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 687 for 7mm shafts requiring 5.1kN dynamic load capacity in precision aerospace system applications",
-      "Select 687-ZZ for dust protection with 21,600 RPM capability and sealed-for-life lubrication",
-      "Use 687-RS in moisture-prone environments requiring 19,200 RPM with rubber seal protection",
-      "Consider 687 for aerospace systems where 22\u00d77mm profile and 520kg load capacity optimize performance",
+      "Choose 687 for 7mm shafts requiring 0.90kN dynamic load capacity in precision aerospace system applications",
+      "Select 687-ZZ for dust protection with 37,000 RPM capability and sealed-for-life lubrication",
+      "Use 687-RS in moisture-prone environments requiring 37,000 RPM with rubber seal protection",
+      "Consider 687 for aerospace systems where 14×5mm profile and 91kg load capacity optimize performance",
       "Opt for 687 in instrumentation needing 0.3mm chamfer radius and stable positioning",
-      "Deploy 687 in automation requiring 24,000 RPM grease lubrication with precision design"
+      "Deploy 687 in automation requiring 37,000 RPM grease lubrication with precision design"
     ],
     "natural_language_queries": [
       "687 bearing dimensions",
@@ -360,60 +359,60 @@
     ],
     "decision_criteria": [
       "7mm bore diameter requirement for shaft compatibility",
-      "5.1kN dynamic load capacity for application demands",
-      "7mm width constraint for robust mounting",
-      "24,000 RPM grease lubrication speed requirement",
-      "22mm outer diameter for housing fit"
+      "0.90kN dynamic load capacity for application demands",
+      "5mm width constraint for robust mounting",
+      "37,000 RPM grease lubrication speed requirement",
+      "14mm OD for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need precision bearing for 7mm shaft with substantial load capacity",
-        "solution": "687 bearing provides 5.1kN dynamic load in 22\u00d77mm profile"
+        "solution": "687 bearing provides 0.90kN dynamic load in 14×5mm profile"
       },
       {
         "problem": "Require dust protection in aerospace application",
-        "solution": "687-ZZ offers 21,600 RPM with double metal shield protection"
+        "solution": "687-ZZ offers 37,000 RPM with double metal shield protection"
       },
       {
         "problem": "Moisture exposure in automation environment",
-        "solution": "687-RS provides rubber seal protection up to 19,200 RPM"
+        "solution": "687-RS provides rubber seal protection up to 37,000 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "7mm bore with 5.1kN load capacity and 24,000 RPM capability. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 7mm bore (ID) with 697, 607, 627, so it can be considered where the shaft is fixed at 7mm. The 687 is rated 0.90kN dynamic / 0.46kN static at 14mm OD — the most compact 7mm-bore option, below the 697 (2.02kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in miniature bearing category for 5.1kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in miniature bearing category for 0.90kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "687 provides 1.95kN higher dynamic load than 686 with 1mm larger bore for enhanced aerospace system performance",
-      "vs_larger_bearing": "687 offers 0.9kN lower load than 628 but with 1mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "The 687 is the most compact 7mm-bore bearing in this family (14mm OD, 0.90kN); the 697 adds load capacity on the same 7mm shaft.",
+      "vs_larger_bearing": "Need more load on the same 7mm shaft? The 697 (17mm OD, 2.02kN) is the heavier-duty same-bore alternative to the 687 (0.90kN) — choose the 687 to save radial space.",
       "vs_competitors": "RHD 687 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "687 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -431,7 +430,7 @@
         },
         {
           "question": "Can I replace a 687 bearing with a different size bearing?",
-          "direct_answer": "No, 687 bearings have unique 7\u00d722\u00d77mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 687 bearings have unique 7x14x5mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 687 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 687 bearings in stock to avoid production delays and ensure consistent quality."

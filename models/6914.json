@@ -92,7 +92,7 @@
         "Agricultural pump shafts",
         "Soil stabilizer drives"
       ],
-      "requirements": "70mm shaft with 34.0kN (\u22483,460kg) dynamic load capacity, 4,800 RPM grease lubrication, 75\u00d721mm profile for agricultural machinery"
+      "requirements": "70mm shaft with 23.70kN (≈2415kg) dynamic load capacity, 2,800 RPM grease lubrication, 100×16mm profile for agricultural machinery"
     },
     "application2": {
       "title": "Machine Mounts",
@@ -107,7 +107,7 @@
         "Metrology instrument mounts",
         "Test rig mounts"
       ],
-      "requirements": "Precision 70mm bore with 22kN (\u22482,245kg) static load rating"
+      "requirements": "Precision 70mm bore with 21.10kN (≈2152kg) static load rating"
     },
     "application3": {
       "title": "Heavy Equipment",
@@ -122,7 +122,7 @@
         "Utility vehicle axles",
         "Port cargo movers"
       ],
-      "requirements": "70mm bore, 24mm width built for heavy state machinery"
+      "requirements": "70mm bore, 16mm width built for heavy state machinery"
     }
   },
   "vibration": {
@@ -217,8 +217,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6914 Bearing 70x95x13mm - RHD Bearings",
-    "meta_description": "6914 deep groove ball bearing 70x95x13mm, 1796kg load capacity. High-speed 2,800 RPM. ISO compliant. Mumbai manufacturer.",
+    "title": "6914 Bearing 70×100×16mm - RHD Bearings",
+    "meta_description": "6914 deep groove ball bearing 70×100×16mm, 2415kg load capacity. High-speed 2,800 RPM. ISO compliant. Mumbai manufacturer.",
     "keywords": [
       "6914 bearing",
       "70x95x13 bearing",
@@ -245,23 +245,23 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/6900-series/6914/",
     "og_data": {
-      "title": "6914 Bearing 70x95x13mm - RHD Bearings",
-      "description": "6914 deep groove ball bearing 70x95x13mm, 1796kg load capacity. High-speed 2,800 RPM. ISO compliant.",
+      "title": "6914 Bearing 70×100×16mm - RHD Bearings",
+      "description": "6914 deep groove ball bearing 70×100×16mm, 2415kg load capacity. High-speed 2,800 RPM. ISO compliant.",
       "url": "https://rhdbearings.com/specs/6900-series/6914/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
-      "title": "6914 Bearing 70x95x13mm - RHD Bearings",
-      "description": "6914 deep groove ball bearing 70x95x13mm, 1796kg load capacity. High-speed 2,800 RPM."
+      "title": "6914 Bearing 70×100×16mm - RHD Bearings",
+      "description": "6914 deep groove ball bearing 70×100×16mm, 2415kg load capacity. High-speed 2,800 RPM."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6914 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6914 deep groove ball bearing 70x95x13mm with 1796kg load capacity and 2,800 RPM speed rating",
+      "description": "6914 deep groove ball bearing 70×100×16mm with 2415kg load capacity and 2,800 RPM speed rating",
       "sku": "6914",
       "mpn": "6914",
       "brand": "RHD Bearings",
@@ -299,9 +299,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6814",
+      "16014",
       "6014",
+      "62214",
       "6214",
       "6314",
-      "6814"
+      "62314"
     ],
     "shaft_requirements": {
       "nominal_diameter": "70.000mm",
-      "tolerance_grade": "h6 (69.987-70.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (69.981-70.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -340,11 +343,11 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "6914 bearing delivers 1796kg load capacity in compact 70x95x13mm design",
+      "6914 bearing delivers 2415kg load capacity in compact 70×100×16mm design",
       "High-speed 2,800 RPM rating makes 6914 ideal for precision applications",
       "6914 series offers excellent value with ISO 15:2011 compliance",
       "Compact 6914 bearing fits tight spaces while maintaining performance",
-      "6914 bearing's 17.60kN dynamic rating handles demanding applications",
+      "6914 bearing's 23.70kN dynamic rating handles demanding applications",
       "6914 series provides reliable performance in miniature bearing category"
     ],
     "natural_language_queries": [
@@ -357,52 +360,52 @@
     ],
     "decision_criteria": [
       "70mm bore diameter requirement for shaft compatibility",
-      "95mm outer diameter constraint for housing fit",
-      "13mm width limitation for space-constrained applications",
-      "1796kg load capacity for application requirements",
+      "100mm OD constraint for housing fit",
+      "16mm width limitation for space-constrained applications",
+      "2415kg load capacity for application requirements",
       "2,800 RPM speed rating for high-speed operations"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need compact bearing for tight spaces",
-        "solution": "6914 bearing's 70x95x13mm dimensions provide maximum performance in minimal space"
+        "solution": "6914 bearing's 70×100×16mm dimensions provide maximum performance in minimal space"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 16.2kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 70mm bore (ID) with 6814, 16014, 6014, so it can be considered where the shaft is fixed at 70mm. The 6914 is rated 23.70kN dynamic / 21.10kN static at 100mm OD — more capacity than the 6814 (12.10kN) and less than the heavier-duty 16014 (27.90kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in small-bearing category for 17.60kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in small-bearing category for 23.70kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6914 provides 16.2kN more load capacity than 6814 series while maintaining compact design",
-      "vs_larger_bearing": "6914 offers space savings over 6014 series with 90% of the load capacity",
+      "vs_smaller_bearing": "Same 70mm bore as the 6814 but in a larger 100mm OD body — the 6914 delivers 23.70kN dynamic vs 12.10kN for the 6814, the higher-capacity option when the shaft stays 70mm.",
+      "vs_larger_bearing": "Need more load on the same 70mm shaft? The 16014 (110mm OD, 27.90kN) is the heavier-duty same-bore alternative to the 6914 (23.70kN) — choose the 6914 to save radial space.",
       "vs_competitors": "6914 delivers superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "6914 provides best value in miniature bearing category with 3-10x longer service life than cheap alternatives"
     }
@@ -441,7 +444,7 @@
           "question": "What shaft tolerance is recommended for the 6914 bearing?",
           "direct_answer": "The 6914 bearing requires an h6 shaft tolerance with a nominal diameter of 70.000mm and tolerance range of 69.987-70.013mm for optimal performance.",
           "why_matters": "Proper shaft tolerance ensures correct fit and prevents issues like excessive clearance or interference that can lead to premature failure.",
-          "how_to_handle": "Machine the shaft to h6 tolerance (69.987-70.013mm) with a surface finish of Ra 0.8\u03bcm maximum and runout tolerance of 0.013mm maximum.",
+          "how_to_handle": "Machine the shaft to h6 tolerance (69.987-70.013mm) with a surface finish of Ra 0.8μm maximum and runout tolerance of 0.013mm maximum.",
           "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation, as even small deviations can significantly impact bearing performance."
         },
         {
@@ -456,7 +459,7 @@
           "direct_answer": "The 6914 bearing should be installed using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to the bearing components.",
           "why_matters": "Proper installation prevents bearing damage, ensures correct fit, and maximizes service life while maintaining performance characteristics.",
           "how_to_handle": "Use bearing installation tools or sleeves to apply pressure evenly on the inner ring, never apply force directly to the outer ring or balls.",
-          "pro_tip": "Heat the bearing to 80-100\u00b0C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
+          "pro_tip": "Heat the bearing to 80-100°C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
         }
       ]
     },
@@ -468,7 +471,7 @@
           "direct_answer": "A hot-running 6914 bearing is typically caused by over-lubrication, excessive load, misalignment, or insufficient clearance, requiring immediate investigation and correction.",
           "why_matters": "Excessive heat can lead to premature bearing failure, lubricant breakdown, and potential damage to surrounding components.",
           "how_to_handle": "Check lubrication levels, verify load conditions, inspect for misalignment, and ensure proper clearance. Reduce speed if necessary and monitor temperature.",
-          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80\u00b0C indicate potential problems requiring attention."
+          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80°C indicate potential problems requiring attention."
         },
         {
           "question": "What causes excessive noise in the 6914 bearing?",
@@ -491,7 +494,7 @@
       "questions": [
         {
           "question": "What is the cost-benefit of choosing the 6914 bearing over alternatives?",
-          "direct_answer": "The 6914 bearing offers excellent value with 17.60kN load capacity in a compact 70x95x13mm design, providing 3-10x longer service life than cheap alternatives.",
+          "direct_answer": "The 6914 bearing offers excellent value with 17.60kN load capacity in a compact 70x100x16mm design, providing 3-10x longer service life than cheap alternatives.",
           "why_matters": "Quality bearings reduce total cost of ownership through longer service life, reduced maintenance, and fewer unplanned failures.",
           "how_to_handle": "Calculate total cost of ownership including initial cost, maintenance, and downtime costs when comparing bearing options.",
           "pro_tip": "Consider the cost of equipment downtime and replacement labor when evaluating bearing options - quality bearings often pay for themselves through reduced maintenance costs."

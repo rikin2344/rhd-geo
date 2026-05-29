@@ -1,0 +1,51 @@
+# RHD Bearings
+
+> RHD Bearings is a Mumbai (India) based manufacturer and supplier of precision deep groove ball bearings and motion solutions for OEM and industrial customers. Bearings are produced from Gcr15 (AISI 52100 equivalent) chrome bearing steel, through-hardened and ground to precision tolerances, under an ISO 9001:2015 quality system. The site hosts detailed technical specification pages for 199 individual bearing sizes across nine series, each with verified dimensions, load ratings, speed limits, FAQs and same-bore replacement guidance.
+
+Key facts:
+- Company: RHD Bearings (RHD Enterprise), Mumbai, Maharashtra, India
+- Product focus: deep groove ball bearings (open, ZZ shielded, 2RS sealed), plus linear motion, pillow block, spherical roller, taper roller and needle roller bearings
+- Material: Gcr15 / AISI 52100 chrome steel, through-hardened; 100% dimensional and quality testing
+- Certification: ISO 9001:2015
+- Compatibility model: bearings are grouped by bore (inner diameter, ID). Bearings that share the same bore (e.g. 6204, 6004, 6304 all have a 20 mm bore) are interchange/replacement candidates when shaft size is fixed.
+- Contact: +91-9702081858, sales@rhdenterprise.in
+- Mission: deliver superior bearing and linear motion solutions with advanced design, consistent quality and long-term value; be the preferred partner for OEMs and industrial clients.
+- Vision: shaping the future of motion technology.
+- Served industries: power tools, electric motors & pumps, automotive (2 & 3 wheeler), textile looms & machinery, packaging machinery, agricultural equipment, gearboxes, material handling, conveyors, cranes, railways, robotics, skating (inline/quad skates).
+
+## Bearing specification reference
+
+- [Bearing Specifications Hub](https://rhdbearings.com/specs/): index of all bearing series with technical data and performance grades
+- [6000 Series](https://rhdbearings.com/specs/6000-series/): single-row deep groove ball bearings, light section, 10–100 mm bore (21 sizes)
+- [6200 Series](https://rhdbearings.com/specs/6200-series/): single-row deep groove ball bearings, medium section, the most widely used series, 10–100 mm bore (24 sizes)
+- [6300 Series](https://rhdbearings.com/specs/6300-series/): single-row deep groove ball bearings, heavy section / higher load, 10–100 mm bore (21 sizes)
+- [6800 Series](https://rhdbearings.com/specs/6800-series/): thin-section deep groove ball bearings, compact radial space, 10–100 mm bore (21 sizes)
+- [6900 Series](https://rhdbearings.com/specs/6900-series/): thin-section deep groove ball bearings, 12–100 mm bore (21 sizes)
+- [16000 Series](https://rhdbearings.com/specs/16000-series/): narrow / slim deep groove ball bearings, 12–100 mm bore (20 sizes)
+- [62200 Series](https://rhdbearings.com/specs/62200-series/): wide deep groove ball bearings, 10–100 mm bore (21 sizes)
+- [62300 Series](https://rhdbearings.com/specs/62300-series/): wide, heavy-section deep groove ball bearings, 12–100 mm bore (20 sizes)
+- [Miniature Series](https://rhdbearings.com/specs/miniature-series/): miniature/instrument deep groove ball bearings, 3–9 mm bore (29 sizes); for 3-digit models the last digit is the bore (e.g. 689 = 9 mm bore)
+
+## Popular models
+
+- [6204 (20×47×14 mm)](https://rhdbearings.com/specs/6200-series/6204/): 12.80 kN dynamic, the most common general-purpose motor bearing
+- [6205 (25×52×15 mm)](https://rhdbearings.com/specs/6200-series/6205/)
+- [6203 (17×40×12 mm)](https://rhdbearings.com/specs/6200-series/6203/)
+- [6202 (15×35×11 mm)](https://rhdbearings.com/specs/6200-series/6202/)
+- [6004 (20×42×12 mm)](https://rhdbearings.com/specs/6000-series/6004/): same 20 mm bore as 6204, lighter section
+- [6304 (20×52×15 mm)](https://rhdbearings.com/specs/6300-series/6304/): same 20 mm bore as 6204, higher load capacity
+- [608 (8×22×7 mm)](https://rhdbearings.com/specs/miniature-series/608/): widely used in skate wheels, power tools and small motors
+- [626 (6×19×6 mm)](https://rhdbearings.com/specs/miniature-series/626/)
+- [625 (5×16×5 mm)](https://rhdbearings.com/specs/miniature-series/625/)
+- [6900 (10×22×6 mm)](https://rhdbearings.com/specs/6900-series/6900/): thin-section, space-constrained designs
+
+## Company
+
+- [About Us](https://rhdbearings.com/about-us/): company background, mission and vision
+- [Industries](https://rhdbearings.com/industries/): markets and applications served
+- [Bearing Size Chart](https://rhdbearings.com/bearing-size-chart/): quick dimensional reference
+- [Contact Us](https://rhdbearings.com/contact-us/): sales enquiries, OEM and bulk orders
+
+## Optional
+
+- [Full specification sitemap](https://rhdbearings.com/sitemap-specs.xml): machine-readable list of all 199 bearing specification pages

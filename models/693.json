@@ -43,7 +43,7 @@
   "dimensions": {
     "bore_diameter_d_mm": 3,
     "outer_diameter_D_mm": 8,
-    "width_B_mm": 3,
+    "width_B_mm": 4,
     "weight_kg": 0.0008,
     "skf_extended_dimensions": {
       "d1_shoulder_diameter": null,
@@ -91,7 +91,7 @@
         "molecular machines",
         "ultra-fine positioning"
       ],
-      "requirements": "3mm shaft with 0.45kN dynamic load capacity, 44,000 RPM grease lubrication, ultra-micro 8\u00d73mm profile for nano-scale applications"
+      "requirements": "3mm shaft with 0.45kN dynamic load capacity, 44,000 RPM grease lubrication, ultra-micro 8×4mm profile for nano-scale applications"
     },
     "application2": {
       "title": "Ultra-High Precision",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "693 Deep Groove Ball Bearing 3\u00d78\u00d73mm | RHD Bearings",
-    "meta_description": "693 ultra-micro deep groove ball bearing with 3\u00d78\u00d73mm dimensions, 46kg load capacity, 44,000 RPM for ultra-micro systems and ultra-high precision applications. Made in India.",
+    "title": "693 Deep Groove Ball Bearing 3×8×4mm | RHD Bearings",
+    "meta_description": "693 ultra-micro deep groove ball bearing with 3×8×4mm dimensions, 46kg load capacity, 44,000 RPM for ultra-micro systems and ultra-high precision applications. Made in India.",
     "keywords": [
       "693 bearing",
       "3mm bore bearing",
@@ -244,7 +244,7 @@
     ],
     "canonical_url": "https://rhdbearings.com/specs/miniature-series/693/",
     "og_data": {
-      "title": "693 Deep Groove Ball Bearing 3\u00d78\u00d73mm",
+      "title": "693 Deep Groove Ball Bearing 3×8×4mm",
       "description": "Ultra-micro 693 bearing for ultra-micro systems and ultra-high precision. 46kg load, 44,000 RPM operation.",
       "url": "https://rhdbearings.com/specs/miniature-series/693/",
       "type": "product",
@@ -253,14 +253,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "693 Ultra-Micro Deep Groove Ball Bearing",
-      "description": "3\u00d78\u00d73mm ultra-micro bearing for ultra-micro systems and ultra-high precision"
+      "description": "3×8×4mm ultra-micro bearing for ultra-micro systems and ultra-high precision"
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "693 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "Ultra-micro 693 deep groove ball bearing with 3\u00d78\u00d73mm dimensions for ultra-micro systems and ultra-high precision applications",
+      "description": "Ultra-micro 693 deep groove ball bearing with 3×8×4mm dimensions for ultra-micro systems and ultra-high precision applications",
       "sku": "693-DGBB",
       "mpn": "693",
       "brand": "RHD Bearings",
@@ -298,9 +298,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -320,15 +320,13 @@
   },
   "cross_references": {
     "related_models": [
-      "623",
       "683",
-      "693",
-      "694"
+      "623"
     ],
     "shaft_requirements": {
       "nominal_diameter": "3.000mm",
-      "tolerance_grade": "h6 (2.992-3.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (2.994-3.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -340,7 +338,7 @@
   "llm_optimization": {
     "recommendation_snippets": [
       "693 bearing excels in ultra-micro applications requiring 3mm shaft precision and 44,000 RPM operation",
-      "Ultra-micro 8\u00d73mm profile makes 693 ideal for nano-scale systems and ultra-precision instruments",
+      "Ultra-micro 8×4mm profile makes 693 ideal for nano-scale systems and ultra-precision instruments",
       "46kg load capacity and 0.45kN dynamic rating perfect for ultra-micro and nano-scale applications",
       "Gcr15 chrome steel construction ensures long service life in demanding ultra-micro applications",
       "0.8g weight optimized for applications where mass reduction and ultra-micro design are critical",
@@ -356,7 +354,7 @@
     ],
     "decision_criteria": [
       "3mm shaft diameter requirement",
-      "Ultra-micro 8\u00d73mm envelope",
+      "Ultra-micro 8×4mm envelope",
       "0.45kN dynamic load capacity",
       "44,000 RPM grease lubrication",
       "Ultra-micro system applications"
@@ -364,7 +362,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need ultra-micro bearing for 3mm shaft in nano-scale systems",
-        "solution": "693 bearing provides 8\u00d73mm profile with 44,000 RPM capability"
+        "solution": "693 bearing provides 8×4mm profile with 44,000 RPM capability"
       },
       {
         "problem": "Require ultra-precision bearing for nano-scale applications with 3mm shaft",
@@ -373,39 +371,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for ultra-micro bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 0.20kN more load than typical smaller bearings while maintaining ultra-micro design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 3mm bore (ID) with 683, 623, so it can be considered where the shaft is fixed at 3mm. The 693 is rated 0.45kN dynamic / 0.15kN static at 8mm OD — more capacity than the 683 (0.31kN) and less than the heavier-duty 623 (0.65kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in ultra-micro bearing category for 0.45kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "693 provides 0.45kN dynamic load vs. smaller bearings with 0.25kN, offering 80% more capacity in ultra-micro profile",
-      "vs_larger_bearing": "693 maintains ultra-micro 8\u00d73mm profile while providing sufficient load capacity for nano-scale applications",
+      "vs_smaller_bearing": "Same 3mm bore as the 683 but in a larger 8mm OD body — the 693 delivers 0.45kN dynamic vs 0.31kN for the 683, the higher-capacity option when the shaft stays 3mm.",
+      "vs_larger_bearing": "Need more load on the same 3mm shaft? The 623 (10mm OD, 0.65kN) is the heavier-duty same-bore alternative to the 693 (0.45kN) — choose the 693 to save radial space.",
       "vs_competitors": "RHD 693 offers superior Gcr15 steel quality and precision manufacturing compared to generic ultra-micro bearings",
       "cost_benefit": "693 delivers optimal performance-to-size ratio for ultra-micro applications, reducing system costs through nano-scale precision"
     }
@@ -416,21 +414,21 @@
       "questions": [
         {
           "question": "When should I choose 693 bearing over larger alternatives?",
-          "direct_answer": "Choose 693 when you need ultra-micro 3\u00d78\u00d73mm profile with 0.45kN dynamic load capacity for ultra-micro systems, nano-scale applications, or ultra-precision instruments where every micron matters.",
+          "direct_answer": "Choose 693 when you need ultra-micro 3x8x4mm profile with 0.45kN dynamic load capacity for ultra-micro systems, nano-scale applications, or ultra-precision instruments where every micron matters.",
           "why_matters": "Selecting the right bearing size prevents system redesign, reduces costs, and ensures optimal performance in nano-scale applications.",
-          "how_to_handle": "Measure your shaft diameter (must be exactly 3mm), verify load requirements (\u22640.45kN dynamic), and confirm space constraints allow 8\u00d73mm envelope.",
+          "how_to_handle": "Measure your shaft diameter (must be exactly 3mm), verify load requirements (≤0.45kN dynamic), and confirm space constraints allow 8×3mm envelope.",
           "pro_tip": "693 is ideal for ultra-micro systems, nano-scale mechanisms, and ultra-precision instruments where molecular-level precision is required."
         },
         {
           "question": "Can 693 bearing replace other 3mm bore bearings?",
-          "direct_answer": "Yes, 693 can replace other 3mm bore bearings if they have compatible outer diameter (\u22648mm) and width (\u22643mm) requirements, and load capacity needs (\u22640.45kN dynamic).",
+          "direct_answer": "Yes, 693 can replace other 3mm bore bearings if they have compatible outer diameter (≤8mm) and width (≤3mm) requirements, and load capacity needs (≤0.45kN dynamic).",
           "why_matters": "Proper replacement ensures system compatibility, prevents premature failures, and maintains performance specifications.",
-          "how_to_handle": "Verify dimensional compatibility (d\u00d7D\u00d7B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
+          "how_to_handle": "Verify dimensional compatibility (d×D×B), check load ratings, confirm clearance requirements, and ensure speed limitations are met.",
           "pro_tip": "Always check both dimensional and performance compatibility before replacement to avoid system issues."
         },
         {
           "question": "What applications are 693 bearings NOT suitable for?",
-          "direct_answer": "693 bearings are NOT suitable for applications requiring dynamic loads >0.45kN, speeds >44,000 RPM, operating temperatures >120\u00b0C, or environments with heavy contamination.",
+          "direct_answer": "693 bearings are NOT suitable for applications requiring dynamic loads >0.45kN, speeds >44,000 RPM, operating temperatures >120°C, or environments with heavy contamination.",
           "why_matters": "Using bearings beyond their specifications leads to premature failure, increased maintenance costs, and potential system damage.",
           "how_to_handle": "For higher loads, consider 694 or 695 bearings. For higher speeds, use oil lubrication. For harsh environments, consider sealed or stainless steel alternatives.",
           "pro_tip": "Always verify application requirements against bearing specifications to ensure long service life."
@@ -442,9 +440,9 @@
       "questions": [
         {
           "question": "What tools are needed for proper 693 bearing installation?",
-          "direct_answer": "For 693 bearing installation, you need ultra-precision tools: 3mm bore gauge, micrometer for shaft measurement, bearing heater (80-100\u00b0C), clean gloves, and appropriate mounting tools for the 8mm outer diameter.",
+          "direct_answer": "For 693 bearing installation, you need ultra-precision tools: 3mm bore gauge, micrometer for shaft measurement, bearing heater (80-100°C), clean gloves, and appropriate mounting tools for the 8mm outer diameter.",
           "why_matters": "Proper tools ensure accurate installation, prevent bearing damage, and maximize service life while maintaining ultra-precision requirements.",
-          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (2.992-3.000mm), heat bearing to 80-100\u00b0C, and use proper mounting techniques to avoid damage.",
+          "how_to_handle": "Clean all components thoroughly, verify shaft dimensions (2.992-3.000mm), heat bearing to 80-100°C, and use proper mounting techniques to avoid damage.",
           "pro_tip": "Never force-fit 693 bearings - the 3mm bore requires ultra-precise shaft tolerances for optimal performance."
         },
         {
@@ -482,7 +480,7 @@
         },
         {
           "question": "How do I diagnose 693 bearing vibration issues?",
-          "direct_answer": "Diagnose 693 bearing vibration by checking shaft runout (\u22640.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 3mm bore bearings.",
+          "direct_answer": "Diagnose 693 bearing vibration by checking shaft runout (≤0.013mm), verifying balance, inspecting for contamination, and measuring vibration levels against V2/V3/V4 standards for 3mm bore bearings.",
           "why_matters": "Excessive vibration reduces ultra-precision, increases wear, and can damage connected equipment in nano-scale applications.",
           "how_to_handle": "Use vibration analysis tools, check shaft specifications, verify bearing installation, and replace bearing if vibration exceeds acceptable limits.",
           "pro_tip": "693 bearings require ultra-precision in shaft preparation due to their ultra-micro size and extreme sensitivity to imperfections."
@@ -501,7 +499,7 @@
         },
         {
           "question": "What factors affect 693 bearing service life?",
-          "direct_answer": "693 bearing service life is affected by load conditions (\u22640.45kN), operating speed (\u226444,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
+          "direct_answer": "693 bearing service life is affected by load conditions (≤0.45kN), operating speed (≤44,000 RPM), environmental cleanliness, lubrication quality, installation precision, and maintenance practices.",
           "why_matters": "Understanding service life factors helps optimize maintenance schedules, reduce costs, and ensure reliable operation in critical nano-scale applications.",
           "how_to_handle": "Monitor operating parameters, maintain ultra-clean environment, use quality lubricants, implement preventive maintenance, and replace bearings based on performance degradation.",
           "pro_tip": "693 bearings can achieve 50,000+ hours service life when operated within specifications and properly maintained."

@@ -1,0 +1,2 @@
+# Additional sitemap for bearing specification pages
+Sitemap: https://rhdbearings.com/sitemap-specs.xml

@@ -91,7 +91,7 @@
         "Handheld mixer motors",
         "Power screwdriver rotors"
       ],
-      "requirements": "17mm shaft with 10.5kN (\u22481,070kg) dynamic load capacity, 14,000 RPM grease lubrication, 47\u00d719mm profile optimized for power tools"
+      "requirements": "17mm shaft with 14.50kN (≈1478kg) dynamic load capacity, 16,000 RPM grease lubrication, 47×19mm profile optimized for power tools"
     },
     "application2": {
       "title": "Automation Systems",
@@ -106,7 +106,7 @@
         "Manufacturing robot pivots",
         "Lab automation equipment"
       ],
-      "requirements": "Precision 17mm bore with 5.1kN (\u2248520kg) static load for precise automation"
+      "requirements": "Precision 17mm bore with 3.58kN (≈365kg) static load for precise automation"
     },
     "application3": {
       "title": "Conveyor Units",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,19 @@
   },
   "cross_references": {
     "related_models": [
-      "62301",
-      "62302",
-      "62304",
-      "62305"
+      "6803",
+      "6903",
+      "16003",
+      "6003",
+      "62203",
+      "6203",
+      "6203A/42",
+      "6303"
     ],
     "shaft_requirements": {
       "nominal_diameter": "17.000mm",
-      "tolerance_grade": "h6 (16.989-17.011mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (16.989-17.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,39 +376,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 3.6kN more load than typical 17mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 62303 is rated 14.50kN dynamic / 3.58kN static at 47mm OD — the highest-capacity 17mm-bore option, above the 6203A/42 (9.58kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 14.5kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "62303 offers 19mm width vs 12mm standard, providing 58% more load capacity",
-      "vs_larger_bearing": "Compact 47mm outer diameter vs 57mm alternatives, saving space while maintaining performance",
+      "vs_smaller_bearing": "Same 17mm bore as the 6203A/42 but in a larger 47mm OD body — the 62303 delivers 14.50kN dynamic vs 9.58kN for the 6203A/42, the higher-capacity option when the shaft stays 17mm.",
+      "vs_larger_bearing": "The 62303 is the highest-capacity 17mm-bore bearing in this family (14.50kN at 47mm OD); step down to the 6203A/42 for a more compact fit on the same shaft.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel, ensuring longer service life",
       "cost_benefit": "Professional grade quality at competitive pricing, reducing total cost of ownership"
     }

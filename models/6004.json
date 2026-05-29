@@ -91,7 +91,7 @@
         "Industrial exhaust systems",
         "Heat exchanger fans"
       ],
-      "requirements": "20mm shaft with 9.00kN (\u2248920kg) dynamic load capacity, 12,000 RPM grease lubrication, 47\u00d714mm profile for fan assemblies"
+      "requirements": "20mm shaft with 9.38kN (≈956kg) dynamic load capacity, 16,000 RPM grease lubrication, 42×12mm profile for fan assemblies"
     },
     "application2": {
       "title": "Precision Bearings",
@@ -106,7 +106,7 @@
         "Camera gimbal joints",
         "Inspection tool pivots"
       ],
-      "requirements": "Precision 20mm bore with 5.5kN (\u2248560kg) static load rating for precision applications"
+      "requirements": "Precision 20mm bore with 5.02kN (≈512kg) static load rating for precision applications"
     },
     "application3": {
       "title": "Light Machinery",
@@ -121,7 +121,7 @@
         "Light conveyor rollers",
         "Small gearhead shafts"
       ],
-      "requirements": "20mm bore, 14mm width, adaptable for various light machinery"
+      "requirements": "20mm bore, 12mm width, adaptable for various light machinery"
     }
   },
   "vibration": {
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6804",
+      "6904",
+      "16004",
+      "62204",
       "6204",
       "6304",
-      "6804",
-      "6904"
+      "62304"
     ],
     "shaft_requirements": {
       "nominal_diameter": "20.000mm",
-      "tolerance_grade": "h6 (19.987-20.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (19.987-20.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,39 +373,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for reliable performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 956kg load capacity with robust 12mm width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 20mm bore (ID) with 6804, 6904, 16004, so it can be considered where the shaft is fixed at 20mm. The 6004 is rated 9.38kN dynamic / 5.02kN static at 42mm OD — more capacity than the 6904 (6.40kN) and less than the heavier-duty 62204 (12.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for medium-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "Significantly higher 956kg load capacity compared to 17mm bearings",
-      "vs_larger_bearing": "More compact design compared to larger alternatives",
+      "vs_smaller_bearing": "Same 20mm bore as the 6904 but in a larger 42mm OD body — the 6004 delivers 9.38kN dynamic vs 6.40kN for the 6904, the higher-capacity option when the shaft stays 20mm.",
+      "vs_larger_bearing": "Need more load on the same 20mm shaft? The 62204 (47mm OD, 12.50kN) is the heavier-duty same-bore alternative to the 6004 (9.38kN) — choose the 6004 to save radial space.",
       "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
       "cost_benefit": "Moderate cost justified by excellent performance and reliability"
     }
@@ -441,7 +444,7 @@
           "question": "What tools are needed to install a 68g 6004 bearing properly?",
           "direct_answer": "Standard bearing installation tools, heating equipment, and precision measuring instruments for proper 20mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 68g weight and 20mm bore require appropriate installation techniques to prevent internal damage. Medium-size bearings benefit from thermal installation while being substantial enough for standard installation procedures.",
-          "how_to_handle": "Heat bearing to 80-90\u00b0C for thermal expansion. Use bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 19.987-20.013mm) and housing concentricity. Avoid impact installation methods.",
+          "how_to_handle": "Heat bearing to 80-90°C for thermal expansion. Use bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 19.987-20.013mm) and housing concentricity. Avoid impact installation methods.",
           "pro_tip": "Thermal installation provides smooth, controlled installation - monitor temperature to prevent overheating and metallurgical damage."
         },
         {

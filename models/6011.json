@@ -91,7 +91,7 @@
         "Food grade pump shafts",
         "Cooling system pump drives"
       ],
-      "requirements": "55mm shaft with 24.90kN (\u22482,535kg) dynamic load, 6,200 RPM grease lubrication, 100\u00d725mm for pump drives"
+      "requirements": "55mm shaft with 30.20kN (≈3078kg) dynamic load, 7,000 RPM grease lubrication, 90×18mm for pump drives"
     },
     "application2": {
       "title": "Heavy Machinery",
@@ -106,7 +106,7 @@
         "Bulk material movers",
         "Industrial mixers"
       ],
-      "requirements": "Precision 55mm bore with 16kN (\u22481,630kg) static load for heavy-duty applications"
+      "requirements": "Precision 55mm bore with 21.80kN (≈2223kg) static load for heavy-duty applications"
     },
     "application3": {
       "title": "Conveyor Rollers",
@@ -121,7 +121,7 @@
         "Packaging conveyor spindles",
         "Log transport rollers"
       ],
-      "requirements": "55mm bore, 25mm width for high-load conveyor systems"
+      "requirements": "55mm bore, 18mm width for high-load conveyor systems"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "6011 Bearing 55x90x18mm 30.2kN Load | RHD Bearings",
-    "meta_description": "6011 deep groove ball bearing: 55x90x18mm, 30.2kN (3080kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "6011 deep groove ball bearing: 55x90x18mm, 30.20kN (≈3078kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "6011 bearing",
       "55mm bore bearing",
@@ -247,7 +247,7 @@
     "canonical_url": "https://rhdbearings.com/specs/6000-series/6011/",
     "og_data": {
       "title": "6011 Bearing 55x90x18mm 30.2kN Load | RHD Bearings",
-      "description": "6011 deep groove ball bearing: 55x90x18mm, 30.2kN (3080kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
+      "description": "6011 deep groove ball bearing: 55x90x18mm, 30.20kN (≈3078kg) load capacity. Professional grade Gcr15 steel. Mumbai manufacturer.",
       "url": "https://rhdbearings.com/specs/6000-series/6011/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -255,14 +255,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6011 Bearing 55x90x18mm 30.2kN Load | RHD Bearings",
-      "description": "6011 deep groove ball bearing: 55x90x18mm, 30.2kN (3080kg) load capacity. Professional grade Gcr15 steel."
+      "description": "6011 deep groove ball bearing: 55x90x18mm, 30.20kN (≈3078kg) load capacity. Professional grade Gcr15 steel."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6011 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6011 deep groove ball bearing: 55x90x18mm, 30.2kN (3080kg) load capacity. Professional grade Gcr15 steel.",
+      "description": "6011 deep groove ball bearing: 55x90x18mm, 30.20kN (≈3078kg) load capacity. Professional grade Gcr15 steel.",
       "sku": "6011",
       "mpn": "6011",
       "brand": "RHD Bearings",
@@ -300,9 +300,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -322,15 +322,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6211",
-      "6311",
       "6811",
-      "6911"
+      "6911",
+      "16011",
+      "6211",
+      "62211",
+      "62311",
+      "6311"
     ],
     "shaft_requirements": {
       "nominal_diameter": "55.000mm",
-      "tolerance_grade": "h6 (54.987-55.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (54.981-55.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -371,39 +374,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 8.2kN more load than typical 55mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 6011 is rated 30.20kN dynamic / 21.80kN static at 90mm OD — more capacity than the 6911 (15.90kN) and less than the heavier-duty 6211 (43.20kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in 55mm bearing category for 30.2kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6011 provides 8.2kN more load capacity than 6010 while maintaining same width",
-      "vs_larger_bearing": "More compact than 6012 while delivering 90% of its load capacity",
+      "vs_smaller_bearing": "Same 55mm bore as the 6911 but in a larger 90mm OD body — the 6011 delivers 30.20kN dynamic vs 15.90kN for the 6911, the higher-capacity option when the shaft stays 55mm.",
+      "vs_larger_bearing": "Need more load on the same 55mm shaft? The 6211 (100mm OD, 43.20kN) is the heavier-duty same-bore alternative to the 6011 (30.20kN) — choose the 6011 to save radial space.",
       "vs_competitors": "Superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "Premium quality at competitive pricing with 3-10x longer service life"
     }

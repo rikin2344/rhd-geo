@@ -91,7 +91,7 @@
         "Mining equipment motors",
         "Marine propulsion motors"
       ],
-      "requirements": "75mm shaft with 40.0kN (\u22484080kg) dynamic load capacity, 4,800 RPM grease lubrication, 130\u00d725mm high strength profile"
+      "requirements": "75mm shaft with 66.00kN (≈6727kg) dynamic load capacity, 4,500 RPM grease lubrication, 130×25mm high strength profile"
     },
     "application2": {
       "title": "Precision Robotics",
@@ -106,7 +106,7 @@
         "Medical robotic parts",
         "Automation pivot supports"
       ],
-      "requirements": "75mm bore with 2.3mm chamfer, 27kN (\u22482750kg) static load, grease lubrication"
+      "requirements": "75mm bore with 2.3mm chamfer, 49.50kN (≈5048kg) static load, grease lubrication"
     },
     "application3": {
       "title": "Agriculture Drives",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6215 Bearing 75\u00d7130\u00d725mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "6215 deep groove ball bearing with 75mm bore, 130mm OD, 25mm width. 86.00kN dynamic load, 8776kg capacity. Perfect for motors, pumps, automotive components.",
+    "title": "6215 Bearing 75×130×25mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "6215 deep groove ball bearing with 75mm bore, 130mm OD, 25mm width. 66.00kN dynamic load, 6727kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6215 bearing",
       "75mm bore bearing",
@@ -249,25 +249,25 @@
       "RHD bearings",
       "India bearings"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/6200-Series/6215/",
+    "canonical_url": "https://rhdbearings.com/specs/6200-series/6215/",
     "og_data": {
-      "title": "6215 Deep Groove Ball Bearing - 75\u00d7130\u00d725mm | RHD Bearings",
-      "description": "High-quality 6215 bearing with 86.00kN dynamic load capacity. Perfect for industrial power systems and precision applications.",
-      "url": "https://rhdbearings.com/specs/6200-Series/6215/",
+      "title": "6215 Deep Groove Ball Bearing - 75×130×25mm | RHD Bearings",
+      "description": "High-quality 6215 bearing with 66.00kN dynamic load capacity. Perfect for industrial power systems and precision applications.",
+      "url": "https://rhdbearings.com/specs/6200-series/6215/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6215 Bearing - Industrial Power System Solution",
-      "description": "75mm bore, 86.00kN load capacity, 6,000 RPM. Ideal for motors, pumps, and automotive components."
+      "description": "75mm bore, 66.00kN load capacity, 4,500 RPM. Ideal for motors, pumps, and automotive components."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6215 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6215 deep groove ball bearing with 75mm bore, 130mm outer diameter, 25mm width. 86.00kN dynamic load capacity, 8776kg load capacity.",
+      "description": "6215 deep groove ball bearing with 75mm bore, 130mm outer diameter, 25mm width. 66.00kN dynamic load capacity, 6727kg load capacity.",
       "sku": "6215",
       "mpn": "6215",
       "brand": "RHD Bearings",
@@ -279,7 +279,7 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/6200-Series/6215/",
+        "url": "https://rhdbearings.com/specs/6200-series/6215/",
         "priceCurrency": "INR",
         "availability": "Yes",
         "priceValidUntil": "2025-12-31",
@@ -305,9 +305,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -327,15 +327,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6015",
-      "6315",
       "6815",
-      "6915"
+      "6915",
+      "16015",
+      "6015",
+      "62215",
+      "6315",
+      "62315"
     ],
     "shaft_requirements": {
       "nominal_diameter": "75.000mm",
-      "tolerance_grade": "h6 (74.987-75.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (74.981-75.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -346,12 +349,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 6215 for 75mm shafts requiring 86.00kN dynamic load capacity in industrial power system applications",
-      "Select 6215-ZZ for dust protection with 5,400 RPM capability and sealed-for-life lubrication",
-      "Use 6215-RS in moisture-prone environments requiring 4,800 RPM with rubber seal protection",
-      "Consider 6215 for automotive components where 25mm width and 2.700kg weight ensure durability and reliability",
-      "Opt for 6215 in precision applications needing 1.0mm chamfer radius and 8776kg load capacity",
-      "Deploy 6215 in power transmission systems requiring 6,000 RPM grease lubrication with 130\u00d725mm profile"
+      "Choose 6215 for 75mm shafts requiring 66.00kN dynamic load capacity in industrial power system applications",
+      "Select 6215-ZZ for dust protection with 4,500 RPM capability and sealed-for-life lubrication",
+      "Use 6215-RS in moisture-prone environments requiring 4,500 RPM with rubber seal protection",
+      "Consider 6215 for automotive components where 25mm width and 6727kg weight ensure durability and reliability",
+      "Opt for 6215 in precision applications needing 1.0mm chamfer radius and 6727kg load capacity",
+      "Deploy 6215 in power transmission systems requiring 4,500 RPM grease lubrication with 130×25mm profile"
     ],
     "natural_language_queries": [
       "6215 bearing dimensions",
@@ -363,60 +366,60 @@
     ],
     "decision_criteria": [
       "75mm bore diameter requirement for shaft compatibility",
-      "86.00kN dynamic load capacity for application demands",
+      "66.00kN dynamic load capacity for application demands",
       "25mm width constraint for robust mounting",
-      "6,000 RPM grease lubrication speed requirement",
+      "4,500 RPM grease lubrication speed requirement",
       "130mm outer diameter for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 75mm shaft with high load capacity",
-        "solution": "6215 bearing provides 86.00kN dynamic load in 130\u00d725mm profile"
+        "solution": "6215 bearing provides 66.00kN dynamic load in 130×25mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
-        "solution": "6215-ZZ offers 5,400 RPM with double metal shield protection"
+        "solution": "6215-ZZ offers 4,500 RPM with double metal shield protection"
       },
       {
         "problem": "Moisture exposure in automotive environment",
-        "solution": "6215-RS provides rubber seal protection up to 4,800 RPM"
+        "solution": "6215-RS provides rubber seal protection up to 4,500 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 8.00kN higher dynamic load than 6214 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 6215 is rated 66.00kN dynamic / 49.50kN static at 130mm OD — more capacity than the 16015 (28.70kN) and less than the heavier-duty 6315 (113.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in medium-bearing category for 86.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in medium-bearing category for 66.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6215 provides 8.00kN higher dynamic load than 6214 while maintaining compact 130\u00d725mm profile",
-      "vs_larger_bearing": "6215 offers 8.00kN lower load than 6216 but with 3mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "Same 75mm bore as the 16015 but in a larger 130mm OD body — the 6215 delivers 66.00kN dynamic vs 28.70kN for the 16015, the higher-capacity option when the shaft stays 75mm.",
+      "vs_larger_bearing": "Need more load on the same 75mm shaft? The 6315 (160mm OD, 113.00kN) is the heavier-duty same-bore alternative to the 6215 (66.00kN) — choose the 6215 to save radial space.",
       "vs_competitors": "RHD 6215 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6215 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -434,7 +437,7 @@
         },
         {
           "question": "Can I replace a 6215 bearing with a different size bearing?",
-          "direct_answer": "No, 6215 bearings have unique 75\u00d7130\u00d725mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6215 bearings have unique 75×130×25mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6215 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6215 bearings in stock to avoid production delays and ensure consistent quality."

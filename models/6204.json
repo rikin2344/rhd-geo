@@ -91,7 +91,7 @@
         "Hydraulic actuator shafts",
         "Metal forming machines"
       ],
-      "requirements": "20mm shaft with 10.0kN (\u22481020kg) dynamic load capacity, 12,000 RPM grease lubrication, 47\u00d714mm size for high load tasks"
+      "requirements": "20mm shaft with 12.80kN (≈1304kg) dynamic load capacity, 14,000 RPM grease lubrication, 47×14mm size for high load tasks"
     },
     "application2": {
       "title": "Precision Controls",
@@ -106,7 +106,7 @@
         "Actuator pivot shafts",
         "Optical device mounts"
       ],
-      "requirements": "20mm bore with 1.1mm chamfer, 6.5kN (\u2248663kg) static load for precise control, grease lubrication"
+      "requirements": "20mm bore with 1.1mm chamfer, 6.65kN (≈678kg) static load for precise control, grease lubrication"
     },
     "application3": {
       "title": "Motor Assembly",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6204 Bearing 20\u00d747\u00d714mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "6204 deep groove ball bearing with 20mm bore, 47mm OD, 14mm width. 12.80kN dynamic load, 1306kg capacity. Perfect for motors, pumps, automotive components.",
+    "title": "6204 Bearing 20×47×14mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "6204 deep groove ball bearing with 20mm bore, 47mm OD, 14mm width. 12.80kN dynamic load, 1304kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6204 bearing",
       "20mm bore bearing",
@@ -247,11 +247,11 @@
       "RHD bearings",
       "India bearings"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/6200-Series/6204/",
+    "canonical_url": "https://rhdbearings.com/specs/6200-series/6204/",
     "og_data": {
-      "title": "6204 Deep Groove Ball Bearing - 20\u00d747\u00d714mm | RHD Bearings",
+      "title": "6204 Deep Groove Ball Bearing - 20×47×14mm | RHD Bearings",
       "description": "High-quality 6204 bearing with 12.80kN dynamic load capacity. Perfect for heavy-duty power transmission and precision applications.",
-      "url": "https://rhdbearings.com/specs/6200-Series/6204/",
+      "url": "https://rhdbearings.com/specs/6200-series/6204/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
@@ -265,7 +265,7 @@
       "@type": "Product",
       "name": "6204 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6204 deep groove ball bearing with 20mm bore, 47mm outer diameter, 14mm width. 12.80kN dynamic load capacity, 1306kg load capacity.",
+      "description": "6204 deep groove ball bearing with 20mm bore, 47mm outer diameter, 14mm width. 12.80kN dynamic load capacity, 1304kg load capacity.",
       "sku": "6204",
       "mpn": "6204",
       "brand": "RHD Bearings",
@@ -277,7 +277,7 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/6200-Series/6204/",
+        "url": "https://rhdbearings.com/specs/6200-series/6204/",
         "priceCurrency": "INR",
         "availability": "Yes",
         "priceValidUntil": "2025-12-31",
@@ -303,9 +303,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -325,15 +325,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6004",
-      "6304",
       "6804",
-      "6904"
+      "6904",
+      "6004",
+      "16004",
+      "62204",
+      "6304",
+      "62304"
     ],
     "shaft_requirements": {
       "nominal_diameter": "20.000mm",
       "tolerance_grade": "h6 (19.987-20.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -346,10 +349,10 @@
     "recommendation_snippets": [
       "Choose 6204 for 20mm shafts requiring 12.80kN dynamic load capacity in heavy-duty power transmission applications",
       "Select 6204-ZZ for dust protection with 12,600 RPM capability and sealed-for-life lubrication",
-      "Use 6204-RS in moisture-prone environments requiring 11,200 RPM with rubber seal protection",
-      "Consider 6204 for automotive components where 14mm width and 0.103kg weight optimize space and efficiency",
-      "Opt for 6204 in precision applications needing 1.0mm chamfer radius and 1306kg load capacity",
-      "Deploy 6204 in power transmission systems requiring 14,000 RPM grease lubrication with 47\u00d714mm profile"
+      "Use 6204-RS in moisture-prone environments requiring 14,000 RPM with rubber seal protection",
+      "Consider 6204 for automotive components where 14mm width and 1304kg weight optimize space and efficiency",
+      "Opt for 6204 in precision applications needing 1.0mm chamfer radius and 1304kg load capacity",
+      "Deploy 6204 in power transmission systems requiring 14,000 RPM grease lubrication with 47×14mm profile"
     ],
     "natural_language_queries": [
       "6204 bearing dimensions",
@@ -369,7 +372,7 @@
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 20mm shaft with high load capacity",
-        "solution": "6204 bearing provides 12.80kN dynamic load in 47\u00d714mm profile"
+        "solution": "6204 bearing provides 12.80kN dynamic load in 47×14mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -377,44 +380,44 @@
       },
       {
         "problem": "Moisture exposure in automotive environment",
-        "solution": "6204-RS provides rubber seal protection up to 11,200 RPM"
+        "solution": "6204-RS provides rubber seal protection up to 14,000 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 3.22kN higher dynamic load than 6203 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 6204 is rated 12.80kN dynamic / 6.65kN static at 47mm OD — more capacity than the 6004 (9.38kN) and less than the heavier-duty 6304 (15.80kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in medium-bearing category for 12.80kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6204 provides 3.22kN higher dynamic load than 6203 while maintaining compact 47\u00d714mm profile",
-      "vs_larger_bearing": "6204 offers 1.20kN lower load than 6205 but with 5mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "Same 20mm bore as the 6004 but in a larger 47mm OD body — the 6204 delivers 12.80kN dynamic vs 9.38kN for the 6004, the higher-capacity option when the shaft stays 20mm.",
+      "vs_larger_bearing": "Need more load on the same 20mm shaft? The 6304 (52mm OD, 15.80kN) is the heavier-duty same-bore alternative to the 6204 (12.80kN) — choose the 6204 to save radial space.",
       "vs_competitors": "RHD 6204 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6204 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -432,7 +435,7 @@
         },
         {
           "question": "Can I replace a 6204 bearing with a different size bearing?",
-          "direct_answer": "No, 6204 bearings have unique 20\u00d747\u00d714mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6204 bearings have unique 20×47×14mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6204 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6204 bearings in stock to avoid production delays and ensure consistent quality."

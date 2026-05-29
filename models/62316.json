@@ -91,7 +91,7 @@
         "Wastewater pumps",
         "Agricultural irrigation pumps"
       ],
-      "requirements": "80mm shaft with 52.5kN (\u22485,350kg) dynamic load capacity, 4,400 RPM grease lubrication, 160\u00d752mm profile for industrial pumps"
+      "requirements": "80mm shaft with 128.00kN (≈13047kg) dynamic load capacity, 4,000 RPM grease lubrication, 170×58mm profile for industrial pumps"
     },
     "application2": {
       "title": "Heavy Machinery",
@@ -106,7 +106,7 @@
         "Mining conveyor rollers",
         "Heavy duty mixers"
       ],
-      "requirements": "Precision 80mm bore with 35.0kN (\u22483,570kg) static load for heavy machinery"
+      "requirements": "Precision 80mm bore with 45.50kN (≈4640kg) static load for heavy machinery"
     },
     "application3": {
       "title": "Material Transport",
@@ -121,7 +121,7 @@
         "Heavy load dollies",
         "Material handling wheels"
       ],
-      "requirements": "80mm bore, 52mm width, transport and load-bearing"
+      "requirements": "80mm bore, 58mm width, transport and load-bearing"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "62316 Bearing 80x170x58mm | RHD Bearings",
-    "meta_description": "62316 deep groove ball bearing: 80x170x58mm, 13056kg load capacity, 4,000 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "62316 deep groove ball bearing: 80x170x58mm, 13047kg load capacity, 4,000 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "62316 bearing",
       "80mm bore bearing",
@@ -248,7 +248,7 @@
     "canonical_url": "https://rhdbearings.com/specs/62300-series/62316/",
     "og_data": {
       "title": "62316 Bearing 80x170x58mm | RHD Bearings",
-      "description": "62316 deep groove ball bearing: 80x170x58mm, 13056kg load capacity, 4,000 RPM. Professional grade Gcr15 steel.",
+      "description": "62316 deep groove ball bearing: 80x170x58mm, 13047kg load capacity, 4,000 RPM. Professional grade Gcr15 steel.",
       "url": "https://rhdbearings.com/specs/62300-series/62316/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -256,14 +256,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "62316 Bearing 80x170x58mm | RHD Bearings",
-      "description": "62316 deep groove ball bearing: 80x170x58mm, 13056kg load capacity, 4,000 RPM. Professional grade Gcr15 steel."
+      "description": "62316 deep groove ball bearing: 80x170x58mm, 13047kg load capacity, 4,000 RPM. Professional grade Gcr15 steel."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "62316 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "62316 deep groove ball bearing: 80x170x58mm, 13056kg load capacity, 4,000 RPM. Professional grade Gcr15 steel.",
+      "description": "62316 deep groove ball bearing: 80x170x58mm, 13047kg load capacity, 4,000 RPM. Professional grade Gcr15 steel.",
       "sku": "62316",
       "mpn": "62316",
       "brand": "RHD Bearings",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "62301",
-      "62302",
-      "62303",
-      "62304"
+      "6816",
+      "6916",
+      "6016",
+      "16016",
+      "6216",
+      "62216",
+      "6316"
     ],
     "shaft_requirements": {
       "nominal_diameter": "80.000mm",
-      "tolerance_grade": "h6 (79.987-80.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (79.981-80.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,39 +375,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 45.5kN more load than typical 80mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 62316 is rated 128.00kN dynamic / 45.50kN static at 170mm OD — the highest-capacity 80mm-bore option, above the 6216 (71.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 128kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "62316 offers 58mm width vs 12mm standard, providing 383% more load capacity",
-      "vs_larger_bearing": "Compact 170mm outer diameter vs 180mm alternatives, saving space while maintaining performance",
+      "vs_smaller_bearing": "Same 80mm bore as the 6216 but in a larger 170mm OD body — the 62316 delivers 128.00kN dynamic vs 71.50kN for the 6216, the higher-capacity option when the shaft stays 80mm.",
+      "vs_larger_bearing": "The 62316 is the highest-capacity 80mm-bore bearing in this family (128.00kN at 170mm OD); step down to the 6216 for a more compact fit on the same shaft.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel, ensuring longer service life",
       "cost_benefit": "Professional grade quality at competitive pricing, reducing total cost of ownership"
     }

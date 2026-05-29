@@ -91,7 +91,7 @@
         "Electric vehicle motors",
         "Refrigeration compressors"
       ],
-      "requirements": "25mm shaft with 11.00kN (\u22481,120kg) dynamic load capacity, 10,000 RPM grease lubrication, 52\u00d715mm profile for motor applications"
+      "requirements": "25mm shaft with 10.00kN (≈1019kg) dynamic load capacity, 13,000 RPM grease lubrication, 47×12mm profile for motor applications"
     },
     "application2": {
       "title": "Automation Arms",
@@ -106,7 +106,7 @@
         "Precision actuator pivots",
         "CNC rotary tables"
       ],
-      "requirements": "Precision 25mm bore with 6.8kN (\u2248695kg) static load rating for automated tasks"
+      "requirements": "Precision 25mm bore with 5.85kN (≈597kg) static load rating for automated tasks"
     },
     "application3": {
       "title": "Heavy Drives",
@@ -121,7 +121,7 @@
         "Material handling rollers",
         "Process machinery shafts"
       ],
-      "requirements": "25mm bore, 15mm width, engineered for heavy load drives"
+      "requirements": "25mm bore, 12mm width, engineered for heavy load drives"
     }
   },
   "vibration": {
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6805",
+      "6905",
+      "16005",
+      "62205",
       "6205",
       "6305",
-      "6805",
-      "6905"
+      "62305"
     ],
     "shaft_requirements": {
       "nominal_diameter": "25.000mm",
-      "tolerance_grade": "h6 (24.987-25.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (24.987-25.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,39 +373,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for heavy-duty performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 1020kg load capacity with robust 12mm width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 25mm bore (ID) with 6805, 6905, 16005, so it can be considered where the shaft is fixed at 25mm. The 6005 is rated 10.00kN dynamic / 5.85kN static at 47mm OD — more capacity than the 6905 (7.00kN) and less than the heavier-duty 62205 (12.50kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for heavy-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "Significantly higher 1020kg load capacity compared to 20mm bearings",
-      "vs_larger_bearing": "More compact design compared to larger alternatives",
+      "vs_smaller_bearing": "Same 25mm bore as the 6905 but in a larger 47mm OD body — the 6005 delivers 10.00kN dynamic vs 7.00kN for the 6905, the higher-capacity option when the shaft stays 25mm.",
+      "vs_larger_bearing": "Need more load on the same 25mm shaft? The 62205 (52mm OD, 12.50kN) is the heavier-duty same-bore alternative to the 6005 (10.00kN) — choose the 6005 to save radial space.",
       "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
       "cost_benefit": "Moderate cost justified by high capacity and reliable performance"
     }
@@ -441,7 +444,7 @@
           "question": "What tools are needed to install a 78g 6005 bearing properly?",
           "direct_answer": "Standard bearing installation tools, controlled heating equipment, and precision measuring instruments for proper 25mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 78g weight and 25mm bore require appropriate installation techniques to prevent internal damage. Medium-size bearings benefit from thermal installation while being substantial enough for standard procedures.",
-          "how_to_handle": "Heat bearing to 80-90\u00b0C for thermal expansion. Use bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 24.987-25.013mm) and housing concentricity. Avoid impact installation methods that can damage components.",
+          "how_to_handle": "Heat bearing to 80-90°C for thermal expansion. Use bearing installation tools or hydraulic press with proper adapters. Verify shaft tolerances (h6: 24.987-25.013mm) and housing concentricity. Avoid impact installation methods that can damage components.",
           "pro_tip": "Thermal installation provides controlled, damage-free installation - maintain consistent temperature for optimal expansion."
         },
         {

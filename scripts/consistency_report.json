@@ -1,0 +1,2633 @@
+{
+  "16001": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.80kN",
+      "expected": "Cr=5.1 / Cor=2.4",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 16001 is rated 5.10kN dynamic / 2.40kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.82kN",
+      "expected": "Cr=5.1 / Cor=2.4",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 16001 is rated 5.10kN dynamic / 2.40kN static at "
+    }
+  ],
+  "16002": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.30kN",
+      "expected": "Cr=5.6 / Cor=2.8",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 6002, so it can be considered where the shaft is fixed at 15mm. The 16002 is rated 5.60kN dynamic / 2.80kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.65kN",
+      "expected": "Cr=5.6 / Cor=2.8",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 6002, so it can be considered where the shaft is fixed at 15mm. The 16002 is rated 5.60kN dynamic / 2.80kN static at "
+    }
+  ],
+  "16003": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.60kN",
+      "expected": "Cr=6.0 / Cor=3.3",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 6003, so it can be considered where the shaft is fixed at 17mm. The 16003 is rated 6.00kN dynamic / 3.30kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.00kN",
+      "expected": "Cr=6.0 / Cor=3.3",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 6003, so it can be considered where the shaft is fixed at 17mm. The 16003 is rated 6.00kN dynamic / 3.30kN static at "
+    }
+  ],
+  "16004": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.40kN",
+      "expected": "Cr=7.9 / Cor=4.5",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 16004 is rated 7.90kN dynamic / 4.50kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=7.9 / Cor=4.5",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 16004 is rated 7.90kN dynamic / 4.50kN static at "
+    }
+  ],
+  "16005": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.00kN",
+      "expected": "Cr=8.8 / Cor=5.6",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 6005, so it can be considered where the shaft is fixed at 25mm. The 16005 is rated 8.80kN dynamic / 5.60kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=8.8 / Cor=5.6",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 6005, so it can be considered where the shaft is fixed at 25mm. The 16005 is rated 8.80kN dynamic / 5.60kN static at "
+    }
+  ],
+  "16006": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.20kN",
+      "expected": "Cr=11.2 / Cor=7.4",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 6006, so it can be considered where the shaft is fixed at 30mm. The 16006 is rated 11.20kN dynamic / 7.40kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.50kN",
+      "expected": "Cr=11.2 / Cor=7.4",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 6006, so it can be considered where the shaft is fixed at 30mm. The 16006 is rated 11.20kN dynamic / 7.40kN static at"
+    }
+  ],
+  "16007": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.50kN",
+      "expected": "Cr=12.2 / Cor=8.8",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 6007, so it can be considered where the shaft is fixed at 35mm. The 16007 is rated 12.20kN dynamic / 8.80kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "25.50kN",
+      "expected": "Cr=12.2 / Cor=8.8",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 6007, so it can be considered where the shaft is fixed at 35mm. The 16007 is rated 12.20kN dynamic / 8.80kN static at"
+    }
+  ],
+  "16008": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "13.70kN",
+      "expected": "Cr=12.6 / Cor=9.6",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 16008 is rated 12.60kN dynamic / 9.60kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "22.50kN",
+      "expected": "Cr=12.6 / Cor=9.6",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 16008 is rated 12.60kN dynamic / 9.60kN static at"
+    }
+  ],
+  "16009": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "14.10kN",
+      "expected": "Cr=15.8 / Cor=12.2",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 6009, so it can be considered where the shaft is fixed at 45mm. The 16009 is rated 15.80kN dynamic / 12.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "23.20kN",
+      "expected": "Cr=15.8 / Cor=12.2",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 6009, so it can be considered where the shaft is fixed at 45mm. The 16009 is rated 15.80kN dynamic / 12.20kN static a"
+    }
+  ],
+  "16010": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "14.50kN",
+      "expected": "Cr=16.1 / Cor=13.1",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 6010, so it can be considered where the shaft is fixed at 50mm. The 16010 is rated 16.10kN dynamic / 13.10kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "35.00kN",
+      "expected": "Cr=16.1 / Cor=13.1",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 6010, so it can be considered where the shaft is fixed at 50mm. The 16010 is rated 16.10kN dynamic / 13.10kN static a"
+    }
+  ],
+  "16011": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "15.90kN",
+      "expected": "Cr=19.4 / Cor=16.2",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 6011, so it can be considered where the shaft is fixed at 55mm. The 16011 is rated 19.40kN dynamic / 16.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "43.20kN",
+      "expected": "Cr=19.4 / Cor=16.2",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 6011, so it can be considered where the shaft is fixed at 55mm. The 16011 is rated 19.40kN dynamic / 16.20kN static a"
+    }
+  ],
+  "16012": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "16.40kN",
+      "expected": "Cr=19.9 / Cor=17.5",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 6012, so it can be considered where the shaft is fixed at 60mm. The 16012 is rated 19.90kN dynamic / 17.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "34.00kN",
+      "expected": "Cr=19.9 / Cor=17.5",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 6012, so it can be considered where the shaft is fixed at 60mm. The 16012 is rated 19.90kN dynamic / 17.50kN static a"
+    }
+  ],
+  "16013": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "17.40kN",
+      "expected": "Cr=20.5 / Cor=18.6",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 16013 is rated 20.50kN dynamic / 18.60kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "43.50kN",
+      "expected": "Cr=20.5 / Cor=18.6",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 16013 is rated 20.50kN dynamic / 18.60kN static a"
+    }
+  ],
+  "16014": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "23.70kN",
+      "expected": "Cr=27.9 / Cor=25.0",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 6014, so it can be considered where the shaft is fixed at 70mm. The 16014 is rated 27.90kN dynamic / 25.00kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "44.00kN",
+      "expected": "Cr=27.9 / Cor=25.0",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 6014, so it can be considered where the shaft is fixed at 70mm. The 16014 is rated 27.90kN dynamic / 25.00kN static a"
+    }
+  ],
+  "16015": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "24.30kN",
+      "expected": "Cr=28.7 / Cor=26.8",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 6015, so it can be considered where the shaft is fixed at 75mm. The 16015 is rated 28.70kN dynamic / 26.80kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "44.20kN",
+      "expected": "Cr=28.7 / Cor=26.8",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 6015, so it can be considered where the shaft is fixed at 75mm. The 16015 is rated 28.70kN dynamic / 26.80kN static a"
+    }
+  ],
+  "16016": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "24.90kN",
+      "expected": "Cr=33.1 / Cor=31.4",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 16016 is rated 33.10kN dynamic / 31.40kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "71.50kN",
+      "expected": "Cr=33.1 / Cor=31.4",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 16016 is rated 33.10kN dynamic / 31.40kN static a"
+    }
+  ],
+  "16017": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "31.90kN",
+      "expected": "Cr=34.0 / Cor=33.3",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 16017 is rated 34.00kN dynamic / 33.30kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "83.20kN",
+      "expected": "Cr=34.0 / Cor=33.3",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 16017 is rated 34.00kN dynamic / 33.30kN static a"
+    }
+  ],
+  "16018": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "32.80kN",
+      "expected": "Cr=41.5 / Cor=39.3",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 6018, so it can be considered where the shaft is fixed at 90mm. The 16018 is rated 41.50kN dynamic / 39.30kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "70.00kN",
+      "expected": "Cr=41.5 / Cor=39.3",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 6018, so it can be considered where the shaft is fixed at 90mm. The 16018 is rated 41.50kN dynamic / 39.30kN static a"
+    }
+  ],
+  "16019": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "33.70kN",
+      "expected": "Cr=42.7 / Cor=41.9",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 6019, so it can be considered where the shaft is fixed at 95mm. The 16019 is rated 42.70kN dynamic / 41.90kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "82.80kN",
+      "expected": "Cr=42.7 / Cor=41.9",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 6019, so it can be considered where the shaft is fixed at 95mm. The 16019 is rated 42.70kN dynamic / 41.90kN static a"
+    }
+  ],
+  "16020": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "45.50kN",
+      "expected": "Cr=43.8 / Cor=44.3",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 6020, so it can be considered where the shaft is fixed at 100mm. The 16020 is rated 43.80kN dynamic / 44.30kN static"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "122.00kN",
+      "expected": "Cr=43.8 / Cor=44.3",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 6020, so it can be considered where the shaft is fixed at 100mm. The 16020 is rated 43.80kN dynamic / 44.30kN static"
+    }
+  ],
+  "6000": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.70kN",
+      "expected": "Cr=4.58 / Cor=1.98",
+      "context": "Shares the 10mm bore (ID) with 6800, 6900, 6200, so it can be considered where the shaft is fixed at 10mm. The 6000 is rated 4.58kN dynamic / 1.98kN static at 2"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.10kN",
+      "expected": "Cr=4.58 / Cor=1.98",
+      "context": "Shares the 10mm bore (ID) with 6800, 6900, 6200, so it can be considered where the shaft is fixed at 10mm. The 6000 is rated 4.58kN dynamic / 1.98kN static at 2"
+    }
+  ],
+  "6001": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.80kN",
+      "expected": "Cr=5.1 / Cor=2.38",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 16001, so it can be considered where the shaft is fixed at 12mm. The 6001 is rated 5.10kN dynamic / 2.38kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.82kN",
+      "expected": "Cr=5.1 / Cor=2.38",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 16001, so it can be considered where the shaft is fixed at 12mm. The 6001 is rated 5.10kN dynamic / 2.38kN static at "
+    }
+  ],
+  "6002": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.30kN",
+      "expected": "Cr=5.58 / Cor=2.85",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 6002 is rated 5.58kN dynamic / 2.85kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.65kN",
+      "expected": "Cr=5.58 / Cor=2.85",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 6002 is rated 5.58kN dynamic / 2.85kN static at "
+    }
+  ],
+  "6003": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.60kN",
+      "expected": "Cr=6.0 / Cor=3.25",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 6003 is rated 6.00kN dynamic / 3.25kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.00kN",
+      "expected": "Cr=6.0 / Cor=3.25",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 6003 is rated 6.00kN dynamic / 3.25kN static at "
+    }
+  ],
+  "6004": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.40kN",
+      "expected": "Cr=9.38 / Cor=5.02",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 16004, so it can be considered where the shaft is fixed at 20mm. The 6004 is rated 9.38kN dynamic / 5.02kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=9.38 / Cor=5.02",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 16004, so it can be considered where the shaft is fixed at 20mm. The 6004 is rated 9.38kN dynamic / 5.02kN static at "
+    }
+  ],
+  "6005": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.00kN",
+      "expected": "Cr=10.0 / Cor=5.85",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 16005, so it can be considered where the shaft is fixed at 25mm. The 6005 is rated 10.00kN dynamic / 5.85kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=10.0 / Cor=5.85",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 16005, so it can be considered where the shaft is fixed at 25mm. The 6005 is rated 10.00kN dynamic / 5.85kN static at"
+    }
+  ],
+  "6006": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.20kN",
+      "expected": "Cr=13.2 / Cor=8.3",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 6006 is rated 13.20kN dynamic / 8.30kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.50kN",
+      "expected": "Cr=13.2 / Cor=8.3",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 6006 is rated 13.20kN dynamic / 8.30kN static at"
+    }
+  ],
+  "6007": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.50kN",
+      "expected": "Cr=16.2 / Cor=10.5",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 6007 is rated 16.20kN dynamic / 10.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "25.50kN",
+      "expected": "Cr=16.2 / Cor=10.5",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 6007 is rated 16.20kN dynamic / 10.50kN static a"
+    }
+  ],
+  "6008": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "13.70kN",
+      "expected": "Cr=17.0 / Cor=11.8",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 16008, so it can be considered where the shaft is fixed at 40mm. The 6008 is rated 17.00kN dynamic / 11.80kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "22.50kN",
+      "expected": "Cr=17.0 / Cor=11.8",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 16008, so it can be considered where the shaft is fixed at 40mm. The 6008 is rated 17.00kN dynamic / 11.80kN static a"
+    }
+  ],
+  "6009": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "14.10kN",
+      "expected": "Cr=21.0 / Cor=14.8",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 16009, so it can be considered where the shaft is fixed at 45mm. The 6009 is rated 21.00kN dynamic / 14.80kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "23.20kN",
+      "expected": "Cr=21.0 / Cor=14.8",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 16009, so it can be considered where the shaft is fixed at 45mm. The 6009 is rated 21.00kN dynamic / 14.80kN static a"
+    }
+  ],
+  "6010": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "14.50kN",
+      "expected": "Cr=22.0 / Cor=16.2",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 6010 is rated 22.00kN dynamic / 16.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "35.00kN",
+      "expected": "Cr=22.0 / Cor=16.2",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 6010 is rated 22.00kN dynamic / 16.20kN static a"
+    }
+  ],
+  "6011": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "15.90kN",
+      "expected": "Cr=30.2 / Cor=21.8",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 6011 is rated 30.20kN dynamic / 21.80kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "43.20kN",
+      "expected": "Cr=30.2 / Cor=21.8",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 6011 is rated 30.20kN dynamic / 21.80kN static a"
+    }
+  ],
+  "6012": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "16.40kN",
+      "expected": "Cr=31.5 / Cor=24.2",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 16012, so it can be considered where the shaft is fixed at 60mm. The 6012 is rated 31.50kN dynamic / 24.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "34.00kN",
+      "expected": "Cr=31.5 / Cor=24.2",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 16012, so it can be considered where the shaft is fixed at 60mm. The 6012 is rated 31.50kN dynamic / 24.20kN static a"
+    }
+  ],
+  "6013": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "17.40kN",
+      "expected": "Cr=32.0 / Cor=24.8",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 16013, so it can be considered where the shaft is fixed at 65mm. The 6013 is rated 32.00kN dynamic / 24.80kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "43.50kN",
+      "expected": "Cr=32.0 / Cor=24.8",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 16013, so it can be considered where the shaft is fixed at 65mm. The 6013 is rated 32.00kN dynamic / 24.80kN static a"
+    }
+  ],
+  "6014": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "23.70kN",
+      "expected": "Cr=38.5 / Cor=30.5",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 6014 is rated 38.50kN dynamic / 30.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "44.00kN",
+      "expected": "Cr=38.5 / Cor=30.5",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 6014 is rated 38.50kN dynamic / 30.50kN static a"
+    }
+  ],
+  "6015": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "24.30kN",
+      "expected": "Cr=40.2 / Cor=33.2",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 6015 is rated 40.20kN dynamic / 33.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "44.20kN",
+      "expected": "Cr=40.2 / Cor=33.2",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 6015 is rated 40.20kN dynamic / 33.20kN static a"
+    }
+  ],
+  "6016": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "24.90kN",
+      "expected": "Cr=47.5 / Cor=39.8",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 16016, so it can be considered where the shaft is fixed at 80mm. The 6016 is rated 47.50kN dynamic / 39.80kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "71.50kN",
+      "expected": "Cr=47.5 / Cor=39.8",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 16016, so it can be considered where the shaft is fixed at 80mm. The 6016 is rated 47.50kN dynamic / 39.80kN static a"
+    }
+  ],
+  "6017": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "31.90kN",
+      "expected": "Cr=50.8 / Cor=42.8",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 16017, so it can be considered where the shaft is fixed at 85mm. The 6017 is rated 50.80kN dynamic / 42.80kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "83.20kN",
+      "expected": "Cr=50.8 / Cor=42.8",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 16017, so it can be considered where the shaft is fixed at 85mm. The 6017 is rated 50.80kN dynamic / 42.80kN static a"
+    }
+  ],
+  "6018": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "32.80kN",
+      "expected": "Cr=58.0 / Cor=49.8",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 6018 is rated 58.00kN dynamic / 49.80kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "70.00kN",
+      "expected": "Cr=58.0 / Cor=49.8",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 6018 is rated 58.00kN dynamic / 49.80kN static a"
+    }
+  ],
+  "6019": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "33.70kN",
+      "expected": "Cr=57.8 / Cor=50.0",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 16019, so it can be considered where the shaft is fixed at 95mm. The 6019 is rated 57.80kN dynamic / 50.00kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "82.80kN",
+      "expected": "Cr=57.8 / Cor=50.0",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 16019, so it can be considered where the shaft is fixed at 95mm. The 6019 is rated 57.80kN dynamic / 50.00kN static a"
+    }
+  ],
+  "6020": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "45.50kN",
+      "expected": "Cr=64.5 / Cor=56.2",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 16020, so it can be considered where the shaft is fixed at 100mm. The 6020 is rated 64.50kN dynamic / 56.20kN static"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "122.00kN",
+      "expected": "Cr=64.5 / Cor=56.2",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 16020, so it can be considered where the shaft is fixed at 100mm. The 6020 is rated 64.50kN dynamic / 56.20kN static"
+    }
+  ],
+  "604": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.95kN",
+      "expected": "Cr=0.75 / Cor=0.34",
+      "context": "Shares the 4mm bore (ID) with 684, 694, 624, so it can be considered where the shaft is fixed at 4mm. The 604 is rated 0.75kN dynamic / 0.34kN static at 12mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.15kN",
+      "expected": "Cr=0.75 / Cor=0.34",
+      "context": "Shares the 4mm bore (ID) with 684, 694, 624, so it can be considered where the shaft is fixed at 4mm. The 604 is rated 0.75kN dynamic / 0.34kN static at 12mm OD"
+    }
+  ],
+  "605": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.08kN",
+      "expected": "Cr=1.05 / Cor=0.5",
+      "context": "Shares the 5mm bore (ID) with 685, 695, 625, so it can be considered where the shaft is fixed at 5mm. The 605 is rated 1.05kN dynamic / 0.50kN static at 14mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.88kN",
+      "expected": "Cr=1.05 / Cor=0.5",
+      "context": "Shares the 5mm bore (ID) with 685, 695, 625, so it can be considered where the shaft is fixed at 5mm. The 605 is rated 1.05kN dynamic / 0.50kN static at 14mm OD"
+    }
+  ],
+  "606": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.48kN",
+      "expected": "Cr=1.95 / Cor=0.72",
+      "context": "Shares the 6mm bore (ID) with 686, 696, 626, so it can be considered where the shaft is fixed at 6mm. The 606 is rated 1.95kN dynamic / 0.72kN static at 17mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.80kN",
+      "expected": "Cr=1.95 / Cor=0.72",
+      "context": "Shares the 6mm bore (ID) with 686, 696, 626, so it can be considered where the shaft is fixed at 6mm. The 606 is rated 1.95kN dynamic / 0.72kN static at 17mm OD"
+    }
+  ],
+  "607": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.02kN",
+      "expected": "Cr=2.86 / Cor=1.08",
+      "context": "Shares the 7mm bore (ID) with 687, 697, 627, so it can be considered where the shaft is fixed at 7mm. The 607 is rated 2.86kN dynamic / 1.08kN static at 19mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "3.28kN",
+      "expected": "Cr=2.86 / Cor=1.08",
+      "context": "Shares the 7mm bore (ID) with 687, 697, 627, so it can be considered where the shaft is fixed at 7mm. The 607 is rated 2.86kN dynamic / 1.08kN static at 19mm OD"
+    }
+  ],
+  "608": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.25kN",
+      "expected": "Cr=3.32 / Cor=1.38",
+      "context": "Shares the 8mm bore (ID) with 688, 698, 628, so it can be considered where the shaft is fixed at 8mm. The 608 is rated 3.32kN dynamic / 1.38kN static at 22mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "3.35kN",
+      "expected": "Cr=3.32 / Cor=1.38",
+      "context": "Shares the 8mm bore (ID) with 688, 698, 628, so it can be considered where the shaft is fixed at 8mm. The 608 is rated 3.32kN dynamic / 1.38kN static at 22mm OD"
+    }
+  ],
+  "609": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.48kN",
+      "expected": "Cr=3.35 / Cor=1.4",
+      "context": "Shares the 9mm bore (ID) with 689, 699, 629, so it can be considered where the shaft is fixed at 9mm. The 609 is rated 3.35kN dynamic / 1.40kN static at 24mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.45kN",
+      "expected": "Cr=3.35 / Cor=1.4",
+      "context": "Shares the 9mm bore (ID) with 689, 699, 629, so it can be considered where the shaft is fixed at 9mm. The 609 is rated 3.35kN dynamic / 1.40kN static at 24mm OD"
+    }
+  ],
+  "6200": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.58kN",
+      "expected": "Cr=5.1 / Cor=2.38",
+      "context": "Shares the 10mm bore (ID) with 6800, 6900, 6000, so it can be considered where the shaft is fixed at 10mm. The 6200 is rated 5.10kN dynamic / 2.38kN static at 3"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.65kN",
+      "expected": "Cr=5.1 / Cor=2.38",
+      "context": "Shares the 10mm bore (ID) with 6800, 6900, 6000, so it can be considered where the shaft is fixed at 10mm. The 6200 is rated 5.10kN dynamic / 2.38kN static at 3"
+    }
+  ],
+  "6201 12.7": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.65kN",
+      "expected": "Cr=6.82 / Cor=3.05",
+      "context": "Shares the 12.7mm bore (ID) with 6202 12.7, 6203 12.7, so it can be considered where the shaft is fixed at 12.7mm. The 6201 12.7 is rated 6.82kN dynamic / 3.05k"
+    }
+  ],
+  "6201": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.10kN",
+      "expected": "Cr=6.82 / Cor=3.05",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 6201 is rated 6.82kN dynamic / 3.05kN static at 3"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.60kN",
+      "expected": "Cr=6.82 / Cor=3.05",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 6201 is rated 6.82kN dynamic / 3.05kN static at 3"
+    }
+  ],
+  "6202 12.7": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.82kN",
+      "expected": "Cr=7.65 / Cor=3.72",
+      "context": "Shares the 12.7mm bore (ID) with 6201 12.7, 6203 12.7, so it can be considered where the shaft is fixed at 12.7mm. The 6202 12.7 is rated 7.65kN dynamic / 3.72k"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.58kN",
+      "expected": "Cr=7.65 / Cor=3.72",
+      "context": "Shares the 12.7mm bore (ID) with 6201 12.7, 6203 12.7, so it can be considered where the shaft is fixed at 12.7mm. The 6202 12.7 is rated 7.65kN dynamic / 3.72k"
+    }
+  ],
+  "6202": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.60kN",
+      "expected": "Cr=7.65 / Cor=3.72",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 6202 is rated 7.65kN dynamic / 3.72kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "11.50kN",
+      "expected": "Cr=7.65 / Cor=3.72",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 6202 is rated 7.65kN dynamic / 3.72kN static at "
+    }
+  ],
+  "6203 12.7": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.65kN",
+      "expected": "Cr=9.58 / Cor=4.78",
+      "context": "Shares the 12.7mm bore (ID) with 6201 12.7, 6202 12.7, so it can be considered where the shaft is fixed at 12.7mm. The 6203 12.7 is rated 9.58kN dynamic / 4.78k"
+    }
+  ],
+  "6203": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.00kN",
+      "expected": "Cr=9.58 / Cor=4.78",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 6203 is rated 9.58kN dynamic / 4.78kN static at "
+    }
+  ],
+  "6203A42": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.00kN",
+      "expected": "Cr=9.58 / Cor=4.78",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 6203A/42 is rated 9.58kN dynamic / 4.78kN static"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "13.50kN",
+      "expected": "Cr=9.58 / Cor=4.78",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 6203A/42 is rated 9.58kN dynamic / 4.78kN static"
+    }
+  ],
+  "6204": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.38kN",
+      "expected": "Cr=12.8 / Cor=6.65",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 6204 is rated 12.80kN dynamic / 6.65kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "15.80kN",
+      "expected": "Cr=12.8 / Cor=6.65",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 6204 is rated 12.80kN dynamic / 6.65kN static at "
+    }
+  ],
+  "6205": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "10.00kN",
+      "expected": "Cr=14.0 / Cor=7.88",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 6005, so it can be considered where the shaft is fixed at 25mm. The 6205 is rated 14.00kN dynamic / 7.88kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "22.20kN",
+      "expected": "Cr=14.0 / Cor=7.88",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 6005, so it can be considered where the shaft is fixed at 25mm. The 6205 is rated 14.00kN dynamic / 7.88kN static at "
+    }
+  ],
+  "6206": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "11.20kN",
+      "expected": "Cr=19.5 / Cor=11.5",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 6206 is rated 19.50kN dynamic / 11.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "31.50kN",
+      "expected": "Cr=19.5 / Cor=11.5",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 6206 is rated 19.50kN dynamic / 11.50kN static a"
+    }
+  ],
+  "6207": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.20kN",
+      "expected": "Cr=25.5 / Cor=15.2",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 6207 is rated 25.50kN dynamic / 15.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "39.20kN",
+      "expected": "Cr=25.5 / Cor=15.2",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 6207 is rated 25.50kN dynamic / 15.20kN static a"
+    }
+  ],
+  "6208": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "17.00kN",
+      "expected": "Cr=29.5 / Cor=18.0",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 6208 is rated 29.50kN dynamic / 18.00kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "40.80kN",
+      "expected": "Cr=29.5 / Cor=18.0",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 6208 is rated 29.50kN dynamic / 18.00kN static at"
+    }
+  ],
+  "6209": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "21.00kN",
+      "expected": "Cr=31.5 / Cor=20.5",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 6009, so it can be considered where the shaft is fixed at 45mm. The 6209 is rated 31.50kN dynamic / 20.50kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "52.80kN",
+      "expected": "Cr=31.5 / Cor=20.5",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 6009, so it can be considered where the shaft is fixed at 45mm. The 6209 is rated 31.50kN dynamic / 20.50kN static at"
+    }
+  ],
+  "6210": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "16.10kN",
+      "expected": "Cr=35.0 / Cor=23.2",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 6210 is rated 35.00kN dynamic / 23.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "64.50kN",
+      "expected": "Cr=35.0 / Cor=23.2",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 6210 is rated 35.00kN dynamic / 23.20kN static a"
+    }
+  ],
+  "6211": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.40kN",
+      "expected": "Cr=43.2 / Cor=29.2",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 6211 is rated 43.20kN dynamic / 29.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "75.20kN",
+      "expected": "Cr=43.2 / Cor=29.2",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 6211 is rated 43.20kN dynamic / 29.20kN static a"
+    }
+  ],
+  "6212": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "31.50kN",
+      "expected": "Cr=47.8 / Cor=32.8",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 6012, so it can be considered where the shaft is fixed at 60mm. The 6212 is rated 47.80kN dynamic / 32.80kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "81.80kN",
+      "expected": "Cr=47.8 / Cor=32.8",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 6012, so it can be considered where the shaft is fixed at 60mm. The 6212 is rated 47.80kN dynamic / 32.80kN static at"
+    }
+  ],
+  "6213": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "32.00kN",
+      "expected": "Cr=57.8 / Cor=40.0",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 6213 is rated 57.80kN dynamic / 40.00kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "93.80kN",
+      "expected": "Cr=57.8 / Cor=40.0",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 6213 is rated 57.80kN dynamic / 40.00kN static at"
+    }
+  ],
+  "6214": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "27.90kN",
+      "expected": "Cr=60.8 / Cor=45.0",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 6214 is rated 60.80kN dynamic / 45.00kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "105.00kN",
+      "expected": "Cr=60.8 / Cor=45.0",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 6214 is rated 60.80kN dynamic / 45.00kN static a"
+    }
+  ],
+  "6215": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "28.70kN",
+      "expected": "Cr=66.0 / Cor=49.5",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 6215 is rated 66.00kN dynamic / 49.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "113.00kN",
+      "expected": "Cr=66.0 / Cor=49.5",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 6215 is rated 66.00kN dynamic / 49.50kN static a"
+    }
+  ],
+  "6216": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "47.50kN",
+      "expected": "Cr=71.5 / Cor=54.2",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 6216 is rated 71.50kN dynamic / 54.20kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "128.00kN",
+      "expected": "Cr=71.5 / Cor=54.2",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 6216 is rated 71.50kN dynamic / 54.20kN static at"
+    }
+  ],
+  "6217": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "50.80kN",
+      "expected": "Cr=83.2 / Cor=63.8",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 6217 is rated 83.20kN dynamic / 63.80kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "140.00kN",
+      "expected": "Cr=83.2 / Cor=63.8",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 6217 is rated 83.20kN dynamic / 63.80kN static at"
+    }
+  ],
+  "6218": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "41.50kN",
+      "expected": "Cr=95.8 / Cor=71.5",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 6218 is rated 95.80kN dynamic / 71.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "145.00kN",
+      "expected": "Cr=95.8 / Cor=71.5",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 6218 is rated 95.80kN dynamic / 71.50kN static a"
+    }
+  ],
+  "6219": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "42.70kN",
+      "expected": "Cr=110 / Cor=82.8",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 16019, so it can be considered where the shaft is fixed at 95mm. The 6219 is rated 110.00kN dynamic / 82.80kN static "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "157.00kN",
+      "expected": "Cr=110 / Cor=82.8",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 16019, so it can be considered where the shaft is fixed at 95mm. The 6219 is rated 110.00kN dynamic / 82.80kN static "
+    }
+  ],
+  "6220": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "64.50kN",
+      "expected": "Cr=122 / Cor=92.8",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 6020, so it can be considered where the shaft is fixed at 100mm. The 6220 is rated 122.00kN dynamic / 92.80kN static"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "192.00kN",
+      "expected": "Cr=122 / Cor=92.8",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 6020, so it can be considered where the shaft is fixed at 100mm. The 6220 is rated 122.00kN dynamic / 92.80kN static"
+    }
+  ],
+  "62200": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.58kN",
+      "expected": "Cr=7.12 / Cor=1.58",
+      "context": "Shares the 10mm bore (ID) with 6800, 6900, 6000, so it can be considered where the shaft is fixed at 10mm. The 62200 is rated 7.12kN dynamic / 1.58kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.65kN",
+      "expected": "Cr=7.12 / Cor=1.58",
+      "context": "Shares the 10mm bore (ID) with 6800, 6900, 6000, so it can be considered where the shaft is fixed at 10mm. The 62200 is rated 7.12kN dynamic / 1.58kN static at "
+    }
+  ],
+  "62201": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.10kN",
+      "expected": "Cr=8.8 / Cor=1.8",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 62201 is rated 8.80kN dynamic / 1.80kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.60kN",
+      "expected": "Cr=8.8 / Cor=1.8",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 62201 is rated 8.80kN dynamic / 1.80kN static at "
+    }
+  ],
+  "62202": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.60kN",
+      "expected": "Cr=7.65 / Cor=1.8",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 62202 is rated 7.65kN dynamic / 1.80kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "11.50kN",
+      "expected": "Cr=7.65 / Cor=1.8",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 62202 is rated 7.65kN dynamic / 1.80kN static at"
+    }
+  ],
+  "62203": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.00kN",
+      "expected": "Cr=9.0 / Cor=2.45",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 62203 is rated 9.00kN dynamic / 2.45kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.58kN",
+      "expected": "Cr=9.0 / Cor=2.45",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 62203 is rated 9.00kN dynamic / 2.45kN static at"
+    }
+  ],
+  "62204": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.38kN",
+      "expected": "Cr=12.5 / Cor=3.28",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 62204 is rated 12.50kN dynamic / 3.28kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "15.80kN",
+      "expected": "Cr=12.5 / Cor=3.28",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 62204 is rated 12.50kN dynamic / 3.28kN static at"
+    }
+  ],
+  "62205": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "10.00kN",
+      "expected": "Cr=12.5 / Cor=3.4",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 6005, so it can be considered where the shaft is fixed at 25mm. The 62205 is rated 12.50kN dynamic / 3.40kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "22.20kN",
+      "expected": "Cr=12.5 / Cor=3.4",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 6005, so it can be considered where the shaft is fixed at 25mm. The 62205 is rated 12.50kN dynamic / 3.40kN static at"
+    }
+  ],
+  "62206": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "11.20kN",
+      "expected": "Cr=15.2 / Cor=4.6",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 62206 is rated 15.20kN dynamic / 4.60kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "31.50kN",
+      "expected": "Cr=15.2 / Cor=4.6",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 62206 is rated 15.20kN dynamic / 4.60kN static a"
+    }
+  ],
+  "62207": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.20kN",
+      "expected": "Cr=21.8 / Cor=6.65",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 62207 is rated 21.80kN dynamic / 6.65kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "39.20kN",
+      "expected": "Cr=21.8 / Cor=6.65",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 62207 is rated 21.80kN dynamic / 6.65kN static a"
+    }
+  ],
+  "62208": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "17.00kN",
+      "expected": "Cr=22.5 / Cor=7.38",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 62208 is rated 22.50kN dynamic / 7.38kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "40.80kN",
+      "expected": "Cr=22.5 / Cor=7.38",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 62208 is rated 22.50kN dynamic / 7.38kN static at"
+    }
+  ],
+  "62209": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "21.00kN",
+      "expected": "Cr=23.2 / Cor=8.0",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 6009, so it can be considered where the shaft is fixed at 45mm. The 62209 is rated 23.20kN dynamic / 8.00kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "52.80kN",
+      "expected": "Cr=23.2 / Cor=8.0",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 6009, so it can be considered where the shaft is fixed at 45mm. The 62209 is rated 23.20kN dynamic / 8.00kN static at"
+    }
+  ],
+  "62210": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "16.10kN",
+      "expected": "Cr=23.2 / Cor=8.45",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 62210 is rated 23.20kN dynamic / 8.45kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "64.50kN",
+      "expected": "Cr=23.2 / Cor=8.45",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 62210 is rated 23.20kN dynamic / 8.45kN static a"
+    }
+  ],
+  "62211": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.40kN",
+      "expected": "Cr=26.8 / Cor=9.95",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 62211 is rated 26.80kN dynamic / 9.95kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "75.20kN",
+      "expected": "Cr=26.8 / Cor=9.95",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 62211 is rated 26.80kN dynamic / 9.95kN static a"
+    }
+  ],
+  "62212": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "31.50kN",
+      "expected": "Cr=34.0 / Cor=12.5",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 6012, so it can be considered where the shaft is fixed at 60mm. The 62212 is rated 34.00kN dynamic / 12.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "81.80kN",
+      "expected": "Cr=34.0 / Cor=12.5",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 6012, so it can be considered where the shaft is fixed at 60mm. The 62212 is rated 34.00kN dynamic / 12.50kN static a"
+    }
+  ],
+  "62213": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "32.00kN",
+      "expected": "Cr=43.5 / Cor=16.2",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 62213 is rated 43.50kN dynamic / 16.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "93.80kN",
+      "expected": "Cr=43.5 / Cor=16.2",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 62213 is rated 43.50kN dynamic / 16.20kN static a"
+    }
+  ],
+  "62214": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "27.90kN",
+      "expected": "Cr=44.0 / Cor=17.0",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 62214 is rated 44.00kN dynamic / 17.00kN static "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "105.00kN",
+      "expected": "Cr=44.0 / Cor=17.0",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 62214 is rated 44.00kN dynamic / 17.00kN static "
+    }
+  ],
+  "62215": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "28.70kN",
+      "expected": "Cr=44.2 / Cor=18.0",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 62215 is rated 44.20kN dynamic / 18.00kN static "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "113.00kN",
+      "expected": "Cr=44.2 / Cor=18.0",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 62215 is rated 44.20kN dynamic / 18.00kN static "
+    }
+  ],
+  "62216": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "47.50kN",
+      "expected": "Cr=48.8 / Cor=20.2",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 62216 is rated 48.80kN dynamic / 20.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "128.00kN",
+      "expected": "Cr=48.8 / Cor=20.2",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 62216 is rated 48.80kN dynamic / 20.20kN static a"
+    }
+  ],
+  "62217": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "50.80kN",
+      "expected": "Cr=58.2 / Cor=23.5",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 62217 is rated 58.20kN dynamic / 23.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "140.00kN",
+      "expected": "Cr=58.2 / Cor=23.5",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 62217 is rated 58.20kN dynamic / 23.50kN static a"
+    }
+  ],
+  "62218": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "41.50kN",
+      "expected": "Cr=70.0 / Cor=28.5",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 62218 is rated 70.00kN dynamic / 28.50kN static "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "145.00kN",
+      "expected": "Cr=70.0 / Cor=28.5",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 62218 is rated 70.00kN dynamic / 28.50kN static "
+    }
+  ],
+  "62219": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "42.70kN",
+      "expected": "Cr=82.8 / Cor=33.8",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 16019, so it can be considered where the shaft is fixed at 95mm. The 62219 is rated 82.80kN dynamic / 33.80kN static "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "157.00kN",
+      "expected": "Cr=82.8 / Cor=33.8",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 16019, so it can be considered where the shaft is fixed at 95mm. The 62219 is rated 82.80kN dynamic / 33.80kN static "
+    }
+  ],
+  "62220": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "64.50kN",
+      "expected": "Cr=97.2 / Cor=40.5",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 6020, so it can be considered where the shaft is fixed at 100mm. The 62220 is rated 97.20kN dynamic / 40.50kN static"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "192.00kN",
+      "expected": "Cr=97.2 / Cor=40.5",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 6020, so it can be considered where the shaft is fixed at 100mm. The 62220 is rated 97.20kN dynamic / 40.50kN static"
+    }
+  ],
+  "623": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.45kN",
+      "expected": "Cr=0.65 / Cor=0.22",
+      "context": "Shares the 3mm bore (ID) with 683, 693, so it can be considered where the shaft is fixed at 3mm. The 623 is rated 0.65kN dynamic / 0.22kN static at 10mm OD \u2014 th"
+    }
+  ],
+  "62301": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.82kN",
+      "expected": "Cr=12.6 / Cor=2.72",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 62301 is rated 12.60kN dynamic / 2.72kN static at"
+    }
+  ],
+  "62302": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.65kN",
+      "expected": "Cr=12.0 / Cor=2.88",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 62302 is rated 12.00kN dynamic / 2.88kN static a"
+    }
+  ],
+  "62303": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.58kN",
+      "expected": "Cr=14.5 / Cor=3.58",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 62303 is rated 14.50kN dynamic / 3.58kN static a"
+    }
+  ],
+  "62304": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=17.8 / Cor=4.75",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 62304 is rated 17.80kN dynamic / 4.75kN static at"
+    }
+  ],
+  "62305": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=24.5 / Cor=6.48",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 6005, so it can be considered where the shaft is fixed at 25mm. The 62305 is rated 24.50kN dynamic / 6.48kN static at"
+    }
+  ],
+  "62306": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.50kN",
+      "expected": "Cr=31.5 / Cor=8.68",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 62306 is rated 31.50kN dynamic / 8.68kN static a"
+    }
+  ],
+  "62307": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "25.50kN",
+      "expected": "Cr=39.2 / Cor=11.0",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 62307 is rated 39.20kN dynamic / 11.00kN static "
+    }
+  ],
+  "62308": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "22.50kN",
+      "expected": "Cr=44.8 / Cor=13.2",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 62308 is rated 44.80kN dynamic / 13.20kN static a"
+    }
+  ],
+  "62309": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "23.20kN",
+      "expected": "Cr=55.0 / Cor=16.2",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 6009, so it can be considered where the shaft is fixed at 45mm. The 62309 is rated 55.00kN dynamic / 16.20kN static a"
+    }
+  ],
+  "62310": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "35.00kN",
+      "expected": "Cr=64.5 / Cor=19.8",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 62310 is rated 64.50kN dynamic / 19.80kN static "
+    }
+  ],
+  "62311": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "43.20kN",
+      "expected": "Cr=75.2 / Cor=23.5",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 62311 is rated 75.20kN dynamic / 23.50kN static "
+    }
+  ],
+  "62312": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "34.00kN",
+      "expected": "Cr=86.8 / Cor=27.5",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 6012, so it can be considered where the shaft is fixed at 60mm. The 62312 is rated 86.80kN dynamic / 27.50kN static a"
+    }
+  ],
+  "62313": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "43.50kN",
+      "expected": "Cr=96.0 / Cor=32.5",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 62313 is rated 96.00kN dynamic / 32.50kN static a"
+    }
+  ],
+  "62314": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "44.00kN",
+      "expected": "Cr=110 / Cor=37.5",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 62314 is rated 110.00kN dynamic / 37.50kN static"
+    }
+  ],
+  "62315": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "44.20kN",
+      "expected": "Cr=122 / Cor=42.8",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 62315 is rated 122.00kN dynamic / 42.80kN static"
+    }
+  ],
+  "62316": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "71.50kN",
+      "expected": "Cr=128 / Cor=45.5",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 62316 is rated 128.00kN dynamic / 45.50kN static "
+    }
+  ],
+  "62317": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "83.20kN",
+      "expected": "Cr=140 / Cor=51.0",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 62317 is rated 140.00kN dynamic / 51.00kN static "
+    }
+  ],
+  "62318": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "70.00kN",
+      "expected": "Cr=142 / Cor=57.2",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 62318 is rated 142.00kN dynamic / 57.20kN static"
+    }
+  ],
+  "62319": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "82.80kN",
+      "expected": "Cr=162 / Cor=64.2",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 16019, so it can be considered where the shaft is fixed at 95mm. The 62319 is rated 162.00kN dynamic / 64.20kN static"
+    }
+  ],
+  "62320": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "122.00kN",
+      "expected": "Cr=192 / Cor=78.5",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 6020, so it can be considered where the shaft is fixed at 100mm. The 62320 is rated 192.00kN dynamic / 78.50kN stati"
+    }
+  ],
+  "624": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.75kN",
+      "expected": "Cr=1.15 / Cor=0.4",
+      "context": "Shares the 4mm bore (ID) with 684, 694, 604, so it can be considered where the shaft is fixed at 4mm. The 624 is rated 1.15kN dynamic / 0.40kN static at 13mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.88kN",
+      "expected": "Cr=1.15 / Cor=0.4",
+      "context": "Shares the 4mm bore (ID) with 684, 694, 604, so it can be considered where the shaft is fixed at 4mm. The 624 is rated 1.15kN dynamic / 0.40kN static at 13mm OD"
+    }
+  ],
+  "625": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.05kN",
+      "expected": "Cr=1.88 / Cor=0.68",
+      "context": "Shares the 5mm bore (ID) with 685, 695, 605, so it can be considered where the shaft is fixed at 5mm. The 625 is rated 1.88kN dynamic / 0.68kN static at 16mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.80kN",
+      "expected": "Cr=1.88 / Cor=0.68",
+      "context": "Shares the 5mm bore (ID) with 685, 695, 605, so it can be considered where the shaft is fixed at 5mm. The 625 is rated 1.88kN dynamic / 0.68kN static at 16mm OD"
+    }
+  ],
+  "626": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.95kN",
+      "expected": "Cr=2.8 / Cor=1.05",
+      "context": "Shares the 6mm bore (ID) with 686, 696, 606, so it can be considered where the shaft is fixed at 6mm. The 626 is rated 2.80kN dynamic / 1.05kN static at 19mm OD"
+    }
+  ],
+  "627": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.86kN",
+      "expected": "Cr=3.28 / Cor=1.35",
+      "context": "Shares the 7mm bore (ID) with 687, 697, 607, so it can be considered where the shaft is fixed at 7mm. The 627 is rated 3.28kN dynamic / 1.35kN static at 22mm OD"
+    }
+  ],
+  "628": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "3.32kN",
+      "expected": "Cr=3.35 / Cor=1.4",
+      "context": "Shares the 8mm bore (ID) with 688, 698, 608, so it can be considered where the shaft is fixed at 8mm. The 628 is rated 3.35kN dynamic / 1.40kN static at 24mm OD"
+    }
+  ],
+  "629": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "3.35kN",
+      "expected": "Cr=4.45 / Cor=1.95",
+      "context": "Shares the 9mm bore (ID) with 689, 699, 609, so it can be considered where the shaft is fixed at 9mm. The 629 is rated 4.45kN dynamic / 1.95kN static at 26mm OD"
+    }
+  ],
+  "6300": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.10kN",
+      "expected": "Cr=7.65 / Cor=3.48",
+      "context": "Shares the 10mm bore (ID) with 6800, 6900, 6000, so it can be considered where the shaft is fixed at 10mm. The 6300 is rated 7.65kN dynamic / 3.48kN static at 3"
+    }
+  ],
+  "6301": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.82kN",
+      "expected": "Cr=9.72 / Cor=5.08",
+      "context": "Shares the 12mm bore (ID) with 6801, 6901, 6001, so it can be considered where the shaft is fixed at 12mm. The 6301 is rated 9.72kN dynamic / 5.08kN static at 3"
+    }
+  ],
+  "6302": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.65kN",
+      "expected": "Cr=11.5 / Cor=5.42",
+      "context": "Shares the 15mm bore (ID) with 6802, 6902, 16002, so it can be considered where the shaft is fixed at 15mm. The 6302 is rated 11.50kN dynamic / 5.42kN static at"
+    }
+  ],
+  "6303": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.58kN",
+      "expected": "Cr=13.5 / Cor=6.58",
+      "context": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 6303 is rated 13.50kN dynamic / 6.58kN static at"
+    }
+  ],
+  "6304": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=15.8 / Cor=7.88",
+      "context": "Shares the 20mm bore (ID) with 6804, 6904, 6004, so it can be considered where the shaft is fixed at 20mm. The 6304 is rated 15.80kN dynamic / 7.88kN static at "
+    }
+  ],
+  "6305": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=22.2 / Cor=11.5",
+      "context": "Shares the 25mm bore (ID) with 6805, 6905, 6005, so it can be considered where the shaft is fixed at 25mm. The 6305 is rated 22.20kN dynamic / 11.50kN static at"
+    }
+  ],
+  "6306": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.50kN",
+      "expected": "Cr=27.0 / Cor=15.2",
+      "context": "Shares the 30mm bore (ID) with 6806, 6906, 16006, so it can be considered where the shaft is fixed at 30mm. The 6306 is rated 27.00kN dynamic / 15.20kN static a"
+    }
+  ],
+  "6307": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "25.50kN",
+      "expected": "Cr=33.4 / Cor=19.2",
+      "context": "Shares the 35mm bore (ID) with 6807, 6907, 16007, so it can be considered where the shaft is fixed at 35mm. The 6307 is rated 33.40kN dynamic / 19.20kN static a"
+    }
+  ],
+  "6308": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "22.50kN",
+      "expected": "Cr=40.8 / Cor=24.0",
+      "context": "Shares the 40mm bore (ID) with 6808, 6908, 6008, so it can be considered where the shaft is fixed at 40mm. The 6308 is rated 40.80kN dynamic / 24.00kN static at"
+    }
+  ],
+  "6309": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "23.20kN",
+      "expected": "Cr=52.8 / Cor=31.8",
+      "context": "Shares the 45mm bore (ID) with 6809, 6909, 6009, so it can be considered where the shaft is fixed at 45mm. The 6309 is rated 52.80kN dynamic / 31.80kN static at"
+    }
+  ],
+  "6310": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "35.00kN",
+      "expected": "Cr=61.8 / Cor=38.0",
+      "context": "Shares the 50mm bore (ID) with 6810, 6910, 16010, so it can be considered where the shaft is fixed at 50mm. The 6310 is rated 61.80kN dynamic / 38.00kN static a"
+    }
+  ],
+  "6311": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "43.20kN",
+      "expected": "Cr=71.5 / Cor=44.8",
+      "context": "Shares the 55mm bore (ID) with 6811, 6911, 16011, so it can be considered where the shaft is fixed at 55mm. The 6311 is rated 71.50kN dynamic / 44.80kN static a"
+    }
+  ],
+  "6312": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "34.00kN",
+      "expected": "Cr=81.8 / Cor=51.8",
+      "context": "Shares the 60mm bore (ID) with 6812, 6912, 6012, so it can be considered where the shaft is fixed at 60mm. The 6312 is rated 81.80kN dynamic / 51.80kN static at"
+    }
+  ],
+  "6313": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "43.50kN",
+      "expected": "Cr=93.8 / Cor=60.5",
+      "context": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 6313 is rated 93.80kN dynamic / 60.50kN static at"
+    }
+  ],
+  "6314": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "44.00kN",
+      "expected": "Cr=105 / Cor=68.0",
+      "context": "Shares the 70mm bore (ID) with 6814, 6914, 16014, so it can be considered where the shaft is fixed at 70mm. The 6314 is rated 105.00kN dynamic / 68.00kN static "
+    }
+  ],
+  "6315": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "44.20kN",
+      "expected": "Cr=113 / Cor=76.8",
+      "context": "Shares the 75mm bore (ID) with 6815, 6915, 16015, so it can be considered where the shaft is fixed at 75mm. The 6315 is rated 113.00kN dynamic / 76.80kN static "
+    }
+  ],
+  "6316": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "71.50kN",
+      "expected": "Cr=123 / Cor=86.5",
+      "context": "Shares the 80mm bore (ID) with 6816, 6916, 6016, so it can be considered where the shaft is fixed at 80mm. The 6316 is rated 123.00kN dynamic / 86.50kN static a"
+    }
+  ],
+  "6317": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "83.20kN",
+      "expected": "Cr=132 / Cor=96.5",
+      "context": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 6317 is rated 132.00kN dynamic / 96.50kN static a"
+    }
+  ],
+  "6318": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "70.00kN",
+      "expected": "Cr=145 / Cor=108",
+      "context": "Shares the 90mm bore (ID) with 6818, 6918, 16018, so it can be considered where the shaft is fixed at 90mm. The 6318 is rated 145.00kN dynamic / 108.00kN static"
+    }
+  ],
+  "6319": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "82.80kN",
+      "expected": "Cr=157 / Cor=122",
+      "context": "Shares the 95mm bore (ID) with 6819, 6919, 16019, so it can be considered where the shaft is fixed at 95mm. The 6319 is rated 157.00kN dynamic / 122.00kN static"
+    }
+  ],
+  "6320": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "122.00kN",
+      "expected": "Cr=173 / Cor=140",
+      "context": "Shares the 100mm bore (ID) with 6820, 6920, 6020, so it can be considered where the shaft is fixed at 100mm. The 6320 is rated 173.00kN dynamic / 140.00kN stati"
+    }
+  ],
+  "634": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.15kN",
+      "expected": "Cr=1.88 / Cor=0.68",
+      "context": "Shares the 4mm bore (ID) with 684, 694, 604, so it can be considered where the shaft is fixed at 4mm. The 634 is rated 1.88kN dynamic / 0.68kN static at 16mm OD"
+    }
+  ],
+  "635": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.88kN",
+      "expected": "Cr=2.8 / Cor=1.02",
+      "context": "Shares the 5mm bore (ID) with 685, 695, 605, so it can be considered where the shaft is fixed at 5mm. The 635 is rated 2.80kN dynamic / 1.02kN static at 19mm OD"
+    }
+  ],
+  "6800": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.70kN",
+      "expected": "Cr=1.4 / Cor=0.75",
+      "context": "Shares the 10mm bore (ID) with 6900, 6000, 6200, so it can be considered where the shaft is fixed at 10mm. The 6800 is rated 1.40kN dynamic / 0.75kN static at 1"
+    }
+  ],
+  "6801": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.80kN",
+      "expected": "Cr=1.4 / Cor=0.9",
+      "context": "Shares the 12mm bore (ID) with 6901, 6001, 16001, so it can be considered where the shaft is fixed at 12mm. The 6801 is rated 1.40kN dynamic / 0.90kN static at "
+    }
+  ],
+  "6802": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.30kN",
+      "expected": "Cr=1.92 / Cor=1.18",
+      "context": "Shares the 15mm bore (ID) with 6902, 16002, 6002, so it can be considered where the shaft is fixed at 15mm. The 6802 is rated 1.92kN dynamic / 1.18kN static at "
+    }
+  ],
+  "6803": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.60kN",
+      "expected": "Cr=2.2 / Cor=1.5",
+      "context": "Shares the 17mm bore (ID) with 6903, 16003, 6003, so it can be considered where the shaft is fixed at 17mm. The 6803 is rated 2.20kN dynamic / 1.50kN static at "
+    }
+  ],
+  "6804": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.40kN",
+      "expected": "Cr=3.5 / Cor=2.2",
+      "context": "Shares the 20mm bore (ID) with 6904, 6004, 16004, so it can be considered where the shaft is fixed at 20mm. The 6804 is rated 3.50kN dynamic / 2.20kN static at "
+    }
+  ],
+  "6805": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.00kN",
+      "expected": "Cr=4.3 / Cor=2.9",
+      "context": "Shares the 25mm bore (ID) with 6905, 6005, 16005, so it can be considered where the shaft is fixed at 25mm. The 6805 is rated 4.30kN dynamic / 2.90kN static at "
+    }
+  ],
+  "6806": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "7.20kN",
+      "expected": "Cr=4.7 / Cor=3.6",
+      "context": "Shares the 30mm bore (ID) with 6906, 16006, 6006, so it can be considered where the shaft is fixed at 30mm. The 6806 is rated 4.70kN dynamic / 3.60kN static at "
+    }
+  ],
+  "6807": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.50kN",
+      "expected": "Cr=4.9 / Cor=4.0",
+      "context": "Shares the 35mm bore (ID) with 6907, 16007, 6007, so it can be considered where the shaft is fixed at 35mm. The 6807 is rated 4.90kN dynamic / 4.00kN static at "
+    }
+  ],
+  "6808": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "13.70kN",
+      "expected": "Cr=5.1 / Cor=4.4",
+      "context": "Shares the 40mm bore (ID) with 6908, 6008, 16008, so it can be considered where the shaft is fixed at 40mm. The 6808 is rated 5.10kN dynamic / 4.40kN static at "
+    }
+  ],
+  "6809": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "14.10kN",
+      "expected": "Cr=6.4 / Cor=5.6",
+      "context": "Shares the 45mm bore (ID) with 6909, 6009, 16009, so it can be considered where the shaft is fixed at 45mm. The 6809 is rated 6.40kN dynamic / 5.60kN static at "
+    }
+  ],
+  "6810": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "14.50kN",
+      "expected": "Cr=6.6 / Cor=6.1",
+      "context": "Shares the 50mm bore (ID) with 6910, 16010, 6010, so it can be considered where the shaft is fixed at 50mm. The 6810 is rated 6.60kN dynamic / 6.10kN static at "
+    }
+  ],
+  "6811": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "15.90kN",
+      "expected": "Cr=9.1 / Cor=8.4",
+      "context": "Shares the 55mm bore (ID) with 6911, 16011, 6011, so it can be considered where the shaft is fixed at 55mm. The 6811 is rated 9.10kN dynamic / 8.40kN static at "
+    }
+  ],
+  "6812": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "16.40kN",
+      "expected": "Cr=9.1 / Cor=8.7",
+      "context": "Shares the 60mm bore (ID) with 6912, 6012, 16012, so it can be considered where the shaft is fixed at 60mm. The 6812 is rated 9.10kN dynamic / 8.70kN static at "
+    }
+  ],
+  "6813": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "17.40kN",
+      "expected": "Cr=11.9 / Cor=11.5",
+      "context": "Shares the 65mm bore (ID) with 6913, 6013, 16013, so it can be considered where the shaft is fixed at 65mm. The 6813 is rated 11.90kN dynamic / 11.50kN static a"
+    }
+  ],
+  "6814": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "23.70kN",
+      "expected": "Cr=12.1 / Cor=11.9",
+      "context": "Shares the 70mm bore (ID) with 6914, 16014, 6014, so it can be considered where the shaft is fixed at 70mm. The 6814 is rated 12.10kN dynamic / 11.90kN static a"
+    }
+  ],
+  "6815": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "24.30kN",
+      "expected": "Cr=12.5 / Cor=12.8",
+      "context": "Shares the 75mm bore (ID) with 6915, 16015, 6015, so it can be considered where the shaft is fixed at 75mm. The 6815 is rated 12.50kN dynamic / 12.80kN static a"
+    }
+  ],
+  "6816": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "24.90kN",
+      "expected": "Cr=12.7 / Cor=13.3",
+      "context": "Shares the 80mm bore (ID) with 6916, 6016, 16016, so it can be considered where the shaft is fixed at 80mm. The 6816 is rated 12.70kN dynamic / 13.30kN static a"
+    }
+  ],
+  "6817": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "31.90kN",
+      "expected": "Cr=19.2 / Cor=19.8",
+      "context": "Shares the 85mm bore (ID) with 6917, 6017, 16017, so it can be considered where the shaft is fixed at 85mm. The 6817 is rated 19.20kN dynamic / 19.80kN static a"
+    }
+  ],
+  "6818": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "32.80kN",
+      "expected": "Cr=19.5 / Cor=20.5",
+      "context": "Shares the 90mm bore (ID) with 6918, 16018, 6018, so it can be considered where the shaft is fixed at 90mm. The 6818 is rated 19.50kN dynamic / 20.50kN static a"
+    }
+  ],
+  "6819": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "33.70kN",
+      "expected": "Cr=19.8 / Cor=21.3",
+      "context": "Shares the 95mm bore (ID) with 6919, 16019, 6019, so it can be considered where the shaft is fixed at 95mm. The 6819 is rated 19.80kN dynamic / 21.30kN static a"
+    }
+  ],
+  "6820": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "45.50kN",
+      "expected": "Cr=20.1 / Cor=22.0",
+      "context": "Shares the 100mm bore (ID) with 6920, 6020, 16020, so it can be considered where the shaft is fixed at 100mm. The 6820 is rated 20.10kN dynamic / 22.00kN static"
+    }
+  ],
+  "683": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.45kN",
+      "expected": "Cr=0.311 / Cor=0.112",
+      "context": "Shares the 3mm bore (ID) with 693, 623, so it can be considered where the shaft is fixed at 3mm. The 683 is rated 0.31kN dynamic / 0.11kN static at 7mm OD \u2014 the"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.comparison_matrix.vs_larger_bearing",
+      "found": "0.31kN",
+      "expected": "Cr=0.311 / Cor=0.112",
+      "context": "Need more load on the same 3mm shaft? The 693 (8mm OD, 0.45kN) is the heavier-duty same-bore alternative to the 683 (0.31kN) \u2014 choose the 683 to save radial spa"
+    }
+  ],
+  "684": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.95kN",
+      "expected": "Cr=0.35 / Cor=0.4",
+      "context": "Shares the 4mm bore (ID) with 694, 604, 624, so it can be considered where the shaft is fixed at 4mm. The 684 is rated 0.35kN dynamic / 0.40kN static at 9mm OD "
+    }
+  ],
+  "685": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.08kN",
+      "expected": "Cr=0.57 / Cor=0.25",
+      "context": "Shares the 5mm bore (ID) with 695, 605, 625, so it can be considered where the shaft is fixed at 5mm. The 685 is rated 0.57kN dynamic / 0.25kN static at 11mm OD"
+    }
+  ],
+  "686": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.48kN",
+      "expected": "Cr=0.72 / Cor=0.4",
+      "context": "Shares the 6mm bore (ID) with 696, 606, 626, so it can be considered where the shaft is fixed at 6mm. The 686 is rated 0.72kN dynamic / 0.40kN static at 13mm OD"
+    }
+  ],
+  "687": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.02kN",
+      "expected": "Cr=0.9 / Cor=0.46",
+      "context": "Shares the 7mm bore (ID) with 697, 607, 627, so it can be considered where the shaft is fixed at 7mm. The 687 is rated 0.90kN dynamic / 0.46kN static at 14mm OD"
+    }
+  ],
+  "688": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.25kN",
+      "expected": "Cr=1.38 / Cor=0.55",
+      "context": "Shares the 8mm bore (ID) with 698, 608, 628, so it can be considered where the shaft is fixed at 8mm. The 688 is rated 1.38kN dynamic / 0.55kN static at 16mm OD"
+    }
+  ],
+  "689": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.48kN",
+      "expected": "Cr=1.38 / Cor=0.7",
+      "context": "Shares the 9mm bore (ID) with 699, 609, 629, so it can be considered where the shaft is fixed at 9mm. The 689 is rated 1.38kN dynamic / 0.70kN static at 17mm OD"
+    }
+  ],
+  "6900": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.40kN",
+      "expected": "Cr=2.7 / Cor=1.3",
+      "context": "Shares the 10mm bore (ID) with 6800, 6000, 6200, so it can be considered where the shaft is fixed at 10mm. The 6900 is rated 2.70kN dynamic / 1.30kN static at 2"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.58kN",
+      "expected": "Cr=2.7 / Cor=1.3",
+      "context": "Shares the 10mm bore (ID) with 6800, 6000, 6200, so it can be considered where the shaft is fixed at 10mm. The 6900 is rated 2.70kN dynamic / 1.30kN static at 2"
+    }
+  ],
+  "6901": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.40kN",
+      "expected": "Cr=2.8 / Cor=1.5",
+      "context": "Shares the 12mm bore (ID) with 6801, 6001, 16001, so it can be considered where the shaft is fixed at 12mm. The 6901 is rated 2.80kN dynamic / 1.50kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.10kN",
+      "expected": "Cr=2.8 / Cor=1.5",
+      "context": "Shares the 12mm bore (ID) with 6801, 6001, 16001, so it can be considered where the shaft is fixed at 12mm. The 6901 is rated 2.80kN dynamic / 1.50kN static at "
+    }
+  ],
+  "6902": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.92kN",
+      "expected": "Cr=4.3 / Cor=2.3",
+      "context": "Shares the 15mm bore (ID) with 6802, 16002, 6002, so it can be considered where the shaft is fixed at 15mm. The 6902 is rated 4.30kN dynamic / 2.30kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.60kN",
+      "expected": "Cr=4.3 / Cor=2.3",
+      "context": "Shares the 15mm bore (ID) with 6802, 16002, 6002, so it can be considered where the shaft is fixed at 15mm. The 6902 is rated 4.30kN dynamic / 2.30kN static at "
+    }
+  ],
+  "6903": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.20kN",
+      "expected": "Cr=4.6 / Cor=2.6",
+      "context": "Shares the 17mm bore (ID) with 6803, 16003, 6003, so it can be considered where the shaft is fixed at 17mm. The 6903 is rated 4.60kN dynamic / 2.60kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.00kN",
+      "expected": "Cr=4.6 / Cor=2.6",
+      "context": "Shares the 17mm bore (ID) with 6803, 16003, 6003, so it can be considered where the shaft is fixed at 17mm. The 6903 is rated 4.60kN dynamic / 2.60kN static at "
+    }
+  ],
+  "6904": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "3.50kN",
+      "expected": "Cr=6.4 / Cor=3.7",
+      "context": "Shares the 20mm bore (ID) with 6804, 6004, 16004, so it can be considered where the shaft is fixed at 20mm. The 6904 is rated 6.40kN dynamic / 3.70kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.38kN",
+      "expected": "Cr=6.4 / Cor=3.7",
+      "context": "Shares the 20mm bore (ID) with 6804, 6004, 16004, so it can be considered where the shaft is fixed at 20mm. The 6904 is rated 6.40kN dynamic / 3.70kN static at "
+    }
+  ],
+  "6905": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.30kN",
+      "expected": "Cr=7.0 / Cor=4.5",
+      "context": "Shares the 25mm bore (ID) with 6805, 6005, 16005, so it can be considered where the shaft is fixed at 25mm. The 6905 is rated 7.00kN dynamic / 4.50kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "10.00kN",
+      "expected": "Cr=7.0 / Cor=4.5",
+      "context": "Shares the 25mm bore (ID) with 6805, 6005, 16005, so it can be considered where the shaft is fixed at 25mm. The 6905 is rated 7.00kN dynamic / 4.50kN static at "
+    }
+  ],
+  "6906": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.70kN",
+      "expected": "Cr=7.2 / Cor=5.0",
+      "context": "Shares the 30mm bore (ID) with 6806, 16006, 6006, so it can be considered where the shaft is fixed at 30mm. The 6906 is rated 7.20kN dynamic / 5.00kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "11.20kN",
+      "expected": "Cr=7.2 / Cor=5.0",
+      "context": "Shares the 30mm bore (ID) with 6806, 16006, 6006, so it can be considered where the shaft is fixed at 30mm. The 6906 is rated 7.20kN dynamic / 5.00kN static at "
+    }
+  ],
+  "6907": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "4.90kN",
+      "expected": "Cr=9.5 / Cor=6.8",
+      "context": "Shares the 35mm bore (ID) with 6807, 16007, 6007, so it can be considered where the shaft is fixed at 35mm. The 6907 is rated 9.50kN dynamic / 6.80kN static at "
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.20kN",
+      "expected": "Cr=9.5 / Cor=6.8",
+      "context": "Shares the 35mm bore (ID) with 6807, 16007, 6007, so it can be considered where the shaft is fixed at 35mm. The 6907 is rated 9.50kN dynamic / 6.80kN static at "
+    }
+  ],
+  "6908": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "5.10kN",
+      "expected": "Cr=13.7 / Cor=9.9",
+      "context": "Shares the 40mm bore (ID) with 6808, 6008, 16008, so it can be considered where the shaft is fixed at 40mm. The 6908 is rated 13.70kN dynamic / 9.90kN static at"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "17.00kN",
+      "expected": "Cr=13.7 / Cor=9.9",
+      "context": "Shares the 40mm bore (ID) with 6808, 6008, 16008, so it can be considered where the shaft is fixed at 40mm. The 6908 is rated 13.70kN dynamic / 9.90kN static at"
+    }
+  ],
+  "6909": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.40kN",
+      "expected": "Cr=14.1 / Cor=10.9",
+      "context": "Shares the 45mm bore (ID) with 6809, 6009, 16009, so it can be considered where the shaft is fixed at 45mm. The 6909 is rated 14.10kN dynamic / 10.90kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "21.00kN",
+      "expected": "Cr=14.1 / Cor=10.9",
+      "context": "Shares the 45mm bore (ID) with 6809, 6009, 16009, so it can be considered where the shaft is fixed at 45mm. The 6909 is rated 14.10kN dynamic / 10.90kN static a"
+    }
+  ],
+  "6910": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "6.60kN",
+      "expected": "Cr=14.5 / Cor=11.7",
+      "context": "Shares the 50mm bore (ID) with 6810, 16010, 6010, so it can be considered where the shaft is fixed at 50mm. The 6910 is rated 14.50kN dynamic / 11.70kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "16.10kN",
+      "expected": "Cr=14.5 / Cor=11.7",
+      "context": "Shares the 50mm bore (ID) with 6810, 16010, 6010, so it can be considered where the shaft is fixed at 50mm. The 6910 is rated 14.50kN dynamic / 11.70kN static a"
+    }
+  ],
+  "6911": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.10kN",
+      "expected": "Cr=15.9 / Cor=13.2",
+      "context": "Shares the 55mm bore (ID) with 6811, 16011, 6011, so it can be considered where the shaft is fixed at 55mm. The 6911 is rated 15.90kN dynamic / 13.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.40kN",
+      "expected": "Cr=15.9 / Cor=13.2",
+      "context": "Shares the 55mm bore (ID) with 6811, 16011, 6011, so it can be considered where the shaft is fixed at 55mm. The 6911 is rated 15.90kN dynamic / 13.20kN static a"
+    }
+  ],
+  "6912": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "9.10kN",
+      "expected": "Cr=16.4 / Cor=14.2",
+      "context": "Shares the 60mm bore (ID) with 6812, 6012, 16012, so it can be considered where the shaft is fixed at 60mm. The 6912 is rated 16.40kN dynamic / 14.20kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "31.50kN",
+      "expected": "Cr=16.4 / Cor=14.2",
+      "context": "Shares the 60mm bore (ID) with 6812, 6012, 16012, so it can be considered where the shaft is fixed at 60mm. The 6912 is rated 16.40kN dynamic / 14.20kN static a"
+    }
+  ],
+  "6913": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "11.90kN",
+      "expected": "Cr=17.4 / Cor=16.0",
+      "context": "Shares the 65mm bore (ID) with 6813, 6013, 16013, so it can be considered where the shaft is fixed at 65mm. The 6913 is rated 17.40kN dynamic / 16.00kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "32.00kN",
+      "expected": "Cr=17.4 / Cor=16.0",
+      "context": "Shares the 65mm bore (ID) with 6813, 6013, 16013, so it can be considered where the shaft is fixed at 65mm. The 6913 is rated 17.40kN dynamic / 16.00kN static a"
+    }
+  ],
+  "6914": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.10kN",
+      "expected": "Cr=23.7 / Cor=21.1",
+      "context": "Shares the 70mm bore (ID) with 6814, 16014, 6014, so it can be considered where the shaft is fixed at 70mm. The 6914 is rated 23.70kN dynamic / 21.10kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "27.90kN",
+      "expected": "Cr=23.7 / Cor=21.1",
+      "context": "Shares the 70mm bore (ID) with 6814, 16014, 6014, so it can be considered where the shaft is fixed at 70mm. The 6914 is rated 23.70kN dynamic / 21.10kN static a"
+    }
+  ],
+  "6915": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.50kN",
+      "expected": "Cr=24.3 / Cor=22.5",
+      "context": "Shares the 75mm bore (ID) with 6815, 16015, 6015, so it can be considered where the shaft is fixed at 75mm. The 6915 is rated 24.30kN dynamic / 22.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "28.70kN",
+      "expected": "Cr=24.3 / Cor=22.5",
+      "context": "Shares the 75mm bore (ID) with 6815, 16015, 6015, so it can be considered where the shaft is fixed at 75mm. The 6915 is rated 24.30kN dynamic / 22.50kN static a"
+    }
+  ],
+  "6916": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "12.70kN",
+      "expected": "Cr=24.9 / Cor=23.9",
+      "context": "Shares the 80mm bore (ID) with 6816, 6016, 16016, so it can be considered where the shaft is fixed at 80mm. The 6916 is rated 24.90kN dynamic / 23.90kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "47.50kN",
+      "expected": "Cr=24.9 / Cor=23.9",
+      "context": "Shares the 80mm bore (ID) with 6816, 6016, 16016, so it can be considered where the shaft is fixed at 80mm. The 6916 is rated 24.90kN dynamic / 23.90kN static a"
+    }
+  ],
+  "6917": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.20kN",
+      "expected": "Cr=31.9 / Cor=29.7",
+      "context": "Shares the 85mm bore (ID) with 6817, 6017, 16017, so it can be considered where the shaft is fixed at 85mm. The 6917 is rated 31.90kN dynamic / 29.70kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "50.80kN",
+      "expected": "Cr=31.9 / Cor=29.7",
+      "context": "Shares the 85mm bore (ID) with 6817, 6017, 16017, so it can be considered where the shaft is fixed at 85mm. The 6917 is rated 31.90kN dynamic / 29.70kN static a"
+    }
+  ],
+  "6918": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.50kN",
+      "expected": "Cr=32.8 / Cor=31.5",
+      "context": "Shares the 90mm bore (ID) with 6818, 16018, 6018, so it can be considered where the shaft is fixed at 90mm. The 6918 is rated 32.80kN dynamic / 31.50kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "41.50kN",
+      "expected": "Cr=32.8 / Cor=31.5",
+      "context": "Shares the 90mm bore (ID) with 6818, 16018, 6018, so it can be considered where the shaft is fixed at 90mm. The 6918 is rated 32.80kN dynamic / 31.50kN static a"
+    }
+  ],
+  "6919": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "19.80kN",
+      "expected": "Cr=33.7 / Cor=33.3",
+      "context": "Shares the 95mm bore (ID) with 6819, 16019, 6019, so it can be considered where the shaft is fixed at 95mm. The 6919 is rated 33.70kN dynamic / 33.30kN static a"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "42.70kN",
+      "expected": "Cr=33.7 / Cor=33.3",
+      "context": "Shares the 95mm bore (ID) with 6819, 16019, 6019, so it can be considered where the shaft is fixed at 95mm. The 6919 is rated 33.70kN dynamic / 33.30kN static a"
+    }
+  ],
+  "6920": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "20.10kN",
+      "expected": "Cr=45.5 / Cor=39.5",
+      "context": "Shares the 100mm bore (ID) with 6820, 6020, 16020, so it can be considered where the shaft is fixed at 100mm. The 6920 is rated 45.50kN dynamic / 39.50kN static"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "64.50kN",
+      "expected": "Cr=45.5 / Cor=39.5",
+      "context": "Shares the 100mm bore (ID) with 6820, 6020, 16020, so it can be considered where the shaft is fixed at 100mm. The 6920 is rated 45.50kN dynamic / 39.50kN static"
+    }
+  ],
+  "693": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.31kN",
+      "expected": "Cr=0.45 / Cor=0.15",
+      "context": "Shares the 3mm bore (ID) with 683, 623, so it can be considered where the shaft is fixed at 3mm. The 693 is rated 0.45kN dynamic / 0.15kN static at 8mm OD \u2014 mor"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.65kN",
+      "expected": "Cr=0.45 / Cor=0.15",
+      "context": "Shares the 3mm bore (ID) with 683, 623, so it can be considered where the shaft is fixed at 3mm. The 693 is rated 0.45kN dynamic / 0.15kN static at 8mm OD \u2014 mor"
+    }
+  ],
+  "694": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.75kN",
+      "expected": "Cr=0.95 / Cor=0.35",
+      "context": "Shares the 4mm bore (ID) with 684, 604, 624, so it can be considered where the shaft is fixed at 4mm. The 694 is rated 0.95kN dynamic / 0.35kN static at 11mm OD"
+    }
+  ],
+  "695": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.57kN",
+      "expected": "Cr=1.08 / Cor=0.42",
+      "context": "Shares the 5mm bore (ID) with 685, 605, 625, so it can be considered where the shaft is fixed at 5mm. The 695 is rated 1.08kN dynamic / 0.42kN static at 13mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.05kN",
+      "expected": "Cr=1.08 / Cor=0.42",
+      "context": "Shares the 5mm bore (ID) with 685, 605, 625, so it can be considered where the shaft is fixed at 5mm. The 695 is rated 1.08kN dynamic / 0.42kN static at 13mm OD"
+    }
+  ],
+  "696": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.72kN",
+      "expected": "Cr=1.48 / Cor=0.6",
+      "context": "Shares the 6mm bore (ID) with 686, 606, 626, so it can be considered where the shaft is fixed at 6mm. The 696 is rated 1.48kN dynamic / 0.60kN static at 15mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.95kN",
+      "expected": "Cr=1.48 / Cor=0.6",
+      "context": "Shares the 6mm bore (ID) with 686, 606, 626, so it can be considered where the shaft is fixed at 6mm. The 696 is rated 1.48kN dynamic / 0.60kN static at 15mm OD"
+    }
+  ],
+  "697": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "0.90kN",
+      "expected": "Cr=2.02 / Cor=0.8",
+      "context": "Shares the 7mm bore (ID) with 687, 607, 627, so it can be considered where the shaft is fixed at 7mm. The 697 is rated 2.02kN dynamic / 0.80kN static at 17mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "2.86kN",
+      "expected": "Cr=2.02 / Cor=0.8",
+      "context": "Shares the 7mm bore (ID) with 687, 607, 627, so it can be considered where the shaft is fixed at 7mm. The 697 is rated 2.02kN dynamic / 0.80kN static at 17mm OD"
+    }
+  ],
+  "698": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.38kN",
+      "expected": "Cr=2.25 / Cor=0.92",
+      "context": "Shares the 8mm bore (ID) with 688, 608, 628, so it can be considered where the shaft is fixed at 8mm. The 698 is rated 2.25kN dynamic / 0.92kN static at 19mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "3.32kN",
+      "expected": "Cr=2.25 / Cor=0.92",
+      "context": "Shares the 8mm bore (ID) with 688, 608, 628, so it can be considered where the shaft is fixed at 8mm. The 698 is rated 2.25kN dynamic / 0.92kN static at 19mm OD"
+    }
+  ],
+  "699": [
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "1.38kN",
+      "expected": "Cr=2.48 / Cor=1.08",
+      "context": "Shares the 9mm bore (ID) with 689, 609, 629, so it can be considered where the shaft is fixed at 9mm. The 699 is rated 2.48kN dynamic / 1.08kN static at 20mm OD"
+    },
+    {
+      "severity": "REVIEW",
+      "field": "llm_optimization.expertise_signals[4].description",
+      "found": "3.35kN",
+      "expected": "Cr=2.48 / Cor=1.08",
+      "context": "Shares the 9mm bore (ID) with 689, 609, 629, so it can be considered where the shaft is fixed at 9mm. The 699 is rated 2.48kN dynamic / 1.08kN static at 20mm OD"
+    }
+  ]
+}

@@ -91,7 +91,7 @@
         "Steel processing machinery",
         "Concrete mixer shafts"
       ],
-      "requirements": "65mm shaft with 33.0kN (\u22483360kg) dynamic load capacity, 5,500 RPM grease lubrication, 115\u00d723mm robust size"
+      "requirements": "65mm shaft with 57.80kN (≈5891kg) dynamic load capacity, 5,000 RPM grease lubrication, 120×23mm robust size"
     },
     "application2": {
       "title": "Precision Robotics",
@@ -106,7 +106,7 @@
         "Medical robotic joints",
         "Precision actuator pivots"
       ],
-      "requirements": "65mm bore with 2.1mm chamfer, 22kN (\u22482240kg) static load capacity, grease lubrication"
+      "requirements": "65mm bore with 2.1mm chamfer, 40.00kN (≈4079kg) static load capacity, grease lubrication"
     },
     "application3": {
       "title": "Marine Applications",
@@ -216,8 +216,8 @@
     }
   },
   "seo_metadata": {
-    "title": "6213 Bearing 65\u00d7120\u00d723mm Deep Groove Ball Bearing | RHD",
-    "meta_description": "6213 deep groove ball bearing with 65mm bore, 120mm OD, 23mm width. 70.00kN dynamic load, 7143kg capacity. Perfect for motors, pumps, automotive components.",
+    "title": "6213 Bearing 65×120×23mm Deep Groove Ball Bearing | RHD",
+    "meta_description": "6213 deep groove ball bearing with 65mm bore, 120mm OD, 23mm width. 57.80kN dynamic load, 5891kg capacity. Perfect for motors, pumps, automotive components.",
     "keywords": [
       "6213 bearing",
       "65mm bore bearing",
@@ -249,25 +249,25 @@
       "RHD bearings",
       "India bearings"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/6200-Series/6213/",
+    "canonical_url": "https://rhdbearings.com/specs/6200-series/6213/",
     "og_data": {
-      "title": "6213 Deep Groove Ball Bearing - 65\u00d7120\u00d723mm | RHD Bearings",
-      "description": "High-quality 6213 bearing with 70.00kN dynamic load capacity. Perfect for heavy industrial power systems and precision applications.",
-      "url": "https://rhdbearings.com/specs/6200-Series/6213/",
+      "title": "6213 Deep Groove Ball Bearing - 65×120×23mm | RHD Bearings",
+      "description": "High-quality 6213 bearing with 57.80kN dynamic load capacity. Perfect for heavy industrial power systems and precision applications.",
+      "url": "https://rhdbearings.com/specs/6200-series/6213/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
       "title": "6213 Bearing - Heavy Industrial Power System Solution",
-      "description": "65mm bore, 70.00kN load capacity, 7,000 RPM. Ideal for motors, pumps, and automotive components."
+      "description": "65mm bore, 57.80kN load capacity, 5,000 RPM. Ideal for motors, pumps, and automotive components."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "6213 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "6213 deep groove ball bearing with 65mm bore, 120mm outer diameter, 23mm width. 70.00kN dynamic load capacity, 7143kg load capacity.",
+      "description": "6213 deep groove ball bearing with 65mm bore, 120mm outer diameter, 23mm width. 57.80kN dynamic load capacity, 5891kg load capacity.",
       "sku": "6213",
       "mpn": "6213",
       "brand": "RHD Bearings",
@@ -279,7 +279,7 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/6200-Series/6213/",
+        "url": "https://rhdbearings.com/specs/6200-series/6213/",
         "priceCurrency": "INR",
         "availability": "Yes",
         "priceValidUntil": "2025-12-31",
@@ -305,9 +305,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -327,15 +327,18 @@
   },
   "cross_references": {
     "related_models": [
-      "6013",
-      "6313",
       "6813",
-      "6913"
+      "6913",
+      "6013",
+      "16013",
+      "62213",
+      "6313",
+      "62313"
     ],
     "shaft_requirements": {
       "nominal_diameter": "65.000mm",
-      "tolerance_grade": "h6 (64.987-65.000mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (64.981-65.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -346,12 +349,12 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "Choose 6213 for 65mm shafts requiring 70.00kN dynamic load capacity in heavy industrial power system applications",
+      "Choose 6213 for 65mm shafts requiring 57.80kN dynamic load capacity in heavy industrial power system applications",
       "Select 6213-ZZ for dust protection with 6,300 RPM capability and sealed-for-life lubrication",
-      "Use 6213-RS in moisture-prone environments requiring 5,600 RPM with rubber seal protection",
-      "Consider 6213 for automotive components where 23mm width and 1.950kg weight ensure durability and reliability",
-      "Opt for 6213 in precision applications needing 1.0mm chamfer radius and 7143kg load capacity",
-      "Deploy 6213 in power transmission systems requiring 7,000 RPM grease lubrication with 120\u00d723mm profile"
+      "Use 6213-RS in moisture-prone environments requiring 5,000 RPM with rubber seal protection",
+      "Consider 6213 for automotive components where 23mm width and 5891kg weight ensure durability and reliability",
+      "Opt for 6213 in precision applications needing 1.0mm chamfer radius and 5891kg load capacity",
+      "Deploy 6213 in power transmission systems requiring 5,000 RPM grease lubrication with 120×23mm profile"
     ],
     "natural_language_queries": [
       "6213 bearing dimensions",
@@ -363,15 +366,15 @@
     ],
     "decision_criteria": [
       "65mm bore diameter requirement for shaft compatibility",
-      "70.00kN dynamic load capacity for application demands",
+      "57.80kN dynamic load capacity for application demands",
       "23mm width constraint for robust mounting",
-      "7,000 RPM grease lubrication speed requirement",
+      "5,000 RPM grease lubrication speed requirement",
       "120mm outer diameter for housing fit"
     ],
     "problem_solution_mapping": [
       {
         "problem": "Need heavy-duty bearing for 65mm shaft with high load capacity",
-        "solution": "6213 bearing provides 70.00kN dynamic load in 120\u00d723mm profile"
+        "solution": "6213 bearing provides 57.80kN dynamic load in 120×23mm profile"
       },
       {
         "problem": "Require dust protection in medium-speed application",
@@ -379,44 +382,44 @@
       },
       {
         "problem": "Moisture exposure in automotive environment",
-        "solution": "6213-RS provides rubber seal protection up to 5,600 RPM"
+        "solution": "6213-RS provides rubber seal protection up to 5,000 RPM"
       }
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for medium bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 9.00kN higher dynamic load than 6212 while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 65mm bore (ID) with 6813, 6913, 6013, so it can be considered where the shaft is fixed at 65mm. The 6213 is rated 57.80kN dynamic / 40.00kN static at 120mm OD — more capacity than the 6013 (32.00kN) and less than the heavier-duty 6313 (93.80kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in medium-bearing category for 70.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in medium-bearing category for 57.80kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6213 provides 9.00kN higher dynamic load than 6212 while maintaining compact 120\u00d723mm profile",
-      "vs_larger_bearing": "6213 offers 9.00kN lower load than 6214 but with 3mm smaller diameter for space-constrained applications",
+      "vs_smaller_bearing": "Same 65mm bore as the 6013 but in a larger 120mm OD body — the 6213 delivers 57.80kN dynamic vs 32.00kN for the 6013, the higher-capacity option when the shaft stays 65mm.",
+      "vs_larger_bearing": "Need more load on the same 65mm shaft? The 6313 (140mm OD, 93.80kN) is the heavier-duty same-bore alternative to the 6213 (57.80kN) — choose the 6213 to save radial space.",
       "vs_competitors": "RHD 6213 uses superior Gcr15 steel vs. standard steel, providing 20% longer service life and better wear resistance",
       "cost_benefit": "6213 delivers optimal performance-to-size ratio at competitive pricing, with 3-10x longer lifespan than budget alternatives"
     }
@@ -434,7 +437,7 @@
         },
         {
           "question": "Can I replace a 6213 bearing with a different size bearing?",
-          "direct_answer": "No, 6213 bearings have unique 65\u00d7120\u00d723mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
+          "direct_answer": "No, 6213 bearings have unique 65×120×23mm dimensions and cannot be replaced with other sizes without mechanical modifications.",
           "why_matters": "Bearing dimensions are critical for proper fit, load distribution, and system performance.",
           "how_to_handle": "Always use exact 6213 replacement or consult engineering specifications for alternative solutions.",
           "pro_tip": "Keep spare 6213 bearings in stock to avoid production delays and ensure consistent quality."

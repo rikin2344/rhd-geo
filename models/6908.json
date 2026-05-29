@@ -92,7 +92,7 @@
         "Elevator drive arms",
         "Construction equipment shafts"
       ],
-      "requirements": "40mm shaft with 15.5kN (\u22481,580kg) dynamic load capacity, 9,000 RPM grease lubrication, 52\u00d713mm profile for gearboxes"
+      "requirements": "40mm shaft with 13.70kN (≈1396kg) dynamic load capacity, 8,000 RPM grease lubrication, 62×12mm profile for gearboxes"
     },
     "application2": {
       "title": "Robotic Arms",
@@ -107,7 +107,7 @@
         "Material handling pivots",
         "CNC arm rotation joints"
       ],
-      "requirements": "Precision 40mm bore with 11.5kN (\u22481,170kg) static load"
+      "requirements": "Precision 40mm bore with 9.90kN (≈1010kg) static load"
     },
     "application3": {
       "title": "Heavy Drives",
@@ -122,7 +122,7 @@
         "Material handling shafts",
         "Hydraulic motor drives"
       ],
-      "requirements": "40mm bore, 15mm width for heavy load drives"
+      "requirements": "40mm bore, 12mm width for heavy load drives"
     }
   },
   "vibration": {
@@ -299,9 +299,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -321,15 +321,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6808",
       "6008",
+      "16008",
+      "62208",
       "6208",
       "6308",
-      "6808"
+      "62308"
     ],
     "shaft_requirements": {
       "nominal_diameter": "40.000mm",
-      "tolerance_grade": "h6 (39.987-40.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (39.984-40.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,39 +373,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for small bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 9.9kN more load than typical smaller bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 40mm bore (ID) with 6808, 6008, 16008, so it can be considered where the shaft is fixed at 40mm. The 6908 is rated 13.70kN dynamic / 9.90kN static at 62mm OD — more capacity than the 6808 (5.10kN) and less than the heavier-duty 6008 (17.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in small-bearing category for 13.70kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "6908 provides 9.9kN more load capacity than 6808 series while maintaining compact design",
-      "vs_larger_bearing": "6908 offers space savings over 6008 series with 90% of the load capacity",
+      "vs_smaller_bearing": "Same 40mm bore as the 6808 but in a larger 62mm OD body — the 6908 delivers 13.70kN dynamic vs 5.10kN for the 6808, the higher-capacity option when the shaft stays 40mm.",
+      "vs_larger_bearing": "Need more load on the same 40mm shaft? The 6008 (68mm OD, 17.00kN) is the heavier-duty same-bore alternative to the 6908 (13.70kN) — choose the 6908 to save radial space.",
       "vs_competitors": "6908 delivers superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "6908 provides best value in miniature bearing category with 3-10x longer service life than cheap alternatives"
     }
@@ -441,7 +444,7 @@
           "question": "What shaft tolerance is recommended for the 6908 bearing?",
           "direct_answer": "The 6908 bearing requires an h6 shaft tolerance with a nominal diameter of 40.000mm and tolerance range of 39.987-40.013mm for optimal performance.",
           "why_matters": "Proper shaft tolerance ensures correct fit and prevents issues like excessive clearance or interference that can lead to premature failure.",
-          "how_to_handle": "Machine the shaft to h6 tolerance (39.987-40.013mm) with a surface finish of Ra 0.8\u03bcm maximum and runout tolerance of 0.013mm maximum.",
+          "how_to_handle": "Machine the shaft to h6 tolerance (39.987-40.013mm) with a surface finish of Ra 0.8μm maximum and runout tolerance of 0.013mm maximum.",
           "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation, as even small deviations can significantly impact bearing performance."
         },
         {
@@ -456,7 +459,7 @@
           "direct_answer": "The 6908 bearing should be installed using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to the bearing components.",
           "why_matters": "Proper installation prevents bearing damage, ensures correct fit, and maximizes service life while maintaining performance characteristics.",
           "how_to_handle": "Use bearing installation tools or sleeves to apply pressure evenly on the inner ring, never apply force directly to the outer ring or balls.",
-          "pro_tip": "Heat the bearing to 80-100\u00b0C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
+          "pro_tip": "Heat the bearing to 80-100°C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
         }
       ]
     },
@@ -468,7 +471,7 @@
           "direct_answer": "A hot-running 6908 bearing is typically caused by over-lubrication, excessive load, misalignment, or insufficient clearance, requiring immediate investigation and correction.",
           "why_matters": "Excessive heat can lead to premature bearing failure, lubricant breakdown, and potential damage to surrounding components.",
           "how_to_handle": "Check lubrication levels, verify load conditions, inspect for misalignment, and ensure proper clearance. Reduce speed if necessary and monitor temperature.",
-          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80\u00b0C indicate potential problems requiring attention."
+          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80°C indicate potential problems requiring attention."
         },
         {
           "question": "What causes excessive noise in the 6908 bearing?",

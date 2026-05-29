@@ -91,7 +91,7 @@
         "Construction tool motors",
         "Cooling unit shaft drives"
       ],
-      "requirements": "50mm shaft with 21.3kN (\u22482,170kg) dynamic load capacity, 7,000 RPM grease lubrication, 62\u00d719mm profile"
+      "requirements": "50mm shaft with 16.10kN (≈1641kg) dynamic load capacity, 8,000 RPM grease lubrication, 80×10mm profile"
     },
     "application2": {
       "title": "Robotic Mounts",
@@ -106,7 +106,7 @@
         "Precision actuator pivots",
         "Manufacturing robot bases"
       ],
-      "requirements": "Precision 50mm bore with 15.7kN (\u22481,600kg) static load rating"
+      "requirements": "Precision 50mm bore with 13.10kN (≈1336kg) static load rating"
     },
     "application3": {
       "title": "Manufacturing Drives",
@@ -121,7 +121,7 @@
         "Mining machinery rollers",
         "Material handling shafts"
       ],
-      "requirements": "50mm bore, 16mm width for industrial drives"
+      "requirements": "50mm bore, 10mm width for industrial drives"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "16010 Bearing 50x80x10mm - RHD Bearings",
-    "meta_description": "16010 deep groove ball bearing 50x80x10mm, 821kg load capacity. High-speed 8,000 RPM. ISO compliant. Mumbai manufacturer.",
+    "meta_description": "16010 deep groove ball bearing 50x80x10mm, 1641kg load capacity. High-speed 8,000 RPM. ISO compliant. Mumbai manufacturer.",
     "keywords": [
       "16010 bearing",
       "50x80x10 bearing",
@@ -245,7 +245,7 @@
     "canonical_url": "https://rhdbearings.com/specs/16000-series/16010/",
     "og_data": {
       "title": "16010 Bearing 50x80x10mm - RHD Bearings",
-      "description": "16010 deep groove ball bearing 50x80x10mm, 821kg load capacity. High-speed 8,000 RPM. ISO compliant.",
+      "description": "16010 deep groove ball bearing 50x80x10mm, 1641kg load capacity. High-speed 8,000 RPM. ISO compliant.",
       "url": "https://rhdbearings.com/specs/16000-series/16010/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -253,14 +253,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "16010 Bearing 50x80x10mm - RHD Bearings",
-      "description": "16010 deep groove ball bearing 50x80x10mm, 821kg load capacity. High-speed 8,000 RPM."
+      "description": "16010 deep groove ball bearing 50x80x10mm, 1641kg load capacity. High-speed 8,000 RPM."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "16010 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "16010 deep groove ball bearing 50x80x10mm with 821kg load capacity and 8,000 RPM speed rating",
+      "description": "16010 deep groove ball bearing 50x80x10mm with 1641kg load capacity and 8,000 RPM speed rating",
       "sku": "16010",
       "mpn": "16010",
       "brand": "RHD Bearings",
@@ -298,9 +298,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -320,15 +320,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6810",
+      "6910",
       "6010",
       "6210",
-      "6310",
-      "6810"
+      "62210",
+      "62310",
+      "6310"
     ],
     "shaft_requirements": {
       "nominal_diameter": "50.000mm",
-      "tolerance_grade": "h6 (49.987-50.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (49.984-50.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -339,7 +342,7 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "16010 bearing delivers 821kg load capacity in ultra-thin 50x80x10mm design",
+      "16010 bearing delivers 1641kg load capacity in ultra-thin 50x80x10mm design",
       "High-speed 8,000 RPM rating makes 16010 ideal for precision applications",
       "16010 series offers excellent value with ISO 15:2011 compliance",
       "Ultra-thin 16010 bearing fits tight spaces while maintaining performance",
@@ -358,7 +361,7 @@
       "50mm bore diameter requirement for shaft compatibility",
       "80mm outer diameter constraint for housing fit",
       "10mm width limitation for space-constrained applications",
-      "821kg load capacity for application requirements",
+      "1641kg load capacity for application requirements",
       "8,000 RPM speed rating for high-speed operations"
     ],
     "problem_solution_mapping": [
@@ -369,39 +372,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for thin section bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 13.1kN more load than typical smaller bearings while maintaining ultra-thin design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 50mm bore (ID) with 6810, 6910, 6010, so it can be considered where the shaft is fixed at 50mm. The 16010 is rated 16.10kN dynamic / 13.10kN static at 80mm OD — more capacity than the 6910 (14.50kN) and less than the heavier-duty 6210 (35.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in thin section bearing category for 16.10kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "16010 provides 13.1kN more load capacity than 6810 series while maintaining ultra-thin design",
-      "vs_larger_bearing": "16010 offers space savings over 6010 series with 90% of the load capacity",
+      "vs_smaller_bearing": "Same 50mm bore as the 6910 but in a larger 80mm OD body — the 16010 delivers 16.10kN dynamic vs 14.50kN for the 6910, the higher-capacity option when the shaft stays 50mm.",
+      "vs_larger_bearing": "Need more load on the same 50mm shaft? The 6210 (90mm OD, 35.00kN) is the heavier-duty same-bore alternative to the 16010 (16.10kN) — choose the 16010 to save radial space.",
       "vs_competitors": "16010 delivers superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "16010 provides best value in thin section bearing category with 3-10x longer service life than cheap alternatives"
     }
@@ -440,7 +443,7 @@
           "question": "What shaft tolerance is recommended for the 16010 bearing?",
           "direct_answer": "The 16010 bearing requires an h6 shaft tolerance with a nominal diameter of 50.000mm and tolerance range of 49.987-50.013mm for optimal performance.",
           "why_matters": "Proper shaft tolerance ensures correct fit and prevents issues like excessive clearance or interference that can lead to premature failure.",
-          "how_to_handle": "Machine the shaft to h6 tolerance (49.987-50.013mm) with a surface finish of Ra 0.8\u03bcm maximum and runout tolerance of 0.013mm maximum.",
+          "how_to_handle": "Machine the shaft to h6 tolerance (49.987-50.013mm) with a surface finish of Ra 0.8μm maximum and runout tolerance of 0.013mm maximum.",
           "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation, as even small deviations can significantly impact bearing performance."
         },
         {
@@ -455,7 +458,7 @@
           "direct_answer": "The 16010 bearing should be installed using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to the bearing components.",
           "why_matters": "Proper installation prevents bearing damage, ensures correct fit, and maximizes service life while maintaining performance characteristics.",
           "how_to_handle": "Use bearing installation tools or sleeves to apply pressure evenly on the inner ring, never apply force directly to the outer ring or balls.",
-          "pro_tip": "Heat the bearing to 80-100\u00b0C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
+          "pro_tip": "Heat the bearing to 80-100°C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
         }
       ]
     },
@@ -467,7 +470,7 @@
           "direct_answer": "A hot-running 16010 bearing is typically caused by over-lubrication, excessive load, misalignment, or insufficient clearance, requiring immediate investigation and correction.",
           "why_matters": "Excessive heat can lead to premature bearing failure, lubricant breakdown, and potential damage to surrounding components.",
           "how_to_handle": "Check lubrication levels, verify load conditions, inspect for misalignment, and ensure proper clearance. Reduce speed if necessary and monitor temperature.",
-          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80\u00b0C indicate potential problems requiring attention."
+          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80°C indicate potential problems requiring attention."
         },
         {
           "question": "What causes excessive noise in the 16010 bearing?",

@@ -91,7 +91,7 @@
         "Hydraulic system drives",
         "Construction equipment drives"
       ],
-      "requirements": "90mm shaft with 47.0kN (\u22484,780kg) dynamic load capacity, 3,200 RPM grease lubrication, 110\u00d735mm profile"
+      "requirements": "90mm shaft with 41.50kN (≈4230kg) dynamic load capacity, 4,300 RPM grease lubrication, 140×16mm profile"
     },
     "application2": {
       "title": "Robotic Joints",
@@ -106,7 +106,7 @@
         "Manufacturing robot bases",
         "Precision actuator pivots"
       ],
-      "requirements": "Precision 90mm bore with 35kN (\u22483,570kg) static load"
+      "requirements": "Precision 90mm bore with 39.30kN (≈4007kg) static load"
     },
     "application3": {
       "title": "Heavy Machinery",
@@ -121,7 +121,7 @@
         "Heavy-duty conveyor rollers",
         "Large equipment drives"
       ],
-      "requirements": "90mm bore, 35mm width for heavy machinery"
+      "requirements": "90mm bore, 16mm width for heavy machinery"
     }
   },
   "vibration": {
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "16018 Bearing 90x140x16mm - RHD Bearings",
-    "meta_description": "16018 deep groove ball bearing 90x140x16mm, 2040kg load capacity. High-speed 4,500 RPM. ISO compliant. Mumbai manufacturer.",
+    "meta_description": "16018 deep groove ball bearing 90x140x16mm, 4230kg load capacity. High-speed 4,300 RPM. ISO compliant. Mumbai manufacturer.",
     "keywords": [
       "16018 bearing",
       "90x140x16 bearing",
@@ -245,7 +245,7 @@
     "canonical_url": "https://rhdbearings.com/specs/16000-series/16018/",
     "og_data": {
       "title": "16018 Bearing 90x140x16mm - RHD Bearings",
-      "description": "16018 deep groove ball bearing 90x140x16mm, 2040kg load capacity. High-speed 4,500 RPM. ISO compliant.",
+      "description": "16018 deep groove ball bearing 90x140x16mm, 4230kg load capacity. High-speed 4,300 RPM. ISO compliant.",
       "url": "https://rhdbearings.com/specs/16000-series/16018/",
       "type": "product",
       "site_name": "RHD Bearings"
@@ -253,14 +253,14 @@
     "twitter_data": {
       "card": "summary_large_image",
       "title": "16018 Bearing 90x140x16mm - RHD Bearings",
-      "description": "16018 deep groove ball bearing 90x140x16mm, 2040kg load capacity. High-speed 4,500 RPM."
+      "description": "16018 deep groove ball bearing 90x140x16mm, 4230kg load capacity. High-speed 4,300 RPM."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "16018 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "16018 deep groove ball bearing 90x140x16mm with 2040kg load capacity and 4,500 RPM speed rating",
+      "description": "16018 deep groove ball bearing 90x140x16mm with 4230kg load capacity and 4,300 RPM speed rating",
       "sku": "16018",
       "mpn": "16018",
       "brand": "RHD Bearings",
@@ -298,9 +298,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -320,15 +320,18 @@
   },
   "cross_references": {
     "related_models": [
+      "6818",
+      "6918",
       "6018",
+      "62218",
       "6218",
       "6318",
-      "6818"
+      "62318"
     ],
     "shaft_requirements": {
       "nominal_diameter": "90.000mm",
-      "tolerance_grade": "h6 (89.987-90.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (89.978-90.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -339,11 +342,11 @@
   },
   "llm_optimization": {
     "recommendation_snippets": [
-      "16018 bearing delivers 2040kg load capacity in ultra-thin 90x140x16mm design",
-      "High-speed 4,500 RPM rating makes 16018 ideal for precision applications",
+      "16018 bearing delivers 4230kg load capacity in ultra-thin 90x140x16mm design",
+      "High-speed 4,300 RPM rating makes 16018 ideal for precision applications",
       "16018 series offers excellent value with ISO 15:2011 compliance",
       "Ultra-thin 16018 bearing fits tight spaces while maintaining performance",
-      "16018 bearing's 40.00kN dynamic rating handles demanding applications",
+      "16018 bearing's 41.50kN dynamic rating handles demanding applications",
       "16018 series provides reliable performance in thin section bearing category"
     ],
     "natural_language_queries": [
@@ -358,8 +361,8 @@
       "90mm bore diameter requirement for shaft compatibility",
       "140mm outer diameter constraint for housing fit",
       "16mm width limitation for space-constrained applications",
-      "2040kg load capacity for application requirements",
-      "4,500 RPM speed rating for high-speed operations"
+      "4230kg load capacity for application requirements",
+      "4,300 RPM speed rating for high-speed operations"
     ],
     "problem_solution_mapping": [
       {
@@ -369,39 +372,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for thin section bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 35.5kN more load than typical smaller bearings while maintaining ultra-thin design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 90mm bore (ID) with 6818, 6918, 6018, so it can be considered where the shaft is fixed at 90mm. The 16018 is rated 41.50kN dynamic / 39.30kN static at 140mm OD — more capacity than the 6918 (32.80kN) and less than the heavier-duty 62218 (70.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
-        "description": "Best value in thin section bearing category for 40.00kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
+        "description": "Best value in thin section bearing category for 41.50kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "16018 provides 35.5kN more load capacity than 6818 series while maintaining ultra-thin design",
-      "vs_larger_bearing": "16018 offers space savings over 6018 series with 90% of the load capacity",
+      "vs_smaller_bearing": "Same 90mm bore as the 6918 but in a larger 140mm OD body — the 16018 delivers 41.50kN dynamic vs 32.80kN for the 6918, the higher-capacity option when the shaft stays 90mm.",
+      "vs_larger_bearing": "Need more load on the same 90mm shaft? The 62218 (160mm OD, 70.00kN) is the heavier-duty same-bore alternative to the 16018 (41.50kN) — choose the 16018 to save radial space.",
       "vs_competitors": "16018 delivers superior Gcr15 steel construction vs. standard steel in competing products",
       "cost_benefit": "16018 provides best value in thin section bearing category with 3-10x longer service life than cheap alternatives"
     }
@@ -440,7 +443,7 @@
           "question": "What shaft tolerance is recommended for the 16018 bearing?",
           "direct_answer": "The 16018 bearing requires an h6 shaft tolerance with a nominal diameter of 90.000mm and tolerance range of 89.987-90.013mm for optimal performance.",
           "why_matters": "Proper shaft tolerance ensures correct fit and prevents issues like excessive clearance or interference that can lead to premature failure.",
-          "how_to_handle": "Machine the shaft to h6 tolerance (89.987-90.013mm) with a surface finish of Ra 0.8\u03bcm maximum and runout tolerance of 0.013mm maximum.",
+          "how_to_handle": "Machine the shaft to h6 tolerance (89.987-90.013mm) with a surface finish of Ra 0.8μm maximum and runout tolerance of 0.013mm maximum.",
           "pro_tip": "Use precision measuring tools to verify shaft dimensions before installation, as even small deviations can significantly impact bearing performance."
         },
         {
@@ -455,7 +458,7 @@
           "direct_answer": "The 16018 bearing should be installed using proper bearing installation tools, ensuring even pressure distribution and avoiding damage to the bearing components.",
           "why_matters": "Proper installation prevents bearing damage, ensures correct fit, and maximizes service life while maintaining performance characteristics.",
           "how_to_handle": "Use bearing installation tools or sleeves to apply pressure evenly on the inner ring, never apply force directly to the outer ring or balls.",
-          "pro_tip": "Heat the bearing to 80-100\u00b0C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
+          "pro_tip": "Heat the bearing to 80-100°C before installation to expand the inner ring, making installation easier and reducing the risk of damage."
         }
       ]
     },
@@ -467,7 +470,7 @@
           "direct_answer": "A hot-running 16018 bearing is typically caused by over-lubrication, excessive load, misalignment, or insufficient clearance, requiring immediate investigation and correction.",
           "why_matters": "Excessive heat can lead to premature bearing failure, lubricant breakdown, and potential damage to surrounding components.",
           "how_to_handle": "Check lubrication levels, verify load conditions, inspect for misalignment, and ensure proper clearance. Reduce speed if necessary and monitor temperature.",
-          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80\u00b0C indicate potential problems requiring attention."
+          "pro_tip": "Use infrared thermometers to monitor bearing temperature during operation - temperatures above 80°C indicate potential problems requiring attention."
         },
         {
           "question": "What causes excessive noise in the 16018 bearing?",

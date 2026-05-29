@@ -91,7 +91,7 @@
         "Portable power saws",
         "Cordless tool motors"
       ],
-      "requirements": "17mm shaft with 8.20kN (\u2248835kg) dynamic load capacity, 14,000 RPM grease lubrication, 40\u00d712mm profile for power tool drives"
+      "requirements": "17mm shaft with 6.00kN (≈611kg) dynamic load capacity, 17,000 RPM grease lubrication, 35×10mm profile for power tool drives"
     },
     "application2": {
       "title": "Automation Devices",
@@ -106,7 +106,7 @@
         "Material handling joints",
         "Microscope stage bearings"
       ],
-      "requirements": "Precision 17mm bore with 5.0kN (\u2248510kg) static load rating for automation"
+      "requirements": "Precision 17mm bore with 3.25kN (≈331kg) static load rating for automation"
     },
     "application3": {
       "title": "Machine Drives",
@@ -121,7 +121,7 @@
         "Food processing motors",
         "Conveyor idler shafts"
       ],
-      "requirements": "17mm bore, 12mm width, for medium-duty machine drives"
+      "requirements": "17mm bore, 10mm width, for medium-duty machine drives"
     }
   },
   "vibration": {
@@ -321,15 +321,19 @@
   },
   "cross_references": {
     "related_models": [
-      "6203",
-      "6303",
       "6803",
-      "6903"
+      "6903",
+      "16003",
+      "62203",
+      "6203",
+      "6203A/42",
+      "6303",
+      "62303"
     ],
     "shaft_requirements": {
       "nominal_diameter": "17.000mm",
-      "tolerance_grade": "h6 (16.991-17.009mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (16.989-17.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -370,39 +374,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udd0b",
+        "icon": "🔋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for balanced performance, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 612kg load capacity with balanced 10mm width. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 17mm bore (ID) with 6803, 6903, 16003, so it can be considered where the shaft is fixed at 17mm. The 6003 is rated 6.00kN dynamic / 3.25kN static at 35mm OD — more capacity than the 6903 (4.60kN) and less than the heavier-duty 62203 (9.00kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Excellent value for medium-duty applications. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "Higher 612kg load capacity compared to 15mm bearings",
-      "vs_larger_bearing": "More compact design compared to larger alternatives",
+      "vs_smaller_bearing": "Same 17mm bore as the 6903 but in a larger 35mm OD body — the 6003 delivers 6.00kN dynamic vs 4.60kN for the 6903, the higher-capacity option when the shaft stays 17mm.",
+      "vs_larger_bearing": "Need more load on the same 17mm shaft? The 62203 (40mm OD, 9.00kN) is the heavier-duty same-bore alternative to the 6003 (6.00kN) — choose the 6003 to save radial space.",
       "vs_competitors": "Premium Gcr15 steel construction vs. standard steel alternatives",
       "cost_benefit": "Reasonable cost justified by balanced performance and reliability"
     }
@@ -441,7 +445,7 @@
           "question": "What tools are needed to install a 40g 6003 bearing properly?",
           "direct_answer": "Standard bearing installation tools, heating equipment, and precision measuring instruments for proper 17mm bore installation.",
           "why_matters": "Proper installation prevents 80% of premature bearing failures. The 40g weight and 17mm bore require appropriate installation techniques to avoid internal damage. Medium-size bearings benefit from thermal installation methods while being robust enough for standard installation procedures.",
-          "how_to_handle": "Heat bearing to 80-90\u00b0C for thermal expansion. Use bearing installation tools or hydraulic press with appropriate adapters. Verify shaft tolerances (h6: 16.991-17.009mm) and housing concentricity. Avoid impact installation that can damage raceways.",
+          "how_to_handle": "Heat bearing to 80-90°C for thermal expansion. Use bearing installation tools or hydraulic press with appropriate adapters. Verify shaft tolerances (h6: 16.991-17.009mm) and housing concentricity. Avoid impact installation that can damage raceways.",
           "pro_tip": "Thermal installation provides smooth, damage-free installation - monitor temperature to avoid overheating."
         },
         {

@@ -91,7 +91,7 @@
         "Ceramic slurry mixers",
         "Resin mixer shafts"
       ],
-      "requirements": "85mm shaft with 55.0kN (\u22485,610kg) dynamic load capacity, 4,000 RPM grease lubrication, 170\u00d755mm profile for mixing equipment"
+      "requirements": "85mm shaft with 140.00kN (≈14271kg) dynamic load capacity, 3,800 RPM grease lubrication, 180×60mm profile for mixing equipment"
     },
     "application2": {
       "title": "Heavy Rollers",
@@ -106,7 +106,7 @@
         "Rubber processing rollers",
         "Agricultural equipment rollers"
       ],
-      "requirements": "Precision 85mm bore with 28.0kN (\u22482,850kg) static load for roller bearings"
+      "requirements": "Precision 85mm bore with 51.00kN (≈5201kg) static load for roller bearings"
     },
     "application3": {
       "title": "Industrial Vehicles",
@@ -217,7 +217,7 @@
   },
   "seo_metadata": {
     "title": "62317 Bearing 85x180x60mm | RHD Bearings",
-    "meta_description": "62317 deep groove ball bearing: 85x180x60mm, 14280kg load capacity, 3,800 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
+    "meta_description": "62317 deep groove ball bearing: 85x180x60mm, 14271kg load capacity, 3,800 RPM. Professional grade Gcr15 steel. Mumbai manufacturer.",
     "keywords": [
       "62317 bearing",
       "85mm bore bearing",
@@ -245,25 +245,25 @@
       "RHD bearings 62317",
       "Mumbai bearing manufacturer"
     ],
-    "canonical_url": "https://rhdbearings.com/specs/62200-series/62317/",
+    "canonical_url": "https://rhdbearings.com/specs/62300-series/62317/",
     "og_data": {
       "title": "62317 Bearing 85x180x60mm | RHD Bearings",
-      "description": "62317 deep groove ball bearing: 85x180x60mm, 14280kg load capacity, 3,800 RPM. Professional grade Gcr15 steel.",
-      "url": "https://rhdbearings.com/specs/62200-series/62317/",
+      "description": "62317 deep groove ball bearing: 85x180x60mm, 14271kg load capacity, 3,800 RPM. Professional grade Gcr15 steel.",
+      "url": "https://rhdbearings.com/specs/62300-series/62317/",
       "type": "product",
       "site_name": "RHD Bearings"
     },
     "twitter_data": {
       "card": "summary_large_image",
       "title": "62317 Bearing 85x180x60mm | RHD Bearings",
-      "description": "62317 deep groove ball bearing: 85x180x60mm, 14280kg load capacity, 3,800 RPM. Professional grade Gcr15 steel."
+      "description": "62317 deep groove ball bearing: 85x180x60mm, 14271kg load capacity, 3,800 RPM. Professional grade Gcr15 steel."
     },
     "schema_markup": {
       "@context": "https://schema.org/",
       "@type": "Product",
       "name": "62317 Deep Groove Ball Bearing",
       "image": "https://rhdbearings.com/wp-content/uploads/2025/08/0901d19680398aff_svg_preview.svg",
-      "description": "62317 deep groove ball bearing: 85x180x60mm, 14280kg load capacity, 3,800 RPM. Professional grade Gcr15 steel.",
+      "description": "62317 deep groove ball bearing: 85x180x60mm, 14271kg load capacity, 3,800 RPM. Professional grade Gcr15 steel.",
       "sku": "62317",
       "mpn": "62317",
       "brand": "RHD Bearings",
@@ -275,7 +275,7 @@
       "category": "Deep Groove Ball Bearings",
       "offers": {
         "@type": "Offer",
-        "url": "https://rhdbearings.com/specs/62200-series/62317/",
+        "url": "https://rhdbearings.com/specs/62300-series/62317/",
         "priceCurrency": "INR",
         "availability": "Yes",
         "priceValidUntil": "2025-12-31",
@@ -301,9 +301,9 @@
       "bulk_availability": "Large quantities available - contact for bulk pricing",
       "custom_orders": "Custom specifications and modifications available",
       "call_to_action": {
-        "primary": "\ud83d\udcde Call +91-9702081858 for immediate pricing and availability",
-        "secondary": "\ud83d\udce7 Email sales@rhdenterprise.in for detailed quotation",
-        "oem_sales": "\ud83c\udfed OEM/Bulk orders: oemsales@rhdenterprise.in",
+        "primary": "📞 Call +91-9702081858 for immediate pricing and availability",
+        "secondary": "📧 Email sales@rhdenterprise.in for detailed quotation",
+        "oem_sales": "🏭 OEM/Bulk orders: oemsales@rhdenterprise.in",
         "urgency": "Need it today? Call now - we dispatch same day!"
       }
     },
@@ -323,15 +323,18 @@
   },
   "cross_references": {
     "related_models": [
-      "62301",
-      "62302",
-      "62303",
-      "62304"
+      "6817",
+      "6917",
+      "6017",
+      "16017",
+      "6217",
+      "62217",
+      "6317"
     ],
     "shaft_requirements": {
       "nominal_diameter": "85.000mm",
-      "tolerance_grade": "h6 (84.987-85.013mm)",
-      "surface_finish": "Ra 0.8\u03bcm max",
+      "tolerance_grade": "h6 (84.978-85.000mm)",
+      "surface_finish": "Ra 0.8μm max",
       "runout_tolerance": "0.013mm max"
     },
     "application_specific_alternatives": {
@@ -372,39 +375,39 @@
     ],
     "expertise_signals": [
       {
-        "icon": "\ud83d\udccb",
+        "icon": "📋",
         "title": "ISO Compliance",
         "description": "ISO 15:2011 compliant dimensions ensure interchangeability with global bearing standards and seamless replacement in existing equipment."
       },
       {
-        "icon": "\ud83d\udd2c",
+        "icon": "🔬",
         "title": "Material Science",
         "description": "Gcr15 chrome steel composition optimized for wide-bodied bearing applications, providing superior hardness, wear resistance, and fatigue life."
       },
       {
-        "icon": "\u2699\ufe0f",
+        "icon": "⚙️",
         "title": "Precision Engineering",
         "description": "C0 clearance standard for most applications, C3 available for high-temperature use. h6 shaft tolerance recommended for optimal performance."
       },
       {
-        "icon": "\ud83d\udd27",
+        "icon": "🔧",
         "title": "Professional Installation",
         "description": "Professional installation required for maximum 50,000-hour service life. Proper tools and techniques prevent 80% of premature failures."
       },
       {
-        "icon": "\ud83d\udcca",
+        "icon": "📊",
         "title": "Performance Comparison",
-        "description": "Handles 51.0kN more load than typical 85mm bearings while maintaining compact design. Superior Gcr15 steel vs. standard steel in competing products."
+        "description": "Shares the 85mm bore (ID) with 6817, 6917, 6017, so it can be considered where the shaft is fixed at 85mm. The 62317 is rated 140.00kN dynamic / 51.00kN static at 180mm OD — the highest-capacity 85mm-bore option, above the 6217 (83.20kN)."
       },
       {
-        "icon": "\ud83d\udcb0",
+        "icon": "💰",
         "title": "Value Engineering",
         "description": "Best value in wide-bodied bearing category for 140kN performance. Quality bearings last 3-10x longer than cheap alternatives, reducing total cost of ownership."
       }
     ],
     "comparison_matrix": {
-      "vs_smaller_bearing": "62317 offers 60mm width vs 12mm standard, providing 400% more load capacity",
-      "vs_larger_bearing": "Compact 180mm outer diameter vs 190mm alternatives, saving space while maintaining performance",
+      "vs_smaller_bearing": "Same 85mm bore as the 6217 but in a larger 180mm OD body — the 62317 delivers 140.00kN dynamic vs 83.20kN for the 6217, the higher-capacity option when the shaft stays 85mm.",
+      "vs_larger_bearing": "The 62317 is the highest-capacity 85mm-bore bearing in this family (140.00kN at 180mm OD); step down to the 6217 for a more compact fit on the same shaft.",
       "vs_competitors": "Superior Gcr15 steel construction vs standard steel, ensuring longer service life",
       "cost_benefit": "Professional grade quality at competitive pricing, reducing total cost of ownership"
     }
